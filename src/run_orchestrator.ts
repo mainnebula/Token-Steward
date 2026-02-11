@@ -1,5 +1,5 @@
 import { execSync, spawnSync, spawn } from "node:child_process";
-import { existsSync, mkdirSync, writeFileSync, unlinkSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync, unlinkSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { randomUUID } from "node:crypto";
@@ -281,12 +281,16 @@ export function checkForNewCommits(repoDir: string, branch: string): boolean {
 }
 
 export function pushBranch(repoDir: string, branch: string): void {
-  execSync(`git push -u origin "${branch}"`, { cwd: repoDir, timeout: 30000 });
+  execSync(`git push -u origin "${branch}"`, { cwd: repoDir, timeout: 30000, stdio: ["pipe", "pipe", "pipe"] });
 }
 
 export function openDraftPR(run: Run, repoDir: string): string | null {
   const bodyFile = join(tmpdir(), `steward-pr-${run.id}.md`);
   try {
+    // Determine the fork owner for --head flag (needed for cross-fork PRs)
+    const ghUser = execSync("gh api user --jq .login", { encoding: "utf-8", timeout: 10000 }).trim();
+    const headRef = `${ghUser}:${run.branch}`;
+
     const title = `Fix #${run.candidate_issue}`;
     const body = [
       `## What`,
@@ -308,7 +312,7 @@ export function openDraftPR(run: Run, repoDir: string): string | null {
     writeFileSync(bodyFile, body, "utf-8");
 
     const result = execSync(
-      `gh pr create --draft --title "${title}" --body-file "${bodyFile}" --repo "${run.candidate_repo}"`,
+      `gh pr create --draft --title "${title}" --body-file "${bodyFile}" --repo "${run.candidate_repo}" --head "${headRef}"`,
       { cwd: repoDir, encoding: "utf-8", timeout: 15000 },
     ).trim();
 
@@ -389,6 +393,20 @@ Replace <TOKENS> with the approximate total tokens you've used so far in this se
 
   writeFileSync(join(repoDir, "STEWARD_CONTEXT.md"), context, "utf-8");
   writeFileSync(join(repoDir, "CLAUDE.md"), claudeMd, "utf-8");
+
+  // Ensure our files are git-ignored so they don't trigger "uncommitted changes" warnings
+  const gitignorePath = join(repoDir, ".git", "info", "exclude");
+  try {
+    const existing = readFileSync(gitignorePath, "utf-8");
+    const additions: string[] = [];
+    if (!existing.includes("STEWARD_CONTEXT.md")) additions.push("STEWARD_CONTEXT.md");
+    if (!existing.includes("CLAUDE.md")) additions.push("CLAUDE.md");
+    if (additions.length > 0) {
+      writeFileSync(gitignorePath, existing.trimEnd() + "\n" + additions.join("\n") + "\n", "utf-8");
+    }
+  } catch {
+    writeFileSync(gitignorePath, "STEWARD_CONTEXT.md\nCLAUDE.md\n", "utf-8");
+  }
 }
 
 /**
