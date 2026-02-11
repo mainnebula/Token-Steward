@@ -1,0 +1,38 @@
+enabled: true
+timezone: America/Chicago
+
+# Token budget
+weekly_target_tokens: 500000
+weekly_min_reserve_tokens: 25000
+
+# When to run (user-local timezone)
+schedule:
+  - day: FRI
+    start: "18:00"
+    end: "23:59"
+  - day: SAT
+    start: "09:00"
+    end: "23:59"
+  - day: SUN
+    start: "09:00"
+    end: "23:59"
+
+# What to work on
+filters:
+  categories_allow: [developer-tools, documentation, security, ai-ml]
+  tags_allow: []
+  repos_allow: []
+  repos_deny: []
+  min_confidence: 0.40
+
+# Execution limits
+limits:
+  max_concurrency: 2
+  max_tokens_per_run: 60000
+  max_runs_per_day: 6
+
+# Safety
+safety:
+  pause_on_ci_failures_consecutive: 3
+  pause_on_failure_rate_percent: 50
+  max_stale_usage_minutes: 30

@@ -1,0 +1,72 @@
+# Token Steward Local Registry
+# Curated repos where automated contributions are welcome.
+# Each entry specifies which issue labels to scan for eligible work.
+
+repositories:
+  # --- Documentation & Accessibility ---
+  - slug: freeCodeCamp/freeCodeCamp
+    name: freeCodeCamp
+    description: Open-source codebase and curriculum for learning to code.
+    category: documentation
+    tags: [education, javascript, curriculum]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: TheOdinProject/curriculum
+    name: The Odin Project Curriculum
+    description: Open-source web development curriculum.
+    category: documentation
+    tags: [education, web, curriculum]
+    issue_labels: [good first issue, help wanted]
+
+  # --- Developer Tools ---
+  - slug: cli/cli
+    name: GitHub CLI
+    description: GitHub's official command line tool.
+    category: developer-tools
+    tags: [cli, go, github]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: nushell/nushell
+    name: Nushell
+    description: A new type of shell with structured data.
+    category: developer-tools
+    tags: [shell, rust, cli]
+    issue_labels: [good-first-issue, help-wanted]
+
+  - slug: astral-sh/ruff
+    name: Ruff
+    description: Extremely fast Python linter and formatter.
+    category: developer-tools
+    tags: [python, rust, linter]
+    issue_labels: [good first issue, help wanted]
+
+  # --- AI / ML ---
+  - slug: langgenius/dify
+    name: Dify
+    description: Open-source LLM app development platform.
+    category: ai-ml
+    tags: [llm, python, platform]
+    issue_labels: [good first issue, help wanted]
+
+  # --- Security ---
+  - slug: OWASP/CheatSheetSeries
+    name: OWASP Cheat Sheet Series
+    description: Security cheat sheets for developers.
+    category: security
+    tags: [security, documentation, owasp]
+    issue_labels: [good first issue, help wanted]
+
+  # --- Infrastructure ---
+  - slug: containers/podman
+    name: Podman
+    description: Daemonless container engine for OCI containers.
+    category: developer-tools
+    tags: [containers, go, linux]
+    issue_labels: [good-first-issue, help wanted]
+
+  - slug: traefik/traefik
+    name: Traefik
+    description: Modern reverse proxy and load balancer.
+    category: developer-tools
+    tags: [proxy, go, cloud-native]
+    issue_labels: [good first issue, help wanted]
