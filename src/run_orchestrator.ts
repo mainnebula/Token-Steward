@@ -367,7 +367,23 @@ export function cancelRun(runId: string): void {
 /**
  * Write a STEWARD_CONTEXT.md file in the workspace with issue details.
  */
-export function writeContextFile(repoDir: string, run: Run, issueBody: string): void {
+export function writeContextFile(repoDir: string, run: Run, issueBody: string, proposeFirst = false): void {
+  const proposalSection = proposeFirst ? `
+## Approach — Propose First
+
+Before writing any code, follow these steps:
+
+1. **Analyze.** Read the issue, explore the codebase, and understand the problem thoroughly.
+2. **Draft a proposal.** Write a concise comment for the issue covering:
+   - What the problem is (your understanding)
+   - Your proposed approach (files to change, strategy)
+   - Trade-offs or open questions
+   Start the comment with: "👋 This issue was identified by [Token Steward](https://github.com/mainnebula/token-steward) as high-impact. I'd like to contribute a fix — here's the proposed approach before writing any code."
+   End with: "Would you welcome this contribution? Any feedback on the approach before I proceed?"
+3. **Post it.** Use \`gh issue comment ${run.candidate_issue} --repo ${run.candidate_repo} --body-file <file>\` to post. The developer (me) will review before you post.
+4. **Stop.** Do NOT start implementing. Wait for maintainer feedback.
+` : '';
+
   const context = `# Token Steward Context
 
 ## Issue
@@ -375,7 +391,7 @@ ${run.issue_url}
 
 ## Description
 ${issueBody}
-
+${proposalSection}
 ## Contribution Guidelines
 - Follow the project's existing code style and conventions
 - Run tests before committing

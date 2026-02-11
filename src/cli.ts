@@ -283,9 +283,16 @@ async function startWork(candidate: Candidate, policy: Policy): Promise<void> {
   console.log("Fetching issue details...");
   const issueBody = getIssueBody(candidate.repo_slug, candidate.issue_number);
 
-  // 4. Write context file
-  writeContextFile(repoDir, run, issueBody);
-  console.log("Wrote STEWARD_CONTEXT.md");
+  // 4. Write context file (with propose-first if policy says so)
+  const proposeFirst =
+    policy.propose_first === "always" ||
+    (policy.propose_first === "auto" && candidate.est_tokens > 30000);
+  writeContextFile(repoDir, run, issueBody, proposeFirst);
+  if (proposeFirst) {
+    console.log("Wrote STEWARD_CONTEXT.md (propose-first mode)");
+  } else {
+    console.log("Wrote STEWARD_CONTEXT.md");
+  }
 
   // 5. Print summary
   console.log("");
@@ -1092,6 +1099,7 @@ program
         pause_on_failure_rate_percent: (safety.pause_on_failure_rate_percent as number) ?? 50,
         max_stale_usage_minutes: (safety.max_stale_usage_minutes as number) ?? 30,
       },
+      propose_first: (existing.propose_first as string) ?? "auto",
     };
 
     mkdirSync(dirname(configPath), { recursive: true });

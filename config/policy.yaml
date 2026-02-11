@@ -36,3 +36,7 @@ safety:
   pause_on_ci_failures_consecutive: 3
   pause_on_failure_rate_percent: 50
   max_stale_usage_minutes: 30
+
+# Proposal behavior: auto | always | never
+# auto = propose first for issues estimated >30k tokens
+propose_first: auto

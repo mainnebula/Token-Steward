@@ -34,6 +34,7 @@ export const PolicySchema = z
       pause_on_failure_rate_percent: z.number().min(0).max(100),
       max_stale_usage_minutes: z.number().positive(),
     }),
+    propose_first: z.enum(["auto", "always", "never"]).default("auto"),
   })
   .refine((p) => p.weekly_target_tokens > p.weekly_min_reserve_tokens, {
     message: "weekly_target_tokens must exceed weekly_min_reserve_tokens",
