@@ -96,7 +96,7 @@ function listIssues(repoSlug: string, labels: string[]): GitHubIssue[] {
   for (const label of labels) {
     try {
       const result = execSync(
-        `gh issue list --repo "${repoSlug}" --label "${label}" --state open --json number,title,url,labels,comments,reactionGroups,createdAt --limit 10`,
+        `gh issue list --repo "${repoSlug}" --label "${label}" --state open --json number,title,url,labels,comments,reactionGroups,createdAt --limit 20`,
         { encoding: "utf-8", timeout: 15000 },
       );
       const issues: GitHubIssue[] = JSON.parse(result);

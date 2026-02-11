@@ -1,9 +1,9 @@
 # Token Steward Local Registry
-# Curated repos where automated contributions are welcome.
+# Curated repos where contributions are welcome.
 # Each entry specifies which issue labels to scan for eligible work.
 
 repositories:
-  # --- Documentation & Accessibility ---
+  # --- Documentation & Education ---
   - slug: freeCodeCamp/freeCodeCamp
     name: freeCodeCamp
     description: Open-source codebase and curriculum for learning to code.
@@ -18,7 +18,79 @@ repositories:
     tags: [education, web, curriculum]
     issue_labels: [good first issue, help wanted]
 
-  # --- Developer Tools ---
+  - slug: mdn/content
+    name: MDN Web Docs
+    description: Source for MDN Web Docs content.
+    category: documentation
+    tags: [documentation, web, mdn]
+    issue_labels: [good first issue, help wanted, content]
+
+  - slug: tldr-pages/tldr
+    name: tldr-pages
+    description: Collaborative cheatsheets for console commands.
+    category: documentation
+    tags: [documentation, cli, reference]
+    issue_labels: [good first issue, help wanted]
+
+  # --- Developer Tools (TypeScript / JavaScript) ---
+  - slug: biomejs/biome
+    name: Biome
+    description: Fast formatter and linter for JS/TS/JSON/CSS.
+    category: developer-tools
+    tags: [rust, linter, formatter, javascript]
+    issue_labels: [good first issue, help wanted, easy]
+
+  - slug: hoppscotch/hoppscotch
+    name: Hoppscotch
+    description: Open-source API development ecosystem.
+    category: developer-tools
+    tags: [typescript, api, vue]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: colinhacks/zod
+    name: Zod
+    description: TypeScript-first schema validation.
+    category: developer-tools
+    tags: [typescript, validation, schema]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: drizzle-team/drizzle-orm
+    name: Drizzle ORM
+    description: TypeScript ORM for SQL databases.
+    category: developer-tools
+    tags: [typescript, orm, database]
+    issue_labels: [good first issue, help wanted, bug]
+
+  # --- Developer Tools (Python) ---
+  - slug: astral-sh/ruff
+    name: Ruff
+    description: Extremely fast Python linter and formatter.
+    category: developer-tools
+    tags: [python, rust, linter]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: pydantic/pydantic
+    name: Pydantic
+    description: Data validation using Python type annotations.
+    category: developer-tools
+    tags: [python, validation, typing]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: tiangolo/fastapi
+    name: FastAPI
+    description: Modern, fast web framework for building APIs with Python.
+    category: developer-tools
+    tags: [python, api, web]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: encode/httpx
+    name: HTTPX
+    description: Fully featured HTTP client for Python 3.
+    category: developer-tools
+    tags: [python, http, async]
+    issue_labels: [good first issue, help wanted]
+
+  # --- Developer Tools (Go) ---
   - slug: cli/cli
     name: GitHub CLI
     description: GitHub's official command line tool.
@@ -26,18 +98,47 @@ repositories:
     tags: [cli, go, github]
     issue_labels: [good first issue, help wanted]
 
+  - slug: charmbracelet/bubbletea
+    name: Bubble Tea
+    description: TUI framework for Go.
+    category: developer-tools
+    tags: [go, tui, cli]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: junegunn/fzf
+    name: fzf
+    description: Command-line fuzzy finder.
+    category: developer-tools
+    tags: [go, cli, search]
+    issue_labels: [good first issue, help wanted, bug]
+
+  # --- Developer Tools (Rust) ---
   - slug: nushell/nushell
     name: Nushell
     description: A new type of shell with structured data.
     category: developer-tools
     tags: [shell, rust, cli]
-    issue_labels: [good-first-issue, help-wanted]
+    issue_labels: [good-first-issue, help-wanted, easy]
 
-  - slug: astral-sh/ruff
-    name: Ruff
-    description: Extremely fast Python linter and formatter.
+  - slug: BurntSushi/ripgrep
+    name: ripgrep
+    description: Recursively search directories for a regex pattern.
     category: developer-tools
-    tags: [python, rust, linter]
+    tags: [rust, cli, search]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: sharkdp/bat
+    name: bat
+    description: A cat clone with syntax highlighting and Git integration.
+    category: developer-tools
+    tags: [rust, cli, terminal]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: sharkdp/fd
+    name: fd
+    description: A simple, fast alternative to find.
+    category: developer-tools
+    tags: [rust, cli, search]
     issue_labels: [good first issue, help wanted]
 
   # --- AI / ML ---
