@@ -21,8 +21,10 @@ import { runExport, writeExportFiles } from "./export_data.js";
 import type { Candidate } from "./models.js";
 import type { Policy } from "./models.js";
 import { createInterface } from "node:readline";
-import { existsSync, readdirSync, rmSync, statSync } from "node:fs";
-import { join } from "node:path";
+import { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, statSync } from "node:fs";
+import { join, dirname } from "node:path";
+import { execSync } from "node:child_process";
+import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
 
 const program = new Command();
 
@@ -952,6 +954,176 @@ program
     }
     console.log("");
     closeDb();
+  });
+
+// --- steward init ---
+program
+  .command("init")
+  .description("Setup wizard: check prerequisites, configure policy, build & link")
+  .option("--check", "Only run prerequisite checks, skip config and build")
+  .action(async (opts) => {
+    console.log("");
+    console.log("Token Steward — Setup");
+    console.log("======================");
+    console.log("");
+    console.log("Checking prerequisites...");
+
+    let hardFail = false;
+
+    // 1. Node.js version
+    const nodeVersion = process.version;
+    if (nodeVersion.startsWith("v22")) {
+      console.log(`  ✓ Node.js ${nodeVersion}`);
+    } else {
+      console.log(`  ✗ Node.js ${nodeVersion} — v22 required`);
+      console.log("    Fix: nvm install 22 && nvm use 22");
+      hardFail = true;
+    }
+
+    // 2. gh CLI installed
+    if (!hardFail) {
+      try {
+        const ghVersion = execSync("gh --version", { stdio: "pipe" }).toString().trim().split("\n")[0];
+        console.log(`  ✓ GitHub CLI (${ghVersion})`);
+      } catch {
+        console.log("  ✗ GitHub CLI (gh) not found");
+        console.log("    Fix: https://cli.github.com");
+        hardFail = true;
+      }
+    }
+
+    // 3. gh CLI authenticated
+    if (!hardFail) {
+      try {
+        const authOut = execSync("gh auth status", { stdio: "pipe", encoding: "utf-8" });
+        const userMatch = authOut.match(/Logged in to github\.com.*account (\S+)/i)
+          ?? authOut.match(/Logged in to github\.com as (\S+)/i)
+          ?? authOut.match(/account (\S+)/i);
+        const username = userMatch ? `as @${userMatch[1].replace(/\(.*\)/, "")}` : "";
+        console.log(`  ✓ GitHub CLI authenticated ${username}`);
+      } catch {
+        console.log("  ✗ GitHub CLI not authenticated");
+        console.log("    Fix: gh auth login");
+        hardFail = true;
+      }
+    }
+
+    // 4. Claude Code installed (soft check)
+    try {
+      const claudeVersion = execSync("claude --version", { stdio: "pipe" }).toString().trim().split("\n")[0];
+      console.log(`  ✓ Claude Code (${claudeVersion})`);
+    } catch {
+      console.log("  ⚠ Claude Code not found (optional — needed for 'steward work')");
+      console.log("    Install: https://docs.anthropic.com/en/docs/claude-code");
+    }
+
+    if (hardFail) {
+      console.log("");
+      console.log("Fix the issues above and re-run: steward init");
+      process.exit(1);
+    }
+
+    if (opts.check) {
+      console.log("");
+      console.log("All checks passed.");
+      return;
+    }
+
+    // --- Interactive policy config ---
+    console.log("");
+    console.log("Configure your contribution policy:");
+    console.log("");
+
+    const configPath = "config/policy.yaml";
+    let existing: Record<string, unknown> = {};
+    if (existsSync(configPath)) {
+      try {
+        existing = parseYaml(readFileSync(configPath, "utf-8")) ?? {};
+      } catch { /* ignore parse errors, use defaults */ }
+    }
+
+    const rl = createInterface({ input: process.stdin, output: process.stdout });
+    const ask = (prompt: string): Promise<string> =>
+      new Promise((resolve) => rl.question(prompt, resolve));
+
+    const defaultBudget = (existing.weekly_target_tokens as number) ?? 500000;
+    const defaultReserve = (existing.weekly_min_reserve_tokens as number) ?? 25000;
+    const limits = (existing.limits ?? {}) as Record<string, unknown>;
+    const defaultMaxTokens = (limits.max_tokens_per_run as number) ?? 60000;
+
+    const budgetAnswer = await ask(`  Weekly token budget [${defaultBudget}]: `);
+    const weeklyTarget = budgetAnswer.trim() ? parseInt(budgetAnswer.trim(), 10) : defaultBudget;
+
+    const reserveAnswer = await ask(`  Reserve tokens (keep for your own use) [${defaultReserve}]: `);
+    const weeklyReserve = reserveAnswer.trim() ? parseInt(reserveAnswer.trim(), 10) : defaultReserve;
+
+    const maxAnswer = await ask(`  Max tokens per issue [${defaultMaxTokens}]: `);
+    const maxPerRun = maxAnswer.trim() ? parseInt(maxAnswer.trim(), 10) : defaultMaxTokens;
+
+    rl.close();
+
+    // Build full policy YAML with defaults for unprompted fields
+    const filters = (existing.filters ?? {}) as Record<string, unknown>;
+    const safety = (existing.safety ?? {}) as Record<string, unknown>;
+    const policy = {
+      enabled: (existing.enabled as boolean) ?? true,
+      timezone: (existing.timezone as string) ?? Intl.DateTimeFormat().resolvedOptions().timeZone,
+      weekly_target_tokens: weeklyTarget,
+      weekly_min_reserve_tokens: weeklyReserve,
+      schedule: existing.schedule ?? [
+        { day: "FRI", start: "18:00", end: "23:59" },
+        { day: "SAT", start: "09:00", end: "23:59" },
+        { day: "SUN", start: "09:00", end: "23:59" },
+      ],
+      filters: {
+        categories_allow: filters.categories_allow ?? ["developer-tools", "documentation", "security", "ai-ml"],
+        tags_allow: filters.tags_allow ?? [],
+        repos_allow: filters.repos_allow ?? [],
+        repos_deny: filters.repos_deny ?? [],
+        min_confidence: (filters.min_confidence as number) ?? 0.40,
+      },
+      limits: {
+        max_concurrency: (limits.max_concurrency as number) ?? 2,
+        max_tokens_per_run: maxPerRun,
+        max_runs_per_day: (limits.max_runs_per_day as number) ?? 6,
+      },
+      safety: {
+        pause_on_ci_failures_consecutive: (safety.pause_on_ci_failures_consecutive as number) ?? 3,
+        pause_on_failure_rate_percent: (safety.pause_on_failure_rate_percent as number) ?? 50,
+        max_stale_usage_minutes: (safety.max_stale_usage_minutes as number) ?? 30,
+      },
+    };
+
+    mkdirSync(dirname(configPath), { recursive: true });
+    writeFileSync(configPath, stringifyYaml(policy, { lineWidth: 120 }));
+    console.log("");
+    console.log(`Policy saved to ${configPath}`);
+
+    // --- Build + link ---
+    console.log("");
+    console.log("Building...");
+
+    try {
+      execSync("npm run build", { stdio: "pipe" });
+      console.log("  ✓ TypeScript compiled");
+    } catch (err) {
+      console.log("  ✗ Build failed");
+      const msg = err instanceof Error && "stderr" in err ? (err as { stderr: Buffer }).stderr?.toString() : "";
+      if (msg) console.log(msg);
+      console.log("    Try: npm install && npm run build");
+      process.exit(1);
+    }
+
+    try {
+      execSync("npm link", { stdio: "pipe" });
+      console.log("  ✓ CLI linked as 'steward'");
+    } catch {
+      console.log("  ⚠ npm link failed (you may need sudo or to fix permissions)");
+    }
+
+    console.log("");
+    console.log("Ready! Run 'steward discover' to find your first issue.");
+    console.log("");
   });
 
 program.parse();

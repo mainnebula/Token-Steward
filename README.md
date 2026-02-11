@@ -21,16 +21,18 @@ steward submit            # Review your changes and open a draft PR
 ## Setup
 
 ```bash
-# Prerequisites: Node.js 22+, gh CLI (authenticated)
-npm install
-npm run build
+# Prerequisites: Node.js 22+, gh CLI (authenticated), Claude Code (optional)
+git clone <repo-url> token-steward && cd token-steward
+nvm install 22 && nvm use 22
+npm install && npm run build
 
-# Configure your policy
-edit config/policy.yaml    # budget, schedule, filters
-
-# Link the CLI
-npm link
+# Run the setup wizard
+node dist/cli.js init
 ```
+
+`steward init` checks your environment, walks you through policy config, builds the project, and links the CLI globally. After that, `steward discover` is all you need.
+
+Already set up? Run `steward init --check` to verify prerequisites without changing anything.
 
 ## Configuration
 
@@ -83,13 +85,17 @@ Token Steward ranks issues so you spend time on the ones that matter. Each issue
 ## Other commands
 
 ```bash
-steward status       # Show current state
-steward usage        # Check token budget
-steward runs         # List recent contributions
-steward cancel <id>  # Cancel a run
-steward clean        # Remove workspace clones to free disk space
-steward pause        # Pause autopilot
-steward resume       # Resume autopilot
+steward init             # Setup wizard (prereqs, config, build)
+steward init --check     # Verify prerequisites only
+steward status           # Show current state
+steward usage            # Check token budget
+steward runs             # List recent contributions
+steward stats            # Show contribution statistics
+steward cancel <id>      # Cancel a run
+steward clean            # Remove workspace clones to free disk space
+steward export           # Export registry and scored issues as JSON
+steward pause            # Pause autopilot
+steward resume           # Resume autopilot
 ```
 
 ## Roadmap
