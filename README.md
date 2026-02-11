@@ -21,13 +21,9 @@ steward submit            # Review your changes and open a draft PR
 ## Setup
 
 ```bash
-# Prerequisites: Node.js 22+, gh CLI (authenticated), Claude Code (optional)
 git clone <repo-url> token-steward && cd token-steward
 nvm install 22 && nvm use 22
-npm install && npm run build
-
-# Run the setup wizard
-node dist/cli.js init
+npm install && npm run setup
 ```
 
 `steward init` checks your environment, walks you through policy config, builds the project, and links the CLI globally. After that, `steward discover` is all you need.
