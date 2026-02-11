@@ -14,6 +14,8 @@ steward submit            # Review your changes and open a draft PR
 
 **Discover.** Find interesting, important open-source projects that actually need help. Token Steward uses the GitHub API and your curated registry to find open issues, then scores them by impact and feasibility. You see the ones where your contribution will matter most. Pick one and go.
 
+**Propose.** For larger issues, Claude analyzes the codebase and posts a proposal comment on the issue before writing any code. The maintainer can approve, suggest changes, or decline — so you don't burn tokens on an approach they'd reject. This happens automatically for issues estimated above 30k tokens (configurable via `propose_first` in your policy).
+
 **Work.** Solve real issues alongside Claude Code. Token Steward sets up everything (forks the repo, creates a branch, pulls in the issue details) then drops you into a Claude Code session with full context already loaded. Just ask Claude to get started. It already knows the issue, the codebase, and what needs to happen.
 
 **Submit.** You're the human in the loop. Review the changes, run the tests, and when you're satisfied, submit quality code to a project that needs it. Token Steward pushes your branch and opens a draft PR. Safe to run multiple times.
@@ -54,6 +56,11 @@ limits:
   max_concurrency: 2
   max_tokens_per_run: 60000
   max_runs_per_day: 6
+
+# auto = propose first for issues >30k tokens
+# always = always propose before coding
+# never = skip straight to implementation
+propose_first: auto
 ```
 
 **`config/registry.yaml`** is your list of projects you want to contribute to. Each entry specifies which issue labels to look for:
