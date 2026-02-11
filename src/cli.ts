@@ -16,7 +16,8 @@ import {
 import { pauseAutopilot, resumeAutopilot, getGuardrailState } from "./guardrails.js";
 import { getRemainingBudget } from "./policy_store.js";
 import { getLogger } from "./audit_log.js";
-import { closeDb } from "./db.js";
+import { getDb, closeDb } from "./db.js";
+import { runExport, writeExportFiles } from "./export_data.js";
 import { createInterface } from "node:readline";
 import { existsSync, readdirSync, rmSync, statSync } from "node:fs";
 import { join } from "node:path";
@@ -655,5 +656,213 @@ function formatBytes(bytes: number): string {
   if (bytes < 1024 * 1024 * 1024) return `${(bytes / (1024 * 1024)).toFixed(1)}M`;
   return `${(bytes / (1024 * 1024 * 1024)).toFixed(1)}G`;
 }
+
+// --- steward export ---
+program
+  .command("export")
+  .description("Export registry and scored issues as JSON for the web app")
+  .option("--out-dir <path>", "Directory to write JSON files (default: stdout)")
+  .action(async (opts) => {
+    const result = await runExport();
+
+    if (opts.outDir) {
+      writeExportFiles(result, opts.outDir);
+      console.log(`Exported ${result.registry.length} repos and ${result.scoredIssues.length} scored issues to ${opts.outDir}`);
+    } else {
+      // Write to stdout as a single JSON object
+      console.log(JSON.stringify({
+        registry: {
+          generated_at: new Date().toISOString(),
+          repo_count: result.registry.length,
+          repositories: result.registry,
+        },
+        scored_issues: {
+          generated_at: new Date().toISOString(),
+          issue_count: result.scoredIssues.length,
+          issues: result.scoredIssues,
+        },
+      }, null, 2));
+    }
+    closeDb();
+  });
+
+// --- steward stats ---
+program
+  .command("stats")
+  .description("Show contribution statistics")
+  .option("--json", "Output as JSON for scripting", false)
+  .action(async (opts) => {
+    const db = getDb();
+    const excluded = `('queued', 'running', 'in_progress')`;
+
+    // Summary stats
+    const summary = db.prepare(`
+      SELECT
+        COUNT(*) AS total_runs,
+        SUM(CASE WHEN status = 'succeeded' THEN 1 ELSE 0 END) AS succeeded,
+        SUM(CASE WHEN status = 'failed' THEN 1 ELSE 0 END) AS failed,
+        SUM(CASE WHEN status = 'no_changes' THEN 1 ELSE 0 END) AS no_changes,
+        SUM(CASE WHEN status = 'canceled' THEN 1 ELSE 0 END) AS canceled,
+        SUM(CASE WHEN pr_url IS NOT NULL THEN 1 ELSE 0 END) AS prs_opened,
+        COUNT(DISTINCT candidate_repo) AS unique_repos,
+        COUNT(DISTINCT candidate_issue || ':' || candidate_repo) AS unique_issues,
+        SUM(tokens_consumed) AS total_tokens,
+        MIN(created_at) AS first_run,
+        MAX(created_at) AS last_run
+      FROM runs
+      WHERE status NOT IN ${excluded}
+    `).get() as {
+      total_runs: number;
+      succeeded: number;
+      failed: number;
+      no_changes: number;
+      canceled: number;
+      prs_opened: number;
+      unique_repos: number;
+      unique_issues: number;
+      total_tokens: number;
+      first_run: string | null;
+      last_run: string | null;
+    };
+
+    if (summary.total_runs === 0) {
+      if (opts.json) {
+        console.log(JSON.stringify({ summary: { total_runs: 0 }, repos: [], latest_prs: [] }, null, 2));
+      } else {
+        console.log("");
+        console.log("No contributions yet.");
+        console.log("");
+        console.log("Get started:");
+        console.log("  steward discover    Find issues to work on");
+        console.log("  steward work        Start working on an issue");
+      }
+      closeDb();
+      return;
+    }
+
+    // Per-repo breakdown
+    const repos = db.prepare(`
+      SELECT
+        candidate_repo AS repo,
+        COUNT(*) AS runs,
+        SUM(CASE WHEN status = 'succeeded' THEN 1 ELSE 0 END) AS succeeded,
+        SUM(CASE WHEN pr_url IS NOT NULL THEN 1 ELSE 0 END) AS prs,
+        SUM(tokens_consumed) AS tokens
+      FROM runs
+      WHERE status NOT IN ${excluded}
+      GROUP BY candidate_repo
+      ORDER BY runs DESC
+    `).all() as Array<{
+      repo: string;
+      runs: number;
+      succeeded: number;
+      prs: number;
+      tokens: number;
+    }>;
+
+    // Latest PRs
+    const latestPrs = db.prepare(`
+      SELECT candidate_repo AS repo, candidate_issue AS issue, pr_url
+      FROM runs
+      WHERE pr_url IS NOT NULL AND status NOT IN ${excluded}
+      ORDER BY created_at DESC
+      LIMIT 5
+    `).all() as Array<{
+      repo: string;
+      issue: number;
+      pr_url: string;
+    }>;
+
+    // Streak: consecutive succeeded from most recent finished run
+    const recentStatuses = db.prepare(`
+      SELECT status FROM runs
+      WHERE status NOT IN ${excluded}
+      ORDER BY created_at DESC
+    `).all() as Array<{ status: string }>;
+
+    let streak = 0;
+    for (const r of recentStatuses) {
+      if (r.status === "succeeded") streak++;
+      else break;
+    }
+
+    if (opts.json) {
+      console.log(JSON.stringify({
+        summary: {
+          total_runs: summary.total_runs,
+          succeeded: summary.succeeded,
+          failed: summary.failed,
+          no_changes: summary.no_changes,
+          canceled: summary.canceled,
+          prs_opened: summary.prs_opened,
+          unique_repos: summary.unique_repos,
+          unique_issues: summary.unique_issues,
+          total_tokens: summary.total_tokens,
+          first_run: summary.first_run,
+          last_run: summary.last_run,
+          success_rate: parseFloat(((summary.succeeded / summary.total_runs) * 100).toFixed(1)),
+          streak,
+        },
+        repos,
+        latest_prs: latestPrs,
+      }, null, 2));
+      closeDb();
+      return;
+    }
+
+    const successRate = ((summary.succeeded / summary.total_runs) * 100).toFixed(1);
+
+    console.log("");
+    console.log("Token Steward — Contribution Stats");
+    console.log("====================================");
+    console.log("");
+    console.log(
+      `  Total runs       ${String(summary.total_runs).padEnd(12)}` +
+      `Success rate     ${successRate}%`
+    );
+    console.log(
+      `  PRs opened       ${String(summary.prs_opened).padEnd(12)}` +
+      `Unique repos      ${summary.unique_repos}`
+    );
+    console.log(
+      `  Issues worked    ${String(summary.unique_issues).padEnd(12)}` +
+      `Tokens used      ${summary.total_tokens.toLocaleString()}`
+    );
+    console.log("");
+    const firstDate = summary.first_run ? summary.first_run.slice(0, 10) : "—";
+    const lastDate = summary.last_run ? summary.last_run.slice(0, 10) : "—";
+    console.log(
+      `  First run    ${firstDate.padEnd(16)}` +
+      `Latest run    ${lastDate}`
+    );
+    if (streak > 0) {
+      console.log(`  Current streak   ${streak} succeeded`);
+    }
+
+    console.log("");
+    console.log("Per-repo breakdown");
+    console.log("------------------");
+    console.log(
+      `  ${"Repo".padEnd(30)}  ${"Runs".padStart(4)}  ${"OK".padStart(3)}  ${"PRs".padStart(4)}  ${"Tokens".padStart(10)}`
+    );
+    for (const r of repos) {
+      const name = r.repo.length > 30 ? r.repo.slice(0, 27) + "..." : r.repo.padEnd(30);
+      console.log(
+        `  ${name}  ${String(r.runs).padStart(4)}  ${String(r.succeeded).padStart(3)}  ${String(r.prs).padStart(4)}  ${r.tokens.toLocaleString().padStart(10)}`
+      );
+    }
+
+    if (latestPrs.length > 0) {
+      console.log("");
+      console.log("Latest PRs");
+      console.log("----------");
+      for (const pr of latestPrs) {
+        const label = `${pr.repo}#${pr.issue}`;
+        console.log(`  ${label.padEnd(40)}  ${pr.pr_url}`);
+      }
+    }
+    console.log("");
+    closeDb();
+  });
 
 program.parse();
