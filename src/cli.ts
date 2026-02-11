@@ -421,49 +421,66 @@ program
       return;
     }
 
-    // 7. Post-session: check for commits
+    // 7. Post-session: check if PR was already opened during the session
     console.log("");
-    const hasCommits = checkForNewCommits(repoDir, run.branch);
+    const existingPr = findExistingPR(run.candidate_repo, run.branch);
 
-    if (hasCommits) {
-      const rl = createInterface({ input: process.stdin, output: process.stdout });
-      const answer = await new Promise<string>((resolve) => {
-        rl.question("Commits detected. Push branch and open draft PR? (Y/n) ", resolve);
+    if (existingPr) {
+      // Claude Code (or the user) already pushed and opened a PR
+      updateRunStatus(run.id, {
+        status: "succeeded",
+        pr_url: existingPr,
+        finished_at: new Date().toISOString(),
       });
-      rl.close();
+      console.log(`PR: ${existingPr}`);
+      console.log("");
+      console.log("Next steps:");
+      console.log(`  steward discover        Pick another issue`);
+      console.log(`  steward clean           Free up disk space`);
+    } else {
+      const hasCommits = checkForNewCommits(repoDir, run.branch);
 
-      if (answer.toLowerCase() !== "n") {
-        console.log("Pushing branch...");
-        pushBranch(repoDir, run.branch);
-        console.log("Opening draft PR...");
-        const prUrl = openDraftPR(run, repoDir);
-        updateRunStatus(run.id, {
-          status: "succeeded",
-          pr_url: prUrl,
-          finished_at: new Date().toISOString(),
+      if (hasCommits) {
+        const rl = createInterface({ input: process.stdin, output: process.stdout });
+        const answer = await new Promise<string>((resolve) => {
+          rl.question("Commits detected. Push branch and open draft PR? (Y/n) ", resolve);
         });
-        if (prUrl) {
-          console.log(`PR: ${prUrl}`);
+        rl.close();
+
+        if (answer.toLowerCase() !== "n") {
+          console.log("Pushing branch...");
+          pushBranch(repoDir, run.branch);
+          console.log("Opening draft PR...");
+          const prUrl = openDraftPR(run, repoDir);
+          updateRunStatus(run.id, {
+            status: "succeeded",
+            pr_url: prUrl,
+            finished_at: new Date().toISOString(),
+          });
+          if (prUrl) {
+            console.log(`PR: ${prUrl}`);
+            console.log("");
+            console.log("Next steps:");
+            console.log(`  steward discover        Pick another issue`);
+            console.log(`  steward clean           Free up disk space`);
+          } else {
+            console.log("PR creation failed. Retry with:");
+            console.log(`  steward submit ${run.id}`);
+          }
         } else {
-          console.log("PR creation failed. Retry with:");
+          console.log("");
+          console.log("When you're ready:");
           console.log(`  steward submit ${run.id}`);
         }
       } else {
+        console.log(`No commits found on branch ${run.branch}.`);
         console.log("");
-        console.log("When you're ready:");
+        console.log("To continue working:");
+        console.log(`  cd ${repoDir} && claude`);
+        console.log("");
+        console.log("When ready to submit:");
         console.log(`  steward submit ${run.id}`);
       }
-    } else {
-      console.log(`No commits found on branch ${run.branch}.`);
-      console.log("");
-      console.log("To continue working:");
-      console.log(`  cd ${repoDir} && claude`);
-      console.log("");
-      console.log("When ready to submit:");
-      console.log(`  steward submit ${run.id}`);
-      console.log("");
-      console.log("To check all runs:");
-      console.log("  steward runs");
     }
     closeDb();
   });

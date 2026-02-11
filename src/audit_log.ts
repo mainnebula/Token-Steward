@@ -13,7 +13,7 @@ export function getLogger(): pino.Logger {
     logger = pino({
       transport: {
         target: "pino-pretty",
-        options: { colorize: true, translateTime: "SYS:HH:MM:ss" },
+        options: { colorize: true, translateTime: "SYS:HH:MM:ss", destination: 2 },
       },
     });
   }
