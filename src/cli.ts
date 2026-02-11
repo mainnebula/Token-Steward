@@ -18,7 +18,7 @@ import { getRemainingBudget } from "./policy_store.js";
 import { getLogger } from "./audit_log.js";
 import { closeDb } from "./db.js";
 import { createInterface } from "node:readline";
-import { existsSync } from "node:fs";
+import { existsSync, readdirSync, rmSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 const program = new Command();
@@ -550,5 +550,93 @@ program
     else console.log("PR creation may have failed. Check GitHub manually.");
     closeDb();
   });
+
+// --- steward clean ---
+program
+  .command("clean")
+  .description("Remove workspace clones to free disk space")
+  .option("--all", "Remove all workspaces without prompting", false)
+  .option("--dry-run", "Show what would be removed without deleting", false)
+  .action(async (opts) => {
+    const wsDir = "workspace";
+    if (!existsSync(wsDir)) {
+      console.log("No workspace directory found. Nothing to clean.");
+      return;
+    }
+
+    const entries = readdirSync(wsDir).filter((e) => {
+      const full = join(wsDir, e);
+      return statSync(full).isDirectory() && existsSync(join(full, ".git"));
+    });
+
+    if (entries.length === 0) {
+      console.log("No workspace clones found.");
+      return;
+    }
+
+    // Show sizes
+    let totalBytes = 0;
+    const sizes: Array<{ name: string; path: string; size: string; bytes: number }> = [];
+    for (const entry of entries) {
+      const full = join(wsDir, entry);
+      const bytes = getDirSize(full);
+      totalBytes += bytes;
+      sizes.push({ name: entry.replace("__", "/"), path: full, size: formatBytes(bytes), bytes });
+    }
+
+    console.log("");
+    console.log(`Workspaces (${sizes.length}):`);
+    for (const s of sizes) {
+      console.log(`  ${s.size.padStart(8)}  ${s.name}`);
+    }
+    console.log(`  ${formatBytes(totalBytes).padStart(8)}  total`);
+    console.log("");
+
+    if (opts.dryRun) {
+      console.log("Dry run — nothing removed.");
+      return;
+    }
+
+    if (!opts.all) {
+      const rl = createInterface({ input: process.stdin, output: process.stdout });
+      const answer = await new Promise<string>((resolve) => {
+        rl.question("Remove all workspaces? (y/N) ", resolve);
+      });
+      rl.close();
+      if (answer.toLowerCase() !== "y") {
+        console.log("Canceled.");
+        return;
+      }
+    }
+
+    for (const s of sizes) {
+      rmSync(s.path, { recursive: true, force: true });
+      console.log(`  Removed ${s.name} (${s.size})`);
+    }
+    console.log("Done.");
+  });
+
+function getDirSize(dir: string): number {
+  let size = 0;
+  try {
+    const entries = readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const full = join(dir, entry.name);
+      if (entry.isDirectory()) {
+        size += getDirSize(full);
+      } else {
+        size += statSync(full).size;
+      }
+    }
+  } catch { /* permission errors, symlinks, etc */ }
+  return size;
+}
+
+function formatBytes(bytes: number): string {
+  if (bytes < 1024) return `${bytes}B`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(0)}K`;
+  if (bytes < 1024 * 1024 * 1024) return `${(bytes / (1024 * 1024)).toFixed(1)}M`;
+  return `${(bytes / (1024 * 1024 * 1024)).toFixed(1)}G`;
+}
 
 program.parse();

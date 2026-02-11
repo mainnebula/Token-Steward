@@ -87,6 +87,7 @@ steward status       # Show current state
 steward usage        # Check token budget
 steward runs         # List recent contributions
 steward cancel <id>  # Cancel a run
+steward clean        # Remove workspace clones to free disk space
 steward pause        # Pause autopilot
 steward resume       # Resume autopilot
 ```
