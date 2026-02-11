@@ -149,32 +149,37 @@ export async function prepareRepo(repoSlug: string, branch: string): Promise<str
     if (!remotes.includes("upstream")) {
       // Pre-fork clone: origin points to upstream. Fork and remap remotes.
       // gh repo fork --remote adds a "fork" remote pointing to user's fork
-      execSync(`gh repo fork "${repoSlug}" --remote --remote-name fork`, { cwd: repoDir, timeout: 60000 });
+      execSync(`gh repo fork "${repoSlug}" --remote --remote-name fork`, { cwd: repoDir, timeout: 60000, stdio: ["pipe", "pipe", "pipe"] });
       // Swap: origin (upstream) -> upstream, fork (user's fork) -> origin
       execSync("git remote rename origin upstream", { cwd: repoDir, timeout: 5000 });
       execSync("git remote rename fork origin", { cwd: repoDir, timeout: 5000 });
     }
-    execSync("git fetch upstream", { cwd: repoDir, timeout: 30000 });
+    execSync("git fetch upstream --quiet --no-tags", { cwd: repoDir, timeout: 30000, stdio: ["pipe", "pipe", "pipe"] });
     execSync("git checkout main || git checkout master", {
       cwd: repoDir,
       timeout: 10000,
       shell: "/bin/bash",
+      stdio: ["pipe", "pipe", "pipe"],
     });
     execSync("git pull --ff-only upstream main || git pull --ff-only upstream master", {
       cwd: repoDir,
       timeout: 30000,
       shell: "/bin/bash",
+      stdio: ["pipe", "pipe", "pipe"],
     });
   } else {
     // Fork (idempotent), then clone the fork into our workspace dir.
-    execSync(`gh repo fork "${repoSlug}" --default-branch-only`, { timeout: 60000 });
+    execSync(`gh repo fork "${repoSlug}" --default-branch-only`, { timeout: 60000, stdio: ["pipe", "pipe", "pipe"] });
     // Determine the user's fork slug
     const ghUser = execSync("gh api user --jq .login", { encoding: "utf-8", timeout: 10000 }).trim();
     const repoName = repoSlug.split("/")[1];
     const forkSlug = `${ghUser}/${repoName}`;
-    execSync(`gh repo clone "${forkSlug}" "${repoDir}" -- --depth=50`, { timeout: 90000 });
-    // Add upstream remote pointing to original repo
-    execSync(`git remote add upstream "https://github.com/${repoSlug}.git"`, { cwd: repoDir, timeout: 5000 });
+    execSync(`gh repo clone "${forkSlug}" "${repoDir}" -- --depth=50 --quiet --no-tags`, { timeout: 90000, stdio: ["pipe", "pipe", "pipe"] });
+    // Add upstream remote pointing to original repo (skip if already set by gh clone)
+    const cloneRemotes = execSync("git remote", { cwd: repoDir, encoding: "utf-8" }).trim().split("\n");
+    if (!cloneRemotes.includes("upstream")) {
+      execSync(`git remote add upstream "https://github.com/${repoSlug}.git"`, { cwd: repoDir, timeout: 5000 });
+    }
   }
 
   // Create feature branch

@@ -18,6 +18,8 @@ import { getRemainingBudget } from "./policy_store.js";
 import { getLogger } from "./audit_log.js";
 import { getDb, closeDb } from "./db.js";
 import { runExport, writeExportFiles } from "./export_data.js";
+import type { Candidate } from "./models.js";
+import type { Policy } from "./models.js";
 import { createInterface } from "node:readline";
 import { existsSync, readdirSync, rmSync, statSync } from "node:fs";
 import { join } from "node:path";
@@ -262,16 +264,170 @@ program
     closeDb();
   });
 
+// --- startWork helper (shared by discover pick + work command) ---
+async function startWork(candidate: Candidate, policy: Policy): Promise<void> {
+  // 1. Record the run in DB
+  const run = queueRun(candidate);
+  updateRunStatus(run.id, { status: "in_progress", started_at: new Date().toISOString() });
+
+  console.log(`Run ${run.id} started for ${candidate.repo_slug}#${candidate.issue_number}`);
+  console.log(`Branch: ${run.branch}`);
+
+  // 2. Clone/fetch repo and create branch
+  console.log("Preparing workspace...");
+  const repoDir = await prepareRepo(candidate.repo_slug, run.branch);
+
+  // 3. Fetch issue body
+  console.log("Fetching issue details...");
+  const issueBody = getIssueBody(candidate.repo_slug, candidate.issue_number);
+
+  // 4. Write context file
+  writeContextFile(repoDir, run, issueBody);
+  console.log("Wrote STEWARD_CONTEXT.md");
+
+  // 5. Print summary
+  console.log("");
+  console.log(`Issue: ${run.issue_url}`);
+  console.log(`Workspace: ${repoDir}`);
+  console.log("");
+  console.log("Launching Claude Code...");
+  console.log("");
+
+  // 6. Launch interactive claude
+  const exitCode = launchInteractiveClaude(repoDir);
+
+  if (exitCode !== 0 && !process.stdin.isTTY) {
+    console.log("");
+    console.log("Next steps:");
+    console.log(`  cd ${repoDir}`);
+    console.log(`  claude`);
+    console.log(`  steward submit ${run.id}`);
+    closeDb();
+    return;
+  }
+
+  // 7. Post-session: check if PR was already opened during the session
+  console.log("");
+  const existingPr = findExistingPR(run.candidate_repo, run.branch);
+
+  if (existingPr) {
+    updateRunStatus(run.id, {
+      status: "succeeded",
+      pr_url: existingPr,
+      finished_at: new Date().toISOString(),
+    });
+    console.log(`PR: ${existingPr}`);
+    console.log("");
+    console.log("Next steps:");
+    console.log(`  steward discover        Pick another issue`);
+    console.log(`  steward clean           Free up disk space`);
+  } else {
+    const hasCommits = checkForNewCommits(repoDir, run.branch);
+
+    if (hasCommits) {
+      const rl = createInterface({ input: process.stdin, output: process.stdout });
+      const answer = await new Promise<string>((resolve) => {
+        rl.question("Commits detected. Push branch and open draft PR? (Y/n) ", resolve);
+      });
+      rl.close();
+
+      if (answer.toLowerCase() !== "n") {
+        console.log("Pushing branch...");
+        pushBranch(repoDir, run.branch);
+        console.log("Opening draft PR...");
+        const prUrl = openDraftPR(run, repoDir);
+        updateRunStatus(run.id, {
+          status: "succeeded",
+          pr_url: prUrl,
+          finished_at: new Date().toISOString(),
+        });
+        if (prUrl) {
+          console.log(`PR: ${prUrl}`);
+          console.log("");
+          console.log("Next steps:");
+          console.log(`  steward discover        Pick another issue`);
+          console.log(`  steward clean           Free up disk space`);
+        } else {
+          console.log("PR creation failed. Retry with:");
+          console.log(`  steward submit ${run.id}`);
+        }
+      } else {
+        console.log("");
+        console.log("When you're ready:");
+        console.log(`  steward submit ${run.id}`);
+      }
+    } else {
+      console.log(`No commits found on branch ${run.branch}.`);
+      console.log("");
+      console.log("To continue working:");
+      console.log(`  cd ${repoDir} && claude`);
+      console.log("");
+      console.log("When ready to submit:");
+      console.log(`  steward submit ${run.id}`);
+    }
+  }
+}
+
+// --- display helpers ---
+function formatStars(stars: number): string {
+  if (stars < 1000) return `★ ${stars}`;
+  return `★ ${(stars / 1000).toFixed(1)}k`;
+}
+
+function formatLabels(candidate: Candidate): string {
+  const labels: string[] = [];
+  if (candidate.is_bug && !candidate.issue_labels.some((l) => l.toLowerCase() === "bug")) {
+    labels.push("bug");
+  }
+  labels.push(...candidate.issue_labels);
+  return labels.slice(0, 3).join(" · ");
+}
+
+function printCandidateCards(candidates: Candidate[], termWidth: number): void {
+  for (let i = 0; i < candidates.length; i++) {
+    const c = candidates[i];
+    if (i > 0) console.log("");
+
+    // Line 1: number + repo#issue (left) + stars (right)
+    const num = String(i + 1).padStart(2);
+    const repoIssue = `${c.repo_slug} #${c.issue_number}`;
+    const stars = formatStars(c.repo_stars);
+    const line1Left = ` ${num}  ${repoIssue}`;
+    const gap1 = Math.max(2, termWidth - line1Left.length - stars.length);
+    console.log(`${line1Left}${" ".repeat(gap1)}${stars}`);
+
+    // Line 2: full issue title (indented to align with text above)
+    const indent = "     ";
+    const maxTitleWidth = termWidth - indent.length;
+    const title = c.issue_title.length > maxTitleWidth
+      ? c.issue_title.slice(0, maxTitleWidth - 3) + "..."
+      : c.issue_title;
+    console.log(`${indent}${title}`);
+
+    // Line 3: labels (left) + estimated tokens (right)
+    const labels = formatLabels(c);
+    const tokens = `~${c.est_tokens.toLocaleString()} tokens`;
+    const line3Left = `${indent}${labels}`;
+    const gap3 = Math.max(2, termWidth - line3Left.length - tokens.length);
+    console.log(`${line3Left}${" ".repeat(gap3)}${tokens}`);
+  }
+}
+
 // --- steward discover ---
 program
   .command("discover")
   .description("Discover, score, and rank candidate issues from registry repos")
-  .option("--limit <n>", "Max candidates to show", "20")
+  .option("--limit <n>", "Max candidates to show")
   .option("--json", "Output as JSON for scripting", false)
+  .option("--no-pick", "Show cards without interactive prompt")
   .option("--repo <slug>", "Filter to a specific repo (owner/repo)")
   .action(async (opts) => {
     const policy = loadPolicy();
+    const isTTY = process.stderr.isTTY;
+
+    if (isTTY) process.stderr.write("Syncing registry...\r");
     const registry = await syncRegistry();
+    if (isTTY) process.stderr.write("\x1b[2K");
     if (!registry) {
       console.error("Failed to fetch registry");
       closeDb();
@@ -288,15 +444,22 @@ program
       }
     }
 
+    if (isTTY) process.stderr.write(`Searching ${activeRepos.length} repos for issues...\r`);
     const candidates = await discoverCandidates(activeRepos);
+    if (isTTY) process.stderr.write("\x1b[2K");
 
+    if (isTTY) process.stderr.write(`Scoring ${candidates.length} candidates...\r`);
     const usage = getLatestUsage();
     const remainingBudget = usage
       ? getRemainingBudget(policy, usage.tokens_used)
       : policy.weekly_target_tokens - policy.weekly_min_reserve_tokens;
 
     const ranked = rankCandidates(candidates, policy, remainingBudget, policy.limits.max_concurrency);
-    const limit = parseInt(opts.limit, 10);
+    if (isTTY) process.stderr.write("\x1b[2K");
+
+    // Interactive mode defaults to 5, --no-pick / piped defaults to 20
+    const interactive = opts.pick !== false && process.stdout.isTTY && !opts.json;
+    const limit = opts.limit ? parseInt(opts.limit, 10) : (interactive ? 5 : 20);
     const limited = ranked.slice(0, limit);
 
     if (opts.json) {
@@ -317,30 +480,57 @@ program
       return;
     }
 
+    if (limited.length === 0) {
+      console.log("No candidates found.");
+      closeDb();
+      return;
+    }
+
+    const termWidth = process.stdout.columns || 80;
+
     console.log("");
-    console.log(`Token Steward — Candidates (${ranked.length} found, showing top ${limited.length})`);
+    console.log(`Token Steward — ${ranked.length} issues found`);
     console.log(`Budget: ~${remainingBudget.toLocaleString()} tokens remaining`);
     console.log("");
-    console.log(
-      ` ${"#".padStart(2)}  ${"Score".padEnd(6)}  ${"Repo".padEnd(28)}  ${"Issue".padEnd(7)}  ${"Title".padEnd(40)}  Est Tokens`,
-    );
 
-    for (let i = 0; i < limited.length; i++) {
-      const c = limited[i];
-      const num = String(i + 1).padStart(2);
-      const score = c.score.toFixed(2).padEnd(6);
-      const repo = c.repo_slug.length > 28 ? c.repo_slug.slice(0, 25) + "..." : c.repo_slug.padEnd(28);
-      const issue = `#${c.issue_number}`.padEnd(7);
-      const title = c.issue_title.length > 40 ? c.issue_title.slice(0, 37) + "..." : c.issue_title.padEnd(40);
-      const tokens = `~${c.est_tokens.toLocaleString()}`;
-      console.log(` ${num}  ${score}  ${repo}  ${issue}  ${title}  ${tokens}`);
-    }
+    printCandidateCards(limited, termWidth);
 
-    if (limited.length > 0) {
-      const top = limited[0];
+    if (!interactive) {
       console.log("");
-      console.log(`Run: steward work ${top.repo_slug}#${top.issue_number}`);
+      closeDb();
+      return;
     }
+
+    // Pick-and-go prompt
+    console.log("");
+    const rl = createInterface({ input: process.stdin, output: process.stdout });
+    const pick = await new Promise<number | null>((resolve) => {
+      rl.on("close", () => resolve(null)); // Ctrl+C
+      const ask = () => {
+        rl.question(`Pick [1-${limited.length}, Enter=1, q=quit]: `, (answer) => {
+          const trimmed = answer.trim();
+          if (trimmed === "q") { rl.close(); return; }
+          if (trimmed === "") { resolve(0); rl.close(); return; }
+          const n = parseInt(trimmed, 10);
+          if (isNaN(n) || n < 1 || n > limited.length) {
+            ask();
+            return;
+          }
+          resolve(n - 1);
+          rl.close();
+        });
+      };
+      ask();
+    });
+
+    if (pick === null) {
+      closeDb();
+      return;
+    }
+
+    const chosen = limited[pick];
+    console.log("");
+    await startWork(chosen, policy);
     closeDb();
   });
 
@@ -359,14 +549,14 @@ program
     const [, repoSlug, issueNum] = match;
     const issueNumber = parseInt(issueNum, 10);
 
-    const candidate = {
+    const candidate: Candidate = {
       repo_slug: repoSlug,
       issue_number: issueNumber,
       issue_title: "(interactive)",
       issue_url: `https://github.com/${repoSlug}/issues/${issueNum}`,
-      issue_labels: [] as string[],
+      issue_labels: [],
       category: "",
-      tags: [] as string[],
+      tags: [],
       score: 1.0,
       est_tokens: policy.limits.max_tokens_per_run,
       discovered_at: new Date().toISOString(),
@@ -381,108 +571,7 @@ program
       llm_receptivity: 1.0,
     };
 
-    // 1. Record the run in DB
-    const run = queueRun(candidate);
-    updateRunStatus(run.id, { status: "in_progress", started_at: new Date().toISOString() });
-
-    console.log(`Run ${run.id} started for ${repoSlug}#${issueNumber}`);
-    console.log(`Branch: ${run.branch}`);
-
-    // 2. Clone/fetch repo and create branch
-    console.log("Preparing workspace...");
-    const repoDir = await prepareRepo(repoSlug, run.branch);
-
-    // 3. Fetch issue body
-    console.log("Fetching issue details...");
-    const issueBody = getIssueBody(repoSlug, issueNumber);
-
-    // 4. Write context file
-    writeContextFile(repoDir, run, issueBody);
-    console.log("Wrote STEWARD_CONTEXT.md");
-
-    // 5. Print summary
-    console.log("");
-    console.log(`Issue: ${run.issue_url}`);
-    console.log(`Workspace: ${repoDir}`);
-    console.log("");
-    console.log("Launching Claude Code...");
-    console.log("");
-
-    // 6. Launch interactive claude
-    const exitCode = launchInteractiveClaude(repoDir);
-
-    if (exitCode !== 0 && !process.stdin.isTTY) {
-      // TTY check failed inside launchInteractiveClaude
-      console.log("");
-      console.log("Next steps:");
-      console.log(`  cd ${repoDir}`);
-      console.log(`  claude`);
-      console.log(`  steward submit ${run.id}`);
-      closeDb();
-      return;
-    }
-
-    // 7. Post-session: check if PR was already opened during the session
-    console.log("");
-    const existingPr = findExistingPR(run.candidate_repo, run.branch);
-
-    if (existingPr) {
-      // Claude Code (or the user) already pushed and opened a PR
-      updateRunStatus(run.id, {
-        status: "succeeded",
-        pr_url: existingPr,
-        finished_at: new Date().toISOString(),
-      });
-      console.log(`PR: ${existingPr}`);
-      console.log("");
-      console.log("Next steps:");
-      console.log(`  steward discover        Pick another issue`);
-      console.log(`  steward clean           Free up disk space`);
-    } else {
-      const hasCommits = checkForNewCommits(repoDir, run.branch);
-
-      if (hasCommits) {
-        const rl = createInterface({ input: process.stdin, output: process.stdout });
-        const answer = await new Promise<string>((resolve) => {
-          rl.question("Commits detected. Push branch and open draft PR? (Y/n) ", resolve);
-        });
-        rl.close();
-
-        if (answer.toLowerCase() !== "n") {
-          console.log("Pushing branch...");
-          pushBranch(repoDir, run.branch);
-          console.log("Opening draft PR...");
-          const prUrl = openDraftPR(run, repoDir);
-          updateRunStatus(run.id, {
-            status: "succeeded",
-            pr_url: prUrl,
-            finished_at: new Date().toISOString(),
-          });
-          if (prUrl) {
-            console.log(`PR: ${prUrl}`);
-            console.log("");
-            console.log("Next steps:");
-            console.log(`  steward discover        Pick another issue`);
-            console.log(`  steward clean           Free up disk space`);
-          } else {
-            console.log("PR creation failed. Retry with:");
-            console.log(`  steward submit ${run.id}`);
-          }
-        } else {
-          console.log("");
-          console.log("When you're ready:");
-          console.log(`  steward submit ${run.id}`);
-        }
-      } else {
-        console.log(`No commits found on branch ${run.branch}.`);
-        console.log("");
-        console.log("To continue working:");
-        console.log(`  cd ${repoDir} && claude`);
-        console.log("");
-        console.log("When ready to submit:");
-        console.log(`  steward submit ${run.id}`);
-      }
-    }
+    await startWork(candidate, policy);
     closeDb();
   });
 

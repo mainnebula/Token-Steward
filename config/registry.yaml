@@ -4,13 +4,6 @@
 
 repositories:
   # --- Documentation & Education ---
-  - slug: freeCodeCamp/freeCodeCamp
-    name: freeCodeCamp
-    description: Open-source codebase and curriculum for learning to code.
-    category: documentation
-    tags: [education, javascript, curriculum]
-    issue_labels: [good first issue, help wanted]
-
   - slug: TheOdinProject/curriculum
     name: The Odin Project Curriculum
     description: Open-source web development curriculum.
@@ -148,6 +141,83 @@ repositories:
     category: ai-ml
     tags: [llm, python, platform]
     issue_labels: [good first issue, help wanted]
+
+  - slug: vllm-project/vllm
+    name: vLLM
+    description: High-throughput LLM serving engine.
+    category: ai-ml
+    tags: [llm, python, serving, gpu]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: langchain-ai/langchain
+    name: LangChain
+    description: Framework for building applications with LLMs.
+    category: ai-ml
+    tags: [llm, python, agents, rag]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: run-llama/llama_index
+    name: LlamaIndex
+    description: Data framework for LLM applications.
+    category: ai-ml
+    tags: [llm, python, rag, indexing]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: ollama/ollama
+    name: Ollama
+    description: Run LLMs locally with a simple CLI.
+    category: ai-ml
+    tags: [llm, go, local, cli]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: open-webui/open-webui
+    name: Open WebUI
+    description: Feature-rich chat interface for LLMs.
+    category: ai-ml
+    tags: [llm, python, typescript, ui]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: huggingface/transformers
+    name: Hugging Face Transformers
+    description: State-of-the-art ML model library for PyTorch, TensorFlow, and JAX.
+    category: ai-ml
+    tags: [llm, python, models, ml]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: microsoft/autogen
+    name: AutoGen
+    description: Multi-agent conversation framework.
+    category: ai-ml
+    tags: [agents, python, multi-agent]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: browser-use/browser-use
+    name: Browser Use
+    description: Browser automation for AI agents.
+    category: ai-ml
+    tags: [agents, python, browser, automation]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: mlflow/mlflow
+    name: MLflow
+    description: Open-source MLOps platform for the ML lifecycle.
+    category: ai-ml
+    tags: [mlops, python, tracking, deployment]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: optuna/optuna
+    name: Optuna
+    description: Hyperparameter optimization framework.
+    category: ai-ml
+    tags: [ml, python, optimization]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: langflow-ai/langflow
+    name: Langflow
+    description: Visual framework for building multi-agent AI applications.
+    category: ai-ml
+    tags: [agents, python, typescript, visual]
+    issue_labels: [good first issue, help wanted, bug]
 
   # --- Security ---
   - slug: OWASP/CheatSheetSeries
