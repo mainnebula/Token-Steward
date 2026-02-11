@@ -32,12 +32,6 @@ function migrate(db: Database.Database): void {
       source TEXT NOT NULL
     );
 
-    CREATE TABLE IF NOT EXISTS registry_cache (
-      id INTEGER PRIMARY KEY CHECK (id = 1),
-      data TEXT NOT NULL,
-      fetched_at TEXT NOT NULL
-    );
-
     CREATE TABLE IF NOT EXISTS runs (
       id TEXT PRIMARY KEY,
       candidate_repo TEXT NOT NULL,

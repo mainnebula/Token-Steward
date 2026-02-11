@@ -139,7 +139,6 @@ export interface AuditEvent {
     | "usage_poll"
     | "usage_error"
     | "registry_sync"
-    | "registry_stale"
     | "candidate_scored"
     | "run_queued"
     | "run_started"

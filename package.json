@@ -1,7 +1,7 @@
 {
   "name": "token-steward",
   "version": "0.1.0",
-  "description": "Autonomously spend remaining weekly Claude Code tokens on Symphony contributions",
+  "description": "Discover and contribute to open-source projects with your unused Claude Code tokens",
   "type": "module",
   "bin": {
     "steward": "./dist/cli.js"
