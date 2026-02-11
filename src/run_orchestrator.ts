@@ -144,7 +144,19 @@ export async function prepareRepo(repoSlug: string, branch: string): Promise<str
   const repoDir = join(WORKSPACE_DIR, repoSlug.replace("/", "__"));
 
   if (existsSync(join(repoDir, ".git"))) {
-    // Fetch latest from upstream
+    // Ensure fork remote layout (origin=fork, upstream=original)
+    const remotes = execSync("git remote", { cwd: repoDir, encoding: "utf-8" }).trim().split("\n");
+    if (!remotes.includes("upstream")) {
+      // Pre-fork clone: origin points to upstream. Set up fork remotes.
+      execSync(`gh repo fork "${repoSlug}" --remote-only`, { cwd: repoDir, timeout: 60000 });
+      // gh repo fork --remote-only adds "fork" remote; rename to match expected layout
+      const remotesAfter = execSync("git remote", { cwd: repoDir, encoding: "utf-8" }).trim().split("\n");
+      if (remotesAfter.includes("fork")) {
+        // Swap: origin -> upstream, fork -> origin
+        execSync("git remote rename origin upstream", { cwd: repoDir, timeout: 5000 });
+        execSync("git remote rename fork origin", { cwd: repoDir, timeout: 5000 });
+      }
+    }
     execSync("git fetch upstream", { cwd: repoDir, timeout: 30000 });
     execSync("git checkout main || git checkout master", {
       cwd: repoDir,
