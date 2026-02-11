@@ -380,9 +380,11 @@ ${issueBody}
 
   const claudeMd = `# Commit conventions
 
-When committing changes, end every commit message with this line:
+When committing changes, end every commit message with this footer (separated by a blank line from the body):
 
-Contributed via Token Steward (https://github.com/mainnebula/token-steward) — this repo was identified as a high-impact open-source project worth contributing to. A developer donated their surplus Claude Code tokens to help.
+🔋 <TOKENS> tokens donated via Token Steward (https://github.com/mainnebula/token-steward)
+
+Replace <TOKENS> with the approximate total tokens you've used so far in this session (your best estimate is fine, round to the nearest thousand e.g. "12,000"). Update the number in each subsequent commit to reflect cumulative usage.
 `;
 
   writeFileSync(join(repoDir, "STEWARD_CONTEXT.md"), context, "utf-8");
