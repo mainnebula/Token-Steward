@@ -1053,30 +1053,38 @@ program
     const ask = (prompt: string): Promise<string> =>
       new Promise((resolve) => rl.question(prompt, resolve));
 
-    const defaultBudget = (existing.weekly_target_tokens as number) ?? 500000;
-    const existingReserve = (existing.weekly_min_reserve_tokens as number) ?? 25000;
-    const limits = (existing.limits ?? {}) as Record<string, unknown>;
-    const existingMaxTokens = (limits.max_tokens_per_run as number) ?? 60000;
+    // Weekly token budgets based on reverse-engineered plan limits.
+    // Pro ~$6/wk API-equivalent, Max 5x ~$50/wk (8.3x Pro), Max 20x ~$100/wk (2x of 5x).
+    const plans: Record<string, { budget: number; label: string }> = {
+      "1": { budget: 200000, label: "Pro ($20/mo)" },
+      "2": { budget: 1600000, label: "Max 5x ($100/mo)" },
+      "3": { budget: 3300000, label: "Max 20x ($200/mo)" },
+    };
 
-    // Compute existing percentages for defaults
-    const defaultReservePct = Math.round((existingReserve / defaultBudget) * 100);
-    const defaultMaxPct = Math.round((existingMaxTokens / defaultBudget) * 100);
+    // Detect current plan from existing config
+    const existingBudget = (existing.weekly_target_tokens as number) ?? 0;
+    const defaultPlan = existingBudget >= 2500000 ? "3" : existingBudget >= 500000 ? "2" : existingBudget > 0 ? "1" : "2";
 
-    const budgetAnswer = await ask(`  Weekly token budget [${defaultBudget.toLocaleString()}]: `);
-    const weeklyTarget = budgetAnswer.trim() ? parseInt(budgetAnswer.trim().replace(/,/g, ""), 10) : defaultBudget;
+    console.log("  1) Pro ($20/mo)");
+    console.log("  2) Max 5x ($100/mo)");
+    console.log("  3) Max 20x ($200/mo)");
+    console.log("");
+    const planAnswer = await ask(`  Your plan [${defaultPlan}]: `);
+    const planKey = (planAnswer.trim() || defaultPlan);
+    const plan = plans[planKey] ?? plans[defaultPlan];
 
-    const reserveAnswer = await ask(`  Keep for personal use [${defaultReservePct}%]: `);
-    const reservePct = reserveAnswer.trim() ? parseInt(reserveAnswer.trim().replace("%", ""), 10) : defaultReservePct;
+    const weeklyTarget = plan.budget;
+    const reservePct = 5;
+    const maxPct = 12;
     const weeklyReserve = Math.round(weeklyTarget * (reservePct / 100));
-
-    const maxAnswer = await ask(`  Max budget per issue [${defaultMaxPct}%]: `);
-    const maxPct = maxAnswer.trim() ? parseInt(maxAnswer.trim().replace("%", ""), 10) : defaultMaxPct;
     const maxPerRun = Math.round(weeklyTarget * (maxPct / 100));
+    const limits = (existing.limits ?? {}) as Record<string, unknown>;
 
     console.log("");
-    console.log(`  Budget: ${weeklyTarget.toLocaleString()} tokens/week`);
-    console.log(`  Reserve: ${weeklyReserve.toLocaleString()} tokens (${reservePct}%)`);
-    console.log(`  Per issue: ${maxPerRun.toLocaleString()} tokens max (${maxPct}%)`);
+    console.log(`  ${plan.label}`);
+    console.log(`  Weekly budget: ~${weeklyTarget.toLocaleString()} tokens`);
+    console.log(`  Reserve (personal use): ${reservePct}% (${weeklyReserve.toLocaleString()} tokens)`);
+    console.log(`  Max per issue: ${maxPct}% (${maxPerRun.toLocaleString()} tokens)`);
 
 
     rl.close();
