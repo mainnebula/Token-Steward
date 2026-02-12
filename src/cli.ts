@@ -1128,9 +1128,16 @@ program
     console.log("");
     console.log(`Policy saved to ${configPath}`);
 
-    // --- Build + link ---
+    // --- Rebuild native modules + build + link ---
     console.log("");
     console.log("Building...");
+
+    try {
+      execSync("npm rebuild better-sqlite3", { stdio: "pipe" });
+      console.log("  ✓ Native modules rebuilt");
+    } catch {
+      console.log("  ⚠ Native module rebuild failed (try: npm install)");
+    }
 
     try {
       execSync("npm run build", { stdio: "pipe" });
