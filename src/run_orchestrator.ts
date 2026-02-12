@@ -359,24 +359,36 @@ export function cancelRun(runId: string): void {
  */
 export function writeContextFile(repoDir: string, run: Run, issueBody: string, proposeFirst = false): void {
   const proposalSection = proposeFirst ? `
-## Approach — Propose First
+## Approach: Propose First
 
 Before writing any code, follow these steps:
 
 1. **Analyze.** Read the issue, explore the codebase, and understand the problem thoroughly.
 2. **Draft a proposal.** Write a concise comment for the issue covering:
-   - What the problem is (your understanding)
+   - What the problem is and where it lives in the codebase
    - Your proposed approach (files to change, strategy)
    - Trade-offs or open questions
-   Start the comment with: "Hey — I've been looking at this issue and would like to take a crack at it. Here's my proposed approach before I start writing code."
-   End with: "Does this approach look right? Happy to adjust based on feedback before I start."
+   Keep it direct and technical. No filler.
+   End the comment with: "This issue was identified for fixing by [Token Steward](https://github.com/mainnebula/token-steward)."
 3. **Post it.** Use \`gh issue comment ${run.candidate_issue} --repo ${run.candidate_repo} --body-file <file>\` to post. The developer (me) will review before you post.
 4. **Stop.** Do NOT start implementing. Wait for maintainer feedback.
 ` : '';
 
   const context = `# Token Steward Context
 
-You're helping a developer contribute to this project. They found this issue and want to fix it. Write code the way a careful human contributor would — follow the project's conventions, keep changes focused, and don't over-engineer.
+You're helping a developer contribute to this project. They found this issue and want to fix it.
+
+## Your job
+
+Before jumping into code, start by explaining what you find. The developer wants to understand:
+- What part of the codebase is involved
+- What's actually going wrong (for bugs) or what needs to be built (for features)
+- How the relevant code works today
+- What your proposed fix or implementation looks like
+
+Walk through this with the developer so they have a clear picture before you start making changes. Then implement the fix.
+
+After making changes, tell the developer how to test it. Give them concrete steps they can run to verify the fix works (commands, expected output, what to look for).
 
 ## Issue
 ${run.issue_url}
