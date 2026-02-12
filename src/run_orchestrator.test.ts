@@ -280,14 +280,13 @@ describe("writeContextFile", () => {
     const context = readFileSync(contextPath, "utf-8");
     expect(context).toContain("https://github.com/test/repo/issues/42");
     expect(context).toContain("Fix the flaky test in CI");
-    expect(context).toContain("Token Steward");
     expect(context).toContain("Contribution Guidelines");
 
     const claudePath = join(tmpDir, "CLAUDE.md");
     expect(existsSync(claudePath)).toBe(true);
 
     const claudeMd = readFileSync(claudePath, "utf-8");
-    expect(claudeMd).toContain("Contributed via Token Steward");
+    expect(claudeMd).toContain("commit messages");
   });
 });
 
