@@ -20,15 +20,14 @@ steward submit            # Review your changes and open a draft PR
 
 **Submit.** You're the human in the loop. Review the changes, run the tests, and when you're satisfied, submit quality code to a project that needs it. Token Steward pushes your branch and opens a draft PR. Safe to run multiple times.
 
-## Setup
+## Install
 
 ```bash
-git clone <repo-url> token-steward && cd token-steward
-nvm install 22 && nvm use 22
-npm install && npm run setup
+npm install -g token-steward
+steward init
 ```
 
-`steward init` checks your environment, walks you through policy config, builds the project, and links the CLI globally. After that, `steward discover` is all you need.
+`steward init` checks your environment, walks you through policy config, and gets everything ready. After that, `steward discover` is all you need.
 
 Already set up? Run `steward init --check` to verify prerequisites without changing anything.
 
@@ -112,6 +111,8 @@ steward resume           # Resume autopilot
 ## Development
 
 ```bash
+git clone https://github.com/mainnebula/token-steward.git && cd token-steward
+npm install
 npm run dev          # Run via tsx (no build step)
 npm test             # Run all tests (vitest)
 npm run build        # Compile TypeScript

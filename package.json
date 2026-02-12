@@ -3,9 +3,29 @@
   "version": "0.1.0",
   "description": "Discover and contribute to open-source projects with your unused Claude Code tokens",
   "type": "module",
-  "bin": {
-    "steward": "./dist/cli.js"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mainnebula/token-steward.git"
   },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "open-source",
+    "contributions",
+    "automation",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "steward": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "config/registry.yaml"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/cli.ts",
@@ -13,7 +33,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "tsc --noEmit",
-    "setup": "npm run build && node dist/cli.js init"
+    "setup": "npm run build && node dist/cli.js init",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "commander": "^13.1.0",

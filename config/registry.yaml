@@ -241,3 +241,173 @@ repositories:
     category: developer-tools
     tags: [proxy, go, cloud-native]
     issue_labels: [good first issue, help wanted]
+
+  # --- Developer Tools (additions) ---
+  - slug: continuedev/continue
+    name: Continue
+    description: AI code assistant extension for VS Code and JetBrains.
+    category: developer-tools
+    tags: [typescript, ide, ai, extension]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: n8n-io/n8n
+    name: n8n
+    description: AI-native workflow automation with 400+ integrations.
+    category: developer-tools
+    tags: [typescript, automation, workflow, ai]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: iterative/dvc
+    name: DVC
+    description: Git for data - version control for ML datasets and pipelines.
+    category: developer-tools
+    tags: [python, data, versioning, ml]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: PostHog/posthog
+    name: PostHog
+    description: Open-source product analytics with LLM usage tracking.
+    category: developer-tools
+    tags: [python, typescript, analytics, ai]
+    issue_labels: [good first issue, help wanted]
+
+  # --- AI / ML (additions) ---
+  - slug: crewAIInc/crewAI
+    name: CrewAI
+    description: Framework for orchestrating role-playing autonomous AI agents.
+    category: ai-ml
+    tags: [agents, python, multi-agent, orchestration]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: langchain-ai/langgraph
+    name: LangGraph
+    description: Stateful multi-actor orchestration with cyclic flows for LLM agents.
+    category: ai-ml
+    tags: [agents, python, graphs, langchain]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: All-Hands-AI/OpenHands
+    name: OpenHands
+    description: Autonomous AI software engineer with sandboxed execution.
+    category: ai-ml
+    tags: [agents, python, typescript, coding]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: pydantic/pydantic-ai
+    name: Pydantic AI
+    description: Type-safe agent framework by the Pydantic team.
+    category: ai-ml
+    tags: [agents, python, typing, validation]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: stanfordnlp/dspy
+    name: DSPy
+    description: Programming framework that compiles declarative LLM modules into optimized prompts.
+    category: ai-ml
+    tags: [llm, python, prompting, optimization]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: BerriAI/litellm
+    name: LiteLLM
+    description: Universal LLM API gateway supporting 100+ providers.
+    category: ai-ml
+    tags: [llm, python, gateway, api]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: unclecode/crawl4ai
+    name: Crawl4AI
+    description: LLM-friendly web crawler that outputs clean Markdown for RAG.
+    category: ai-ml
+    tags: [python, rag, scraping, data]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: Aider-AI/aider
+    name: Aider
+    description: Terminal-based AI pair programmer with repository map feature.
+    category: ai-ml
+    tags: [python, coding, cli, agents]
+    issue_labels: [good first issue, help wanted, bug]
+
+  - slug: explodinggradients/ragas
+    name: RAGAS
+    description: Evaluation framework for Retrieval Augmented Generation pipelines.
+    category: ai-ml
+    tags: [python, rag, evaluation, testing]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: confident-ai/deepeval
+    name: DeepEval
+    description: Unit testing framework for LLMs - Pytest for AI.
+    category: ai-ml
+    tags: [python, testing, evaluation, llm]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: guardrails-ai/guardrails
+    name: Guardrails AI
+    description: Validation and reliability framework for LLM outputs.
+    category: ai-ml
+    tags: [python, validation, safety, llm]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: chroma-core/chroma
+    name: Chroma
+    description: AI-native embedding database for RAG applications.
+    category: ai-ml
+    tags: [python, vector-db, rag, embeddings]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: infiniflow/ragflow
+    name: RAGFlow
+    description: RAG engine with deep document understanding and layout parsing.
+    category: ai-ml
+    tags: [python, rag, document, nlp]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: HumanSignal/label-studio
+    name: Label Studio
+    description: Multi-type data labeling and annotation tool.
+    category: ai-ml
+    tags: [python, labeling, annotation, data]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: bentoml/BentoML
+    name: BentoML
+    description: Unified model serving framework for production APIs.
+    category: ai-ml
+    tags: [python, serving, deployment, mlops]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: lobehub/lobe-chat
+    name: Lobe Chat
+    description: Agent UI framework with Model Context Protocol support.
+    category: ai-ml
+    tags: [typescript, ui, agents, mcp]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: FlowiseAI/Flowise
+    name: Flowise
+    description: Drag-and-drop LLM workflow builder for the JavaScript ecosystem.
+    category: ai-ml
+    tags: [typescript, visual, workflow, langchain]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: Arize-AI/phoenix
+    name: Arize Phoenix
+    description: LLM observability and tracing for AI application debugging.
+    category: ai-ml
+    tags: [python, observability, tracing, llm]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: mendableai/firecrawl
+    name: Firecrawl
+    description: Web scraper for LLMs that handles dynamic JavaScript rendering.
+    category: ai-ml
+    tags: [typescript, scraping, rag, data]
+    issue_labels: [good first issue, help wanted]
+
+  - slug: Agenta-AI/agenta
+    name: Agenta
+    description: Open-source LLMOps platform for prompt management and evaluation.
+    category: ai-ml
+    tags: [python, llmops, evaluation, prompts]
+    issue_labels: [good first issue, help wanted]
