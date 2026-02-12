@@ -977,12 +977,13 @@ program
 
     let hardFail = false;
 
-    // 1. Node.js version
+    // 1. Node.js version (18+ required)
     const nodeVersion = process.version;
-    if (nodeVersion.startsWith("v22")) {
+    const nodeMajor = parseInt(nodeVersion.slice(1), 10);
+    if (nodeMajor >= 18) {
       console.log(`  ✓ Node.js ${nodeVersion}`);
     } else {
-      console.log(`  ✗ Node.js ${nodeVersion} — v22 required`);
+      console.log(`  ✗ Node.js ${nodeVersion} — v18 or later required`);
       console.log("    Fix: nvm install 22 && nvm use 22");
       hardFail = true;
     }
