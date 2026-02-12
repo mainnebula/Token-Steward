@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "token-steward",
+  "metadata": {
+    "description": "Turn unused Claude Code tokens into open-source contributions."
+  },
+  "owner": {
+    "name": "mainnebula",
+    "url": "https://github.com/mainnebula"
+  },
+  "plugins": [
+    {
+      "name": "token-steward",
+      "description": "Discover impactful open-source issues, work on them with Claude Code, and submit quality PRs — all powered by your unused token budget.",
+      "version": "0.1.0",
+      "author": { "name": "mainnebula", "url": "https://github.com/mainnebula" },
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/mainnebula/token-steward",
+      "tags": ["open-source", "contributions", "claude-code", "github", "automation", "cli"]
+    }
+  ]
+}

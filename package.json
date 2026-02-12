@@ -24,7 +24,9 @@
   },
   "files": [
     "dist",
-    "config/registry.yaml"
+    "config/registry.yaml",
+    ".claude",
+    ".claude-plugin"
   ],
   "scripts": {
     "build": "tsc",

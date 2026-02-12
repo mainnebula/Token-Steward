@@ -503,6 +503,8 @@ program
     console.log("");
 
     printCandidateCards(limited, termWidth);
+    console.log("");
+    console.log("Tip: Try /token-steward:discover in Claude Code for personalized, conversational recommendations.");
 
     if (!interactive) {
       console.log("");
@@ -1121,6 +1123,8 @@ program
     console.log("");
     console.log("Ready! Run 'steward discover' to find your first issue.");
     console.log("");
+    console.log("Tip: Use Token Steward as a Claude Code skill for interactive, conversational");
+    console.log("issue discovery — no CLI needed. See: https://github.com/mainnebula/token-steward#claude-code-plugin");
   });
 
 program.parse();

@@ -100,6 +100,53 @@ steward pause            # Pause autopilot
 steward resume           # Resume autopilot
 ```
 
+## Claude Code Skill
+
+Use Token Steward as slash commands directly in Claude Code. No npm install required — just `gh` CLI.
+
+### Install the skill
+
+```bash
+npx skills add mainnebula/token-steward
+```
+
+Or manually:
+
+```bash
+git clone https://github.com/mainnebula/token-steward.git /tmp/token-steward
+cp -r /tmp/token-steward/.claude/* ~/.claude/
+```
+
+After installing, restart Claude Code for it to discover the new skill.
+
+### Commands
+
+| Command | What it does |
+|---------|-------------|
+| `/token-steward:discover` | Find and rank impactful open-source issues |
+| `/token-steward:work owner/repo#123` | Set up a workspace and start a guided session (fix, review, or propose) |
+| `/token-steward:submit` | Submit your contribution — PR, review, or proposal |
+| `/token-steward:status` | Show environment, open PRs, budget, and workspace info |
+| `/token-steward:stats` | Show contribution history and statistics |
+
+### Skill + CLI
+
+The skill works standalone with just `gh` CLI. If you also install the full CLI, the skill detects it and delegates discovery, scoring, and workspace setup locally — saving Claude Code tokens and adding persistent tracking.
+
+```bash
+npm install -g token-steward
+steward init
+```
+
+| Feature | Skill only | Skill + CLI |
+|---------|-----------|-------------|
+| Discover issues | Claude searches via `gh` | Runs locally, faster |
+| Workspace setup | Claude forks/branches via `gh` | Handled locally |
+| Contribution stats | Basic (from GitHub API) | Detailed per-run tracking |
+| Token budgets | None | Enforced per-run and weekly |
+| Run history | None | Persistent, queryable |
+| Scheduling | None | Automated contribution windows |
+
 ## Roadmap
 
 - **Public leaderboard.** Track contributions across Token Steward users. Issues resolved, PRs merged, tokens donated. See who's making the biggest impact.

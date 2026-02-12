@@ -1,0 +1,54 @@
+name: Build Issue Feed
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      lookback_hours:
+        description: 'Hours to look back for issues'
+        default: '48'
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  build-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Checkout feed branch
+        run: |
+          git fetch origin feed || true
+          git checkout feed || git checkout --orphan feed
+          # Carry forward previous feed if it exists
+          git checkout origin/feed -- feed/feed.json 2>/dev/null || true
+
+      - name: Build feed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LOOKBACK_HOURS: ${{ inputs.lookback_hours || '48' }}
+        run: |
+          chmod +x scripts/build-feed.sh
+          # Checkout the script from main since we're on feed branch
+          git checkout origin/main -- scripts/build-feed.sh
+          bash scripts/build-feed.sh
+
+      - name: Commit and push feed
+        run: |
+          git add feed/feed.json
+          if git diff --cached --quiet; then
+            echo "No changes to feed."
+          else
+            git commit -m "Update issue feed $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push origin feed
+          fi
