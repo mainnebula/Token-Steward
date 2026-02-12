@@ -16,7 +16,6 @@
     "setup": "npm run build && node dist/cli.js init"
   },
   "dependencies": {
-    "better-sqlite3": "^11.7.0",
     "commander": "^13.1.0",
     "node-cron": "^3.0.3",
     "pino": "^9.6.0",
@@ -25,7 +24,6 @@
     "zod": "^3.24.0"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^7.6.12",
     "@types/node": "^22.12.0",
     "@types/node-cron": "^3.0.11",
     "tsx": "^4.19.0",

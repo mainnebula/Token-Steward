@@ -1,5 +1,5 @@
 import { exec } from "node:child_process";
-import { getDb } from "./db.js";
+import { getRuns } from "./store.js";
 import { getLogger } from "./audit_log.js";
 import type { Candidate, RegistryRepo } from "./models.js";
 
@@ -236,13 +236,6 @@ function computeLlmReceptivity(
  * Get the set of issues already claimed by active/recent runs.
  */
 function getClaimedIssues(): Set<string> {
-  const db = getDb();
-  const rows = db
-    .prepare(
-      `SELECT candidate_repo, candidate_issue FROM runs
-       WHERE status IN ('queued', 'running', 'succeeded')`,
-    )
-    .all() as Array<{ candidate_repo: string; candidate_issue: number }>;
-
-  return new Set(rows.map((r) => `${r.candidate_repo}#${r.candidate_issue}`));
+  const runs = getRuns({ statuses: ["queued", "running", "succeeded"] });
+  return new Set(runs.map((r) => `${r.candidate_repo}#${r.candidate_issue}`));
 }

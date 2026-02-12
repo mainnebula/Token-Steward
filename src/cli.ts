@@ -16,7 +16,7 @@ import {
 import { pauseAutopilot, resumeAutopilot, getGuardrailState } from "./guardrails.js";
 import { getRemainingBudget } from "./policy_store.js";
 import { getLogger } from "./audit_log.js";
-import { getDb, closeDb } from "./db.js";
+import { closeStore, getRuns } from "./store.js";
 import { runExport, writeExportFiles } from "./export_data.js";
 import type { Candidate } from "./models.js";
 import type { Policy } from "./models.js";
@@ -46,7 +46,7 @@ program
     // Keep the process alive
     process.on("SIGINT", () => {
       getLogger().info("Shutting down...");
-      closeDb();
+      closeStore();
       process.exit(0);
     });
   });
@@ -59,7 +59,7 @@ program
     loadPolicy();
     const status = await getStatus();
     console.log(JSON.stringify(status, null, 2));
-    closeDb();
+    closeStore();
   });
 
 // --- steward tick (deprecated — hidden) ---
@@ -75,7 +75,7 @@ program
       injectManualUsage(parseInt(opts.budget, 10), policy.weekly_target_tokens);
     }
     await tick(opts.dryRun);
-    closeDb();
+    closeStore();
   });
 
 // --- steward usage ---
@@ -102,7 +102,7 @@ program
         budget_remaining: remaining,
       }, null, 2));
     }
-    closeDb();
+    closeStore();
   });
 
 // --- steward candidates ---
@@ -115,7 +115,7 @@ program
     const registry = await syncRegistry();
     if (!registry) {
       console.error("Failed to fetch registry");
-      closeDb();
+      closeStore();
       process.exit(1);
     }
 
@@ -138,7 +138,7 @@ program
         `  [${c.score.toFixed(2)}] ${c.repo_slug}#${c.issue_number} - ${c.issue_title} (~${c.est_tokens} tokens)`,
       );
     }
-    closeDb();
+    closeStore();
   });
 
 // --- steward run now ---
@@ -183,7 +183,7 @@ program
     console.log(`Run finished: ${result.status}`);
     if (result.pr_url) console.log(`PR: ${result.pr_url}`);
     if (result.error) console.log(`Error: ${result.error}`);
-    closeDb();
+    closeStore();
   });
 
 // --- steward runs ---
@@ -205,7 +205,7 @@ program
         );
       }
     }
-    closeDb();
+    closeStore();
   });
 
 // --- steward pause ---
@@ -217,7 +217,7 @@ program
     loadPolicy();
     pauseAutopilot(opts.reason);
     console.log(`Autopilot paused: ${opts.reason}`);
-    closeDb();
+    closeStore();
   });
 
 // --- steward resume ---
@@ -228,7 +228,7 @@ program
     loadPolicy();
     resumeAutopilot();
     console.log("Autopilot resumed");
-    closeDb();
+    closeStore();
   });
 
 // --- steward cancel ---
@@ -240,7 +240,7 @@ program
     loadPolicy();
     cancelRun(runId);
     console.log(`Run ${runId} canceled`);
-    closeDb();
+    closeStore();
   });
 
 // --- steward go (deprecated — hidden) ---
@@ -263,7 +263,7 @@ program
     policy.schedule = [{ day: days[now.getDay()], start: "00:00", end: "23:59" }];
 
     await tick(opts.dryRun);
-    closeDb();
+    closeStore();
   });
 
 // --- startWork helper (shared by discover pick + work command) ---
@@ -311,7 +311,7 @@ async function startWork(candidate: Candidate, policy: Policy): Promise<void> {
     console.log(`  cd ${repoDir}`);
     console.log(`  claude`);
     console.log(`  steward submit ${run.id}`);
-    closeDb();
+    closeStore();
     return;
   }
 
@@ -439,7 +439,7 @@ program
     if (isTTY) process.stderr.write("\x1b[2K");
     if (!registry) {
       console.error("Failed to fetch registry");
-      closeDb();
+      closeStore();
       process.exit(1);
     }
 
@@ -448,7 +448,7 @@ program
       activeRepos = activeRepos.filter((r) => r.slug === opts.repo);
       if (activeRepos.length === 0) {
         console.error(`Repo ${opts.repo} not found in registry or filtered out by policy.`);
-        closeDb();
+        closeStore();
         process.exit(1);
       }
     }
@@ -485,13 +485,13 @@ program
           labels: c.issue_labels,
         })),
       }, null, 2));
-      closeDb();
+      closeStore();
       return;
     }
 
     if (limited.length === 0) {
       console.log("No candidates found.");
-      closeDb();
+      closeStore();
       return;
     }
 
@@ -506,7 +506,7 @@ program
 
     if (!interactive) {
       console.log("");
-      closeDb();
+      closeStore();
       return;
     }
 
@@ -533,14 +533,14 @@ program
     });
 
     if (pick === null) {
-      closeDb();
+      closeStore();
       return;
     }
 
     const chosen = limited[pick];
     console.log("");
     await startWork(chosen, policy);
-    closeDb();
+    closeStore();
   });
 
 // --- steward work ---
@@ -581,7 +581,7 @@ program
     };
 
     await startWork(candidate, policy);
-    closeDb();
+    closeStore();
   });
 
 // --- steward submit ---
@@ -602,7 +602,7 @@ program
 
     if (!run) {
       console.error(runId ? `Run ${runId} not found.` : "No runs found.");
-      closeDb();
+      closeStore();
       process.exit(1);
     }
 
@@ -610,14 +610,14 @@ program
     if (run.status === "succeeded" && run.pr_url) {
       console.log(`Run ${run.id} already submitted.`);
       console.log(`PR: ${run.pr_url}`);
-      closeDb();
+      closeStore();
       return;
     }
 
     const repoDir = join("workspace", run.candidate_repo.replace("/", "__"));
     if (!existsSync(join(repoDir, ".git"))) {
       console.error(`Workspace not found at ${repoDir}`);
-      closeDb();
+      closeStore();
       process.exit(1);
     }
 
@@ -625,14 +625,14 @@ program
     if (!verifyBranchCheckedOut(repoDir, run.branch)) {
       console.error(`Branch ${run.branch} is not checked out in ${repoDir}.`);
       console.error("Ensure the workspace is on the correct branch before submitting.");
-      closeDb();
+      closeStore();
       process.exit(1);
     }
 
     const hasCommits = checkForNewCommits(repoDir, run.branch);
     if (!hasCommits) {
       console.error("No commits found on branch. Nothing to submit.");
-      closeDb();
+      closeStore();
       process.exit(1);
     }
 
@@ -646,7 +646,7 @@ program
         pr_url: existingPr,
         finished_at: run.finished_at ?? new Date().toISOString(),
       });
-      closeDb();
+      closeStore();
       return;
     }
 
@@ -664,7 +664,7 @@ program
 
     if (prUrl) console.log(`PR: ${prUrl}`);
     else console.log("PR creation may have failed. Check GitHub manually.");
-    closeDb();
+    closeStore();
   });
 
 // --- steward clean ---
@@ -781,7 +781,7 @@ program
         },
       }, null, 2));
     }
-    closeDb();
+    closeStore();
   });
 
 // --- steward stats ---
@@ -790,40 +790,10 @@ program
   .description("Show contribution statistics")
   .option("--json", "Output as JSON for scripting", false)
   .action(async (opts) => {
-    const db = getDb();
-    const excluded = `('queued', 'running', 'in_progress')`;
+    const excludedStatuses = new Set(["queued", "running", "in_progress"]);
+    const completedRuns = getRuns({}).filter((r) => !excludedStatuses.has(r.status));
 
-    // Summary stats
-    const summary = db.prepare(`
-      SELECT
-        COUNT(*) AS total_runs,
-        SUM(CASE WHEN status = 'succeeded' THEN 1 ELSE 0 END) AS succeeded,
-        SUM(CASE WHEN status = 'failed' THEN 1 ELSE 0 END) AS failed,
-        SUM(CASE WHEN status = 'no_changes' THEN 1 ELSE 0 END) AS no_changes,
-        SUM(CASE WHEN status = 'canceled' THEN 1 ELSE 0 END) AS canceled,
-        SUM(CASE WHEN pr_url IS NOT NULL THEN 1 ELSE 0 END) AS prs_opened,
-        COUNT(DISTINCT candidate_repo) AS unique_repos,
-        COUNT(DISTINCT candidate_issue || ':' || candidate_repo) AS unique_issues,
-        SUM(tokens_consumed) AS total_tokens,
-        MIN(created_at) AS first_run,
-        MAX(created_at) AS last_run
-      FROM runs
-      WHERE status NOT IN ${excluded}
-    `).get() as {
-      total_runs: number;
-      succeeded: number;
-      failed: number;
-      no_changes: number;
-      canceled: number;
-      prs_opened: number;
-      unique_repos: number;
-      unique_issues: number;
-      total_tokens: number;
-      first_run: string | null;
-      last_run: string | null;
-    };
-
-    if (summary.total_runs === 0) {
+    if (completedRuns.length === 0) {
       if (opts.json) {
         console.log(JSON.stringify({ summary: { total_runs: 0 }, repos: [], latest_prs: [] }, null, 2));
       } else {
@@ -834,52 +804,50 @@ program
         console.log("  steward discover    Find issues to work on");
         console.log("  steward work        Start working on an issue");
       }
-      closeDb();
+      closeStore();
       return;
     }
 
+    // Summary stats
+    const totalRuns = completedRuns.length;
+    const succeeded = completedRuns.filter((r) => r.status === "succeeded").length;
+    const failed = completedRuns.filter((r) => r.status === "failed").length;
+    const noChanges = completedRuns.filter((r) => r.status === "no_changes").length;
+    const canceled = completedRuns.filter((r) => r.status === "canceled").length;
+    const prsOpened = completedRuns.filter((r) => r.pr_url !== null).length;
+    const uniqueRepos = new Set(completedRuns.map((r) => r.candidate_repo)).size;
+    const uniqueIssues = new Set(completedRuns.map((r) => `${r.candidate_issue}:${r.candidate_repo}`)).size;
+    const totalTokens = completedRuns.reduce((sum, r) => sum + r.tokens_consumed, 0);
+    const dates = completedRuns.map((r) => r.created_at).sort();
+    const firstRun = dates[0] ?? null;
+    const lastRun = dates[dates.length - 1] ?? null;
+
     // Per-repo breakdown
-    const repos = db.prepare(`
-      SELECT
-        candidate_repo AS repo,
-        COUNT(*) AS runs,
-        SUM(CASE WHEN status = 'succeeded' THEN 1 ELSE 0 END) AS succeeded,
-        SUM(CASE WHEN pr_url IS NOT NULL THEN 1 ELSE 0 END) AS prs,
-        SUM(tokens_consumed) AS tokens
-      FROM runs
-      WHERE status NOT IN ${excluded}
-      GROUP BY candidate_repo
-      ORDER BY runs DESC
-    `).all() as Array<{
-      repo: string;
-      runs: number;
-      succeeded: number;
-      prs: number;
-      tokens: number;
-    }>;
+    const repoMap = new Map<string, { repo: string; runs: number; succeeded: number; prs: number; tokens: number }>();
+    for (const r of completedRuns) {
+      let entry = repoMap.get(r.candidate_repo);
+      if (!entry) {
+        entry = { repo: r.candidate_repo, runs: 0, succeeded: 0, prs: 0, tokens: 0 };
+        repoMap.set(r.candidate_repo, entry);
+      }
+      entry.runs++;
+      if (r.status === "succeeded") entry.succeeded++;
+      if (r.pr_url !== null) entry.prs++;
+      entry.tokens += r.tokens_consumed;
+    }
+    const repos = [...repoMap.values()].sort((a, b) => b.runs - a.runs);
 
     // Latest PRs
-    const latestPrs = db.prepare(`
-      SELECT candidate_repo AS repo, candidate_issue AS issue, pr_url
-      FROM runs
-      WHERE pr_url IS NOT NULL AND status NOT IN ${excluded}
-      ORDER BY created_at DESC
-      LIMIT 5
-    `).all() as Array<{
-      repo: string;
-      issue: number;
-      pr_url: string;
-    }>;
+    const latestPrs = completedRuns
+      .filter((r) => r.pr_url !== null)
+      .sort((a, b) => b.created_at.localeCompare(a.created_at))
+      .slice(0, 5)
+      .map((r) => ({ repo: r.candidate_repo, issue: r.candidate_issue, pr_url: r.pr_url! }));
 
     // Streak: consecutive succeeded from most recent finished run
-    const recentStatuses = db.prepare(`
-      SELECT status FROM runs
-      WHERE status NOT IN ${excluded}
-      ORDER BY created_at DESC
-    `).all() as Array<{ status: string }>;
-
+    const sortedByDate = [...completedRuns].sort((a, b) => b.created_at.localeCompare(a.created_at));
     let streak = 0;
-    for (const r of recentStatuses) {
+    for (const r of sortedByDate) {
       if (r.status === "succeeded") streak++;
       else break;
     }
@@ -887,48 +855,48 @@ program
     if (opts.json) {
       console.log(JSON.stringify({
         summary: {
-          total_runs: summary.total_runs,
-          succeeded: summary.succeeded,
-          failed: summary.failed,
-          no_changes: summary.no_changes,
-          canceled: summary.canceled,
-          prs_opened: summary.prs_opened,
-          unique_repos: summary.unique_repos,
-          unique_issues: summary.unique_issues,
-          total_tokens: summary.total_tokens,
-          first_run: summary.first_run,
-          last_run: summary.last_run,
-          success_rate: parseFloat(((summary.succeeded / summary.total_runs) * 100).toFixed(1)),
+          total_runs: totalRuns,
+          succeeded,
+          failed,
+          no_changes: noChanges,
+          canceled,
+          prs_opened: prsOpened,
+          unique_repos: uniqueRepos,
+          unique_issues: uniqueIssues,
+          total_tokens: totalTokens,
+          first_run: firstRun,
+          last_run: lastRun,
+          success_rate: parseFloat(((succeeded / totalRuns) * 100).toFixed(1)),
           streak,
         },
         repos,
         latest_prs: latestPrs,
       }, null, 2));
-      closeDb();
+      closeStore();
       return;
     }
 
-    const successRate = ((summary.succeeded / summary.total_runs) * 100).toFixed(1);
+    const successRate = ((succeeded / totalRuns) * 100).toFixed(1);
 
     console.log("");
     console.log("Token Steward — Contribution Stats");
     console.log("====================================");
     console.log("");
     console.log(
-      `  Total runs       ${String(summary.total_runs).padEnd(12)}` +
+      `  Total runs       ${String(totalRuns).padEnd(12)}` +
       `Success rate     ${successRate}%`
     );
     console.log(
-      `  PRs opened       ${String(summary.prs_opened).padEnd(12)}` +
-      `Unique repos      ${summary.unique_repos}`
+      `  PRs opened       ${String(prsOpened).padEnd(12)}` +
+      `Unique repos      ${uniqueRepos}`
     );
     console.log(
-      `  Issues worked    ${String(summary.unique_issues).padEnd(12)}` +
-      `Tokens used      ${summary.total_tokens.toLocaleString()}`
+      `  Issues worked    ${String(uniqueIssues).padEnd(12)}` +
+      `Tokens used      ${totalTokens.toLocaleString()}`
     );
     console.log("");
-    const firstDate = summary.first_run ? summary.first_run.slice(0, 10) : "—";
-    const lastDate = summary.last_run ? summary.last_run.slice(0, 10) : "—";
+    const firstDate = firstRun ? firstRun.slice(0, 10) : "—";
+    const lastDate = lastRun ? lastRun.slice(0, 10) : "—";
     console.log(
       `  First run    ${firstDate.padEnd(16)}` +
       `Latest run    ${lastDate}`
@@ -960,7 +928,7 @@ program
       }
     }
     console.log("");
-    closeDb();
+    closeStore();
   });
 
 // --- steward init ---
@@ -1131,14 +1099,6 @@ program
     // --- Rebuild native modules + build + link ---
     console.log("");
     console.log("Building...");
-
-    try {
-      process.stdout.write("  ⏳ Rebuilding native modules (may take a minute)...");
-      execSync("npm rebuild better-sqlite3", { stdio: "pipe", timeout: 300000 });
-      process.stdout.write("\r  ✓ Native modules rebuilt                          \n");
-    } catch {
-      process.stdout.write("\r  ⚠ Native module rebuild failed (try: npm install) \n");
-    }
 
     try {
       execSync("npm run build", { stdio: "pipe" });

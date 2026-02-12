@@ -2,7 +2,7 @@ import { execSync } from "node:child_process";
 import { readFileSync, existsSync } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";
-import { getDb, withDbWriteRetry } from "./db.js";
+import { addUsageSnapshot, getLatestSnapshot } from "./store.js";
 import { emitEvent } from "./audit_log.js";
 import type { UsageSnapshot } from "./models.js";
 
@@ -239,22 +239,7 @@ export async function pollUsage(): Promise<UsageSnapshot | null> {
 }
 
 function storeSnapshot(snapshot: UsageSnapshot): void {
-  const db = getDb();
-  withDbWriteRetry(() => {
-    db.prepare(`
-      INSERT INTO usage_snapshots
-        (timestamp, tokens_used, tokens_quota, tokens_remaining, period_start, period_end, source)
-      VALUES (?, ?, ?, ?, ?, ?, ?)
-    `).run(
-      snapshot.timestamp,
-      snapshot.tokens_used,
-      snapshot.tokens_quota,
-      snapshot.tokens_remaining,
-      snapshot.period_start,
-      snapshot.period_end,
-      snapshot.source,
-    );
-  });
+  addUsageSnapshot(snapshot);
 
   emitEvent("usage_poll", {
     source: snapshot.source,
@@ -267,20 +252,7 @@ function storeSnapshot(snapshot: UsageSnapshot): void {
  * Get the most recent usage snapshot from DB.
  */
 export function getLatestUsage(): UsageSnapshot | null {
-  const db = getDb();
-  const row = db
-    .prepare("SELECT * FROM usage_snapshots ORDER BY timestamp DESC LIMIT 1")
-    .get() as any;
-  if (!row) return null;
-  return {
-    timestamp: row.timestamp,
-    tokens_used: row.tokens_used,
-    tokens_quota: row.tokens_quota,
-    tokens_remaining: row.tokens_remaining,
-    period_start: row.period_start,
-    period_end: row.period_end,
-    source: row.source,
-  };
+  return getLatestSnapshot();
 }
 
 /**

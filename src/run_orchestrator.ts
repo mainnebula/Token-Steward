@@ -3,7 +3,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync, unlinkSync } from "
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { randomUUID } from "node:crypto";
-import { getDb, withDbWriteRetry } from "./db.js";
+import { addRun, updateRun, getRuns } from "./store.js";
 import { emitEvent, getLogger } from "./audit_log.js";
 import { pollUsage } from "./usage_adapter.js";
 import type { Candidate, Run, Policy } from "./models.js";
@@ -33,17 +33,7 @@ export function queueRun(candidate: Candidate): Run {
     created_at: now,
   };
 
-  const db = getDb();
-  withDbWriteRetry(() => {
-    db.prepare(`
-      INSERT INTO runs (id, candidate_repo, candidate_issue, issue_url, branch, status, tokens_consumed, pr_url, error, started_at, finished_at, created_at)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    `).run(
-      run.id, run.candidate_repo, run.candidate_issue, run.issue_url,
-      run.branch, run.status, run.tokens_consumed, run.pr_url,
-      run.error, run.started_at, run.finished_at, run.created_at,
-    );
-  });
+  addRun(run);
 
   emitEvent("run_queued", { run_id: id, repo: candidate.repo_slug, issue: candidate.issue_number });
   return run;
@@ -54,21 +44,14 @@ export function queueRun(candidate: Candidate): Run {
  */
 export async function executeRun(run: Run, policy: Policy): Promise<Run> {
   const log = getLogger();
-  const db = getDb();
 
-  const updateRun = (updates: Partial<Run>) => {
+  const applyUpdate = (updates: Partial<Run>) => {
     Object.assign(run, updates);
-    const setClauses = Object.keys(updates)
-      .map((k) => `${k} = ?`)
-      .join(", ");
-    const values = Object.values(updates);
-    withDbWriteRetry(() => {
-      db.prepare(`UPDATE runs SET ${setClauses} WHERE id = ?`).run(...values, run.id);
-    });
+    updateRun(run.id, updates);
   };
 
   try {
-    updateRun({ status: "running", started_at: new Date().toISOString() });
+    applyUpdate({ status: "running", started_at: new Date().toISOString() });
     emitEvent("run_started", { run_id: run.id });
 
     // Take usage snapshot before
@@ -99,8 +82,8 @@ export async function executeRun(run: Run, policy: Policy): Promise<Run> {
       // 5. Push branch and open draft PR
       pushBranch(repoDir, run.branch);
       const prUrl = openDraftPR(run, repoDir);
-      updateRun({ pr_url: prUrl });
-      updateRun({
+      applyUpdate({ pr_url: prUrl });
+      applyUpdate({
         status: "succeeded",
         tokens_consumed: tokensConsumed,
         finished_at: new Date().toISOString(),
@@ -112,7 +95,7 @@ export async function executeRun(run: Run, policy: Policy): Promise<Run> {
       });
     } else {
       const noChangesSummary = summarizeNoChanges(claudeResult.stdout, claudeResult.stderr);
-      updateRun({
+      applyUpdate({
         status: "no_changes",
         error: noChangesSummary,
         tokens_consumed: tokensConsumed,
@@ -127,7 +110,7 @@ export async function executeRun(run: Run, policy: Policy): Promise<Run> {
     }
   } catch (err) {
     const errorMsg = err instanceof Error ? err.message : String(err);
-    updateRun({
+    applyUpdate({
       status: "failed",
       error: errorMsg,
       finished_at: new Date().toISOString(),
@@ -327,37 +310,26 @@ export function openDraftPR(run: Run, repoDir: string): string | null {
 // --- Query helpers ---
 
 export function getActiveRuns(): Run[] {
-  const db = getDb();
-  return db
-    .prepare("SELECT * FROM runs WHERE status IN ('queued', 'running', 'in_progress')")
-    .all() as Run[];
+  return getRuns({ statuses: ["queued", "running", "in_progress"] });
 }
 
 export function getRecentRuns(limit = 10): Run[] {
-  const db = getDb();
-  return db
-    .prepare("SELECT * FROM runs ORDER BY created_at DESC LIMIT ?")
-    .all(limit) as Run[];
+  return getRuns({ orderBy: "created_at_desc", limit });
 }
 
 export function getTodayRunCount(): number {
-  const db = getDb();
   const today = new Date().toISOString().slice(0, 10);
-  const row = db
-    .prepare(
-      "SELECT COUNT(*) as cnt FROM runs WHERE created_at >= ? AND status != 'canceled'",
-    )
-    .get(today) as { cnt: number };
-  return row.cnt;
+  return getRuns({}).filter(
+    (r) => r.created_at >= today && r.status !== "canceled",
+  ).length;
 }
 
 export function cancelRun(runId: string): void {
-  const db = getDb();
-  withDbWriteRetry(() => {
-    db.prepare(
-      "UPDATE runs SET status = 'canceled', finished_at = ? WHERE id = ? AND status IN ('queued', 'running', 'in_progress')",
-    ).run(new Date().toISOString(), runId);
-  });
+  const activeStatuses = new Set(["queued", "running", "in_progress"]);
+  const run = getRuns({}).find((r) => r.id === runId);
+  if (run && activeStatuses.has(run.status)) {
+    updateRun(runId, { status: "canceled", finished_at: new Date().toISOString() });
+  }
   emitEvent("run_canceled", { run_id: runId });
 }
 
@@ -462,24 +434,20 @@ export function launchInteractiveClaude(repoDir: string): number {
  * Find an active run for a given repo/issue.
  */
 export function getRunByRepo(repoSlug: string, issueNumber: number): Run | null {
-  const db = getDb();
-  return (db
-    .prepare(
-      "SELECT * FROM runs WHERE candidate_repo = ? AND candidate_issue = ? AND status IN ('running', 'in_progress') ORDER BY created_at DESC LIMIT 1",
-    )
-    .get(repoSlug, issueNumber) as Run) ?? null;
+  return getRuns({
+    statuses: ["running", "in_progress"],
+    repo: repoSlug,
+    issue: issueNumber,
+    orderBy: "created_at_desc",
+    limit: 1,
+  })[0] ?? null;
 }
 
 /**
  * Get the most recent run (any status, but prefer running).
  */
 export function getLatestRun(): Run | null {
-  const db = getDb();
-  return (db
-    .prepare(
-      "SELECT * FROM runs ORDER BY CASE WHEN status IN ('in_progress', 'running') THEN 0 ELSE 1 END, created_at DESC LIMIT 1",
-    )
-    .get() as Run) ?? null;
+  return getRuns({ orderBy: "active_first", limit: 1 })[0] ?? null;
 }
 
 /**
@@ -518,12 +486,5 @@ export function verifyBranchCheckedOut(repoDir: string, branch: string): boolean
  * Update a run's status and optional fields.
  */
 export function updateRunStatus(runId: string, updates: Partial<Run>): void {
-  const db = getDb();
-  const setClauses = Object.keys(updates)
-    .map((k) => `${k} = ?`)
-    .join(", ");
-  const values = Object.values(updates);
-  withDbWriteRetry(() => {
-    db.prepare(`UPDATE runs SET ${setClauses} WHERE id = ?`).run(...values, runId);
-  });
+  updateRun(runId, updates);
 }

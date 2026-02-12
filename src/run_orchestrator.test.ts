@@ -1,17 +1,8 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
-import Database from "better-sqlite3";
 import { mkdirSync, writeFileSync, readFileSync, rmSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { execSync } from "node:child_process";
-
-let testDb: Database.Database;
-
-// Mock the db module to use in-memory SQLite
-vi.mock("./db.js", () => ({
-  getDb: () => testDb,
-  closeDb: () => {},
-  withDbWriteRetry: <T>(op: () => T) => op(),
-}));
+import { _resetForTesting } from "./store.js";
 
 // Mock audit_log to avoid file I/O
 vi.mock("./audit_log.js", () => ({
@@ -70,53 +61,8 @@ function makeCandidate(overrides: Partial<Candidate> = {}): Candidate {
   };
 }
 
-function setupDb() {
-  testDb = new Database(":memory:");
-  testDb.pragma("journal_mode = WAL");
-  testDb.pragma("foreign_keys = ON");
-  testDb.exec(`
-    CREATE TABLE IF NOT EXISTS usage_snapshots (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      timestamp TEXT NOT NULL,
-      tokens_used INTEGER NOT NULL,
-      tokens_quota INTEGER NOT NULL,
-      tokens_remaining INTEGER NOT NULL,
-      period_start TEXT NOT NULL,
-      period_end TEXT NOT NULL,
-      source TEXT NOT NULL
-    );
-    CREATE TABLE IF NOT EXISTS runs (
-      id TEXT PRIMARY KEY,
-      candidate_repo TEXT NOT NULL,
-      candidate_issue INTEGER NOT NULL,
-      issue_url TEXT NOT NULL,
-      branch TEXT NOT NULL,
-      status TEXT NOT NULL DEFAULT 'queued',
-      tokens_consumed INTEGER NOT NULL DEFAULT 0,
-      pr_url TEXT,
-      error TEXT,
-      started_at TEXT,
-      finished_at TEXT,
-      created_at TEXT NOT NULL
-    );
-    CREATE TABLE IF NOT EXISTS guardrail_state (
-      id INTEGER PRIMARY KEY CHECK (id = 1),
-      paused INTEGER NOT NULL DEFAULT 0,
-      pause_reason TEXT,
-      consecutive_ci_failures INTEGER NOT NULL DEFAULT 0,
-      last_usage_poll TEXT
-    );
-    INSERT OR IGNORE INTO guardrail_state (id, paused, consecutive_ci_failures)
-      VALUES (1, 0, 0);
-  `);
-}
-
 beforeEach(() => {
-  setupDb();
-});
-
-afterEach(() => {
-  testDb.close();
+  _resetForTesting();
 });
 
 describe("queueRun", () => {
@@ -129,11 +75,12 @@ describe("queueRun", () => {
     expect(run.id).toHaveLength(8);
   });
 
-  it("persists run to database", () => {
+  it("persists run to store", () => {
     const run = queueRun(makeCandidate());
-    const row = testDb.prepare("SELECT * FROM runs WHERE id = ?").get(run.id) as Run;
-    expect(row).toBeDefined();
-    expect(row.status).toBe("queued");
+    const recent = getRecentRuns(100);
+    const found = recent.find((r) => r.id === run.id);
+    expect(found).toBeDefined();
+    expect(found!.status).toBe("queued");
   });
 });
 
@@ -142,7 +89,8 @@ describe("updateRunStatus", () => {
     const run = queueRun(makeCandidate());
     updateRunStatus(run.id, { status: "in_progress", started_at: "2025-01-01T00:00:00Z" });
 
-    const row = testDb.prepare("SELECT * FROM runs WHERE id = ?").get(run.id) as Run;
+    const recent = getRecentRuns(100);
+    const row = recent.find((r) => r.id === run.id)!;
     expect(row.status).toBe("in_progress");
     expect(row.started_at).toBe("2025-01-01T00:00:00Z");
   });
@@ -155,7 +103,8 @@ describe("updateRunStatus", () => {
       finished_at: "2025-01-01T01:00:00Z",
     });
 
-    const row = testDb.prepare("SELECT * FROM runs WHERE id = ?").get(run.id) as Run;
+    const recent = getRecentRuns(100);
+    const row = recent.find((r) => r.id === run.id)!;
     expect(row.status).toBe("succeeded");
     expect(row.pr_url).toBe("https://github.com/test/repo/pull/1");
   });
@@ -170,8 +119,8 @@ describe("getLatestRun", () => {
     const first = queueRun(makeCandidate({ issue_number: 1 }));
     const second = queueRun(makeCandidate({ issue_number: 2 }));
     // Ensure deterministic ordering by setting distinct timestamps
-    testDb.prepare("UPDATE runs SET created_at = ? WHERE id = ?").run("2025-01-01T00:00:00Z", first.id);
-    testDb.prepare("UPDATE runs SET created_at = ? WHERE id = ?").run("2025-01-01T01:00:00Z", second.id);
+    updateRunStatus(first.id, { created_at: "2025-01-01T00:00:00Z" } as Partial<Run>);
+    updateRunStatus(second.id, { created_at: "2025-01-01T01:00:00Z" } as Partial<Run>);
 
     const latest = getLatestRun();
     expect(latest).not.toBeNull();
@@ -239,7 +188,8 @@ describe("cancelRun", () => {
     updateRunStatus(run.id, { status: "in_progress" });
     cancelRun(run.id);
 
-    const row = testDb.prepare("SELECT * FROM runs WHERE id = ?").get(run.id) as Run;
+    const recent = getRecentRuns(100);
+    const row = recent.find((r) => r.id === run.id)!;
     expect(row.status).toBe("canceled");
     expect(row.finished_at).not.toBeNull();
   });
@@ -249,7 +199,7 @@ describe("writeContextFile", () => {
   const tmpDir = join("workspace", "__test_write_context__");
 
   beforeEach(() => {
-    mkdirSync(tmpDir, { recursive: true });
+    mkdirSync(join(tmpDir, ".git", "info"), { recursive: true });
   });
 
   afterEach(() => {

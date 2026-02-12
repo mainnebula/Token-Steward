@@ -1,33 +1,25 @@
-import { getDb, withDbWriteRetry } from "./db.js";
+import { getGuardrailData, updateGuardrailState, incrementCiFailures, resetCiFailures, getRuns } from "./store.js";
 import { emitEvent, getLogger } from "./audit_log.js";
 import { isUsageStale } from "./usage_adapter.js";
 import type { Policy, GuardrailState } from "./models.js";
 
 export function getGuardrailState(): GuardrailState {
-  const db = getDb();
-  const row = db
-    .prepare("SELECT * FROM guardrail_state WHERE id = 1")
-    .get() as any;
-
-  // Calculate recent run results
-  const recentRuns = db
-    .prepare(
-      `SELECT status, finished_at FROM runs
-       WHERE finished_at IS NOT NULL
-         AND status IN ('succeeded', 'failed')
-       ORDER BY finished_at DESC LIMIT 10`,
-    )
-    .all() as Array<{ status: string; finished_at: string }>;
+  const data = getGuardrailData();
+  const recentRuns = getRuns({
+    statuses: ["succeeded", "failed"],
+    orderBy: "finished_at_desc",
+    limit: 10,
+  });
 
   return {
-    paused: !!row.paused,
-    pause_reason: row.pause_reason,
-    consecutive_ci_failures: row.consecutive_ci_failures,
+    paused: data.paused,
+    pause_reason: data.pause_reason,
+    consecutive_ci_failures: data.consecutive_ci_failures,
     recent_run_results: recentRuns.map((r) => ({
       succeeded: r.status === "succeeded",
-      finished_at: r.finished_at,
+      finished_at: r.finished_at!,
     })),
-    last_usage_poll: row.last_usage_poll,
+    last_usage_poll: data.last_usage_poll,
   };
 }
 
@@ -97,36 +89,19 @@ export function evaluateGuardrails(policy: Policy): {
  * Record a run result for guardrail tracking.
  */
 export function recordRunResult(succeeded: boolean): void {
-  const db = getDb();
-  withDbWriteRetry(() => {
-    if (succeeded) {
-      db.prepare(
-        "UPDATE guardrail_state SET consecutive_ci_failures = 0 WHERE id = 1",
-      ).run();
-    } else {
-      db.prepare(
-        "UPDATE guardrail_state SET consecutive_ci_failures = consecutive_ci_failures + 1 WHERE id = 1",
-      ).run();
-    }
-  });
+  if (succeeded) {
+    resetCiFailures();
+  } else {
+    incrementCiFailures();
+  }
 }
 
 export function pauseAutopilot(reason: string): void {
-  const db = getDb();
-  withDbWriteRetry(() => {
-    db.prepare(
-      "UPDATE guardrail_state SET paused = 1, pause_reason = ? WHERE id = 1",
-    ).run(reason);
-  });
+  updateGuardrailState({ paused: true, pause_reason: reason });
   emitEvent("autopilot_paused", { reason });
 }
 
 export function resumeAutopilot(): void {
-  const db = getDb();
-  withDbWriteRetry(() => {
-    db.prepare(
-      "UPDATE guardrail_state SET paused = 0, pause_reason = NULL, consecutive_ci_failures = 0 WHERE id = 1",
-    ).run();
-  });
+  updateGuardrailState({ paused: false, pause_reason: null, consecutive_ci_failures: 0 });
   emitEvent("autopilot_resumed", {});
 }
