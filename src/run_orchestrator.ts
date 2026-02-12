@@ -168,17 +168,26 @@ export async function prepareRepo(repoSlug: string, branch: string): Promise<str
       stdio: ["pipe", "pipe", "pipe"],
     });
   } else {
-    // Fork (idempotent), then clone the fork into our workspace dir.
-    execSync(`gh repo fork "${repoSlug}" --default-branch-only`, { timeout: 60000, stdio: ["pipe", "pipe", "pipe"] });
-    // Determine the user's fork slug
-    const ghUser = execSync("gh api user --jq .login", { encoding: "utf-8", timeout: 10000 }).trim();
-    const repoName = repoSlug.split("/")[1];
-    const forkSlug = `${ghUser}/${repoName}`;
-    execSync(`gh repo clone "${forkSlug}" "${repoDir}" -- --depth=50 --quiet --no-tags`, { timeout: 90000, stdio: ["pipe", "pipe", "pipe"] });
-    // Add upstream remote pointing to original repo (skip if already set by gh clone)
-    const cloneRemotes = execSync("git remote", { cwd: repoDir, encoding: "utf-8" }).trim().split("\n");
-    if (!cloneRemotes.includes("upstream")) {
-      execSync(`git remote add upstream "https://github.com/${repoSlug}.git"`, { cwd: repoDir, timeout: 5000 });
+    // Try to fork, then clone the fork. If forking fails (403, disabled, etc.),
+    // fall back to cloning upstream directly.
+    let clonedFork = false;
+    try {
+      execSync(`gh repo fork "${repoSlug}" --default-branch-only`, { timeout: 60000, stdio: ["pipe", "pipe", "pipe"] });
+      const ghUser = execSync("gh api user --jq .login", { encoding: "utf-8", timeout: 10000 }).trim();
+      const repoName = repoSlug.split("/")[1];
+      const forkSlug = `${ghUser}/${repoName}`;
+      execSync(`gh repo clone "${forkSlug}" "${repoDir}" -- --depth=50 --quiet --no-tags`, { timeout: 90000, stdio: ["pipe", "pipe", "pipe"] });
+      const cloneRemotes = execSync("git remote", { cwd: repoDir, encoding: "utf-8" }).trim().split("\n");
+      if (!cloneRemotes.includes("upstream")) {
+        execSync(`git remote add upstream "https://github.com/${repoSlug}.git"`, { cwd: repoDir, timeout: 5000 });
+      }
+      clonedFork = true;
+    } catch (forkErr) {
+      const msg = forkErr instanceof Error ? forkErr.message : String(forkErr);
+      getLogger().warn({ repo: repoSlug, error: msg }, "Fork failed, cloning upstream directly");
+      console.warn(`  Warning: Could not fork ${repoSlug} (${msg.includes("403") ? "forking disabled or token lacks permission" : "fork failed"})`);
+      console.warn("  Cloning upstream directly. You'll need to fork manually to open a PR.");
+      execSync(`gh repo clone "${repoSlug}" "${repoDir}" -- --depth=50 --quiet --no-tags`, { timeout: 90000, stdio: ["pipe", "pipe", "pipe"] });
     }
   }
 
