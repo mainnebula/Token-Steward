@@ -1133,10 +1133,11 @@ program
     console.log("Building...");
 
     try {
-      execSync("npm rebuild better-sqlite3", { stdio: "pipe" });
-      console.log("  ✓ Native modules rebuilt");
+      process.stdout.write("  ⏳ Rebuilding native modules (may take a minute)...");
+      execSync("npm rebuild better-sqlite3", { stdio: "pipe", timeout: 300000 });
+      process.stdout.write("\r  ✓ Native modules rebuilt                          \n");
     } catch {
-      console.log("  ⚠ Native module rebuild failed (try: npm install)");
+      process.stdout.write("\r  ⚠ Native module rebuild failed (try: npm install) \n");
     }
 
     try {
