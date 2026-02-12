@@ -1054,18 +1054,30 @@ program
       new Promise((resolve) => rl.question(prompt, resolve));
 
     const defaultBudget = (existing.weekly_target_tokens as number) ?? 500000;
-    const defaultReserve = (existing.weekly_min_reserve_tokens as number) ?? 25000;
+    const existingReserve = (existing.weekly_min_reserve_tokens as number) ?? 25000;
     const limits = (existing.limits ?? {}) as Record<string, unknown>;
-    const defaultMaxTokens = (limits.max_tokens_per_run as number) ?? 60000;
+    const existingMaxTokens = (limits.max_tokens_per_run as number) ?? 60000;
 
-    const budgetAnswer = await ask(`  Weekly token budget [${defaultBudget}]: `);
-    const weeklyTarget = budgetAnswer.trim() ? parseInt(budgetAnswer.trim(), 10) : defaultBudget;
+    // Compute existing percentages for defaults
+    const defaultReservePct = Math.round((existingReserve / defaultBudget) * 100);
+    const defaultMaxPct = Math.round((existingMaxTokens / defaultBudget) * 100);
 
-    const reserveAnswer = await ask(`  Reserve tokens (keep for your own use) [${defaultReserve}]: `);
-    const weeklyReserve = reserveAnswer.trim() ? parseInt(reserveAnswer.trim(), 10) : defaultReserve;
+    const budgetAnswer = await ask(`  Weekly token budget [${defaultBudget.toLocaleString()}]: `);
+    const weeklyTarget = budgetAnswer.trim() ? parseInt(budgetAnswer.trim().replace(/,/g, ""), 10) : defaultBudget;
 
-    const maxAnswer = await ask(`  Max tokens per issue [${defaultMaxTokens}]: `);
-    const maxPerRun = maxAnswer.trim() ? parseInt(maxAnswer.trim(), 10) : defaultMaxTokens;
+    const reserveAnswer = await ask(`  Keep for personal use [${defaultReservePct}%]: `);
+    const reservePct = reserveAnswer.trim() ? parseInt(reserveAnswer.trim().replace("%", ""), 10) : defaultReservePct;
+    const weeklyReserve = Math.round(weeklyTarget * (reservePct / 100));
+
+    const maxAnswer = await ask(`  Max budget per issue [${defaultMaxPct}%]: `);
+    const maxPct = maxAnswer.trim() ? parseInt(maxAnswer.trim().replace("%", ""), 10) : defaultMaxPct;
+    const maxPerRun = Math.round(weeklyTarget * (maxPct / 100));
+
+    console.log("");
+    console.log(`  Budget: ${weeklyTarget.toLocaleString()} tokens/week`);
+    console.log(`  Reserve: ${weeklyReserve.toLocaleString()} tokens (${reservePct}%)`);
+    console.log(`  Per issue: ${maxPerRun.toLocaleString()} tokens max (${maxPct}%)`);
+
 
     rl.close();
 
