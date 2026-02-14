@@ -1,6 +1,6 @@
 ---
 name: token-steward:stats
-description: Show your open-source contribution history and statistics.
+description: Show your contribution history and impact across open-source projects.
 ---
 
 You are running the Token Steward stats command.
@@ -54,4 +54,4 @@ Follow these steps:
    ```
 
 6. If the CLI is NOT installed and the user has 3+ PRs, offer to install it:
-   > "You've got a solid contribution history! The Token Steward CLI can track per-run token usage and detailed stats. Want me to install it? `npm install -g token-steward && steward init`"
+   > "You've got a solid contribution history! The Token Steward CLI tracks per-run stats and contribution streaks. Want me to install it? `npm install -g token-steward && steward init`"

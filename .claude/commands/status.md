@@ -63,4 +63,4 @@ Follow these steps:
    ```
 
 7. If the CLI is NOT installed and this is the first time running status, offer to install it:
-   > "Want to track budgets and contribution history? I can install the Token Steward CLI: `npm install -g token-steward && steward init`"
+   > "Want to track your contributions and see impact stats? I can install the Token Steward CLI: `npm install -g token-steward && steward init`"

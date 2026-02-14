@@ -1,6 +1,6 @@
 # Token Steward
 
-Most Claude Code subscribers don't use their full weekly token allowance. Token Steward helps put surplus tokens to work on real open-source issues — finding impactful problems, setting up workspaces, and submitting quality PRs.
+Token Steward helps you contribute to the open-source projects you care about. It finds real issues on projects that matter to you, sets up workspaces, and guides you through submitting quality PRs. Got unused Claude Code tokens? Put them to work on the tools you depend on.
 
 ## Prerequisites
 
@@ -65,10 +65,11 @@ The feed is rebuilt every 6 hours by a GitHub Actions workflow that:
 
 #### Discovery flow
 
-1. Ask user for preferences if not previously set:
-   - What programming languages? (e.g., TypeScript, Python, Go, Rust)
-   - What topics or categories? (e.g., developer-tools, documentation, security, ai-ml)
-   - Minimum repo stars? (default: 100)
+1. Build a profile from the user's GitHub activity automatically (3 API calls):
+   - Their repos: `gh repo list @me` → languages, topics
+   - Their starred repos: `gh api user/starred` → projects they care about
+   - Their recent PRs: `gh pr list --author=@me` → ecosystems they're active in
+   Present a summary and ask if they want to adjust. If their profile is thin (< 5 repos, no stars), fall back to asking conversationally about interests
 
 2. **Fetch the feed** (one HTTP call):
    ```bash

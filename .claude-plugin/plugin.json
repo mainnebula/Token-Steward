@@ -1,6 +1,6 @@
 {
   "name": "token-steward",
-  "description": "Turn unused Claude Code tokens into open-source contributions. Discover impactful issues, work on them with Claude, and submit PRs.",
+  "description": "Contribute to the open-source projects you care about. Discover issues, get guided workflows, and submit quality PRs — all powered by Claude Code.",
   "version": "0.1.0",
   "author": {
     "name": "mainnebula",
