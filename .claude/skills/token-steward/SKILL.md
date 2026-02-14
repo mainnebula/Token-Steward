@@ -46,7 +46,7 @@ Every discovered issue gets one of three action types based on its state:
 
 ### 1. Discover
 
-Discovery uses a **feed-first** approach to minimize API calls and Claude Code token usage.
+Discovery uses a **two-path choice** to quickly find relevant issues without wasting tokens on broad searching.
 
 #### Issue Feed
 
@@ -65,62 +65,44 @@ The feed is rebuilt every 6 hours by a GitHub Actions workflow that:
 
 #### Discovery flow
 
-1. Build a profile from the user's GitHub activity automatically (3 API calls):
-   - Their repos: `gh repo list @me` → languages, topics
-   - Their starred repos: `gh api user/starred` → projects they care about
-   - Their recent PRs: `gh pr list --author=@me` → ecosystems they're active in
-   Present a summary and ask if they want to adjust. If their profile is thin (< 5 repos, no stars), fall back to asking conversationally about interests
+The user picks one of three paths:
 
-2. **Fetch the feed** (one HTTP call):
-   ```bash
-   curl -sf "https://raw.githubusercontent.com/mainnebula/token-steward/feed/feed/feed.json"
-   ```
+> 1. **Projects I use** — find issues on repos you've starred or contributed to
+> 2. **Important projects** — find approachable issues on well-known open-source projects
+> 3. Or name a specific project
 
-3. **Filter locally** by user preferences — language, stars, labels. This is instant, no API calls.
+**Path 1 — "Projects I use":**
+1. Fetch starred repos via `gh api user/starred`
+2. For starred repos with >50 stars, check for open "good first issue" issues
+3. Filter out assigned issues, assign action types, present top 5
 
-4. If the feed has **3+ matching issues**, present them directly (already scored, already checked for PRs/assignees).
+**Path 2 — "Important projects":**
+1. Fetch the pre-built feed (one curl call)
+2. Ask a follow-up to narrow: highest impact, filter by user's languages, or a specific area
+3. Filter and present top 5. No live fallback — if the feed is missing, tell the user to run `scripts/seed-feed.sh`
 
-5. If the feed has **fewer than 3 matches** for the user's criteria, supplement with a targeted live search:
-   ```bash
-   gh search issues --label="good first issue" --language=<lang> --no-assignee --sort=reactions --limit=10 --json number,title,repository,labels,reactionGroups,comments,createdAt,assignees
-   ```
-   For live results, do a quick PR check and score inline per `references/scoring.md`.
+**Path 3 — Specific project:**
+1. Validate repo via `gh repo view`
+2. Fetch "good first issue" issues, filter assigned, score, present
 
-6. Assign action type (Fix, Review, or Propose) per the rules in "Action Types" above.
-
-7. Dedupe against user's open PRs:
-   ```bash
-   gh pr list --author=@me --state=open --json url,headRepository
-   ```
-
-8. Present top 5 sorted by score, with action type shown for each.
+All paths dedupe against the user's existing open PRs before presenting results. Top 5 issues are shown sorted by score with action type tags.
 
 ### 2. Work
 
 Behavior depends on the action type:
 
-#### Fix (default)
+#### Fix (guided)
 
-1. Fork and clone the repo:
-   ```bash
-   gh repo fork <owner/repo> --clone --default-branch-only
-   ```
-2. Create a working branch:
-   ```bash
-   git checkout -b steward/<issue-number>-<slug>
-   ```
-3. Fetch issue details:
-   ```bash
-   gh issue view <number> -R <owner/repo> --json title,body,labels,comments
-   ```
-4. Write `STEWARD_CONTEXT.md` in the repo root with:
-   - Issue title, number, and URL
-   - Issue body
-   - Labels
-   - Summary of repo README
-   - Key sections from CONTRIBUTING.md (if present)
-   - Action: Fix
-5. Read the context file and begin working on the issue
+Claude acts as a **guide** — the user should understand what's broken, why, what changed, and how to verify.
+
+1. **Set up workspace** — fork, clone, branch (mechanical setup, Claude handles this)
+2. **Read and understand** — fetch issue details, README, CONTRIBUTING.md
+3. **Explain the bug** — what it is, what symptoms it causes, where in the codebase it lives, why it happens
+4. **Explain the fix approach** — what needs to change and why, walk through the code changes, flag edge cases. **Ask the user if the approach makes sense before writing code.**
+5. **Implement the fix** — write the code, explaining each change as it goes
+6. **Explain expected behavior** — what the new behavior looks like, how it differs from the broken behavior, any side effects
+7. **Help the user test** — explain how to test manually, point to existing tests, suggest new test cases. Let the user run tests and confirm.
+8. **Submit** — only after the user is satisfied, proceed to PR
 
 #### Review
 

@@ -44,7 +44,9 @@ Follow these steps:
    - `Closes <owner/repo>#<number>` to link the issue
    - A summary of what was changed and why
    - Any testing done
-   - `Token-Steward-Donation: <owner/repo>#<number>` footer
+   - A footer line: `Contributed via [Token Steward](https://github.com/mainnebula/token-steward)`
+
+   **Do NOT include "Generated with Claude Code" or any Claude attribution.** The Token Steward footer is the attribution for this workflow.
 
 7. Report the PR URL to the user.
 

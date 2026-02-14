@@ -19,12 +19,12 @@ Use clear, descriptive commit messages:
 
 <optional body explaining why>
 
-Token-Steward-Donation: <owner/repo>#<issue-number>
+Contributed via Token Steward
 ```
 
 Types: `fix`, `feat`, `docs`, `refactor`, `test`, `chore`
 
-The `Token-Steward-Donation` footer helps track contributions made through Token Steward.
+The `Contributed via Token Steward` footer identifies contributions made through this workflow. **Do NOT include "Generated with Claude Code" or any Claude/AI attribution** — use the Token Steward footer instead.
 
 ## Propose-First Protocol
 

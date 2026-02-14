@@ -30,39 +30,82 @@ Follow these steps:
 
 ## Fix
 
-For unclaimed, reasonably-sized issues — code a solution and prepare a PR.
+For unclaimed, reasonably-sized issues — guide the user through understanding and fixing the bug together.
 
-1. Fork and clone the repository:
-   ```bash
-   gh repo fork <owner/repo> --clone --default-branch-only
-   ```
+**The key principle: Claude explains at every step. The user should understand what was broken, why, what changed, and how to verify. Claude doesn't silently fix and move on.**
 
-2. Navigate into the cloned repo directory.
+### Step 1: Set up the workspace
 
-3. Create a working branch:
-   ```bash
-   git checkout -b steward/<issue-number>-<short-slug>
-   ```
-   (derive slug from issue title: lowercase, hyphens, max 40 chars)
+Fork and clone the repository:
+```bash
+gh repo fork <owner/repo> --clone --default-branch-only
+```
 
-4. Fetch issue details:
-   ```bash
-   gh issue view <number> -R <owner/repo> --json title,body,labels,comments,reactionGroups
-   ```
+Navigate into the cloned repo directory.
 
-5. Read the repo's README.md for project context.
+Create a working branch:
+```bash
+git checkout -b steward/<issue-number>-<short-slug>
+```
+(derive slug from issue title: lowercase, hyphens, max 40 chars)
 
-6. Check for and read CONTRIBUTING.md if it exists.
+### Step 2: Read and understand the issue
 
-7. Write a `STEWARD_CONTEXT.md` file in the repo root containing:
-   - Issue title, number, and URL
-   - Issue body (full text)
-   - Labels
-   - Summary of the repo (from README)
-   - Key contribution guidelines (from CONTRIBUTING.md)
-   - Action: Fix
+Fetch issue details:
+```bash
+gh issue view <number> -R <owner/repo> --json title,body,labels,comments,reactionGroups
+```
 
-8. Read `STEWARD_CONTEXT.md` to load full context, then begin working on the issue. Ask the user how they'd like to approach the implementation.
+Read the repo's README.md for project context.
+
+Check for and read CONTRIBUTING.md if it exists.
+
+### Step 3: Explain the bug to the user
+
+Present a clear explanation covering:
+
+- **What the bug is** — plain language summary of the problem
+- **What symptoms it causes** — how this affects users of the project
+- **Where it lives in the codebase** — specific files and lines
+- **Why it happens** — the root cause
+
+Keep this conversational, not a wall of text. The user should walk away understanding the bug well enough to explain it to someone else.
+
+### Step 4: Explain the fix approach
+
+Walk through the proposed solution:
+
+- **What needs to change and why** — the specific modifications needed
+- **The code changes** — walk through what each change does
+- **Edge cases or risks** — anything that could go wrong or needs extra care
+
+**Ask the user if this approach makes sense before writing any code.** Wait for their confirmation or feedback.
+
+### Step 5: Implement the fix
+
+Write the code. As you make each change, explain what you're doing and why — don't just silently edit files.
+
+### Step 6: Explain expected behavior after the fix
+
+Once the code is written, explain:
+
+- **What the new behavior looks like** — what users will see after the fix
+- **How it differs from the broken behavior** — before vs. after
+- **Side effects or related areas** — anything else that might be affected
+
+### Step 7: Help the user test
+
+Guide the user through verification:
+
+- **How to test manually** — specific steps they can follow
+- **Existing tests** — point to the test suite and explain how to run it
+- **New test cases** — suggest what additional tests would be valuable, if any
+
+Let the user run the tests and confirm the fix works. Don't just run them silently.
+
+### Step 8: Submit
+
+Only after the user is satisfied with the fix and testing, proceed to submit. Push the branch and open a draft PR, or hand off to `/token-steward:submit`.
 
 ---
 
@@ -91,20 +134,14 @@ For issues that already have an open PR — review and test the existing contrib
    gh issue view <issue-number> -R <owner/repo> --json title,body,labels
    ```
 
-5. Write a `STEWARD_CONTEXT.md` file with:
-   - Issue title, number, and URL
-   - PR title, number, URL, and author
-   - PR diff summary (files changed, additions, deletions)
-   - Action: Review
-
-6. Review the code:
+5. Review the code:
    - Read the changed files in full context
    - Check if the PR actually addresses the issue
    - Look for bugs, edge cases, missing tests, style issues
    - Run the test suite if the repo has one
    - Check if CI is passing
 
-7. Present findings to the user and draft a review comment. After user approval, submit via:
+6. Present findings to the user and draft a review comment. Walk through what you found and why it matters. After the user approves the review, submit via:
    ```bash
    gh pr review <pr-number> -R <owner/repo> --comment --body "<review>"
    ```
@@ -129,20 +166,16 @@ For large or complex issues — analyze the codebase and draft an approach plan.
 
 4. Analyze the codebase to understand the relevant code paths, architecture, and conventions.
 
-5. Write a `STEWARD_CONTEXT.md` file with:
-   - Issue title, number, and URL
-   - Action: Propose
-   - Proposed approach (3-5 bullet points)
-   - Files that would need to change
-   - Estimated scope and complexity
-
-6. Draft a proposal comment for the user to review:
+5. Draft a proposal for the user to review:
    - Clear summary of the planned approach
    - Specific files and functions to modify
+   - Estimated scope and complexity
    - Any open questions for the maintainer
    - Note that this is an AI-assisted analysis
 
-7. Present the draft to the user. After approval, post it:
+6. Walk the user through the proposal — explain the reasoning behind each part so they can evaluate it and suggest changes.
+
+7. After the user approves, post it:
    ```bash
    gh issue comment <number> -R <owner/repo> --body "<proposal>"
    ```
