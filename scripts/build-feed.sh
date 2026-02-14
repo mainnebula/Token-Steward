@@ -2,8 +2,8 @@
 #
 # build-feed.sh — Build the Token Steward issue feed.
 #
-# Searches GitHub for fresh open-source issues, scores them,
-# filters out assigned/PR'd issues, and writes feed.json.
+# Searches GitHub for fresh open-source issues, enriches with repo metadata
+# via a single batched GraphQL query, scores them, and writes feed.json.
 #
 # Designed to run in GH Actions on a cron, but works locally too.
 # Requires: gh CLI (authenticated), jq.
@@ -15,19 +15,29 @@ FEED_FILE="${FEED_DIR}/feed.json"
 PREVIOUS_FEED="${FEED_DIR}/feed.json"
 MAX_ISSUES_PER_QUERY=20
 MAX_FEED_SIZE=200
-MAX_ENRICH=100
+MIN_STARS=100
+LOOKBACK_HOURS="${LOOKBACK_HOURS:-48}"
 
-# Top languages by GitHub popularity — keeps the search matrix manageable
+# Compute the lookback date for filtering search results
+if [[ "$(uname)" == "Darwin" ]]; then
+  LOOKBACK_DATE=$(date -u -v-${LOOKBACK_HOURS}H +"%Y-%m-%dT%H:%M:%SZ")
+else
+  LOOKBACK_DATE=$(date -u -d "${LOOKBACK_HOURS} hours ago" +"%Y-%m-%dT%H:%M:%SZ")
+fi
+
+# Top languages by GitHub popularity
 LANGUAGES=("TypeScript" "Python" "Go" "Rust" "JavaScript" "Java")
 
-# Primary labels — "good first issue" and "help wanted" cover the vast majority
-LABELS=("good first issue" "help wanted")
+# Primary labels — bugs and features
+LABELS=("good first issue" "help wanted" "enhancement" "feature")
 
 mkdir -p "$FEED_DIR"
 
 echo "Building Token Steward feed..."
 echo "  Languages: ${LANGUAGES[*]}"
 echo "  Labels: ${LABELS[*]}"
+echo "  Min stars: $MIN_STARS"
+echo "  Lookback: ${LOOKBACK_HOURS}h (since $LOOKBACK_DATE)"
 
 # Temporary files
 ISSUES_RAW=$(mktemp)
@@ -40,10 +50,6 @@ trap cleanup EXIT
 echo ""
 echo "Phase 1: Searching for issues..."
 
-# gh search issues JSON fields (not the same as gh issue view):
-#   number, title, url, repository, labels, commentsCount, createdAt, assignees, body
-# Note: reactionGroups is NOT available in search results.
-
 search_count=0
 echo -n "" > "$ISSUES_RAW"
 
@@ -55,18 +61,18 @@ for label in "${LABELS[@]}"; do
       sleep 5
     fi
 
+    # Use -- qualifier to filter by updated date (lookback window)
     result=$(gh search issues \
       --label="$label" \
       --language="$lang" \
       --state=open \
       --sort=updated \
       --limit="$MAX_ISSUES_PER_QUERY" \
+      --updated=">=${LOOKBACK_DATE}" \
       --json number,title,url,repository,labels,commentsCount,createdAt,assignees \
       2>/dev/null || echo "[]")
 
-    # Append each item as a line of JSON (newline-delimited)
     echo "$result" | jq -c '.[]' >> "$ISSUES_RAW" 2>/dev/null || true
-
     search_count=$((search_count + 1))
   done
 done
@@ -79,20 +85,98 @@ jq -s 'unique_by(.url)' "$ISSUES_RAW" > "$ISSUES_DEDUPED" 2>/dev/null || echo "[
 total_raw=$(jq 'length' "$ISSUES_DEDUPED")
 echo "  Unique issues found: $total_raw"
 
-# --- Phase 2: Filter out assigned issues ---
+# --- Phase 2: Filter ---
 echo ""
-echo "Phase 2: Filtering assigned issues..."
+echo "Phase 2: Filtering..."
 
+# Remove assigned issues
 jq '[.[] | select((.assignees | length) == 0)]' "$ISSUES_DEDUPED" > "$ISSUES_RAW"
 after_assignee=$(jq 'length' "$ISSUES_RAW")
 echo "  After removing assigned: $after_assignee"
 
-# --- Phase 3: Enrich with repo metadata and PR check ---
-echo ""
-echo "Phase 3: Enriching with metadata (up to $MAX_ENRICH issues)..."
+# Quality filter: skip non-ASCII-dominant titles (spam signal)
+jq '[.[] | select((.title | explode | map(select(. < 128)) | length) as $ascii |
+  (.title | length) as $total |
+  ($total > 0 and ($ascii / $total) > 0.8))]' "$ISSUES_RAW" > "$ISSUES_DEDUPED"
+after_quality=$(jq 'length' "$ISSUES_DEDUPED")
+echo "  After quality filter: $after_quality"
 
+# --- Phase 3: Batch-fetch repo metadata via GraphQL ---
+echo ""
+echo "Phase 3: Fetching repo metadata (batched GraphQL)..."
+
+# Extract unique repos
+REPOS=$(jq -r '[.[].repository.nameWithOwner] | unique | .[]' "$ISSUES_DEDUPED")
+REPO_COUNT=$(echo "$REPOS" | grep -c . || echo "0")
+echo "  Unique repos: $REPO_COUNT"
+
+# Build a single GraphQL query for all repos (batch in groups of 50 to stay under query limits)
+REPO_META_FILE=$(mktemp)
+echo '{}' > "$REPO_META_FILE"
+INDEX=0
+BATCH_QUERY="query {"
+BATCH_SIZE=0
+
+flush_batch() {
+  if [[ "$BATCH_SIZE" -eq 0 ]]; then return; fi
+  local query="${BATCH_QUERY}}"
+  local result
+  result=$(gh api graphql -f query="$query" --jq '.data' 2>/dev/null || echo '{}')
+  # Merge into accumulated metadata
+  jq -s '.[0] * .[1]' "$REPO_META_FILE" <(echo "$result") > "${REPO_META_FILE}.tmp"
+  mv "${REPO_META_FILE}.tmp" "$REPO_META_FILE"
+  BATCH_QUERY="query {"
+  BATCH_SIZE=0
+}
+
+while IFS= read -r repo; do
+  [[ -z "$repo" ]] && continue
+  owner="${repo%%/*}"
+  name="${repo##*/}"
+  alias="repo_${INDEX}"
+
+  BATCH_QUERY+="
+  ${alias}: repository(owner: \"${owner}\", name: \"${name}\") {
+    nameWithOwner
+    stargazerCount
+    primaryLanguage { name }
+    contributing: object(expression: \"HEAD:CONTRIBUTING.md\") { __typename }
+    workflows: object(expression: \"HEAD:.github/workflows\") { __typename }
+  }"
+
+  INDEX=$((INDEX + 1))
+  BATCH_SIZE=$((BATCH_SIZE + 1))
+
+  if (( BATCH_SIZE >= 50 )); then
+    flush_batch
+    sleep 1  # Rate limit between batches
+  fi
+done <<< "$REPOS"
+
+flush_batch
+
+echo "  Metadata fetched: $INDEX repos in $(( (INDEX + 49) / 50 )) GraphQL call(s)"
+
+# Build a repo lookup: nameWithOwner -> {stars, language, has_contributing, has_ci}
+REPO_LOOKUP=$(mktemp)
+jq 'to_entries | map(.value) | map({
+  key: .nameWithOwner,
+  value: {
+    stars: .stargazerCount,
+    language: (.primaryLanguage.name // "unknown"),
+    has_contributing: (.contributing != null),
+    has_ci: (.workflows != null)
+  }
+}) | from_entries' "$REPO_META_FILE" > "$REPO_LOOKUP"
+
+# --- Phase 4: Enrich issues with repo data + PR checks ---
+echo ""
+echo "Phase 4: Enriching issues..."
+
+# Filter by minimum stars first (avoid PR checks on tiny repos)
 echo "[]" > "$ISSUES_ENRICHED"
 enriched_count=0
+skipped_stars=0
 
 while IFS= read -r issue; do
   repo_full=$(echo "$issue" | jq -r '.repository.nameWithOwner // empty')
@@ -102,40 +186,70 @@ while IFS= read -r issue; do
     continue
   fi
 
-  # Rate limit: ~3 API calls per issue
-  if (( enriched_count > 0 && enriched_count % 15 == 0 )); then
+  # Look up repo metadata
+  stars=$(jq -r --arg repo "$repo_full" '.[$repo].stars // 0' "$REPO_LOOKUP")
+  if [[ "$stars" -lt "$MIN_STARS" ]]; then
+    skipped_stars=$((skipped_stars + 1))
+    continue
+  fi
+
+  language=$(jq -r --arg repo "$repo_full" '.[$repo].language // "unknown"' "$REPO_LOOKUP")
+  has_contributing=$(jq --arg repo "$repo_full" '.[$repo].has_contributing // false' "$REPO_LOOKUP")
+  has_ci=$(jq --arg repo "$repo_full" '.[$repo].has_ci // false' "$REPO_LOOKUP")
+
+  # Compute LLM receptivity (mirrors computeLlmReceptivity in src/issue_discovery.ts)
+  llm_receptivity=$(jq -n \
+    --argjson stars "$stars" \
+    --argjson has_contributing "${has_contributing}" \
+    --argjson has_ci "${has_ci}" \
+    '0.5
+    + (if $has_ci then 0.10 else 0 end)
+    + (if $has_contributing then 0.10 else 0 end)
+    + (if $stars >= 1000 then 0.05 else 0 end)
+    + (if $stars >= 10000 then 0.05 else 0 end)
+    | [., 1] | min | . * 100 | round / 100')
+
+  # Rate limit PR checks
+  if (( enriched_count > 0 && enriched_count % 30 == 0 )); then
     echo "  Enriched $enriched_count issues... (pausing for rate limit)"
     sleep 5
   fi
 
-  # Check for existing PRs
-  pr_count=$(gh pr list -R "$repo_full" --search "$issue_number" --state=open --json number --jq 'length' 2>/dev/null || echo "0")
+  # Check for PRs that explicitly reference this issue via closing keywords
+  # Uses GraphQL to find PRs linked to the issue (Closes #N, Fixes #N, etc.)
+  pr_info="null"
+  action="fix"
 
-  if [[ "$pr_count" -gt 0 ]]; then
-    pr_info=$(gh pr list -R "$repo_full" --search "$issue_number" --state=open --json number,title,url,author --jq '.[0]' 2>/dev/null || echo "null")
+  linked_prs=$(gh api graphql \
+    -F owner="${repo_full%%/*}" \
+    -F name="${repo_full##*/}" \
+    -F number="$issue_number" \
+    -f query='query($owner: String!, $name: String!, $number: Int!) {
+      repository(owner: $owner, name: $name) {
+        issue(number: $number) {
+          timelineItems(itemTypes: [CROSS_REFERENCED_EVENT], first: 10) {
+            nodes {
+              ... on CrossReferencedEvent {
+                source {
+                  ... on PullRequest {
+                    number
+                    title
+                    url
+                    state
+                    author { login }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }' --jq '[.data.repository.issue.timelineItems.nodes[].source | select(.number != null and .state == "OPEN")] | first // empty' 2>/dev/null || echo "")
+
+  if [[ -n "$linked_prs" && "$linked_prs" != "null" ]]; then
+    pr_info="$linked_prs"
     action="review"
-  else
-    pr_info="null"
-    action="fix"
   fi
-
-  # Fetch repo metadata via GraphQL (stars + CONTRIBUTING + CI in one call)
-  owner="${repo_full%%/*}"
-  name="${repo_full##*/}"
-
-  repo_data=$(gh api graphql -f query='query {
-    repository(owner: "'"$owner"'", name: "'"$name"'") {
-      stargazerCount
-      primaryLanguage { name }
-      contributing: object(expression: "HEAD:CONTRIBUTING.md") { __typename }
-      workflows: object(expression: "HEAD:.github/workflows") { __typename }
-    }
-  }' --jq '.data.repository // {}' 2>/dev/null || echo '{}')
-
-  stars=$(echo "$repo_data" | jq '.stargazerCount // 0')
-  repo_language=$(echo "$repo_data" | jq -r '.primaryLanguage.name // "unknown"')
-  has_contributing=$(echo "$repo_data" | jq '.contributing != null')
-  has_ci=$(echo "$repo_data" | jq '.workflows != null')
 
   # Extract issue signals
   title=$(echo "$issue" | jq -r '.title')
@@ -144,24 +258,36 @@ while IFS= read -r issue; do
   labels=$(echo "$issue" | jq -c '[.labels[].name]')
   comment_count=$(echo "$issue" | jq -r '.commentsCount // 0')
 
-  # Calculate age in days (macOS and Linux compatible)
+  # Age in days
   if [[ "$(uname)" == "Darwin" ]]; then
     created_epoch=$(date -j -f "%Y-%m-%dT%H:%M:%SZ" "$created_at" +%s 2>/dev/null || echo "0")
   else
     created_epoch=$(date -d "$created_at" +%s 2>/dev/null || echo "0")
   fi
-  now_epoch=$(date +%s)
-  age_days=$(( (now_epoch - created_epoch) / 86400 ))
+  age_days=$(( ($(date +%s) - created_epoch) / 86400 ))
 
-  # Detect bug and complexity labels
   is_bug=$(echo "$labels" | jq 'any(test("bug|defect|broken|regression"; "i"))' 2>/dev/null || echo "false")
   is_complex=$(echo "$labels" | jq 'any(test("large|complex|major|epic"; "i"))' 2>/dev/null || echo "false")
+  is_feature=$(echo "$labels" | jq 'any(test("enhancement|feature|proposal|rfc"; "i"))' 2>/dev/null || echo "false")
+
+  # Infer category from labels (mirrors src/scoring_engine.ts category bonuses)
+  category="general"
+  if echo "$labels" | jq -e 'any(test("doc|documentation|docs"; "i"))' > /dev/null 2>&1; then
+    category="documentation"
+  elif echo "$labels" | jq -e 'any(test("security|vulnerability|cve"; "i"))' > /dev/null 2>&1; then
+    category="security"
+  fi
+
+  # Determine surface type (bugfix vs feature)
+  surface="bugfix"
+  if [[ "$is_feature" == "true" && "$is_bug" != "true" ]]; then
+    surface="feature"
+  fi
 
   if [[ "$is_complex" == "true" && "$action" == "fix" ]]; then
     action="propose"
   fi
 
-  # Build enriched issue object
   enriched=$(jq -n \
     --arg repo "$repo_full" \
     --argjson number "$issue_number" \
@@ -169,65 +295,68 @@ while IFS= read -r issue; do
     --arg url "$url" \
     --arg created_at "$created_at" \
     --argjson labels "$labels" \
-    --arg language "$repo_language" \
+    --arg language "$language" \
     --argjson stars "$stars" \
     --argjson comment_count "$comment_count" \
     --argjson age_days "$age_days" \
     --argjson is_bug "${is_bug:-false}" \
+    --argjson is_feature "${is_feature:-false}" \
+    --arg category "$category" \
+    --arg surface "$surface" \
     --argjson has_contributing "${has_contributing:-false}" \
     --argjson has_ci "${has_ci:-false}" \
+    --argjson llm_receptivity "${llm_receptivity:-0.5}" \
     --arg action "$action" \
     --argjson pr_info "${pr_info:-null}" \
     '{
-      repo: $repo,
-      number: $number,
-      title: $title,
-      url: $url,
-      created_at: $created_at,
-      labels: $labels,
-      language: $language,
-      stars: $stars,
-      comment_count: $comment_count,
-      age_days: $age_days,
-      is_bug: $is_bug,
-      has_contributing: $has_contributing,
-      has_ci: $has_ci,
-      action: $action,
-      pr: $pr_info
+      repo: $repo, number: $number, title: $title, url: $url,
+      created_at: $created_at, labels: $labels, language: $language,
+      stars: $stars, comment_count: $comment_count, age_days: $age_days,
+      is_bug: $is_bug, is_feature: $is_feature, category: $category,
+      surface: $surface, has_contributing: $has_contributing,
+      has_ci: $has_ci, llm_receptivity: $llm_receptivity,
+      action: $action, pr: $pr_info
     }')
 
-  # Append to enriched list
   jq --argjson new "$enriched" '. + [$new]' "$ISSUES_ENRICHED" > "${ISSUES_ENRICHED}.tmp"
   mv "${ISSUES_ENRICHED}.tmp" "$ISSUES_ENRICHED"
 
   enriched_count=$((enriched_count + 1))
-done < <(jq -c '.[]' "$ISSUES_RAW" | head -n "$MAX_ENRICH")
+done < <(jq -c '.[]' "$ISSUES_DEDUPED" | head -n 200)
 
-echo "  Enriched: $enriched_count issues"
+echo "  Enriched: $enriched_count issues (skipped $skipped_stars below $MIN_STARS stars)"
 
-# --- Phase 4: Score issues ---
+# --- Phase 5: Score issues ---
 echo ""
-echo "Phase 4: Scoring..."
+echo "Phase 5: Scoring..."
 
-# RICE scoring in jq (mirrors scoring_engine.ts)
+# Scoring aligned with src/scoring_engine.ts
+# Missing from feed: per-issue reaction_count (gh search doesn't return it) — uses 0
+# Missing from feed: token fit (no budget context in feed) — omitted, expected
 jq '
+  # Reach: reactions, comments, repo stars (mirrors scoreReach)
   def score_reach:
     0.3
+    # Note: reaction_count not available from gh search; reactions would add up to +0.40
     + (if .comment_count >= 2 then 0.10 else 0 end)
     + (if .comment_count >= 5 then 0.10 else 0 end)
     + (if .stars >= 1000 then 0.05 else 0 end)
     + (if .stars >= 10000 then 0.05 else 0 end)
     | [., 1] | min;
 
+  # Impact: bug severity, maintainer engagement, category (mirrors scoreImpact)
   def score_impact:
     0.4
     + (if .is_bug then 0.20 else 0 end)
-    + (if .comment_count >= 3 then 0.15 else 0 end)
+    + (if .comment_count >= 3 then 0.15 else 0 end)  # proxy for has_maintainer_comment
+    + (if .category == "documentation" then 0.10 else 0 end)
+    + (if .category == "security" then 0.15 else 0 end)
     | [., 1] | min;
 
+  # Confidence: LLM receptivity, labels, repo signals (mirrors scoreConfidence)
   def score_confidence:
     0.3
-    + 0.15
+    + (.llm_receptivity * 0.30)
     + (if (.labels | any(test("good.first.issue|help.wanted|beginner|easy|small|docs|enhancement"; "i"))) then 0.15 else 0 end)
     + (if .has_contributing then 0.05 else 0 end)
     + (if .has_ci then 0.10 else 0 end)
@@ -235,6 +364,7 @@ jq '
     + (if (.title | length) > 40 then 0.05 else 0 end)
     | [., 1] | min;
 
+  # Effort: age, complexity labels (mirrors scoreEffort, minus token fit)
   def score_effort:
     0.5
     + (if .age_days < 7 then 0.15
@@ -252,7 +382,13 @@ jq '
       (score_confidence * 0.30) +
       (score_effort * 0.25)
       | . * 100 | round / 100
-    )
+    ),
+    score_breakdown: {
+      reach: (score_reach | . * 100 | round / 100),
+      impact: (score_impact | . * 100 | round / 100),
+      confidence: (score_confidence | . * 100 | round / 100),
+      effort: (score_effort | . * 100 | round / 100)
+    }
   }]
   | sort_by(-.score)
 ' "$ISSUES_ENRICHED" > "${ISSUES_ENRICHED}.scored"
@@ -260,15 +396,14 @@ jq '
 scored_count=$(jq 'length' "${ISSUES_ENRICHED}.scored")
 echo "  Scored: $scored_count issues"
 
-# --- Phase 5: Merge with previous feed ---
+# --- Phase 6: Merge with previous feed ---
 echo ""
-echo "Phase 5: Merging with previous feed..."
+echo "Phase 6: Merging with previous feed..."
 
 if [[ -f "$PREVIOUS_FEED" ]] && jq -e '.issues' "$PREVIOUS_FEED" > /dev/null 2>&1; then
   prev_count=$(jq '.issues | length' "$PREVIOUS_FEED")
   echo "  Previous feed: $prev_count issues"
 
-  # New issues take priority, keep old ones that are still unique, cap at MAX_FEED_SIZE
   jq -s --argjson max "$MAX_FEED_SIZE" '
     (.[0] // []) as $new |
     ((.[1].issues // []) | [.[] | select(.url as $u | ($new | map(.url) | index($u) | not))]) as $old |
@@ -279,9 +414,9 @@ else
   jq --argjson max "$MAX_FEED_SIZE" '.[:$max]' "${ISSUES_ENRICHED}.scored" > "${ISSUES_ENRICHED}.merged"
 fi
 
-# --- Phase 6: Write final feed ---
+# --- Phase 7: Write final feed ---
 echo ""
-echo "Phase 6: Writing feed..."
+echo "Phase 7: Writing feed..."
 
 final_count=$(jq 'length' "${ISSUES_ENRICHED}.merged")
 
@@ -295,6 +430,9 @@ jq -n \
     languages: ($issues[0] | map(.language) | unique | sort),
     issues: $issues[0]
   }' > "$FEED_FILE"
+
+# Cleanup extra temp files
+rm -f "$REPO_META_FILE" "$REPO_LOOKUP"
 
 echo ""
 echo "Feed written to $FEED_FILE"

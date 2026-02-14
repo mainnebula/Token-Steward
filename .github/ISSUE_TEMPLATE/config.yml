@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Token Steward Web
+    url: https://tokensteward.dev
+    about: Browse the registry and add your repo via the web app
+  - name: Discussions
+    url: https://github.com/mainnebula/Token-Steward/discussions
+    about: Ask questions and share feedback

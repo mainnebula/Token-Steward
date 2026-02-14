@@ -13,7 +13,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
 
 jobs:
   build-feed:
@@ -33,14 +32,19 @@ jobs:
           # Carry forward previous feed if it exists
           git checkout origin/feed -- feed/feed.json 2>/dev/null || true
 
+      - name: Detect default branch
+        id: default-branch
+        run: echo "branch=$(gh repo view --json defaultBranchRef --jq '.defaultBranchRef.name')" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Build feed
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LOOKBACK_HOURS: ${{ inputs.lookback_hours || '48' }}
         run: |
           chmod +x scripts/build-feed.sh
-          # Checkout the script from main since we're on feed branch
-          git checkout origin/main -- scripts/build-feed.sh
+          git checkout "origin/${{ steps.default-branch.outputs.branch }}" -- scripts/build-feed.sh
           bash scripts/build-feed.sh
 
       - name: Commit and push feed
