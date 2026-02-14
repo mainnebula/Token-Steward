@@ -13,7 +13,10 @@ set -euo pipefail
 REPO_ROOT=$(git rev-parse --show-toplevel)
 FEED_DIR="feed"
 FEED_FILE="${FEED_DIR}/feed.json"
-MIN_STARS=100
+MIN_STARS=50
+
+# Lookback: 6 months (macOS + Linux compatible)
+LOOKBACK_DATE=$(date -v-6m +%Y-%m-%d 2>/dev/null || date -d '6 months ago' +%Y-%m-%d)
 
 echo "Seeding Token Steward feed..."
 
@@ -21,34 +24,39 @@ echo "Seeding Token Steward feed..."
 ISSUES_RAW=$(mktemp)
 echo "[]" > "$ISSUES_RAW"
 
-# Use gh search issues (better rate limit handling than raw API)
-searches=(
-  '--label=good first issue --language=TypeScript'
-  '--label=good first issue --language=Python'
-  '--label=help wanted --language=Go'
-  '--label=good first issue --language=Rust'
-  '--label=good first issue --language=JavaScript'
-  '--label=enhancement --language=TypeScript'
-)
+# Search matrix: languages x labels (matches build-feed.sh coverage)
+LANGUAGES=(TypeScript Python Go Rust JavaScript Lua)
+LABELS=("good first issue" "help wanted")
 
-for search_args in "${searches[@]}"; do
-  echo "  Searching: $search_args"
-  # shellcheck disable=SC2086
-  result=$(gh search issues $search_args \
-    --state=open --sort=reactions --limit=15 \
-    --json number,title,url,repository,labels,commentsCount,createdAt,assignees \
-    2>/dev/null || echo "[]")
+for label in "${LABELS[@]}"; do
+  for lang in "${LANGUAGES[@]}"; do
+    echo "  Searching: --label=$label --language=$lang"
+    result=$(gh search issues \
+      --label="$label" \
+      --language="$lang" \
+      --state=open --sort=reactions --limit=20 \
+      --created=">=${LOOKBACK_DATE}" \
+      --json number,title,url,repository,labels,commentsCount,createdAt,assignees \
+      2>/dev/null || echo "[]")
 
-  # Merge into accumulator
-  jq -s '.[0] + .[1]' "$ISSUES_RAW" <(echo "$result") > "${ISSUES_RAW}.tmp"
-  mv "${ISSUES_RAW}.tmp" "$ISSUES_RAW"
-  sleep 2
+    # Merge into accumulator
+    jq -s '.[0] + .[1]' "$ISSUES_RAW" <(echo "$result") > "${ISSUES_RAW}.tmp"
+    mv "${ISSUES_RAW}.tmp" "$ISSUES_RAW"
+    sleep 2
+  done
 done
 
 # Dedupe and filter out assigned
-jq '[. | unique_by(.url) | .[] | select((.assignees | length) == 0)]' "$ISSUES_RAW" > "${ISSUES_RAW}.filtered"
+jq '[. | unique_by(.url) | .[] | select((.assignees | length) == 0)]' "$ISSUES_RAW" > "${ISSUES_RAW}.deduped"
+after_assignee=$(jq 'length' "${ISSUES_RAW}.deduped")
+echo "  After dedup + unassigned filter: $after_assignee"
+
+# Quality filter: skip non-ASCII-dominant titles (spam signal)
+jq '[.[] | select((.title | explode | map(select(. < 128)) | length) as $ascii |
+  (.title | length) as $total |
+  ($total > 0 and ($ascii / $total) > 0.8))]' "${ISSUES_RAW}.deduped" > "${ISSUES_RAW}.filtered"
 total=$(jq 'length' "${ISSUES_RAW}.filtered")
-echo "  Found $total unique unassigned issues"
+echo "  After quality filter: $total issues"
 
 # --- Phase 2: Batch-fetch repo metadata via GraphQL ---
 echo ""
@@ -97,64 +105,25 @@ jq '[to_entries[].value | select(.nameWithOwner != null)] | map({
 
 echo "  Fetched metadata for $REPO_COUNT repos (1 GraphQL call)"
 
-# --- Phase 3: Enrich and score in one jq pass ---
+# --- Phase 3: Enrich issues with repo metadata ---
 echo ""
-echo "  Enriching and scoring..."
+echo "  Enriching issues..."
 
-ISSUES_SCORED=$(mktemp)
+ISSUES_ENRICHED=$(mktemp)
 now_epoch=$(date +%s)
 
 jq --argjson min_stars "$MIN_STARS" \
    --argjson now "$now_epoch" \
    --slurpfile lookup "$REPO_LOOKUP" '
 
-  # Scoring functions (aligned with src/scoring_engine.ts)
-  def score_reach:
-    0.3
-    + (if .comment_count >= 2 then 0.10 else 0 end)
-    + (if .comment_count >= 5 then 0.10 else 0 end)
-    + (if .stars >= 1000 then 0.05 else 0 end)
-    + (if .stars >= 10000 then 0.05 else 0 end)
-    | [., 1] | min;
-
-  def score_impact:
-    0.4
-    + (if .is_bug then 0.20 else 0 end)
-    + (if .comment_count >= 3 then 0.15 else 0 end)
-    + (if .category == "documentation" then 0.10 else 0 end)
-    + (if .category == "security" then 0.15 else 0 end)
-    | [., 1] | min;
-
-  def score_confidence:
-    0.3
-    + (.llm_receptivity * 0.30)
-    + (if (.labels | any(test("good.first.issue|help.wanted|beginner|easy|small|docs|enhancement"; "i"))) then 0.15 else 0 end)
-    + (if .has_contributing then 0.05 else 0 end)
-    + (if .has_ci then 0.10 else 0 end)
-    + (if (.title | length) > 15 then 0.05 else 0 end)
-    + (if (.title | length) > 40 then 0.05 else 0 end)
-    | [., 1] | min;
-
-  def score_effort:
-    0.5
-    + (if .age_days < 7 then 0.15
-       elif .age_days < 30 then 0.10
-       elif .age_days > 180 then -0.10
-       else 0 end)
-    + (if (.labels | any(test("small|easy|trivial|minor"; "i"))) then 0.15 else 0 end)
-    + (if (.labels | any(test("large|complex|major|epic"; "i"))) then -0.15 else 0 end)
-    | [., 1] | min | [., 0] | max;
-
   $lookup[0] as $meta |
 
   [.[] |
-    # Extract repo name and look up metadata
     .repository.nameWithOwner as $repo |
     ($meta[$repo] // null) as $rm |
     select($rm != null) |
     select($rm.stars >= $min_stars) |
 
-    # Build enriched issue
     {
       repo: $repo,
       number: .number,
@@ -194,9 +163,108 @@ jq --argjson min_stars "$MIN_STARS" \
       ),
       pr: null
     }
-  ] |
+  ]
+' "${ISSUES_RAW}.filtered" > "$ISSUES_ENRICHED"
 
-  # Score each issue
+enriched_count=$(jq 'length' "$ISSUES_ENRICHED")
+echo "  Enriched: $enriched_count issues (after $MIN_STARS+ star filter)"
+
+# --- Phase 4: PR detection via gh pr list ---
+echo ""
+echo "  Checking for linked PRs..."
+
+PR_LOOKUP=$(mktemp)
+echo '{}' > "$PR_LOOKUP"
+pr_found=0
+
+# Get unique repos from enriched issues
+ENRICHED_REPOS=$(jq -r '[.[].repo] | unique | .[]' "$ISSUES_ENRICHED")
+
+while IFS= read -r repo; do
+  [[ -z "$repo" ]] && continue
+
+  # Get issue numbers in this repo
+  issue_numbers=$(jq -r --arg repo "$repo" '[.[] | select(.repo == $repo) | .number] | .[]' "$ISSUES_ENRICHED")
+
+  while IFS= read -r issue_num; do
+    [[ -z "$issue_num" ]] && continue
+
+    # Check for PRs referencing this issue
+    pr_result=$(gh pr list -R "$repo" --search "$issue_num" --state=open \
+      --json number,title,url,author --limit=1 2>/dev/null || echo "[]")
+
+    if [[ "$pr_result" != "[]" && "$pr_result" != "" ]]; then
+      pr_json=$(echo "$pr_result" | jq 'first // empty' 2>/dev/null || echo "")
+      if [[ -n "$pr_json" && "$pr_json" != "null" ]]; then
+        # Store PR info keyed by "repo#number"
+        jq --arg key "${repo}#${issue_num}" --argjson pr "$pr_json" \
+          '. + {($key): $pr}' "$PR_LOOKUP" > "${PR_LOOKUP}.tmp"
+        mv "${PR_LOOKUP}.tmp" "$PR_LOOKUP"
+        pr_found=$((pr_found + 1))
+      fi
+    fi
+
+    sleep 1  # Rate limit between PR checks
+  done <<< "$issue_numbers"
+done <<< "$ENRICHED_REPOS"
+
+echo "  Found PRs for $pr_found issues"
+
+# Merge PR data into enriched issues
+ISSUES_WITH_PRS=$(mktemp)
+jq --slurpfile prs "$PR_LOOKUP" '
+  $prs[0] as $pr_map |
+  [.[] |
+    ("\(.repo)#\(.number)") as $key |
+    if $pr_map[$key] != null then
+      .pr = $pr_map[$key] | .action = "review"
+    else . end
+  ]
+' "$ISSUES_ENRICHED" > "$ISSUES_WITH_PRS"
+
+# --- Phase 5: Score issues ---
+echo ""
+echo "  Scoring..."
+
+ISSUES_SCORED=$(mktemp)
+
+jq '
+  def score_reach:
+    0.3
+    + (if .comment_count >= 2 then 0.10 else 0 end)
+    + (if .comment_count >= 5 then 0.10 else 0 end)
+    + (if .stars >= 1000 then 0.05 else 0 end)
+    + (if .stars >= 10000 then 0.05 else 0 end)
+    | [., 1] | min;
+
+  def score_impact:
+    0.4
+    + (if .is_bug then 0.20 else 0 end)
+    + (if .comment_count >= 3 then 0.15 else 0 end)
+    + (if .category == "documentation" then 0.10 else 0 end)
+    + (if .category == "security" then 0.15 else 0 end)
+    | [., 1] | min;
+
+  def score_confidence:
+    0.3
+    + (.llm_receptivity * 0.30)
+    + (if (.labels | any(test("good.first.issue|help.wanted|beginner|easy|small|docs|enhancement"; "i"))) then 0.15 else 0 end)
+    + (if .has_contributing then 0.05 else 0 end)
+    + (if .has_ci then 0.10 else 0 end)
+    + (if (.title | length) > 15 then 0.05 else 0 end)
+    + (if (.title | length) > 40 then 0.05 else 0 end)
+    | [., 1] | min;
+
+  def score_effort:
+    0.5
+    + (if .age_days < 7 then 0.15
+       elif .age_days < 30 then 0.10
+       elif .age_days > 180 then -0.10
+       else 0 end)
+    + (if (.labels | any(test("small|easy|trivial|minor"; "i"))) then 0.15 else 0 end)
+    + (if (.labels | any(test("large|complex|major|epic"; "i"))) then -0.15 else 0 end)
+    | [., 1] | min | [., 0] | max;
+
   [.[] | . + {
     score: (
       (score_reach * 0.20) + (score_impact * 0.25) +
@@ -210,8 +278,7 @@ jq --argjson min_stars "$MIN_STARS" \
       effort: (score_effort | . * 100 | round / 100)
     }
   }] | sort_by(-.score)
-
-' "${ISSUES_RAW}.filtered" > "$ISSUES_SCORED"
+' "$ISSUES_WITH_PRS" > "$ISSUES_SCORED"
 
 final_count=$(jq 'length' "$ISSUES_SCORED")
 echo "  Scored: $final_count issues"
@@ -258,4 +325,6 @@ else
 fi
 
 # Cleanup
-rm -f "$ISSUES_RAW" "${ISSUES_RAW}.filtered" "${ISSUES_RAW}.tmp" "$REPO_META_FILE" "$REPO_MAP_FILE" "$REPO_LOOKUP" "$ISSUES_SCORED"
+rm -f "$ISSUES_RAW" "${ISSUES_RAW}.deduped" "${ISSUES_RAW}.filtered" "${ISSUES_RAW}.tmp" \
+  "$REPO_META_FILE" "$REPO_MAP_FILE" "$REPO_LOOKUP" \
+  "$ISSUES_ENRICHED" "$PR_LOOKUP" "${PR_LOOKUP}.tmp" "$ISSUES_WITH_PRS" "$ISSUES_SCORED"
