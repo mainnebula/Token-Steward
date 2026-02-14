@@ -148,9 +148,9 @@ program
   .argument("<issue>", "Issue in owner/repo#123 format")
   .action(async (issueArg) => {
     const policy = loadPolicy();
-    const match = issueArg.match(/^(.+?)#(\d+)$/);
+    const match = issueArg.match(/^([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)#(\d+)$/);
     if (!match) {
-      console.error("Invalid format. Use owner/repo#123");
+      console.error("Invalid format. Use owner/repo#123 (alphanumeric, dots, hyphens, underscores only)");
       process.exit(1);
     }
     const [, repoSlug, issueNum] = match;
@@ -552,9 +552,9 @@ program
   .argument("<issue>", "Issue in owner/repo#123 format")
   .action(async (issueArg) => {
     const policy = loadPolicy();
-    const match = issueArg.match(/^(.+?)#(\d+)$/);
+    const match = issueArg.match(/^([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)#(\d+)$/);
     if (!match) {
-      console.error("Invalid format. Use owner/repo#123");
+      console.error("Invalid format. Use owner/repo#123 (alphanumeric, dots, hyphens, underscores only)");
       process.exit(1);
     }
     const [, repoSlug, issueNum] = match;
@@ -616,7 +616,7 @@ program
       return;
     }
 
-    const repoDir = join("workspace", run.candidate_repo.replace("/", "__"));
+    const repoDir = join("workspace", run.candidate_repo.replaceAll("/", "__"));
     if (!existsSync(join(repoDir, ".git"))) {
       console.error(`Workspace not found at ${repoDir}`);
       closeStore();

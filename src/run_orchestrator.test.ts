@@ -36,6 +36,27 @@ import {
 } from "./run_orchestrator.js";
 import type { Candidate, Run } from "./models.js";
 
+const TEST_GIT_ENV = {
+  ...process.env,
+  GIT_TEST_DEFAULT_INITIAL_BRANCH_NAME: "main",
+};
+
+function runGit(command: string, cwd: string): void {
+  execSync(command, {
+    cwd,
+    env: TEST_GIT_ENV,
+    stdio: "ignore",
+  });
+}
+
+function initializeTestRepo(repoDir: string): void {
+  runGit("git init", repoDir);
+  runGit("git checkout -b main", repoDir);
+  writeFileSync(join(repoDir, "README.md"), "initial", "utf-8");
+  runGit("git add .", repoDir);
+  runGit("git commit -m 'initial'", repoDir);
+}
+
 function makeCandidate(overrides: Partial<Candidate> = {}): Candidate {
   return {
     repo_slug: "test/repo",
@@ -259,10 +280,7 @@ describe("checkForNewCommits", () => {
   beforeEach(() => {
     rmSync(testRepoDir, { recursive: true, force: true });
     mkdirSync(testRepoDir, { recursive: true });
-    execSync("git init", { cwd: testRepoDir });
-    execSync("git checkout -b main", { cwd: testRepoDir });
-    writeFileSync(join(testRepoDir, "README.md"), "initial", "utf-8");
-    execSync("git add . && git commit -m 'initial'", { cwd: testRepoDir });
+    initializeTestRepo(testRepoDir);
   });
 
   afterEach(() => {
@@ -270,14 +288,15 @@ describe("checkForNewCommits", () => {
   });
 
   it("returns false when no new commits on branch", () => {
-    execSync("git checkout -b steward/test-branch", { cwd: testRepoDir });
+    runGit("git checkout -b steward/test-branch", testRepoDir);
     expect(checkForNewCommits(testRepoDir, "steward/test-branch")).toBe(false);
   });
 
   it("returns true when new commits exist on branch", () => {
-    execSync("git checkout -b steward/test-branch", { cwd: testRepoDir });
+    runGit("git checkout -b steward/test-branch", testRepoDir);
     writeFileSync(join(testRepoDir, "new-file.txt"), "content", "utf-8");
-    execSync("git add . && git commit -m 'new commit'", { cwd: testRepoDir });
+    runGit("git add .", testRepoDir);
+    runGit("git commit -m 'new commit'", testRepoDir);
     expect(checkForNewCommits(testRepoDir, "steward/test-branch")).toBe(true);
   });
 });
@@ -288,10 +307,7 @@ describe("verifyBranchCheckedOut", () => {
   beforeEach(() => {
     rmSync(testRepoDir, { recursive: true, force: true });
     mkdirSync(testRepoDir, { recursive: true });
-    execSync("git init", { cwd: testRepoDir });
-    execSync("git checkout -b main", { cwd: testRepoDir });
-    writeFileSync(join(testRepoDir, "README.md"), "initial", "utf-8");
-    execSync("git add . && git commit -m 'initial'", { cwd: testRepoDir });
+    initializeTestRepo(testRepoDir);
   });
 
   afterEach(() => {
@@ -299,7 +315,7 @@ describe("verifyBranchCheckedOut", () => {
   });
 
   it("returns true when correct branch is checked out", () => {
-    execSync("git checkout -b steward/my-branch", { cwd: testRepoDir });
+    runGit("git checkout -b steward/my-branch", testRepoDir);
     expect(verifyBranchCheckedOut(testRepoDir, "steward/my-branch")).toBe(true);
   });
 

@@ -39,6 +39,8 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
+    "@openai/codex": "^0.101.0",
+    "codex": "^0.2.3",
     "commander": "^13.1.0",
     "node-cron": "^3.0.3",
     "pino": "^9.6.0",
