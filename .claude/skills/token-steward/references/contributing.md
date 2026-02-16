@@ -12,19 +12,17 @@ Guidelines for submitting quality open-source contributions through Token Stewar
 
 ## Commit Messages
 
-Use clear, descriptive commit messages:
+Keep commit messages clean and focused on what changed — they live in the repo's git history forever.
 
 ```
 <type>: <short description>
 
 <optional body explaining why>
-
-Contributed via Token Steward
 ```
 
 Types: `fix`, `feat`, `docs`, `refactor`, `test`, `chore`
 
-The `Contributed via Token Steward` footer identifies contributions made through this workflow. **Do NOT include "Generated with Claude Code" or any Claude/AI attribution** — use the Token Steward footer instead.
+**Do NOT include Token Steward attribution or "Generated with Claude Code" in commit messages.** Attribution belongs in the PR description, not the commit history.
 
 ## Propose-First Protocol
 
