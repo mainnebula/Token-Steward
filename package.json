@@ -1,6 +1,6 @@
 {
   "name": "token-steward",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Discover and contribute to open-source projects with your unused Claude Code tokens",
   "type": "module",
   "license": "MIT",
