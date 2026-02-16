@@ -12,13 +12,13 @@ steward work cli/cli#9432 # Jump into a guided Claude Code session
 steward submit            # Review your changes and open a draft PR
 ```
 
-**Discover.** Tell Token Steward what projects and tools you care about — the frameworks you use, the CLIs you depend on, the libraries in your stack. It finds open issues on those projects (and similar ones), scores them by impact and feasibility, and shows you where your contribution will matter most.
+**Discover.** Pick your path: find issues on projects you've starred and use, browse high-impact issues on well-known open-source projects, or name a specific repo. No profile analysis or broad searching — just a quick choice and filtered results.
 
-**Propose.** For larger issues, Claude analyzes the codebase and posts a proposal comment before writing any code. The maintainer can approve, suggest changes, or decline — so effort goes toward approaches they actually want. This happens automatically for complex issues (configurable via `propose_first` in your policy).
+**Work.** Claude guides you through the fix, not the other way around. It explains what the bug is, what causes it, where it lives in the codebase, and walks through the fix approach — then asks if it makes sense before writing code. After implementing, it explains expected behavior and helps you test. You understand every change before it ships.
 
-**Work.** Solve real issues alongside Claude Code. Token Steward forks the repo, creates a branch, pulls in the issue details, and drops you into a session with full context loaded. Claude already knows the issue, the codebase, and what needs to happen.
+**Propose.** For larger issues, Claude analyzes the codebase and drafts a proposal comment. It walks you through the reasoning so you can evaluate and adjust before posting. The maintainer can then approve, suggest changes, or decline.
 
-**Submit.** You're the human in the loop. Review the changes, run the tests, and when you're satisfied, submit quality code to a project that needs it. Token Steward pushes your branch and opens a draft PR. Safe to run multiple times.
+**Submit.** When you're satisfied with the fix and tests pass, Token Steward pushes your branch and opens a draft PR. Safe to run multiple times.
 
 ## Install
 
@@ -123,8 +123,8 @@ After installing, restart Claude Code for it to discover the new skill.
 
 | Command | What it does |
 |---------|-------------|
-| `/token-steward:discover` | Find issues on projects you care about |
-| `/token-steward:work owner/repo#123` | Set up a workspace and start a guided session (fix, review, or propose) |
+| `/token-steward:discover` | Choose a path (your projects, important projects, or a specific repo) and find approachable issues |
+| `/token-steward:work owner/repo#123` | Set up a workspace and get guided through understanding, fixing, and testing the issue |
 | `/token-steward:submit` | Submit your contribution — PR, review, or proposal |
 | `/token-steward:status` | Show environment, open PRs, budget, and workspace info |
 | `/token-steward:stats` | Show contribution history and statistics |
