@@ -1,4 +1,4 @@
-import { exec } from "node:child_process";
+import { execFile } from "node:child_process";
 import { getRuns } from "./store.js";
 import { getLogger } from "./audit_log.js";
 import type { Candidate, RegistryRepo } from "./models.js";
@@ -24,9 +24,10 @@ const repoMetaCache = new Map<string, RepoMeta>();
 
 const CONCURRENCY = 8;
 
-function execAsync(cmd: string, timeoutMs = 15000): Promise<string> {
+/** Run a command with args array (no shell). Returns stdout. */
+function execAsync(cmd: string, args: string[], timeoutMs = 15000): Promise<string> {
   return new Promise((resolve, reject) => {
-    exec(cmd, { encoding: "utf-8", timeout: timeoutMs, maxBuffer: 5 * 1024 * 1024 }, (err, stdout) => {
+    execFile(cmd, args, { encoding: "utf-8", timeout: timeoutMs, maxBuffer: 5 * 1024 * 1024 }, (err, stdout) => {
       if (err) reject(err);
       else resolve(stdout);
     });
@@ -141,9 +142,12 @@ async function listIssues(repoSlug: string, labels: string[]): Promise<GitHubIss
   const labelResults = await Promise.all(
     labels.map(async (label) => {
       try {
-        const result = await execAsync(
-          `gh issue list --repo "${repoSlug}" --label "${label}" --state open --json number,title,url,labels,comments,reactionGroups,createdAt --limit 20`,
-        );
+        const result = await execAsync("gh", [
+          "issue", "list", "--repo", repoSlug, "--label", label,
+          "--state", "open",
+          "--json", "number,title,url,labels,comments,reactionGroups,createdAt",
+          "--limit", "20",
+        ]);
         return JSON.parse(result) as GitHubIssue[];
       } catch {
         return [];
@@ -175,18 +179,21 @@ async function getRepoMeta(slug: string, category: string): Promise<RepoMeta> {
   let hasCi = false;
 
   try {
-    // Single GraphQL call replaces 3 separate REST calls
-    const query = `query {
-      repository(owner: "${owner}", name: "${name}") {
+    // Single GraphQL call replaces 3 separate REST calls — uses variables to prevent injection
+    const query = `query($owner: String!, $name: String!) {
+      repository(owner: $owner, name: $name) {
         stargazerCount
         contributing: object(expression: "HEAD:CONTRIBUTING.md") { __typename }
         workflows: object(expression: "HEAD:.github/workflows") { __typename }
       }
     }`;
-    const result = await execAsync(
-      `gh api graphql -f query='${query}' --jq '.data.repository'`,
-      10000,
-    );
+    const result = await execAsync("gh", [
+      "api", "graphql",
+      "-F", `owner=${owner}`,
+      "-F", `name=${name}`,
+      "-f", `query=${query}`,
+      "--jq", ".data.repository",
+    ], 10000);
     const parsed = JSON.parse(result);
     stars = parsed.stargazerCount ?? 0;
     hasContributing = parsed.contributing !== null;
@@ -194,10 +201,9 @@ async function getRepoMeta(slug: string, category: string): Promise<RepoMeta> {
   } catch {
     // Fallback: try just getting stars via REST
     try {
-      const result = await execAsync(
-        `gh repo view "${slug}" --json stargazerCount --jq '.stargazerCount'`,
-        10000,
-      );
+      const result = await execAsync("gh", [
+        "repo", "view", slug, "--json", "stargazerCount", "--jq", ".stargazerCount",
+      ], 10000);
       stars = parseInt(result.trim(), 10) || 0;
     } catch {}
   }

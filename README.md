@@ -1,22 +1,22 @@
 # Token Steward
 
-Turn your unused Claude Code tokens into open-source contributions.
+Contribute to open-source projects you care about, powered by Claude Code.
 
-Most Claude Max subscribers don't use their full weekly token allowance. Token Steward helps you put that surplus to work by finding real issues on important open-source projects and helping you resolve them with Claude Code.
+Token Steward finds real issues on projects that matter to you, sets up everything you need, and guides you through making quality contributions. Got unused Claude Code tokens each week? Put them to work on the open-source tools you depend on.
 
 ## How it works
 
 ```
-steward discover          # Find impactful issues worth your time
+steward discover          # Find issues on projects you care about
 steward work cli/cli#9432 # Jump into a guided Claude Code session
 steward submit            # Review your changes and open a draft PR
 ```
 
-**Discover.** Find interesting, important open-source projects that actually need help. Token Steward uses the GitHub API and your curated registry to find open issues, then scores them by impact and feasibility. You see the ones where your contribution will matter most. Pick one and go.
+**Discover.** Tell Token Steward what projects and tools you care about — the frameworks you use, the CLIs you depend on, the libraries in your stack. It finds open issues on those projects (and similar ones), scores them by impact and feasibility, and shows you where your contribution will matter most.
 
-**Propose.** For larger issues, Claude analyzes the codebase and posts a proposal comment on the issue before writing any code. The maintainer can approve, suggest changes, or decline — so you don't burn tokens on an approach they'd reject. This happens automatically for issues estimated above 30k tokens (configurable via `propose_first` in your policy).
+**Propose.** For larger issues, Claude analyzes the codebase and posts a proposal comment before writing any code. The maintainer can approve, suggest changes, or decline — so effort goes toward approaches they actually want. This happens automatically for complex issues (configurable via `propose_first` in your policy).
 
-**Work.** Solve real issues alongside Claude Code. Token Steward sets up everything (forks the repo, creates a branch, pulls in the issue details) then drops you into a Claude Code session with full context already loaded. Just ask Claude to get started. It already knows the issue, the codebase, and what needs to happen.
+**Work.** Solve real issues alongside Claude Code. Token Steward forks the repo, creates a branch, pulls in the issue details, and drops you into a session with full context loaded. Claude already knows the issue, the codebase, and what needs to happen.
 
 **Submit.** You're the human in the loop. Review the changes, run the tests, and when you're satisfied, submit quality code to a project that needs it. Token Steward pushes your branch and opens a draft PR. Safe to run multiple times.
 
@@ -27,7 +27,7 @@ npm install -g token-steward
 steward init
 ```
 
-`steward init` checks your environment, walks you through policy config, and gets everything ready. After that, `steward discover` is all you need.
+`steward init` checks your environment, walks you through setup, and gets everything ready. After that, `steward discover` is all you need.
 
 Already set up? Run `steward init --check` to verify prerequisites without changing anything.
 
@@ -56,7 +56,7 @@ limits:
   max_tokens_per_run: 60000
   max_runs_per_day: 6
 
-# auto = propose first for issues >30k tokens
+# auto = propose first for complex issues
 # always = always propose before coding
 # never = skip straight to implementation
 propose_first: auto
@@ -100,12 +100,59 @@ steward pause            # Pause autopilot
 steward resume           # Resume autopilot
 ```
 
+## Claude Code Skill
+
+Use Token Steward as slash commands directly in Claude Code. No npm install required — just `gh` CLI.
+
+### Install the skill
+
+```bash
+npx skills add mainnebula/token-steward
+```
+
+Or manually:
+
+```bash
+git clone https://github.com/mainnebula/token-steward.git /tmp/token-steward
+cp -r /tmp/token-steward/.claude/* ~/.claude/
+```
+
+After installing, restart Claude Code for it to discover the new skill.
+
+### Commands
+
+| Command | What it does |
+|---------|-------------|
+| `/token-steward:discover` | Find issues on projects you care about |
+| `/token-steward:work owner/repo#123` | Set up a workspace and start a guided session (fix, review, or propose) |
+| `/token-steward:submit` | Submit your contribution — PR, review, or proposal |
+| `/token-steward:status` | Show environment, open PRs, budget, and workspace info |
+| `/token-steward:stats` | Show contribution history and statistics |
+
+### Skill + CLI
+
+The skill works standalone with just `gh` CLI. If you also install the full CLI, the skill detects it and delegates discovery, scoring, and workspace setup locally — saving Claude Code tokens and adding persistent tracking.
+
+```bash
+npm install -g token-steward
+steward init
+```
+
+| Feature | Skill only | Skill + CLI |
+|---------|-----------|-------------|
+| Discover issues | Claude searches via `gh` | Runs locally, faster |
+| Workspace setup | Claude forks/branches via `gh` | Handled locally |
+| Contribution stats | Basic (from GitHub API) | Detailed per-run tracking |
+| Token budgets | None | Enforced per-run and weekly |
+| Run history | None | Persistent, queryable |
+| Scheduling | None | Automated contribution windows |
+
 ## Roadmap
 
-- **Public leaderboard.** Track contributions across Token Steward users. Issues resolved, PRs merged, tokens donated. See who's making the biggest impact.
+- **Public leaderboard.** Track contributions across Token Steward users. Issues resolved, PRs merged, tokens invested. See who's making the biggest impact.
+- **Maintainer opt-in.** A `token-steward.yml` file maintainers drop in their repo to opt in and configure what issues are eligible for contributions.
 - **Shared registry.** A registry service that maintainers can submit their projects to directly, so contributors always have fresh work to pick from.
 - **PR outcome tracking.** Follow up on submitted PRs to measure merge rates and contribution quality over time.
-- **Multi-provider support.** Extend beyond Claude Code to other AI tools with token or credit systems.
 - **Team mode.** Coordinate across multiple contributors to avoid duplicate work on the same issues.
 
 ## Development

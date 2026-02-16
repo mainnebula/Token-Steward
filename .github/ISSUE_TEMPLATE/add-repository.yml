@@ -1,0 +1,73 @@
+name: Add Repository to Registry
+description: Request to add a new repository to the Token Steward registry
+labels: ["registry-addition"]
+body:
+  - type: input
+    id: slug
+    attributes:
+      label: Repository slug
+      description: "GitHub owner/repo format"
+      placeholder: "owner/repo"
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Display name
+      description: "Short display name for the repository"
+      placeholder: "My Project"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "One-line description of the project"
+      placeholder: "A tool that does X for Y developers."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - documentation
+        - developer-tools
+        - security
+        - ai-ml
+        - infrastructure
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: "Comma-separated tags"
+      placeholder: "typescript, validation, schema"
+    validations:
+      required: true
+
+  - type: input
+    id: issue_labels
+    attributes:
+      label: Issue labels to scan
+      description: "Comma-separated GitHub issue labels that mark eligible work"
+      placeholder: "good first issue, help wanted, bug"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: ownership
+    attributes:
+      label: Ownership confirmation
+      options:
+        - label: I am a maintainer or have write access to this repository
+          required: true
+        - label: This repository accepts external contributions
+          required: true
+        - label: I understand Token Steward will create AI-assisted pull requests on this repo
+          required: true

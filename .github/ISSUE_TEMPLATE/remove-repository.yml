@@ -1,0 +1,29 @@
+name: Remove Repository from Registry
+description: Request to remove a repository from the Token Steward registry
+labels: ["registry-removal"]
+body:
+  - type: input
+    id: slug
+    attributes:
+      label: Repository slug
+      description: "GitHub owner/repo format of the repo to remove"
+      placeholder: "owner/repo"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for removal
+      description: "Why should this repository be removed?"
+      placeholder: "No longer accepting external contributions, project archived, etc."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: ownership
+    attributes:
+      label: Ownership confirmation
+      options:
+        - label: I am a maintainer or have write access to this repository
+          required: true

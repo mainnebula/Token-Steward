@@ -6,3 +6,5 @@ workspace/
 *.db-journal
 .env
 .env.local
+.planning/
+.claude/settings.local.json

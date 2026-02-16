@@ -1,0 +1,13 @@
+{
+  "name": "token-steward",
+  "description": "Contribute to the open-source projects you care about. Discover issues, get guided workflows, and submit quality PRs — all powered by Claude Code.",
+  "version": "0.1.0",
+  "author": {
+    "name": "mainnebula",
+    "url": "https://github.com/mainnebula"
+  },
+  "homepage": "https://github.com/mainnebula/token-steward",
+  "repository": "https://github.com/mainnebula/token-steward",
+  "commands": "./.claude/commands",
+  "skills": "./.claude/skills"
+}

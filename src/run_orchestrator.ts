@@ -1,12 +1,45 @@
 import { execSync, spawnSync, spawn } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, writeFileSync, unlinkSync } from "node:fs";
-import { join } from "node:path";
+import { join, resolve } from "node:path";
 import { tmpdir } from "node:os";
 import { randomUUID } from "node:crypto";
 import { addRun, updateRun, getRuns } from "./store.js";
 import { emitEvent, getLogger } from "./audit_log.js";
 import { pollUsage } from "./usage_adapter.js";
 import type { Candidate, Run, Policy } from "./models.js";
+
+/** Validate a repo slug contains only safe characters (owner/name). */
+function validateRepoSlug(slug: string): void {
+  if (!/^[a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+$/.test(slug)) {
+    throw new Error(`Invalid repo slug: ${slug}`);
+  }
+}
+
+/** Run a command with args array (no shell interpolation). Throws on failure. */
+function execCmd(cmd: string, args: string[], opts: { cwd?: string; timeout?: number } = {}): string {
+  const result = spawnSync(cmd, args, {
+    cwd: opts.cwd,
+    timeout: opts.timeout ?? 30000,
+    encoding: "utf-8",
+    stdio: ["pipe", "pipe", "pipe"],
+  });
+  if (result.status !== 0) {
+    throw new Error(`${cmd} ${args[0]} failed: ${(result.stderr || result.error?.message || "").toString().slice(0, 500)}`);
+  }
+  return (result.stdout ?? "").trim();
+}
+
+/** Run a command, returning empty string on failure instead of throwing. */
+function execCmdSafe(cmd: string, args: string[], opts: { cwd?: string; timeout?: number } = {}): string {
+  const result = spawnSync(cmd, args, {
+    cwd: opts.cwd,
+    timeout: opts.timeout ?? 30000,
+    encoding: "utf-8",
+    stdio: ["pipe", "pipe", "pipe"],
+  });
+  if (result.status !== 0) return "";
+  return (result.stdout ?? "").trim();
+}
 
 const WORKSPACE_DIR = "workspace";
 
@@ -15,7 +48,7 @@ const WORKSPACE_DIR = "workspace";
  */
 export function queueRun(candidate: Candidate): Run {
   const id = randomUUID().slice(0, 8);
-  const branch = `steward/${candidate.repo_slug.replace("/", "-")}-${candidate.issue_number}-${id}`;
+  const branch = `steward/${candidate.repo_slug.replaceAll("/", "-")}-${candidate.issue_number}-${id}`;
   const now = new Date().toISOString();
 
   const run: Run = {
@@ -123,69 +156,69 @@ export async function executeRun(run: Run, policy: Policy): Promise<Run> {
 }
 
 export async function prepareRepo(repoSlug: string, branch: string): Promise<string> {
+  validateRepoSlug(repoSlug);
   mkdirSync(WORKSPACE_DIR, { recursive: true });
-  const repoDir = join(WORKSPACE_DIR, repoSlug.replace("/", "__"));
+  const repoDir = join(WORKSPACE_DIR, repoSlug.replaceAll("/", "__"));
+
+  // Path containment check
+  if (!resolve(repoDir).startsWith(resolve(WORKSPACE_DIR))) {
+    throw new Error(`Invalid repo slug produces path outside workspace: ${repoSlug}`);
+  }
 
   if (existsSync(join(repoDir, ".git"))) {
     // Ensure fork remote layout (origin=fork, upstream=original)
-    const remotes = execSync("git remote", { cwd: repoDir, encoding: "utf-8" }).trim().split("\n");
+    const remotes = execCmd("git", ["remote"], { cwd: repoDir, timeout: 5000 }).split("\n");
     if (!remotes.includes("upstream")) {
       // Pre-fork clone: origin points to upstream. Fork and remap remotes.
-      // gh repo fork --remote adds a "fork" remote pointing to user's fork
-      execSync(`gh repo fork "${repoSlug}" --remote --remote-name fork`, { cwd: repoDir, timeout: 60000, stdio: ["pipe", "pipe", "pipe"] });
+      execCmd("gh", ["repo", "fork", repoSlug, "--remote", "--remote-name", "fork"], { cwd: repoDir, timeout: 60000 });
       // Swap: origin (upstream) -> upstream, fork (user's fork) -> origin
-      execSync("git remote rename origin upstream", { cwd: repoDir, timeout: 5000 });
-      execSync("git remote rename fork origin", { cwd: repoDir, timeout: 5000 });
+      execCmd("git", ["remote", "rename", "origin", "upstream"], { cwd: repoDir, timeout: 5000 });
+      execCmd("git", ["remote", "rename", "fork", "origin"], { cwd: repoDir, timeout: 5000 });
     }
-    execSync("git fetch upstream --quiet --no-tags", { cwd: repoDir, timeout: 30000, stdio: ["pipe", "pipe", "pipe"] });
-    execSync("git checkout main || git checkout master", {
-      cwd: repoDir,
-      timeout: 10000,
-      shell: "/bin/bash",
-      stdio: ["pipe", "pipe", "pipe"],
-    });
-    execSync("git pull --ff-only upstream main || git pull --ff-only upstream master", {
-      cwd: repoDir,
-      timeout: 30000,
-      shell: "/bin/bash",
-      stdio: ["pipe", "pipe", "pipe"],
-    });
+    execCmd("git", ["fetch", "upstream", "--quiet", "--no-tags"], { cwd: repoDir, timeout: 30000 });
+    // Try main, fall back to master
+    const mainResult = execCmdSafe("git", ["checkout", "main"], { cwd: repoDir, timeout: 10000 });
+    if (!mainResult && mainResult === "") {
+      execCmdSafe("git", ["checkout", "master"], { cwd: repoDir, timeout: 10000 });
+    }
+    const pullResult = execCmdSafe("git", ["pull", "--ff-only", "upstream", "main"], { cwd: repoDir, timeout: 30000 });
+    if (!pullResult && pullResult === "") {
+      execCmdSafe("git", ["pull", "--ff-only", "upstream", "master"], { cwd: repoDir, timeout: 30000 });
+    }
   } else {
     // Try to fork, then clone the fork. If forking fails (403, disabled, etc.),
     // fall back to cloning upstream directly.
-    let clonedFork = false;
     try {
-      execSync(`gh repo fork "${repoSlug}" --default-branch-only`, { timeout: 60000, stdio: ["pipe", "pipe", "pipe"] });
-      const ghUser = execSync("gh api user --jq .login", { encoding: "utf-8", timeout: 10000 }).trim();
+      execCmd("gh", ["repo", "fork", repoSlug, "--default-branch-only"], { timeout: 60000 });
+      const ghUser = execCmd("gh", ["api", "user", "--jq", ".login"], { timeout: 10000 });
       const repoName = repoSlug.split("/")[1];
       const forkSlug = `${ghUser}/${repoName}`;
-      execSync(`gh repo clone "${forkSlug}" "${repoDir}" -- --depth=50 --quiet --no-tags`, { timeout: 90000, stdio: ["pipe", "pipe", "pipe"] });
-      const cloneRemotes = execSync("git remote", { cwd: repoDir, encoding: "utf-8" }).trim().split("\n");
+      execCmd("gh", ["repo", "clone", forkSlug, repoDir, "--", "--depth=50", "--quiet", "--no-tags"], { timeout: 90000 });
+      const cloneRemotes = execCmd("git", ["remote"], { cwd: repoDir, timeout: 5000 }).split("\n");
       if (!cloneRemotes.includes("upstream")) {
-        execSync(`git remote add upstream "https://github.com/${repoSlug}.git"`, { cwd: repoDir, timeout: 5000 });
+        execCmd("git", ["remote", "add", "upstream", `https://github.com/${repoSlug}.git`], { cwd: repoDir, timeout: 5000 });
       }
-      clonedFork = true;
     } catch (forkErr) {
       const msg = forkErr instanceof Error ? forkErr.message : String(forkErr);
       getLogger().warn({ repo: repoSlug, error: msg }, "Fork failed, cloning upstream directly");
       console.warn(`  Warning: Could not fork ${repoSlug} (${msg.includes("403") ? "forking disabled or token lacks permission" : "fork failed"})`);
       console.warn("  Cloning upstream directly. You'll need to fork manually to open a PR.");
-      execSync(`gh repo clone "${repoSlug}" "${repoDir}" -- --depth=50 --quiet --no-tags`, { timeout: 90000, stdio: ["pipe", "pipe", "pipe"] });
+      execCmd("gh", ["repo", "clone", repoSlug, repoDir, "--", "--depth=50", "--quiet", "--no-tags"], { timeout: 90000 });
     }
   }
 
+  // Disable git hooks to prevent malicious hooks in cloned repos from executing
+  execCmd("git", ["config", "core.hooksPath", "/dev/null"], { cwd: repoDir, timeout: 5000 });
+
   // Create feature branch
-  execSync(`git checkout -b "${branch}"`, { cwd: repoDir, timeout: 5000 });
+  execCmd("git", ["checkout", "-b", branch], { cwd: repoDir, timeout: 5000 });
 
   return repoDir;
 }
 
 export function getIssueBody(repoSlug: string, issueNumber: number): string {
   try {
-    return execSync(
-      `gh issue view ${issueNumber} --repo "${repoSlug}" --json body --jq .body`,
-      { encoding: "utf-8", timeout: 10000 },
-    ).trim();
+    return execCmd("gh", ["issue", "view", String(issueNumber), "--repo", repoSlug, "--json", "body", "--jq", ".body"], { timeout: 10000 });
   } catch {
     return "(Issue body unavailable)";
   }
@@ -261,26 +294,22 @@ function summarizeNoChanges(stdout: string, stderr: string): string {
 }
 
 export function checkForNewCommits(repoDir: string, branch: string): boolean {
-  try {
-    const result = execSync(
-      `git log main..${branch} --oneline 2>/dev/null || git log master..${branch} --oneline 2>/dev/null`,
-      { cwd: repoDir, encoding: "utf-8", shell: "/bin/bash" },
-    ).trim();
-    return result.length > 0;
-  } catch {
-    return false;
-  }
+  // Try main..branch, fall back to master..branch
+  const result = execCmdSafe("git", ["log", `main..${branch}`, "--oneline"], { cwd: repoDir, timeout: 5000 });
+  if (result.length > 0) return true;
+  const fallback = execCmdSafe("git", ["log", `master..${branch}`, "--oneline"], { cwd: repoDir, timeout: 5000 });
+  return fallback.length > 0;
 }
 
 export function pushBranch(repoDir: string, branch: string): void {
-  execSync(`git push -u origin "${branch}"`, { cwd: repoDir, timeout: 30000, stdio: ["pipe", "pipe", "pipe"] });
+  execCmd("git", ["push", "-u", "origin", branch], { cwd: repoDir, timeout: 30000 });
 }
 
 export function openDraftPR(run: Run, repoDir: string): string | null {
   const bodyFile = join(tmpdir(), `steward-pr-${run.id}.md`);
   try {
     // Determine the fork owner for --head flag (needed for cross-fork PRs)
-    const ghUser = execSync("gh api user --jq .login", { encoding: "utf-8", timeout: 10000 }).trim();
+    const ghUser = execCmd("gh", ["api", "user", "--jq", ".login"], { timeout: 10000 });
     const headRef = `${ghUser}:${run.branch}`;
 
     const title = `Fix #${run.candidate_issue}`;
@@ -293,10 +322,13 @@ export function openDraftPR(run: Run, repoDir: string): string | null {
 
     writeFileSync(bodyFile, body, "utf-8");
 
-    const result = execSync(
-      `gh pr create --draft --title "${title}" --body-file "${bodyFile}" --repo "${run.candidate_repo}" --head "${headRef}"`,
-      { cwd: repoDir, encoding: "utf-8", timeout: 15000 },
-    ).trim();
+    const result = execCmd("gh", [
+      "pr", "create", "--draft",
+      "--title", title,
+      "--body-file", bodyFile,
+      "--repo", run.candidate_repo,
+      "--head", headRef,
+    ], { cwd: repoDir, timeout: 15000 });
 
     return result || null;
   } catch (err) {
@@ -455,31 +487,16 @@ export function getLatestRun(): Run | null {
  * Returns the PR URL if found, null otherwise.
  */
 export function findExistingPR(repoSlug: string, branch: string): string | null {
-  try {
-    const result = execSync(
-      `gh pr list --repo "${repoSlug}" --head "${branch}" --json url --jq '.[0].url'`,
-      { encoding: "utf-8", timeout: 10000 },
-    ).trim();
-    return result || null;
-  } catch {
-    return null;
-  }
+  const result = execCmdSafe("gh", ["pr", "list", "--repo", repoSlug, "--head", branch, "--json", "url", "--jq", ".[0].url"], { timeout: 10000 });
+  return result || null;
 }
 
 /**
  * Verify that the workspace branch exists and is checked out.
  */
 export function verifyBranchCheckedOut(repoDir: string, branch: string): boolean {
-  try {
-    const current = execSync("git rev-parse --abbrev-ref HEAD", {
-      cwd: repoDir,
-      encoding: "utf-8",
-      timeout: 5000,
-    }).trim();
-    return current === branch;
-  } catch {
-    return false;
-  }
+  const current = execCmdSafe("git", ["rev-parse", "--abbrev-ref", "HEAD"], { cwd: repoDir, timeout: 5000 });
+  return current === branch;
 }
 
 /**

@@ -148,9 +148,9 @@ program
   .argument("<issue>", "Issue in owner/repo#123 format")
   .action(async (issueArg) => {
     const policy = loadPolicy();
-    const match = issueArg.match(/^(.+?)#(\d+)$/);
+    const match = issueArg.match(/^([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)#(\d+)$/);
     if (!match) {
-      console.error("Invalid format. Use owner/repo#123");
+      console.error("Invalid format. Use owner/repo#123 (alphanumeric, dots, hyphens, underscores only)");
       process.exit(1);
     }
     const [, repoSlug, issueNum] = match;
@@ -503,6 +503,8 @@ program
     console.log("");
 
     printCandidateCards(limited, termWidth);
+    console.log("");
+    console.log("Tip: Try /token-steward:discover in Claude Code for personalized, conversational recommendations.");
 
     if (!interactive) {
       console.log("");
@@ -550,9 +552,9 @@ program
   .argument("<issue>", "Issue in owner/repo#123 format")
   .action(async (issueArg) => {
     const policy = loadPolicy();
-    const match = issueArg.match(/^(.+?)#(\d+)$/);
+    const match = issueArg.match(/^([a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+)#(\d+)$/);
     if (!match) {
-      console.error("Invalid format. Use owner/repo#123");
+      console.error("Invalid format. Use owner/repo#123 (alphanumeric, dots, hyphens, underscores only)");
       process.exit(1);
     }
     const [, repoSlug, issueNum] = match;
@@ -614,7 +616,7 @@ program
       return;
     }
 
-    const repoDir = join("workspace", run.candidate_repo.replace("/", "__"));
+    const repoDir = join("workspace", run.candidate_repo.replaceAll("/", "__"));
     if (!existsSync(join(repoDir, ".git"))) {
       console.error(`Workspace not found at ${repoDir}`);
       closeStore();
@@ -1121,6 +1123,8 @@ program
     console.log("");
     console.log("Ready! Run 'steward discover' to find your first issue.");
     console.log("");
+    console.log("Tip: Use Token Steward as a Claude Code skill for interactive, conversational");
+    console.log("issue discovery — no CLI needed. See: https://github.com/mainnebula/token-steward#claude-code-plugin");
   });
 
 program.parse();
