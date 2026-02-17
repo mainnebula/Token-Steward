@@ -43,8 +43,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LOOKBACK_HOURS: ${{ inputs.lookback_hours || '48' }}
         run: |
-          chmod +x scripts/build-feed.sh
           git checkout "origin/${{ steps.default-branch.outputs.branch }}" -- scripts/build-feed.sh
+          chmod +x scripts/build-feed.sh
           bash scripts/build-feed.sh
 
       - name: Commit and push feed
