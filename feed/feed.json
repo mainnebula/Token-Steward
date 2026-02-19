@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-19T13:24:49Z",
+  "updated_at": "2026-02-19T19:02:29Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -66,6 +66,38 @@
       "stars": 12753,
       "comment_count": 5,
       "age_days": 19,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "cert-manager/cert-manager",
+      "number": 8493,
+      "title": "cloudflare DNS01 - Client.Timeout exceeded while awaiting headers",
+      "url": "https://github.com/cert-manager/cert-manager/issues/8493",
+      "created_at": "2026-02-08T18:44:20Z",
+      "labels": [
+        "good first issue",
+        "help wanted",
+        "kind/bug"
+      ],
+      "language": "Go",
+      "stars": 13573,
+      "comment_count": 7,
+      "age_days": 11,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -496,6 +528,39 @@
       }
     },
     {
+      "repo": "meilisearch/meilisearch",
+      "number": 5953,
+      "title": "Meilisearch v1.24 was not published to Gemfury",
+      "url": "https://github.com/meilisearch/meilisearch/issues/5953",
+      "created_at": "2025-10-23T07:33:04Z",
+      "labels": [
+        "help wanted",
+        "rust",
+        "bug",
+        "Internal work"
+      ],
+      "language": "Rust",
+      "stars": 55987,
+      "comment_count": 6,
+      "age_days": 119,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "adenhq/hive",
       "number": 472,
       "title": "[Announcement] 📢 New Workflow: Requirement to be assigned to issues before opening PRs",
@@ -514,6 +579,38 @@
       "is_feature": true,
       "category": "documentation",
       "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.65,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "collective/icalendar",
+      "number": 1158,
+      "title": "[Beginner] Correct broken links to classes & functions in documentation",
+      "url": "https://github.com/collective/icalendar/issues/1158",
+      "created_at": "2026-02-08T13:00:26Z",
+      "labels": [
+        "doc",
+        "good first issue",
+        "hacktoberfest"
+      ],
+      "language": "Python",
+      "stars": 1115,
+      "comment_count": 5,
+      "age_days": 11,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.75,
@@ -736,6 +833,38 @@
       }
     },
     {
+      "repo": "astral-sh/ruff",
+      "number": 18508,
+      "title": "UP045 fixes `Optional[None]` to `None | None`",
+      "url": "https://github.com/astral-sh/ruff/issues/18508",
+      "created_at": "2025-06-06T18:14:40Z",
+      "labels": [
+        "bug",
+        "fixes",
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 45845,
+      "comment_count": 6,
+      "age_days": 258,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "envoyproxy/ai-gateway",
       "number": 1867,
       "title": "`/anthropic/v1/messages` should be available for OpenAI schema when `/v1/messages` is available with same API provider",
@@ -881,6 +1010,38 @@
       }
     },
     {
+      "repo": "helm/helm",
+      "number": 10219,
+      "title": "Unable to roll back as release left in invalid state",
+      "url": "https://github.com/helm/helm/issues/10219",
+      "created_at": "2021-10-06T09:51:35Z",
+      "labels": [
+        "help wanted",
+        "keep open",
+        "bug"
+      ],
+      "language": "Go",
+      "stars": 29512,
+      "comment_count": 8,
+      "age_days": 1597,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "keycloak/keycloak",
       "number": 36984,
       "title": "Membership to many organizations breaks AdminUI/Api",
@@ -921,6 +1082,47 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.4
+      }
+    },
+    {
+      "repo": "kubernetes/kubeadm",
+      "number": 3289,
+      "title": "remove data_test.go files for various Data objects of phases",
+      "url": "https://github.com/kubernetes/kubeadm/issues/3289",
+      "created_at": "2026-02-18T10:45:16Z",
+      "labels": [
+        "help wanted",
+        "priority/backlog",
+        "kind/cleanup",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 3957,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Helion55"
+        },
+        "number": 137124,
+        "state": "OPEN",
+        "title": "Cleanup: Remove data_test.go files from kubeadm phases",
+        "url": "https://github.com/kubernetes/kubernetes/pull/137124"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -985,6 +1187,38 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "opensearch-project/OpenSearch",
+      "number": 20612,
+      "title": "[Feature Request] [BUG] `_source` include / exclude validation",
+      "url": "https://github.com/opensearch-project/OpenSearch/issues/20612",
+      "created_at": "2026-02-12T16:07:46Z",
+      "labels": [
+        "enhancement",
+        "good first issue",
+        "Search:Query Insights"
+      ],
+      "language": "Java",
+      "stars": 12413,
+      "comment_count": 8,
+      "age_days": 7,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.6
       }
     },
     {
@@ -1566,6 +1800,39 @@
       }
     },
     {
+      "repo": "containers/podman",
+      "number": 28120,
+      "title": "Podman secrets can not be labeled the way they are documented in this man-page",
+      "url": "https://github.com/containers/podman/issues/28120",
+      "created_at": "2026-02-18T22:54:41Z",
+      "labels": [
+        "Good First Issue",
+        "documentation",
+        "volunteers-wanted",
+        "triaged"
+      ],
+      "language": "Go",
+      "stars": 30746,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.5,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "gitbutlerapp/gitbutler",
       "number": 12340,
       "title": "cli: support for opening pr in browser",
@@ -1723,47 +1990,6 @@
         "impact": 0.55,
         "confidence": 0.86,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "kubernetes/kubeadm",
-      "number": 3289,
-      "title": "remove data_test.go files for various Data objects of phases",
-      "url": "https://github.com/kubernetes/kubeadm/issues/3289",
-      "created_at": "2026-02-18T10:45:16Z",
-      "labels": [
-        "help wanted",
-        "priority/backlog",
-        "kind/cleanup",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 3957,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Helion55"
-        },
-        "number": 137124,
-        "state": "OPEN",
-        "title": "Cleanup: Remove data_test.go files from kubeadm phases",
-        "url": "https://github.com/kubernetes/kubernetes/pull/137124"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     },
     {
@@ -2777,6 +3003,38 @@
       }
     },
     {
+      "repo": "openml/openml-python",
+      "number": 1649,
+      "title": "[MNT] Replace Live Test-Server Calls with Mocks in Unit Tests",
+      "url": "https://github.com/openml/openml-python/issues/1649",
+      "created_at": "2026-02-18T08:05:40Z",
+      "labels": [
+        "Good First Issue",
+        "testing",
+        "maintenance & CI"
+      ],
+      "language": "Python",
+      "stars": 333,
+      "comment_count": 8,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "Codecademy/docs",
       "number": 8191,
       "title": "[Term Entry] PyTorch Tensor Operations: .amax()",
@@ -3312,6 +3570,36 @@
         "impact": 0.6,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "conda/rattler",
+      "number": 2039,
+      "title": "Replace MatchSpec with no name (`*`) with glob matchspec",
+      "url": "https://github.com/conda/rattler/issues/2039",
+      "created_at": "2026-02-05T13:53:01Z",
+      "labels": [
+        "good first issue"
+      ],
+      "language": "Rust",
+      "stars": 408,
+      "comment_count": 6,
+      "age_days": 14,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.6
       }
     },
     {
@@ -3960,6 +4248,39 @@
       }
     },
     {
+      "repo": "Nano-Collective/nanocoder",
+      "number": 51,
+      "title": "Feature Request: `/resume` command to allow users to save, list, and restore previous chat sessions",
+      "url": "https://github.com/Nano-Collective/nanocoder/issues/51",
+      "created_at": "2025-10-07T20:02:14Z",
+      "labels": [
+        "enhancement",
+        "Feature",
+        "production",
+        "high-priority"
+      ],
+      "language": "TypeScript",
+      "stars": 1353,
+      "comment_count": 8,
+      "age_days": 134,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.65,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "PalisadoesFoundation/talawa-api",
       "number": 5248,
       "title": "Enhancement: Exclude self-authored messages from unread count",
@@ -3990,6 +4311,39 @@
         "impact": 0.55,
         "confidence": 0.91,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "PipedreamHQ/pipedream",
+      "number": 19935,
+      "title": "To Capture Gorgias Custom Ticket Fields",
+      "url": "https://github.com/PipedreamHQ/pipedream/issues/19935",
+      "created_at": "2026-02-03T14:50:37Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "trigger / source"
+      ],
+      "language": "JavaScript",
+      "stars": 11102,
+      "comment_count": 3,
+      "age_days": 16,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.65,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.89,
+        "effort": 0.6
       }
     },
     {
@@ -4288,6 +4642,37 @@
       }
     },
     {
+      "repo": "ioBroker/ioBroker.zigbee",
+      "number": 2748,
+      "title": "Feature Request: Option to ignore device 'leave' events (disableLeaveDelete)",
+      "url": "https://github.com/ioBroker/ioBroker.zigbee/issues/2748",
+      "created_at": "2026-02-13T20:12:41Z",
+      "labels": [
+        "enhancement",
+        "help wanted"
+      ],
+      "language": "JavaScript",
+      "stars": 330,
+      "comment_count": 8,
+      "age_days": 5,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.6,
+      "action": "fix",
+      "pr": null,
+      "score": 0.65,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.83,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "istio/istio",
       "number": 59045,
       "title": "Traffic to native sidecar container port detected as InboundPassthroughCluster",
@@ -4500,6 +4885,40 @@
       }
     },
     {
+      "repo": "louislam/uptime-kuma",
+      "number": 6825,
+      "title": "Configurable timeout for DNS monitor",
+      "url": "https://github.com/louislam/uptime-kuma/issues/6825",
+      "created_at": "2026-01-27T09:10:49Z",
+      "labels": [
+        "feature-request",
+        "help wanted",
+        "good first issue",
+        "A:monitor",
+        "type:enhance-existing"
+      ],
+      "language": "JavaScript",
+      "stars": 82989,
+      "comment_count": 4,
+      "age_days": 23,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.65,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.89,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "meteor/meteor",
       "number": 13866,
       "title": "Is guide up to date?",
@@ -4538,6 +4957,50 @@
         "impact": 0.65,
         "confidence": 0.89,
         "effort": 0.4
+      }
+    },
+    {
+      "repo": "mit-cml/appinventor-sources",
+      "number": 3736,
+      "title": "Implement CopyToClipboard block for Sharing component",
+      "url": "https://github.com/mit-cml/appinventor-sources/issues/3736",
+      "created_at": "2026-01-21T01:36:25Z",
+      "labels": [
+        "help wanted",
+        "issue: accepted",
+        "status: needs discussion",
+        "feature request",
+        "affects: ucr",
+        "android",
+        "ios"
+      ],
+      "language": "Java",
+      "stars": 1671,
+      "comment_count": 7,
+      "age_days": 29,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Akashgite1"
+        },
+        "number": 3741,
+        "state": "OPEN",
+        "title": "Add CopyToClipboard block to Sharing component (Android & iOS)",
+        "url": "https://github.com/mit-cml/appinventor-sources/pull/3741"
+      },
+      "score": 0.65,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.85,
+        "effort": 0.6
       }
     },
     {
@@ -5657,6 +6120,38 @@
     },
     {
       "repo": "meilisearch/meilisearch",
+      "number": 4840,
+      "title": "Make the meilisearch integration tests run faster",
+      "url": "https://github.com/meilisearch/meilisearch/issues/4840",
+      "created_at": "2024-07-30T15:54:15Z",
+      "labels": [
+        "good first issue",
+        "help wanted",
+        "maintenance"
+      ],
+      "language": "Rust",
+      "stars": 55987,
+      "comment_count": 16,
+      "age_days": 569,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.64,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "meilisearch/meilisearch",
       "number": 5673,
       "title": "suggest add build target musl ,GLIBC2.35 is niche",
       "url": "https://github.com/meilisearch/meilisearch/issues/5673",
@@ -6473,258 +6968,20 @@
       }
     },
     {
-      "repo": "meshery/meshery",
-      "number": 12503,
-      "title": "[Template] Create a Brainstorming template",
-      "url": "https://github.com/meshery/meshery/issues/12503",
-      "created_at": "2024-10-28T14:47:23Z",
-      "labels": [
-        "kind/enhancement",
-        "help wanted",
-        "good first issue",
-        "issue/willfix",
-        "component/extensions",
-        "type/visual-design"
-      ],
-      "language": "Go",
-      "stars": 9899,
-      "comment_count": 13,
-      "age_days": 477,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "idk-bruv"
-        },
-        "number": 1,
-        "state": "OPEN",
-        "title": "[Docs] Update mesheryctl install script URL",
-        "url": "https://github.com/idk-bruv/meshery/pull/1"
-      },
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "mit-cml/appinventor-sources",
-      "number": 3761,
-      "title": "Implement a AndroidMinSdk project property",
-      "url": "https://github.com/mit-cml/appinventor-sources/issues/3761",
-      "created_at": "2026-02-05T21:35:03Z",
-      "labels": [
-        "help wanted",
-        "issue: noted for future Work",
-        "feature request",
-        "affects: ucr",
-        "android"
-      ],
-      "language": "Java",
-      "stars": 1670,
-      "comment_count": 4,
-      "age_days": 11,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Akashgite1"
-        },
-        "number": 3774,
-        "state": "OPEN",
-        "title": "Add configurable AndroidMinSdk project property with UI dropdown and …",
-        "url": "https://github.com/mit-cml/appinventor-sources/pull/3774"
-      },
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.85,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "mlco2/codecarbon",
-      "number": 1013,
-      "title": "[Dashboard] Put back the map of carbon intensity",
-      "url": "https://github.com/mlco2/codecarbon/issues/1013",
-      "created_at": "2025-12-19T19:17:21Z",
+      "repo": "kysely-org/kysely",
+      "number": 1712,
+      "title": "Support expressions in `partitionBy`",
+      "url": "https://github.com/kysely-org/kysely/issues/1712",
+      "created_at": "2026-02-19T11:16:33Z",
       "labels": [
         "enhancement",
-        "P3",
-        "Dashboard"
-      ],
-      "language": "Python",
-      "stars": 1700,
-      "comment_count": 4,
-      "age_days": 58,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "AntennaPod/AntennaPod",
-      "number": 8268,
-      "title": "[media3] Implement auto-rewind on resume after pause",
-      "url": "https://github.com/AntennaPod/AntennaPod/issues/8268",
-      "created_at": "2026-02-10T17:56:28Z",
-      "labels": [
-        "Type: Feature request",
-        "Good first issue"
-      ],
-      "language": "Java",
-      "stars": 7660,
-      "comment_count": 2,
-      "age_days": 7,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.4,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "Comfy-Org/ComfyUI",
-      "number": 12481,
-      "title": "Add native support for LLMs",
-      "url": "https://github.com/Comfy-Org/ComfyUI/issues/12481",
-      "created_at": "2026-02-16T03:37:51Z",
-      "labels": [
-        "Feature"
-      ],
-      "language": "Python",
-      "stars": 103392,
-      "comment_count": 4,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.74,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Comfy-Org/ComfyUI",
-      "number": 9070,
-      "title": "Support int8 inference for diffusion models",
-      "url": "https://github.com/Comfy-Org/ComfyUI/issues/9070",
-      "created_at": "2025-07-27T05:23:44Z",
-      "labels": [
-        "Feature",
-        "bug-cop:triaged"
-      ],
-      "language": "Python",
-      "stars": 103525,
-      "comment_count": 3,
-      "age_days": 206,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.79,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "Comfy-Org/ComfyUI_frontend",
-      "number": 1757,
-      "title": "[Bug]: Primitive node attached to seed input of Ksampler switching from \"randomize\" to \"fixed\" when copying nodes",
-      "url": "https://github.com/Comfy-Org/ComfyUI_frontend/issues/1757",
-      "created_at": "2024-12-02T09:17:05Z",
-      "labels": [
-        "verified bug",
-        "good first issue",
-        "area:widgets"
+        "sqlite",
+        "postgres",
+        "api"
       ],
       "language": "TypeScript",
-      "stars": 1656,
+      "stars": 13469,
       "comment_count": 2,
-      "age_days": 442,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "Dokploy/dokploy",
-      "number": 3746,
-      "title": "feat: preview original compose under the general tab",
-      "url": "https://github.com/Dokploy/dokploy/issues/3746",
-      "created_at": "2026-02-18T19:02:38Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "TypeScript",
-      "stars": 30603,
-      "comment_count": 0,
       "age_days": 0,
       "is_bug": false,
       "is_feature": true,
@@ -6735,287 +6992,11 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.62,
+      "score": 0.63,
       "score_breakdown": {
-        "reach": 0.4,
+        "reach": 0.5,
         "impact": 0.4,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "GoogleContainerTools/jib",
-      "number": 3132,
-      "title": "Support for Gradle Configuration Cache",
-      "url": "https://github.com/GoogleContainerTools/jib/issues/3132",
-      "created_at": "2021-03-12T11:30:26Z",
-      "labels": [
-        "priority:p3",
-        "area/jib-gradle-plugin",
-        "enhancement",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 14319,
-      "comment_count": 19,
-      "age_days": 1803,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
         "confidence": 0.89,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "Merit-Systems/echo",
-      "number": 636,
-      "title": "Add .cursor/rules/echo_rules.mdc to echo-start templates",
-      "url": "https://github.com/Merit-Systems/echo/issues/636",
-      "created_at": "2025-10-28T17:53:00Z",
-      "labels": [
-        "good first issue",
-        "Merit",
-        "$100"
-      ],
-      "language": "TypeScript",
-      "stars": 531,
-      "comment_count": 4,
-      "age_days": 112,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "dhvll"
-        },
-        "number": 637,
-        "state": "OPEN",
-        "title": "Cursor rules for starting echo-templates",
-        "url": "https://github.com/Merit-Systems/echo/pull/637"
-      },
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "NeptuneHub/AudioMuse-AI",
-      "number": 273,
-      "title": "[FEATURE] Support AMD Radeon GPUs",
-      "url": "https://github.com/NeptuneHub/AudioMuse-AI/issues/273",
-      "created_at": "2026-01-04T19:52:36Z",
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "language": "Python",
-      "stars": 1262,
-      "comment_count": 3,
-      "age_days": 45,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.88,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "NetApp/harvest",
-      "number": 4106,
-      "title": "ONTAP monitoring  S3 Snapmirror relationships",
-      "url": "https://github.com/NetApp/harvest/issues/4106",
-      "created_at": "2026-01-27T17:53:20Z",
-      "labels": [
-        "feature",
-        "customer"
-      ],
-      "language": "Go",
-      "stars": 179,
-      "comment_count": 8,
-      "age_days": 22,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.76,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "PalisadoesFoundation/talawa-admin",
-      "number": 7327,
-      "title": "Table2Fix - Migrate Admin Portal (User Related Screens)",
-      "url": "https://github.com/PalisadoesFoundation/talawa-admin/issues/7327",
-      "created_at": "2026-02-16T14:38:25Z",
-      "labels": [
-        "documentation",
-        "good first issue",
-        "unapproved",
-        "test",
-        "ui/ux"
-      ],
-      "language": "TypeScript",
-      "stars": 250,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.3,
-        "impact": 0.5,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "PalisadoesFoundation/talawa-admin",
-      "number": 7328,
-      "title": "Table2Fix - Migrate Admin Portal Screens (General)",
-      "url": "https://github.com/PalisadoesFoundation/talawa-admin/issues/7328",
-      "created_at": "2026-02-16T14:40:53Z",
-      "labels": [
-        "documentation",
-        "good first issue",
-        "unapproved",
-        "test",
-        "ui/ux",
-        "ci/cd"
-      ],
-      "language": "TypeScript",
-      "stars": 250,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.3,
-        "impact": 0.5,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "PalisadoesFoundation/talawa-admin",
-      "number": 7329,
-      "title": "Table2Fix - Migrate Tag and Volunteer Management Screens ",
-      "url": "https://github.com/PalisadoesFoundation/talawa-admin/issues/7329",
-      "created_at": "2026-02-16T14:46:07Z",
-      "labels": [
-        "documentation",
-        "good first issue",
-        "unapproved",
-        "test",
-        "feature request",
-        "ui/ux",
-        "ci/cd"
-      ],
-      "language": "TypeScript",
-      "stars": 250,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.3,
-        "impact": 0.5,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "PalisadoesFoundation/talawa-admin",
-      "number": 7331,
-      "title": "Table2Fix - Migrate Advertisement Screens",
-      "url": "https://github.com/PalisadoesFoundation/talawa-admin/issues/7331",
-      "created_at": "2026-02-16T15:01:11Z",
-      "labels": [
-        "documentation",
-        "good first issue",
-        "unapproved",
-        "test",
-        "feature request",
-        "ui/ux",
-        "ci/cd"
-      ],
-      "language": "TypeScript",
-      "stars": 250,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.62,
-      "score_breakdown": {
-        "reach": 0.3,
-        "impact": 0.5,
-        "confidence": 0.91,
         "effort": 0.65
       }
     }
