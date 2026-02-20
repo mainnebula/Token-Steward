@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-20T13:16:08Z",
+  "updated_at": "2026-02-20T19:00:27Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -81,6 +81,47 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5156,
+      "title": "[Bug]: Fix broken internal links in translated docs under docs/i18n",
+      "url": "https://github.com/aden-hive/hive/issues/5156",
+      "created_at": "2026-02-20T18:15:12Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8013,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "kostasuser01gr"
+        },
+        "number": 5161,
+        "state": "OPEN",
+        "title": "docs(i18n): fix broken internal links in translated docs",
+        "url": "https://github.com/aden-hive/hive/pull/5161"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.7,
+        "confidence": 0.93,
+        "effort": 0.8
       }
     },
     {
@@ -243,6 +284,45 @@
         "reach": 0.6,
         "impact": 0.75,
         "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "huggingface/transformers",
+      "number": 44016,
+      "title": "Syntax error in Transformer section 3 (Transformers, what can they do?) notebook",
+      "url": "https://github.com/huggingface/transformers/issues/44016",
+      "created_at": "2026-02-15T19:15:34Z",
+      "labels": [
+        "Good First Issue",
+        "bug"
+      ],
+      "language": "Python",
+      "stars": 156752,
+      "comment_count": 4,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Rocketknight1"
+        },
+        "number": 44182,
+        "state": "OPEN",
+        "title": "Remove refs to grouped_entities",
+        "url": "https://github.com/huggingface/transformers/pull/44182"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
         "effort": 0.65
       }
     },
@@ -1157,6 +1237,50 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 46493,
+      "title": "show-config contains log related entries with null values",
+      "url": "https://github.com/keycloak/keycloak/issues/46493",
+      "created_at": "2026-02-20T13:50:05Z",
+      "labels": [
+        "kind/bug",
+        "area/dist/quarkus",
+        "help wanted",
+        "team/cloud-native",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 32921,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "shawkins"
+        },
+        "number": 46498,
+        "state": "OPEN",
+        "title": "fix: correcting the logic for show-config to remove null values",
+        "url": "https://github.com/keycloak/keycloak/pull/46498"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.6,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "kornia/kornia",
       "number": 3564,
       "title": "[Bug]: Lightglue crashes when adaptive width pruning removes all keypoints",
@@ -1209,8 +1333,8 @@
       ],
       "language": "Go",
       "stars": 3958,
-      "comment_count": 6,
-      "age_days": 1,
+      "comment_count": 7,
+      "age_days": 2,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -1306,6 +1430,47 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "meshery/meshery",
+      "number": 17523,
+      "title": "[Docs] Fix typos, duplicate section, and formatting in contributing-cli page",
+      "url": "https://github.com/meshery/meshery/issues/17523",
+      "created_at": "2026-02-20T11:35:32Z",
+      "labels": [
+        "help wanted",
+        "area/docs",
+        "language/markdown",
+        "framework/jekyll"
+      ],
+      "language": "Go",
+      "stars": 9935,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "M-Shaheen7"
+        },
+        "number": 17539,
+        "state": "OPEN",
+        "title": "Fix formatting and punctuation in contributing-cli.md",
+        "url": "https://github.com/meshery/meshery/pull/17539"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.65,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -1731,6 +1896,39 @@
       }
     },
     {
+      "repo": "buildpacks/pack",
+      "number": 2272,
+      "title": "pack build takes 27x longer when using containerd image store",
+      "url": "https://github.com/buildpacks/pack/issues/2272",
+      "created_at": "2024-10-21T11:11:57Z",
+      "labels": [
+        "type/bug",
+        "help wanted",
+        "good first issue",
+        "status/ready"
+      ],
+      "language": "Go",
+      "stars": 2881,
+      "comment_count": 26,
+      "age_days": 487,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "grpc-ecosystem/grpc-gateway",
       "number": 6380,
       "title": "use_opaque_api=true: generated code copies proto message by value (go vet copylocks violation)",
@@ -1832,6 +2030,40 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "Automattic/wp-calypso",
+      "number": 99410,
+      "title": "UI Bug: Wrong overlay on top of Jetpack dashboard",
+      "url": "https://github.com/Automattic/wp-calypso/issues/99410",
+      "created_at": "2025-02-06T13:27:37Z",
+      "labels": [
+        "Bug",
+        "[Pri] Low",
+        "Good First Issue",
+        "Activity Log",
+        "[Feature Group] Accessibility & Navigation"
+      ],
+      "language": "TypeScript",
+      "stars": 12624,
+      "comment_count": 7,
+      "age_days": 379,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.4
       }
     },
     {
@@ -1946,6 +2178,48 @@
         "reach": 0.45,
         "impact": 0.55,
         "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "Kilo-Org/kilo",
+      "number": 548,
+      "title": "[BUG] Kilo-docs: ZenMux provider doc is inconsistent with other provider docs and missing   from sidebar nav",
+      "url": "https://github.com/Kilo-Org/kilo/issues/548",
+      "created_at": "2026-02-20T18:27:17Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "kilo-auto-fix",
+        "kilo-triaged"
+      ],
+      "language": "TypeScript",
+      "stars": 115,
+      "comment_count": 0,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Phoen1xCode"
+        },
+        "number": 549,
+        "state": "OPEN",
+        "title": "fix(kilo-docs): rewrite zenmux doc and add to nav sidebar",
+        "url": "https://github.com/Kilo-Org/kilo/pull/549"
+      },
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.3,
+        "impact": 0.7,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -2105,6 +2379,36 @@
         "reach": 0.5,
         "impact": 0.5,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "fossasia/scrum_helper",
+      "number": 385,
+      "title": "[Enhancement]: Make filter section collapsible to improve popup layout**",
+      "url": "https://github.com/fossasia/scrum_helper/issues/385",
+      "created_at": "2026-02-20T12:45:45Z",
+      "labels": [
+        "enhancement"
+      ],
+      "language": "JavaScript",
+      "stars": 1265,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.55,
+        "confidence": 0.93,
         "effort": 0.65
       }
     },
@@ -2271,6 +2575,47 @@
         "impact": 0.75,
         "confidence": 0.78,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "jaegertracing/jaeger",
+      "number": 8073,
+      "title": "[Bug]: API v3 does not respect the configured base_path value",
+      "url": "https://github.com/jaegertracing/jaeger/issues/8073",
+      "created_at": "2026-02-20T12:51:40Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "ui",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 22476,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "mawasak"
+        },
+        "number": 3548,
+        "state": "OPEN",
+        "title": "fix for base_path in api/v3",
+        "url": "https://github.com/jaegertracing/jaeger-ui/pull/3548"
+      },
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.6,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -3534,6 +3879,138 @@
       }
     },
     {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5530,
+      "title": "[Good First Issue] 🌛 Add curious, bite-sized Interesting, Cultural Fact about Japan 290 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5530",
+      "created_at": "2026-02-20T18:31:30Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1591,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5532,
+      "title": "[Good First Issue] 🌧️ Add insightful, wise New Japanese Proverb 141 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5532",
+      "created_at": "2026-02-20T18:41:12Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1591,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5533,
+      "title": "[Good First Issue] 🛸 Add challenging, curious New Trivia Question 138 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5533",
+      "created_at": "2026-02-20T18:41:39Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1591,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6825,
       "title": "Configurable timeout for DNS monitor",
@@ -3946,6 +4423,39 @@
       }
     },
     {
+      "repo": "aden-hive/hive",
+      "number": 5158,
+      "title": "[Feature]: Add CI markdown link validation for internal docs links (including docs/i18n)",
+      "url": "https://github.com/aden-hive/hive/issues/5158",
+      "created_at": "2026-02-20T18:25:30Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "size: medium"
+      ],
+      "language": "Python",
+      "stars": 8013,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "adenhq/hive",
       "number": 1628,
       "title": "[Feature]: Missing Observability for Tool Calls",
@@ -3974,6 +4484,38 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "apache/fesod",
+      "number": 857,
+      "title": "[Task] Apache Fesod (Incubating) Upgrade Guide",
+      "url": "https://github.com/apache/fesod/issues/857",
+      "created_at": "2026-02-20T08:45:00Z",
+      "labels": [
+        "documentation",
+        "help wanted",
+        "discussion welcome"
+      ],
+      "language": "Java",
+      "stars": 5815,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -4252,7 +4794,7 @@
       ],
       "language": "Rust",
       "stars": 2054,
-      "comment_count": 7,
+      "comment_count": 8,
       "age_days": 752,
       "is_bug": true,
       "is_feature": false,
@@ -4906,39 +5448,6 @@
       }
     },
     {
-      "repo": "meshery/meshery",
-      "number": 17523,
-      "title": "[Docs] Fix typos, duplicate section, and formatting in contributing-cli page",
-      "url": "https://github.com/meshery/meshery/issues/17523",
-      "created_at": "2026-02-20T11:35:32Z",
-      "labels": [
-        "help wanted",
-        "area/docs",
-        "language/markdown",
-        "framework/jekyll"
-      ],
-      "language": "Go",
-      "stars": 9926,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "9seconds/mtg",
       "number": 319,
       "title": "Proxy protocol support",
@@ -4997,6 +5506,37 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.4
+      }
+    },
+    {
+      "repo": "DIGI-UW/OpenELIS-Global-2",
+      "number": 2892,
+      "title": "Improve configurable lab number generator",
+      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2892",
+      "created_at": "2026-02-20T13:14:23Z",
+      "labels": [
+        "enhancement",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 198,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.65,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.65
       }
     },
     {
@@ -5574,7 +6114,7 @@
       ],
       "language": "JavaScript",
       "stars": 330,
-      "comment_count": 9,
+      "comment_count": 10,
       "age_days": 6,
       "is_bug": false,
       "is_feature": true,
@@ -6497,6 +7037,36 @@
       }
     },
     {
+      "repo": "VictoriaMetrics/VictoriaMetrics",
+      "number": 4446,
+      "title": "VictoriaMetrics should support errors returning for streaming ingestion protocols",
+      "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/issues/4446",
+      "created_at": "2023-06-13T20:42:25Z",
+      "labels": [
+        "enhancement"
+      ],
+      "language": "Go",
+      "stars": 16346,
+      "comment_count": 15,
+      "age_days": 982,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.64,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "accius/openhamclock",
       "number": 518,
       "title": "[FEATURE] WildFires and Floods",
@@ -6558,6 +7128,38 @@
       }
     },
     {
+      "repo": "angular/components",
+      "number": 10924,
+      "title": "CDK Overlay - Position Strategy with zoom css on parent",
+      "url": "https://github.com/angular/components/issues/10924",
+      "created_at": "2018-04-19T22:51:50Z",
+      "labels": [
+        "help wanted",
+        "P4",
+        "area: cdk/overlay"
+      ],
+      "language": "TypeScript",
+      "stars": 24998,
+      "comment_count": 19,
+      "age_days": 2863,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.64,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "astral-sh/uv",
       "number": 13217,
       "title": "Retain history of package versions through updates",
@@ -6580,548 +7182,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "astral-sh/uv",
-      "number": 9652,
-      "title": "Add `uv run --watch script.py` command to rerun `uv run` on `.py` file changes",
-      "url": "https://github.com/astral-sh/uv/issues/9652",
-      "created_at": "2024-12-05T01:00:28Z",
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 79355,
-      "comment_count": 12,
-      "age_days": 439,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "better-auth/better-auth",
-      "number": 8049,
-      "title": "CLI generate and migrate commands fail to search \"public\" schema in Supabase PostgreSQL. Caused by search_path feature from Fall 2025",
-      "url": "https://github.com/better-auth/better-auth/issues/8049",
-      "created_at": "2026-02-18T18:07:16Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "TypeScript",
-      "stars": 26274,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.4,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "bmad-code-org/BMAD-METHOD",
-      "number": 1687,
-      "title": "[Feature Request] Support addition of stories between 2 stories and inclusion in story progress tracking for phase 4.",
-      "url": "https://github.com/bmad-code-org/BMAD-METHOD/issues/1687",
-      "created_at": "2026-02-17T18:31:21Z",
-      "labels": [
-        "enhancement",
-        "feature"
-      ],
-      "language": "JavaScript",
-      "stars": 36174,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.4,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "boa-dev/boa",
-      "number": 4524,
-      "title": "Audit public APIs",
-      "url": "https://github.com/boa-dev/boa/issues/4524",
-      "created_at": "2025-11-07T15:48:57Z",
-      "labels": [
-        "help wanted",
-        "API",
-        "E-Medium"
-      ],
-      "language": "Rust",
-      "stars": 6884,
-      "comment_count": 9,
-      "age_days": 104,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.88,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "booklore-app/booklore",
-      "number": 1831,
-      "title": "Help Selecting a Modern Replacement for EPUB.js in Booklore",
-      "url": "https://github.com/booklore-app/booklore/issues/1831",
-      "created_at": "2025-12-12T16:35:50Z",
-      "labels": [
-        "help wanted",
-        "feature",
-        "exploration"
-      ],
-      "language": "Java",
-      "stars": 10054,
-      "comment_count": 3,
-      "age_days": 65,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "booklore-app/booklore",
-      "number": 2774,
-      "title": "[Feature] Default to ebook edition instead of physical edition on hardcover",
-      "url": "https://github.com/booklore-app/booklore/issues/2774",
-      "created_at": "2026-02-17T01:20:21Z",
-      "labels": [
-        "feature"
-      ],
-      "language": "Java",
-      "stars": 10171,
-      "comment_count": 3,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.79,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "bytedeco/javacv",
-      "number": 2382,
-      "title": "FFmpegFrameGrabber should throw an exception when attempting to access stream metadata before calling start()",
-      "url": "https://github.com/bytedeco/javacv/issues/2382",
-      "created_at": "2026-02-19T20:07:12Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "question"
-      ],
-      "language": "Java",
-      "stars": 8291,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.85,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "cert-manager/cert-manager",
-      "number": 8363,
-      "title": "helm: Set `ttlSecondsAfterFinished` on Jobs",
-      "url": "https://github.com/cert-manager/cert-manager/issues/8363",
-      "created_at": "2025-12-23T16:39:59Z",
-      "labels": [
-        "good first issue",
-        "kind/feature"
-      ],
-      "language": "Go",
-      "stars": 13568,
-      "comment_count": 3,
-      "age_days": 56,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "dap0am"
-        },
-        "number": 8523,
-        "state": "OPEN",
-        "title": "feat(helm): add opt-in ttlSecondsAfterFinished for startupapicheck Job",
-        "url": "https://github.com/cert-manager/cert-manager/pull/8523"
-      },
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "certtools/intelmq",
-      "number": 2686,
-      "title": "Modify bot: regex not matching without ()",
-      "url": "https://github.com/certtools/intelmq/issues/2686",
-      "created_at": "2026-02-17T13:33:00Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "component: bots",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 1109,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.85,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "cli/cli",
-      "number": 12585,
-      "title": "Confusing error message on scopes",
-      "url": "https://github.com/cli/cli/issues/12585",
-      "created_at": "2026-01-30T17:28:17Z",
-      "labels": [
-        "bug",
-        "priority-3",
-        "help wanted",
-        "gh-issue"
-      ],
-      "language": "Go",
-      "stars": 42526,
-      "comment_count": 2,
-      "age_days": 18,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "elijahthis"
-        },
-        "number": 12596,
-        "state": "OPEN",
-        "title": "fix: clarify scope error while creating issues for projects",
-        "url": "https://github.com/cli/cli/pull/12596"
-      },
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.6,
-        "confidence": 0.81,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "conda/rattler",
-      "number": 1696,
-      "title": "perf: dont run shell if no activation scripts",
-      "url": "https://github.com/conda/rattler/issues/1696",
-      "created_at": "2025-09-30T10:02:32Z",
-      "labels": [
-        "help wanted",
-        "good first issue",
-        ":rocket: performance"
-      ],
-      "language": "Rust",
-      "stars": 407,
-      "comment_count": 8,
-      "age_days": 142,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "LED-0102"
-        },
-        "number": 1700,
-        "state": "OPEN",
-        "title": "feat: perf: skip shell if no activation scripts or conda prefix (#1696)",
-        "url": "https://github.com/conda/rattler/pull/1700"
-      },
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "containers/podman",
-      "number": 28044,
-      "title": "Information or examples on running podman on startup on macOS",
-      "url": "https://github.com/containers/podman/issues/28044",
-      "created_at": "2026-02-07T04:42:23Z",
-      "labels": [
-        "Good First Issue",
-        "documentation",
-        "macos",
-        "volunteers-wanted",
-        "triaged"
-      ],
-      "language": "Go",
-      "stars": 30705,
-      "comment_count": 0,
-      "age_days": 9,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.5,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "crossplane/crossplane",
-      "number": 6788,
-      "title": "E2E tests don't validate realtime composition performance for namespaced XRs",
-      "url": "https://github.com/crossplane/crossplane/issues/6788",
-      "created_at": "2025-09-08T21:21:15Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "test",
-        "composition"
-      ],
-      "language": "Go",
-      "stars": 11419,
-      "comment_count": 3,
-      "age_days": 162,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "docker/cagent",
-      "number": 1776,
-      "title": "Provider in sidebar not updated when using alloy models",
-      "url": "https://github.com/docker/cagent/issues/1776",
-      "created_at": "2026-02-18T14:01:06Z",
-      "labels": [
-        "good first issue",
-        "kind/bug",
-        "area/tui"
-      ],
-      "language": "Go",
-      "stars": 2006,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.85,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "edgexfoundry/edgex-ui-go",
-      "number": 841,
-      "title": "I used version 4.0.0 to build the service. After starting the WEB page, the scheduler and AppService modules cannot be used.",
-      "url": "https://github.com/edgexfoundry/edgex-ui-go/issues/841",
-      "created_at": "2025-06-14T10:40:24Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 108,
-      "comment_count": 3,
-      "age_days": 250,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "gleam-lang/gleam",
-      "number": 3015,
-      "title": "`gleam build` doesn't have permission to link `priv` on Windows",
-      "url": "https://github.com/gleam-lang/gleam/issues/3015",
-      "created_at": "2024-04-20T09:24:56Z",
-      "labels": [
-        "help wanted",
-        "good first issue",
-        "high priority"
-      ],
-      "language": "Rust",
-      "stars": 21147,
-      "comment_count": 8,
-      "age_days": 671,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "ankddev"
-        },
-        "number": 5378,
-        "state": "OPEN",
-        "title": "feat: fallback to copying if we can't symlink",
-        "url": "https://github.com/gleam-lang/gleam/pull/5378"
-      },
       "score": 0.64,
       "score_breakdown": {
         "reach": 0.6,
