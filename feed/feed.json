@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-20T07:07:01Z",
+  "updated_at": "2026-02-20T13:16:08Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1271,6 +1271,44 @@
       }
     },
     {
+      "repo": "meilisearch/meilisearch",
+      "number": 6123,
+      "title": "Chat causes errors when used with Mistral",
+      "url": "https://github.com/meilisearch/meilisearch/issues/6123",
+      "created_at": "2026-01-26T15:31:07Z",
+      "labels": [
+        "good first issue"
+      ],
+      "language": "Rust",
+      "stars": 55999,
+      "comment_count": 12,
+      "age_days": 24,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "vidit-virmani"
+        },
+        "number": 6170,
+        "state": "OPEN",
+        "title": "Issue 6123: Handles  deserialisation for  Reference Chunk type response from Mistral chat completion",
+        "url": "https://github.com/meilisearch/meilisearch/pull/6170"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "moltis-org/moltis",
       "number": 176,
       "title": "[Feature]: Add datetime to system prompt context",
@@ -1408,6 +1446,36 @@
       "stars": 4231,
       "comment_count": 14,
       "age_days": 24,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "JabRef/jabref",
+      "number": 15000,
+      "title": "Identifier selection does not work on fresh start",
+      "url": "https://github.com/JabRef/jabref/issues/15000",
+      "created_at": "2026-02-02T09:04:20Z",
+      "labels": [
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 4235,
+      "comment_count": 12,
+      "age_days": 18,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -1736,6 +1804,37 @@
       }
     },
     {
+      "repo": "oauth2-proxy/oauth2-proxy",
+      "number": 3340,
+      "title": "[Support]: get displayName as claim from Microsoft Entra ID",
+      "url": "https://github.com/oauth2-proxy/oauth2-proxy/issues/3340",
+      "created_at": "2026-02-16T17:35:43Z",
+      "labels": [
+        "help wanted",
+        "configuration"
+      ],
+      "language": "Go",
+      "stars": 13885,
+      "comment_count": 3,
+      "age_days": 3,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "DSpace/dspace-angular",
       "number": 5115,
       "title": "Visual misalignment of action buttons in empty DSpace bundles (Bitstreams tab in Edit Item view)",
@@ -2010,6 +2109,44 @@
       }
     },
     {
+      "repo": "freeCodeCamp/freeCodeCamp",
+      "number": 65625,
+      "title": "Subscription banner content not properly aligned",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp/issues/65625",
+      "created_at": "2026-01-31T18:19:35Z",
+      "labels": [
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 437324,
+      "comment_count": 11,
+      "age_days": 19,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "DeveloperViraj"
+        },
+        "number": 65664,
+        "state": "OPEN",
+        "title": "fix: align flash banner content properly",
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/65664"
+      },
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.86,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "gitbutlerapp/gitbutler",
       "number": 12340,
       "title": "cli: support for opening pr in browser",
@@ -2116,9 +2253,9 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 459,
-      "comment_count": 5,
-      "age_days": 14,
+      "stars": 474,
+      "comment_count": 6,
+      "age_days": 17,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -2133,6 +2270,46 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.78,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "juanfont/headscale",
+      "number": 3055,
+      "title": "Add more explicit warning against using a non standard IP prefix",
+      "url": "https://github.com/juanfont/headscale/issues/3055",
+      "created_at": "2026-02-04T10:27:23Z",
+      "labels": [
+        "enhancement",
+        "good first issue",
+        "no-stale-bot"
+      ],
+      "language": "Go",
+      "stars": 35580,
+      "comment_count": 3,
+      "age_days": 16,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "LouisLau-art"
+        },
+        "number": 3062,
+        "state": "OPEN",
+        "title": "docs(config): add explicit prefixes warning",
+        "url": "https://github.com/juanfont/headscale/pull/3062"
+      },
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
         "effort": 0.6
       }
     },
@@ -3269,6 +3446,94 @@
       }
     },
     {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5506,
+      "title": "[Good First Issue] 🍱 Add practical, structured New Grammar Point 67 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5506",
+      "created_at": "2026-02-20T12:32:45Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1587,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5507,
+      "title": "[Good First Issue] 🥞 Add emotional, well-known Famous Anime Quote 65 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5507",
+      "created_at": "2026-02-20T12:52:43Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1587,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6825,
       "title": "Configurable timeout for DNS monitor",
@@ -3975,6 +4240,85 @@
       }
     },
     {
+      "repo": "dotenv-linter/dotenv-linter",
+      "number": 749,
+      "title": "on fix action support comment for group",
+      "url": "https://github.com/dotenv-linter/dotenv-linter/issues/749",
+      "created_at": "2024-01-30T11:43:42Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "good first issue"
+      ],
+      "language": "Rust",
+      "stars": 2054,
+      "comment_count": 7,
+      "age_days": 752,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "jason89521"
+        },
+        "number": 806,
+        "state": "OPEN",
+        "title": "feat(fixes): support preserve-comments-position arg",
+        "url": "https://github.com/dotenv-linter/dotenv-linter/pull/806"
+      },
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.88,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "dswah/pyGAM",
+      "number": 423,
+      "title": "[BUG] datasets are not included in the newest `pygam` releases",
+      "url": "https://github.com/dswah/pyGAM/issues/423",
+      "created_at": "2025-12-25T13:44:05Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 955,
+      "comment_count": 8,
+      "age_days": 56,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.6,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Shehrozkashif"
+        },
+        "number": 433,
+        "state": "OPEN",
+        "title": "Fix: Build wheel and test datasets in clean venv; update CI",
+        "url": "https://github.com/dswah/pyGAM/pull/433"
+      },
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.83,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "go-git/go-git",
       "number": 1855,
       "title": "Flaky test: `TestWorktreeSuite/TestCheckoutBisect`",
@@ -4562,6 +4906,39 @@
       }
     },
     {
+      "repo": "meshery/meshery",
+      "number": 17523,
+      "title": "[Docs] Fix typos, duplicate section, and formatting in contributing-cli page",
+      "url": "https://github.com/meshery/meshery/issues/17523",
+      "created_at": "2026-02-20T11:35:32Z",
+      "labels": [
+        "help wanted",
+        "area/docs",
+        "language/markdown",
+        "framework/jekyll"
+      ],
+      "language": "Go",
+      "stars": 9926,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "9seconds/mtg",
       "number": 319,
       "title": "Proxy protocol support",
@@ -4942,6 +5319,48 @@
         "impact": 0.5,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "diesel-rs/diesel",
+      "number": 4840,
+      "title": "Improve the documentation of our derives",
+      "url": "https://github.com/diesel-rs/diesel/issues/4840",
+      "created_at": "2025-10-28T14:15:30Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "documentation",
+        "mentoring available"
+      ],
+      "language": "Rust",
+      "stars": 14023,
+      "comment_count": 4,
+      "age_days": 114,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "veeceey"
+        },
+        "number": 4983,
+        "state": "OPEN",
+        "title": "Add expanded code examples for all derive attributes in docs",
+        "url": "https://github.com/diesel-rs/diesel/pull/4983"
+      },
+      "score": 0.65,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.65,
+        "confidence": 0.89,
+        "effort": 0.5
       }
     },
     {
@@ -6274,7 +6693,7 @@
       ],
       "language": "Rust",
       "stars": 6884,
-      "comment_count": 8,
+      "comment_count": 9,
       "age_days": 104,
       "is_bug": false,
       "is_feature": false,
@@ -6641,37 +7060,6 @@
       }
     },
     {
-      "repo": "dswah/pyGAM",
-      "number": 423,
-      "title": "[BUG] datasets are not included in the newest `pygam` releases",
-      "url": "https://github.com/dswah/pyGAM/issues/423",
-      "created_at": "2025-12-25T13:44:05Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 952,
-      "comment_count": 3,
-      "age_days": 55,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.6,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.83,
-        "effort": 0.5
-      }
-    },
-    {
       "repo": "edgexfoundry/edgex-ui-go",
       "number": 841,
       "title": "I used version 4.0.0 to build the service. After starting the WEB page, the scheduler and AppService modules cannot be used.",
@@ -6714,364 +7102,26 @@
         "high priority"
       ],
       "language": "Rust",
-      "stars": 21146,
+      "stars": 21147,
       "comment_count": 8,
-      "age_days": 670,
+      "age_days": 671,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
       "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "gleam-lang/gleam",
-      "number": 3971,
-      "title": "Permit rc versions when using `gleam add`",
-      "url": "https://github.com/gleam-lang/gleam/issues/3971",
-      "created_at": "2024-12-08T23:13:37Z",
-      "labels": [
-        "help wanted",
-        "discussion"
-      ],
-      "language": "Rust",
-      "stars": 21146,
-      "comment_count": 6,
-      "age_days": 438,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "goharbor/harbor",
-      "number": 22640,
-      "title": "Add Webhook Trigger for “Tag Created” Event",
-      "url": "https://github.com/goharbor/harbor/issues/22640",
-      "created_at": "2025-12-15T08:37:58Z",
-      "labels": [
-        "help wanted",
-        "Stale"
-      ],
-      "language": "Go",
-      "stars": 27590,
-      "comment_count": 3,
-      "age_days": 65,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "gokcehan/lf",
-      "number": 2325,
-      "title": "[Feature Request] Symlink reference",
-      "url": "https://github.com/gokcehan/lf/issues/2325",
-      "created_at": "2025-12-28T20:12:29Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Go",
-      "stars": 9046,
-      "comment_count": 5,
-      "age_days": 51,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.88,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "helm/helm",
-      "number": 31439,
-      "title": "Add support for SOURCE_DATE_EPOCH in reproducible builds",
-      "url": "https://github.com/helm/helm/issues/31439",
-      "created_at": "2025-10-29T17:14:15Z",
-      "labels": [
-        "help wanted",
-        "feature",
-        "keep open"
-      ],
-      "language": "Go",
-      "stars": 29432,
-      "comment_count": 3,
-      "age_days": 110,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "helm/helm",
-      "number": 8479,
-      "title": "Feature request: `helm dependency update --untar`",
-      "url": "https://github.com/helm/helm/issues/8479",
-      "created_at": "2020-07-17T21:36:06Z",
-      "labels": [
-        "feature",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 29429,
-      "comment_count": 18,
-      "age_days": 2039,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "keephq/keep",
-      "number": 3376,
-      "title": "[➕ Feature]: Add a way to validate Keep workflows from CI",
-      "url": "https://github.com/keephq/keep/issues/3376",
-      "created_at": "2025-02-10T13:45:51Z",
-      "labels": [
-        "Good First Issue",
-        "Feature"
-      ],
-      "language": "Python",
-      "stars": 11436,
-      "comment_count": 12,
-      "age_days": 374,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
       "action": "review",
       "pr": {
         "author": {
-          "login": "jrg94-ua"
+          "login": "ankddev"
         },
-        "number": 1,
+        "number": 5378,
         "state": "OPEN",
-        "title": "feat(cli): add strict workflow YAML validation command",
-        "url": "https://github.com/jrg94-ua/keep/pull/1"
+        "title": "feat: fallback to copying if we can't symlink",
+        "url": "https://github.com/gleam-lang/gleam/pull/5378"
       },
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "keploy/keploy",
-      "number": 3351,
-      "title": "[feature]: remove inclusion of delay time in the test run summary",
-      "url": "https://github.com/keploy/keploy/issues/3351",
-      "created_at": "2025-12-09T06:10:39Z",
-      "labels": [
-        "Good First Issue",
-        "Go",
-        "CLI"
-      ],
-      "language": "Go",
-      "stars": 15675,
-      "comment_count": 8,
-      "age_days": 71,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Syedowais312"
-        },
-        "number": 3354,
-        "state": "OPEN",
-        "title": "feat: Split TimeTaken metric into ExecutionTime and WaitTime",
-        "url": "https://github.com/keploy/keploy/pull/3354"
-      },
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.86,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "keploy/keploy",
-      "number": 3521,
-      "title": "Add New Quickstarts for More Languages (Rust, Ruby, C++, Perl, PHP)",
-      "url": "https://github.com/keploy/keploy/issues/3521",
-      "created_at": "2026-01-12T11:50:19Z",
-      "labels": [
-        "Good First Issue",
-        "Help Wanted",
-        "integration-testing"
-      ],
-      "language": "Go",
-      "stars": 15676,
-      "comment_count": 38,
-      "age_days": 35,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Gagan202005"
-        },
-        "number": 770,
-        "state": "OPEN",
-        "title": "[docs-website] : create rust+mongodb quickstart page",
-        "url": "https://github.com/keploy/docs/pull/770"
-      },
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.86,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "marimo-team/marimo",
-      "number": 3860,
-      "title": "Add default_sort parameter to `mo.ui.table`",
-      "url": "https://github.com/marimo-team/marimo/issues/3860",
-      "created_at": "2025-02-20T08:35:45Z",
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "Python",
-      "stars": 19218,
-      "comment_count": 14,
-      "age_days": 364,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Prinan-99"
-        },
-        "number": 8370,
-        "state": "OPEN",
-        "title": "feat: add default_sort and ascending parameters to mo.ui.table",
-        "url": "https://github.com/marimo-team/marimo/pull/8370"
-      },
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "meilisearch/meilisearch",
-      "number": 4840,
-      "title": "Make the meilisearch integration tests run faster",
-      "url": "https://github.com/meilisearch/meilisearch/issues/4840",
-      "created_at": "2024-07-30T15:54:15Z",
-      "labels": [
-        "good first issue",
-        "help wanted",
-        "maintenance"
-      ],
-      "language": "Rust",
-      "stars": 55987,
-      "comment_count": 16,
-      "age_days": 569,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.64,
       "score_breakdown": {
         "reach": 0.6,
