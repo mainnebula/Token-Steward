@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-19T19:02:29Z",
+  "updated_at": "2026-02-20T02:43:58Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -371,9 +371,9 @@
         "CLI"
       ],
       "language": "Rust",
-      "stars": 19448,
-      "comment_count": 3,
-      "age_days": 7,
+      "stars": 19463,
+      "comment_count": 4,
+      "age_days": 8,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -381,8 +381,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "gonchihernandez"
+        },
+        "number": 12448,
+        "state": "OPEN",
+        "title": "fix-issue-12328: fix commit messages truncation in the CLI",
+        "url": "https://github.com/gitbutlerapp/gitbutler/pull/12448"
+      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
@@ -779,9 +787,9 @@
         "action"
       ],
       "language": "JavaScript",
-      "stars": 11092,
+      "stars": 11103,
       "comment_count": 6,
-      "age_days": 4,
+      "age_days": 6,
       "is_bug": false,
       "is_feature": true,
       "category": "general",
@@ -1085,6 +1093,45 @@
       }
     },
     {
+      "repo": "kornia/kornia",
+      "number": 3564,
+      "title": "[Bug]: Lightglue crashes when adaptive width pruning removes all keypoints",
+      "url": "https://github.com/kornia/kornia/issues/3564",
+      "created_at": "2026-02-12T17:01:27Z",
+      "labels": [
+        "help wanted",
+        "triage"
+      ],
+      "language": "Python",
+      "stars": 11076,
+      "comment_count": 5,
+      "age_days": 7,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "kirandharmar867-maker"
+        },
+        "number": 3565,
+        "state": "OPEN",
+        "title": "Issue: LightGlue crashes when adaptive width pruning removes all keypoints (#3564).",
+        "url": "https://github.com/kornia/kornia/pull/3565"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "kubernetes/kubeadm",
       "number": 3289,
       "title": "remove data_test.go files for various Data objects of phases",
@@ -1097,8 +1144,8 @@
         "good first issue"
       ],
       "language": "Go",
-      "stars": 3957,
-      "comment_count": 5,
+      "stars": 3958,
+      "comment_count": 6,
       "age_days": 1,
       "is_bug": false,
       "is_feature": false,
@@ -1990,6 +2037,51 @@
         "impact": 0.55,
         "confidence": 0.86,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 40929,
+      "title": "Duplicates in unmanaged attributes",
+      "url": "https://github.com/keycloak/keycloak/issues/40929",
+      "created_at": "2025-07-04T11:44:49Z",
+      "labels": [
+        "kind/bug",
+        "area/user-profile",
+        "area/admin/api",
+        "help wanted",
+        "team/core-iam",
+        "team/core-shared",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 32911,
+      "comment_count": 12,
+      "age_days": 230,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "keshavprashantdeshpande"
+        },
+        "number": 43892,
+        "state": "OPEN",
+        "title": "Add version column to user_entity",
+        "url": "https://github.com/keycloak/keycloak/pull/43892"
+      },
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.89,
+        "effort": 0.4
       }
     },
     {
@@ -3573,6 +3665,39 @@
       }
     },
     {
+      "repo": "code-charity/youtube",
+      "number": 3630,
+      "title": "🐞Filtering suggested videos (blocklist) does not work, among other things (Linux + Brave)",
+      "url": "https://github.com/code-charity/youtube/issues/3630",
+      "created_at": "2026-02-20T02:31:34Z",
+      "labels": [
+        "Bug",
+        "help wanted",
+        "good first issue",
+        "up-for-grabs"
+      ],
+      "language": "JavaScript",
+      "stars": 4229,
+      "comment_count": 0,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.6,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "conda/rattler",
       "number": 2039,
       "title": "Replace MatchSpec with no name (`*`) with glob matchspec",
@@ -3838,6 +3963,37 @@
       "language": "Go",
       "stars": 4936,
       "comment_count": 0,
+      "age_days": 6,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.6,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "grafana/tempo",
+      "number": 6451,
+      "title": "Tempo ignores block config in storage section",
+      "url": "https://github.com/grafana/tempo/issues/6451",
+      "created_at": "2026-02-13T09:28:31Z",
+      "labels": [
+        "type/bug",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 5079,
+      "comment_count": 1,
       "age_days": 6,
       "is_bug": true,
       "is_feature": false,
@@ -4580,6 +4736,39 @@
       }
     },
     {
+      "repo": "espanso/espanso",
+      "number": 1675,
+      "title": "Memory leak on Mac",
+      "url": "https://github.com/espanso/espanso/issues/1675",
+      "created_at": "2023-08-11T09:49:02Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "MacOS",
+        "high priority"
+      ],
+      "language": "Rust",
+      "stars": 13161,
+      "comment_count": 19,
+      "age_days": 923,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.65,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.81,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "gitbutlerapp/gitbutler",
       "number": 9984,
       "title": "Support for JetBrains IDEs",
@@ -4653,8 +4842,8 @@
       ],
       "language": "JavaScript",
       "stars": 330,
-      "comment_count": 8,
-      "age_days": 5,
+      "comment_count": 9,
+      "age_days": 6,
       "is_bug": false,
       "is_feature": true,
       "category": "general",
@@ -5342,6 +5531,158 @@
       }
     },
     {
+      "repo": "PalisadoesFoundation/talawa-api",
+      "number": 4669,
+      "title": "Test Drizzle: src/drizzle/tables/NotificationLog.ts",
+      "url": "https://github.com/PalisadoesFoundation/talawa-api/issues/4669",
+      "created_at": "2026-01-13T02:30:06Z",
+      "labels": [
+        "good first issue",
+        "unapproved",
+        "no-issue-activity",
+        "test"
+      ],
+      "language": "TypeScript",
+      "stars": 319,
+      "comment_count": 11,
+      "age_days": 38,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.64,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.5
+      }
+    },
+    {
+      "repo": "PipedreamHQ/pipedream",
+      "number": 20040,
+      "title": "[ACTION] Trengo get email message content",
+      "url": "https://github.com/PipedreamHQ/pipedream/issues/20040",
+      "created_at": "2026-02-15T12:15:40Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "action"
+      ],
+      "language": "JavaScript",
+      "stars": 11103,
+      "comment_count": 2,
+      "age_days": 4,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Aditya-1838"
+        },
+        "number": 20054,
+        "state": "OPEN",
+        "title": "Add Trengo Get Email Message Content action",
+        "url": "https://github.com/PipedreamHQ/pipedream/pull/20054"
+      },
+      "score": 0.64,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.4,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "PostHog/posthog-js",
+      "number": 2989,
+      "title": "[react native] session replay masking doesn't work consistently",
+      "url": "https://github.com/PostHog/posthog-js/issues/2989",
+      "created_at": "2026-01-15T17:12:04Z",
+      "labels": [
+        "enhancement",
+        "question",
+        "recordings",
+        "feature/replay",
+        "feature/mobile"
+      ],
+      "language": "TypeScript",
+      "stars": 511,
+      "comment_count": 10,
+      "age_days": 35,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.64,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.5
+      }
+    },
+    {
+      "repo": "RackulaLives/Rackula",
+      "number": 1104,
+      "title": "feat: Basic authentication event logging",
+      "url": "https://github.com/RackulaLives/Rackula/issues/1104",
+      "created_at": "2026-02-09T08:18:02Z",
+      "labels": [
+        "feature",
+        "size:small",
+        "priority:medium",
+        "security",
+        "use:homelab",
+        "area:authentication",
+        "use:enterprise"
+      ],
+      "language": "TypeScript",
+      "stars": 808,
+      "comment_count": 0,
+      "age_days": 10,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "security",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ggfevans"
+        },
+        "number": 1289,
+        "state": "OPEN",
+        "title": "feat: add structured authentication event logging (#1104)",
+        "url": "https://github.com/RackulaLives/Rackula/pull/1289"
+      },
+      "score": 0.64,
+      "score_breakdown": {
+        "reach": 0.3,
+        "impact": 0.55,
+        "confidence": 0.86,
+        "effort": 0.75
+      }
+    },
+    {
       "repo": "SeleniumHQ/selenium",
       "number": 15265,
       "title": "[🚀 Feature]: Unifying Select Class Across All Bindings",
@@ -5381,6 +5722,39 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "TeamNewPipe/NewPipe",
+      "number": 11514,
+      "title": "Download Crash",
+      "url": "https://github.com/TeamNewPipe/NewPipe/issues/11514",
+      "created_at": "2024-09-09T09:12:10Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "downloader",
+        "database"
+      ],
+      "language": "Java",
+      "stars": 37251,
+      "comment_count": 7,
+      "age_days": 528,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.64,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.76,
         "effort": 0.4
       }
     },
@@ -5569,6 +5943,38 @@
       }
     },
     {
+      "repo": "boa-dev/boa",
+      "number": 4524,
+      "title": "Audit public APIs",
+      "url": "https://github.com/boa-dev/boa/issues/4524",
+      "created_at": "2025-11-07T15:48:57Z",
+      "labels": [
+        "help wanted",
+        "API",
+        "E-Medium"
+      ],
+      "language": "Rust",
+      "stars": 6883,
+      "comment_count": 7,
+      "age_days": 104,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.64,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.88,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "booklore-app/booklore",
       "number": 1831,
       "title": "Help Selecting a Modern Replacement for EPUB.js in Booklore",
@@ -5627,6 +6033,38 @@
         "reach": 0.5,
         "impact": 0.55,
         "confidence": 0.79,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "bytedeco/javacv",
+      "number": 2382,
+      "title": "FFmpegFrameGrabber should throw an exception when attempting to access stream metadata before calling start()",
+      "url": "https://github.com/bytedeco/javacv/issues/2382",
+      "created_at": "2026-02-19T20:07:12Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "question"
+      ],
+      "language": "Java",
+      "stars": 8290,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.64,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.55,
+        "confidence": 0.85,
         "effort": 0.65
       }
     },
@@ -6212,6 +6650,39 @@
       }
     },
     {
+      "repo": "DSpace/DSpace",
+      "number": 10494,
+      "title": "Switch to Solr's eDisMax Query Parser to eliminate the catch-all search field `search_text`",
+      "url": "https://github.com/DSpace/DSpace/issues/10494",
+      "created_at": "2025-03-17T14:06:49Z",
+      "labels": [
+        "new feature",
+        "backend: Solr",
+        "component: Discovery",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 1045,
+      "comment_count": 9,
+      "age_days": 339,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.63,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "Dokploy/dokploy",
       "number": 3610,
       "title": "Feature: Icon upload and selection for applications",
@@ -6314,6 +6785,36 @@
       }
     },
     {
+      "repo": "MorpheApp/morphe-patches",
+      "number": 578,
+      "title": "feat(YouTube): Hide \"Explore more topics\"",
+      "url": "https://github.com/MorpheApp/morphe-patches/issues/578",
+      "created_at": "2026-02-18T15:29:51Z",
+      "labels": [
+        "feature"
+      ],
+      "language": "Java",
+      "stars": 919,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.63,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.76,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "StarRocks/starrocks",
       "number": 62502,
       "title": "Support using JSON as GROUP BY",
@@ -6324,9 +6825,9 @@
         "good first issue"
       ],
       "language": "Java",
-      "stars": 11392,
-      "comment_count": 3,
-      "age_days": 173,
+      "stars": 11395,
+      "comment_count": 4,
+      "age_days": 174,
       "is_bug": false,
       "is_feature": true,
       "category": "general",
@@ -6510,190 +7011,19 @@
       }
     },
     {
-      "repo": "astropy/astropy",
-      "number": 8860,
-      "title": "Provide a way to enable both quantity_support and time_support in one go",
-      "url": "https://github.com/astropy/astropy/issues/8860",
-      "created_at": "2019-06-16T11:55:36Z",
-      "labels": [
-        "Enhancement",
-        "visualization",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 5047,
-      "comment_count": 13,
-      "age_days": 2439,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "DavidAGInnovation"
-        },
-        "number": 19061,
-        "state": "OPEN",
-        "title": "ENH: Add astropy_support context manager",
-        "url": "https://github.com/astropy/astropy/pull/19061"
-      },
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 28670,
-      "title": "[bazel.build] Problem with /start/cpp",
-      "url": "https://github.com/bazelbuild/bazel/issues/28670",
-      "created_at": "2026-02-14T18:13:18Z",
-      "labels": [
-        "type: documentation (cleanup)",
-        "P2",
-        "team-Rules-CPP",
-        "team-OSS",
-        "help wanted",
-        "team-Documentation"
-      ],
-      "language": "Java",
-      "stars": 25135,
-      "comment_count": 0,
-      "age_days": 4,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.5,
-        "confidence": 0.89,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 28686,
-      "title": "[bazel.build] Problem with /install/ide",
-      "url": "https://github.com/bazelbuild/bazel/issues/28686",
-      "created_at": "2026-02-17T14:45:46Z",
-      "labels": [
-        "type: documentation (cleanup)",
-        "P2",
-        "team-OSS",
-        "help wanted",
-        "team-Documentation"
-      ],
-      "language": "Java",
-      "stars": 25135,
-      "comment_count": 0,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.5,
-        "confidence": 0.89,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "bropat/eufy-security-client",
-      "number": 796,
-      "title": "[Feature request]: mower e15",
-      "url": "https://github.com/bropat/eufy-security-client/issues/796",
-      "created_at": "2026-02-17T13:46:11Z",
+      "repo": "apache/polaris",
+      "number": 3469,
+      "title": "Catalog-level branching for atomic multi-table operations",
+      "url": "https://github.com/apache/polaris/issues/3469",
+      "created_at": "2026-01-17T09:20:06Z",
       "labels": [
         "enhancement",
-        "help wanted",
-        "need hardware or access",
-        "missing debug logs"
+        "stale"
       ],
-      "language": "TypeScript",
-      "stars": 661,
-      "comment_count": 2,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.6,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.78,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "can1357/oh-my-pi",
-      "number": 79,
-      "title": "Proposal: Interactive `omp commit` workflow",
-      "url": "https://github.com/can1357/oh-my-pi/issues/79",
-      "created_at": "2026-02-15T15:48:58Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "TypeScript",
-      "stars": 862,
+      "language": "Java",
+      "stars": 1840,
       "comment_count": 3,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.6,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.55,
-        "confidence": 0.83,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "containers/podlet",
-      "number": 164,
-      "title": "Support for \"depends_on ... service_healthy\" in Compose",
-      "url": "https://github.com/containers/podlet/issues/164",
-      "created_at": "2025-12-15T15:07:13Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Rust",
-      "stars": 1339,
-      "comment_count": 3,
-      "age_days": 65,
+      "age_days": 33,
       "is_bug": false,
       "is_feature": true,
       "category": "general",
@@ -6709,295 +7039,6 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "dokieli/dokieli",
-      "number": 566,
-      "title": "Extend threat modeling report generation for LINDDUN",
-      "url": "https://github.com/dokieli/dokieli/issues/566",
-      "created_at": "2026-02-18T12:43:18Z",
-      "labels": [
-        "feature",
-        "security",
-        "help-wanted",
-        "privacy"
-      ],
-      "language": "JavaScript",
-      "stars": 875,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "security",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.3,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "entireio/cli",
-      "number": 382,
-      "title": "Integration with other Version Control Systems",
-      "url": "https://github.com/entireio/cli/issues/382",
-      "created_at": "2026-02-17T14:17:29Z",
-      "labels": [
-        "enhancement",
-        "migrated-from-discussion"
-      ],
-      "language": "Go",
-      "stars": 2599,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.4,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "facebook/pyrefly",
-      "number": 2418,
-      "title": "avoid invalid-argument on legitimate (but dynamic) namedtuples",
-      "url": "https://github.com/facebook/pyrefly/issues/2418",
-      "created_at": "2026-02-14T13:52:32Z",
-      "labels": [
-        "typechecking",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 5373,
-      "comment_count": 2,
-      "age_days": 3,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.4,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "facebook/pyrefly",
-      "number": 2431,
-      "title": "LSP: Completions for attribute override definitions",
-      "url": "https://github.com/facebook/pyrefly/issues/2431",
-      "created_at": "2026-02-15T12:35:22Z",
-      "labels": [
-        "help wanted",
-        "language-server"
-      ],
-      "language": "Rust",
-      "stars": 5381,
-      "comment_count": 2,
-      "age_days": 3,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.4,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "gnolang/gno",
-      "number": 2799,
-      "title": "Create or reuse a wallet connection standard and integrate it into Gnoweb",
-      "url": "https://github.com/gnolang/gno/issues/2799",
-      "created_at": "2024-09-13T18:17:12Z",
-      "labels": [
-        "🗺️good first issue🗺️",
-        "help wanted",
-        "Stale"
-      ],
-      "language": "Go",
-      "stars": 1052,
-      "comment_count": 6,
-      "age_days": 521,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "golang/go",
-      "number": 77485,
-      "title": "cmd/compile: TestScript/issue77033 failures",
-      "url": "https://github.com/golang/go/issues/77485",
-      "created_at": "2026-02-06T18:51:24Z",
-      "labels": [
-        "help wanted",
-        "NeedsInvestigation",
-        "compiler/runtime"
-      ],
-      "language": "Go",
-      "stars": 132590,
-      "comment_count": 4,
-      "age_days": 12,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": false,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.81,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "jazzband/pip-tools",
-      "number": 1107,
-      "title": "pip-compile annotations should be relative to file they are in",
-      "url": "https://github.com/jazzband/pip-tools/issues/1107",
-      "created_at": "2020-04-15T05:39:50Z",
-      "labels": [
-        "enhancement",
-        "feature",
-        "annotations"
-      ],
-      "language": "Python",
-      "stars": 7995,
-      "comment_count": 8,
-      "age_days": 2135,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "kubernetes-sigs/karpenter",
-      "number": 2702,
-      "title": "\"disrupting nodes(s)\" message should say which nodepools is being disrupted",
-      "url": "https://github.com/kubernetes-sigs/karpenter/issues/2702",
-      "created_at": "2025-12-09T00:57:21Z",
-      "labels": [
-        "help wanted",
-        "kind/feature",
-        "triage/accepted",
-        "good first issue",
-        "needs-priority"
-      ],
-      "language": "Go",
-      "stars": 1697,
-      "comment_count": 3,
-      "age_days": 70,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "kysely-org/kysely",
-      "number": 1712,
-      "title": "Support expressions in `partitionBy`",
-      "url": "https://github.com/kysely-org/kysely/issues/1712",
-      "created_at": "2026-02-19T11:16:33Z",
-      "labels": [
-        "enhancement",
-        "sqlite",
-        "postgres",
-        "api"
-      ],
-      "language": "TypeScript",
-      "stars": 13469,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.63,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.4,
-        "confidence": 0.89,
-        "effort": 0.65
       }
     }
   ]
