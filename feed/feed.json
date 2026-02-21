@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-20T19:00:27Z",
+  "updated_at": "2026-02-21T02:37:42Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -10,6 +10,39 @@
     "TypeScript"
   ],
   "issues": [
+    {
+      "repo": "alacritty/alacritty",
+      "number": 8846,
+      "title": "Keybinding \"/\" not starting search in \"Vi\" mode for Spanish keyboard",
+      "url": "https://github.com/alacritty/alacritty/issues/8846",
+      "created_at": "2026-02-19T13:46:34Z",
+      "labels": [
+        "B - bug",
+        "help wanted",
+        "D - easy",
+        "S - keybindings"
+      ],
+      "language": "Rust",
+      "stars": 62584,
+      "comment_count": 6,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.79,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.8
+      }
+    },
     {
       "repo": "mlflow/mlflow",
       "number": 20703,
@@ -1087,6 +1120,37 @@
       }
     },
     {
+      "repo": "facebook/pyrefly",
+      "number": 2465,
+      "title": "rank items from `__init__.py` lower in symbol search",
+      "url": "https://github.com/facebook/pyrefly/issues/2465",
+      "created_at": "2026-02-19T09:53:24Z",
+      "labels": [
+        "help wanted",
+        "language-server"
+      ],
+      "language": "Rust",
+      "stars": 5394,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "goharbor/harbor-cli",
       "number": 711,
       "title": "Fix Lint Issues on main",
@@ -1723,6 +1787,39 @@
       }
     },
     {
+      "repo": "aden-hive/hive",
+      "number": 2805,
+      "title": "[Integration]: Expand agent capabilities by adding more integrations/tools",
+      "url": "https://github.com/aden-hive/hive/issues/2805",
+      "created_at": "2026-01-30T20:58:28Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "integrations",
+        "tools"
+      ],
+      "language": "Python",
+      "stars": 8025,
+      "comment_count": 41,
+      "age_days": 21,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "apache/beam",
       "number": 36592,
       "title": "[Bug]: Type Checking Fails with Python Union Types with `|`",
@@ -2250,6 +2347,39 @@
         "reach": 0.55,
         "impact": 0.55,
         "confidence": 0.88,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "PalisadoesFoundation/talawa-api",
+      "number": 5248,
+      "title": "Enhancement: Exclude self-authored messages from unread count",
+      "url": "https://github.com/PalisadoesFoundation/talawa-api/issues/5248",
+      "created_at": "2026-02-16T19:09:23Z",
+      "labels": [
+        "good first issue",
+        "unapproved",
+        "feature request",
+        "test"
+      ],
+      "language": "TypeScript",
+      "stars": 319,
+      "comment_count": 5,
+      "age_days": 4,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -4861,6 +4991,38 @@
       }
     },
     {
+      "repo": "gkjohnson/three-gpu-pathtracer",
+      "number": 84,
+      "title": "Black results at glancing angles",
+      "url": "https://github.com/gkjohnson/three-gpu-pathtracer/issues/84",
+      "created_at": "2022-04-07T14:56:43Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "quality"
+      ],
+      "language": "JavaScript",
+      "stars": 1690,
+      "comment_count": 6,
+      "age_days": 1415,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.88,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "go-git/go-git",
       "number": 1855,
       "title": "Flaky test: `TestWorktreeSuite/TestCheckoutBisect`",
@@ -4924,6 +5086,38 @@
         "reach": 0.35,
         "impact": 0.6,
         "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "go-task/task",
+      "number": 2692,
+      "title": "CLI option --taskfile seems to be ignored",
+      "url": "https://github.com/go-task/task/issues/2692",
+      "created_at": "2026-02-16T02:05:02Z",
+      "labels": [
+        "help wanted",
+        "state: needs triage",
+        "os: macos"
+      ],
+      "language": "Go",
+      "stars": 14864,
+      "comment_count": 4,
+      "age_days": 5,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.86,
         "effort": 0.65
       }
     },
@@ -5636,39 +5830,6 @@
       }
     },
     {
-      "repo": "PalisadoesFoundation/talawa-api",
-      "number": 5248,
-      "title": "Enhancement: Exclude self-authored messages from unread count",
-      "url": "https://github.com/PalisadoesFoundation/talawa-api/issues/5248",
-      "created_at": "2026-02-16T19:09:23Z",
-      "labels": [
-        "good first issue",
-        "unapproved",
-        "feature request",
-        "test"
-      ],
-      "language": "TypeScript",
-      "stars": 319,
-      "comment_count": 4,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "PipedreamHQ/pipedream",
       "number": 19935,
       "title": "To Capture Gorgias Custom Ticket Fields",
@@ -5699,6 +5860,37 @@
         "impact": 0.55,
         "confidence": 0.89,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "Sharkord/sharkord",
+      "number": 240,
+      "title": "Bug: navigator.mediaDevices.getDisplayMedia is not a function",
+      "url": "https://github.com/Sharkord/sharkord/issues/240",
+      "created_at": "2026-02-16T08:58:15Z",
+      "labels": [
+        "good first issue",
+        "improvement"
+      ],
+      "language": "TypeScript",
+      "stars": 928,
+      "comment_count": 3,
+      "age_days": 4,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.65,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.65
       }
     },
     {
@@ -5859,6 +6051,36 @@
         "impact": 0.5,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "claration/Impactor",
+      "number": 103,
+      "title": "[Help] Impactor (v. 2.0.0 and up) refuses to open on Linux (mint 22.3)",
+      "url": "https://github.com/claration/Impactor/issues/103",
+      "created_at": "2026-01-28T14:39:11Z",
+      "labels": [
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 1219,
+      "comment_count": 12,
+      "age_days": 23,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.65,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.85,
+        "effort": 0.6
       }
     },
     {
@@ -6958,236 +7180,6 @@
         "impact": 0.55,
         "confidence": 0.86,
         "effort": 0.75
-      }
-    },
-    {
-      "repo": "SeleniumHQ/selenium",
-      "number": 15265,
-      "title": "[🚀 Feature]: Unifying Select Class Across All Bindings",
-      "url": "https://github.com/SeleniumHQ/selenium/issues/15265",
-      "created_at": "2025-02-10T16:02:02Z",
-      "labels": [
-        "C-rb",
-        "C-dotnet",
-        "C-java",
-        "I-enhancement",
-        "J-stale",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 34027,
-      "comment_count": 11,
-      "age_days": 371,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "VertexXX6"
-        },
-        "number": 1,
-        "state": "OPEN",
-        "title": "Testing and enhancing Select class behavior regarding hidden options in Selenium (for Java binding)Add files via upload",
-        "url": "https://github.com/VertexXX6/selenium-select-visibility-test/pull/1"
-      },
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "TeamNewPipe/NewPipe",
-      "number": 11514,
-      "title": "Download Crash",
-      "url": "https://github.com/TeamNewPipe/NewPipe/issues/11514",
-      "created_at": "2024-09-09T09:12:10Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "downloader",
-        "database"
-      ],
-      "language": "Java",
-      "stars": 37255,
-      "comment_count": 7,
-      "age_days": 528,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.76,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "VictoriaMetrics/VictoriaMetrics",
-      "number": 4446,
-      "title": "VictoriaMetrics should support errors returning for streaming ingestion protocols",
-      "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/issues/4446",
-      "created_at": "2023-06-13T20:42:25Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Go",
-      "stars": 16346,
-      "comment_count": 15,
-      "age_days": 982,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "accius/openhamclock",
-      "number": 518,
-      "title": "[FEATURE] WildFires and Floods",
-      "url": "https://github.com/accius/openhamclock/issues/518",
-      "created_at": "2026-02-18T20:37:34Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "JavaScript",
-      "stars": 314,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.55,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "alacritty/alacritty",
-      "number": 2324,
-      "title": "WSL + ConPTY + vim -> paste with blanks lines",
-      "url": "https://github.com/alacritty/alacritty/issues/2324",
-      "created_at": "2019-04-18T01:32:04Z",
-      "labels": [
-        "help wanted",
-        "H - windows"
-      ],
-      "language": "Rust",
-      "stars": 62457,
-      "comment_count": 65,
-      "age_days": 2497,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "angular/components",
-      "number": 10924,
-      "title": "CDK Overlay - Position Strategy with zoom css on parent",
-      "url": "https://github.com/angular/components/issues/10924",
-      "created_at": "2018-04-19T22:51:50Z",
-      "labels": [
-        "help wanted",
-        "P4",
-        "area: cdk/overlay"
-      ],
-      "language": "TypeScript",
-      "stars": 24998,
-      "comment_count": 19,
-      "age_days": 2863,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "astral-sh/uv",
-      "number": 13217,
-      "title": "Retain history of package versions through updates",
-      "url": "https://github.com/astral-sh/uv/issues/13217",
-      "created_at": "2025-04-30T08:33:11Z",
-      "labels": [
-        "enhancement",
-        "wish"
-      ],
-      "language": "Rust",
-      "stars": 79329,
-      "comment_count": 9,
-      "age_days": 292,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.64,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.4
       }
     }
   ]
