@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-22T13:06:51Z",
+  "updated_at": "2026-02-22T18:48:57Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -23,9 +23,9 @@
         "S - keybindings"
       ],
       "language": "Rust",
-      "stars": 62585,
-      "comment_count": 6,
-      "age_days": 1,
+      "stars": 62606,
+      "comment_count": 7,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -220,6 +220,37 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "NeptuneHub/AudioMuse-AI",
+      "number": 343,
+      "title": "[BUG] Errors since v0.8.11, can't launch audiomuse-ai anymore : Illegal instruction",
+      "url": "https://github.com/NeptuneHub/AudioMuse-AI/issues/343",
+      "created_at": "2026-02-22T11:02:47Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Python",
+      "stars": 1276,
+      "comment_count": 11,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -759,9 +790,9 @@
         "Theme: UI/Visual"
       ],
       "language": "Java",
-      "stars": 11750,
-      "comment_count": 7,
-      "age_days": 71,
+      "stars": 11755,
+      "comment_count": 8,
+      "age_days": 74,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -1216,6 +1247,44 @@
       }
     },
     {
+      "repo": "helm/helm",
+      "number": 31846,
+      "title": "Incorrect Go pkg import comment causing downstream processing error (kythe)",
+      "url": "https://github.com/helm/helm/issues/31846",
+      "created_at": "2026-02-20T13:46:29Z",
+      "labels": [
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 29533,
+      "comment_count": 5,
+      "age_days": 2,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "rohansood10"
+        },
+        "number": 31852,
+        "state": "OPEN",
+        "title": "fix: correct import comment in statuswait.go from v3 to v4",
+        "url": "https://github.com/helm/helm/pull/31852"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "huggingface/transformers",
       "number": 43979,
       "title": "Call to contributions: refactor output tracing in transformers",
@@ -1284,6 +1353,39 @@
         "title": "[JENKINS-26318] Encode log recorder redirect name",
         "url": "https://github.com/jenkinsci/jenkins/pull/26331"
       },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "juice-shop/juice-shop",
+      "number": 3099,
+      "title": "[🐛] CI/CD: Flaky Cypress clicks in contact.spec.ts using `force: true`",
+      "url": "https://github.com/juice-shop/juice-shop/issues/3099",
+      "created_at": "2026-02-21T16:46:38Z",
+      "labels": [
+        "technical debt",
+        "testing",
+        "good first issue",
+        "user interface"
+      ],
+      "language": "TypeScript",
+      "stars": 12535,
+      "comment_count": 7,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.7,
       "score_breakdown": {
         "reach": 0.6,
@@ -1947,7 +2049,7 @@
         "kind/external"
       ],
       "language": "Go",
-      "stars": 15034,
+      "stars": 15036,
       "comment_count": 63,
       "age_days": 459,
       "is_bug": true,
@@ -2300,6 +2402,46 @@
       "llm_receptivity": 0.75,
       "action": "fix",
       "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "JabRef/jabref",
+      "number": 14965,
+      "title": "Windows installer doesn't show JabRef icon",
+      "url": "https://github.com/JabRef/jabref/issues/14965",
+      "created_at": "2026-01-30T16:33:55Z",
+      "labels": [
+        "platform: windows",
+        "good first issue",
+        "component: installation"
+      ],
+      "language": "Java",
+      "stars": 4237,
+      "comment_count": 5,
+      "age_days": 23,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Siedlerchr"
+        },
+        "number": 14969,
+        "state": "OPEN",
+        "title": "adapt wix",
+        "url": "https://github.com/JabRef/jabref/pull/14969"
+      },
       "score": 0.68,
       "score_breakdown": {
         "reach": 0.55,
@@ -3308,7 +3450,7 @@
       ],
       "language": "Python",
       "stars": 1261,
-      "comment_count": 3,
+      "comment_count": 4,
       "age_days": 1,
       "is_bug": false,
       "is_feature": false,
@@ -5632,6 +5774,138 @@
       }
     },
     {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5739,
+      "title": "[Good First Issue] 🫖 Add high-quality, timeless Famous Japanese Video Game Quote 147 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5739",
+      "created_at": "2026-02-22T17:40:50Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1614,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5743,
+      "title": "[Good First Issue] 🍣 Add symbolic, cultural New Japanese Proverb 174 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5743",
+      "created_at": "2026-02-22T18:25:29Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1614,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5747,
+      "title": "[Good First Issue] 🥟 Add clear, thoughtful New Trivia Question 131 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5747",
+      "created_at": "2026-02-22T18:40:54Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1614,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6825,
       "title": "Configurable timeout for DNS monitor",
@@ -6183,9 +6457,9 @@
         "discussion welcome"
       ],
       "language": "Java",
-      "stars": 5815,
+      "stars": 5818,
       "comment_count": 2,
-      "age_days": 0,
+      "age_days": 2,
       "is_bug": false,
       "is_feature": false,
       "category": "documentation",
@@ -6461,6 +6735,47 @@
       "llm_receptivity": 0.75,
       "action": "fix",
       "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.6,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "code-charity/youtube",
+      "number": 3634,
+      "title": "🐞Bug using the setting to hide the control bar when paused; after using the bar, the mouse takes a while to disappear",
+      "url": "https://github.com/code-charity/youtube/issues/3634",
+      "created_at": "2026-02-22T14:06:41Z",
+      "labels": [
+        "Bug",
+        "help wanted",
+        "good first issue",
+        "up-for-grabs"
+      ],
+      "language": "JavaScript",
+      "stars": 4231,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "stakeswky"
+        },
+        "number": 3635,
+        "state": "OPEN",
+        "title": "fix: cursor/controls linger after seek when 'hide controls when paused' is enabled (#3634)",
+        "url": "https://github.com/code-charity/youtube/pull/3635"
+      },
       "score": 0.66,
       "score_breakdown": {
         "reach": 0.35,
@@ -7032,260 +7347,6 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 667,
-      "title": "[Feature]: Kornia-rs still largely slower than OpenCV in 2026",
-      "url": "https://github.com/kornia/kornia-rs/issues/667",
-      "created_at": "2026-01-26T14:28:53Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 578,
-      "comment_count": 8,
-      "age_days": 23,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "kubernetes-sigs/headlamp",
-      "number": 4744,
-      "title": "Pie charts in Workloads Overview are bleeding out of the component",
-      "url": "https://github.com/kubernetes-sigs/headlamp/issues/4744",
-      "created_at": "2026-02-20T06:43:04Z",
-      "labels": [
-        "kind/bug",
-        "good first issue",
-        "help wanted",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 5794,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kubernetes/kubeadm",
-      "number": 1350,
-      "title": "CA rotation: controller-manager needs a separate ca.crt file",
-      "url": "https://github.com/kubernetes/kubeadm/issues/1350",
-      "created_at": "2019-01-15T04:56:42Z",
-      "labels": [
-        "help wanted",
-        "area/security",
-        "priority/important-longterm",
-        "sig/auth",
-        "lifecycle/frozen"
-      ],
-      "language": "Go",
-      "stars": 3957,
-      "comment_count": 36,
-      "age_days": 2592,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "security",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.7,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "layer5io/layer5",
-      "number": 7427,
-      "title": "Accordion “Next” Button Navigates to Backdrop Instead of Avatar Overview",
-      "url": "https://github.com/layer5io/layer5/issues/7427",
-      "created_at": "2026-02-17T17:54:27Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "framework/gatsby"
-      ],
-      "language": "JavaScript",
-      "stars": 1010,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "lima-vm/lima",
-      "number": 4594,
-      "title": "Allow opting out from `sudo: ALL=(ALL) NOPASSWD:ALL` in the VM",
-      "url": "https://github.com/lima-vm/lima/issues/4594",
-      "created_at": "2026-02-16T18:34:26Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Go",
-      "stars": 20232,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "meshery/meshery",
-      "number": 17505,
-      "title": "Add Governance Documentation and Code of Conduct References to README",
-      "url": "https://github.com/meshery/meshery/issues/17505",
-      "created_at": "2026-02-18T21:32:53Z",
-      "labels": [
-        "help wanted",
-        "area/docs",
-        "language/markdown",
-        "framework/jekyll"
-      ],
-      "language": "Go",
-      "stars": 9922,
-      "comment_count": 2,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "openworkflowdev/openworkflow",
-      "number": 246,
-      "title": "Support for recurring workflows",
-      "url": "https://github.com/openworkflowdev/openworkflow/issues/246",
-      "created_at": "2026-02-04T15:46:35Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "TypeScript",
-      "stars": 1116,
-      "comment_count": 5,
-      "age_days": 16,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.88,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "9seconds/mtg",
-      "number": 319,
-      "title": "Proxy protocol support",
-      "url": "https://github.com/9seconds/mtg/issues/319",
-      "created_at": "2026-02-12T08:02:19Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Go",
-      "stars": 2218,
-      "comment_count": 6,
-      "age_days": 6,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.8,
-        "effort": 0.65
       }
     }
   ]
