@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-22T06:59:46Z",
+  "updated_at": "2026-02-22T13:06:51Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -40,6 +40,39 @@
         "reach": 0.6,
         "impact": 0.75,
         "confidence": 0.94,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5122,
+      "title": "[Bug]: hive run executes invalid agents instead of failing fast on validation errors",
+      "url": "https://github.com/aden-hive/hive/issues/5122",
+      "created_at": "2026-02-20T03:52:21Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8073,
+      "comment_count": 10,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.78,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
         "effort": 0.8
       }
     },
@@ -96,9 +129,9 @@
         "size: small"
       ],
       "language": "Python",
-      "stars": 8064,
-      "comment_count": 6,
-      "age_days": 0,
+      "stars": 8073,
+      "comment_count": 9,
+      "age_days": 1,
       "is_bug": false,
       "is_feature": true,
       "category": "documentation",
@@ -310,6 +343,38 @@
       "stars": 13573,
       "comment_count": 7,
       "age_days": 11,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "gitbutlerapp/gitbutler",
+      "number": 12105,
+      "title": "Error when starting app on windows with `pnpm tauri dev`",
+      "url": "https://github.com/gitbutlerapp/gitbutler/issues/12105",
+      "created_at": "2026-02-01T08:07:10Z",
+      "labels": [
+        "bug",
+        "os:windows",
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 19491,
+      "comment_count": 7,
+      "age_days": 21,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -602,38 +667,6 @@
         "title": "Update and minimize the JDK for Windows arm64 builds",
         "url": "https://github.com/bazelbuild/bazel/pull/28632"
       },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "gitbutlerapp/gitbutler",
-      "number": 12105,
-      "title": "Error when starting app on windows with `pnpm tauri dev`",
-      "url": "https://github.com/gitbutlerapp/gitbutler/issues/12105",
-      "created_at": "2026-02-01T08:07:10Z",
-      "labels": [
-        "bug",
-        "os:windows",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 19485,
-      "comment_count": 4,
-      "age_days": 20,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
@@ -1903,6 +1936,38 @@
       }
     },
     {
+      "repo": "kubernetes-sigs/kind",
+      "number": 3795,
+      "title": "Unable to load docker containerd managed images to cluster",
+      "url": "https://github.com/kubernetes-sigs/kind/issues/3795",
+      "created_at": "2024-11-20T11:25:09Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "kind/external"
+      ],
+      "language": "Go",
+      "stars": 15034,
+      "comment_count": 63,
+      "age_days": 459,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "kubernetes/kubeadm",
       "number": 3289,
       "title": "remove data_test.go files for various Data objects of phases",
@@ -2967,6 +3032,44 @@
       }
     },
     {
+      "repo": "Netflix/metaflow",
+      "number": 2794,
+      "title": "The rendering of an HTML @card is broken",
+      "url": "https://github.com/Netflix/metaflow/issues/2794",
+      "created_at": "2026-02-16T22:22:45Z",
+      "labels": [
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 9793,
+      "comment_count": 5,
+      "age_days": 5,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Srinath0916"
+        },
+        "number": 2810,
+        "state": "OPEN",
+        "title": "Fix: restore backward compatibility for @card(type=\"html\")",
+        "url": "https://github.com/Netflix/metaflow/pull/2810"
+      },
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.88,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "PalisadoesFoundation/talawa-admin",
       "number": 7130,
       "title": "Test: src/screens/UserPortal/People/People.tsx",
@@ -3194,6 +3297,37 @@
       }
     },
     {
+      "repo": "canonical/snapcraft",
+      "number": 6058,
+      "title": "Migrate from `overrides` library to `typing.override`",
+      "url": "https://github.com/canonical/snapcraft/issues/6058",
+      "created_at": "2026-02-20T21:23:16Z",
+      "labels": [
+        "good first issue",
+        "Status: Triaged"
+      ],
+      "language": "Python",
+      "stars": 1261,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "containers/podman",
       "number": 28120,
       "title": "Podman secrets can not be labeled the way they are documented in this man-page",
@@ -3306,9 +3440,9 @@
         "CLI"
       ],
       "language": "Rust",
-      "stars": 19450,
-      "comment_count": 3,
-      "age_days": 6,
+      "stars": 19491,
+      "comment_count": 6,
+      "age_days": 10,
       "is_bug": false,
       "is_feature": true,
       "category": "general",
@@ -3320,10 +3454,10 @@
       "pr": null,
       "score": 0.67,
       "score_breakdown": {
-        "reach": 0.5,
+        "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.89,
-        "effort": 0.65
+        "effort": 0.6
       }
     },
     {
@@ -3458,6 +3592,38 @@
         "impact": 0.75,
         "confidence": 0.78,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "inventree/InvenTree",
+      "number": 11398,
+      "title": "Feature request: AI Part scan",
+      "url": "https://github.com/inventree/InvenTree/issues/11398",
+      "created_at": "2026-02-21T12:28:42Z",
+      "labels": [
+        "enhancement",
+        "plugin",
+        "feature"
+      ],
+      "language": "Python",
+      "stars": 6361,
+      "comment_count": 11,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.88,
+        "effort": 0.65
       }
     },
     {
@@ -5378,6 +5544,94 @@
       }
     },
     {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5715,
+      "title": "[Good First Issue] 🧧 Add fresh, playful New Color Theme: Mountain Cedar (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5715",
+      "created_at": "2026-02-22T12:51:31Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1612,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5717,
+      "title": "[Good First Issue] 🐡 Add thought-provoking, cultural New Japanese Proverb 153 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5717",
+      "created_at": "2026-02-22T12:58:56Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1612,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6825,
       "title": "Configurable timeout for DNS monitor",
@@ -5544,6 +5798,39 @@
         "impact": 0.75,
         "confidence": 0.7,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "DLR-RM/stable-baselines3",
+      "number": 1564,
+      "title": "[Feature Request] torch compile / integrating intel extension for pytorch",
+      "url": "https://github.com/DLR-RM/stable-baselines3/issues/1564",
+      "created_at": "2023-06-20T20:58:14Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Python",
+      "stars": 12769,
+      "comment_count": 7,
+      "age_days": 977,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.65,
+        "confidence": 0.94,
+        "effort": 0.4
       }
     },
     {
@@ -6998,273 +7285,6 @@
         "reach": 0.55,
         "impact": 0.55,
         "confidence": 0.8,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "ClickHouse/dbt-clickhouse",
-      "number": 372,
-      "title": "Unnecessary Setting added",
-      "url": "https://github.com/ClickHouse/dbt-clickhouse/issues/372",
-      "created_at": "2024-10-28T13:24:53Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 330,
-      "comment_count": 14,
-      "age_days": 475,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "DIGI-UW/OpenELIS-Global-2",
-      "number": 2892,
-      "title": "Improve configurable lab number generator",
-      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/2892",
-      "created_at": "2026-02-20T13:14:23Z",
-      "labels": [
-        "enhancement",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 198,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "LeanBitLab/HeliboardL",
-      "number": 10,
-      "title": "Emoji, GIF and Stickers enhancement",
-      "url": "https://github.com/LeanBitLab/HeliboardL/issues/10",
-      "created_at": "2026-01-27T05:33:19Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Java",
-      "stars": 153,
-      "comment_count": 8,
-      "age_days": 20,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.86,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "MostroP2P/mostro",
-      "number": 601,
-      "title": "Lost recovery after restore-session when invoice payment failed in settled-hold-invoice state",
-      "url": "https://github.com/MostroP2P/mostro/issues/601",
-      "created_at": "2026-02-17T23:07:45Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "High Priority",
-        "area: orders"
-      ],
-      "language": "Rust",
-      "stars": 274,
-      "comment_count": 1,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.3,
-        "impact": 0.6,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Nano-Collective/nanocoder",
-      "number": 51,
-      "title": "Feature Request: `/resume` command to allow users to save, list, and restore previous chat sessions",
-      "url": "https://github.com/Nano-Collective/nanocoder/issues/51",
-      "created_at": "2025-10-07T20:02:14Z",
-      "labels": [
-        "enhancement",
-        "Feature",
-        "production",
-        "high-priority"
-      ],
-      "language": "TypeScript",
-      "stars": 1353,
-      "comment_count": 8,
-      "age_days": 134,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "PipedreamHQ/pipedream",
-      "number": 19935,
-      "title": "To Capture Gorgias Custom Ticket Fields",
-      "url": "https://github.com/PipedreamHQ/pipedream/issues/19935",
-      "created_at": "2026-02-03T14:50:37Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "trigger / source"
-      ],
-      "language": "JavaScript",
-      "stars": 11102,
-      "comment_count": 3,
-      "age_days": 16,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.89,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "SasanLabs/VulnerableApp",
-      "number": 498,
-      "title": "Add any tech related vulnerability to VulnerableAPP",
-      "url": "https://github.com/SasanLabs/VulnerableApp/issues/498",
-      "created_at": "2026-02-15T22:00:09Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "Thinking New"
-      ],
-      "language": "Java",
-      "stars": 362,
-      "comment_count": 4,
-      "age_days": 6,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "antriksh-9"
-        },
-        "number": 504,
-        "state": "OPEN",
-        "title": "feat: Add IDOR Vulnerability",
-        "url": "https://github.com/SasanLabs/VulnerableApp/pull/504"
-      },
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SasanLabs/VulnerableApp",
-      "number": 501,
-      "title": "Adding more vulnerabilities based on agents/AI",
-      "url": "https://github.com/SasanLabs/VulnerableApp/issues/501",
-      "created_at": "2026-02-16T15:33:30Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "Analysis",
-        "Thinking New",
-        "Immediate"
-      ],
-      "language": "Java",
-      "stars": 362,
-      "comment_count": 3,
-      "age_days": 5,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.55,
-        "confidence": 0.91,
         "effort": 0.65
       }
     }
