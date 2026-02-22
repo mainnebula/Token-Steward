@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-21T18:47:44Z",
+  "updated_at": "2026-02-22T02:50:25Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1020,6 +1020,39 @@
       }
     },
     {
+      "repo": "affaan-m/everything-claude-code",
+      "number": 248,
+      "title": "Plugin hooks cannot be individually disabled & fire unconditionally",
+      "url": "https://github.com/affaan-m/everything-claude-code/issues/248",
+      "created_at": "2026-02-18T12:08:49Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "question",
+        "docs"
+      ],
+      "language": "JavaScript",
+      "stars": 49115,
+      "comment_count": 1,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.7,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "collective/icalendar",
       "number": 1158,
       "title": "[Beginner] Correct broken links to classes & functions in documentation",
@@ -1194,6 +1227,47 @@
       }
     },
     {
+      "repo": "OpenHands/OpenHands",
+      "number": 8061,
+      "title": "[Bug]: Stopping the agent with changes in diff view cause the diff view to render the \"waiting for runtime\" message + diffs",
+      "url": "https://github.com/OpenHands/OpenHands/issues/8061",
+      "created_at": "2025-04-24T15:09:36Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "Stale",
+        "changes tab"
+      ],
+      "language": "Python",
+      "stars": 68044,
+      "comment_count": 13,
+      "age_days": 303,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "majiayu000"
+        },
+        "number": 12606,
+        "state": "OPEN",
+        "title": "fix(frontend): preserve diff view when agent is stopped",
+        "url": "https://github.com/OpenHands/OpenHands/pull/12606"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "PipedreamHQ/pipedream",
       "number": 20027,
       "title": "[ACTION] Get DPD parcel status",
@@ -1257,6 +1331,39 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5202,
+      "title": "Proposal: Add Runtime Execution Flow Walkthrough for Contributors",
+      "url": "https://github.com/aden-hive/hive/issues/5202",
+      "created_at": "2026-02-21T12:42:32Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8055,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
       }
     },
     {
@@ -1565,6 +1672,39 @@
       }
     },
     {
+      "repo": "jni-rs/jni-rs",
+      "number": 730,
+      "title": "bind_java_type should support mapping constructor/method/field errors/exceptions",
+      "url": "https://github.com/jni-rs/jni-rs/issues/730",
+      "created_at": "2026-02-17T23:05:41Z",
+      "labels": [
+        "enhancement",
+        "help wanted :heart:",
+        "good first issue",
+        "macros"
+      ],
+      "language": "Rust",
+      "stars": 1515,
+      "comment_count": 6,
+      "age_days": 4,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "keploy/keploy",
       "number": 3649,
       "title": "[docs]: fix broken anchors in the doc website",
@@ -1688,6 +1828,38 @@
         "reach": 0.5,
         "impact": 0.6,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kornia/kornia-rs",
+      "number": 725,
+      "title": "[Bug]: Error Handling policy violation",
+      "url": "https://github.com/kornia/kornia-rs/issues/725",
+      "created_at": "2026-02-21T22:53:00Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "triage"
+      ],
+      "language": "Rust",
+      "stars": 582,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.86,
         "effort": 0.65
       }
     },
@@ -2795,6 +2967,42 @@
       }
     },
     {
+      "repo": "PalisadoesFoundation/talawa-admin",
+      "number": 7130,
+      "title": "Test: src/screens/UserPortal/People/People.tsx",
+      "url": "https://github.com/PalisadoesFoundation/talawa-admin/issues/7130",
+      "created_at": "2026-02-07T22:36:32Z",
+      "labels": [
+        "documentation",
+        "good first issue",
+        "unapproved",
+        "test",
+        "ui/ux",
+        "ci/cd",
+        "cleanup"
+      ],
+      "language": "TypeScript",
+      "stars": 254,
+      "comment_count": 3,
+      "age_days": 14,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.65,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "PalisadoesFoundation/talawa-api",
       "number": 5248,
       "title": "Enhancement: Exclude self-authored messages from unread count",
@@ -2917,39 +3125,6 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5202,
-      "title": "Proposal: Add Runtime Execution Flow Walkthrough for Contributors",
-      "url": "https://github.com/aden-hive/hive/issues/5202",
-      "created_at": "2026-02-21T12:42:32Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 8044,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
       }
     },
     {
@@ -5773,6 +5948,38 @@
       }
     },
     {
+      "repo": "astral-sh/ty",
+      "number": 2861,
+      "title": "Improve code folding for decorators",
+      "url": "https://github.com/astral-sh/ty/issues/2861",
+      "created_at": "2026-02-19T20:16:48Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "server"
+      ],
+      "language": "Python",
+      "stars": 17309,
+      "comment_count": 1,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.6,
+        "confidence": 0.89,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "bazelbuild/bazel",
       "number": 28607,
       "title": "Using Bazel on Windows for compiling a local target that has a dependency on a target located in the network location",
@@ -6002,6 +6209,37 @@
         "impact": 0.6,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "dask/dask",
+      "number": 9187,
+      "title": "Standardize reporting known inconsistencies in `dask.dataframe` API",
+      "url": "https://github.com/dask/dask/issues/9187",
+      "created_at": "2022-06-15T13:12:58Z",
+      "labels": [
+        "good first issue",
+        "documentation"
+      ],
+      "language": "Python",
+      "stars": 13746,
+      "comment_count": 5,
+      "age_days": 1347,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.65,
+        "confidence": 0.94,
+        "effort": 0.4
       }
     },
     {
@@ -6936,8 +7174,8 @@
       ],
       "language": "Java",
       "stars": 362,
-      "comment_count": 3,
-      "age_days": 5,
+      "comment_count": 4,
+      "age_days": 6,
       "is_bug": false,
       "is_feature": true,
       "category": "general",
@@ -6955,6 +7193,41 @@
         "title": "feat: Add IDOR Vulnerability",
         "url": "https://github.com/SasanLabs/VulnerableApp/pull/504"
       },
+      "score": 0.65,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SasanLabs/VulnerableApp",
+      "number": 501,
+      "title": "Adding more vulnerabilities based on agents/AI",
+      "url": "https://github.com/SasanLabs/VulnerableApp/issues/501",
+      "created_at": "2026-02-16T15:33:30Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "Analysis",
+        "Thinking New",
+        "Immediate"
+      ],
+      "language": "Java",
+      "stars": 362,
+      "comment_count": 3,
+      "age_days": 5,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
       "score": 0.65,
       "score_breakdown": {
         "reach": 0.4,
@@ -6992,273 +7265,6 @@
         "impact": 0.55,
         "confidence": 0.91,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "alpic-ai/skybridge",
-      "number": 361,
-      "title": "When asking for a non-capital city on the Capital example app, the widget crashes",
-      "url": "https://github.com/alpic-ai/skybridge/issues/361",
-      "created_at": "2026-01-21T16:13:18Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "TypeScript",
-      "stars": 594,
-      "comment_count": 2,
-      "age_days": 29,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "apache/airflow",
-      "number": 62021,
-      "title": "API - Improve historical_metrics_data endpoint",
-      "url": "https://github.com/apache/airflow/issues/62021",
-      "created_at": "2026-02-16T14:29:23Z",
-      "labels": [
-        "kind:bug",
-        "area:performance",
-        "area:API",
-        "good first issue",
-        "kind:meta"
-      ],
-      "language": "Python",
-      "stars": 44285,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/datafusion",
-      "number": 20396,
-      "title": "User annotations in ExecutionPlan",
-      "url": "https://github.com/apache/datafusion/issues/20396",
-      "created_at": "2026-02-17T08:03:42Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Rust",
-      "stars": 8409,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.88,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "asgardeo/thunder",
-      "number": 1412,
-      "title": "[Windows] Security doesn't get enabled automatically after the setup completes",
-      "url": "https://github.com/asgardeo/thunder/issues/1412",
-      "created_at": "2026-02-16T10:54:35Z",
-      "labels": [
-        "good first issue",
-        "Type/Bug"
-      ],
-      "language": "Go",
-      "stars": 149,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.3,
-        "impact": 0.6,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 28668,
-      "title": "[bazel.build] Problem with /start/cpp - MODULE.bazel",
-      "url": "https://github.com/bazelbuild/bazel/issues/28668",
-      "created_at": "2026-02-14T10:29:19Z",
-      "labels": [
-        "type: documentation (cleanup)",
-        "P2",
-        "team-OSS",
-        "help wanted",
-        "team-Documentation"
-      ],
-      "language": "Java",
-      "stars": 25135,
-      "comment_count": 0,
-      "age_days": 4,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.5,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "claration/Impactor",
-      "number": 103,
-      "title": "[Help] Impactor (v. 2.0.0 and up) refuses to open on Linux (mint 22.3)",
-      "url": "https://github.com/claration/Impactor/issues/103",
-      "created_at": "2026-01-28T14:39:11Z",
-      "labels": [
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 1219,
-      "comment_count": 14,
-      "age_days": 24,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.85,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "diesel-rs/diesel",
-      "number": 4840,
-      "title": "Improve the documentation of our derives",
-      "url": "https://github.com/diesel-rs/diesel/issues/4840",
-      "created_at": "2025-10-28T14:15:30Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "documentation",
-        "mentoring available"
-      ],
-      "language": "Rust",
-      "stars": 14023,
-      "comment_count": 4,
-      "age_days": 114,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "veeceey"
-        },
-        "number": 4983,
-        "state": "OPEN",
-        "title": "Add expanded code examples for all derive attributes in docs",
-        "url": "https://github.com/diesel-rs/diesel/pull/4983"
-      },
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.65,
-        "confidence": 0.89,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "directus/directus",
-      "number": 26501,
-      "title": "503 is not appropriate for permission issues when writing files?",
-      "url": "https://github.com/directus/directus/issues/26501",
-      "created_at": "2026-01-19T22:58:10Z",
-      "labels": [
-        "Improvement",
-        "Good First Issue",
-        "Engine",
-        "Assets / Files",
-        "Low Reach",
-        "Low Impact"
-      ],
-      "language": "TypeScript",
-      "stars": 34242,
-      "comment_count": 3,
-      "age_days": 29,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.65,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.86,
-        "effort": 0.6
       }
     }
   ]
