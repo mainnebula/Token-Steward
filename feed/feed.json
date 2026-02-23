@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-23T02:50:16Z",
+  "updated_at": "2026-02-23T07:17:14Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -265,9 +265,9 @@
         "size: small"
       ],
       "language": "Python",
-      "stars": 8030,
-      "comment_count": 7,
-      "age_days": 13,
+      "stars": 8084,
+      "comment_count": 8,
+      "age_days": 15,
       "is_bug": false,
       "is_feature": false,
       "category": "documentation",
@@ -275,8 +275,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Samir-atra"
+        },
+        "number": 5253,
+        "state": "OPEN",
+        "title": "docs(quizzes): change contact email from careers@adenhq.com to contact@adenhq.com",
+        "url": "https://github.com/aden-hive/hive/pull/5253"
+      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.55,
@@ -2454,36 +2462,6 @@
     },
     {
       "repo": "JabRef/jabref",
-      "number": 14897,
-      "title": "Some small repairs after Javadoc to Markdown conversion.",
-      "url": "https://github.com/JabRef/jabref/issues/14897",
-      "created_at": "2026-01-22T14:46:05Z",
-      "labels": [
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 4231,
-      "comment_count": 14,
-      "age_days": 24,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "JabRef/jabref",
       "number": 14965,
       "title": "Windows installer doesn't show JabRef icon",
       "url": "https://github.com/JabRef/jabref/issues/14965",
@@ -2878,6 +2856,36 @@
       }
     },
     {
+      "repo": "claration/Impactor",
+      "number": 103,
+      "title": "[Help] Impactor (v. 2.0.0 and up) refuses to open on Linux (mint 22.3)",
+      "url": "https://github.com/claration/Impactor/issues/103",
+      "created_at": "2026-01-28T14:39:11Z",
+      "labels": [
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 1253,
+      "comment_count": 25,
+      "age_days": 25,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "grpc-ecosystem/grpc-gateway",
       "number": 6380,
       "title": "use_opaque_api=true: generated code copies proto message by value (go vet copylocks violation)",
@@ -2949,6 +2957,38 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.55
+      }
+    },
+    {
+      "repo": "kube-rs/kube",
+      "number": 1798,
+      "title": "High default `config.read_timeout` delays client recovery",
+      "url": "https://github.com/kube-rs/kube/issues/1798",
+      "created_at": "2025-07-27T10:30:33Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "question"
+      ],
+      "language": "Rust",
+      "stars": 3612,
+      "comment_count": 6,
+      "age_days": 210,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.4
       }
     },
     {
@@ -3563,6 +3603,38 @@
         "reach": 0.5,
         "impact": 0.5,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "fast/logforth",
+      "number": 219,
+      "title": "There are no examples of how to set log level per module",
+      "url": "https://github.com/fast/logforth/issues/219",
+      "created_at": "2026-02-23T02:39:37Z",
+      "labels": [
+        "documentation",
+        "help wanted",
+        "good first issue"
+      ],
+      "language": "Rust",
+      "stars": 206,
+      "comment_count": 8,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.6,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.65,
+        "confidence": 0.83,
         "effort": 0.65
       }
     },
@@ -5970,6 +6042,138 @@
       }
     },
     {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5786,
+      "title": "[Good First Issue] 🦑 Add cultural, thoughtful Interesting, Cultural Fact about Japan 263 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5786",
+      "created_at": "2026-02-23T06:36:37Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1622,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5787,
+      "title": "[Good First Issue] 🍵 Add clear, fresh New Trivia Question 137 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5787",
+      "created_at": "2026-02-23T06:55:10Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1622,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5790,
+      "title": "[Good First Issue] 🎴 Add iconic, vivid Famous Anime Quote 85 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5790",
+      "created_at": "2026-02-23T07:15:25Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1622,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6825,
       "title": "Configurable timeout for DNS monitor",
@@ -7147,202 +7351,6 @@
         "reach": 0.5,
         "impact": 0.55,
         "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "google-gemini/gemini-cli",
-      "number": 14696,
-      "title": "Implement Desktop Notification for User Permission Prompts",
-      "url": "https://github.com/google-gemini/gemini-cli/issues/14696",
-      "created_at": "2025-12-08T04:25:04Z",
-      "labels": [
-        "priority/p2",
-        "area/core",
-        "🔒 maintainer only",
-        "workstream-rollup",
-        "help wanted",
-        "type/feature"
-      ],
-      "language": "TypeScript",
-      "stars": 94775,
-      "comment_count": 5,
-      "age_days": 72,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "StoyanD"
-        },
-        "number": 14927,
-        "state": "OPEN",
-        "title": "feat: Implement desktop notifications for user permission prompts",
-        "url": "https://github.com/google-gemini/gemini-cli/pull/14927"
-      },
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "grafana/alloy",
-      "number": 4778,
-      "title": "Helm chart `1.4.0` fails templating when `rbac.rules` or `rbac.clusterRules` is empty array",
-      "url": "https://github.com/grafana/alloy/issues/4778",
-      "created_at": "2025-11-05T13:00:33Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "needs-attention",
-        "area/helm"
-      ],
-      "language": "Go",
-      "stars": 2898,
-      "comment_count": 3,
-      "age_days": 103,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "naptalie"
-        },
-        "number": 4860,
-        "state": "OPEN",
-        "title": "chore: Helm chart RBAC template to handle empty rule arrays",
-        "url": "https://github.com/grafana/alloy/pull/4860"
-      },
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.85,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "grafana/mimir",
-      "number": 14271,
-      "title": "Idea: add compression before sending to kafka",
-      "url": "https://github.com/grafana/mimir/issues/14271",
-      "created_at": "2026-02-08T21:18:31Z",
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "ingest-storage"
-      ],
-      "language": "Go",
-      "stars": 4939,
-      "comment_count": 3,
-      "age_days": 14,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "niladrix719"
-        },
-        "number": 14454,
-        "state": "OPEN",
-        "title": "feat: add kafka producer compression type config",
-        "url": "https://github.com/grafana/mimir/pull/14454"
-      },
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "grafana/mimir",
-      "number": 14303,
-      "title": "How to configure multiple Kafka broker addresses for AWS MSK in ingest_storage?",
-      "url": "https://github.com/grafana/mimir/issues/14303",
-      "created_at": "2026-02-10T12:07:28Z",
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "ingest-storage"
-      ],
-      "language": "Go",
-      "stars": 4936,
-      "comment_count": 4,
-      "age_days": 8,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "srpvpn"
-        },
-        "number": 14328,
-        "state": "OPEN",
-        "title": "ingest-storage: support multiple kafka seed broker addresses",
-        "url": "https://github.com/grafana/mimir/pull/14328"
-      },
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "grafana/mimir",
-      "number": 14334,
-      "title": "[helm] Ingress routes to non-existent mimir-alertmanager service when zoneAwareReplication is enabled",
-      "url": "https://github.com/grafana/mimir/issues/14334",
-      "created_at": "2026-02-12T10:20:33Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "helm"
-      ],
-      "language": "Go",
-      "stars": 4936,
-      "comment_count": 0,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
         "effort": 0.65
       }
     }
