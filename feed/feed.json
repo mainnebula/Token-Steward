@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-23T13:23:58Z",
+  "updated_at": "2026-02-23T19:17:13Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1051,6 +1051,39 @@
       }
     },
     {
+      "repo": "DSpace/DSpace",
+      "number": 11961,
+      "title": "Pubmed import does not include DOI",
+      "url": "https://github.com/DSpace/DSpace/issues/11961",
+      "created_at": "2026-02-19T10:55:20Z",
+      "labels": [
+        "bug",
+        "identifier: DOIs",
+        "tools: import-sources",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 1046,
+      "comment_count": 3,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.88,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "Kilo-Org/kilo",
       "number": 560,
       "title": "[FEATURE]: add `kilo help --all` to dump full CLI reference as markdown",
@@ -1472,6 +1505,43 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 46126,
+      "title": "DPoP HTTP URL mismatch",
+      "url": "https://github.com/keycloak/keycloak/issues/46126",
+      "created_at": "2026-02-09T12:39:15Z",
+      "labels": [
+        "kind/bug",
+        "area/core",
+        "help wanted",
+        "team/core-clients",
+        "team/core-shared",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 32972,
+      "comment_count": 4,
+      "age_days": 14,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.89,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "kornia/kornia-rs",
       "number": 730,
       "title": "[Bug]: Unsafe std::mem::transmute used for lifetime extension in kornia-vlm preprocessors",
@@ -1485,6 +1555,70 @@
       "language": "Rust",
       "stars": 583,
       "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kornia/kornia-rs",
+      "number": 732,
+      "title": "[Bug]: Test Infrastructure Fragility: data-driven AprilTag tests have silent failures and panic-on-error paths",
+      "url": "https://github.com/kornia/kornia-rs/issues/732",
+      "created_at": "2026-02-22T19:41:15Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "triage"
+      ],
+      "language": "Rust",
+      "stars": 583,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kornia/kornia-rs",
+      "number": 747,
+      "title": "[Bug]: Inconsistent overflow handling in the tensor shape multiplication",
+      "url": "https://github.com/kornia/kornia-rs/issues/747",
+      "created_at": "2026-02-23T12:50:53Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "triage"
+      ],
+      "language": "Rust",
+      "stars": 583,
+      "comment_count": 3,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
@@ -1607,6 +1741,46 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 4312,
+      "title": "[Bug]: Windows Setup Issue",
+      "url": "https://github.com/aden-hive/hive/issues/4312",
+      "created_at": "2026-02-10T04:08:29Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "size: medium"
+      ],
+      "language": "Python",
+      "stars": 8090,
+      "comment_count": 4,
+      "age_days": 13,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "JamieJiHeonKim"
+        },
+        "number": 5274,
+        "state": "OPEN",
+        "title": "Improve Windows setup reliability with troubleshooting docs and Git Bash pre‑flight check",
+        "url": "https://github.com/aden-hive/hive/pull/5274"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.88,
         "effort": 0.6
       }
     },
@@ -2745,6 +2919,50 @@
     },
     {
       "repo": "apache/beam",
+      "number": 30778,
+      "title": "[Failing Test]: GroupBy example tests (groupby_test.py) fail",
+      "url": "https://github.com/apache/beam/issues/30778",
+      "created_at": "2024-03-27T23:20:38Z",
+      "labels": [
+        "python",
+        "tests",
+        "bug",
+        "good first issue",
+        "P2",
+        "failing test",
+        "permared"
+      ],
+      "language": "Java",
+      "stars": 8494,
+      "comment_count": 7,
+      "age_days": 697,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "MansiSingh17"
+        },
+        "number": 37672,
+        "state": "OPEN",
+        "title": "Fix GroupBy snippet tests for issue #30778",
+        "url": "https://github.com/apache/beam/pull/37672"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "apache/beam",
       "number": 36592,
       "title": "[Bug]: Type Checking Fails with Python Union Types with `|`",
       "url": "https://github.com/apache/beam/issues/36592",
@@ -3010,6 +3228,71 @@
       }
     },
     {
+      "repo": "github/copilot-sdk",
+      "number": 547,
+      "title": "Ability to set agent to use",
+      "url": "https://github.com/github/copilot-sdk/issues/547",
+      "created_at": "2026-02-23T19:01:23Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "sdk/dotnet"
+      ],
+      "language": "TypeScript",
+      "stars": 7298,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.65,
+        "confidence": 0.88,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "go-git/go-git",
+      "number": 55,
+      "title": "Rename (object path): Access is denied when trying to stage files",
+      "url": "https://github.com/go-git/go-git/issues/55",
+      "created_at": "2020-05-05T16:17:34Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "stale",
+        "windows"
+      ],
+      "language": "Go",
+      "stars": 7213,
+      "comment_count": 9,
+      "age_days": 2120,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "grpc-ecosystem/grpc-gateway",
       "number": 6380,
       "title": "use_opaque_api=true: generated code copies proto message by value (go vet copylocks violation)",
@@ -3095,9 +3378,9 @@
         "question"
       ],
       "language": "Rust",
-      "stars": 3612,
-      "comment_count": 6,
-      "age_days": 210,
+      "stars": 3611,
+      "comment_count": 7,
+      "age_days": 211,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4258,23 +4541,23 @@
     },
     {
       "repo": "kornia/kornia-rs",
-      "number": 732,
-      "title": "[Bug]: Test Infrastructure Fragility: data-driven AprilTag tests have silent failures and panic-on-error paths",
-      "url": "https://github.com/kornia/kornia-rs/issues/732",
-      "created_at": "2026-02-22T19:41:15Z",
+      "number": 736,
+      "title": "[Feature]: Add --all-features and --all-targets to CI check",
+      "url": "https://github.com/kornia/kornia-rs/issues/736",
+      "created_at": "2026-02-23T09:36:30Z",
       "labels": [
-        "bug",
+        "enhancement",
         "help wanted",
         "triage"
       ],
       "language": "Rust",
       "stars": 583,
-      "comment_count": 2,
+      "comment_count": 6,
       "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
+      "is_bug": false,
+      "is_feature": true,
       "category": "general",
-      "surface": "bugfix",
+      "surface": "feature",
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.7,
@@ -4282,40 +4565,8 @@
       "pr": null,
       "score": 0.67,
       "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 747,
-      "title": "[Bug]: Inconsistent overflow handling in the tensor shape multiplication",
-      "url": "https://github.com/kornia/kornia-rs/issues/747",
-      "created_at": "2026-02-23T12:50:53Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 583,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
+        "reach": 0.5,
+        "impact": 0.55,
         "confidence": 0.91,
         "effort": 0.65
       }
@@ -6475,6 +6726,50 @@
       }
     },
     {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5834,
+      "title": "[Good First Issue] 🍠 Add focused, useful New Grammar Point 100 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5834",
+      "created_at": "2026-02-23T19:14:03Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1625,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6825,
       "title": "Configurable timeout for DNS monitor",
@@ -7076,260 +7371,6 @@
         "impact": 0.6,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5158,
-      "title": "[Feature]: Add CI markdown link validation for internal docs links (including docs/i18n)",
-      "url": "https://github.com/aden-hive/hive/issues/5158",
-      "created_at": "2026-02-20T18:25:30Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "size: medium"
-      ],
-      "language": "Python",
-      "stars": 8013,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "adenhq/hive",
-      "number": 1628,
-      "title": "[Feature]: Missing Observability for Tool Calls",
-      "url": "https://github.com/adenhq/hive/issues/1628",
-      "created_at": "2026-01-28T05:42:42Z",
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "language": "Python",
-      "stars": 7878,
-      "comment_count": 3,
-      "age_days": 22,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "apache/fesod",
-      "number": 857,
-      "title": "[Task] Apache Fesod (Incubating) Upgrade Guide",
-      "url": "https://github.com/apache/fesod/issues/857",
-      "created_at": "2026-02-20T08:45:00Z",
-      "labels": [
-        "documentation",
-        "help wanted",
-        "discussion welcome"
-      ],
-      "language": "Java",
-      "stars": 5818,
-      "comment_count": 2,
-      "age_days": 2,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/iceberg",
-      "number": 15347,
-      "title": "Disabling statistics across multiple columns",
-      "url": "https://github.com/apache/iceberg/issues/15347",
-      "created_at": "2026-02-17T11:57:16Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 8549,
-      "comment_count": 1,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "astral-sh/ty",
-      "number": 2861,
-      "title": "Improve code folding for decorators",
-      "url": "https://github.com/astral-sh/ty/issues/2861",
-      "created_at": "2026-02-19T20:16:48Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "server"
-      ],
-      "language": "Python",
-      "stars": 17309,
-      "comment_count": 1,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.89,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 28607,
-      "title": "Using Bazel on Windows for compiling a local target that has a dependency on a target located in the network location",
-      "url": "https://github.com/bazelbuild/bazel/issues/28607",
-      "created_at": "2026-02-10T11:49:06Z",
-      "labels": [
-        "type: bug",
-        "P2",
-        "area-Windows",
-        "team-OSS",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 25135,
-      "comment_count": 1,
-      "age_days": 8,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "booklore-app/booklore",
-      "number": 2707,
-      "title": "[Feature] Allow self-signed certificate to connect to booklore https",
-      "url": "https://github.com/booklore-app/booklore/issues/2707",
-      "created_at": "2026-02-12T12:03:04Z",
-      "labels": [
-        "feature"
-      ],
-      "language": "Java",
-      "stars": 10085,
-      "comment_count": 6,
-      "age_days": 5,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.79,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "boyter/cs",
-      "number": 23,
-      "title": "Interactive TUI mode does not utilize terminal colors",
-      "url": "https://github.com/boyter/cs/issues/23",
-      "created_at": "2023-06-08T13:37:50Z",
-      "labels": [
-        "bug",
-        "enhancement"
-      ],
-      "language": "Go",
-      "stars": 559,
-      "comment_count": 20,
-      "age_days": 986,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.4
       }
     }
   ]
