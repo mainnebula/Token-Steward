@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-22T18:48:57Z",
+  "updated_at": "2026-02-23T02:50:16Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -233,8 +233,8 @@
         "help wanted"
       ],
       "language": "Python",
-      "stars": 1276,
-      "comment_count": 11,
+      "stars": 1278,
+      "comment_count": 16,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
@@ -790,7 +790,7 @@
         "Theme: UI/Visual"
       ],
       "language": "Java",
-      "stars": 11755,
+      "stars": 11754,
       "comment_count": 8,
       "age_days": 74,
       "is_bug": true,
@@ -1147,6 +1147,45 @@
         "impact": 0.7,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "apache/datafusion",
+      "number": 18020,
+      "title": "unexpected output for `concat` for arrays",
+      "url": "https://github.com/apache/datafusion/issues/18020",
+      "created_at": "2025-10-12T03:38:04Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Rust",
+      "stars": 8429,
+      "comment_count": 14,
+      "age_days": 133,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "EeshanBembi"
+        },
+        "number": 18137,
+        "state": "OPEN",
+        "title": "feat: Add array concatenation support to concat function",
+        "url": "https://github.com/apache/datafusion/pull/18137"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.5
       }
     },
     {
@@ -1697,6 +1736,39 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "facebook/react",
+      "number": 17355,
+      "title": "\"Should not already be working\" in Firefox after a breakpoint/alert",
+      "url": "https://github.com/facebook/react/issues/17355",
+      "created_at": "2019-11-13T16:35:19Z",
+      "labels": [
+        "Type: Bug",
+        "Difficulty: medium",
+        "Type: Needs Investigation",
+        "good first issue"
+      ],
+      "language": "JavaScript",
+      "stars": 243277,
+      "comment_count": 122,
+      "age_days": 2293,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
       }
     },
     {
@@ -2422,8 +2494,8 @@
         "component: installation"
       ],
       "language": "Java",
-      "stars": 4237,
-      "comment_count": 5,
+      "stars": 4238,
+      "comment_count": 6,
       "age_days": 23,
       "is_bug": false,
       "is_feature": false,
@@ -2432,16 +2504,8 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Siedlerchr"
-        },
-        "number": 14969,
-        "state": "OPEN",
-        "title": "adapt wix",
-        "url": "https://github.com/JabRef/jabref/pull/14969"
-      },
+      "action": "fix",
+      "pr": null,
       "score": 0.68,
       "score_breakdown": {
         "reach": 0.55,
@@ -7172,6 +7236,46 @@
     },
     {
       "repo": "grafana/mimir",
+      "number": 14271,
+      "title": "Idea: add compression before sending to kafka",
+      "url": "https://github.com/grafana/mimir/issues/14271",
+      "created_at": "2026-02-08T21:18:31Z",
+      "labels": [
+        "enhancement",
+        "good first issue",
+        "ingest-storage"
+      ],
+      "language": "Go",
+      "stars": 4939,
+      "comment_count": 3,
+      "age_days": 14,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "niladrix719"
+        },
+        "number": 14454,
+        "state": "OPEN",
+        "title": "feat: add kafka producer compression type config",
+        "url": "https://github.com/grafana/mimir/pull/14454"
+      },
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "grafana/mimir",
       "number": 14303,
       "title": "How to configure multiple Kafka broker addresses for AWS MSK in ingest_storage?",
       "url": "https://github.com/grafana/mimir/issues/14303",
@@ -7240,113 +7344,6 @@
         "impact": 0.6,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "helm/helm",
-      "number": 31505,
-      "title": "Helm4 upgrade with dry-run and server-side enabled doesn't catch errors",
-      "url": "https://github.com/helm/helm/issues/31505",
-      "created_at": "2025-11-13T20:29:58Z",
-      "labels": [
-        "help wanted",
-        "feature"
-      ],
-      "language": "Go",
-      "stars": 29467,
-      "comment_count": 7,
-      "age_days": 97,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "biagiopietro"
-        },
-        "number": 31616,
-        "state": "OPEN",
-        "title": "fix(action): enable server-side validation for dry-run=server",
-        "url": "https://github.com/helm/helm/pull/31616"
-      },
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "juice-shop/juice-shop",
-      "number": 3079,
-      "title": "[🚀] Serve JS / CSS / Font assests locally instead of relying on external CDNs",
-      "url": "https://github.com/juice-shop/juice-shop/issues/3079",
-      "created_at": "2026-02-15T10:11:13Z",
-      "labels": [
-        "feature"
-      ],
-      "language": "TypeScript",
-      "stars": 12516,
-      "comment_count": 9,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "ishwarthecodddr"
-        },
-        "number": 3080,
-        "state": "OPEN",
-        "title": "Fix:3079 serve assets locally",
-        "url": "https://github.com/juice-shop/juice-shop/pull/3080"
-      },
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.79,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "katanemo/plano",
-      "number": 706,
-      "title": "Structured and Consistent Error Messages from Plano",
-      "url": "https://github.com/katanemo/plano/issues/706",
-      "created_at": "2026-01-27T19:57:38Z",
-      "labels": [
-        "good first issue"
-      ],
-      "language": "Rust",
-      "stars": 5098,
-      "comment_count": 3,
-      "age_days": 21,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     }
   ]
