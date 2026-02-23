@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-23T07:17:14Z",
+  "updated_at": "2026-02-23T13:23:58Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -23,8 +23,8 @@
         "S - keybindings"
       ],
       "language": "Rust",
-      "stars": 62606,
-      "comment_count": 7,
+      "stars": 62615,
+      "comment_count": 10,
       "age_days": 3,
       "is_bug": true,
       "is_feature": false,
@@ -61,6 +61,38 @@
       "age_days": 2,
       "is_bug": true,
       "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.78,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5124,
+      "title": "[Bug]: hive shell loads structurally invalid agents without validation or warning",
+      "url": "https://github.com/aden-hive/hive/issues/5124",
+      "created_at": "2026-02-20T04:39:44Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8086,
+      "comment_count": 10,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
       "category": "general",
       "surface": "bugfix",
       "has_contributing": true,
@@ -1061,38 +1093,6 @@
       }
     },
     {
-      "repo": "aden-hive/hive",
-      "number": 5124,
-      "title": "[Bug]: hive shell loads structurally invalid agents without validation or warning",
-      "url": "https://github.com/aden-hive/hive/issues/5124",
-      "created_at": "2026-02-20T04:39:44Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 7936,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
       "repo": "adenhq/hive",
       "number": 472,
       "title": "[Announcement] 📢 New Workflow: Requirement to be assigned to issues before opening PRs",
@@ -1241,6 +1241,36 @@
       "stars": 21143,
       "comment_count": 7,
       "age_days": 4,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "gleam-lang/gleam",
+      "number": 5386,
+      "title": "Language Server - `todo` tries to autocomplete to `string.to_utf_codepoints`",
+      "url": "https://github.com/gleam-lang/gleam/issues/5386",
+      "created_at": "2026-02-22T21:55:17Z",
+      "labels": [
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 21161,
+      "comment_count": 6,
+      "age_days": 0,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -1442,6 +1472,38 @@
       }
     },
     {
+      "repo": "kornia/kornia-rs",
+      "number": 730,
+      "title": "[Bug]: Unsafe std::mem::transmute used for lifetime extension in kornia-vlm preprocessors",
+      "url": "https://github.com/kornia/kornia-rs/issues/730",
+      "created_at": "2026-02-22T19:12:37Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "triage"
+      ],
+      "language": "Rust",
+      "stars": 583,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "OpenHands/OpenHands",
       "number": 8061,
       "title": "[Bug]: Stopping the agent with changes in diff view cause the diff view to render the \"waiting for runtime\" message + diffs",
@@ -1546,6 +1608,38 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5105,
+      "title": "[Feature]: Add system-level reliability layer to GraphExecutor",
+      "url": "https://github.com/aden-hive/hive/issues/5105",
+      "created_at": "2026-02-19T07:18:38Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "size: medium"
+      ],
+      "language": "Python",
+      "stars": 8086,
+      "comment_count": 5,
+      "age_days": 4,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -2089,9 +2183,9 @@
         "triage"
       ],
       "language": "Python",
-      "stars": 11076,
-      "comment_count": 5,
-      "age_days": 7,
+      "stars": 11083,
+      "comment_count": 9,
+      "age_days": 10,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -2587,6 +2681,36 @@
       }
     },
     {
+      "repo": "RooCodeInc/Roo-Code",
+      "number": 11709,
+      "title": "Condensation with new Threads and LLM Reset",
+      "url": "https://github.com/RooCodeInc/Roo-Code/issues/11709",
+      "created_at": "2026-02-22T22:09:44Z",
+      "labels": [
+        "Enhancement"
+      ],
+      "language": "TypeScript",
+      "stars": 22346,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "aden-hive/hive",
       "number": 2805,
       "title": "[Integration]: Expand agent capabilities by adding more integrations/tools",
@@ -3008,6 +3132,39 @@
       "stars": 1011,
       "comment_count": 3,
       "age_days": 143,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.5
+      }
+    },
+    {
+      "repo": "modelcontextprotocol/java-sdk",
+      "number": 750,
+      "title": "HttpServletStreamableServerTransportProvider does not implement protocol version 2024-11-05",
+      "url": "https://github.com/modelcontextprotocol/java-sdk/issues/750",
+      "created_at": "2026-01-14T08:55:41Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "ready for work",
+        "P3"
+      ],
+      "language": "Java",
+      "stars": 3192,
+      "comment_count": 3,
+      "age_days": 40,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4020,6 +4177,42 @@
     },
     {
       "repo": "keycloak/keycloak",
+      "number": 38506,
+      "title": "keycloak-test-framework-bom manages more dependencies than intended",
+      "url": "https://github.com/keycloak/keycloak/issues/38506",
+      "created_at": "2025-03-27T13:57:25Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal",
+        "area/test-framework",
+        "team/continuous-delivery"
+      ],
+      "language": "Java",
+      "stars": 32966,
+      "comment_count": 4,
+      "age_days": 332,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
       "number": 40929,
       "title": "Duplicates in unmanaged attributes",
       "url": "https://github.com/keycloak/keycloak/issues/40929",
@@ -4061,6 +4254,70 @@
         "impact": 0.75,
         "confidence": 0.89,
         "effort": 0.4
+      }
+    },
+    {
+      "repo": "kornia/kornia-rs",
+      "number": 732,
+      "title": "[Bug]: Test Infrastructure Fragility: data-driven AprilTag tests have silent failures and panic-on-error paths",
+      "url": "https://github.com/kornia/kornia-rs/issues/732",
+      "created_at": "2026-02-22T19:41:15Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "triage"
+      ],
+      "language": "Rust",
+      "stars": 583,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.6,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kornia/kornia-rs",
+      "number": 747,
+      "title": "[Bug]: Inconsistent overflow handling in the tensor shape multiplication",
+      "url": "https://github.com/kornia/kornia-rs/issues/747",
+      "created_at": "2026-02-23T12:50:53Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "triage"
+      ],
+      "language": "Rust",
+      "stars": 583,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.6,
+        "confidence": 0.91,
+        "effort": 0.65
       }
     },
     {
@@ -6174,6 +6431,50 @@
       }
     },
     {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5809,
+      "title": "[Good First Issue] 🎎 Add meaningful, powerful Famous Anime Quote 86 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5809",
+      "created_at": "2026-02-23T13:19:25Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1623,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6825,
       "title": "Configurable timeout for DNS monitor",
@@ -6442,6 +6743,40 @@
       }
     },
     {
+      "repo": "DSpace/DSpace",
+      "number": 8634,
+      "title": "ResourcePolicy without rptype is allowed but seems useless",
+      "url": "https://github.com/DSpace/DSpace/issues/8634",
+      "created_at": "2023-01-13T15:41:03Z",
+      "labels": [
+        "bug",
+        "code task",
+        "authorization",
+        "help wanted",
+        "stale"
+      ],
+      "language": "Java",
+      "stars": 1046,
+      "comment_count": 3,
+      "age_days": 1136,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "GTNewHorizons/GT-New-Horizons-Modpack",
       "number": 23476,
       "title": "Inconsistencies between different wireless redstone covers",
@@ -6647,6 +6982,100 @@
         "impact": 0.55,
         "confidence": 0.88,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "TrianguloY/URLCheck",
+      "number": 560,
+      "title": "Dynamic colors are not applying to some parts of the app",
+      "url": "https://github.com/TrianguloY/URLCheck/issues/560",
+      "created_at": "2026-02-22T05:02:07Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 1797,
+      "comment_count": 2,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.6,
+        "confidence": 0.85,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 2556,
+      "title": "[Feature]: Multi‑LLM Fallback and Routing",
+      "url": "https://github.com/aden-hive/hive/issues/2556",
+      "created_at": "2026-01-30T07:08:13Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "backlog"
+      ],
+      "language": "Python",
+      "stars": 8086,
+      "comment_count": 4,
+      "age_days": 24,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5073,
+      "title": "[Bug]: Template runtime contract drift: \"start\" entrypoint advertised but only \"default\" registered, plus deep_research_agent storage path is unset",
+      "url": "https://github.com/aden-hive/hive/issues/5073",
+      "created_at": "2026-02-18T15:56:40Z",
+      "labels": [
+        "bug",
+        "enhancement"
+      ],
+      "language": "Python",
+      "stars": 8086,
+      "comment_count": 1,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.66,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.6,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -6901,457 +7330,6 @@
         "impact": 0.75,
         "confidence": 0.91,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "bytedeco/javacv",
-      "number": 2356,
-      "title": "Memory leak found in FFmpegFrameRecorder",
-      "url": "https://github.com/bytedeco/javacv/issues/2356",
-      "created_at": "2025-09-23T23:45:49Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "question"
-      ],
-      "language": "Java",
-      "stars": 8293,
-      "comment_count": 18,
-      "age_days": 151,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.8,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "camunda/camunda",
-      "number": 45934,
-      "title": "Flow highlighting missing in Operate after coloring in WebModeler",
-      "url": "https://github.com/camunda/camunda/issues/45934",
-      "created_at": "2026-02-16T14:58:46Z",
-      "labels": [
-        "kind/bug",
-        "good first issue",
-        "severity/mid",
-        "support",
-        "likelihood/mid",
-        "component/operate",
-        "component/frontend",
-        "affects/8.6",
-        "affects/8.7",
-        "affects/8.8",
-        "area/frontend",
-        "good mob programming issue",
-        "affects/8.9",
-        "triage:completed"
-      ],
-      "language": "Java",
-      "stars": 4011,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "code-charity/youtube",
-      "number": 3630,
-      "title": "🐞Filtering suggested videos (blocklist) does not work, among other things (Linux + Brave)",
-      "url": "https://github.com/code-charity/youtube/issues/3630",
-      "created_at": "2026-02-20T02:31:34Z",
-      "labels": [
-        "Bug",
-        "help wanted",
-        "good first issue",
-        "up-for-grabs"
-      ],
-      "language": "JavaScript",
-      "stars": 4229,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "code-charity/youtube",
-      "number": 3634,
-      "title": "🐞Bug using the setting to hide the control bar when paused; after using the bar, the mouse takes a while to disappear",
-      "url": "https://github.com/code-charity/youtube/issues/3634",
-      "created_at": "2026-02-22T14:06:41Z",
-      "labels": [
-        "Bug",
-        "help wanted",
-        "good first issue",
-        "up-for-grabs"
-      ],
-      "language": "JavaScript",
-      "stars": 4231,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "stakeswky"
-        },
-        "number": 3635,
-        "state": "OPEN",
-        "title": "fix: cursor/controls linger after seek when 'hide controls when paused' is enabled (#3634)",
-        "url": "https://github.com/code-charity/youtube/pull/3635"
-      },
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "conda/rattler",
-      "number": 2039,
-      "title": "Replace MatchSpec with no name (`*`) with glob matchspec",
-      "url": "https://github.com/conda/rattler/issues/2039",
-      "created_at": "2026-02-05T13:53:01Z",
-      "labels": [
-        "good first issue"
-      ],
-      "language": "Rust",
-      "stars": 408,
-      "comment_count": 6,
-      "age_days": 14,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "containers/ramalama",
-      "number": 2437,
-      "title": "Continuation characters in chat require ' \\' rather than '\\'",
-      "url": "https://github.com/containers/ramalama/issues/2437",
-      "created_at": "2026-02-18T18:53:35Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 2598,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "dask/dask",
-      "number": 9187,
-      "title": "Standardize reporting known inconsistencies in `dask.dataframe` API",
-      "url": "https://github.com/dask/dask/issues/9187",
-      "created_at": "2022-06-15T13:12:58Z",
-      "labels": [
-        "good first issue",
-        "documentation"
-      ],
-      "language": "Python",
-      "stars": 13746,
-      "comment_count": 5,
-      "age_days": 1347,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.65,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "dotenv-linter/dotenv-linter",
-      "number": 749,
-      "title": "on fix action support comment for group",
-      "url": "https://github.com/dotenv-linter/dotenv-linter/issues/749",
-      "created_at": "2024-01-30T11:43:42Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "good first issue"
-      ],
-      "language": "Rust",
-      "stars": 2054,
-      "comment_count": 8,
-      "age_days": 752,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "jason89521"
-        },
-        "number": 806,
-        "state": "OPEN",
-        "title": "feat(fixes): support preserve-comments-position arg",
-        "url": "https://github.com/dotenv-linter/dotenv-linter/pull/806"
-      },
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.88,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "dswah/pyGAM",
-      "number": 423,
-      "title": "[BUG] datasets are not included in the newest `pygam` releases",
-      "url": "https://github.com/dswah/pyGAM/issues/423",
-      "created_at": "2025-12-25T13:44:05Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 955,
-      "comment_count": 8,
-      "age_days": 56,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.6,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Shehrozkashif"
-        },
-        "number": 433,
-        "state": "OPEN",
-        "title": "Fix: Build wheel and test datasets in clean venv; update CI",
-        "url": "https://github.com/dswah/pyGAM/pull/433"
-      },
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.83,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "gkjohnson/three-gpu-pathtracer",
-      "number": 84,
-      "title": "Black results at glancing angles",
-      "url": "https://github.com/gkjohnson/three-gpu-pathtracer/issues/84",
-      "created_at": "2022-04-07T14:56:43Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "quality"
-      ],
-      "language": "JavaScript",
-      "stars": 1690,
-      "comment_count": 6,
-      "age_days": 1415,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.88,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "go-git/go-git",
-      "number": 1855,
-      "title": "Flaky test: `TestWorktreeSuite/TestCheckoutBisect`",
-      "url": "https://github.com/go-git/go-git/issues/1855",
-      "created_at": "2026-02-17T21:51:02Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "tech debt",
-        "area/ci"
-      ],
-      "language": "Go",
-      "stars": 7198,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "go-git/go-git",
-      "number": 1856,
-      "title": "Flaky test: `TestFailSafeUnsupportedStorage/clone`",
-      "url": "https://github.com/go-git/go-git/issues/1856",
-      "created_at": "2026-02-17T21:52:09Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "area/ci"
-      ],
-      "language": "Go",
-      "stars": 7198,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "go-task/task",
-      "number": 2692,
-      "title": "CLI option --taskfile seems to be ignored",
-      "url": "https://github.com/go-task/task/issues/2692",
-      "created_at": "2026-02-16T02:05:02Z",
-      "labels": [
-        "help wanted",
-        "state: needs triage",
-        "os: macos"
-      ],
-      "language": "Go",
-      "stars": 14864,
-      "comment_count": 4,
-      "age_days": 5,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.86,
-        "effort": 0.65
       }
     }
   ]
