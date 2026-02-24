@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-23T19:17:13Z",
+  "updated_at": "2026-02-24T02:48:21Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -952,6 +952,47 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "google-gemini/gemini-cli",
+      "number": 15551,
+      "title": "gemini cli mcp command generates settings.json that cannot be loaded",
+      "url": "https://github.com/google-gemini/gemini-cli/issues/15551",
+      "created_at": "2025-12-25T09:05:10Z",
+      "labels": [
+        "priority/p2",
+        "area/core",
+        "help wanted",
+        "type/bug"
+      ],
+      "language": "TypeScript",
+      "stars": 95444,
+      "comment_count": 6,
+      "age_days": 60,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "TianqiZhang"
+        },
+        "number": 15565,
+        "state": "OPEN",
+        "title": "fix(cli): Fix settings validation to respect additionalProperties: false in JSON schemas",
+        "url": "https://github.com/google-gemini/gemini-cli/pull/15565"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
       }
     },
     {
@@ -2572,6 +2613,46 @@
       }
     },
     {
+      "repo": "mlflow/mlflow",
+      "number": 18435,
+      "title": "[DOC-FIX] Example documentation for mlflow.metrics.genai using Amazon Nova bedrock:/<model-name>",
+      "url": "https://github.com/mlflow/mlflow/issues/18435",
+      "created_at": "2025-10-21T21:27:46Z",
+      "labels": [
+        "good first issue",
+        "area/docs",
+        "has-closing-pr"
+      ],
+      "language": "Python",
+      "stars": 24383,
+      "comment_count": 10,
+      "age_days": 125,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "bot150"
+        },
+        "number": 18619,
+        "state": "OPEN",
+        "title": "DOC: Add comprehensive Amazon Nova examples for genai metrics",
+        "url": "https://github.com/mlflow/mlflow/pull/18619"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.65,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "moltis-org/moltis",
       "number": 176,
       "title": "[Feature]: Add datetime to system prompt context",
@@ -2918,6 +2999,46 @@
       }
     },
     {
+      "repo": "aden-hive/hive",
+      "number": 4181,
+      "title": "docs(architecture): migrate all architecture diagrams in .md files to Mermaid",
+      "url": "https://github.com/aden-hive/hive/issues/4181",
+      "created_at": "2026-02-09T10:42:49Z",
+      "labels": [
+        "documentation",
+        "help wanted",
+        "size: medium"
+      ],
+      "language": "Python",
+      "stars": 8105,
+      "comment_count": 3,
+      "age_days": 14,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Samir-atra"
+        },
+        "number": 5303,
+        "state": "OPEN",
+        "title": "docs: migrate all ASCII-art architecture diagrams to Mermaid format",
+        "url": "https://github.com/aden-hive/hive/pull/5303"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.65,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "apache/beam",
       "number": 30778,
       "title": "[Failing Test]: GroupBy example tests (groupby_test.py) fail",
@@ -3116,6 +3237,36 @@
       "stars": 79546,
       "comment_count": 4,
       "age_days": 1,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "block/goose",
+      "number": 7427,
+      "title": "Cannot use Azure OpenAI deployment endpoints (no `/models` endpoint)",
+      "url": "https://github.com/block/goose/issues/7427",
+      "created_at": "2026-02-23T06:43:46Z",
+      "labels": [
+        "enhancement"
+      ],
+      "language": "Rust",
+      "stars": 31025,
+      "comment_count": 4,
+      "age_days": 0,
       "is_bug": false,
       "is_feature": true,
       "category": "general",
@@ -3399,6 +3550,45 @@
       }
     },
     {
+      "repo": "langgenius/dify",
+      "number": 32494,
+      "title": "[Refactor/Chore] No matching overload found for function",
+      "url": "https://github.com/langgenius/dify/issues/32494",
+      "created_at": "2026-02-23T18:19:42Z",
+      "labels": [
+        "good first issue",
+        "🙏 help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 130096,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Hypertension42"
+        },
+        "number": 32500,
+        "state": "OPEN",
+        "title": "refactor: fix no-matching-overload in invoke_llm by using Sequence",
+        "url": "https://github.com/langgenius/dify/pull/32500"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "layer5io/layer5",
       "number": 6927,
       "title": "[ Performance ] Improve Pricing page Performance",
@@ -3494,6 +3684,37 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "Automattic/mongoose",
+      "number": 16015,
+      "title": "Mongoose not following CSFLE configs, docs being written unencrypted",
+      "url": "https://github.com/Automattic/mongoose/issues/16015",
+      "created_at": "2026-02-09T18:09:59Z",
+      "labels": [
+        "help",
+        "help wanted"
+      ],
+      "language": "JavaScript",
+      "stars": 27454,
+      "comment_count": 3,
+      "age_days": 14,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.6
       }
     },
     {
@@ -6770,6 +6991,94 @@
       }
     },
     {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5845,
+      "title": "[Good First Issue] 🦀 Add learner-friendly, reliable New Grammar Point 101 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5845",
+      "created_at": "2026-02-24T01:24:33Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1626,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5846,
+      "title": "[Good First Issue] 🏯 Add focused, accurate New Grammar Point 122 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5846",
+      "created_at": "2026-02-24T01:24:46Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1626,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6825,
       "title": "Configurable timeout for DNS monitor",
@@ -7102,275 +7411,6 @@
         "impact": 0.6,
         "confidence": 0.85,
         "effort": 0.75
-      }
-    },
-    {
-      "repo": "GraphiteEditor/Graphite",
-      "number": 3771,
-      "title": "Line tool needs Ctrl to lock angle only after drag has begun",
-      "url": "https://github.com/GraphiteEditor/Graphite/issues/3771",
-      "created_at": "2026-02-16T02:55:20Z",
-      "labels": [
-        "Good First Issue"
-      ],
-      "language": "Rust",
-      "stars": 24223,
-      "comment_count": 3,
-      "age_days": 3,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "JustJ01"
-        },
-        "number": 3773,
-        "state": "OPEN",
-        "title": "Line Tool: Only lock angle with Ctrl after drag has started",
-        "url": "https://github.com/GraphiteEditor/Graphite/pull/3773"
-      },
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "IBM/mcp-context-forge",
-      "number": 3039,
-      "title": "[BUG][UI]: Pagination controls break when search/filter returns results with query parameters",
-      "url": "https://github.com/IBM/mcp-context-forge/issues/3039",
-      "created_at": "2026-02-18T15:49:39Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "ui",
-        "MUST"
-      ],
-      "language": "Python",
-      "stars": 3295,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "omorros"
-        },
-        "number": 3047,
-        "state": "OPEN",
-        "title": "fix(ui): reinit Alpine.js on OOB-swapped pagination controls after fi…",
-        "url": "https://github.com/IBM/mcp-context-forge/pull/3047"
-      },
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "KelvinTegelaar/CIPP",
-      "number": 5320,
-      "title": "[Feature Request]: Multi-Tenant Report on EWS Usage ahead of Deprecation",
-      "url": "https://github.com/KelvinTegelaar/CIPP/issues/5320",
-      "created_at": "2026-02-03T17:26:04Z",
-      "labels": [
-        "enhancement",
-        "no-priority",
-        "no-activity",
-        "not-assigned"
-      ],
-      "language": "JavaScript",
-      "stars": 1090,
-      "comment_count": 4,
-      "age_days": 15,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "PalisadoesFoundation/talawa-admin",
-      "number": 7043,
-      "title": "Test: src/components/UserPortal/GroupChatDetails/GroupChatDetails.tsx",
-      "url": "https://github.com/PalisadoesFoundation/talawa-admin/issues/7043",
-      "created_at": "2026-02-04T01:27:08Z",
-      "labels": [
-        "good first issue",
-        "unapproved",
-        "test",
-        "ci/cd"
-      ],
-      "language": "TypeScript",
-      "stars": 250,
-      "comment_count": 6,
-      "age_days": 13,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "Rust-GPU/rust-gpu",
-      "number": 519,
-      "title": "First class swizzles",
-      "url": "https://github.com/Rust-GPU/rust-gpu/issues/519",
-      "created_at": "2026-01-22T17:06:00Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Rust",
-      "stars": 2869,
-      "comment_count": 12,
-      "age_days": 25,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.88,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "TrianguloY/URLCheck",
-      "number": 560,
-      "title": "Dynamic colors are not applying to some parts of the app",
-      "url": "https://github.com/TrianguloY/URLCheck/issues/560",
-      "created_at": "2026-02-22T05:02:07Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 1797,
-      "comment_count": 2,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.6,
-        "confidence": 0.85,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 2556,
-      "title": "[Feature]: Multi‑LLM Fallback and Routing",
-      "url": "https://github.com/aden-hive/hive/issues/2556",
-      "created_at": "2026-01-30T07:08:13Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "backlog"
-      ],
-      "language": "Python",
-      "stars": 8086,
-      "comment_count": 4,
-      "age_days": 24,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5073,
-      "title": "[Bug]: Template runtime contract drift: \"start\" entrypoint advertised but only \"default\" registered, plus deep_research_agent storage path is unset",
-      "url": "https://github.com/aden-hive/hive/issues/5073",
-      "created_at": "2026-02-18T15:56:40Z",
-      "labels": [
-        "bug",
-        "enhancement"
-      ],
-      "language": "Python",
-      "stars": 8086,
-      "comment_count": 1,
-      "age_days": 4,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     }
   ]
