@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-24T02:48:21Z",
+  "updated_at": "2026-02-24T07:12:12Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -297,9 +297,9 @@
         "size: small"
       ],
       "language": "Python",
-      "stars": 8084,
+      "stars": 8129,
       "comment_count": 8,
-      "age_days": 15,
+      "age_days": 16,
       "is_bug": false,
       "is_feature": false,
       "category": "documentation",
@@ -529,6 +529,38 @@
       }
     },
     {
+      "repo": "aden-hive/hive",
+      "number": 2541,
+      "title": "[Bug]: FlexibleGraphExecutor.execute_plan() mutates input context dictionary",
+      "url": "https://github.com/aden-hive/hive/issues/2541",
+      "created_at": "2026-01-30T05:58:58Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 8129,
+      "comment_count": 9,
+      "age_days": 25,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "adenhq/hive",
       "number": 4980,
       "title": "[Integration]:Add secret scanning to CI using Gitleaks",
@@ -559,39 +591,6 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.8
-      }
-    },
-    {
-      "repo": "apache/airflow",
-      "number": 62025,
-      "title": "API - Improve public get_dag_runs endpoint",
-      "url": "https://github.com/apache/airflow/issues/62025",
-      "created_at": "2026-02-16T15:22:02Z",
-      "labels": [
-        "kind:bug",
-        "area:performance",
-        "area:API",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 44308,
-      "comment_count": 6,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.65
       }
     },
     {
@@ -703,6 +702,39 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "apache/airflow",
+      "number": 62025,
+      "title": "API - Improve public get_dag_runs endpoint",
+      "url": "https://github.com/apache/airflow/issues/62025",
+      "created_at": "2026-02-16T15:22:02Z",
+      "labels": [
+        "kind:bug",
+        "area:performance",
+        "area:API",
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 44381,
+      "comment_count": 10,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.6
       }
     },
     {
@@ -1271,6 +1303,37 @@
       }
     },
     {
+      "repo": "cBioPortal/cbioportal",
+      "number": 11985,
+      "title": "[Bug] Samples with '+' in ID (e.g., PanCK+) are excluded from Plots tab",
+      "url": "https://github.com/cBioPortal/cbioportal/issues/11985",
+      "created_at": "2026-02-23T19:23:44Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 959,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "collective/icalendar",
       "number": 1158,
       "title": "[Beginner] Correct broken links to classes & functions in documentation",
@@ -1676,6 +1739,46 @@
         "impact": 0.75,
         "confidence": 0.91,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "objectionary/eo",
+      "number": 4879,
+      "title": "`ms.mod` inaccurately contains an unused `ms.real` alias",
+      "url": "https://github.com/objectionary/eo/issues/4879",
+      "created_at": "2026-02-15T06:41:06Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "good-title"
+      ],
+      "language": "Java",
+      "stars": 1332,
+      "comment_count": 9,
+      "age_days": 9,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Akash073-hub"
+        },
+        "number": 4880,
+        "state": "OPEN",
+        "title": "Remove unused ms.real alias from mod.eo",
+        "url": "https://github.com/objectionary/eo/pull/4880"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.85,
+        "effort": 0.6
       }
     },
     {
@@ -2624,8 +2727,8 @@
         "has-closing-pr"
       ],
       "language": "Python",
-      "stars": 24383,
-      "comment_count": 10,
+      "stars": 24388,
+      "comment_count": 11,
       "age_days": 125,
       "is_bug": false,
       "is_feature": false,
@@ -2775,6 +2878,39 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.4
+      }
+    },
+    {
+      "repo": "Automattic/harper",
+      "number": 2320,
+      "title": "`need to` should be followed by a verb, not a noun or pronoun like `start`.",
+      "url": "https://github.com/Automattic/harper/issues/2320",
+      "created_at": "2025-12-11T01:20:41Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "harper-core",
+        "linting"
+      ],
+      "language": "Rust",
+      "stars": 9932,
+      "comment_count": 4,
+      "age_days": 75,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.5
       }
     },
     {
@@ -3441,6 +3577,44 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.4
+      }
+    },
+    {
+      "repo": "gohugoio/hugo",
+      "number": 14549,
+      "title": "Adjust definition of IsImageResource, allow width/height/meta on images that does not support e.g. Resize",
+      "url": "https://github.com/gohugoio/hugo/issues/14549",
+      "created_at": "2026-02-23T08:57:02Z",
+      "labels": [
+        "Enhancement"
+      ],
+      "language": "Go",
+      "stars": 86757,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "bep"
+        },
+        "number": 14553,
+        "state": "OPEN",
+        "title": "Add AVIF, HEIF and HEIC partial support",
+        "url": "https://github.com/gohugoio/hugo/pull/14553"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -7079,6 +7253,50 @@
       }
     },
     {
+      "repo": "lingdojo/kana-dojo",
+      "number": 5853,
+      "title": "[Good First Issue] 🐉 Add iconic, timeless Famous Anime Quote 95 (good-first-issue, <1 min)",
+      "url": "https://github.com/lingdojo/kana-dojo/issues/5853",
+      "created_at": "2026-02-24T06:04:57Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest",
+        "javascript",
+        "community",
+        "easy",
+        "low hanging fruit",
+        "beginner",
+        "up-for-grabs",
+        "first-timers-only",
+        "beginner-friendly",
+        "starter task",
+        "frontend"
+      ],
+      "language": "TypeScript",
+      "stars": 1627,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6825,
       "title": "Configurable timeout for DNS monitor",
@@ -7213,204 +7431,6 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "CraftCanvasMC/Canvas",
-      "number": 159,
-      "title": "minecraft:boat_one_cm statistic is not updated in the statistic file",
-      "url": "https://github.com/CraftCanvasMC/Canvas/issues/159",
-      "created_at": "2026-02-15T18:38:26Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "upstream: folia"
-      ],
-      "language": "Java",
-      "stars": 257,
-      "comment_count": 5,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": false,
-      "llm_receptivity": 0.5,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.7,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "DLR-RM/stable-baselines3",
-      "number": 1564,
-      "title": "[Feature Request] torch compile / integrating intel extension for pytorch",
-      "url": "https://github.com/DLR-RM/stable-baselines3/issues/1564",
-      "created_at": "2023-06-20T20:58:14Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "Python",
-      "stars": 12769,
-      "comment_count": 7,
-      "age_days": 977,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.65,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "DSpace/DSpace",
-      "number": 11009,
-      "title": "Unable to run dspace cleanup",
-      "url": "https://github.com/DSpace/DSpace/issues/11009",
-      "created_at": "2025-07-08T00:52:00Z",
-      "labels": [
-        "bug",
-        "interface: command-line",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 1045,
-      "comment_count": 14,
-      "age_days": 224,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.88,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "DSpace/DSpace",
-      "number": 11954,
-      "title": "UI batch upload always logs value of org.dspace.app.batchitemimport.work.dir even if another folder is passed",
-      "url": "https://github.com/DSpace/DSpace/issues/11954",
-      "created_at": "2026-02-17T20:38:04Z",
-      "labels": [
-        "bug",
-        "tools: import",
-        "good first issue",
-        "error handling",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 1045,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "DSpace/DSpace",
-      "number": 8634,
-      "title": "ResourcePolicy without rptype is allowed but seems useless",
-      "url": "https://github.com/DSpace/DSpace/issues/8634",
-      "created_at": "2023-01-13T15:41:03Z",
-      "labels": [
-        "bug",
-        "code task",
-        "authorization",
-        "help wanted",
-        "stale"
-      ],
-      "language": "Java",
-      "stars": 1046,
-      "comment_count": 3,
-      "age_days": 1136,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "GTNewHorizons/GT-New-Horizons-Modpack",
-      "number": 23476,
-      "title": "Inconsistencies between different wireless redstone covers",
-      "url": "https://github.com/GTNewHorizons/GT-New-Horizons-Modpack/issues/23476",
-      "created_at": "2026-02-07T12:54:33Z",
-      "labels": [
-        "Bug: Minor",
-        "Mod: GT",
-        "Status: Ready for Developer",
-        "Good First Issue"
-      ],
-      "language": "Python",
-      "stars": 1589,
-      "comment_count": 1,
-      "age_days": 10,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.85,
-        "effort": 0.75
       }
     }
   ]
