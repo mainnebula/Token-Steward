@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-24T07:12:12Z",
+  "updated_at": "2026-02-24T13:25:07Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -666,6 +666,43 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 46546,
+      "title": "metric process_cpu_usage is used in the Grafana dashboard, but not documented",
+      "url": "https://github.com/keycloak/keycloak/issues/46546",
+      "created_at": "2026-02-23T06:49:21Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "team/cloud-native",
+        "team/production-readiness",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump",
+        "area/observability"
+      ],
+      "language": "Java",
+      "stars": 32993,
+      "comment_count": 4,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "AntennaPod/AntennaPod",
       "number": 8284,
       "title": "[media3] completing the last episode in the queue keeps it active",
@@ -819,6 +856,70 @@
       }
     },
     {
+      "repo": "koordinator-sh/koordinator",
+      "number": 2812,
+      "title": "[proposal] Use protobuf as the default content type for native Kubernetes API clients to improve performance",
+      "url": "https://github.com/koordinator-sh/koordinator/issues/2812",
+      "created_at": "2026-02-24T08:45:52Z",
+      "labels": [
+        "good first issue",
+        "help wanted",
+        "kind/bug"
+      ],
+      "language": "Go",
+      "stars": 1658,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kornia/kornia-rs",
+      "number": 732,
+      "title": "[Bug]: Test Infrastructure Fragility: data-driven AprilTag tests have silent failures and panic-on-error paths",
+      "url": "https://github.com/kornia/kornia-rs/issues/732",
+      "created_at": "2026-02-22T19:41:15Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "triage"
+      ],
+      "language": "Rust",
+      "stars": 583,
+      "comment_count": 6,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "layer5io/layer5",
       "number": 7426,
       "title": "Avatar & AvatarGroup – Code Tab Does Not Switch View Properly (Overview Stuck)",
@@ -943,6 +1044,38 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.5
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5102,
+      "title": "Add document processing recipe",
+      "url": "https://github.com/aden-hive/hive/issues/5102",
+      "created_at": "2026-02-19T06:42:49Z",
+      "labels": [
+        "enhancement",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8187,
+      "comment_count": 6,
+      "age_days": 5,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.88,
+        "effort": 0.8
       }
     },
     {
@@ -1659,38 +1792,6 @@
       "language": "Rust",
       "stars": 583,
       "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 732,
-      "title": "[Bug]: Test Infrastructure Fragility: data-driven AprilTag tests have silent failures and panic-on-error paths",
-      "url": "https://github.com/kornia/kornia-rs/issues/732",
-      "created_at": "2026-02-22T19:41:15Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 583,
-      "comment_count": 3,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
@@ -2600,6 +2701,41 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "kubernetes/minikube",
+      "number": 10908,
+      "title": "none with containerd: make it possible to run without the `docker` CLI",
+      "url": "https://github.com/kubernetes/minikube/issues/10908",
+      "created_at": "2021-03-24T07:21:24Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "co/none-driver",
+        "priority/backlog",
+        "lifecycle/frozen",
+        "co/runtime/containerd"
+      ],
+      "language": "Go",
+      "stars": 31515,
+      "comment_count": 22,
+      "age_days": 1798,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
       }
     },
     {
@@ -4344,6 +4480,45 @@
       }
     },
     {
+      "repo": "apache/dubbo",
+      "number": 16098,
+      "title": "[Bug] Fix resource leaks and improve code quality in ConfigUtils",
+      "url": "https://github.com/apache/dubbo/issues/16098",
+      "created_at": "2026-02-21T08:29:37Z",
+      "labels": [
+        "type/bug",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 41745,
+      "comment_count": 0,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "DocJlm"
+        },
+        "number": 16097,
+        "state": "OPEN",
+        "title": "[#16098] Fix resource leaks and improve code quality in ConfigUtils",
+        "url": "https://github.com/apache/dubbo/pull/16097"
+      },
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.6,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "argoproj/argo-cd",
       "number": 18853,
       "title": "Some resources' live manifests can't be viewed in the UI since server cluster role lacks list permission",
@@ -4962,6 +5137,38 @@
       "score_breakdown": {
         "reach": 0.5,
         "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kornia/kornia-rs",
+      "number": 750,
+      "title": "[Bug]: bench_product1_float_kernel  fails for i8 due to integer overflow",
+      "url": "https://github.com/kornia/kornia-rs/issues/750",
+      "created_at": "2026-02-24T01:22:33Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "triage"
+      ],
+      "language": "Rust",
+      "stars": 583,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.6,
         "confidence": 0.91,
         "effort": 0.65
       }
@@ -7206,231 +7413,6 @@
         "impact": 0.5,
         "confidence": 0.93,
         "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5846,
-      "title": "[Good First Issue] 🏯 Add focused, accurate New Grammar Point 122 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5846",
-      "created_at": "2026-02-24T01:24:46Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1626,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5853,
-      "title": "[Good First Issue] 🐉 Add iconic, timeless Famous Anime Quote 95 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5853",
-      "created_at": "2026-02-24T06:04:57Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1627,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "louislam/uptime-kuma",
-      "number": 6825,
-      "title": "Configurable timeout for DNS monitor",
-      "url": "https://github.com/louislam/uptime-kuma/issues/6825",
-      "created_at": "2026-01-27T09:10:49Z",
-      "labels": [
-        "feature-request",
-        "help wanted",
-        "good first issue",
-        "A:monitor",
-        "type:enhance-existing"
-      ],
-      "language": "JavaScript",
-      "stars": 83006,
-      "comment_count": 5,
-      "age_days": 23,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "mixelburg"
-        },
-        "number": 6990,
-        "state": "OPEN",
-        "title": "feat(dns): add configurable timeout for DNS monitor",
-        "url": "https://github.com/louislam/uptime-kuma/pull/6990"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.89,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "medic/cht-core",
-      "number": 10652,
-      "title": "Support collecting targets/UHC for Bikram Sambat months",
-      "url": "https://github.com/medic/cht-core/issues/10652",
-      "created_at": "2026-02-19T18:12:57Z",
-      "labels": [
-        "Type: Feature",
-        "Help wanted"
-      ],
-      "language": "JavaScript",
-      "stars": 522,
-      "comment_count": 5,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "openml/openml-python",
-      "number": 1649,
-      "title": "[MNT] Replace Live Test-Server Calls with Mocks in Unit Tests",
-      "url": "https://github.com/openml/openml-python/issues/1649",
-      "created_at": "2026-02-18T08:05:40Z",
-      "labels": [
-        "Good First Issue",
-        "testing",
-        "maintenance & CI"
-      ],
-      "language": "Python",
-      "stars": 333,
-      "comment_count": 8,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Codecademy/docs",
-      "number": 8191,
-      "title": "[Term Entry] PyTorch Tensor Operations: .amax()",
-      "url": "https://github.com/Codecademy/docs/issues/8191",
-      "created_at": "2026-01-28T07:39:11Z",
-      "labels": [
-        "good first issue",
-        "new entry",
-        "pytorch"
-      ],
-      "language": "TypeScript",
-      "stars": 1067,
-      "comment_count": 4,
-      "age_days": 21,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.66,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     }
   ]
