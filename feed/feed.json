@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-24T19:14:10Z",
+  "updated_at": "2026-02-25T02:49:11Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -505,6 +505,38 @@
       }
     },
     {
+      "repo": "koordinator-sh/koordinator",
+      "number": 2812,
+      "title": "[proposal] Use protobuf as the default content type for native Kubernetes API clients to improve performance",
+      "url": "https://github.com/koordinator-sh/koordinator/issues/2812",
+      "created_at": "2026-02-24T08:45:52Z",
+      "labels": [
+        "good first issue",
+        "help wanted",
+        "kind/bug"
+      ],
+      "language": "Go",
+      "stars": 1659,
+      "comment_count": 6,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6888,
       "title": "2.1.0 talking more CPU resources than 2.0",
@@ -905,38 +937,6 @@
       }
     },
     {
-      "repo": "koordinator-sh/koordinator",
-      "number": 2812,
-      "title": "[proposal] Use protobuf as the default content type for native Kubernetes API clients to improve performance",
-      "url": "https://github.com/koordinator-sh/koordinator/issues/2812",
-      "created_at": "2026-02-24T08:45:52Z",
-      "labels": [
-        "good first issue",
-        "help wanted",
-        "kind/bug"
-      ],
-      "language": "Go",
-      "stars": 1658,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "kornia/kornia-rs",
       "number": 732,
       "title": "[Bug]: Test Infrastructure Fragility: data-driven AprilTag tests have silent failures and panic-on-error paths",
@@ -998,6 +998,47 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "OpenHands/OpenHands",
+      "number": 11686,
+      "title": "[Bug]: CERTIFICATE_VERIFY_FAILED for self-hosted gitlab instances",
+      "url": "https://github.com/OpenHands/OpenHands/issues/11686",
+      "created_at": "2025-11-10T07:35:02Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "Stale",
+        "integrations"
+      ],
+      "language": "Python",
+      "stars": 68142,
+      "comment_count": 7,
+      "age_days": 106,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "majiayu000"
+        },
+        "number": 12601,
+        "state": "OPEN",
+        "title": "fix(backend): add SSL certificate verification bypass for self-hosted services",
+        "url": "https://github.com/OpenHands/OpenHands/pull/12601"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
       }
     },
     {
@@ -1969,6 +2010,38 @@
         "impact": 0.75,
         "confidence": 0.85,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "CherryHQ/cherry-studio",
+      "number": 13014,
+      "title": "[Discussion]: Skills?",
+      "url": "https://github.com/CherryHQ/cherry-studio/issues/13014",
+      "created_at": "2026-02-24T07:58:07Z",
+      "labels": [
+        "help wanted",
+        "discussion",
+        "Assistant"
+      ],
+      "language": "TypeScript",
+      "stars": 40150,
+      "comment_count": 8,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.89,
+        "effort": 0.65
       }
     },
     {
@@ -4461,9 +4534,9 @@
         "player"
       ],
       "language": "Java",
-      "stars": 37312,
+      "stars": 37316,
       "comment_count": 12,
-      "age_days": 295,
+      "age_days": 296,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4481,6 +4554,38 @@
         "title": "Add Issue and Template label workflow for ignored and missing templates",
         "url": "https://github.com/TeamNewPipe/NewPipe/pull/13254"
       },
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "TeamNewPipe/NewPipe",
+      "number": 6050,
+      "title": "Upload Date in StreamInfoItem with Error from PrettyTime Conversion in German",
+      "url": "https://github.com/TeamNewPipe/NewPipe/issues/6050",
+      "created_at": "2021-04-11T10:45:38Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "dependency"
+      ],
+      "language": "Java",
+      "stars": 37316,
+      "comment_count": 8,
+      "age_days": 1780,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
       "score": 0.67,
       "score_breakdown": {
         "reach": 0.6,
@@ -4611,6 +4716,39 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5354,
+      "title": "[Enhancement]: Add customer-facing architecture diagram to docs/ for sales and discovery conversations",
+      "url": "https://github.com/aden-hive/hive/issues/5354",
+      "created_at": "2026-02-25T00:45:44Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8267,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.8
       }
     },
     {
@@ -5058,9 +5196,9 @@
         "feature"
       ],
       "language": "Python",
-      "stars": 6361,
-      "comment_count": 11,
-      "age_days": 1,
+      "stars": 6386,
+      "comment_count": 12,
+      "age_days": 3,
       "is_bug": false,
       "is_feature": true,
       "category": "general",
@@ -7220,182 +7358,6 @@
       ],
       "language": "TypeScript",
       "stars": 1614,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5747,
-      "title": "[Good First Issue] 🥟 Add clear, thoughtful New Trivia Question 131 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5747",
-      "created_at": "2026-02-22T18:40:54Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1614,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5786,
-      "title": "[Good First Issue] 🦑 Add cultural, thoughtful Interesting, Cultural Fact about Japan 263 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5786",
-      "created_at": "2026-02-23T06:36:37Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1622,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5787,
-      "title": "[Good First Issue] 🍵 Add clear, fresh New Trivia Question 137 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5787",
-      "created_at": "2026-02-23T06:55:10Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1622,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5790,
-      "title": "[Good First Issue] 🎴 Add iconic, vivid Famous Anime Quote 85 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5790",
-      "created_at": "2026-02-23T07:15:25Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1622,
       "comment_count": 1,
       "age_days": 0,
       "is_bug": false,
