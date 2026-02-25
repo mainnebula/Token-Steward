@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25T02:49:11Z",
+  "updated_at": "2026-02-25T07:13:11Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1973,6 +1973,45 @@
       }
     },
     {
+      "repo": "langgenius/dify",
+      "number": 32454,
+      "title": "[Refactor/Chore] use Testcontainers to do sql test",
+      "url": "https://github.com/langgenius/dify/issues/32454",
+      "created_at": "2026-02-21T20:59:19Z",
+      "labels": [
+        "good first issue",
+        "🙏 help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 130250,
+      "comment_count": 7,
+      "age_days": 3,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "asukaminato0721"
+        },
+        "number": 32459,
+        "state": "OPEN",
+        "title": "test: example for [Refactor/Chore] use Testcontainers to do sql test #32454",
+        "url": "https://github.com/langgenius/dify/pull/32459"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "objectionary/eo",
       "number": 4879,
       "title": "`ms.mod` inaccurately contains an unused `ms.real` alias",
@@ -2847,7 +2886,7 @@
         "co/runtime/containerd"
       ],
       "language": "Go",
-      "stars": 31515,
+      "stars": 31519,
       "comment_count": 22,
       "age_days": 1798,
       "is_bug": true,
@@ -3248,6 +3287,45 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.4
+      }
+    },
+    {
+      "repo": "Col-E/Recaf",
+      "number": 1005,
+      "title": "Add a stop button to the script execution",
+      "url": "https://github.com/Col-E/Recaf/issues/1005",
+      "created_at": "2026-02-10T18:10:07Z",
+      "labels": [
+        "enhancement",
+        "4.X"
+      ],
+      "language": "Java",
+      "stars": 7018,
+      "comment_count": 8,
+      "age_days": 14,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "xxDark"
+        },
+        "number": 1006,
+        "state": "OPEN",
+        "title": "Add ability to stop scripts",
+        "url": "https://github.com/Col-E/Recaf/pull/1006"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.6
       }
     },
     {
@@ -4574,7 +4652,7 @@
         "dependency"
       ],
       "language": "Java",
-      "stars": 37316,
+      "stars": 37322,
       "comment_count": 8,
       "age_days": 1780,
       "is_bug": true,
@@ -4822,6 +4900,38 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.4
+      }
+    },
+    {
+      "repo": "booklore-app/booklore",
+      "number": 2910,
+      "title": "[Bug] Filter counts cut off on some filters",
+      "url": "https://github.com/booklore-app/booklore/issues/2910",
+      "created_at": "2026-02-24T11:24:16Z",
+      "labels": [
+        "bug",
+        "ui tweaks",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 10574,
+      "comment_count": 0,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.6,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -7226,138 +7336,6 @@
       ],
       "language": "TypeScript",
       "stars": 1612,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5717,
-      "title": "[Good First Issue] 🐡 Add thought-provoking, cultural New Japanese Proverb 153 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5717",
-      "created_at": "2026-02-22T12:58:56Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1612,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5739,
-      "title": "[Good First Issue] 🫖 Add high-quality, timeless Famous Japanese Video Game Quote 147 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5739",
-      "created_at": "2026-02-22T17:40:50Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1614,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5743,
-      "title": "[Good First Issue] 🍣 Add symbolic, cultural New Japanese Proverb 174 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5743",
-      "created_at": "2026-02-22T18:25:29Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1614,
       "comment_count": 1,
       "age_days": 0,
       "is_bug": false,
