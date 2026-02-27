@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T02:42:18Z",
+  "updated_at": "2026-02-27T07:05:54Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -431,6 +431,47 @@
         "state": "OPEN",
         "title": "docs(i18n): fix broken internal links in translated docs",
         "url": "https://github.com/aden-hive/hive/pull/5161"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.7,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5460,
+      "title": "docs: wrong credential env var and path in configuration docs",
+      "url": "https://github.com/aden-hive/hive/issues/5460",
+      "created_at": "2026-02-26T22:42:15Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8445,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "adambarghouthi"
+        },
+        "number": 5458,
+        "state": "OPEN",
+        "title": "micro-fix: fix wrong credential path and env var in docs",
+        "url": "https://github.com/aden-hive/hive/pull/5458"
       },
       "score": 0.74,
       "score_breakdown": {
@@ -4546,8 +4587,8 @@
       ],
       "language": "Rust",
       "stars": 4330,
-      "comment_count": 3,
-      "age_days": 0,
+      "comment_count": 4,
+      "age_days": 1,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4555,8 +4596,16 @@
       "has_contributing": false,
       "has_ci": true,
       "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "StevenJiang1110"
+        },
+        "number": 2983,
+        "state": "OPEN",
+        "title": "Upgrade qemu version to 10.2.1",
+        "url": "https://github.com/asterinas/asterinas/pull/2983"
+      },
       "score": 0.68,
       "score_breakdown": {
         "reach": 0.45,
@@ -6019,6 +6068,38 @@
     },
     {
       "repo": "aden-hive/hive",
+      "number": 5346,
+      "title": "[Feature]: Iterative PDF Processing with Trace Logging",
+      "url": "https://github.com/aden-hive/hive/issues/5346",
+      "created_at": "2026-02-24T19:12:20Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "size: medium"
+      ],
+      "language": "Python",
+      "stars": 8445,
+      "comment_count": 4,
+      "age_days": 2,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
       "number": 5354,
       "title": "[Enhancement]: Add customer-facing architecture diagram to docs/ for sales and discovery conversations",
       "url": "https://github.com/aden-hive/hive/issues/5354",
@@ -6829,6 +6910,44 @@
       }
     },
     {
+      "repo": "karmada-io/karmada",
+      "number": 7223,
+      "title": "Publish release-1.17",
+      "url": "https://github.com/karmada-io/karmada/issues/7223",
+      "created_at": "2026-02-27T02:29:17Z",
+      "labels": [
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 5311,
+      "comment_count": 7,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "zhzhuang-zju"
+        },
+        "number": 7228,
+        "state": "OPEN",
+        "title": "WIP: publish release note for v1.17.0, v1.16.3, v1.15.6, v1.14.10",
+        "url": "https://github.com/karmada-io/karmada/pull/7228"
+      },
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.88,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "keploy/keploy",
       "number": 3622,
       "title": "[blog-website]: X (Twitter) footer link redirects to a non-existent account",
@@ -6859,119 +6978,6 @@
         "impact": 0.55,
         "confidence": 0.86,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 38506,
-      "title": "keycloak-test-framework-bom manages more dependencies than intended",
-      "url": "https://github.com/keycloak/keycloak/issues/38506",
-      "created_at": "2025-03-27T13:57:25Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal",
-        "area/test-framework",
-        "team/continuous-delivery"
-      ],
-      "language": "Java",
-      "stars": 32966,
-      "comment_count": 4,
-      "age_days": 332,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 40929,
-      "title": "Duplicates in unmanaged attributes",
-      "url": "https://github.com/keycloak/keycloak/issues/40929",
-      "created_at": "2025-07-04T11:44:49Z",
-      "labels": [
-        "kind/bug",
-        "area/user-profile",
-        "area/admin/api",
-        "help wanted",
-        "team/core-iam",
-        "team/core-shared",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 32913,
-      "comment_count": 12,
-      "age_days": 230,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "keshavprashantdeshpande"
-        },
-        "number": 43892,
-        "state": "OPEN",
-        "title": "Add version column to user_entity",
-        "url": "https://github.com/keycloak/keycloak/pull/43892"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.89,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 736,
-      "title": "[Feature]: Add --all-features and --all-targets to CI check",
-      "url": "https://github.com/kornia/kornia-rs/issues/736",
-      "created_at": "2026-02-23T09:36:30Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 583,
-      "comment_count": 6,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.65
       }
     }
   ]
