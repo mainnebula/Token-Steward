@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T13:16:18Z",
+  "updated_at": "2026-02-27T18:57:05Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -129,9 +129,9 @@
         "S - keybindings"
       ],
       "language": "Rust",
-      "stars": 62705,
-      "comment_count": 14,
-      "age_days": 7,
+      "stars": 62711,
+      "comment_count": 15,
+      "age_days": 8,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -1872,6 +1872,39 @@
       }
     },
     {
+      "repo": "OWASP/Nest",
+      "number": 4107,
+      "title": "Improve error handling for missing Algolia configuration",
+      "url": "https://github.com/OWASP/Nest/issues/4107",
+      "created_at": "2026-02-27T16:05:33Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "enhancement",
+        "question"
+      ],
+      "language": "Python",
+      "stars": 389,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "OpenHands/OpenHands",
       "number": 13030,
       "title": "[GUI] Bring Sub-agent Delegation support to GUI",
@@ -2690,6 +2723,38 @@
         "title": "fix(frontend): preserve diff view when agent is stopped",
         "url": "https://github.com/OpenHands/OpenHands/pull/12606"
       },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "actualbudget/actual",
+      "number": 1062,
+      "title": "Scheduled transactions don't handle 29th/30th/31st dates appropriately",
+      "url": "https://github.com/actualbudget/actual/issues/1062",
+      "created_at": "2023-05-25T15:09:25Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "schedules"
+      ],
+      "language": "TypeScript",
+      "stars": 25192,
+      "comment_count": 11,
+      "age_days": 1009,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.69,
       "score_breakdown": {
         "reach": 0.6,
@@ -5222,8 +5287,8 @@
         "enhancement"
       ],
       "language": "Java",
-      "stars": 25050,
-      "comment_count": 8,
+      "stars": 25051,
+      "comment_count": 9,
       "age_days": 2952,
       "is_bug": false,
       "is_feature": true,
@@ -6320,9 +6385,9 @@
         "good first issue"
       ],
       "language": "Java",
-      "stars": 41745,
-      "comment_count": 0,
-      "age_days": 3,
+      "stars": 41702,
+      "comment_count": 1,
+      "age_days": 6,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6395,7 +6460,7 @@
         "help wanted"
       ],
       "language": "Java",
-      "stars": 25163,
+      "stars": 25167,
       "comment_count": 3,
       "age_days": 7,
       "is_bug": false,
@@ -6903,77 +6968,6 @@
         "impact": 0.6,
         "confidence": 0.93,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "grafana/tempo",
-      "number": 6558,
-      "title": "Incorrect metric types for the deduplicated spans in compactor",
-      "url": "https://github.com/grafana/tempo/issues/6558",
-      "created_at": "2026-02-25T20:11:41Z",
-      "labels": [
-        "good first issue",
-        "help wanted",
-        "Priority Low",
-        "minor"
-      ],
-      "language": "Go",
-      "stars": 5093,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "bejaratommy"
-        },
-        "number": 1,
-        "state": "OPEN",
-        "title": "fix: use counter instead of gauge for compactor deduped spans metric",
-        "url": "https://github.com/bejaratommy/tempo/pull/1"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.4,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "gtsteffaniak/filebrowser",
-      "number": 2021,
-      "title": "[Feature Request] Display shared files and folders in other's users spaces",
-      "url": "https://github.com/gtsteffaniak/filebrowser/issues/2021",
-      "created_at": "2026-02-23T23:48:32Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Go",
-      "stars": 6360,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     }
   ]
