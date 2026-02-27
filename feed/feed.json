@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T07:05:54Z",
+  "updated_at": "2026-02-27T13:16:18Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -10,39 +10,6 @@
     "TypeScript"
   ],
   "issues": [
-    {
-      "repo": "alacritty/alacritty",
-      "number": 8846,
-      "title": "Keybinding \"/\" not starting search in \"Vi\" mode for Spanish keyboard",
-      "url": "https://github.com/alacritty/alacritty/issues/8846",
-      "created_at": "2026-02-19T13:46:34Z",
-      "labels": [
-        "B - bug",
-        "help wanted",
-        "D - easy",
-        "S - keybindings"
-      ],
-      "language": "Rust",
-      "stars": 62615,
-      "comment_count": 10,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.79,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.8
-      }
-    },
     {
       "repo": "aden-hive/hive",
       "number": 5122,
@@ -147,6 +114,39 @@
         "impact": 0.85,
         "confidence": 0.93,
         "effort": 0.8
+      }
+    },
+    {
+      "repo": "alacritty/alacritty",
+      "number": 8846,
+      "title": "Keybinding \"/\" not starting search in \"Vi\" mode for Spanish keyboard",
+      "url": "https://github.com/alacritty/alacritty/issues/8846",
+      "created_at": "2026-02-19T13:46:34Z",
+      "labels": [
+        "B - bug",
+        "help wanted",
+        "D - easy",
+        "S - keybindings"
+      ],
+      "language": "Rust",
+      "stars": 62705,
+      "comment_count": 14,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.78,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.75
       }
     },
     {
@@ -1899,6 +1899,46 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5470,
+      "title": "[Bug]: Fix DeprecationWarnings in tests using legacy run_id format",
+      "url": "https://github.com/aden-hive/hive/issues/5470",
+      "created_at": "2026-02-27T12:09:46Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8453,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "u-wlkjyy"
+        },
+        "number": 5480,
+        "state": "OPEN",
+        "title": "micro-fix: tests: use unified session_* run IDs in runtime logging tests",
+        "url": "https://github.com/aden-hive/hive/pull/5480"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.6,
+        "confidence": 0.93,
+        "effort": 0.8
       }
     },
     {
@@ -4498,6 +4538,36 @@
       }
     },
     {
+      "repo": "apache/mahout",
+      "number": 1058,
+      "title": "[Feature] Enhance Module Testing Coverage",
+      "url": "https://github.com/apache/mahout/issues/1058",
+      "created_at": "2026-02-16T13:48:49Z",
+      "labels": [
+        "enhancement"
+      ],
+      "language": "Rust",
+      "stars": 2210,
+      "comment_count": 5,
+      "age_days": 10,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "apache/maven",
       "number": 11663,
       "title": "To help debugging, add the time zone to the Maven banner",
@@ -4586,7 +4656,7 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 4330,
+      "stars": 4331,
       "comment_count": 4,
       "age_days": 1,
       "is_bug": true,
@@ -4831,6 +4901,40 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "elastic/kibana",
+      "number": 254863,
+      "title": "[Discover][Traces] Support RED metrics charts in Discover for span-based data",
+      "url": "https://github.com/elastic/kibana/issues/254863",
+      "created_at": "2026-02-25T08:54:46Z",
+      "labels": [
+        "enhancement",
+        "planning",
+        "Project:OneDiscover",
+        "Feature:Traces in Discover",
+        "Team:obs-exploration"
+      ],
+      "language": "TypeScript",
+      "stars": 20962,
+      "comment_count": 3,
+      "age_days": 2,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -5101,6 +5205,41 @@
         "impact": 0.55,
         "confidence": 0.85,
         "effort": 0.8
+      }
+    },
+    {
+      "repo": "jenkinsci/jenkins",
+      "number": 22545,
+      "title": "[JENKINS-49217] Export ChannelTermination#cause when it is an ExportedBean",
+      "url": "https://github.com/jenkinsci/jenkins/issues/22545",
+      "created_at": "2018-01-28T10:33:47Z",
+      "labels": [
+        "good first issue",
+        "imported-jira-issue",
+        "component:core",
+        "priority:minor",
+        "resolution:unresolved",
+        "enhancement"
+      ],
+      "language": "Java",
+      "stars": 25050,
+      "comment_count": 8,
+      "age_days": 2952,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.55
       }
     },
     {
@@ -5447,6 +5586,45 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "AntennaPod/AntennaPod",
+      "number": 8314,
+      "title": "Resume setting options does not appear",
+      "url": "https://github.com/AntennaPod/AntennaPod/issues/8314",
+      "created_at": "2026-02-26T21:06:03Z",
+      "labels": [
+        "Good first issue",
+        "Type: Possible bug"
+      ],
+      "language": "Java",
+      "stars": 7684,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "utafrali"
+        },
+        "number": 8316,
+        "state": "OPEN",
+        "title": "Show resume preferences on Android 31+",
+        "url": "https://github.com/AntennaPod/AntennaPod/pull/8316"
+      },
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.6,
+        "confidence": 0.88,
         "effort": 0.65
       }
     },
@@ -6205,6 +6383,39 @@
       }
     },
     {
+      "repo": "bazelbuild/bazel",
+      "number": 28725,
+      "title": "--downloader_config should support %workspace% expansion",
+      "url": "https://github.com/bazelbuild/bazel/issues/28725",
+      "created_at": "2026-02-20T09:14:38Z",
+      "labels": [
+        "type: feature request",
+        "P3",
+        "team-ExternalDeps",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 25163,
+      "comment_count": 3,
+      "age_days": 7,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "booklore-app/booklore",
       "number": 2910,
       "title": "[Bug] Filter counts cut off on some filters",
@@ -6763,221 +6974,6 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "gustavosett/Windows-11-Clipboard-History-For-Linux",
-      "number": 139,
-      "title": "[BUG] Duplicate icons in the system tray",
-      "url": "https://github.com/gustavosett/Windows-11-Clipboard-History-For-Linux/issues/139",
-      "created_at": "2026-02-02T15:46:47Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 474,
-      "comment_count": 6,
-      "age_days": 17,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.6,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.78,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "inventree/InvenTree",
-      "number": 11398,
-      "title": "Feature request: AI Part scan",
-      "url": "https://github.com/inventree/InvenTree/issues/11398",
-      "created_at": "2026-02-21T12:28:42Z",
-      "labels": [
-        "enhancement",
-        "plugin",
-        "feature"
-      ],
-      "language": "Python",
-      "stars": 6386,
-      "comment_count": 12,
-      "age_days": 3,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.88,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "jaegertracing/jaeger",
-      "number": 8073,
-      "title": "[Bug]: API v3 does not respect the configured base_path value",
-      "url": "https://github.com/jaegertracing/jaeger/issues/8073",
-      "created_at": "2026-02-20T12:51:40Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "ui",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 22476,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "mawasak"
-        },
-        "number": 3548,
-        "state": "OPEN",
-        "title": "fix for base_path in api/v3",
-        "url": "https://github.com/jaegertracing/jaeger-ui/pull/3548"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "juanfont/headscale",
-      "number": 3055,
-      "title": "Add more explicit warning against using a non standard IP prefix",
-      "url": "https://github.com/juanfont/headscale/issues/3055",
-      "created_at": "2026-02-04T10:27:23Z",
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "no-stale-bot"
-      ],
-      "language": "Go",
-      "stars": 35580,
-      "comment_count": 3,
-      "age_days": 16,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "LouisLau-art"
-        },
-        "number": 3062,
-        "state": "OPEN",
-        "title": "docs(config): add explicit prefixes warning",
-        "url": "https://github.com/juanfont/headscale/pull/3062"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "karmada-io/karmada",
-      "number": 7223,
-      "title": "Publish release-1.17",
-      "url": "https://github.com/karmada-io/karmada/issues/7223",
-      "created_at": "2026-02-27T02:29:17Z",
-      "labels": [
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 5311,
-      "comment_count": 7,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "zhzhuang-zju"
-        },
-        "number": 7228,
-        "state": "OPEN",
-        "title": "WIP: publish release note for v1.17.0, v1.16.3, v1.15.6, v1.14.10",
-        "url": "https://github.com/karmada-io/karmada/pull/7228"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.88,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keploy/keploy",
-      "number": 3622,
-      "title": "[blog-website]: X (Twitter) footer link redirects to a non-existent account",
-      "url": "https://github.com/keploy/keploy/issues/3622",
-      "created_at": "2026-01-23T07:08:03Z",
-      "labels": [
-        "Good First Issue",
-        "blog-website",
-        "nextjs",
-        "OSS"
-      ],
-      "language": "Go",
-      "stars": 15708,
-      "comment_count": 6,
-      "age_days": 29,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.86,
-        "effort": 0.6
       }
     }
   ]
