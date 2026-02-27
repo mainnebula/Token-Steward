@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26T19:03:33Z",
+  "updated_at": "2026-02-27T02:42:18Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -856,6 +856,39 @@
       }
     },
     {
+      "repo": "affaan-m/everything-claude-code",
+      "number": 297,
+      "title": "Bug: README 'Step 3: Start Using' shows /plan but plugin system requires /everything-claude-code:plan",
+      "url": "https://github.com/affaan-m/everything-claude-code/issues/297",
+      "created_at": "2026-02-26T11:03:58Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "question",
+        "docs"
+      ],
+      "language": "JavaScript",
+      "stars": 53395,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.7,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "apache/airflow",
       "number": 62025,
       "title": "API - Improve public get_dag_runs endpoint",
@@ -1444,6 +1477,40 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "etcd-io/etcd",
+      "number": 20342,
+      "title": "--watch-progress-notify-interval doesn't work through JSON config",
+      "url": "https://github.com/etcd-io/etcd/issues/20342",
+      "created_at": "2025-07-15T19:07:23Z",
+      "labels": [
+        "type/bug",
+        "area/documentation",
+        "help wanted",
+        "good first issue",
+        "stage/tracked"
+      ],
+      "language": "Go",
+      "stars": 51575,
+      "comment_count": 15,
+      "age_days": 226,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.85,
+        "confidence": 0.94,
+        "effort": 0.4
       }
     },
     {
@@ -3982,6 +4049,37 @@
       }
     },
     {
+      "repo": "Forceu/Gokapi",
+      "number": 296,
+      "title": "Bug: Downloading E2E file onto android via Firefox yields partial file",
+      "url": "https://github.com/Forceu/Gokapi/issues/296",
+      "created_at": "2025-08-11T05:37:38Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 2612,
+      "comment_count": 9,
+      "age_days": 199,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "JabRef/jabref",
       "number": 14965,
       "title": "Windows installer doesn't show JabRef icon",
@@ -4590,6 +4688,40 @@
       }
     },
     {
+      "repo": "bropat/eufy-security-client",
+      "number": 820,
+      "title": "[Feature request]: Support for E330 [T8531] smart lock",
+      "url": "https://github.com/bropat/eufy-security-client/issues/820",
+      "created_at": "2026-02-25T20:48:17Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "need hardware or access",
+        "missing debug logs"
+      ],
+      "language": "TypeScript",
+      "stars": 663,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.6,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.83,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "buildpacks/pack",
       "number": 2272,
       "title": "pack build takes 27x longer when using containerd image store",
@@ -4888,6 +5020,38 @@
         "impact": 0.65,
         "confidence": 0.86,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "image-rs/image",
+      "number": 2796,
+      "title": "What's the workflow for adding test images?",
+      "url": "https://github.com/image-rs/image/issues/2796",
+      "created_at": "2026-02-26T21:54:39Z",
+      "labels": [
+        "discussion",
+        "easy",
+        "good first issue"
+      ],
+      "language": "Rust",
+      "stars": 5679,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.55,
+        "confidence": 0.85,
+        "effort": 0.8
       }
     },
     {
@@ -5490,6 +5654,36 @@
       }
     },
     {
+      "repo": "Opencode-DCP/opencode-dynamic-context-pruning",
+      "number": 406,
+      "title": "BETA Testing / Discussion",
+      "url": "https://github.com/Opencode-DCP/opencode-dynamic-context-pruning/issues/406",
+      "created_at": "2026-02-24T03:14:52Z",
+      "labels": [
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 1027,
+      "comment_count": 7,
+      "age_days": 2,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.88,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "PalisadoesFoundation/talawa-admin",
       "number": 7130,
       "title": "Test: src/screens/UserPortal/People/People.tsx",
@@ -5589,6 +5783,39 @@
         "impact": 0.55,
         "confidence": 0.89,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "PipedreamHQ/pipedream",
+      "number": 20103,
+      "title": "Apply updates from slack to slack_v2",
+      "url": "https://github.com/PipedreamHQ/pipedream/issues/20103",
+      "created_at": "2026-02-24T17:34:36Z",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "action"
+      ],
+      "language": "JavaScript",
+      "stars": 11114,
+      "comment_count": 3,
+      "age_days": 2,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.67,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.89,
+        "effort": 0.65
       }
     },
     {
@@ -6745,300 +6972,6 @@
         "impact": 0.55,
         "confidence": 0.91,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 770,
-      "title": "[Bug]:  Public API panics for Lanczos/Bicubic interpolation + wasted clone in morphological open/close",
-      "url": "https://github.com/kornia/kornia-rs/issues/770",
-      "created_at": "2026-02-26T18:21:48Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 586,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "langchain-ai/langchain",
-      "number": 30667,
-      "title": "core: leak when using object member in a `RunnableSequence`",
-      "url": "https://github.com/langchain-ai/langchain/issues/30667",
-      "created_at": "2025-04-04T12:54:05Z",
-      "labels": [
-        "help wanted",
-        "bug",
-        "investigate",
-        "core",
-        "external"
-      ],
-      "language": "Python",
-      "stars": 126835,
-      "comment_count": 4,
-      "age_days": 319,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "yaowubarbara"
-        },
-        "number": 35296,
-        "state": "OPEN",
-        "title": "fix(core): prevent memory leak from lru_cache on bound methods",
-        "url": "https://github.com/langchain-ai/langchain/pull/35296"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5099,
-      "title": "[Good First Issue] 🌘 Add cultural, symbolic New Japanese Proverb 27 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5099",
-      "created_at": "2026-02-16T15:26:46Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1498,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5152,
-      "title": "[Good First Issue] 🎍 Add eye-catching, harmonious New Color Theme: Soda Float (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5152",
-      "created_at": "2026-02-17T06:03:31Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1536,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5154,
-      "title": "[Good First Issue] 🌑 Add interesting, surprising Interesting, Cultural Fact about Japan 55 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5154",
-      "created_at": "2026-02-17T06:59:43Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1536,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5155,
-      "title": "[Good First Issue] 🍱 Add cultural, practical New Japanese Proverb 35 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5155",
-      "created_at": "2026-02-17T07:06:30Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1536,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "lingdojo/kana-dojo",
-      "number": 5187,
-      "title": "[Good First Issue] 🌼 Add iconic, meaningful Famous Anime Quote 39 (good-first-issue, <1 min)",
-      "url": "https://github.com/lingdojo/kana-dojo/issues/5187",
-      "created_at": "2026-02-17T12:30:49Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest",
-        "javascript",
-        "community",
-        "easy",
-        "low hanging fruit",
-        "beginner",
-        "up-for-grabs",
-        "first-timers-only",
-        "beginner-friendly",
-        "starter task",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 1541,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
       }
     }
   ]
