@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-28T02:31:29Z",
+  "updated_at": "2026-02-28T06:51:51Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1804,6 +1804,38 @@
       }
     },
     {
+      "repo": "CherryHQ/cherry-studio",
+      "number": 13059,
+      "title": "[Discussion]: Webdav backup failed, tried both Aliyun and Tera cloud drives, neither works 1.7.20",
+      "url": "https://github.com/CherryHQ/cherry-studio/issues/13059",
+      "created_at": "2026-02-26T01:13:03Z",
+      "labels": [
+        "help wanted",
+        "discussion",
+        "Data"
+      ],
+      "language": "TypeScript",
+      "stars": 40372,
+      "comment_count": 15,
+      "age_days": 2,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "DSpace/DSpace",
       "number": 11961,
       "title": "Pubmed import does not include DOI",
@@ -2116,6 +2148,39 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.5
+      }
+    },
+    {
+      "repo": "beeware/toga",
+      "number": 3727,
+      "title": "Android DetailedList doesn't respond to left/right swipes",
+      "url": "https://github.com/beeware/toga/issues/3727",
+      "created_at": "2025-08-27T22:55:45Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "android",
+        "documentation"
+      ],
+      "language": "Python",
+      "stars": 5318,
+      "comment_count": 5,
+      "age_days": 184,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.85,
+        "confidence": 0.93,
+        "effort": 0.4
       }
     },
     {
@@ -2939,6 +3004,45 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.5
+      }
+    },
+    {
+      "repo": "apache/dubbo",
+      "number": 16098,
+      "title": "[Bug] Fix resource leaks and improve code quality in ConfigUtils",
+      "url": "https://github.com/apache/dubbo/issues/16098",
+      "created_at": "2026-02-21T08:29:37Z",
+      "labels": [
+        "type/bug",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 41705,
+      "comment_count": 2,
+      "age_days": 6,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "DocJlm"
+        },
+        "number": 16097,
+        "state": "OPEN",
+        "title": "[#16098] Fix resource leaks and improve code quality in ConfigUtils",
+        "url": "https://github.com/apache/dubbo/pull/16097"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.6,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -4459,6 +4563,37 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 2106,
+      "title": "[Bug]: replace_file_content has no file size limit causing potential OOM",
+      "url": "https://github.com/aden-hive/hive/issues/2106",
+      "created_at": "2026-01-29T04:43:59Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Python",
+      "stars": 8472,
+      "comment_count": 4,
+      "age_days": 30,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.5
       }
     },
     {
@@ -6415,45 +6550,6 @@
       }
     },
     {
-      "repo": "apache/dubbo",
-      "number": 16098,
-      "title": "[Bug] Fix resource leaks and improve code quality in ConfigUtils",
-      "url": "https://github.com/apache/dubbo/issues/16098",
-      "created_at": "2026-02-21T08:29:37Z",
-      "labels": [
-        "type/bug",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 41704,
-      "comment_count": 1,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "DocJlm"
-        },
-        "number": 16097,
-        "state": "OPEN",
-        "title": "[#16098] Fix resource leaks and improve code quality in ConfigUtils",
-        "url": "https://github.com/apache/dubbo/pull/16097"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "argoproj/argo-cd",
       "number": 18853,
       "title": "Some resources' live manifests can't be viewed in the UI since server cluster role lacks list permission",
@@ -6855,120 +6951,6 @@
         "impact": 0.55,
         "confidence": 0.86,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "gofr-dev/gofr",
-      "number": 3005,
-      "title": "HTTP Server Does Not Start When Only a Static Directory (`./static`) Is Present",
-      "url": "https://github.com/gofr-dev/gofr/issues/3005",
-      "created_at": "2026-02-18T10:36:45Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "go"
-      ],
-      "language": "Go",
-      "stars": 16092,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "google-gemini/gemini-cli",
-      "number": 20405,
-      "title": "Bug: Ctrl+C doesn't cancel in-flight chat compression requests",
-      "url": "https://github.com/google-gemini/gemini-cli/issues/20405",
-      "created_at": "2026-02-26T08:11:59Z",
-      "labels": [
-        "priority/p2",
-        "area/core",
-        "help wanted",
-        "type/bug"
-      ],
-      "language": "TypeScript",
-      "stars": 95804,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Shiv-aurora"
-        },
-        "number": 20407,
-        "state": "OPEN",
-        "title": "fix(core): wire abort signal through chat compression LLM calls",
-        "url": "https://github.com/google-gemini/gemini-cli/pull/20407"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "google-gemini/gemini-cli",
-      "number": 20444,
-      "title": "fix: terminal-based editors and interactive commands fail due to missing TERM/COLORTERM env vars",
-      "url": "https://github.com/google-gemini/gemini-cli/issues/20444",
-      "created_at": "2026-02-26T14:19:46Z",
-      "labels": [
-        "priority/p1",
-        "area/core",
-        "help wanted",
-        "type/bug"
-      ],
-      "language": "TypeScript",
-      "stars": 95804,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "rmedranollamas"
-        },
-        "number": 20440,
-        "state": "OPEN",
-        "title": "fix(core): ensure TERM env var is passed to editors and shells",
-        "url": "https://github.com/google-gemini/gemini-cli/pull/20440"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.65
       }
     }
   ]
