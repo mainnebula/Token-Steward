@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-28T06:51:51Z",
+  "updated_at": "2026-02-28T13:01:43Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3007,45 +3007,6 @@
       }
     },
     {
-      "repo": "apache/dubbo",
-      "number": 16098,
-      "title": "[Bug] Fix resource leaks and improve code quality in ConfigUtils",
-      "url": "https://github.com/apache/dubbo/issues/16098",
-      "created_at": "2026-02-21T08:29:37Z",
-      "labels": [
-        "type/bug",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 41705,
-      "comment_count": 2,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "DocJlm"
-        },
-        "number": 16097,
-        "state": "OPEN",
-        "title": "[#16098] Fix resource leaks and improve code quality in ConfigUtils",
-        "url": "https://github.com/apache/dubbo/pull/16097"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "apache/iggy",
       "number": 2776,
       "title": "[Python SDK] Create `sync-python-version.sh` to keep python versions in sync across folders and docker images",
@@ -4195,6 +4156,47 @@
       }
     },
     {
+      "repo": "Automattic/harper",
+      "number": 2832,
+      "title": "`harper-cli lint` always exits with code 1, even when no lints are found",
+      "url": "https://github.com/Automattic/harper/issues/2832",
+      "created_at": "2026-02-28T04:59:32Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "harper-cli",
+        "linting"
+      ],
+      "language": "Rust",
+      "stars": 9963,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Ryujiyasu"
+        },
+        "number": 2836,
+        "state": "OPEN",
+        "title": "fix(harper-cli): return exit code 0 when no lints are found",
+        "url": "https://github.com/Automattic/harper/pull/2836"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.6,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "CherryHQ/cherry-studio",
       "number": 12923,
       "title": "[Discussion]: Adding '#' at the end in settings to disable automatic API version appending doesn't work with custom models, affecting usage",
@@ -4744,6 +4746,45 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.5
+      }
+    },
+    {
+      "repo": "apache/dubbo",
+      "number": 16098,
+      "title": "[Bug] Fix resource leaks and improve code quality in ConfigUtils",
+      "url": "https://github.com/apache/dubbo/issues/16098",
+      "created_at": "2026-02-21T08:29:37Z",
+      "labels": [
+        "type/bug",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 41705,
+      "comment_count": 2,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "DocJlm"
+        },
+        "number": 16097,
+        "state": "OPEN",
+        "title": "[#16098] Fix resource leaks and improve code quality in ConfigUtils",
+        "url": "https://github.com/apache/dubbo/pull/16097"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.6,
+        "confidence": 0.94,
+        "effort": 0.6
       }
     },
     {
@@ -6918,38 +6959,6 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.89,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "github/docs",
-      "number": 42851,
-      "title": "Events that trigger workflows for pull_request_target list is missing milestoned+demilestoned",
-      "url": "https://github.com/github/docs/issues/42851",
-      "created_at": "2026-02-08T21:57:37Z",
-      "labels": [
-        "help wanted",
-        "content",
-        "github_actions"
-      ],
-      "language": "TypeScript",
-      "stars": 18937,
-      "comment_count": 5,
-      "age_days": 9,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.86,
         "effort": 0.6
       }
     }
