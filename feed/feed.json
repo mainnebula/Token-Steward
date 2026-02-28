@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T18:57:05Z",
+  "updated_at": "2026-02-28T02:31:29Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -505,6 +505,46 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "documenso/documenso",
+      "number": 2472,
+      "title": "Bug Report : [Business Logic Error] Long description in public profile template hides critical action buttons",
+      "url": "https://github.com/documenso/documenso/issues/2472",
+      "created_at": "2026-02-11T01:40:29Z",
+      "labels": [
+        "type: bug",
+        "good first issue",
+        "apps: web"
+      ],
+      "language": "TypeScript",
+      "stars": 12454,
+      "comment_count": 6,
+      "age_days": 17,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "LouisLau-art"
+        },
+        "number": 2491,
+        "state": "OPEN",
+        "title": "fix(web): prevent long public template descriptions from hiding actions",
+        "url": "https://github.com/documenso/documenso/pull/2491"
+      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.6,
@@ -6385,7 +6425,7 @@
         "good first issue"
       ],
       "language": "Java",
-      "stars": 41702,
+      "stars": 41704,
       "comment_count": 1,
       "age_days": 6,
       "is_bug": true,
@@ -6929,45 +6969,6 @@
         "impact": 0.6,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "grafana/tempo",
-      "number": 6451,
-      "title": "Tempo ignores block config in storage section",
-      "url": "https://github.com/grafana/tempo/issues/6451",
-      "created_at": "2026-02-13T09:28:31Z",
-      "labels": [
-        "type/bug",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 5082,
-      "comment_count": 2,
-      "age_days": 8,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Harry-kp"
-        },
-        "number": 6532,
-        "state": "OPEN",
-        "title": "fix: block builder honor the global storage block config for block and WAL versions",
-        "url": "https://github.com/grafana/tempo/pull/6532"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     }
   ]
