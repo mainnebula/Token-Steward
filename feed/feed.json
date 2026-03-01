@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-01T02:57:29Z",
+  "updated_at": "2026-03-01T06:57:46Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2111,6 +2111,88 @@
       }
     },
     {
+      "repo": "aden-hive/hive",
+      "number": 5564,
+      "title": "[Security] M-01: No rate limiting on webhook server (Medium)",
+      "url": "https://github.com/aden-hive/hive/issues/5564",
+      "created_at": "2026-03-01T05:37:00Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "security",
+        "size: medium"
+      ],
+      "language": "Python",
+      "stars": 8498,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "shibinsp"
+        },
+        "number": 5595,
+        "state": "OPEN",
+        "title": "[micro-fix] fix(security): M-01 — Add rate limiting to webhook endpoints",
+        "url": "https://github.com/aden-hive/hive/pull/5595"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5566,
+      "title": "[Security] M-03: HITL user input unsanitized before LLM processing (Medium)",
+      "url": "https://github.com/aden-hive/hive/issues/5566",
+      "created_at": "2026-03-01T05:37:03Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "security",
+        "size: medium"
+      ],
+      "language": "Python",
+      "stars": 8498,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "shibinsp"
+        },
+        "number": 5597,
+        "state": "OPEN",
+        "title": "[micro-fix] fix(security): M-03 — Sanitize human-in-the-loop input",
+        "url": "https://github.com/aden-hive/hive/pull/5597"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "adenhq/hive",
       "number": 472,
       "title": "[Announcement] 📢 New Workflow: Requirement to be assigned to issues before opening PRs",
@@ -2998,6 +3080,73 @@
       }
     },
     {
+      "repo": "PalisadoesFoundation/talawa-api",
+      "number": 5226,
+      "title": "Add rate limiting for password change operations",
+      "url": "https://github.com/PalisadoesFoundation/talawa-api/issues/5226",
+      "created_at": "2026-02-14T15:32:12Z",
+      "labels": [
+        "documentation",
+        "good first issue",
+        "unapproved",
+        "security",
+        "no-issue-activity"
+      ],
+      "language": "TypeScript",
+      "stars": 321,
+      "comment_count": 5,
+      "age_days": 14,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.65,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "WFCD/warframe-items",
+      "number": 868,
+      "title": "[Bug] Vault info on Primes is outdated",
+      "url": "https://github.com/WFCD/warframe-items/issues/868",
+      "created_at": "2026-02-28T01:38:06Z",
+      "labels": [
+        "Type: Bug",
+        "help wanted",
+        "Scope: Out of Scope",
+        "Severity4: Inconvenient"
+      ],
+      "language": "JavaScript",
+      "stars": 354,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "actualbudget/actual",
       "number": 1062,
       "title": "Scheduled transactions don't handle 29th/30th/31st dates appropriately",
@@ -3269,6 +3418,38 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.55
+      }
+    },
+    {
+      "repo": "catppuccin/web-file-explorer-icons",
+      "number": 256,
+      "title": "icons are missing entirely",
+      "url": "https://github.com/catppuccin/web-file-explorer-icons/issues/256",
+      "created_at": "2026-02-26T05:08:38Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "browser:firefox"
+      ],
+      "language": "TypeScript",
+      "stars": 251,
+      "comment_count": 3,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.65
       }
     },
     {
@@ -3624,6 +3805,38 @@
         "impact": 0.65,
         "confidence": 0.91,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "influxdata/telegraf",
+      "number": 17546,
+      "title": "[inputs.openweathermap] Version 2.5 of the API is no longer supported",
+      "url": "https://github.com/influxdata/telegraf/issues/17546",
+      "created_at": "2025-08-29T05:52:41Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "size/m"
+      ],
+      "language": "Go",
+      "stars": 16731,
+      "comment_count": 9,
+      "age_days": 184,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
       }
     },
     {
@@ -4484,6 +4697,42 @@
       "stars": 1048,
       "comment_count": 5,
       "age_days": 267,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "DSpace/DSpace",
+      "number": 8466,
+      "title": "The bitstream's sequenceID cannot be guarantee to be unique within an Item",
+      "url": "https://github.com/DSpace/DSpace/issues/8466",
+      "created_at": "2022-08-18T13:46:01Z",
+      "labels": [
+        "bug",
+        "code task",
+        "backend: bitstore",
+        "medium priority",
+        "Estimate TBD",
+        "help wanted",
+        "stale"
+      ],
+      "language": "Java",
+      "stars": 1048,
+      "comment_count": 6,
+      "age_days": 1290,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5380,6 +5629,40 @@
       }
     },
     {
+      "repo": "code-charity/youtube",
+      "number": 3375,
+      "title": "🐞\"Undo the new sidebar!\" does not undo the new sidebar when logged in to youtube.",
+      "url": "https://github.com/code-charity/youtube/issues/3375",
+      "created_at": "2025-11-17T05:12:59Z",
+      "labels": [
+        "Bug",
+        "Feature request",
+        "help wanted",
+        "good first issue",
+        "up-for-grabs"
+      ],
+      "language": "JavaScript",
+      "stars": 4240,
+      "comment_count": 3,
+      "age_days": 104,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "elastic/kibana",
       "number": 254863,
       "title": "[Discover][Traces] Support RED metrics charts in Discover for span-based data",
@@ -5754,6 +6037,47 @@
       }
     },
     {
+      "repo": "kedacore/keda",
+      "number": 6840,
+      "title": "Rabbitmq scaler with TLS enabled trigger not working for passwordless authentication",
+      "url": "https://github.com/kedacore/keda/issues/6840",
+      "created_at": "2025-06-16T14:38:45Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "waiting-author-response",
+        "stale"
+      ],
+      "language": "Go",
+      "stars": 9942,
+      "comment_count": 12,
+      "age_days": 257,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "HsiuChuanHsu"
+        },
+        "number": 7213,
+        "state": "OPEN",
+        "title": "Fix RabbitMQ Scaler Passwordless TLS Authentication",
+        "url": "https://github.com/kedacore/keda/pull/7213"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "kube-rs/kube",
       "number": 1798,
       "title": "High default `config.read_timeout` delays client recovery",
@@ -5815,6 +6139,45 @@
         "state": "OPEN",
         "title": "refactor: fix no-matching-overload in invoke_llm by using Sequence",
         "url": "https://github.com/langgenius/dify/pull/32500"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "langgenius/dify",
+      "number": 32738,
+      "title": "[Refactor/Chore] ERROR `opentelemetry.metrics._internal.instrument.Histogram` is not assignable to attribute `hist_llm_duration` with type `opentelemetry.sdk.metrics._internal.instrument.Histogram | None` [bad-assignment]",
+      "url": "https://github.com/langgenius/dify/issues/32738",
+      "created_at": "2026-02-28T07:45:43Z",
+      "labels": [
+        "good first issue",
+        "🙏 help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 130738,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Br1an67"
+        },
+        "number": 32771,
+        "state": "OPEN",
+        "title": "fix(api): add type: ignore for OpenTelemetry histogram assignments",
+        "url": "https://github.com/langgenius/dify/pull/32771"
       },
       "score": 0.68,
       "score_breakdown": {
@@ -6643,335 +7006,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "TeamNewPipe/NewPipe",
-      "number": 6050,
-      "title": "Upload Date in StreamInfoItem with Error from PrettyTime Conversion in German",
-      "url": "https://github.com/TeamNewPipe/NewPipe/issues/6050",
-      "created_at": "2021-04-11T10:45:38Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "dependency"
-      ],
-      "language": "Java",
-      "stars": 37327,
-      "comment_count": 8,
-      "age_days": 1781,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "accius/openhamclock",
-      "number": 453,
-      "title": "[FEATURE] rig-config.json keeps values after update and have it auto launch if selected",
-      "url": "https://github.com/accius/openhamclock/issues/453",
-      "created_at": "2026-02-16T01:52:16Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "JavaScript",
-      "stars": 314,
-      "comment_count": 8,
-      "age_days": 3,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5118,
-      "title": "[Feature]: Add Stop / Cancel execution control for running agents",
-      "url": "https://github.com/aden-hive/hive/issues/5118",
-      "created_at": "2026-02-19T14:23:52Z",
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 7936,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.4,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5191,
-      "title": "[Agent Idea]: Meeting Transcript → Action Items & Decisions Extraction Agent",
-      "url": "https://github.com/aden-hive/hive/issues/5191",
-      "created_at": "2026-02-21T06:42:21Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Python",
-      "stars": 8030,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5208,
-      "title": "[Agent Idea]: Calendar Intelligence - meeting scheduling from email",
-      "url": "https://github.com/aden-hive/hive/issues/5208",
-      "created_at": "2026-02-21T15:17:53Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "backlog"
-      ],
-      "language": "Python",
-      "stars": 8049,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5346,
-      "title": "[Feature]: Iterative PDF Processing with Trace Logging",
-      "url": "https://github.com/aden-hive/hive/issues/5346",
-      "created_at": "2026-02-24T19:12:20Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "size: medium"
-      ],
-      "language": "Python",
-      "stars": 8445,
-      "comment_count": 4,
-      "age_days": 2,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5354,
-      "title": "[Enhancement]: Add customer-facing architecture diagram to docs/ for sales and discovery conversations",
-      "url": "https://github.com/aden-hive/hive/issues/5354",
-      "created_at": "2026-02-25T00:45:44Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 8267,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "argoproj/argo-cd",
-      "number": 18853,
-      "title": "Some resources' live manifests can't be viewed in the UI since server cluster role lacks list permission",
-      "url": "https://github.com/argoproj/argo-cd/issues/18853",
-      "created_at": "2024-06-29T16:01:04Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "component:rbac",
-        "component:server",
-        "version:2.12"
-      ],
-      "language": "Go",
-      "stars": 22103,
-      "comment_count": 3,
-      "age_days": 602,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 28725,
-      "title": "--downloader_config should support %workspace% expansion",
-      "url": "https://github.com/bazelbuild/bazel/issues/28725",
-      "created_at": "2026-02-20T09:14:38Z",
-      "labels": [
-        "type: feature request",
-        "P3",
-        "team-ExternalDeps",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 25167,
-      "comment_count": 3,
-      "age_days": 7,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "biomejs/biome",
-      "number": 9279,
-      "title": "💅 noSubstr not detecting errors on variable usage",
-      "url": "https://github.com/biomejs/biome/issues/9279",
-      "created_at": "2026-02-28T20:03:31Z",
-      "labels": [
-        "good first issue",
-        "A-Linter",
-        "L-JavaScript",
-        "S-Bug-confirmed"
-      ],
-      "language": "Rust",
-      "stars": 23871,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "vasilytrofimchuk"
-        },
-        "number": 9282,
-        "state": "OPEN",
-        "title": "fix(linter): detect substr/substring calls in variable declarations",
-        "url": "https://github.com/biomejs/biome/pull/9282"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.65
       }
     }
   ]
