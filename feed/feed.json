@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-02T07:09:56Z",
+  "updated_at": "2026-03-02T13:17:17Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -147,6 +147,43 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.75
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 46673,
+      "title": "Raise minimum maximum number of `poolMaxSize` as value 3 shown in Keycloak example leads to acquisition timeout after switch to JDBC Ping",
+      "url": "https://github.com/keycloak/keycloak/issues/46673",
+      "created_at": "2026-02-27T11:56:13Z",
+      "labels": [
+        "kind/bug",
+        "area/docs",
+        "help wanted",
+        "team/cloud-native",
+        "area/operator",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 33089,
+      "comment_count": 8,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.78,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.85,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -2989,9 +3026,9 @@
         "triage"
       ],
       "language": "Rust",
-      "stars": 588,
-      "comment_count": 3,
-      "age_days": 1,
+      "stars": 591,
+      "comment_count": 4,
+      "age_days": 2,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4179,6 +4216,42 @@
         "impact": 0.65,
         "confidence": 0.86,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 20042,
+      "title": "Exchanging Google ID Token for Keycloak Access Token results in Error with reason \"subject_token_type invalid\"",
+      "url": "https://github.com/keycloak/keycloak/issues/20042",
+      "created_at": "2023-04-30T13:08:35Z",
+      "labels": [
+        "kind/bug",
+        "area/token-exchange",
+        "help wanted",
+        "team/core-clients",
+        "priority/low",
+        "status/auto-bump",
+        "area/token-exchange/federated"
+      ],
+      "language": "Java",
+      "stars": 33089,
+      "comment_count": 16,
+      "age_days": 1037,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
       }
     },
     {
@@ -6923,81 +6996,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "DSpace/dspace-angular",
-      "number": 5115,
-      "title": "Visual misalignment of action buttons in empty DSpace bundles (Bitstreams tab in Edit Item view)",
-      "url": "https://github.com/DSpace/dspace-angular/issues/5115",
-      "created_at": "2026-02-15T01:14:01Z",
-      "labels": [
-        "bug",
-        "Difficulty: Low",
-        "good first issue",
-        "low priority",
-        "component: Item",
-        "ux"
-      ],
-      "language": "TypeScript",
-      "stars": 170,
-      "comment_count": 2,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "LakshmiSravya123"
-        },
-        "number": 5116,
-        "state": "OPEN",
-        "title": "fix: align action buttons in empty bundles on Bitstreams tab",
-        "url": "https://github.com/DSpace/dspace-angular/pull/5116"
-      },
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.6,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Exodus-Privacy/exodus",
-      "number": 685,
-      "title": "[Bug] Unable to decode all FDroid APK",
-      "url": "https://github.com/Exodus-Privacy/exodus/issues/685",
-      "created_at": "2026-01-17T03:37:36Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "question"
-      ],
-      "language": "Python",
-      "stars": 747,
-      "comment_count": 6,
-      "age_days": 33,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.67,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.5
       }
     }
   ]
