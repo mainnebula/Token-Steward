@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-03T07:04:25Z",
+  "updated_at": "2026-03-03T13:16:08Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -623,6 +623,96 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 46080,
+      "title": "Admin Events log the authRealm instead of the event realm",
+      "url": "https://github.com/keycloak/keycloak/issues/46080",
+      "created_at": "2026-02-06T13:19:27Z",
+      "labels": [
+        "kind/bug",
+        "area/core",
+        "help wanted",
+        "team/core-clients",
+        "team/core-shared",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 33105,
+      "comment_count": 5,
+      "age_days": 24,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "pine919"
+        },
+        "number": 46134,
+        "state": "OPEN",
+        "title": "admin events to log event realm instead of auth realm",
+        "url": "https://github.com/keycloak/keycloak/pull/46134"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 46546,
+      "title": "metric process_cpu_usage is used in the Grafana dashboard, but not documented",
+      "url": "https://github.com/keycloak/keycloak/issues/46546",
+      "created_at": "2026-02-23T06:49:21Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "team/cloud-native",
+        "team/production-readiness",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump",
+        "area/observability"
+      ],
+      "language": "Java",
+      "stars": 33105,
+      "comment_count": 5,
+      "age_days": 8,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "LouisLau-art"
+        },
+        "number": 46773,
+        "state": "OPEN",
+        "title": "Document process/system CPU metrics in JVM observability guide",
+        "url": "https://github.com/keycloak/keycloak/pull/46773"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "koordinator-sh/koordinator",
       "number": 2812,
       "title": "[proposal] Use protobuf as the default content type for native Kubernetes API clients to improve performance",
@@ -930,39 +1020,34 @@
       }
     },
     {
-      "repo": "keycloak/keycloak",
-      "number": 46546,
-      "title": "metric process_cpu_usage is used in the Grafana dashboard, but not documented",
-      "url": "https://github.com/keycloak/keycloak/issues/46546",
-      "created_at": "2026-02-23T06:49:21Z",
+      "repo": "777genius/claude-notifications-go",
+      "number": 44,
+      "title": "Click to focus does not work Ubuntu 22 and Terminator",
+      "url": "https://github.com/777genius/claude-notifications-go/issues/44",
+      "created_at": "2026-03-02T13:01:19Z",
       "labels": [
-        "kind/bug",
-        "help wanted",
-        "team/cloud-native",
-        "team/production-readiness",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump",
-        "area/observability"
+        "bug",
+        "enhancement",
+        "help wanted"
       ],
-      "language": "Java",
-      "stars": 32993,
-      "comment_count": 4,
+      "language": "Go",
+      "stars": 303,
+      "comment_count": 5,
       "age_days": 1,
       "is_bug": true,
-      "is_feature": false,
+      "is_feature": true,
       "category": "general",
       "surface": "bugfix",
       "has_contributing": true,
       "has_ci": true,
-      "llm_receptivity": 0.8,
+      "llm_receptivity": 0.7,
       "action": "fix",
       "pr": null,
-      "score": 0.73,
+      "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
         "impact": 0.75,
-        "confidence": 0.94,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -1003,6 +1088,38 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5682,
+      "title": "GitGuardian alert: derive credential IDs from fixtures instead of hardcoding",
+      "url": "https://github.com/aden-hive/hive/issues/5682",
+      "created_at": "2026-03-03T09:17:37Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8643,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.6,
+        "confidence": 0.93,
+        "effort": 0.8
       }
     },
     {
@@ -1348,9 +1465,9 @@
         "priority/low"
       ],
       "language": "Java",
-      "stars": 33023,
-      "comment_count": 3,
-      "age_days": 16,
+      "stars": 33105,
+      "comment_count": 4,
+      "age_days": 21,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -1358,8 +1475,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "LouisLau-art"
+        },
+        "number": 46764,
+        "state": "OPEN",
+        "title": "Avoid NumberFormatException for invalid numeric OIDC attribute values",
+        "url": "https://github.com/keycloak/keycloak/pull/46764"
+      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
@@ -1385,9 +1510,9 @@
         "priority/normal"
       ],
       "language": "Java",
-      "stars": 33094,
-      "comment_count": 3,
-      "age_days": 12,
+      "stars": 33105,
+      "comment_count": 4,
+      "age_days": 13,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -1395,8 +1520,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "LouisLau-art"
+        },
+        "number": 46784,
+        "state": "OPEN",
+        "title": "Fix admin-client auth when client_credentials has no refresh token",
+        "url": "https://github.com/keycloak/keycloak/pull/46784"
+      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
@@ -2201,38 +2334,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "777genius/claude-notifications-go",
-      "number": 44,
-      "title": "Click to focus does not work Ubuntu 22 and Terminator",
-      "url": "https://github.com/777genius/claude-notifications-go/issues/44",
-      "created_at": "2026-03-02T13:01:19Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 300,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
       }
     },
     {
@@ -4620,6 +4721,49 @@
     },
     {
       "repo": "keycloak/keycloak",
+      "number": 41640,
+      "title": "NullPointerException after after 26.3.2 migration",
+      "url": "https://github.com/keycloak/keycloak/issues/41640",
+      "created_at": "2025-08-04T11:59:36Z",
+      "labels": [
+        "kind/bug",
+        "area/core",
+        "good first issue",
+        "team/core-iam",
+        "team/core-shared",
+        "priority/low"
+      ],
+      "language": "Java",
+      "stars": 33105,
+      "comment_count": 9,
+      "age_days": 211,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "vivekksk"
+        },
+        "number": 41922,
+        "state": "OPEN",
+        "title": "Checking password and OTP are present and can be converted",
+        "url": "https://github.com/keycloak/keycloak/pull/41922"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
       "number": 46493,
       "title": "show-config contains log related entries with null values",
       "url": "https://github.com/keycloak/keycloak/issues/46493",
@@ -6692,6 +6836,38 @@
       }
     },
     {
+      "repo": "grafana/alloy",
+      "number": 5331,
+      "title": "Private key from windows cert store always using PKCS#1 v1.5 padding for TLS signatures",
+      "url": "https://github.com/grafana/alloy/issues/5331",
+      "created_at": "2026-01-22T16:57:24Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "os:windows"
+      ],
+      "language": "Go",
+      "stars": 2936,
+      "comment_count": 10,
+      "age_days": 39,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.85,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "grafana/mimir",
       "number": 11676,
       "title": "Bug: mimirtool-darwin-amd64 is using deprecated (Gone) API",
@@ -6859,155 +7035,6 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.55
-      }
-    },
-    {
-      "repo": "jenkinsci/jenkins",
-      "number": 25425,
-      "title": "[JENKINS-59467] Issue Template: Migrate documentation from Wiki to GitHub",
-      "url": "https://github.com/jenkinsci/jenkins/issues/25425",
-      "created_at": "2019-09-21T00:37:32Z",
-      "labels": [
-        "good first issue",
-        "imported-jira-issue",
-        "priority:minor",
-        "resolution:unresolved",
-        "enhancement",
-        "component:other"
-      ],
-      "language": "Java",
-      "stars": 25030,
-      "comment_count": 9,
-      "age_days": 2345,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.55
-      }
-    },
-    {
-      "repo": "kedacore/keda",
-      "number": 6840,
-      "title": "Rabbitmq scaler with TLS enabled trigger not working for passwordless authentication",
-      "url": "https://github.com/kedacore/keda/issues/6840",
-      "created_at": "2025-06-16T14:38:45Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "waiting-author-response",
-        "stale"
-      ],
-      "language": "Go",
-      "stars": 9942,
-      "comment_count": 12,
-      "age_days": 257,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "HsiuChuanHsu"
-        },
-        "number": 7213,
-        "state": "OPEN",
-        "title": "Fix RabbitMQ Scaler Passwordless TLS Authentication",
-        "url": "https://github.com/kedacore/keda/pull/7213"
-      },
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 46689,
-      "title": "Remove user input reflection in Token Introspection error responses",
-      "url": "https://github.com/keycloak/keycloak/issues/46689",
-      "created_at": "2026-03-01T15:58:31Z",
-      "labels": [
-        "area/oidc",
-        "kind/enhancement",
-        "help wanted",
-        "team/core-clients"
-      ],
-      "language": "Java",
-      "stars": 33097,
-      "comment_count": 3,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "RepoRonin"
-        },
-        "number": 46752,
-        "state": "OPEN",
-        "title": "Fix token type hint injection vulnerability in TokenIntrospectionEndpoint",
-        "url": "https://github.com/keycloak/keycloak/pull/46752"
-      },
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kube-rs/kube",
-      "number": 1798,
-      "title": "High default `config.read_timeout` delays client recovery",
-      "url": "https://github.com/kube-rs/kube/issues/1798",
-      "created_at": "2025-07-27T10:30:33Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "question"
-      ],
-      "language": "Rust",
-      "stars": 3611,
-      "comment_count": 7,
-      "age_days": 211,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.4
       }
     }
   ]
