@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-03T02:48:22Z",
+  "updated_at": "2026-03-03T07:04:25Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1068,6 +1068,46 @@
         "reach": 0.6,
         "impact": 0.75,
         "confidence": 0.86,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "astral-sh/ty",
+      "number": 2861,
+      "title": "Improve code folding for decorators",
+      "url": "https://github.com/astral-sh/ty/issues/2861",
+      "created_at": "2026-02-19T20:16:48Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "server"
+      ],
+      "language": "Python",
+      "stars": 17477,
+      "comment_count": 6,
+      "age_days": 11,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "iksuddle"
+        },
+        "number": 23543,
+        "state": "OPEN",
+        "title": "[ty] Improve folding for decorators",
+        "url": "https://github.com/astral-sh/ruff/pull/23543"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.89,
         "effort": 0.6
       }
     },
@@ -6968,45 +7008,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "langgenius/dify",
-      "number": 32494,
-      "title": "[Refactor/Chore] No matching overload found for function",
-      "url": "https://github.com/langgenius/dify/issues/32494",
-      "created_at": "2026-02-23T18:19:42Z",
-      "labels": [
-        "good first issue",
-        "🙏 help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 130096,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Hypertension42"
-        },
-        "number": 32500,
-        "state": "OPEN",
-        "title": "refactor: fix no-matching-overload in invoke_llm by using Sequence",
-        "url": "https://github.com/langgenius/dify/pull/32500"
-      },
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
       }
     }
   ]
