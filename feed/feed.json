@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-04T07:00:49Z",
+  "updated_at": "2026-03-04T13:14:40Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -669,6 +669,49 @@
     },
     {
       "repo": "keycloak/keycloak",
+      "number": 46132,
+      "title": "profile scope causes NumberFormatException",
+      "url": "https://github.com/keycloak/keycloak/issues/46132",
+      "created_at": "2026-02-09T15:24:20Z",
+      "labels": [
+        "area/oidc",
+        "kind/bug",
+        "good first issue",
+        "help wanted",
+        "team/core-clients",
+        "priority/low"
+      ],
+      "language": "Java",
+      "stars": 33123,
+      "comment_count": 5,
+      "age_days": 22,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "nikitanagar08"
+        },
+        "number": 46847,
+        "state": "OPEN",
+        "title": "Fix #46132: Handle empty/invalid strings in numeric OIDC attribute conversion",
+        "url": "https://github.com/keycloak/keycloak/pull/46847"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
       "number": 46433,
       "title": "Admin Client v26.5.3: TypeError with client_credentials grant (undefined.split())",
       "url": "https://github.com/keycloak/keycloak/issues/46433",
@@ -684,7 +727,7 @@
         "priority/normal"
       ],
       "language": "Java",
-      "stars": 33113,
+      "stars": 33123,
       "comment_count": 5,
       "age_days": 14,
       "is_bug": true,
@@ -694,16 +737,8 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "LouisLau-art"
-        },
-        "number": 46784,
-        "state": "OPEN",
-        "title": "Fix admin-client auth when client_credentials has no refresh token",
-        "url": "https://github.com/keycloak/keycloak/pull/46784"
-      },
+      "action": "fix",
+      "pr": null,
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.6,
@@ -729,9 +764,9 @@
         "area/observability"
       ],
       "language": "Java",
-      "stars": 33105,
-      "comment_count": 5,
-      "age_days": 8,
+      "stars": 33123,
+      "comment_count": 6,
+      "age_days": 9,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -739,16 +774,8 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "LouisLau-art"
-        },
-        "number": 46773,
-        "state": "OPEN",
-        "title": "Document process/system CPU metrics in JVM observability guide",
-        "url": "https://github.com/keycloak/keycloak/pull/46773"
-      },
+      "action": "fix",
+      "pr": null,
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.6,
@@ -1493,49 +1520,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 46132,
-      "title": "profile scope causes NumberFormatException",
-      "url": "https://github.com/keycloak/keycloak/issues/46132",
-      "created_at": "2026-02-09T15:24:20Z",
-      "labels": [
-        "area/oidc",
-        "kind/bug",
-        "good first issue",
-        "help wanted",
-        "team/core-clients",
-        "priority/low"
-      ],
-      "language": "Java",
-      "stars": 33105,
-      "comment_count": 4,
-      "age_days": 21,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "LouisLau-art"
-        },
-        "number": 46764,
-        "state": "OPEN",
-        "title": "Avoid NumberFormatException for invalid numeric OIDC attribute values",
-        "url": "https://github.com/keycloak/keycloak/pull/46764"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
       }
     },
     {
@@ -3429,6 +3413,40 @@
       }
     },
     {
+      "repo": "kysely-org/kysely",
+      "number": 1722,
+      "title": "`query` types incompatible with `mysql2@v3.18.2`",
+      "url": "https://github.com/kysely-org/kysely/issues/1722",
+      "created_at": "2026-02-27T20:40:06Z",
+      "labels": [
+        "good first issue",
+        "mysql",
+        "built-in dialect",
+        "typescript",
+        "greenlit"
+      ],
+      "language": "TypeScript",
+      "stars": 13534,
+      "comment_count": 9,
+      "age_days": 4,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "langgenius/dify",
       "number": 32454,
       "title": "[Refactor/Chore] use Testcontainers to do sql test",
@@ -3846,45 +3864,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "apache/dubbo",
-      "number": 16109,
-      "title": "[Bug] Prometheus metrics reporter initialization fails due to outdated class checks in MetricsSupportUtil",
-      "url": "https://github.com/apache/dubbo/issues/16109",
-      "created_at": "2026-02-25T10:28:22Z",
-      "labels": [
-        "type/bug",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 41704,
-      "comment_count": 2,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "du-mozzie"
-        },
-        "number": 16110,
-        "state": "OPEN",
-        "title": "fix(metrics): support prometheus class detection for micrometer 1.13+",
-        "url": "https://github.com/apache/dubbo/pull/16110"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.65
       }
     },
     {
@@ -6242,6 +6221,45 @@
       }
     },
     {
+      "repo": "apache/dubbo",
+      "number": 16109,
+      "title": "[Bug] Prometheus metrics reporter initialization fails due to outdated class checks in MetricsSupportUtil",
+      "url": "https://github.com/apache/dubbo/issues/16109",
+      "created_at": "2026-02-25T10:28:22Z",
+      "labels": [
+        "type/bug",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 41698,
+      "comment_count": 2,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "du-mozzie"
+        },
+        "number": 16110,
+        "state": "OPEN",
+        "title": "fix(metrics): support prometheus class detection for micrometer 1.13+",
+        "url": "https://github.com/apache/dubbo/pull/16110"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.6,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "apache/lucene",
       "number": 15225,
       "title": "Improve user facing java docs using LLM (or otherwise)",
@@ -7016,38 +7034,6 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "grafana/alloy",
-      "number": 5331,
-      "title": "Private key from windows cert store always using PKCS#1 v1.5 padding for TLS signatures",
-      "url": "https://github.com/grafana/alloy/issues/5331",
-      "created_at": "2026-01-22T16:57:24Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "os:windows"
-      ],
-      "language": "Go",
-      "stars": 2936,
-      "comment_count": 10,
-      "age_days": 39,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.85,
-        "effort": 0.5
       }
     }
   ]
