@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-04T02:40:56Z",
+  "updated_at": "2026-03-04T07:00:49Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -198,9 +198,9 @@
         "size: small"
       ],
       "language": "Python",
-      "stars": 8049,
-      "comment_count": 3,
-      "age_days": 5,
+      "stars": 8714,
+      "comment_count": 5,
+      "age_days": 16,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -220,10 +220,10 @@
       },
       "score": 0.76,
       "score_breakdown": {
-        "reach": 0.45,
+        "reach": 0.55,
         "impact": 0.75,
         "confidence": 0.93,
-        "effort": 0.8
+        "effort": 0.75
       }
     },
     {
@@ -658,6 +658,51 @@
         "state": "OPEN",
         "title": "admin events to log event realm instead of auth realm",
         "url": "https://github.com/keycloak/keycloak/pull/46134"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 46433,
+      "title": "Admin Client v26.5.3: TypeError with client_credentials grant (undefined.split())",
+      "url": "https://github.com/keycloak/keycloak/issues/46433",
+      "created_at": "2026-02-18T03:40:22Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "area/admin/client-js",
+        "team/core-clients",
+        "team/core-shared",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 33113,
+      "comment_count": 5,
+      "age_days": 14,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "LouisLau-art"
+        },
+        "number": 46784,
+        "state": "OPEN",
+        "title": "Fix admin-client auth when client_credentials has no refresh token",
+        "url": "https://github.com/keycloak/keycloak/pull/46784"
       },
       "score": 0.74,
       "score_breakdown": {
@@ -1484,51 +1529,6 @@
         "state": "OPEN",
         "title": "Avoid NumberFormatException for invalid numeric OIDC attribute values",
         "url": "https://github.com/keycloak/keycloak/pull/46764"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 46433,
-      "title": "Admin Client v26.5.3: TypeError with client_credentials grant (undefined.split())",
-      "url": "https://github.com/keycloak/keycloak/issues/46433",
-      "created_at": "2026-02-18T03:40:22Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "area/admin/client-js",
-        "team/core-clients",
-        "team/core-shared",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33105,
-      "comment_count": 4,
-      "age_days": 13,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "LouisLau-art"
-        },
-        "number": 46784,
-        "state": "OPEN",
-        "title": "Fix admin-client auth when client_credentials has no refresh token",
-        "url": "https://github.com/keycloak/keycloak/pull/46784"
       },
       "score": 0.72,
       "score_breakdown": {
@@ -3849,6 +3849,77 @@
       }
     },
     {
+      "repo": "apache/dubbo",
+      "number": 16109,
+      "title": "[Bug] Prometheus metrics reporter initialization fails due to outdated class checks in MetricsSupportUtil",
+      "url": "https://github.com/apache/dubbo/issues/16109",
+      "created_at": "2026-02-25T10:28:22Z",
+      "labels": [
+        "type/bug",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 41704,
+      "comment_count": 2,
+      "age_days": 6,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "du-mozzie"
+        },
+        "number": 16110,
+        "state": "OPEN",
+        "title": "fix(metrics): support prometheus class detection for micrometer 1.13+",
+        "url": "https://github.com/apache/dubbo/pull/16110"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.6,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "apache/iceberg",
+      "number": 15493,
+      "title": "Add docs for `iceberg.tables.hadoop.` to set LockManager for HadoopTables",
+      "url": "https://github.com/apache/iceberg/issues/15493",
+      "created_at": "2026-03-02T09:20:22Z",
+      "labels": [
+        "improvement",
+        "good first issue",
+        "docs"
+      ],
+      "language": "Java",
+      "stars": 8585,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.65,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "apache/iggy",
       "number": 2776,
       "title": "[Python SDK] Create `sync-python-version.sh` to keep python versions in sync across folders and docker images",
@@ -6015,6 +6086,46 @@
       }
     },
     {
+      "repo": "aden-hive/hive",
+      "number": 4780,
+      "title": "[Docs]: Update roadmap.md to reflect recently completed integrations",
+      "url": "https://github.com/aden-hive/hive/issues/4780",
+      "created_at": "2026-02-14T12:02:54Z",
+      "labels": [
+        "documentation",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8714,
+      "comment_count": 2,
+      "age_days": 17,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "zhanglinqian"
+        },
+        "number": 4794,
+        "state": "OPEN",
+        "title": "Docs: Update roadmap.md to reflect recently completed integrations",
+        "url": "https://github.com/aden-hive/hive/pull/4794"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.5,
+        "confidence": 0.93,
+        "effort": 0.75
+      }
+    },
+    {
       "repo": "apache/beam",
       "number": 30778,
       "title": "[Failing Test]: GroupBy example tests (groupby_test.py) fail",
@@ -6937,109 +7048,6 @@
         "impact": 0.75,
         "confidence": 0.85,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "grafana/mimir",
-      "number": 11676,
-      "title": "Bug: mimirtool-darwin-amd64 is using deprecated (Gone) API",
-      "url": "https://github.com/grafana/mimir/issues/11676",
-      "created_at": "2025-06-09T11:47:54Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "component/mimirtool"
-      ],
-      "language": "Go",
-      "stars": 4943,
-      "comment_count": 5,
-      "age_days": 261,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "grpc-ecosystem/grpc-gateway",
-      "number": 6380,
-      "title": "use_opaque_api=true: generated code copies proto message by value (go vet copylocks violation)",
-      "url": "https://github.com/grpc-ecosystem/grpc-gateway/issues/6380",
-      "created_at": "2026-02-19T03:29:31Z",
-      "labels": [
-        "help wanted",
-        "openapi"
-      ],
-      "language": "Go",
-      "stars": 19821,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "emahiro"
-        },
-        "number": 6383,
-        "state": "OPEN",
-        "title": "fix: use proto.Merge to avoid copylocks with use_opaque_api=true",
-        "url": "https://github.com/grpc-ecosystem/grpc-gateway/pull/6383"
-      },
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "hashicorp/terraform-provider-aws",
-      "number": 46581,
-      "title": "default_space_settings in aws_sagemaker_domain should be optional",
-      "url": "https://github.com/hashicorp/terraform-provider-aws/issues/46581",
-      "created_at": "2026-02-20T14:28:14Z",
-      "labels": [
-        "documentation",
-        "good first issue",
-        "service/sagemaker"
-      ],
-      "language": "Go",
-      "stars": 10774,
-      "comment_count": 3,
-      "age_days": 5,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.65,
-        "confidence": 0.86,
-        "effort": 0.65
       }
     }
   ]
