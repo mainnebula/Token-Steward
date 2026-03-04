@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-03T13:16:08Z",
+  "updated_at": "2026-03-04T02:40:56Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6380,6 +6380,39 @@
       }
     },
     {
+      "repo": "bazelbuild/bazel",
+      "number": 28800,
+      "title": "Bazel hangs when `--execution_log_compact_file` and `--build_event_binary_file` both point to   named pipes",
+      "url": "https://github.com/bazelbuild/bazel/issues/28800",
+      "created_at": "2026-02-25T19:23:01Z",
+      "labels": [
+        "type: feature request",
+        "P3",
+        "team-Local-Exec",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 25183,
+      "comment_count": 3,
+      "age_days": 6,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "block/goose",
       "number": 7427,
       "title": "Cannot use Azure OpenAI deployment endpoints (no `/models` endpoint)",
@@ -6836,6 +6869,45 @@
       }
     },
     {
+      "repo": "google-gemini/gemini-cli",
+      "number": 21002,
+      "title": "Automatic Unassignment of Inactive Help Wanted Issue Assignees",
+      "url": "https://github.com/google-gemini/gemini-cli/issues/21002",
+      "created_at": "2026-03-03T18:29:08Z",
+      "labels": [
+        "area/core",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 96355,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "kartikangiras"
+        },
+        "number": 21003,
+        "state": "OPEN",
+        "title": "feat: add issue assignee workflow",
+        "url": "https://github.com/google-gemini/gemini-cli/pull/21003"
+      },
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "grafana/alloy",
       "number": 5331,
       "title": "Private key from windows cert store always using PKCS#1 v1.5 padding for TLS signatures",
@@ -6968,73 +7040,6 @@
         "impact": 0.65,
         "confidence": 0.86,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "image-rs/image",
-      "number": 2796,
-      "title": "What's the workflow for adding test images?",
-      "url": "https://github.com/image-rs/image/issues/2796",
-      "created_at": "2026-02-26T21:54:39Z",
-      "labels": [
-        "discussion",
-        "easy",
-        "good first issue"
-      ],
-      "language": "Rust",
-      "stars": 5679,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.85,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "jenkinsci/jenkins",
-      "number": 22545,
-      "title": "[JENKINS-49217] Export ChannelTermination#cause when it is an ExportedBean",
-      "url": "https://github.com/jenkinsci/jenkins/issues/22545",
-      "created_at": "2018-01-28T10:33:47Z",
-      "labels": [
-        "good first issue",
-        "imported-jira-issue",
-        "component:core",
-        "priority:minor",
-        "resolution:unresolved",
-        "enhancement"
-      ],
-      "language": "Java",
-      "stars": 25051,
-      "comment_count": 9,
-      "age_days": 2952,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.55
       }
     }
   ]
