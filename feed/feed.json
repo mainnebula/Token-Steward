@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05T07:04:15Z",
+  "updated_at": "2026-03-05T13:18:30Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -257,6 +257,47 @@
         "impact": 0.65,
         "confidence": 0.93,
         "effort": 0.8
+      }
+    },
+    {
+      "repo": "google-gemini/gemini-cli",
+      "number": 20839,
+      "title": "AbortError stack trace displayed when pressing ESC during google_web_search",
+      "url": "https://github.com/google-gemini/gemini-cli/issues/20839",
+      "created_at": "2026-03-02T14:02:49Z",
+      "labels": [
+        "priority/p2",
+        "area/core",
+        "help wanted",
+        "type/bug"
+      ],
+      "language": "TypeScript",
+      "stars": 96540,
+      "comment_count": 9,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "PrasannaPal21"
+        },
+        "number": 20863,
+        "state": "OPEN",
+        "title": "fix(core): handle AbortError when ESC cancels tool execution",
+        "url": "https://github.com/google-gemini/gemini-cli/pull/20863"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -914,6 +955,47 @@
       }
     },
     {
+      "repo": "aden-hive/hive",
+      "number": 5660,
+      "title": "docs: getting-started.md Quick Start only references quickstart.sh, missing Windows quickstart.ps1",
+      "url": "https://github.com/aden-hive/hive/issues/5660",
+      "created_at": "2026-03-02T23:50:30Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8779,
+      "comment_count": 4,
+      "age_days": 2,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "MILTONADINA"
+        },
+        "number": 5668,
+        "state": "OPEN",
+        "title": "docs: add Windows quickstart.ps1 instructions to getting-started.md",
+        "url": "https://github.com/aden-hive/hive/pull/5668"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.65,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
       "repo": "adenhq/hive",
       "number": 4980,
       "title": "[Integration]:Add secret scanning to CI using Gitleaks",
@@ -1144,9 +1226,9 @@
         "help wanted"
       ],
       "language": "Go",
-      "stars": 303,
-      "comment_count": 5,
-      "age_days": 1,
+      "stars": 312,
+      "comment_count": 11,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": true,
       "category": "general",
@@ -1233,6 +1315,37 @@
         "impact": 0.6,
         "confidence": 0.93,
         "effort": 0.8
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 5845,
+      "title": "[Bug]: _refresh_credential returns stale credential when refresh fails",
+      "url": "https://github.com/aden-hive/hive/issues/5845",
+      "created_at": "2026-03-05T09:19:49Z",
+      "labels": [
+        "bug",
+        "enhancement"
+      ],
+      "language": "Python",
+      "stars": 8779,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -4055,6 +4168,38 @@
       }
     },
     {
+      "repo": "apache/dolphinscheduler",
+      "number": 18015,
+      "title": "[Bug] Regarding the system parameter $[yyyyMMdd-1], when the system timezone is set to US West (America/Los_Angeles), there is a Daylight Saving Time (DST) transition issue where a day only has 23 hours.",
+      "url": "https://github.com/apache/dolphinscheduler/issues/18015",
+      "created_at": "2026-03-04T07:16:46Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "backend"
+      ],
+      "language": "Java",
+      "stars": 14174,
+      "comment_count": 2,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.6,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "apache/iceberg",
       "number": 15493,
       "title": "Add docs for `iceberg.tables.hadoop.` to set LockManager for HadoopTables",
@@ -4512,6 +4657,37 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.4
+      }
+    },
+    {
+      "repo": "flatcar/Flatcar",
+      "number": 2029,
+      "title": "Expand the Flatcar Apps selection [Great for new contributors]",
+      "url": "https://github.com/flatcar/Flatcar/issues/2029",
+      "created_at": "2026-03-05T11:51:34Z",
+      "labels": [
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Python",
+      "stars": 1107,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -5985,6 +6161,38 @@
       }
     },
     {
+      "repo": "DSpace/DSpace",
+      "number": 9471,
+      "title": "log messages of level WARN in SolrServiceImpl.createLocationQueryForAdministrableItems: collection or community admin without any administrable collection or community",
+      "url": "https://github.com/DSpace/DSpace/issues/9471",
+      "created_at": "2024-04-12T13:42:37Z",
+      "labels": [
+        "bug",
+        "authorization",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 1051,
+      "comment_count": 5,
+      "age_days": 691,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.4
+      }
+    },
+    {
       "repo": "Forceu/Gokapi",
       "number": 296,
       "title": "Bug: Downloading E2E file onto android via Firefox yields partial file",
@@ -6845,223 +7053,6 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "apache/superset",
-      "number": 37892,
-      "title": "Time-series Table: sorting always based on first column in v6.0.0",
-      "url": "https://github.com/apache/superset/issues/37892",
-      "created_at": "2026-02-11T14:05:32Z",
-      "labels": [
-        "good first issue",
-        "#bug:regression",
-        "viz:charts:table",
-        "review:checkpoint"
-      ],
-      "language": "TypeScript",
-      "stars": 70764,
-      "comment_count": 2,
-      "age_days": 19,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "lucapazz"
-        },
-        "number": 38094,
-        "state": "OPEN",
-        "title": "fix(timetable): sort on time series columns correctly and do not convert null values ​​to zero",
-        "url": "https://github.com/apache/superset/pull/38094"
-      },
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "argoproj/argo-cd",
-      "number": 22877,
-      "title": "Add X-Frame-Options header to Swagger UI to prevent clickjacking",
-      "url": "https://github.com/argoproj/argo-cd/issues/22877",
-      "created_at": "2025-05-06T06:52:14Z",
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "type:security"
-      ],
-      "language": "Go",
-      "stars": 21999,
-      "comment_count": 6,
-      "age_days": 288,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "security",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "yafeiaa"
-        },
-        "number": 23082,
-        "state": "OPEN",
-        "title": "feat(swagger): add X-Frame-Options header to prevent clickjacking attacks (#22877)",
-        "url": "https://github.com/argoproj/argo-cd/pull/23082"
-      },
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.7,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "asterinas/asterinas",
-      "number": 2980,
-      "title": "The microvm CI test fails frequently",
-      "url": "https://github.com/asterinas/asterinas/issues/2980",
-      "created_at": "2026-02-26T03:41:32Z",
-      "labels": [
-        "C-bug",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 4331,
-      "comment_count": 4,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "StevenJiang1110"
-        },
-        "number": 2983,
-        "state": "OPEN",
-        "title": "Upgrade qemu version to 10.2.1",
-        "url": "https://github.com/asterinas/asterinas/pull/2983"
-      },
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.8,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "astral-sh/uv",
-      "number": 18115,
-      "title": "Script shebang with entrypoint that isn't Python",
-      "url": "https://github.com/astral-sh/uv/issues/18115",
-      "created_at": "2026-02-20T12:41:45Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Rust",
-      "stars": 79546,
-      "comment_count": 4,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 28800,
-      "title": "Bazel hangs when `--execution_log_compact_file` and `--build_event_binary_file` both point to   named pipes",
-      "url": "https://github.com/bazelbuild/bazel/issues/28800",
-      "created_at": "2026-02-25T19:23:01Z",
-      "labels": [
-        "type: feature request",
-        "P3",
-        "team-Local-Exec",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 25183,
-      "comment_count": 3,
-      "age_days": 6,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 28858,
-      "title": "Feature request: add include/exclude path filters to repository_ctx.extract and repository_ctx.download_and_extract",
-      "url": "https://github.com/bazelbuild/bazel/issues/28858",
-      "created_at": "2026-03-02T23:31:39Z",
-      "labels": [
-        "type: feature request",
-        "P2",
-        "team-ExternalDeps",
-        "help wanted",
-        "team-Rules-API"
-      ],
-      "language": "Java",
-      "stars": 25184,
-      "comment_count": 4,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
       }
     }
   ]
