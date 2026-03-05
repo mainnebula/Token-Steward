@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-04T19:02:46Z",
+  "updated_at": "2026-03-05T02:43:55Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1524,6 +1524,43 @@
     },
     {
       "repo": "keycloak/keycloak",
+      "number": 46088,
+      "title": "Newly created resource appears on both current and next page in Authorization Resources tab",
+      "url": "https://github.com/keycloak/keycloak/issues/46088",
+      "created_at": "2026-02-06T15:18:17Z",
+      "labels": [
+        "area/authorization-services",
+        "kind/bug",
+        "area/admin/ui",
+        "help wanted",
+        "team/core-iam",
+        "team/core-shared",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 33141,
+      "comment_count": 3,
+      "age_days": 26,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
       "number": 46089,
       "title": "Deleting a resource on page 2 shows \"No resources found\" empty state while resources still exist in Authorization Resources tab",
       "url": "https://github.com/keycloak/keycloak/issues/46089",
@@ -1539,7 +1576,7 @@
         "priority/normal"
       ],
       "language": "Java",
-      "stars": 33128,
+      "stars": 33141,
       "comment_count": 3,
       "age_days": 26,
       "is_bug": true,
@@ -1852,6 +1889,39 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.5
+      }
+    },
+    {
+      "repo": "WFCD/warframe-items",
+      "number": 868,
+      "title": "[Bug] Vault info on Primes is outdated",
+      "url": "https://github.com/WFCD/warframe-items/issues/868",
+      "created_at": "2026-02-28T01:38:06Z",
+      "labels": [
+        "Type: Bug",
+        "help wanted",
+        "Scope: Out of Scope",
+        "Severity4: Inconvenient"
+      ],
+      "language": "JavaScript",
+      "stars": 353,
+      "comment_count": 10,
+      "age_days": 5,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.65
       }
     },
     {
@@ -3743,39 +3813,6 @@
       }
     },
     {
-      "repo": "WFCD/warframe-items",
-      "number": 868,
-      "title": "[Bug] Vault info on Primes is outdated",
-      "url": "https://github.com/WFCD/warframe-items/issues/868",
-      "created_at": "2026-02-28T01:38:06Z",
-      "labels": [
-        "Type: Bug",
-        "help wanted",
-        "Scope: Out of Scope",
-        "Severity4: Inconvenient"
-      ],
-      "language": "JavaScript",
-      "stars": 354,
-      "comment_count": 3,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "actualbudget/actual",
       "number": 1062,
       "title": "Scheduled transactions don't handle 29th/30th/31st dates appropriately",
@@ -4479,9 +4516,9 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 19751,
+      "stars": 19758,
       "comment_count": 2,
-      "age_days": 0,
+      "age_days": 1,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5033,6 +5070,38 @@
       }
     },
     {
+      "repo": "knative-extensions/eventing-kafka-broker",
+      "number": 4569,
+      "title": "Profiling runs fail locally on Fedora Linux.",
+      "url": "https://github.com/knative-extensions/eventing-kafka-broker/issues/4569",
+      "created_at": "2025-10-31T17:58:35Z",
+      "labels": [
+        "help wanted",
+        "lifecycle/stale",
+        "kind/bug"
+      ],
+      "language": "Go",
+      "stars": 205,
+      "comment_count": 6,
+      "age_days": 124,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "koala73/worldmonitor",
       "number": 656,
       "title": "The update prompt in version 2.5.20 moves to the folder.",
@@ -5146,9 +5215,9 @@
         "kind/external"
       ],
       "language": "Go",
-      "stars": 15036,
-      "comment_count": 63,
-      "age_days": 459,
+      "stars": 15057,
+      "comment_count": 64,
+      "age_days": 469,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6476,6 +6545,68 @@
       }
     },
     {
+      "repo": "apache/fory",
+      "number": 3272,
+      "title": "[Compiler][gRPC][Java] Generate gRPC stubs with Fory codec",
+      "url": "https://github.com/apache/fory/issues/3272",
+      "created_at": "2026-02-05T09:18:56Z",
+      "labels": [
+        "enhancement",
+        "compiler"
+      ],
+      "language": "Java",
+      "stars": 4260,
+      "comment_count": 6,
+      "age_days": 27,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "apache/fory",
+      "number": 3273,
+      "title": "[Compiler][gRPC][Python] Generate gRPC stubs with Fory codec",
+      "url": "https://github.com/apache/fory/issues/3273",
+      "created_at": "2026-02-05T09:19:13Z",
+      "labels": [
+        "enhancement",
+        "compiler"
+      ],
+      "language": "Java",
+      "stars": 4260,
+      "comment_count": 5,
+      "age_days": 27,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.68,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "apache/iceberg",
       "number": 15509,
       "title": "Quickstart instructs (new) users to create table before a DB was created",
@@ -6921,137 +7052,6 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "bropat/eufy-security-client",
-      "number": 820,
-      "title": "[Feature request]: Support for E330 [T8531] smart lock",
-      "url": "https://github.com/bropat/eufy-security-client/issues/820",
-      "created_at": "2026-02-25T20:48:17Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "need hardware or access",
-        "missing debug logs"
-      ],
-      "language": "TypeScript",
-      "stars": 663,
-      "comment_count": 3,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.6,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.83,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "buildpacks/pack",
-      "number": 2272,
-      "title": "pack build takes 27x longer when using containerd image store",
-      "url": "https://github.com/buildpacks/pack/issues/2272",
-      "created_at": "2024-10-21T11:11:57Z",
-      "labels": [
-        "type/bug",
-        "help wanted",
-        "good first issue",
-        "status/ready"
-      ],
-      "language": "Go",
-      "stars": 2881,
-      "comment_count": 26,
-      "age_days": 487,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "claration/Impactor",
-      "number": 103,
-      "title": "[Help] Impactor (v. 2.0.0 and up) refuses to open on Linux (mint 22.3)",
-      "url": "https://github.com/claration/Impactor/issues/103",
-      "created_at": "2026-01-28T14:39:11Z",
-      "labels": [
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 1253,
-      "comment_count": 25,
-      "age_days": 25,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "code-charity/youtube",
-      "number": 3375,
-      "title": "🐞\"Undo the new sidebar!\" does not undo the new sidebar when logged in to youtube.",
-      "url": "https://github.com/code-charity/youtube/issues/3375",
-      "created_at": "2025-11-17T05:12:59Z",
-      "labels": [
-        "Bug",
-        "Feature request",
-        "help wanted",
-        "good first issue",
-        "up-for-grabs"
-      ],
-      "language": "JavaScript",
-      "stars": 4240,
-      "comment_count": 3,
-      "age_days": 104,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.5
       }
     }
   ]
