@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05T13:18:30Z",
+  "updated_at": "2026-03-05T19:23:24Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1215,6 +1215,42 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 46877,
+      "title": "Document / validate config file used .conf extension",
+      "url": "https://github.com/keycloak/keycloak/issues/46877",
+      "created_at": "2026-03-04T16:09:53Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "team/cloud-native",
+        "team/core-shared",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 33153,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "777genius/claude-notifications-go",
       "number": 44,
       "title": "Click to focus does not work Ubuntu 22 and Terminator",
@@ -1674,6 +1710,43 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 46039,
+      "title": "Special characters in Realm name breaks the application",
+      "url": "https://github.com/keycloak/keycloak/issues/46039",
+      "created_at": "2026-02-05T05:45:17Z",
+      "labels": [
+        "kind/bug",
+        "area/account/ui",
+        "help wanted",
+        "team/core-clients",
+        "team/core-shared",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 33153,
+      "comment_count": 3,
+      "age_days": 28,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
       }
     },
     {
@@ -4309,9 +4382,9 @@
         "team-Documentation"
       ],
       "language": "Java",
-      "stars": 25184,
+      "stars": 25195,
       "comment_count": 3,
-      "age_days": 4,
+      "age_days": 5,
       "is_bug": false,
       "is_feature": false,
       "category": "documentation",
@@ -4974,6 +5047,85 @@
       }
     },
     {
+      "repo": "helm/helm",
+      "number": 11310,
+      "title": "Helm supports unix style path in HELM_PLUGINS for loading, but fails when installing new plugins",
+      "url": "https://github.com/helm/helm/issues/11310",
+      "created_at": "2022-09-08T16:01:46Z",
+      "labels": [
+        "help wanted",
+        "bug",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 29572,
+      "comment_count": 7,
+      "age_days": 1274,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "LarytheLord"
+        },
+        "number": 31906,
+        "state": "OPEN",
+        "title": "fix(plugin): install to first HELM_PLUGINS path entry",
+        "url": "https://github.com/helm/helm/pull/31906"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "helm/helm",
+      "number": 31470,
+      "title": "TestUserAgentHeaderInK8sRESTClientConfig appears to fail when you have a bad .kube/config",
+      "url": "https://github.com/helm/helm/issues/31470",
+      "created_at": "2025-11-09T13:30:26Z",
+      "labels": [
+        "help wanted",
+        "bug"
+      ],
+      "language": "Go",
+      "stars": 29572,
+      "comment_count": 4,
+      "age_days": 116,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "LarytheLord"
+        },
+        "number": 31907,
+        "state": "OPEN",
+        "title": "test(cli): make User-Agent REST config test hermetic",
+        "url": "https://github.com/helm/helm/pull/31907"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "hiero-ledger/hiero-sdk-js",
       "number": 3704,
       "title": "[Good First Issue]: fix typo in readme.md",
@@ -5591,6 +5743,45 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.4
+      }
+    },
+    {
+      "repo": "langchain-ai/langgraph",
+      "number": 6412,
+      "title": "`ToolNode` `ainvoke` freezes if `sse_read_timeout`",
+      "url": "https://github.com/langchain-ai/langgraph/issues/6412",
+      "created_at": "2025-09-08T20:12:35Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Python",
+      "stars": 25650,
+      "comment_count": 8,
+      "age_days": 177,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Br1an67"
+        },
+        "number": 6973,
+        "state": "OPEN",
+        "title": "fix(prebuilt): add timeout parameter to ToolNode for async tool execution",
+        "url": "https://github.com/langchain-ai/langgraph/pull/6973"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.5
       }
     },
     {
@@ -6517,39 +6708,6 @@
     },
     {
       "repo": "aden-hive/hive",
-      "number": 2805,
-      "title": "[Integration]: Expand agent capabilities by adding more integrations/tools",
-      "url": "https://github.com/aden-hive/hive/issues/2805",
-      "created_at": "2026-01-30T20:58:28Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "integrations",
-        "tools"
-      ],
-      "language": "Python",
-      "stars": 8502,
-      "comment_count": 52,
-      "age_days": 29,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
       "number": 3900,
       "title": "[RFC]: Product Requirements for Agent Evaluation System — the missing piece of the self-improvement loop",
       "url": "https://github.com/aden-hive/hive/issues/3900",
@@ -6908,145 +7066,6 @@
       "llm_receptivity": 0.75,
       "action": "fix",
       "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "apache/iceberg",
-      "number": 15509,
-      "title": "Quickstart instructs (new) users to create table before a DB was created",
-      "url": "https://github.com/apache/iceberg/issues/15509",
-      "created_at": "2026-03-04T14:42:18Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "beginner"
-      ],
-      "language": "Java",
-      "stars": 8589,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "rameshreddy-adutla"
-        },
-        "number": 15513,
-        "state": "OPEN",
-        "title": "Docs: Add missing CREATE DATABASE step to Spark quickstart",
-        "url": "https://github.com/apache/iceberg/pull/15513"
-      },
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/lucene",
-      "number": 15225,
-      "title": "Improve user facing java docs using LLM (or otherwise)",
-      "url": "https://github.com/apache/lucene/issues/15225",
-      "created_at": "2025-09-23T21:44:23Z",
-      "labels": [
-        "good first issue",
-        "type:documentation"
-      ],
-      "language": "Java",
-      "stars": 3336,
-      "comment_count": 14,
-      "age_days": 147,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.65,
-        "confidence": 0.93,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "apache/mahout",
-      "number": 1058,
-      "title": "[Feature] Enhance Module Testing Coverage",
-      "url": "https://github.com/apache/mahout/issues/1058",
-      "created_at": "2026-02-16T13:48:49Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Rust",
-      "stars": 2210,
-      "comment_count": 5,
-      "age_days": 10,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "apache/maven",
-      "number": 11663,
-      "title": "To help debugging, add the time zone to the Maven banner",
-      "url": "https://github.com/apache/maven/issues/11663",
-      "created_at": "2026-01-21T13:08:30Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Java",
-      "stars": 4962,
-      "comment_count": 5,
-      "age_days": 29,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "assokhi"
-        },
-        "number": 11681,
-        "state": "OPEN",
-        "title": "Add time zone to Maven startup banner",
-        "url": "https://github.com/apache/maven/pull/11681"
-      },
       "score": 0.68,
       "score_breakdown": {
         "reach": 0.55,
