@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05T02:43:55Z",
+  "updated_at": "2026-03-05T07:04:15Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -980,6 +980,47 @@
       }
     },
     {
+      "repo": "google-gemini/gemini-cli",
+      "number": 20656,
+      "title": "Verbose mode shows minimal info for inline audio/video data",
+      "url": "https://github.com/google-gemini/gemini-cli/issues/20656",
+      "created_at": "2026-02-28T04:41:12Z",
+      "labels": [
+        "priority/p2",
+        "area/core",
+        "help wanted",
+        "type/bug"
+      ],
+      "language": "TypeScript",
+      "stars": 96494,
+      "comment_count": 4,
+      "age_days": 5,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "himanshu748"
+        },
+        "number": 20660,
+        "state": "OPEN",
+        "title": "feat(core): enhance verbose inline data descriptions with size and duration estimates",
+        "url": "https://github.com/google-gemini/gemini-cli/pull/20660"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "horsicq/Detect-It-Easy",
       "number": 335,
       "title": "Borland debug symbol TDS version is shown wrong",
@@ -1539,7 +1580,7 @@
         "priority/normal"
       ],
       "language": "Java",
-      "stars": 33141,
+      "stars": 33144,
       "comment_count": 3,
       "age_days": 26,
       "is_bug": true,
@@ -1576,7 +1617,7 @@
         "priority/normal"
       ],
       "language": "Java",
-      "stars": 33141,
+      "stars": 33144,
       "comment_count": 3,
       "age_days": 26,
       "is_bug": true,
@@ -4694,6 +4735,37 @@
       }
     },
     {
+      "repo": "grpc/grpc-java",
+      "number": 12667,
+      "title": "gRPC Java - Is it possible to bind listener to an real IP (not 0.0.0.0) - building xDS enabled gRPC Server",
+      "url": "https://github.com/grpc/grpc-java/issues/12667",
+      "created_at": "2026-02-25T02:40:36Z",
+      "labels": [
+        "enhancement",
+        "api-review"
+      ],
+      "language": "Java",
+      "stars": 11991,
+      "comment_count": 5,
+      "age_days": 8,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "helm/helm",
       "number": 10219,
       "title": "Unable to roll back as release left in invalid state",
@@ -5461,6 +5533,36 @@
         "reach": 0.5,
         "impact": 0.6,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "mksglu/claude-context-mode",
+      "number": 45,
+      "title": "Beta Testers Program: Windows, Linux & macOS",
+      "url": "https://github.com/mksglu/claude-context-mode/issues/45",
+      "created_at": "2026-03-03T16:56:03Z",
+      "labels": [
+        "help wanted"
+      ],
+      "language": "JavaScript",
+      "stars": 2528,
+      "comment_count": 7,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
         "effort": 0.65
       }
     },
@@ -6945,98 +7047,6 @@
       "stars": 25184,
       "comment_count": 4,
       "age_days": 1,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "block/goose",
-      "number": 7427,
-      "title": "Cannot use Azure OpenAI deployment endpoints (no `/models` endpoint)",
-      "url": "https://github.com/block/goose/issues/7427",
-      "created_at": "2026-02-23T06:43:46Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Rust",
-      "stars": 31025,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "bmad-code-org/BMAD-METHOD",
-      "number": 1626,
-      "title": "validate-file-refs.js runs warning-only — broken refs never fail CI",
-      "url": "https://github.com/bmad-code-org/BMAD-METHOD/issues/1626",
-      "created_at": "2026-02-11T03:09:41Z",
-      "labels": [
-        "enhancement",
-        "difficulty:easy"
-      ],
-      "language": "JavaScript",
-      "stars": 36154,
-      "comment_count": 2,
-      "age_days": 6,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.4,
-        "confidence": 0.94,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "booklore-app/booklore",
-      "number": 2924,
-      "title": "[Feature] Reverse Assign to Shelf Order List. (New to Old)",
-      "url": "https://github.com/booklore-app/booklore/issues/2924",
-      "created_at": "2026-02-24T17:38:23Z",
-      "labels": [
-        "enhancement",
-        "frontend"
-      ],
-      "language": "Java",
-      "stars": 10682,
-      "comment_count": 4,
-      "age_days": 2,
       "is_bug": false,
       "is_feature": true,
       "category": "general",
