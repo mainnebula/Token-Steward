@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05T19:23:24Z",
+  "updated_at": "2026-03-06T02:41:22Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1729,7 +1729,7 @@
         "priority/normal"
       ],
       "language": "Java",
-      "stars": 33153,
+      "stars": 33159,
       "comment_count": 3,
       "age_days": 28,
       "is_bug": true,
@@ -2131,9 +2131,9 @@
         "Severity4: Inconvenient"
       ],
       "language": "JavaScript",
-      "stars": 353,
-      "comment_count": 10,
-      "age_days": 5,
+      "stars": 354,
+      "comment_count": 11,
+      "age_days": 6,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5384,6 +5384,40 @@
     },
     {
       "repo": "keycloak/keycloak",
+      "number": 37355,
+      "title": "Web Crypto API not available in `login-status-iframe.html` when using admin console from insecure context",
+      "url": "https://github.com/keycloak/keycloak/issues/37355",
+      "created_at": "2025-02-14T13:17:36Z",
+      "labels": [
+        "area/oidc",
+        "kind/bug",
+        "help wanted",
+        "team/core-clients",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 33159,
+      "comment_count": 15,
+      "age_days": 384,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
       "number": 41640,
       "title": "NullPointerException after after 26.3.2 migration",
       "url": "https://github.com/keycloak/keycloak/issues/41640",
@@ -5466,6 +5500,80 @@
         "reach": 0.5,
         "impact": 0.6,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 46751,
+      "title": "Users not loading from ldap by default",
+      "url": "https://github.com/keycloak/keycloak/issues/46751",
+      "created_at": "2026-03-02T19:58:18Z",
+      "labels": [
+        "kind/enhancement",
+        "area/admin/ui",
+        "help wanted",
+        "team/core-iam",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 33159,
+      "comment_count": 8,
+      "age_days": 3,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "RepoRonin"
+        },
+        "number": 46753,
+        "state": "OPEN",
+        "title": " Fix user list not loading by default with LDAP federation",
+        "url": "https://github.com/keycloak/keycloak/pull/46753"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.89,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kiali/kiali",
+      "number": 9306,
+      "title": "[UX] Ambient and sidecars badges in the overview page",
+      "url": "https://github.com/kiali/kiali/issues/9306",
+      "created_at": "2026-03-04T15:26:23Z",
+      "labels": [
+        "enhancement"
+      ],
+      "language": "Go",
+      "stars": 3577,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
         "effort": 0.65
       }
     },
@@ -6970,107 +7078,6 @@
         "reach": 0.5,
         "impact": 0.6,
         "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "apache/dubbo",
-      "number": 16109,
-      "title": "[Bug] Prometheus metrics reporter initialization fails due to outdated class checks in MetricsSupportUtil",
-      "url": "https://github.com/apache/dubbo/issues/16109",
-      "created_at": "2026-02-25T10:28:22Z",
-      "labels": [
-        "type/bug",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 41698,
-      "comment_count": 2,
-      "age_days": 7,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "du-mozzie"
-        },
-        "number": 16110,
-        "state": "OPEN",
-        "title": "fix(metrics): support prometheus class detection for micrometer 1.13+",
-        "url": "https://github.com/apache/dubbo/pull/16110"
-      },
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "apache/fory",
-      "number": 3272,
-      "title": "[Compiler][gRPC][Java] Generate gRPC stubs with Fory codec",
-      "url": "https://github.com/apache/fory/issues/3272",
-      "created_at": "2026-02-05T09:18:56Z",
-      "labels": [
-        "enhancement",
-        "compiler"
-      ],
-      "language": "Java",
-      "stars": 4260,
-      "comment_count": 6,
-      "age_days": 27,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "apache/fory",
-      "number": 3273,
-      "title": "[Compiler][gRPC][Python] Generate gRPC stubs with Fory codec",
-      "url": "https://github.com/apache/fory/issues/3273",
-      "created_at": "2026-02-05T09:19:13Z",
-      "labels": [
-        "enhancement",
-        "compiler"
-      ],
-      "language": "Java",
-      "stars": 4260,
-      "comment_count": 5,
-      "age_days": 27,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
         "effort": 0.6
       }
     }
