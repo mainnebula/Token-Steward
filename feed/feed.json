@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-06T07:02:32Z",
+  "updated_at": "2026-03-06T13:13:56Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -184,6 +184,39 @@
         "impact": 0.85,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 4497,
+      "title": "[Bug]:cli.py missing input validation example",
+      "url": "https://github.com/aden-hive/hive/issues/4497",
+      "created_at": "2026-02-11T17:56:43Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 8845,
+      "comment_count": 6,
+      "age_days": 22,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.76,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.75
       }
     },
     {
@@ -440,39 +473,6 @@
       "score_breakdown": {
         "reach": 0.55,
         "impact": 0.65,
-        "confidence": 0.93,
-        "effort": 0.75
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 4497,
-      "title": "[Bug]:cli.py missing input validation example",
-      "url": "https://github.com/aden-hive/hive/issues/4497",
-      "created_at": "2026-02-11T17:56:43Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 8030,
-      "comment_count": 4,
-      "age_days": 9,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.74,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.75
       }
@@ -1564,6 +1564,47 @@
         "state": "OPEN",
         "title": "Fix: prevent scroll propagation on playback speed button #3654",
         "url": "https://github.com/code-charity/youtube/pull/3655"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "code-charity/youtube",
+      "number": 3670,
+      "title": "🐞Video titles and details get hidden behind video when comment section is opened in Shorts",
+      "url": "https://github.com/code-charity/youtube/issues/3670",
+      "created_at": "2026-03-06T03:57:29Z",
+      "labels": [
+        "Bug",
+        "help wanted",
+        "good first issue",
+        "up-for-grabs"
+      ],
+      "language": "JavaScript",
+      "stars": 4245,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "lanxinyue130410-del"
+        },
+        "number": 3674,
+        "state": "OPEN",
+        "title": "Fix YouTube Shorts comment area overlay issue #3670",
+        "url": "https://github.com/code-charity/youtube/pull/3674"
       },
       "score": 0.72,
       "score_breakdown": {
@@ -3037,6 +3078,39 @@
       }
     },
     {
+      "repo": "WordPress/gutenberg",
+      "number": 72265,
+      "title": "Custom font upload not working",
+      "url": "https://github.com/WordPress/gutenberg/issues/72265",
+      "created_at": "2025-10-11T07:48:09Z",
+      "labels": [
+        "[Type] Bug",
+        "Good First Issue",
+        "[Status] In Progress",
+        "[Feature] Font Library"
+      ],
+      "language": "JavaScript",
+      "stars": 11572,
+      "comment_count": 10,
+      "age_days": 146,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.89,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "aden-hive/hive",
       "number": 5470,
       "title": "[Bug]: Fix DeprecationWarnings in tests using legacy run_id format",
@@ -3623,39 +3697,6 @@
         "title": "[JENKINS-26318] Encode log recorder redirect name",
         "url": "https://github.com/jenkinsci/jenkins/pull/26331"
       },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "juice-shop/juice-shop",
-      "number": 3099,
-      "title": "[🐛] CI/CD: Flaky Cypress clicks in contact.spec.ts using `force: true`",
-      "url": "https://github.com/juice-shop/juice-shop/issues/3099",
-      "created_at": "2026-02-21T16:46:38Z",
-      "labels": [
-        "technical debt",
-        "testing",
-        "good first issue",
-        "user interface"
-      ],
-      "language": "TypeScript",
-      "stars": 12535,
-      "comment_count": 7,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.7,
       "score_breakdown": {
         "reach": 0.6,
@@ -4431,9 +4472,9 @@
         "docs"
       ],
       "language": "Java",
-      "stars": 8585,
-      "comment_count": 3,
-      "age_days": 1,
+      "stars": 8596,
+      "comment_count": 4,
+      "age_days": 4,
       "is_bug": false,
       "is_feature": false,
       "category": "documentation",
@@ -4441,8 +4482,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "anshulbaliga7"
+        },
+        "number": 15520,
+        "state": "OPEN",
+        "title": "Docs: Add HadoopTables lock configuration to Hadoop configuration section",
+        "url": "https://github.com/apache/iceberg/pull/15520"
+      },
       "score": 0.69,
       "score_breakdown": {
         "reach": 0.45,
@@ -5443,6 +5492,39 @@
       }
     },
     {
+      "repo": "juice-shop/juice-shop",
+      "number": 3099,
+      "title": "[🐛] CI/CD: Flaky Cypress clicks in contact.spec.ts using `force: true`",
+      "url": "https://github.com/juice-shop/juice-shop/issues/3099",
+      "created_at": "2026-02-21T16:46:38Z",
+      "labels": [
+        "technical debt",
+        "testing",
+        "good first issue",
+        "user interface"
+      ],
+      "language": "TypeScript",
+      "stars": 12638,
+      "comment_count": 16,
+      "age_days": 12,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "keploy/keploy",
       "number": 3649,
       "title": "[docs]: fix broken anchors in the doc website",
@@ -5698,8 +5780,8 @@
         "status/auto-bump"
       ],
       "language": "Java",
-      "stars": 33164,
-      "comment_count": 8,
+      "stars": 33169,
+      "comment_count": 9,
       "age_days": 3,
       "is_bug": false,
       "is_feature": true,
@@ -6734,36 +6816,6 @@
       }
     },
     {
-      "repo": "JabRef/jabref",
-      "number": 15000,
-      "title": "Identifier selection does not work on fresh start",
-      "url": "https://github.com/JabRef/jabref/issues/15000",
-      "created_at": "2026-02-02T09:04:20Z",
-      "labels": [
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 4235,
-      "comment_count": 12,
-      "age_days": 18,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
       "repo": "Lluciocc/Vish",
       "number": 43,
       "title": "Unexpected node teleporting",
@@ -7020,46 +7072,6 @@
       "score_breakdown": {
         "reach": 0.55,
         "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 4181,
-      "title": "docs(architecture): migrate all architecture diagrams in .md files to Mermaid",
-      "url": "https://github.com/aden-hive/hive/issues/4181",
-      "created_at": "2026-02-09T10:42:49Z",
-      "labels": [
-        "documentation",
-        "help wanted",
-        "size: medium"
-      ],
-      "language": "Python",
-      "stars": 8105,
-      "comment_count": 3,
-      "age_days": 14,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Samir-atra"
-        },
-        "number": 5303,
-        "state": "OPEN",
-        "title": "docs: migrate all ASCII-art architecture diagrams to Mermaid format",
-        "url": "https://github.com/aden-hive/hive/pull/5303"
-      },
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.65,
         "confidence": 0.93,
         "effort": 0.6
       }
