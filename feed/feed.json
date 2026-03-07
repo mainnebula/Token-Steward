@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-07T13:03:46Z",
+  "updated_at": "2026-03-07T18:44:48Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1411,7 +1411,7 @@
       ],
       "language": "Go",
       "stars": 318,
-      "comment_count": 14,
+      "comment_count": 15,
       "age_days": 5,
       "is_bug": true,
       "is_feature": true,
@@ -1722,6 +1722,38 @@
       }
     },
     {
+      "repo": "booklore-app/booklore",
+      "number": 2910,
+      "title": "[Bug] Filter counts cut off on some filters",
+      "url": "https://github.com/booklore-app/booklore/issues/2910",
+      "created_at": "2026-02-24T11:24:16Z",
+      "labels": [
+        "bug",
+        "ui tweaks",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 11177,
+      "comment_count": 3,
+      "age_days": 11,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "code-charity/youtube",
       "number": 3654,
       "title": "🐞Playback Speed Button doesn't exclusively capture scroll in fullscreen",
@@ -1926,6 +1958,39 @@
       "stars": 5813,
       "comment_count": 3,
       "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kedacore/keda",
+      "number": 7524,
+      "title": "azure-monitor scaler seems to ignore metricAggregationInterval",
+      "url": "https://github.com/kedacore/keda/issues/7524",
+      "created_at": "2026-03-06T15:29:15Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "scaler",
+        "scaler-azure-monitor"
+      ],
+      "language": "Go",
+      "stars": 9964,
+      "comment_count": 4,
+      "age_days": 1,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -2782,6 +2847,39 @@
       }
     },
     {
+      "repo": "google-gemini/gemini-cli",
+      "number": 15553,
+      "title": "Bug Report: \" error: ✕ agy not found. Please ensure it is in your system's PATH. \"",
+      "url": "https://github.com/google-gemini/gemini-cli/issues/15553",
+      "created_at": "2025-12-25T10:42:20Z",
+      "labels": [
+        "priority/p2",
+        "area/core",
+        "help wanted",
+        "type/bug"
+      ],
+      "language": "TypeScript",
+      "stars": 96794,
+      "comment_count": 13,
+      "age_days": 72,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "hashicorp/terraform-provider-aws",
       "number": 46675,
       "title": "aws_s3tables_table_replication: Create fails with \"A version token is not specified\"",
@@ -3111,6 +3209,38 @@
       "stars": 1046,
       "comment_count": 3,
       "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.88,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "GSConnect/gnome-shell-extension-gsconnect",
+      "number": 2148,
+      "title": "Error found with nautilus-gsconnect.py",
+      "url": "https://github.com/GSConnect/gnome-shell-extension-gsconnect/issues/2148",
+      "created_at": "2026-03-07T01:57:08Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "nautilus-extension"
+      ],
+      "language": "JavaScript",
+      "stars": 3585,
+      "comment_count": 4,
+      "age_days": 0,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -3893,36 +4023,6 @@
       }
     },
     {
-      "repo": "helm/helm",
-      "number": 31846,
-      "title": "Incorrect Go pkg import comment causing downstream processing error (kythe)",
-      "url": "https://github.com/helm/helm/issues/31846",
-      "created_at": "2026-02-20T13:46:29Z",
-      "labels": [
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 29550,
-      "comment_count": 7,
-      "age_days": 5,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "huggingface/transformers",
       "number": 43979,
       "title": "Call to contributions: refactor output tracing in transformers",
@@ -4533,7 +4633,7 @@
       "language": "Java",
       "stars": 1276,
       "comment_count": 3,
-      "age_days": 4,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4956,6 +5056,37 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.5
+      }
+    },
+    {
+      "repo": "apache/datafusion",
+      "number": 20773,
+      "title": "Implement cache-efficient partial aggregation by Leis et al",
+      "url": "https://github.com/apache/datafusion/issues/20773",
+      "created_at": "2026-03-07T08:09:02Z",
+      "labels": [
+        "enhancement",
+        "performance"
+      ],
+      "language": "Rust",
+      "stars": 8477,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -5914,6 +6045,36 @@
       }
     },
     {
+      "repo": "helm/helm",
+      "number": 31846,
+      "title": "Incorrect Go pkg import comment causing downstream processing error (kythe)",
+      "url": "https://github.com/helm/helm/issues/31846",
+      "created_at": "2026-02-20T13:46:29Z",
+      "labels": [
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 29586,
+      "comment_count": 8,
+      "age_days": 15,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "hiero-ledger/hiero-sdk-js",
       "number": 3704,
       "title": "[Good First Issue]: fix typo in readme.md",
@@ -6064,9 +6225,9 @@
         "user interface"
       ],
       "language": "TypeScript",
-      "stars": 12638,
-      "comment_count": 16,
-      "age_days": 12,
+      "stars": 12644,
+      "comment_count": 21,
+      "age_days": 14,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -6863,6 +7024,36 @@
       }
     },
     {
+      "repo": "mksglu/context-mode",
+      "number": 45,
+      "title": "Beta Testers Program: Windows, Linux & macOS",
+      "url": "https://github.com/mksglu/context-mode/issues/45",
+      "created_at": "2026-03-03T16:56:03Z",
+      "labels": [
+        "help wanted"
+      ],
+      "language": "JavaScript",
+      "stars": 2860,
+      "comment_count": 13,
+      "age_days": 4,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "mlflow/mlflow",
       "number": 18435,
       "title": "[DOC-FIX] Example documentation for mlflow.metrics.genai using Amazon Nova bedrock:/<model-name>",
@@ -6900,205 +7091,6 @@
         "impact": 0.65,
         "confidence": 0.94,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "moltis-org/moltis",
-      "number": 176,
-      "title": "[Feature]: Add datetime to system prompt context",
-      "url": "https://github.com/moltis-org/moltis/issues/176",
-      "created_at": "2026-02-17T15:24:59Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Rust",
-      "stars": 1094,
-      "comment_count": 6,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "opensearch-project/OpenSearch",
-      "number": 20612,
-      "title": "[Feature Request] [BUG] `_source` include / exclude validation",
-      "url": "https://github.com/opensearch-project/OpenSearch/issues/20612",
-      "created_at": "2026-02-12T16:07:46Z",
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "Search:Query Insights"
-      ],
-      "language": "Java",
-      "stars": 12413,
-      "comment_count": 8,
-      "age_days": 7,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "openstreetmap/id-tagging-schema",
-      "number": 1804,
-      "title": "Stop considering `landuse=basin` as a deprecated tag",
-      "url": "https://github.com/openstreetmap/id-tagging-schema/issues/1804",
-      "created_at": "2025-11-19T21:58:16Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "Waiting for pull request"
-      ],
-      "language": "JavaScript",
-      "stars": 201,
-      "comment_count": 6,
-      "age_days": 93,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "AntennaPod/AntennaPod",
-      "number": 7534,
-      "title": "Local folders show no Subscription counter when set to number of downloaded episodes",
-      "url": "https://github.com/AntennaPod/AntennaPod/issues/7534",
-      "created_at": "2024-11-29T17:00:53Z",
-      "labels": [
-        "Type: Confirmed bug",
-        "Good first issue"
-      ],
-      "language": "Java",
-      "stars": 7653,
-      "comment_count": 9,
-      "age_days": 443,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "Automattic/harper",
-      "number": 2320,
-      "title": "`need to` should be followed by a verb, not a noun or pronoun like `start`.",
-      "url": "https://github.com/Automattic/harper/issues/2320",
-      "created_at": "2025-12-11T01:20:41Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "harper-core",
-        "linting"
-      ],
-      "language": "Rust",
-      "stars": 9932,
-      "comment_count": 4,
-      "age_days": 75,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "Automattic/harper",
-      "number": 2832,
-      "title": "`harper-cli lint` always exits with code 1, even when no lints are found",
-      "url": "https://github.com/Automattic/harper/issues/2832",
-      "created_at": "2026-02-28T04:59:32Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "harper-cli",
-        "linting"
-      ],
-      "language": "Rust",
-      "stars": 9963,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Ryujiyasu"
-        },
-        "number": 2836,
-        "state": "OPEN",
-        "title": "fix(harper-cli): return exit code 0 when no lints are found",
-        "url": "https://github.com/Automattic/harper/pull/2836"
-      },
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     }
   ]
