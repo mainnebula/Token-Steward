@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-06T18:58:34Z",
+  "updated_at": "2026-03-07T02:34:02Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -626,6 +626,46 @@
       }
     },
     {
+      "repo": "docling-project/docling",
+      "number": 2668,
+      "title": "Section after table being incorrectly added as child of table header",
+      "url": "https://github.com/docling-project/docling/issues/2668",
+      "created_at": "2025-11-20T22:01:32Z",
+      "labels": [
+        "bug",
+        "docx",
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 55091,
+      "comment_count": 7,
+      "age_days": 106,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Br1an67"
+        },
+        "number": 3047,
+        "state": "OPEN",
+        "title": "fix: restore parent stack after processing rich table cells",
+        "url": "https://github.com/docling-project/docling/pull/3047"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.85,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "documenso/documenso",
       "number": 2472,
       "title": "Bug Report : [Business Logic Error] Long description in public profile template hides critical action buttons",
@@ -1096,6 +1136,48 @@
       }
     },
     {
+      "repo": "cockroachdb/cockroach",
+      "number": 110997,
+      "title": "docker-entrypoint-initdb.d scripts don't run unless COCKROACH_USER is set",
+      "url": "https://github.com/cockroachdb/cockroach/issues/110997",
+      "created_at": "2023-09-20T20:11:40Z",
+      "labels": [
+        "C-bug",
+        "E-easy",
+        "O-community",
+        "good first issue",
+        "T-sql-foundations"
+      ],
+      "language": "Go",
+      "stars": 31996,
+      "comment_count": 5,
+      "age_days": 898,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "fahadahmadansari111"
+        },
+        "number": 163414,
+        "state": "OPEN",
+        "title": "Feature/fix 110997 - added validation to check the init script",
+        "url": "https://github.com/cockroachdb/cockroach/pull/163414"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.55
+      }
+    },
+    {
       "repo": "containers/podman",
       "number": 28193,
       "title": "podman --remote exec ignores empty detach keys",
@@ -1328,9 +1410,9 @@
         "help wanted"
       ],
       "language": "Go",
-      "stars": 312,
-      "comment_count": 11,
-      "age_days": 3,
+      "stars": 318,
+      "comment_count": 13,
+      "age_days": 4,
       "is_bug": true,
       "is_feature": true,
       "category": "general",
@@ -5024,6 +5106,45 @@
       }
     },
     {
+      "repo": "conventional-changelog/commitlint",
+      "number": 4594,
+      "title": "fix: found error with line length in a release commit (inc skip ci)",
+      "url": "https://github.com/conventional-changelog/commitlint/issues/4594",
+      "created_at": "2026-01-18T02:15:32Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 18355,
+      "comment_count": 14,
+      "age_days": 48,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Br1an67"
+        },
+        "number": 4637,
+        "state": "OPEN",
+        "title": "fix(is-ignored): strip CI skip markers from release commits",
+        "url": "https://github.com/conventional-changelog/commitlint/pull/4637"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "elastic/elasticsearch",
       "number": 142861,
       "title": "Tasks API | Async Search+ESQL report keep_alive",
@@ -6980,101 +7101,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "DSpace/DSpace",
-      "number": 9471,
-      "title": "log messages of level WARN in SolrServiceImpl.createLocationQueryForAdministrableItems: collection or community admin without any administrable collection or community",
-      "url": "https://github.com/DSpace/DSpace/issues/9471",
-      "created_at": "2024-04-12T13:42:37Z",
-      "labels": [
-        "bug",
-        "authorization",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 1051,
-      "comment_count": 5,
-      "age_days": 691,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "Forceu/Gokapi",
-      "number": 296,
-      "title": "Bug: Downloading E2E file onto android via Firefox yields partial file",
-      "url": "https://github.com/Forceu/Gokapi/issues/296",
-      "created_at": "2025-08-11T05:37:38Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 2612,
-      "comment_count": 9,
-      "age_days": 199,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "JabRef/jabref",
-      "number": 14965,
-      "title": "Windows installer doesn't show JabRef icon",
-      "url": "https://github.com/JabRef/jabref/issues/14965",
-      "created_at": "2026-01-30T16:33:55Z",
-      "labels": [
-        "platform: windows",
-        "good first issue",
-        "component: installation"
-      ],
-      "language": "Java",
-      "stars": 4242,
-      "comment_count": 12,
-      "age_days": 25,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.68,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     }
   ]
