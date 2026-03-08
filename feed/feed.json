@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-07T18:44:48Z",
+  "updated_at": "2026-03-08T02:47:28Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1733,7 +1733,7 @@
         "good first issue"
       ],
       "language": "Java",
-      "stars": 11177,
+      "stars": 11191,
       "comment_count": 3,
       "age_days": 11,
       "is_bug": true,
@@ -3758,6 +3758,39 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.5
+      }
+    },
+    {
+      "repo": "autokey/autokey",
+      "number": 1082,
+      "title": "Possible fix for issues in debian/build.sh",
+      "url": "https://github.com/autokey/autokey/issues/1082",
+      "created_at": "2026-03-07T18:11:55Z",
+      "labels": [
+        "easy fix",
+        "good first issue",
+        "infrastructure",
+        "0.97.0"
+      ],
+      "language": "Python",
+      "stars": 3809,
+      "comment_count": 7,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.85,
+        "effort": 0.8
       }
     },
     {
@@ -7051,46 +7084,6 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "mlflow/mlflow",
-      "number": 18435,
-      "title": "[DOC-FIX] Example documentation for mlflow.metrics.genai using Amazon Nova bedrock:/<model-name>",
-      "url": "https://github.com/mlflow/mlflow/issues/18435",
-      "created_at": "2025-10-21T21:27:46Z",
-      "labels": [
-        "good first issue",
-        "area/docs",
-        "has-closing-pr"
-      ],
-      "language": "Python",
-      "stars": 24388,
-      "comment_count": 11,
-      "age_days": 125,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "bot150"
-        },
-        "number": 18619,
-        "state": "OPEN",
-        "title": "DOC: Add comprehensive Amazon Nova examples for genai metrics",
-        "url": "https://github.com/mlflow/mlflow/pull/18619"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.65,
-        "confidence": 0.94,
-        "effort": 0.5
       }
     }
   ]
