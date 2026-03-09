@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-09T07:13:22Z",
+  "updated_at": "2026-03-09T13:22:20Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -359,6 +359,83 @@
         "title": "fix(core): handle AbortError when ESC cancels tool execution",
         "url": "https://github.com/google-gemini/gemini-cli/pull/20863"
       },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "grafana/grafana",
+      "number": 119789,
+      "title": "Dashboards: German Translation of the \"Refresh\" Button is overlapping with other buttons",
+      "url": "https://github.com/grafana/grafana/issues/119789",
+      "created_at": "2026-03-08T07:17:52Z",
+      "labels": [
+        "type/bug",
+        "type/ux",
+        "area/dashboard/timerange",
+        "good first issue",
+        "type/regression",
+        "team/grafana-dashboards",
+        "automated-triage"
+      ],
+      "language": "TypeScript",
+      "stars": 72568,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ivanortegaalba"
+        },
+        "number": 1387,
+        "state": "OPEN",
+        "title": "Refresh button width adaptation",
+        "url": "https://github.com/grafana/scenes/pull/1387"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "juice-shop/juice-shop",
+      "number": 3148,
+      "title": "[🐛 ] Swipe-scrolling on mobile not working on click-area of products",
+      "url": "https://github.com/juice-shop/juice-shop/issues/3148",
+      "created_at": "2026-03-08T10:05:31Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "user interface",
+        "design/layout"
+      ],
+      "language": "TypeScript",
+      "stars": 12655,
+      "comment_count": 12,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -1155,9 +1232,9 @@
         "backend"
       ],
       "language": "Java",
-      "stars": 14177,
-      "comment_count": 3,
-      "age_days": 4,
+      "stars": 14179,
+      "comment_count": 4,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4084,6 +4161,37 @@
       }
     },
     {
+      "repo": "external-secrets/external-secrets",
+      "number": 6001,
+      "title": "Documentation implies PushSecret spec.metadata exists when it does not",
+      "url": "https://github.com/external-secrets/external-secrets/issues/6001",
+      "created_at": "2026-02-26T12:11:22Z",
+      "labels": [
+        "good first issue",
+        "area/documentation"
+      ],
+      "language": "Go",
+      "stars": 6455,
+      "comment_count": 5,
+      "age_days": 11,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.65,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "gleam-lang/gleam",
       "number": 5370,
       "title": "Support textDocument/foldingRange in language server",
@@ -4325,6 +4433,37 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "jeffvli/feishin",
+      "number": 1813,
+      "title": "[Bug]: crashes on open",
+      "url": "https://github.com/jeffvli/feishin/issues/1813",
+      "created_at": "2026-03-09T10:47:17Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 7441,
+      "comment_count": 8,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.8,
         "effort": 0.65
       }
     },
@@ -5609,6 +5748,46 @@
       }
     },
     {
+      "repo": "civiform/civiform",
+      "number": 12152,
+      "title": "Bulk-Update of Program Status Triggers Server Error If No Applications Are Selected",
+      "url": "https://github.com/civiform/civiform/issues/12152",
+      "created_at": "2025-12-08T20:22:41Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "up-for-grabs"
+      ],
+      "language": "Java",
+      "stars": 119,
+      "comment_count": 5,
+      "age_days": 90,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "klouds27"
+        },
+        "number": 12928,
+        "state": "OPEN",
+        "title": "Fix bulk status update when no applications are selected",
+        "url": "https://github.com/civiform/civiform/pull/12928"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "conventional-changelog/commitlint",
       "number": 4594,
       "title": "fix: found error with line length in a release commit (inc skip ci)",
@@ -6647,9 +6826,9 @@
         "priority/normal"
       ],
       "language": "Java",
-      "stars": 33164,
-      "comment_count": 15,
-      "age_days": 384,
+      "stars": 33208,
+      "comment_count": 16,
+      "age_days": 388,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6657,8 +6836,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "jonkoops"
+        },
+        "number": 46983,
+        "state": "OPEN",
+        "title": "Detect insecure context for HTTPS iframes embedded in HTTP pages",
+        "url": "https://github.com/keycloak/keycloak/pull/46983"
+      },
       "score": 0.69,
       "score_breakdown": {
         "reach": 0.6,
@@ -6921,187 +7108,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "kornia/kornia",
-      "number": 3564,
-      "title": "[Bug]: Lightglue crashes when adaptive width pruning removes all keypoints",
-      "url": "https://github.com/kornia/kornia/issues/3564",
-      "created_at": "2026-02-12T17:01:27Z",
-      "labels": [
-        "help wanted",
-        "triage"
-      ],
-      "language": "Python",
-      "stars": 11083,
-      "comment_count": 9,
-      "age_days": 10,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "kirandharmar867-maker"
-        },
-        "number": 3565,
-        "state": "OPEN",
-        "title": "Issue: LightGlue crashes when adaptive width pruning removes all keypoints (#3564).",
-        "url": "https://github.com/kornia/kornia/pull/3565"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "kubernetes-sigs/kind",
-      "number": 3795,
-      "title": "Unable to load docker containerd managed images to cluster",
-      "url": "https://github.com/kubernetes-sigs/kind/issues/3795",
-      "created_at": "2024-11-20T11:25:09Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "kind/external"
-      ],
-      "language": "Go",
-      "stars": 15057,
-      "comment_count": 64,
-      "age_days": 469,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "kubernetes/kubeadm",
-      "number": 3289,
-      "title": "remove data_test.go files for various Data objects of phases",
-      "url": "https://github.com/kubernetes/kubeadm/issues/3289",
-      "created_at": "2026-02-18T10:45:16Z",
-      "labels": [
-        "help wanted",
-        "priority/backlog",
-        "kind/cleanup",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 3958,
-      "comment_count": 7,
-      "age_days": 2,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Helion55"
-        },
-        "number": 137124,
-        "state": "OPEN",
-        "title": "Cleanup: Remove data_test.go files from kubeadm phases",
-        "url": "https://github.com/kubernetes/kubernetes/pull/137124"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kubernetes/minikube",
-      "number": 10908,
-      "title": "none with containerd: make it possible to run without the `docker` CLI",
-      "url": "https://github.com/kubernetes/minikube/issues/10908",
-      "created_at": "2021-03-24T07:21:24Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "co/none-driver",
-        "priority/backlog",
-        "lifecycle/frozen",
-        "co/runtime/containerd"
-      ],
-      "language": "Go",
-      "stars": 31523,
-      "comment_count": 23,
-      "age_days": 1799,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "langchain-ai/langchain",
-      "number": 31576,
-      "title": "`handle_event` raises `IndexError` when handler raises `NotImplementedError`",
-      "url": "https://github.com/langchain-ai/langchain/issues/31576",
-      "created_at": "2025-06-12T07:47:39Z",
-      "labels": [
-        "help wanted",
-        "bug",
-        "investigate",
-        "core",
-        "external"
-      ],
-      "language": "Python",
-      "stars": 126911,
-      "comment_count": 6,
-      "age_days": 251,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
       }
     }
   ]
