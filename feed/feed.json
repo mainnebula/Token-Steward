@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-08T18:46:21Z",
+  "updated_at": "2026-03-09T02:49:12Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1144,6 +1144,46 @@
       }
     },
     {
+      "repo": "apache/dolphinscheduler",
+      "number": 18015,
+      "title": "[Bug] Regarding the system parameter $[yyyyMMdd-1], when the system timezone is set to US West (America/Los_Angeles), there is a Daylight Saving Time (DST) transition issue where a day only has 23 hours.",
+      "url": "https://github.com/apache/dolphinscheduler/issues/18015",
+      "created_at": "2026-03-04T07:16:46Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "backend"
+      ],
+      "language": "Java",
+      "stars": 14177,
+      "comment_count": 3,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "iampratap7997-dot"
+        },
+        "number": 18026,
+        "state": "OPEN",
+        "title": "[Fix-18015] [DST ISSUE] Handle DST issue when calculating yyyyMMdd±N time placeholders",
+        "url": "https://github.com/apache/dolphinscheduler/pull/18026"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "bazelbuild/bazel",
       "number": 28732,
       "title": "Allowed to fail, asynchronous`repository_ctx.download` still reports as `pending download` after failure, swallowing the error",
@@ -1421,6 +1461,38 @@
       "language": "Java",
       "stars": 33153,
       "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "langgenius/dify",
+      "number": 33122,
+      "title": "Agent with Stability AI integration throws client-side error on image generation, but images are created successfully (visible in logs)",
+      "url": "https://github.com/langgenius/dify/issues/33122",
+      "created_at": "2026-03-07T14:55:58Z",
+      "labels": [
+        "🐞 bug",
+        "good first issue",
+        "status: accepting prs"
+      ],
+      "language": "TypeScript",
+      "stars": 131648,
+      "comment_count": 4,
       "age_days": 1,
       "is_bug": true,
       "is_feature": false,
@@ -2673,6 +2745,37 @@
       }
     },
     {
+      "repo": "cBioPortal/cbioportal",
+      "number": 11985,
+      "title": "[Bug] Samples with '+' in ID (e.g., PanCK+) are excluded from Plots tab",
+      "url": "https://github.com/cBioPortal/cbioportal/issues/11985",
+      "created_at": "2026-02-23T19:23:44Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 969,
+      "comment_count": 5,
+      "age_days": 13,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "elastic/elasticsearch",
       "number": 138798,
       "title": "ESQL: overflowing division in ROW gives wrong error message",
@@ -3762,6 +3865,48 @@
       }
     },
     {
+      "repo": "apache/airflow",
+      "number": 62021,
+      "title": "API - Improve historical_metrics_data endpoint",
+      "url": "https://github.com/apache/airflow/issues/62021",
+      "created_at": "2026-02-16T14:29:23Z",
+      "labels": [
+        "kind:bug",
+        "area:performance",
+        "area:API",
+        "good first issue",
+        "kind:meta"
+      ],
+      "language": "Python",
+      "stars": 44554,
+      "comment_count": 4,
+      "age_days": 20,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "iharsh02"
+        },
+        "number": 62158,
+        "state": "OPEN",
+        "title": "fix : Improve historical_metrics_data endpoint ",
+        "url": "https://github.com/apache/airflow/pull/62158"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "apache/datafusion",
       "number": 18020,
       "title": "unexpected output for `concat` for arrays",
@@ -3813,9 +3958,9 @@
         "0.97.0"
       ],
       "language": "Python",
-      "stars": 3809,
-      "comment_count": 9,
-      "age_days": 0,
+      "stars": 3810,
+      "comment_count": 10,
+      "age_days": 1,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -3864,37 +4009,6 @@
         "impact": 0.85,
         "confidence": 0.93,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "cBioPortal/cbioportal",
-      "number": 11985,
-      "title": "[Bug] Samples with '+' in ID (e.g., PanCK+) are excluded from Plots tab",
-      "url": "https://github.com/cBioPortal/cbioportal/issues/11985",
-      "created_at": "2026-02-23T19:23:44Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 959,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
       }
     },
     {
@@ -5199,38 +5313,6 @@
         "reach": 0.55,
         "impact": 0.55,
         "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/dolphinscheduler",
-      "number": 18015,
-      "title": "[Bug] Regarding the system parameter $[yyyyMMdd-1], when the system timezone is set to US West (America/Los_Angeles), there is a Daylight Saving Time (DST) transition issue where a day only has 23 hours.",
-      "url": "https://github.com/apache/dolphinscheduler/issues/18015",
-      "created_at": "2026-03-04T07:16:46Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "backend"
-      ],
-      "language": "Java",
-      "stars": 14174,
-      "comment_count": 2,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.6,
-        "confidence": 0.94,
         "effort": 0.65
       }
     },
@@ -7020,83 +7102,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "langchain-ai/langgraph",
-      "number": 6412,
-      "title": "`ToolNode` `ainvoke` freezes if `sse_read_timeout`",
-      "url": "https://github.com/langchain-ai/langgraph/issues/6412",
-      "created_at": "2025-09-08T20:12:35Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Python",
-      "stars": 25650,
-      "comment_count": 8,
-      "age_days": 177,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Br1an67"
-        },
-        "number": 6973,
-        "state": "OPEN",
-        "title": "fix(prebuilt): add timeout parameter to ToolNode for async tool execution",
-        "url": "https://github.com/langchain-ai/langgraph/pull/6973"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "meilisearch/meilisearch",
-      "number": 6123,
-      "title": "Chat causes errors when used with Mistral",
-      "url": "https://github.com/meilisearch/meilisearch/issues/6123",
-      "created_at": "2026-01-26T15:31:07Z",
-      "labels": [
-        "good first issue"
-      ],
-      "language": "Rust",
-      "stars": 55999,
-      "comment_count": 12,
-      "age_days": 24,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "vidit-virmani"
-        },
-        "number": 6170,
-        "state": "OPEN",
-        "title": "Issue 6123: Handles  deserialisation for  Reference Chunk type response from Mistral chat completion",
-        "url": "https://github.com/meilisearch/meilisearch/pull/6170"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.6
       }
     }
   ]
