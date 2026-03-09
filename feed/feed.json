@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-09T02:49:12Z",
+  "updated_at": "2026-03-09T07:13:22Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2712,6 +2712,46 @@
       }
     },
     {
+      "repo": "apache/iceberg",
+      "number": 15493,
+      "title": "Add docs for `iceberg.tables.hadoop.` to set LockManager for HadoopTables",
+      "url": "https://github.com/apache/iceberg/issues/15493",
+      "created_at": "2026-03-02T09:20:22Z",
+      "labels": [
+        "improvement",
+        "good first issue",
+        "docs"
+      ],
+      "language": "Java",
+      "stars": 8607,
+      "comment_count": 5,
+      "age_days": 6,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "anshulbaliga7"
+        },
+        "number": 15520,
+        "state": "OPEN",
+        "title": "Docs: Add HadoopTables lock configuration to Hadoop configuration section",
+        "url": "https://github.com/apache/iceberg/pull/15520"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.65,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "backstage/backstage",
       "number": 32715,
       "title": "Add more details about the `app-visualizer` plugin",
@@ -2862,9 +2902,9 @@
         "v16"
       ],
       "language": "Python",
-      "stars": 9770,
-      "comment_count": 9,
-      "age_days": 0,
+      "stars": 9777,
+      "comment_count": 11,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5312,46 +5352,6 @@
       "score_breakdown": {
         "reach": 0.55,
         "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/iceberg",
-      "number": 15493,
-      "title": "Add docs for `iceberg.tables.hadoop.` to set LockManager for HadoopTables",
-      "url": "https://github.com/apache/iceberg/issues/15493",
-      "created_at": "2026-03-02T09:20:22Z",
-      "labels": [
-        "improvement",
-        "good first issue",
-        "docs"
-      ],
-      "language": "Java",
-      "stars": 8596,
-      "comment_count": 4,
-      "age_days": 4,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "anshulbaliga7"
-        },
-        "number": 15520,
-        "state": "OPEN",
-        "title": "Docs: Add HadoopTables lock configuration to Hadoop configuration section",
-        "url": "https://github.com/apache/iceberg/pull/15520"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.65,
         "confidence": 0.93,
         "effort": 0.65
       }
