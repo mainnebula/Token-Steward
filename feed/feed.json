@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-11T07:06:07Z",
+  "updated_at": "2026-03-11T13:19:22Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -399,46 +399,6 @@
       }
     },
     {
-      "repo": "apache/dolphinscheduler",
-      "number": 18015,
-      "title": "[Bug] Regarding the system parameter $[yyyyMMdd-1], when the system timezone is set to US West (America/Los_Angeles), there is a Daylight Saving Time (DST) transition issue where a day only has 23 hours.",
-      "url": "https://github.com/apache/dolphinscheduler/issues/18015",
-      "created_at": "2026-03-04T07:16:46Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "backend"
-      ],
-      "language": "Java",
-      "stars": 14180,
-      "comment_count": 7,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "iampratap7997-dot"
-        },
-        "number": 18026,
-        "state": "OPEN",
-        "title": "[Fix-18015] [DST ISSUE] Handle DST issue when calculating yyyyMMdd±N time placeholders",
-        "url": "https://github.com/apache/dolphinscheduler/pull/18026"
-      },
-      "score": 0.75,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "google-gemini/gemini-cli",
       "number": 20839,
       "title": "AbortError stack trace displayed when pressing ESC during google_web_search",
@@ -780,6 +740,79 @@
         "impact": 0.7,
         "confidence": 0.93,
         "effort": 0.8
+      }
+    },
+    {
+      "repo": "apache/dolphinscheduler",
+      "number": 18015,
+      "title": "[Bug] Regarding the system parameter $[yyyyMMdd-1], when the system timezone is set to US West (America/Los_Angeles), there is a Daylight Saving Time (DST) transition issue where a day only has 23 hours.",
+      "url": "https://github.com/apache/dolphinscheduler/issues/18015",
+      "created_at": "2026-03-04T07:16:46Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "backend"
+      ],
+      "language": "Java",
+      "stars": 14180,
+      "comment_count": 8,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "iampratap7997-dot"
+        },
+        "number": 18026,
+        "state": "OPEN",
+        "title": "[Fix-18015] [DST ISSUE] Handle DST issue when calculating yyyyMMdd±N time placeholders",
+        "url": "https://github.com/apache/dolphinscheduler/pull/18026"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "apache/skywalking",
+      "number": 13700,
+      "title": "[Bug] clickhouse query failed when client enhance by skywalking-agent",
+      "url": "https://github.com/apache/skywalking/issues/13700",
+      "created_at": "2026-02-12T06:00:52Z",
+      "labels": [
+        "bug",
+        "plugin",
+        "good first issue",
+        "java"
+      ],
+      "language": "Java",
+      "stars": 24741,
+      "comment_count": 8,
+      "age_days": 27,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
       }
     },
     {
@@ -2098,6 +2131,39 @@
         "title": "Update and minimize the JDK for Windows arm64 builds",
         "url": "https://github.com/bazelbuild/bazel/pull/28632"
       },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "bazelbuild/bazel",
+      "number": 28847,
+      "title": "Duplicate timestamp in the output of \"bazel version\"",
+      "url": "https://github.com/bazelbuild/bazel/issues/28847",
+      "created_at": "2026-03-01T20:09:12Z",
+      "labels": [
+        "type: bug",
+        "P3",
+        "team-ExternalDeps",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 25218,
+      "comment_count": 3,
+      "age_days": 9,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
@@ -4899,38 +4965,6 @@
       }
     },
     {
-      "repo": "jaegertracing/jaeger-ui",
-      "number": 3079,
-      "title": "[Bug]: UI Shows Infinite Loading for Non-Existent Trace ID",
-      "url": "https://github.com/jaegertracing/jaeger-ui/issues/3079",
-      "created_at": "2025-09-10T00:28:41Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "good first issue"
-      ],
-      "language": "JavaScript",
-      "stars": 1439,
-      "comment_count": 7,
-      "age_days": 180,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.5
-      }
-    },
-    {
       "repo": "jeffvli/feishin",
       "number": 1813,
       "title": "[Bug]: crashes on open with macOS",
@@ -5460,6 +5494,108 @@
         "impact": 0.55,
         "confidence": 0.89,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "CodeWithCJ/SparkyFitness",
+      "number": 850,
+      "title": "[Feature]: iOS Testflight App - Header Auth for Pangolin",
+      "url": "https://github.com/CodeWithCJ/SparkyFitness/issues/850",
+      "created_at": "2026-03-06T03:44:11Z",
+      "labels": [
+        "enhancement"
+      ],
+      "language": "TypeScript",
+      "stars": 2873,
+      "comment_count": 11,
+      "age_days": 5,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "JanssenProject/jans",
+      "number": 12245,
+      "title": "fix(docs): broken link in the `OpenID Configuration Endpoint`",
+      "url": "https://github.com/JanssenProject/jans/issues/12245",
+      "created_at": "2025-09-29T12:18:19Z",
+      "labels": [
+        "kind-bug",
+        "good first issue",
+        "area-documentation",
+        "effort-1",
+        "triaged",
+        "comp-docs",
+        "hacktoberfest"
+      ],
+      "language": "Java",
+      "stars": 613,
+      "comment_count": 7,
+      "age_days": 163,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.6,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.83,
+        "effort": 0.5
+      }
+    },
+    {
+      "repo": "JanssenProject/jans",
+      "number": 12259,
+      "title": "fix(docs): broken link in the `Session Management`",
+      "url": "https://github.com/JanssenProject/jans/issues/12259",
+      "created_at": "2025-09-30T08:12:28Z",
+      "labels": [
+        "kind-bug",
+        "good first issue",
+        "area-documentation",
+        "effort-1",
+        "triaged",
+        "comp-docs",
+        "hacktoberfest"
+      ],
+      "language": "Java",
+      "stars": 613,
+      "comment_count": 5,
+      "age_days": 162,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.6,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.83,
+        "effort": 0.5
       }
     },
     {
@@ -6961,150 +7097,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "grafana/loki",
-      "number": 4146,
-      "title": "Using backticks in promtail 2.3 log selector fails",
-      "url": "https://github.com/grafana/loki/issues/4146",
-      "created_at": "2021-08-11T22:18:24Z",
-      "labels": [
-        "good first issue",
-        "keepalive",
-        "component/promtail",
-        "type/bug"
-      ],
-      "language": "Go",
-      "stars": 27704,
-      "comment_count": 12,
-      "age_days": 1659,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "CreditWorthy"
-        },
-        "number": 20987,
-        "state": "OPEN",
-        "title": "fix: handle backtick (raw string) literals in Promtail LogQL parser",
-        "url": "https://github.com/grafana/loki/pull/20987"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "grpc/grpc-java",
-      "number": 12667,
-      "title": "gRPC Java - Is it possible to bind listener to an real IP (not 0.0.0.0) - building xDS enabled gRPC Server",
-      "url": "https://github.com/grpc/grpc-java/issues/12667",
-      "created_at": "2026-02-25T02:40:36Z",
-      "labels": [
-        "enhancement",
-        "api-review"
-      ],
-      "language": "Java",
-      "stars": 11991,
-      "comment_count": 5,
-      "age_days": 8,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "helm/helm",
-      "number": 10219,
-      "title": "Unable to roll back as release left in invalid state",
-      "url": "https://github.com/helm/helm/issues/10219",
-      "created_at": "2021-10-06T09:51:35Z",
-      "labels": [
-        "help wanted",
-        "keep open",
-        "bug"
-      ],
-      "language": "Go",
-      "stars": 29512,
-      "comment_count": 8,
-      "age_days": 1597,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "helm/helm",
-      "number": 11310,
-      "title": "Helm supports unix style path in HELM_PLUGINS for loading, but fails when installing new plugins",
-      "url": "https://github.com/helm/helm/issues/11310",
-      "created_at": "2022-09-08T16:01:46Z",
-      "labels": [
-        "help wanted",
-        "bug",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 29572,
-      "comment_count": 7,
-      "age_days": 1274,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "LarytheLord"
-        },
-        "number": 31906,
-        "state": "OPEN",
-        "title": "fix(plugin): install to first HELM_PLUGINS path entry",
-        "url": "https://github.com/helm/helm/pull/31906"
-      },
       "score": 0.69,
       "score_breakdown": {
         "reach": 0.6,
