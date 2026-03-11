@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10T19:01:35Z",
+  "updated_at": "2026-03-11T02:39:19Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -846,6 +846,45 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "helm/helm",
+      "number": 31846,
+      "title": "Incorrect Go pkg import comment causing downstream processing error (kythe)",
+      "url": "https://github.com/helm/helm/issues/31846",
+      "created_at": "2026-02-20T13:46:29Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 29650,
+      "comment_count": 8,
+      "age_days": 18,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ionodeionode"
+        },
+        "number": 31918,
+        "state": "OPEN",
+        "title": "fix: correct Go pkg import comment for kythe compatibility",
+        "url": "https://github.com/helm/helm/pull/31918"
+      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.6,
@@ -2647,6 +2686,41 @@
       }
     },
     {
+      "repo": "PalisadoesFoundation/talawa-admin",
+      "number": 7368,
+      "title": "User Portal - People UI/UX (Shared Component)",
+      "url": "https://github.com/PalisadoesFoundation/talawa-admin/issues/7368",
+      "created_at": "2026-02-18T15:34:19Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "unapproved",
+        "feature request",
+        "no-issue-activity",
+        "ui/ux"
+      ],
+      "language": "TypeScript",
+      "stars": 256,
+      "comment_count": 6,
+      "age_days": 20,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "QuantumNous/new-api",
       "number": 3022,
       "title": "Google Vertex: Gemini频繁报错 400 relay error: `edit` functionDeclaration `parameters.edits.lines` schema didn't specify the schema type field.",
@@ -3285,11 +3359,10 @@
       "created_at": "2025-11-21T09:49:32Z",
       "labels": [
         "bug",
-        "good first issue",
-        "Stale"
+        "good first issue"
       ],
       "language": "Go",
-      "stars": 29654,
+      "stars": 29650,
       "comment_count": 6,
       "age_days": 109,
       "is_bug": true,
@@ -3299,8 +3372,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "SergioChan"
+        },
+        "number": 31920,
+        "state": "OPEN",
+        "title": "fix(action): guard nil RESTClientGetter in CRD install path (dev-v3)",
+        "url": "https://github.com/helm/helm/pull/31920"
+      },
       "score": 0.71,
       "score_breakdown": {
         "reach": 0.6,
@@ -6176,8 +6257,8 @@
         "gh-browse"
       ],
       "language": "Go",
-      "stars": 43076,
-      "comment_count": 5,
+      "stars": 43082,
+      "comment_count": 6,
       "age_days": 78,
       "is_bug": true,
       "is_feature": false,
@@ -6424,9 +6505,9 @@
         "good first issue"
       ],
       "language": "JavaScript",
-      "stars": 243277,
-      "comment_count": 122,
-      "age_days": 2293,
+      "stars": 243877,
+      "comment_count": 123,
+      "age_days": 2309,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6904,36 +6985,6 @@
       }
     },
     {
-      "repo": "helm/helm",
-      "number": 31846,
-      "title": "Incorrect Go pkg import comment causing downstream processing error (kythe)",
-      "url": "https://github.com/helm/helm/issues/31846",
-      "created_at": "2026-02-20T13:46:29Z",
-      "labels": [
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 29586,
-      "comment_count": 8,
-      "age_days": 15,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
       "repo": "hiero-ledger/hiero-sdk-js",
       "number": 3704,
       "title": "[Good First Issue]: fix typo in readme.md",
@@ -7068,39 +7119,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "jni-rs/jni-rs",
-      "number": 730,
-      "title": "bind_java_type should support mapping constructor/method/field errors/exceptions",
-      "url": "https://github.com/jni-rs/jni-rs/issues/730",
-      "created_at": "2026-02-17T23:05:41Z",
-      "labels": [
-        "enhancement",
-        "help wanted :heart:",
-        "good first issue",
-        "macros"
-      ],
-      "language": "Rust",
-      "stars": 1515,
-      "comment_count": 6,
-      "age_days": 4,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     }
   ]
