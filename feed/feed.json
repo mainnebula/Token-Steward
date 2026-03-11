@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-11T13:19:22Z",
+  "updated_at": "2026-03-11T19:04:08Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1420,6 +1420,72 @@
       "stars": 25162,
       "comment_count": 3,
       "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "bazelbuild/bazel",
+      "number": 28953,
+      "title": "Dangling symlinks with custom rules with outputs",
+      "url": "https://github.com/bazelbuild/bazel/issues/28953",
+      "created_at": "2026-03-11T06:17:25Z",
+      "labels": [
+        "type: bug",
+        "P2",
+        "team-ExternalDeps",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 25220,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "bazelbuild/bazel",
+      "number": 28954,
+      "title": "`bazel info --host_platform=@my-mod//:host_platform` fails on bazel 9.x with local path override",
+      "url": "https://github.com/bazelbuild/bazel/issues/28954",
+      "created_at": "2026-03-11T10:37:52Z",
+      "labels": [
+        "type: bug",
+        "P2",
+        "team-ExternalDeps",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 25220,
+      "comment_count": 3,
+      "age_days": 0,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -3772,6 +3838,50 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 45959,
+      "title": "prompt=create Parameter Propagates to Identity Provider Causing 400 Error",
+      "url": "https://github.com/keycloak/keycloak/issues/45959",
+      "created_at": "2026-02-03T10:20:34Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "area/identity-brokering",
+        "team/core-iam",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 33261,
+      "comment_count": 5,
+      "age_days": 36,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "SferaDev"
+        },
+        "number": 46446,
+        "state": "OPEN",
+        "title": "Do not forward prompt=create to external identity providers",
+        "url": "https://github.com/keycloak/keycloak/pull/46446"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "kornia/kornia-rs",
       "number": 682,
       "title": "[Perf]: Investigate restoring opt-level=3 for aarch64 cross-compilation",
@@ -4151,6 +4261,36 @@
       "stars": 68671,
       "comment_count": 7,
       "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "RightNow-AI/openfang",
+      "number": 390,
+      "title": "When will support for Feishu/Lark channels be available?",
+      "url": "https://github.com/RightNow-AI/openfang/issues/390",
+      "created_at": "2026-03-07T04:23:05Z",
+      "labels": [
+        "enhancement"
+      ],
+      "language": "Rust",
+      "stars": 13763,
+      "comment_count": 6,
+      "age_days": 4,
       "is_bug": false,
       "is_feature": true,
       "category": "general",
@@ -5524,6 +5664,43 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "DSpace/DSpace",
+      "number": 11808,
+      "title": "Replace api.creativecommons.org",
+      "url": "https://github.com/DSpace/DSpace/issues/11808",
+      "created_at": "2026-01-28T16:04:57Z",
+      "labels": [
+        "bug",
+        "high priority",
+        "help wanted",
+        "integration: Creative Commons",
+        "affects: 7.x",
+        "affects: 8.x",
+        "affects: main",
+        "affects: 9.x"
+      ],
+      "language": "Java",
+      "stars": 1051,
+      "comment_count": 13,
+      "age_days": 42,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.88,
+        "effort": 0.5
       }
     },
     {
@@ -6921,188 +7098,6 @@
         "impact": 0.6,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "goharbor/harbor-cli",
-      "number": 711,
-      "title": "Fix Lint Issues on main",
-      "url": "https://github.com/goharbor/harbor-cli/issues/711",
-      "created_at": "2026-02-17T14:42:56Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 117,
-      "comment_count": 3,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "adityashekhawat1999"
-        },
-        "number": 713,
-        "state": "OPEN",
-        "title": "fix: pin golangci-lint version to v2.9.0-alpine",
-        "url": "https://github.com/goharbor/harbor-cli/pull/713"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "google-gemini/gemini-cli",
-      "number": 18612,
-      "title": "[VSCode Plugin] Unable to change root directory",
-      "url": "https://github.com/google-gemini/gemini-cli/issues/18612",
-      "created_at": "2026-02-09T08:12:08Z",
-      "labels": [
-        "priority/p2",
-        "area/core",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 96620,
-      "comment_count": 15,
-      "age_days": 24,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "google-gemini/gemini-cli",
-      "number": 18896,
-      "title": "Screen Glitching and Flickering during Scrolling (Windows)",
-      "url": "https://github.com/google-gemini/gemini-cli/issues/18896",
-      "created_at": "2026-02-12T10:53:38Z",
-      "labels": [
-        "priority/p2",
-        "area/core",
-        "🔒 maintainer only",
-        "workstream-rollup",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 97077,
-      "comment_count": 10,
-      "age_days": 25,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "google-gemini/gemini-cli",
-      "number": 20402,
-      "title": "Bug: Stale capture of loadedSettings in onModelChange leads to config corruption after hot-reloads",
-      "url": "https://github.com/google-gemini/gemini-cli/issues/20402",
-      "created_at": "2026-02-26T07:35:22Z",
-      "labels": [
-        "priority/p2",
-        "area/core",
-        "help wanted",
-        "type/bug"
-      ],
-      "language": "TypeScript",
-      "stars": 95804,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "KumarADITHYA123"
-        },
-        "number": 20403,
-        "state": "OPEN",
-        "title": " fix(cli): lazily load settings in onModelChange to prevent stale closure data loss",
-        "url": "https://github.com/google-gemini/gemini-cli/pull/20403"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "grafana/grafana",
-      "number": 20104,
-      "title": "prometheus stats 2.0 does not handle multiple prometheus instances",
-      "url": "https://github.com/grafana/grafana/issues/20104",
-      "created_at": "2019-10-30T13:54:37Z",
-      "labels": [
-        "type/bug",
-        "area/dashboard",
-        "help wanted",
-        "prio/low",
-        "datasource/Prometheus",
-        "needs investigation"
-      ],
-      "language": "TypeScript",
-      "stars": 72173,
-      "comment_count": 9,
-      "age_days": 2302,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
       }
     }
   ]
