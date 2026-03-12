@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12T07:07:22Z",
+  "updated_at": "2026-03-12T13:19:39Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1936,6 +1936,39 @@
       }
     },
     {
+      "repo": "pingcap/tidb",
+      "number": 65543,
+      "title": "after restarting, DDL will be blocked for a while",
+      "url": "https://github.com/pingcap/tidb/issues/65543",
+      "created_at": "2026-01-13T05:16:10Z",
+      "labels": [
+        "type/bug",
+        "good first issue",
+        "severity/minor",
+        "component/ddl"
+      ],
+      "language": "Go",
+      "stars": 39933,
+      "comment_count": 4,
+      "age_days": 58,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "777genius/claude-notifications-go",
       "number": 44,
       "title": "Click to focus does not work Ubuntu 22 and Terminator",
@@ -2880,6 +2913,38 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "metal3-io/baremetal-operator",
+      "number": 3071,
+      "title": "Revisit requeue delays, especially provisionRequeueDelay",
+      "url": "https://github.com/metal3-io/baremetal-operator/issues/3071",
+      "created_at": "2026-03-11T13:53:36Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "triage/accepted"
+      ],
+      "language": "Go",
+      "stars": 729,
+      "comment_count": 7,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -5003,6 +5068,40 @@
       }
     },
     {
+      "repo": "elastic/kibana",
+      "number": 237470,
+      "title": "[Security Solution] Translated Dashboard shown as `Installed` even if the dashboards are deleted from Kibana.",
+      "url": "https://github.com/elastic/kibana/issues/237470",
+      "created_at": "2025-10-03T12:24:48Z",
+      "labels": [
+        "enhancement",
+        "impact:low",
+        "Team:Threat Hunting",
+        "Team: SecuritySolution",
+        "Team:Threat Hunting:Investigations"
+      ],
+      "language": "TypeScript",
+      "stars": 20994,
+      "comment_count": 6,
+      "age_days": 160,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "security",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.7,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "external-secrets/external-secrets",
       "number": 6001,
       "title": "Documentation implies PushSecret spec.metadata exists when it does not",
@@ -5784,6 +5883,38 @@
         "impact": 0.75,
         "confidence": 0.85,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "opensearch-project/data-prepper",
+      "number": 6622,
+      "title": "[BUG] Metric Analytics indices not following naming convention for OpenSearch Dashboards Observability",
+      "url": "https://github.com/opensearch-project/data-prepper/issues/6622",
+      "created_at": "2026-03-09T01:22:21Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "question"
+      ],
+      "language": "Java",
+      "stars": 355,
+      "comment_count": 4,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
       }
     },
     {
@@ -6977,151 +7108,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "dapr/dapr",
-      "number": 7326,
-      "title": "Dapr Sidecar still Ready when \"failed to load components\"",
-      "url": "https://github.com/dapr/dapr/issues/7326",
-      "created_at": "2023-11-16T17:19:40Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "good first issue",
-        "P1",
-        "pinned"
-      ],
-      "language": "Go",
-      "stars": 25569,
-      "comment_count": 7,
-      "age_days": 842,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Br1an67"
-        },
-        "number": 9605,
-        "state": "OPEN",
-        "title": "fix: mark sidecar as not ready when component processing fails",
-        "url": "https://github.com/dapr/dapr/pull/9605"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "elastic/elasticsearch",
-      "number": 142861,
-      "title": "Tasks API | Async Search+ESQL report keep_alive",
-      "url": "https://github.com/elastic/elasticsearch/issues/142861",
-      "created_at": "2026-02-23T14:37:36Z",
-      "labels": [
-        ">enhancement",
-        "good first issue",
-        "Team:Search Foundations",
-        ":Search Foundations/Search"
-      ],
-      "language": "Java",
-      "stars": 76284,
-      "comment_count": 5,
-      "age_days": 11,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "envoyproxy/ai-gateway",
-      "number": 1867,
-      "title": "`/anthropic/v1/messages` should be available for OpenAI schema when `/v1/messages` is available with same API provider",
-      "url": "https://github.com/envoyproxy/ai-gateway/issues/1867",
-      "created_at": "2026-02-14T08:37:07Z",
-      "labels": [
-        "enhancement",
-        "api"
-      ],
-      "language": "Go",
-      "stars": 1389,
-      "comment_count": 7,
-      "age_days": 5,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "eslint/eslint",
-      "number": 20508,
-      "title": "Change Request: update ajv to 8.18.0",
-      "url": "https://github.com/eslint/eslint/issues/20508",
-      "created_at": "2026-02-16T10:03:58Z",
-      "labels": [
-        "enhancement",
-        "core"
-      ],
-      "language": "JavaScript",
-      "stars": 26929,
-      "comment_count": 19,
-      "age_days": 2,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "JohnDennehy101"
-        },
-        "number": 104,
-        "state": "OPEN",
-        "title": "Fix UI audit vulnerability (hide for now as waiting on eslint to resolve on their side)",
-        "url": "https://github.com/williancb-alt/Nausicaas-Global-Green-Initiative/pull/104"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.89,
-        "effort": 0.65
       }
     }
   ]
