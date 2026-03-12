@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-11T19:04:08Z",
+  "updated_at": "2026-03-12T02:45:11Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -216,6 +216,48 @@
         "impact": 0.85,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "aws/aws-cdk",
+      "number": 37221,
+      "title": "aws-dynamodb: TableV2 with DynamoEventSource triggers deprecated TableGrantsProps#policyResource and #encryptedResource warnings during synth",
+      "url": "https://github.com/aws/aws-cdk/issues/37221",
+      "created_at": "2026-03-11T09:18:35Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "p2",
+        "@aws-cdk/aws-dynamodb",
+        "effort/small"
+      ],
+      "language": "TypeScript",
+      "stars": 12690,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ccxbt"
+        },
+        "number": 37233,
+        "state": "OPEN",
+        "title": "fix(dynamodb): remove deprecated TableGrantsProps wiring in TableV2",
+        "url": "https://github.com/aws/aws-cdk/pull/37233"
+      },
+      "score": 0.77,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.8
       }
     },
     {
@@ -618,6 +660,39 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "actualbudget/actual",
+      "number": 6997,
+      "title": "[Bug]: Linking or merging manual and scheduled transactions results in duplicates and incorrect “Due” status",
+      "url": "https://github.com/actualbudget/actual/issues/6997",
+      "created_at": "2026-02-16T11:10:21Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "transactions"
+      ],
+      "language": "TypeScript",
+      "stars": 25437,
+      "comment_count": 6,
+      "age_days": 23,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
       }
     },
     {
@@ -1928,6 +2003,38 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "Scottcjn/Rustchain",
+      "number": 775,
+      "title": "[BOUNTY] Report a bug with reproduction steps (0.5 RTC)",
+      "url": "https://github.com/Scottcjn/Rustchain/issues/775",
+      "created_at": "2026-03-09T19:09:30Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "bounty"
+      ],
+      "language": "Python",
+      "stars": 153,
+      "comment_count": 11,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -3848,13 +3955,14 @@
         "help wanted",
         "area/identity-brokering",
         "team/core-iam",
-        "priority/low",
         "status/auto-expire",
-        "status/auto-bump"
+        "status/auto-bump",
+        "priority/normal",
+        "status/bumped-by-bot"
       ],
       "language": "Java",
-      "stars": 33261,
-      "comment_count": 5,
+      "stars": 33267,
+      "comment_count": 8,
       "age_days": 36,
       "is_bug": true,
       "is_feature": false,
@@ -4152,6 +4260,38 @@
       }
     },
     {
+      "repo": "MalpenZibo/ashell",
+      "number": 524,
+      "title": "[BUG] Desktop not clickable after closing popup",
+      "url": "https://github.com/MalpenZibo/ashell/issues/524",
+      "created_at": "2026-03-10T15:05:12Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "wayland"
+      ],
+      "language": "Rust",
+      "stars": 778,
+      "comment_count": 9,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.6,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.83,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "OWASP/Nest",
       "number": 4107,
       "title": "Improve error handling for missing Algolia configuration",
@@ -4275,6 +4415,48 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "PalisadoesFoundation/talawa-api",
+      "number": 5307,
+      "title": "Fix: Map `invalid_credentials` error code to HTTP 401 in ERROR_CODE_TO_HTTP_STATUS",
+      "url": "https://github.com/PalisadoesFoundation/talawa-api/issues/5307",
+      "created_at": "2026-03-11T02:24:19Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "invalid",
+        "unapproved",
+        "test"
+      ],
+      "language": "TypeScript",
+      "stars": 320,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "yashgoyal0110"
+        },
+        "number": 7459,
+        "state": "OPEN",
+        "title": "fixed incorrect toast message",
+        "url": "https://github.com/PalisadoesFoundation/talawa-admin/pull/7459"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -6939,164 +7121,6 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.89,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "facebook/pyrefly",
-      "number": 2465,
-      "title": "rank items from `__init__.py` lower in symbol search",
-      "url": "https://github.com/facebook/pyrefly/issues/2465",
-      "created_at": "2026-02-19T09:53:24Z",
-      "labels": [
-        "help wanted",
-        "language-server"
-      ],
-      "language": "Rust",
-      "stars": 5393,
-      "comment_count": 5,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "facebook/react",
-      "number": 17355,
-      "title": "\"Should not already be working\" in Firefox after a breakpoint/alert",
-      "url": "https://github.com/facebook/react/issues/17355",
-      "created_at": "2019-11-13T16:35:19Z",
-      "labels": [
-        "Type: Bug",
-        "Difficulty: medium",
-        "Type: Needs Investigation",
-        "good first issue"
-      ],
-      "language": "JavaScript",
-      "stars": 243884,
-      "comment_count": 123,
-      "age_days": 2309,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "flatcar/Flatcar",
-      "number": 2029,
-      "title": "Expand the Flatcar Apps selection [Great for new contributors]",
-      "url": "https://github.com/flatcar/Flatcar/issues/2029",
-      "created_at": "2026-03-05T11:51:34Z",
-      "labels": [
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "Python",
-      "stars": 1107,
-      "comment_count": 5,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "floatpane/matcha",
-      "number": 223,
-      "title": "BUG: Images do not display",
-      "url": "https://github.com/floatpane/matcha/issues/223",
-      "created_at": "2026-03-01T17:27:45Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 148,
-      "comment_count": 3,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "gitbutlerapp/gitbutler",
-      "number": 12670,
-      "title": "`but skill install` automatically selecting the first option, preventing user selection",
-      "url": "https://github.com/gitbutlerapp/gitbutler/issues/12670",
-      "created_at": "2026-03-03T21:17:38Z",
-      "labels": [
-        "bug",
-        "os:windows",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 19758,
-      "comment_count": 2,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.6,
-        "confidence": 0.94,
         "effort": 0.65
       }
     }
