@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13T07:06:07Z",
+  "updated_at": "2026-03-13T13:17:05Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -364,6 +364,46 @@
         "state": "OPEN",
         "title": "fix: [Bug]: is_resumable returns True for CANCELLED sessions, can",
         "url": "https://github.com/aden-hive/hive/pull/6148"
+      },
+      "score": 0.76,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 6306,
+      "title": "[Bug]: Clipboard write in SystemPromptTab lacks error handling and may show false \"Copied\" feedback",
+      "url": "https://github.com/aden-hive/hive/issues/6306",
+      "created_at": "2026-03-13T10:58:08Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 9362,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "akdevv"
+        },
+        "number": 6308,
+        "state": "OPEN",
+        "title": "fix: handle clipboard write errors in SystemPromptTab",
+        "url": "https://github.com/aden-hive/hive/pull/6308"
       },
       "score": 0.76,
       "score_breakdown": {
@@ -1513,6 +1553,40 @@
       }
     },
     {
+      "repo": "apache/airflow",
+      "number": 63374,
+      "title": "DAG-level `on_failure_callback` never fires",
+      "url": "https://github.com/apache/airflow/issues/63374",
+      "created_at": "2026-03-11T19:10:16Z",
+      "labels": [
+        "kind:bug",
+        "good first issue",
+        "area:core",
+        "needs-triage",
+        "affected_version:3.1"
+      ],
+      "language": "Python",
+      "stars": 44621,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "bazelbuild/bazel",
       "number": 28732,
       "title": "Allowed to fail, asynchronous`repository_ctx.download` still reports as `pending download` after failure, swallowing the error",
@@ -2302,6 +2376,48 @@
         "impact": 0.75,
         "confidence": 0.89,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "aws/aws-cdk",
+      "number": 36981,
+      "title": "elasticache-alpha: dailyBackupTime field uses misleading Schedule type",
+      "url": "https://github.com/aws/aws-cdk/issues/36981",
+      "created_at": "2026-02-12T22:00:45Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "p2",
+        "effort/small",
+        "@aws-cdk/aws-scheduler"
+      ],
+      "language": "TypeScript",
+      "stars": 12690,
+      "comment_count": 2,
+      "age_days": 28,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "wrspada02"
+        },
+        "number": 37038,
+        "state": "OPEN",
+        "title": "refactor(elasticache-alpha): make a simpler interface for backupTime prop",
+        "url": "https://github.com/aws/aws-cdk/pull/37038"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.6,
+        "confidence": 0.94,
+        "effort": 0.75
       }
     },
     {
@@ -4486,6 +4602,44 @@
     },
     {
       "repo": "OpenHands/OpenHands",
+      "number": 13268,
+      "title": "feat: SDK-created conversations should inherit SaaS settings (credentials, repo context)",
+      "url": "https://github.com/OpenHands/OpenHands/issues/13268",
+      "created_at": "2026-03-06T14:03:35Z",
+      "labels": [
+        "enhancement"
+      ],
+      "language": "Python",
+      "stars": 69040,
+      "comment_count": 6,
+      "age_days": 6,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "xingyaoww"
+        },
+        "number": 13383,
+        "state": "OPEN",
+        "title": "DRAFT: feat: add v1 API endpoints for SDK settings (LLM config, secrets)",
+        "url": "https://github.com/OpenHands/OpenHands/pull/13383"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "OpenHands/OpenHands",
       "number": 13275,
       "title": "[RFC] OpenHands Automations — Scheduled & Event-Driven Conversations",
       "url": "https://github.com/OpenHands/OpenHands/issues/13275",
@@ -5408,6 +5562,36 @@
         "reach": 0.55,
         "impact": 0.65,
         "confidence": 0.88,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "grpc/grpc-java",
+      "number": 12692,
+      "title": "Add public constants for \"pick_first\" and \"round_robin\" policy names in LoadBalancerRegistry",
+      "url": "https://github.com/grpc/grpc-java/issues/12692",
+      "created_at": "2026-03-13T00:51:57Z",
+      "labels": [
+        "enhancement"
+      ],
+      "language": "Java",
+      "stars": 11990,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
         "effort": 0.65
       }
     },
@@ -6911,173 +7095,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "apache/datafusion",
-      "number": 20766,
-      "title": "EPIC: Making use of NDVs (number of distinct values) in DataFusion",
-      "url": "https://github.com/apache/datafusion/issues/20766",
-      "created_at": "2026-03-07T01:21:52Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Rust",
-      "stars": 8481,
-      "comment_count": 5,
-      "age_days": 2,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "jonathanc-n"
-        },
-        "number": 20789,
-        "state": "OPEN",
-        "title": "feat: Use NDV for equality filter selectivity calculation",
-        "url": "https://github.com/apache/datafusion/pull/20789"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/datafusion",
-      "number": 20773,
-      "title": "Implement cache-efficient partial aggregation by Leis et al",
-      "url": "https://github.com/apache/datafusion/issues/20773",
-      "created_at": "2026-03-07T08:09:02Z",
-      "labels": [
-        "enhancement",
-        "performance"
-      ],
-      "language": "Rust",
-      "stars": 8477,
-      "comment_count": 5,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/iggy",
-      "number": 2776,
-      "title": "[Python SDK] Create `sync-python-version.sh` to keep python versions in sync across folders and docker images",
-      "url": "https://github.com/apache/iggy/issues/2776",
-      "created_at": "2026-02-19T04:20:53Z",
-      "labels": [
-        "good first issue",
-        "CI/CD",
-        "python"
-      ],
-      "language": "Rust",
-      "stars": 3813,
-      "comment_count": 5,
-      "age_days": 2,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "astral-sh/ruff",
-      "number": 18508,
-      "title": "UP045 fixes `Optional[None]` to `None | None`",
-      "url": "https://github.com/astral-sh/ruff/issues/18508",
-      "created_at": "2025-06-06T18:14:40Z",
-      "labels": [
-        "bug",
-        "fixes",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 45845,
-      "comment_count": 6,
-      "age_days": 258,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 28839,
-      "title": "user.bazelrc or .bazelrc.user?",
-      "url": "https://github.com/bazelbuild/bazel/issues/28839",
-      "created_at": "2026-02-28T08:31:31Z",
-      "labels": [
-        "type: documentation (cleanup)",
-        "P2",
-        "team-OSS",
-        "help wanted",
-        "team-Documentation"
-      ],
-      "language": "Java",
-      "stars": 25195,
-      "comment_count": 3,
-      "age_days": 5,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.65,
-        "confidence": 0.89,
-        "effort": 0.65
       }
     }
   ]
