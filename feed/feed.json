@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13T13:17:05Z",
+  "updated_at": "2026-03-13T18:55:12Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -445,6 +445,38 @@
         "impact": 0.75,
         "confidence": 0.89,
         "effort": 0.75
+      }
+    },
+    {
+      "repo": "OpenHands/OpenHands",
+      "number": 13360,
+      "title": "[Bug] [Planning Agent] Plan.md displays code, not a plan",
+      "url": "https://github.com/OpenHands/OpenHands/issues/13360",
+      "created_at": "2026-03-12T14:40:22Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "squasher"
+      ],
+      "language": "Python",
+      "stars": 69062,
+      "comment_count": 6,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -2330,6 +2362,47 @@
       "llm_receptivity": 0.7,
       "action": "fix",
       "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "apache/airflow",
+      "number": 62201,
+      "title": "structlog configuration fails with dict input",
+      "url": "https://github.com/apache/airflow/issues/62201",
+      "created_at": "2026-02-20T03:57:39Z",
+      "labels": [
+        "kind:bug",
+        "area:logging",
+        "good first issue",
+        "area:core"
+      ],
+      "language": "Python",
+      "stars": 44625,
+      "comment_count": 8,
+      "age_days": 21,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "SakshamSinghal20"
+        },
+        "number": 62258,
+        "state": "OPEN",
+        "title": "Fix structlog handling of dict arguments in logging calls",
+        "url": "https://github.com/apache/airflow/pull/62258"
+      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.6,
@@ -6266,6 +6339,36 @@
       }
     },
     {
+      "repo": "IsmaelMartinez/teams-for-linux",
+      "number": 2332,
+      "title": "Help wanted: validate fido2-tools output on Linux (#802)",
+      "url": "https://github.com/IsmaelMartinez/teams-for-linux/issues/2332",
+      "created_at": "2026-03-13T07:40:57Z",
+      "labels": [
+        "help wanted"
+      ],
+      "language": "JavaScript",
+      "stars": 4506,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.55,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "JanssenProject/jans",
       "number": 12245,
       "title": "fix(docs): broken link in the `OpenID Configuration Endpoint`",
@@ -6981,114 +7084,6 @@
       "llm_receptivity": 0.7,
       "action": "fix",
       "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "apache/airflow",
-      "number": 59551,
-      "title": "Regression: DAG import fails with HITLOperator when params have no explicit default (ParamValidationError)",
-      "url": "https://github.com/apache/airflow/issues/59551",
-      "created_at": "2025-12-17T09:20:47Z",
-      "labels": [
-        "kind:bug",
-        "good first issue",
-        "area:core",
-        "affected_version:3.1"
-      ],
-      "language": "Python",
-      "stars": 44616,
-      "comment_count": 11,
-      "age_days": 85,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "apache/airflow",
-      "number": 60172,
-      "title": "Fix handling AirflowFailException `on_retry_callback` ",
-      "url": "https://github.com/apache/airflow/issues/60172",
-      "created_at": "2026-01-06T16:25:49Z",
-      "labels": [
-        "kind:bug",
-        "good first issue",
-        "area:core",
-        "affected_version:3.1"
-      ],
-      "language": "Python",
-      "stars": 44616,
-      "comment_count": 10,
-      "age_days": 65,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "apache/airflow",
-      "number": 61460,
-      "title": "When a DAG Viewer tries to trigger a DAG, the action fails with 403",
-      "url": "https://github.com/apache/airflow/issues/61460",
-      "created_at": "2026-02-04T17:47:22Z",
-      "labels": [
-        "kind:bug",
-        "good first issue",
-        "area:auth",
-        "area:core",
-        "area:UI"
-      ],
-      "language": "Python",
-      "stars": 44569,
-      "comment_count": 10,
-      "age_days": 33,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Abhishekmishra2808"
-        },
-        "number": 61588,
-        "state": "OPEN",
-        "title": " UI: Show clear permission toast for 403 errors on user actions",
-        "url": "https://github.com/apache/airflow/pull/61588"
-      },
       "score": 0.69,
       "score_breakdown": {
         "reach": 0.6,
