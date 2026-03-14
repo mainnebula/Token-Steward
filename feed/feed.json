@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-14T07:00:20Z",
+  "updated_at": "2026-03-14T13:09:06Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3634,7 +3634,7 @@
       "language": "Java",
       "stars": 8624,
       "comment_count": 3,
-      "age_days": 24,
+      "age_days": 25,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5431,6 +5431,36 @@
       }
     },
     {
+      "repo": "crossplane/crossplane",
+      "number": 7206,
+      "title": "Include metadata fields when converting XRD to CRD",
+      "url": "https://github.com/crossplane/crossplane/issues/7206",
+      "created_at": "2026-03-11T09:59:41Z",
+      "labels": [
+        "enhancement"
+      ],
+      "language": "Go",
+      "stars": 11494,
+      "comment_count": 6,
+      "age_days": 3,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "elastic/kibana",
       "number": 237470,
       "title": "[Security Solution] Translated Dashboard shown as `Installed` even if the dashboards are deleted from Kibana.",
@@ -6076,6 +6106,46 @@
       "llm_receptivity": 0.7,
       "action": "fix",
       "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kornia/kornia-rs",
+      "number": 813,
+      "title": "[Bug]: V4L-dependent examples fail to compile on non-Linux platforms (macOS/Windows)",
+      "url": "https://github.com/kornia/kornia-rs/issues/813",
+      "created_at": "2026-03-13T21:14:32Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "triage"
+      ],
+      "language": "Rust",
+      "stars": 604,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "namanguptagit"
+        },
+        "number": 814,
+        "state": "OPEN",
+        "title": "Fixed cross platform build issue.",
+        "url": "https://github.com/kornia/kornia-rs/pull/814"
+      },
       "score": 0.7,
       "score_breakdown": {
         "reach": 0.4,
@@ -7021,79 +7091,6 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5941,
-      "title": "[Bug]: TUI marked as completed in roadmap but deprecated in CLAUDE.md/AGENTS.md — causes contributor confusion",
-      "url": "https://github.com/aden-hive/hive/issues/5941",
-      "created_at": "2026-03-06T18:42:00Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 8905,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.7,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5981,
-      "title": "Docs: Add \"Project Structure\" section to README for easier repository navigation",
-      "url": "https://github.com/aden-hive/hive/issues/5981",
-      "created_at": "2026-03-07T04:55:37Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 8933,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "by22Jy"
-        },
-        "number": 5982,
-        "state": "OPEN",
-        "title": "docs: Add Project Structure section to README",
-        "url": "https://github.com/aden-hive/hive/pull/5982"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.5,
-        "confidence": 0.93,
-        "effort": 0.8
       }
     }
   ]
