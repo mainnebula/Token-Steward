@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-14T18:51:49Z",
+  "updated_at": "2026-03-15T03:19:52Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2642,6 +2642,37 @@
       }
     },
     {
+      "repo": "buildpacks/pack",
+      "number": 2546,
+      "title": "fix: improve uriFromLifecycleVersion to handle all supported OS/arch combinations correctly",
+      "url": "https://github.com/buildpacks/pack/issues/2546",
+      "created_at": "2026-03-10T13:07:30Z",
+      "labels": [
+        "type/bug",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 2893,
+      "comment_count": 4,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "code-charity/youtube",
       "number": 3654,
       "title": "🐞Playback Speed Button doesn't exclusively capture scroll in fullscreen",
@@ -2823,6 +2854,47 @@
         "state": "OPEN",
         "title": "fix-issue-12328: fix commit messages truncation in the CLI",
         "url": "https://github.com/gitbutlerapp/gitbutler/pull/12448"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "ipfs/kubo",
+      "number": 11213,
+      "title": "HTTP Routing V1 provider records contain raw `0.0.0.0` listen addresses instead of resolved interface addresses",
+      "url": "https://github.com/ipfs/kubo/issues/11213",
+      "created_at": "2026-02-26T03:42:13Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "P2",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 16956,
+      "comment_count": 3,
+      "age_days": 16,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "rayspock"
+        },
+        "number": 1115,
+        "state": "OPEN",
+        "title": "feat: support dynamic provider address resolution",
+        "url": "https://github.com/ipfs/boxo/pull/1115"
       },
       "score": 0.72,
       "score_breakdown": {
@@ -6754,6 +6826,38 @@
       }
     },
     {
+      "repo": "TwiN/gatus",
+      "number": 1546,
+      "title": "panic: unknown encoder level when opening web UI",
+      "url": "https://github.com/TwiN/gatus/issues/1546",
+      "created_at": "2026-02-09T17:11:02Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 10394,
+      "comment_count": 5,
+      "age_days": 33,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "WordPress/gutenberg",
       "number": 55318,
       "title": "Media Queries applied to blocks custom css are not working in gutenberg >=16.8.0",
@@ -6978,103 +7082,6 @@
       "stars": 8086,
       "comment_count": 5,
       "age_days": 4,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5411,
-      "title": "[Feature]:  AI agent performance",
-      "url": "https://github.com/aden-hive/hive/issues/5411",
-      "created_at": "2026-02-26T10:14:58Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "good first issue",
-        "size: medium"
-      ],
-      "language": "Python",
-      "stars": 9121,
-      "comment_count": 5,
-      "age_days": 12,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.65,
-        "confidence": 0.88,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5617,
-      "title": "[Feature]: Standardize runtime attention reason codes for debugger compatibility",
-      "url": "https://github.com/aden-hive/hive/issues/5617",
-      "created_at": "2026-03-02T01:43:20Z",
-      "labels": [
-        "enhancement",
-        "size: medium"
-      ],
-      "language": "Python",
-      "stars": 8515,
-      "comment_count": 5,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5920,
-      "title": "[Testing]: Add unit tests for security scanning tools (7 tools)",
-      "url": "https://github.com/aden-hive/hive/issues/5920",
-      "created_at": "2026-03-06T10:16:06Z",
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "size: medium",
-        "testing"
-      ],
-      "language": "Python",
-      "stars": 8905,
-      "comment_count": 5,
-      "age_days": 0,
       "is_bug": false,
       "is_feature": true,
       "category": "general",
