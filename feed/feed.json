@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-15T13:10:01Z",
+  "updated_at": "2026-03-15T18:53:02Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4733,9 +4733,9 @@
         "wayland"
       ],
       "language": "Rust",
-      "stars": 780,
-      "comment_count": 11,
-      "age_days": 2,
+      "stars": 785,
+      "comment_count": 12,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4743,8 +4743,16 @@
       "has_contributing": false,
       "has_ci": true,
       "llm_receptivity": 0.6,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "SimoneFelici"
+        },
+        "number": 13747,
+        "state": "OPEN",
+        "title": "Fix mouse pointer not refocussing after layer surface change",
+        "url": "https://github.com/hyprwm/Hyprland/pull/13747"
+      },
       "score": 0.7,
       "score_breakdown": {
         "reach": 0.5,
@@ -5314,6 +5322,46 @@
       "llm_receptivity": 0.75,
       "action": "fix",
       "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.35,
+        "impact": 0.6,
+        "confidence": 0.93,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 6484,
+      "title": "[Bug]: Print statements in runner/runner.py should use logger for warning messages",
+      "url": "https://github.com/aden-hive/hive/issues/6484",
+      "created_at": "2026-03-15T14:31:13Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 9459,
+      "comment_count": 1,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Jose37456"
+        },
+        "number": 6489,
+        "state": "OPEN",
+        "title": "micro-fix(runner): replace print() with logger.warning() for credential warnings",
+        "url": "https://github.com/aden-hive/hive/pull/6489"
+      },
       "score": 0.7,
       "score_breakdown": {
         "reach": 0.35,
@@ -7056,46 +7104,6 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 4312,
-      "title": "[Bug]: Windows Setup Issue",
-      "url": "https://github.com/aden-hive/hive/issues/4312",
-      "created_at": "2026-02-10T04:08:29Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "size: medium"
-      ],
-      "language": "Python",
-      "stars": 8090,
-      "comment_count": 4,
-      "age_days": 13,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "JamieJiHeonKim"
-        },
-        "number": 5274,
-        "state": "OPEN",
-        "title": "Improve Windows setup reliability with troubleshooting docs and Git Bash pre‑flight check",
-        "url": "https://github.com/aden-hive/hive/pull/5274"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.88,
         "effort": 0.6
       }
     }
