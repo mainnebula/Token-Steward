@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-15T03:19:52Z",
+  "updated_at": "2026-03-15T07:09:53Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2305,6 +2305,38 @@
       }
     },
     {
+      "repo": "aden-hive/hive",
+      "number": 6391,
+      "title": "[Bug]: useMultiSSE does not reconnect when session ID changes",
+      "url": "https://github.com/aden-hive/hive/issues/6391",
+      "created_at": "2026-03-14T18:50:32Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "size: medium"
+      ],
+      "language": "Python",
+      "stars": 9435,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "affaan-m/everything-claude-code",
       "number": 297,
       "title": "Bug: README 'Step 3: Start Using' shows /plan but plugin system requires /everything-claude-code:plan",
@@ -2878,7 +2910,7 @@
       "language": "Go",
       "stars": 16956,
       "comment_count": 3,
-      "age_days": 16,
+      "age_days": 17,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6837,7 +6869,7 @@
         "good first issue"
       ],
       "language": "Go",
-      "stars": 10394,
+      "stars": 10397,
       "comment_count": 5,
       "age_days": 33,
       "is_bug": true,
@@ -7065,38 +7097,6 @@
         "impact": 0.75,
         "confidence": 0.88,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5105,
-      "title": "[Feature]: Add system-level reliability layer to GraphExecutor",
-      "url": "https://github.com/aden-hive/hive/issues/5105",
-      "created_at": "2026-02-19T07:18:38Z",
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "size: medium"
-      ],
-      "language": "Python",
-      "stars": 8086,
-      "comment_count": 5,
-      "age_days": 4,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     }
   ]
