@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T03:22:13Z",
+  "updated_at": "2026-03-16T07:42:49Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -459,9 +459,9 @@
         "squasher"
       ],
       "language": "Python",
-      "stars": 69062,
-      "comment_count": 6,
-      "age_days": 1,
+      "stars": 69187,
+      "comment_count": 7,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -2146,6 +2146,37 @@
       }
     },
     {
+      "repo": "QuantumNous/new-api",
+      "number": 3022,
+      "title": "Google Vertex: Gemini频繁报错 400 relay error: `edit` functionDeclaration `parameters.edits.lines` schema didn't specify the schema type field.",
+      "url": "https://github.com/QuantumNous/new-api/issues/3022",
+      "created_at": "2026-02-26T00:58:39Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 20972,
+      "comment_count": 5,
+      "age_days": 18,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "Scottcjn/Rustchain",
       "number": 775,
       "title": "[BOUNTY] Report a bug with reproduction steps (0.5 RTC)",
@@ -3450,37 +3481,6 @@
         "impact": 0.75,
         "confidence": 0.91,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "QuantumNous/new-api",
-      "number": 3022,
-      "title": "Google Vertex: Gemini频繁报错 400 relay error: `edit` functionDeclaration `parameters.edits.lines` schema didn't specify the schema type field.",
-      "url": "https://github.com/QuantumNous/new-api/issues/3022",
-      "created_at": "2026-02-26T00:58:39Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 18339,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.65
       }
     },
     {
