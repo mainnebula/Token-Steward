@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T07:42:49Z",
+  "updated_at": "2026-03-16T13:44:39Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2939,9 +2939,9 @@
         "good first issue"
       ],
       "language": "Go",
-      "stars": 16956,
-      "comment_count": 3,
-      "age_days": 17,
+      "stars": 16959,
+      "comment_count": 4,
+      "age_days": 18,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6917,9 +6917,9 @@
         "good first issue"
       ],
       "language": "Go",
-      "stars": 10398,
-      "comment_count": 5,
-      "age_days": 33,
+      "stars": 10407,
+      "comment_count": 6,
+      "age_days": 34,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
