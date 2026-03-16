@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T13:44:39Z",
+  "updated_at": "2026-03-16T19:15:58Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6310,9 +6310,9 @@
         "triage"
       ],
       "language": "Rust",
-      "stars": 604,
+      "stars": 608,
       "comment_count": 3,
-      "age_days": 0,
+      "age_days": 2,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
