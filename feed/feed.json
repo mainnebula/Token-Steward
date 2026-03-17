@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-17T02:45:17Z",
+  "updated_at": "2026-03-17T07:15:58Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -525,7 +525,7 @@
         "help wanted"
       ],
       "language": "Java",
-      "stars": 25236,
+      "stars": 25234,
       "comment_count": 6,
       "age_days": 5,
       "is_bug": true,
@@ -6493,6 +6493,48 @@
       }
     },
     {
+      "repo": "mofa-org/mofa",
+      "number": 1301,
+      "title": "Fix clippy warning gate and align workspace formatting baseline",
+      "url": "https://github.com/mofa-org/mofa/issues/1301",
+      "created_at": "2026-03-16T18:33:13Z",
+      "labels": [
+        "good first issue",
+        "rust",
+        "area/infra",
+        "kind/bug",
+        "priority/p2"
+      ],
+      "language": "Rust",
+      "stars": 201,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Bhanudahiyaa"
+        },
+        "number": 1302,
+        "state": "OPEN",
+        "title": "chore(workspace): enforce clippy warnings and format workspace",
+        "url": "https://github.com/mofa-org/mofa/pull/1302"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "objectionary/eo",
       "number": 4879,
       "title": "`ms.mod` inaccurately contains an unused `ms.real` alias",
@@ -7072,39 +7114,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "actualbudget/actual",
-      "number": 6708,
-      "title": "[Tech Debt] Change report date picker options to use date-range picker with quick-select buttons",
-      "url": "https://github.com/actualbudget/actual/issues/6708",
-      "created_at": "2026-01-18T21:45:35Z",
-      "labels": [
-        "good first issue",
-        "help wanted",
-        "user interface",
-        "responsive"
-      ],
-      "language": "TypeScript",
-      "stars": 25019,
-      "comment_count": 5,
-      "age_days": 29,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.6
       }
     }
   ]
