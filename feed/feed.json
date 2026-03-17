@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T19:15:58Z",
+  "updated_at": "2026-03-17T02:45:17Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -525,9 +525,9 @@
         "help wanted"
       ],
       "language": "Java",
-      "stars": 25223,
-      "comment_count": 5,
-      "age_days": 1,
+      "stars": 25236,
+      "comment_count": 6,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -1039,9 +1039,9 @@
         "good first issue"
       ],
       "language": "Python",
-      "stars": 55091,
-      "comment_count": 7,
-      "age_days": 106,
+      "stars": 55929,
+      "comment_count": 9,
+      "age_days": 116,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -1056,7 +1056,7 @@
         },
         "number": 3047,
         "state": "OPEN",
-        "title": "fix: restore parent stack after processing rich table cells",
+        "title": "fix(docx): restore parent stack after processing rich table cells",
         "url": "https://github.com/docling-project/docling/pull/3047"
       },
       "score": 0.74,
