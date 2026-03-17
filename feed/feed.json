@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-17T13:42:18Z",
+  "updated_at": "2026-03-17T19:14:57Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -655,6 +655,49 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 47153,
+      "title": "NullPointerException in IdentityBrokerService.updateFederatedIdentity()  when re-authenticating after SAML IDP deletion and re-addition",
+      "url": "https://github.com/keycloak/keycloak/issues/47153",
+      "created_at": "2026-03-13T14:39:43Z",
+      "labels": [
+        "area/saml",
+        "kind/bug",
+        "help wanted",
+        "team/core-clients",
+        "priority/low",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 33397,
+      "comment_count": 6,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "prakashgrootan"
+        },
+        "number": 47214,
+        "state": "OPEN",
+        "title": "Fix NPE in updateFederatedIdentity after IDP deletion and re-creation",
+        "url": "https://github.com/keycloak/keycloak/pull/47214"
+      },
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -2927,6 +2970,38 @@
       }
     },
     {
+      "repo": "inclusionAI/AReaL",
+      "number": 1046,
+      "title": "[BUG] ResponseValidationError when areal gateway processing openclaw response",
+      "url": "https://github.com/inclusionAI/AReaL/issues/1046",
+      "created_at": "2026-03-17T06:42:25Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Python",
+      "stars": 4817,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "ipfs/kubo",
       "number": 11213,
       "title": "HTTP Routing V1 provider records contain raw `0.0.0.0` listen addresses instead of resolved interface addresses",
@@ -3200,6 +3275,46 @@
       "llm_receptivity": 0.7,
       "action": "fix",
       "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kornia/kornia-rs",
+      "number": 813,
+      "title": "[Bug]: V4L-dependent examples fail to compile on non-Linux platforms (macOS/Windows)",
+      "url": "https://github.com/kornia/kornia-rs/issues/813",
+      "created_at": "2026-03-13T21:14:32Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "triage"
+      ],
+      "language": "Rust",
+      "stars": 608,
+      "comment_count": 6,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "namanguptagit"
+        },
+        "number": 814,
+        "state": "OPEN",
+        "title": "Fixed cross platform build issue.",
+        "url": "https://github.com/kornia/kornia-rs/pull/814"
+      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
@@ -5884,46 +5999,6 @@
       }
     },
     {
-      "repo": "greenpau/caddy-security",
-      "number": 459,
-      "title": "docs: document api endpoints",
-      "url": "https://github.com/greenpau/caddy-security/issues/459",
-      "created_at": "2026-03-05T11:56:02Z",
-      "labels": [
-        "documentation",
-        "good first issue",
-        "api"
-      ],
-      "language": "Go",
-      "stars": 2092,
-      "comment_count": 5,
-      "age_days": 2,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "cnaples79"
-        },
-        "number": 79,
-        "state": "OPEN",
-        "title": "docs: add portal and profile API endpoints",
-        "url": "https://github.com/authcrunch/authcrunch.github.io/pull/79"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.65,
-        "confidence": 0.88,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "grpc/grpc-java",
       "number": 12692,
       "title": "Add public constants for \"pick_first\" and \"round_robin\" policy names in LoadBalancerRegistry",
@@ -6290,46 +6365,6 @@
       "llm_receptivity": 0.7,
       "action": "fix",
       "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 813,
-      "title": "[Bug]: V4L-dependent examples fail to compile on non-Linux platforms (macOS/Windows)",
-      "url": "https://github.com/kornia/kornia-rs/issues/813",
-      "created_at": "2026-03-13T21:14:32Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 608,
-      "comment_count": 3,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "namanguptagit"
-        },
-        "number": 814,
-        "state": "OPEN",
-        "title": "Fixed cross platform build issue.",
-        "url": "https://github.com/kornia/kornia-rs/pull/814"
-      },
       "score": 0.7,
       "score_breakdown": {
         "reach": 0.4,
@@ -7069,45 +7104,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "actualbudget/actual",
-      "number": 1495,
-      "title": "[Bug]: Syncing is broken between multiple tabs in the same browser instance",
-      "url": "https://github.com/actualbudget/actual/issues/1495",
-      "created_at": "2023-08-08T23:47:54Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 25452,
-      "comment_count": 11,
-      "age_days": 946,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "MikesGlitch"
-        },
-        "number": 7172,
-        "state": "OPEN",
-        "title": ":bug: Moving backend to a shared worker",
-        "url": "https://github.com/actualbudget/actual/pull/7172"
-      },
       "score": 0.69,
       "score_breakdown": {
         "reach": 0.6,
