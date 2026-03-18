@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-17T19:14:57Z",
+  "updated_at": "2026-03-18T02:51:58Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -678,7 +678,7 @@
         "status/auto-bump"
       ],
       "language": "Java",
-      "stars": 33397,
+      "stars": 33402,
       "comment_count": 6,
       "age_days": 4,
       "is_bug": true,
@@ -5551,6 +5551,38 @@
       }
     },
     {
+      "repo": "alandtse/alexa_media_player",
+      "number": 3377,
+      "title": "[Bug]: Device is unavailable after adding integratoin",
+      "url": "https://github.com/alandtse/alexa_media_player/issues/3377",
+      "created_at": "2026-02-17T17:58:48Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "question"
+      ],
+      "language": "Python",
+      "stars": 1923,
+      "comment_count": 9,
+      "age_days": 28,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.85,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "apache/airflow",
       "number": 62021,
       "title": "API - Improve historical_metrics_data endpoint",
@@ -6843,6 +6875,39 @@
       }
     },
     {
+      "repo": "MostroP2P/mostro",
+      "number": 601,
+      "title": "Lost recovery after restore-session when invoice payment failed in settled-hold-invoice state",
+      "url": "https://github.com/MostroP2P/mostro/issues/601",
+      "created_at": "2026-02-17T23:07:45Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "High Priority",
+        "area: orders"
+      ],
+      "language": "Rust",
+      "stars": 278,
+      "comment_count": 3,
+      "age_days": 28,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "OpenHands/OpenHands",
       "number": 8061,
       "title": "[Bug]: Stopping the agent with changes in diff view cause the diff view to render the \"waiting for runtime\" message + diffs",
@@ -7032,71 +7097,6 @@
       "age_days": 882,
       "is_bug": true,
       "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
-      }
-    },
-    {
-      "repo": "activist-org/activist",
-      "number": 1624,
-      "title": "No events filter and view switching functionality on mobile",
-      "url": "https://github.com/activist-org/activist/issues/1624",
-      "created_at": "2025-10-24T17:19:50Z",
-      "labels": [
-        "bug",
-        "feature",
-        "help wanted",
-        "frontend"
-      ],
-      "language": "TypeScript",
-      "stars": 620,
-      "comment_count": 6,
-      "age_days": 133,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "actualbudget/actual",
-      "number": 1062,
-      "title": "Scheduled transactions don't handle 29th/30th/31st dates appropriately",
-      "url": "https://github.com/actualbudget/actual/issues/1062",
-      "created_at": "2023-05-25T15:09:25Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "schedules"
-      ],
-      "language": "TypeScript",
-      "stars": 25192,
-      "comment_count": 11,
-      "age_days": 1009,
-      "is_bug": true,
-      "is_feature": false,
       "category": "general",
       "surface": "bugfix",
       "has_contributing": true,
