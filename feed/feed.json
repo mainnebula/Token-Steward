@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-18T13:43:50Z",
+  "updated_at": "2026-03-18T19:14:08Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4414,6 +4414,37 @@
       }
     },
     {
+      "repo": "jreleaser/jreleaser",
+      "number": 2090,
+      "title": "[assemble] JVM Options not added to jlink launcher",
+      "url": "https://github.com/jreleaser/jreleaser/issues/2090",
+      "created_at": "2026-03-18T07:36:52Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 1210,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.85,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "keycloak/keycloak",
       "number": 44314,
       "title": "Missing/Invalid session after token exchange",
@@ -4662,6 +4693,40 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.5
+      }
+    },
+    {
+      "repo": "quantumlib/Cirq",
+      "number": 7941,
+      "title": "`is_native_neutral_atom_gate` crashes with `TypeError` when checking unhashable gates",
+      "url": "https://github.com/quantumlib/Cirq/issues/7941",
+      "created_at": "2026-03-09T03:00:50Z",
+      "labels": [
+        "good first issue",
+        "no QC knowledge needed",
+        "kind/bug-report",
+        "triage/accepted",
+        "area/gates"
+      ],
+      "language": "Python",
+      "stars": 4891,
+      "comment_count": 4,
+      "age_days": 9,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
       }
     },
     {
@@ -7061,73 +7126,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "PalisadoesFoundation/talawa-api",
-      "number": 5226,
-      "title": "Add rate limiting for password change operations",
-      "url": "https://github.com/PalisadoesFoundation/talawa-api/issues/5226",
-      "created_at": "2026-02-14T15:32:12Z",
-      "labels": [
-        "documentation",
-        "good first issue",
-        "unapproved",
-        "security",
-        "no-issue-activity"
-      ],
-      "language": "TypeScript",
-      "stars": 321,
-      "comment_count": 5,
-      "age_days": 14,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.65,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "PipedreamHQ/pipedream",
-      "number": 20264,
-      "title": "[APP] Vibe Prospecting",
-      "url": "https://github.com/PipedreamHQ/pipedream/issues/20264",
-      "created_at": "2026-03-12T15:35:47Z",
-      "labels": [
-        "enhancement",
-        "app",
-        "triaged",
-        "Outreach"
-      ],
-      "language": "JavaScript",
-      "stars": 11153,
-      "comment_count": 5,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.89,
-        "effort": 0.65
       }
     }
   ]
