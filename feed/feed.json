@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-18T07:13:30Z",
+  "updated_at": "2026-03-18T13:43:50Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5664,6 +5664,37 @@
       }
     },
     {
+      "repo": "apache/seatunnel",
+      "number": 10584,
+      "title": "[Bug] [hudi sink] hudi sink java client not support struct field type where is null",
+      "url": "https://github.com/apache/seatunnel/issues/10584",
+      "created_at": "2026-03-10T01:09:13Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 9179,
+      "comment_count": 5,
+      "age_days": 8,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.85,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "autokey/autokey",
       "number": 1082,
       "title": "Possible fix for issues in debian/build.sh",
@@ -5759,6 +5790,47 @@
         "impact": 0.65,
         "confidence": 0.93,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "collective/icalendar",
+      "number": 1277,
+      "title": "CI doesn't correctly report vale errors",
+      "url": "https://github.com/collective/icalendar/issues/1277",
+      "created_at": "2026-03-15T10:17:55Z",
+      "labels": [
+        "doc",
+        "help wanted",
+        "good first issue",
+        "hacktoberfest"
+      ],
+      "language": "Python",
+      "stars": 1126,
+      "comment_count": 6,
+      "age_days": 3,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Stradivariuskein"
+        },
+        "number": 1282,
+        "state": "OPEN",
+        "title": "ci: fix vale makefile target to fail github actions workflow",
+        "url": "https://github.com/collective/icalendar/pull/1282"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.65,
+        "confidence": 0.88,
+        "effort": 0.65
       }
     },
     {
@@ -6875,6 +6947,49 @@
       }
     },
     {
+      "repo": "Kilo-Org/kilocode",
+      "number": 7216,
+      "title": "Enter key triggers form submission while using Chinese IME to confirm English input",
+      "url": "https://github.com/Kilo-Org/kilocode/issues/7216",
+      "created_at": "2026-03-18T08:43:22Z",
+      "labels": [
+        "good first issue",
+        "user-interface",
+        "frontend",
+        "kilo-auto-fix",
+        "kilo-triaged",
+        "bug"
+      ],
+      "language": "TypeScript",
+      "stars": 16856,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Bingtagui404"
+        },
+        "number": 7242,
+        "state": "OPEN",
+        "title": "fix: add !event.isComposing guard to all Enter key handlers",
+        "url": "https://github.com/Kilo-Org/kilocode/pull/7242"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.6,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "MostroP2P/mostro",
       "number": 601,
       "title": "Lost recovery after restore-session when invoice payment failed in settled-hold-invoice state",
@@ -7013,103 +7128,6 @@
         "impact": 0.55,
         "confidence": 0.89,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "SkriptLang/Skript",
-      "number": 8474,
-      "title": "severe error when hashing string as md5 in effect command",
-      "url": "https://github.com/SkriptLang/Skript/issues/8474",
-      "created_at": "2026-03-02T17:53:47Z",
-      "labels": [
-        "bug",
-        "priority: medium",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 1276,
-      "comment_count": 3,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.85,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "TwiN/gatus",
-      "number": 1546,
-      "title": "panic: unknown encoder level when opening web UI",
-      "url": "https://github.com/TwiN/gatus/issues/1546",
-      "created_at": "2026-02-09T17:11:02Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 10407,
-      "comment_count": 6,
-      "age_days": 34,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "WordPress/gutenberg",
-      "number": 55318,
-      "title": "Media Queries applied to blocks custom css are not working in gutenberg >=16.8.0",
-      "url": "https://github.com/WordPress/gutenberg/issues/55318",
-      "created_at": "2023-10-12T16:50:17Z",
-      "labels": [
-        "[Type] Bug",
-        "Good First Issue",
-        "[Feature] Custom Editor Styles",
-        "CSS Styling"
-      ],
-      "language": "JavaScript",
-      "stars": 11575,
-      "comment_count": 10,
-      "age_days": 882,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
       }
     }
   ]
