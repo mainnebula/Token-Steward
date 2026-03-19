@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-18T19:14:08Z",
+  "updated_at": "2026-03-19T02:52:48Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3851,9 +3851,9 @@
         "good first issue"
       ],
       "language": "Java",
-      "stars": 8625,
-      "comment_count": 3,
-      "age_days": 25,
+      "stars": 8636,
+      "comment_count": 4,
+      "age_days": 29,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -3861,16 +3861,8 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "moomindani"
-        },
-        "number": 15558,
-        "state": "OPEN",
-        "title": "Core: fix propertiesWithPrefix to strip prefix literally, not as regex",
-        "url": "https://github.com/apache/iceberg/pull/15558"
-      },
+      "action": "fix",
+      "pr": null,
       "score": 0.71,
       "score_breakdown": {
         "reach": 0.45,
@@ -4012,6 +4004,40 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "code-charity/youtube",
+      "number": 3664,
+      "title": "🐞Theatre mode is offset as if the sidebar is still there, even though sidebar is blank",
+      "url": "https://github.com/code-charity/youtube/issues/3664",
+      "created_at": "2026-03-04T11:58:41Z",
+      "labels": [
+        "Bug",
+        "Feature request",
+        "help wanted",
+        "good first issue",
+        "up-for-grabs"
+      ],
+      "language": "JavaScript",
+      "stars": 4264,
+      "comment_count": 3,
+      "age_days": 14,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
         "effort": 0.6
       }
     },
@@ -7085,47 +7111,6 @@
         "impact": 0.75,
         "confidence": 0.91,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "OpenHands/OpenHands",
-      "number": 8061,
-      "title": "[Bug]: Stopping the agent with changes in diff view cause the diff view to render the \"waiting for runtime\" message + diffs",
-      "url": "https://github.com/OpenHands/OpenHands/issues/8061",
-      "created_at": "2025-04-24T15:09:36Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "Stale",
-        "changes tab"
-      ],
-      "language": "Python",
-      "stars": 68044,
-      "comment_count": 13,
-      "age_days": 303,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "majiayu000"
-        },
-        "number": 12606,
-        "state": "OPEN",
-        "title": "fix(frontend): preserve diff view when agent is stopped",
-        "url": "https://github.com/OpenHands/OpenHands/pull/12606"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
       }
     }
   ]
