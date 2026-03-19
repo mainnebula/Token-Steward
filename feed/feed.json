@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-19T07:08:35Z",
+  "updated_at": "2026-03-19T13:24:07Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -881,6 +881,46 @@
         "impact": 0.65,
         "confidence": 0.93,
         "effort": 0.75
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 4816,
+      "title": "[Bug]: Unguarded 'import resend' in email_tool crashes entire tool registration`",
+      "url": "https://github.com/aden-hive/hive/issues/4816",
+      "created_at": "2026-02-14T15:12:29Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 9619,
+      "comment_count": 7,
+      "age_days": 32,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Niyam-Jain"
+        },
+        "number": 6590,
+        "state": "OPEN",
+        "title": "fix: guard optional resend import in email_tool to prevent registration crash",
+        "url": "https://github.com/aden-hive/hive/pull/6590"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -4567,9 +4607,9 @@
         "help wanted"
       ],
       "language": "Java",
-      "stars": 1211,
-      "comment_count": 5,
-      "age_days": 0,
+      "stars": 1210,
+      "comment_count": 8,
+      "age_days": 1,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7080,42 +7120,6 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "JanssenProject/jans",
-      "number": 12245,
-      "title": "fix(docs): broken link in the `OpenID Configuration Endpoint`",
-      "url": "https://github.com/JanssenProject/jans/issues/12245",
-      "created_at": "2025-09-29T12:18:19Z",
-      "labels": [
-        "kind-bug",
-        "good first issue",
-        "area-documentation",
-        "effort-1",
-        "triaged",
-        "comp-docs",
-        "hacktoberfest"
-      ],
-      "language": "Java",
-      "stars": 613,
-      "comment_count": 7,
-      "age_days": 163,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.6,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.83,
-        "effort": 0.5
       }
     }
   ]
