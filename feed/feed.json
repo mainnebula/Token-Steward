@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T13:17:32Z",
+  "updated_at": "2026-03-20T19:01:56Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1586,9 +1586,9 @@
         "team/core-clients"
       ],
       "language": "Java",
-      "stars": 33451,
+      "stars": 33453,
       "comment_count": 5,
-      "age_days": 17,
+      "age_days": 18,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -2546,6 +2546,37 @@
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 6569,
+      "title": "[Bug]: Conversation messages duplicate each time an agent tab is revisited",
+      "url": "https://github.com/aden-hive/hive/issues/6569",
+      "created_at": "2026-03-17T22:36:49Z",
+      "labels": [
+        "bug",
+        "enhancement"
+      ],
+      "language": "Python",
+      "stars": 9680,
+      "comment_count": 3,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": true,
       "category": "general",
       "surface": "bugfix",
       "has_contributing": true,
@@ -3999,6 +4030,48 @@
       }
     },
     {
+      "repo": "apache/airflow",
+      "number": 63934,
+      "title": "Control buttons and headers disappear when logs are longer than browser window",
+      "url": "https://github.com/apache/airflow/issues/63934",
+      "created_at": "2026-03-19T14:43:20Z",
+      "labels": [
+        "kind:bug",
+        "good first issue",
+        "area:core",
+        "area:UI",
+        "needs-triage"
+      ],
+      "language": "Python",
+      "stars": 44721,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Revanth14"
+        },
+        "number": 64013,
+        "state": "OPEN",
+        "title": "Fix layout overflow issue in DAG Details Logs tab",
+        "url": "https://github.com/apache/airflow/pull/64013"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "apache/iceberg",
       "number": 14874,
       "title": "[Docs] Schema Doc is Missing V3 Types",
@@ -5010,6 +5083,44 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "DSpace/DSpace",
+      "number": 11516,
+      "title": "Performance issue when accessing `/mydspace?configuration=workspace`",
+      "url": "https://github.com/DSpace/DSpace/issues/11516",
+      "created_at": "2025-11-05T11:20:28Z",
+      "labels": [
+        "bug",
+        "duplicate",
+        "configuration",
+        "component: submission",
+        "performance / caching",
+        "help wanted",
+        "affects: 7.x",
+        "affects: 8.x",
+        "affects: 9.x"
+      ],
+      "language": "Java",
+      "stars": 1051,
+      "comment_count": 5,
+      "age_days": 135,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.5
       }
     },
     {
@@ -7017,110 +7128,6 @@
         "reach": 0.4,
         "impact": 0.75,
         "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "objectionary/eo",
-      "number": 4879,
-      "title": "`ms.mod` inaccurately contains an unused `ms.real` alias",
-      "url": "https://github.com/objectionary/eo/issues/4879",
-      "created_at": "2026-02-15T06:41:06Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "good-title"
-      ],
-      "language": "Java",
-      "stars": 1332,
-      "comment_count": 13,
-      "age_days": 9,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Akash073-hub"
-        },
-        "number": 4880,
-        "state": "OPEN",
-        "title": "Remove unused ms.real alias from mod.eo",
-        "url": "https://github.com/objectionary/eo/pull/4880"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.85,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "opensearch-project/data-prepper",
-      "number": 6622,
-      "title": "[BUG] Metric Analytics indices not following naming convention for OpenSearch Dashboards Observability",
-      "url": "https://github.com/opensearch-project/data-prepper/issues/6622",
-      "created_at": "2026-03-09T01:22:21Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "question"
-      ],
-      "language": "Java",
-      "stars": 355,
-      "comment_count": 4,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "CherryHQ/cherry-studio",
-      "number": 13014,
-      "title": "[Discussion]: Skills?",
-      "url": "https://github.com/CherryHQ/cherry-studio/issues/13014",
-      "created_at": "2026-02-24T07:58:07Z",
-      "labels": [
-        "help wanted",
-        "discussion",
-        "Assistant"
-      ],
-      "language": "TypeScript",
-      "stars": 40150,
-      "comment_count": 8,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.89,
         "effort": 0.65
       }
     }
