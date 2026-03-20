@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T07:06:46Z",
+  "updated_at": "2026-03-20T13:17:32Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1300,6 +1300,37 @@
       }
     },
     {
+      "repo": "gitbutlerapp/gitbutler",
+      "number": 12748,
+      "title": "`but setup` displaces hooks owned by hook managers (prek, pre-commit, husky) without detecting them, and provides no escape hatch",
+      "url": "https://github.com/gitbutlerapp/gitbutler/issues/12748",
+      "created_at": "2026-03-10T08:28:39Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 19926,
+      "comment_count": 5,
+      "age_days": 10,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "helm/helm",
       "number": 31846,
       "title": "Incorrect Go pkg import comment causing downstream processing error (kythe)",
@@ -1524,6 +1555,40 @@
       "stars": 33128,
       "comment_count": 7,
       "age_days": 9,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 46745,
+      "title": "Enhance network validation for SAML metadata descriptor URLs",
+      "url": "https://github.com/keycloak/keycloak/issues/46745",
+      "created_at": "2026-03-02T17:47:13Z",
+      "labels": [
+        "area/saml",
+        "kind/bug",
+        "priority/important",
+        "help wanted",
+        "team/core-clients"
+      ],
+      "language": "Java",
+      "stars": 33451,
+      "comment_count": 5,
+      "age_days": 17,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -1901,37 +1966,6 @@
       "stars": 30922,
       "comment_count": 4,
       "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "gitbutlerapp/gitbutler",
-      "number": 12748,
-      "title": "`but setup` displaces hooks owned by hook managers (prek, pre-commit, husky) without detecting them, and provides no escape hatch",
-      "url": "https://github.com/gitbutlerapp/gitbutler/issues/12748",
-      "created_at": "2026-03-10T08:28:39Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 19836,
-      "comment_count": 4,
-      "age_days": 0,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4165,6 +4199,40 @@
       }
     },
     {
+      "repo": "camunda/camunda-modeler",
+      "number": 5754,
+      "title": "Gateway outcoming flow text is pink (invalid target) after next operation",
+      "url": "https://github.com/camunda/camunda-modeler/issues/5754",
+      "created_at": "2026-03-17T17:17:09Z",
+      "labels": [
+        "bug",
+        "ux",
+        "backlog",
+        "good first issue",
+        "spring cleaning"
+      ],
+      "language": "JavaScript",
+      "stars": 1656,
+      "comment_count": 5,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.85,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "code-charity/youtube",
       "number": 3664,
       "title": "🐞Theatre mode is offset as if the sidebar is still there, even though sidebar is blank",
@@ -6351,6 +6419,37 @@
       }
     },
     {
+      "repo": "grafana/mimir",
+      "number": 13476,
+      "title": "Bug: grafana/mimir:3.0 -server.path-prefix / server.http_path_prefix breaks static assets and redirects",
+      "url": "https://github.com/grafana/mimir/issues/13476",
+      "created_at": "2025-11-12T10:09:35Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 4993,
+      "comment_count": 5,
+      "age_days": 128,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "grpc/grpc-java",
       "number": 12692,
       "title": "Add public constants for \"pick_first\" and \"round_robin\" policy names in LoadBalancerRegistry",
@@ -7022,103 +7121,6 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.89,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "CodeWithCJ/SparkyFitness",
-      "number": 850,
-      "title": "[Feature]: iOS Testflight App - Header Auth for Pangolin",
-      "url": "https://github.com/CodeWithCJ/SparkyFitness/issues/850",
-      "created_at": "2026-03-06T03:44:11Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "TypeScript",
-      "stars": 2873,
-      "comment_count": 11,
-      "age_days": 5,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "DSpace/DSpace",
-      "number": 11808,
-      "title": "Replace api.creativecommons.org",
-      "url": "https://github.com/DSpace/DSpace/issues/11808",
-      "created_at": "2026-01-28T16:04:57Z",
-      "labels": [
-        "bug",
-        "high priority",
-        "help wanted",
-        "integration: Creative Commons",
-        "affects: 7.x",
-        "affects: 8.x",
-        "affects: main",
-        "affects: 9.x"
-      ],
-      "language": "Java",
-      "stars": 1051,
-      "comment_count": 13,
-      "age_days": 42,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.88,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "IsmaelMartinez/teams-for-linux",
-      "number": 2332,
-      "title": "Help wanted: validate fido2-tools output on Linux (#802)",
-      "url": "https://github.com/IsmaelMartinez/teams-for-linux/issues/2332",
-      "created_at": "2026-03-13T07:40:57Z",
-      "labels": [
-        "help wanted"
-      ],
-      "language": "JavaScript",
-      "stars": 4507,
-      "comment_count": 7,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.93,
         "effort": 0.65
       }
     }
