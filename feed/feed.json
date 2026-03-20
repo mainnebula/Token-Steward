@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-19T19:09:30Z",
+  "updated_at": "2026-03-20T02:43:57Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -445,6 +445,49 @@
         "impact": 0.75,
         "confidence": 0.89,
         "effort": 0.75
+      }
+    },
+    {
+      "repo": "Kilo-Org/kilocode",
+      "number": 7216,
+      "title": "Enter key triggers form submission while using Chinese IME to confirm English input",
+      "url": "https://github.com/Kilo-Org/kilocode/issues/7216",
+      "created_at": "2026-03-18T08:43:22Z",
+      "labels": [
+        "good first issue",
+        "user-interface",
+        "frontend",
+        "kilo-auto-fix",
+        "kilo-triaged",
+        "bug"
+      ],
+      "language": "TypeScript",
+      "stars": 16939,
+      "comment_count": 8,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Bingtagui404"
+        },
+        "number": 7242,
+        "state": "OPEN",
+        "title": "fix: add !event.isComposing guard to all Enter key handlers",
+        "url": "https://github.com/Kilo-Org/kilocode/pull/7242"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -1593,49 +1636,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "Kilo-Org/kilocode",
-      "number": 7216,
-      "title": "Enter key triggers form submission while using Chinese IME to confirm English input",
-      "url": "https://github.com/Kilo-Org/kilocode/issues/7216",
-      "created_at": "2026-03-18T08:43:22Z",
-      "labels": [
-        "good first issue",
-        "user-interface",
-        "frontend",
-        "kilo-auto-fix",
-        "kilo-triaged",
-        "bug"
-      ],
-      "language": "TypeScript",
-      "stars": 16899,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Bingtagui404"
-        },
-        "number": 7242,
-        "state": "OPEN",
-        "title": "fix: add !event.isComposing guard to all Enter key handlers",
-        "url": "https://github.com/Kilo-Org/kilocode/pull/7242"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
       }
     },
     {
