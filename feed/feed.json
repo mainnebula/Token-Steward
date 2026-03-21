@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T19:01:56Z",
+  "updated_at": "2026-03-21T02:37:07Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1310,8 +1310,8 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 19926,
-      "comment_count": 5,
+      "stars": 19929,
+      "comment_count": 7,
       "age_days": 10,
       "is_bug": true,
       "is_feature": false,
