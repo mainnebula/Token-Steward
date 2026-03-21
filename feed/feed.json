@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-21T13:05:53Z",
+  "updated_at": "2026-03-21T18:48:43Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4749,8 +4749,8 @@
       ],
       "language": "Java",
       "stars": 1210,
-      "comment_count": 8,
-      "age_days": 1,
+      "comment_count": 11,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5449,6 +5449,36 @@
       ],
       "language": "Python",
       "stars": 68671,
+      "comment_count": 7,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "OpenHands/OpenHands",
+      "number": 13518,
+      "title": "[Feature]: Add Support for Switching Models via llama.cpp Compatible API",
+      "url": "https://github.com/OpenHands/OpenHands/issues/13518",
+      "created_at": "2026-03-21T17:00:47Z",
+      "labels": [
+        "enhancement"
+      ],
+      "language": "Python",
+      "stars": 69501,
       "comment_count": 7,
       "age_days": 0,
       "is_bug": false,
@@ -6462,6 +6492,37 @@
       }
     },
     {
+      "repo": "gleam-lang/gleam",
+      "number": 5490,
+      "title": "Emoji descriptions cause Hex publication to fail",
+      "url": "https://github.com/gleam-lang/gleam/issues/5490",
+      "created_at": "2026-03-20T18:06:35Z",
+      "labels": [
+        "discussion",
+        "good first issue"
+      ],
+      "language": "Rust",
+      "stars": 21289,
+      "comment_count": 7,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "golang/go",
       "number": 77541,
       "title": "cmd/compile: riscv instruction bloat in hot loops due to large stack frame offsets",
@@ -7044,90 +7105,6 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "layer5io/layer5",
-      "number": 6924,
-      "title": "[Performance] Improve Home Page Performance (layer5.io)",
-      "url": "https://github.com/layer5io/layer5/issues/6924",
-      "created_at": "2025-09-29T06:23:36Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "hacktoberfest",
-        "framework/gatsby",
-        "type/performance"
-      ],
-      "language": "JavaScript",
-      "stars": 1019,
-      "comment_count": 6,
-      "age_days": 162,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "YadavAkhileshh"
-        },
-        "number": 7299,
-        "state": "OPEN",
-        "title": "fix: optimize desktop homepage performance",
-        "url": "https://github.com/layer5io/layer5/pull/7299"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "mofa-org/mofa",
-      "number": 1301,
-      "title": "Fix clippy warning gate and align workspace formatting baseline",
-      "url": "https://github.com/mofa-org/mofa/issues/1301",
-      "created_at": "2026-03-16T18:33:13Z",
-      "labels": [
-        "good first issue",
-        "rust",
-        "area/infra",
-        "kind/bug",
-        "priority/p2"
-      ],
-      "language": "Rust",
-      "stars": 201,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Bhanudahiyaa"
-        },
-        "number": 1302,
-        "state": "OPEN",
-        "title": "chore(workspace): enforce clippy warnings and format workspace",
-        "url": "https://github.com/mofa-org/mofa/pull/1302"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
         "effort": 0.65
       }
     }
