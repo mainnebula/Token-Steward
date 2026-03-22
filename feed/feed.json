@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-22T07:01:11Z",
+  "updated_at": "2026-03-22T13:08:22Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6321,6 +6321,49 @@
       }
     },
     {
+      "repo": "directus/directus",
+      "number": 26766,
+      "title": "Export to CSV, Select All Fields includes alias fields",
+      "url": "https://github.com/directus/directus/issues/26766",
+      "created_at": "2026-02-27T14:09:04Z",
+      "labels": [
+        "Bug",
+        "Good First Issue",
+        "Studio",
+        "Content Workflow",
+        "Low Impact",
+        "Med Reach"
+      ],
+      "language": "TypeScript",
+      "stars": 34542,
+      "comment_count": 4,
+      "age_days": 22,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "tysoncung"
+        },
+        "number": 26775,
+        "state": "OPEN",
+        "title": "fix(app): exclude alias fields from export Select All",
+        "url": "https://github.com/directus/directus/pull/26775"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "elastic/kibana",
       "number": 237470,
       "title": "[Security Solution] Translated Dashboard shown as `Installed` even if the dashboards are deleted from Kibana.",
@@ -6504,6 +6547,36 @@
       "language": "Rust",
       "stars": 21289,
       "comment_count": 7,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "gleam-lang/gleam",
+      "number": 5492,
+      "title": "task: make enumerations of enum's possible values more consistent",
+      "url": "https://github.com/gleam-lang/gleam/issues/5492",
+      "created_at": "2026-03-20T18:13:59Z",
+      "labels": [
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 21291,
+      "comment_count": 5,
       "age_days": 1,
       "is_bug": false,
       "is_feature": false,
@@ -7026,79 +7099,6 @@
         "state": "OPEN",
         "title": "avoid unnecessary copy when converting ORT outputs to torch tensors",
         "url": "https://github.com/kornia/kornia/pull/3598"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kysely-org/kysely",
-      "number": 1722,
-      "title": "`query` types incompatible with `mysql2@v3.18.2`",
-      "url": "https://github.com/kysely-org/kysely/issues/1722",
-      "created_at": "2026-02-27T20:40:06Z",
-      "labels": [
-        "good first issue",
-        "mysql",
-        "built-in dialect",
-        "typescript",
-        "greenlit"
-      ],
-      "language": "TypeScript",
-      "stars": 13534,
-      "comment_count": 9,
-      "age_days": 4,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "langgenius/dify",
-      "number": 32454,
-      "title": "[Refactor/Chore] use Testcontainers to do sql test",
-      "url": "https://github.com/langgenius/dify/issues/32454",
-      "created_at": "2026-02-21T20:59:19Z",
-      "labels": [
-        "good first issue",
-        "🙏 help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 130250,
-      "comment_count": 7,
-      "age_days": 3,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "asukaminato0721"
-        },
-        "number": 32459,
-        "state": "OPEN",
-        "title": "test: example for [Refactor/Chore] use Testcontainers to do sql test #32454",
-        "url": "https://github.com/langgenius/dify/pull/32459"
       },
       "score": 0.7,
       "score_breakdown": {
