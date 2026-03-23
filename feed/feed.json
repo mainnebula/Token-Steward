@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-23T13:25:57Z",
+  "updated_at": "2026-03-23T19:05:47Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3331,43 +3331,6 @@
     },
     {
       "repo": "keycloak/keycloak",
-      "number": 46089,
-      "title": "Deleting a resource on page 2 shows \"No resources found\" empty state while resources still exist in Authorization Resources tab",
-      "url": "https://github.com/keycloak/keycloak/issues/46089",
-      "created_at": "2026-02-06T15:19:53Z",
-      "labels": [
-        "area/authorization-services",
-        "kind/bug",
-        "area/admin/ui",
-        "help wanted",
-        "team/core-iam",
-        "team/core-shared",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33144,
-      "comment_count": 3,
-      "age_days": 26,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
       "number": 46575,
       "title": "Clustered LDAP: Component update triggers concurrent KEYCLOAK_GROUP inserts causing duplicate key violations",
       "url": "https://github.com/keycloak/keycloak/issues/46575",
@@ -4787,6 +4750,40 @@
       "stars": 33043,
       "comment_count": 5,
       "age_days": 99,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 44935,
+      "title": "Performance degradation when paginating group members toward the last page",
+      "url": "https://github.com/keycloak/keycloak/issues/44935",
+      "created_at": "2025-12-16T09:35:57Z",
+      "labels": [
+        "kind/bug",
+        "area/ldap",
+        "help wanted",
+        "team/core-iam",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 33499,
+      "comment_count": 5,
+      "age_days": 97,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
