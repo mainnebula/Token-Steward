@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-22T18:49:58Z",
+  "updated_at": "2026-03-23T02:54:22Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6597,41 +6597,6 @@
     },
     {
       "repo": "golang/go",
-      "number": 77541,
-      "title": "cmd/compile: riscv instruction bloat in hot loops due to large stack frame offsets",
-      "url": "https://github.com/golang/go/issues/77541",
-      "created_at": "2026-02-11T09:13:42Z",
-      "labels": [
-        "Performance",
-        "help wanted",
-        "NeedsInvestigation",
-        "arch-riscv",
-        "compiler/runtime",
-        "BugReport"
-      ],
-      "language": "Go",
-      "stars": 132604,
-      "comment_count": 7,
-      "age_days": 7,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": false,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.81,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "golang/go",
       "number": 77621,
       "title": "runtime: regression `seccomp prevented call to disallowed arm system call 422` on 32bits Androids <= 10",
       "url": "https://github.com/golang/go/issues/77621",
@@ -7106,6 +7071,39 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "TeamNewPipe/NewPipe",
+      "number": 13043,
+      "title": "Default Media player for downloads not selected automatically",
+      "url": "https://github.com/TeamNewPipe/NewPipe/issues/13043",
+      "created_at": "2026-01-12T11:03:01Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "downloader",
+        "regression"
+      ],
+      "language": "Java",
+      "stars": 37628,
+      "comment_count": 11,
+      "age_days": 69,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.5
       }
     }
   ]
