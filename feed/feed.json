@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T07:21:48Z",
+  "updated_at": "2026-03-26T13:46:10Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5242,6 +5242,46 @@
       }
     },
     {
+      "repo": "DIGI-UW/OpenELIS-Global-2",
+      "number": 3166,
+      "title": "AnalyzerMappingAuditTest performance regression - audit trail query exceeds 1s threshold",
+      "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/issues/3166",
+      "created_at": "2026-03-25T06:16:52Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "Hign Priority"
+      ],
+      "language": "Java",
+      "stars": 208,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Acesif"
+        },
+        "number": 3198,
+        "state": "OPEN",
+        "title": "fix(3166): Audit trail query exceeds 1s threshold",
+        "url": "https://github.com/DIGI-UW/OpenELIS-Global-2/pull/3198"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "DSpace/DSpace",
       "number": 11516,
       "title": "Performance issue when accessing `/mydspace?configuration=workspace`",
@@ -7094,49 +7134,6 @@
         "impact": 0.75,
         "confidence": 0.89,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 47412,
-      "title": "Typos in docs: OpenTelementry",
-      "url": "https://github.com/keycloak/keycloak/issues/47412",
-      "created_at": "2026-03-24T19:10:24Z",
-      "labels": [
-        "kind/bug",
-        "area/docs",
-        "help wanted",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33551,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "ArmanTaheriGhaleTaki"
-        },
-        "number": 47420,
-        "state": "OPEN",
-        "title": "Fix typo in documentation",
-        "url": "https://github.com/keycloak/keycloak/pull/47420"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.7,
-        "confidence": 0.89,
-        "effort": 0.65
       }
     }
   ]
