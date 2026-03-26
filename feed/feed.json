@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T02:57:29Z",
+  "updated_at": "2026-03-26T07:21:48Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4718,6 +4718,40 @@
       }
     },
     {
+      "repo": "jaegertracing/jaeger",
+      "number": 8186,
+      "title": "[Bug]: 12-hour time range only returns few minutes of spans in Jaeger UI",
+      "url": "https://github.com/jaegertracing/jaeger/issues/8186",
+      "created_at": "2026-02-13T12:52:01Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "good first issue",
+        "area/storage",
+        "storage/elasticsearch"
+      ],
+      "language": "Go",
+      "stars": 22617,
+      "comment_count": 5,
+      "age_days": 40,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "jatinkrmalik/vocalinux",
       "number": 164,
       "title": "[BUG]  ydotool types wrong characters on non us keyboard layouts",
@@ -7102,38 +7136,6 @@
         "reach": 0.5,
         "impact": 0.7,
         "confidence": 0.89,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 730,
-      "title": "[Bug]: Unsafe std::mem::transmute used for lifetime extension in kornia-vlm preprocessors",
-      "url": "https://github.com/kornia/kornia-rs/issues/730",
-      "created_at": "2026-02-22T19:12:37Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 583,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
         "effort": 0.65
       }
     }
