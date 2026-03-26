@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T19:06:43Z",
+  "updated_at": "2026-03-26T02:57:29Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5779,7 +5779,7 @@
       "language": "Python",
       "stars": 101,
       "comment_count": 29,
-      "age_days": 14,
+      "age_days": 15,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -5812,7 +5812,7 @@
       "language": "Python",
       "stars": 101,
       "comment_count": 109,
-      "age_days": 14,
+      "age_days": 15,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -5828,6 +5828,38 @@
         "impact": 0.55,
         "confidence": 0.91,
         "effort": 0.75
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 1613,
+      "title": "[BOUNTY: 3 RTC] Set up Dependabot or Renovate for any Elyan Labs repo",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1613",
+      "created_at": "2026-03-10T23:50:13Z",
+      "labels": [
+        "good first issue",
+        "bounty",
+        "security"
+      ],
+      "language": "Python",
+      "stars": 101,
+      "comment_count": 56,
+      "age_days": 15,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.7,
+        "confidence": 0.91,
+        "effort": 0.6
       }
     },
     {
@@ -7087,38 +7119,6 @@
       "language": "Rust",
       "stars": 583,
       "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 747,
-      "title": "[Bug]: Inconsistent overflow handling in the tensor shape multiplication",
-      "url": "https://github.com/kornia/kornia-rs/issues/747",
-      "created_at": "2026-02-23T12:50:53Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 583,
-      "comment_count": 3,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
