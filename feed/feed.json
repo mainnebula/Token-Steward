@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T13:46:10Z",
+  "updated_at": "2026-03-26T19:19:55Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4330,9 +4330,9 @@
         "up-for-grabs"
       ],
       "language": "JavaScript",
-      "stars": 4264,
-      "comment_count": 3,
-      "age_days": 14,
+      "stars": 4283,
+      "comment_count": 4,
+      "age_days": 22,
       "is_bug": true,
       "is_feature": true,
       "category": "general",
