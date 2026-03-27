@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T07:20:27Z",
+  "updated_at": "2026-03-27T13:23:42Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2440,6 +2440,39 @@
         "impact": 0.75,
         "confidence": 0.91,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 1605,
+      "title": "[EASY BOUNTY: 1 RTC] Add a CONTRIBUTING.md to any repo missing one",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1605",
+      "created_at": "2026-03-10T23:49:20Z",
+      "labels": [
+        "documentation",
+        "good first issue",
+        "bounty",
+        "easy"
+      ],
+      "language": "Python",
+      "stars": 103,
+      "comment_count": 94,
+      "age_days": 16,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.65,
+        "confidence": 0.91,
+        "effort": 0.75
       }
     },
     {
@@ -5946,6 +5979,39 @@
     },
     {
       "repo": "Scottcjn/rustchain-bounties",
+      "number": 1593,
+      "title": "[EASY BOUNTY: 2 RTC] Translate any error message to your language",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1593",
+      "created_at": "2026-03-10T23:48:35Z",
+      "labels": [
+        "good first issue",
+        "bounty",
+        "easy",
+        "i18n"
+      ],
+      "language": "Python",
+      "stars": 103,
+      "comment_count": 17,
+      "age_days": 16,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.75
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
       "number": 1595,
       "title": "[EASY BOUNTY: 1 RTC] Star all 5 Elyan Labs repos and share on social media",
       "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1595",
@@ -5957,8 +6023,8 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 102,
-      "comment_count": 30,
+      "stars": 103,
+      "comment_count": 32,
       "age_days": 16,
       "is_bug": false,
       "is_feature": false,
@@ -5990,8 +6056,8 @@
         "community"
       ],
       "language": "Python",
-      "stars": 102,
-      "comment_count": 114,
+      "stars": 103,
+      "comment_count": 116,
       "age_days": 16,
       "is_bug": false,
       "is_feature": false,
@@ -6022,9 +6088,9 @@
         "security"
       ],
       "language": "Python",
-      "stars": 101,
-      "comment_count": 56,
-      "age_days": 15,
+      "stars": 103,
+      "comment_count": 57,
+      "age_days": 16,
       "is_bug": false,
       "is_feature": false,
       "category": "security",
@@ -6040,6 +6106,39 @@
         "impact": 0.7,
         "confidence": 0.91,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 1618,
+      "title": "[EASY BOUNTY: 1 RTC] Report any accessibility issue in BoTTube UI",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1618",
+      "created_at": "2026-03-10T23:50:21Z",
+      "labels": [
+        "good first issue",
+        "bounty",
+        "easy",
+        "accessibility"
+      ],
+      "language": "Python",
+      "stars": 103,
+      "comment_count": 56,
+      "age_days": 16,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.75
       }
     },
     {
@@ -7028,100 +7127,6 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "gleam-lang/gleam",
-      "number": 5492,
-      "title": "task: make enumerations of enum's possible values more consistent",
-      "url": "https://github.com/gleam-lang/gleam/issues/5492",
-      "created_at": "2026-03-20T18:13:59Z",
-      "labels": [
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 21292,
-      "comment_count": 5,
-      "age_days": 2,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "golang/go",
-      "number": 77621,
-      "title": "runtime: regression `seccomp prevented call to disallowed arm system call 422` on 32bits Androids <= 10",
-      "url": "https://github.com/golang/go/issues/77621",
-      "created_at": "2026-02-14T16:17:49Z",
-      "labels": [
-        "help wanted",
-        "NeedsDecision",
-        "compiler/runtime",
-        "BugReport"
-      ],
-      "language": "Go",
-      "stars": 132814,
-      "comment_count": 20,
-      "age_days": 14,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": false,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.81,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "grafana/mimir",
-      "number": 13476,
-      "title": "Bug: grafana/mimir:3.0 -server.path-prefix / server.http_path_prefix breaks static assets and redirects",
-      "url": "https://github.com/grafana/mimir/issues/13476",
-      "created_at": "2025-11-12T10:09:35Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 4993,
-      "comment_count": 5,
-      "age_days": 128,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.5
       }
     }
   ]
