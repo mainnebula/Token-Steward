@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T03:18:36Z",
+  "updated_at": "2026-03-27T07:20:27Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3305,6 +3305,45 @@
       }
     },
     {
+      "repo": "jsx-eslint/eslint-plugin-react",
+      "number": 3995,
+      "title": "[Bug]: jsx-curly-brace-presence incorrectly removes `{\"\"}` used for whitespace preservation",
+      "url": "https://github.com/jsx-eslint/eslint-plugin-react/issues/3995",
+      "created_at": "2026-03-26T21:12:52Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "JavaScript",
+      "stars": 9278,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ordinary9843"
+        },
+        "number": 3996,
+        "state": "OPEN",
+        "title": "fix(jsx-curly-brace-presence): do not flag empty string literals in JSX children",
+        "url": "https://github.com/jsx-eslint/eslint-plugin-react/pull/3996"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "katanemo/plano",
       "number": 787,
       "title": "WASM filter hardcoded 30s timeout breaks agentic/tool-use workloads",
@@ -3861,6 +3900,41 @@
         "impact": 0.75,
         "confidence": 0.91,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 2282,
+      "title": "BoTTube Agent Collab System — Multi-Agent Video Responses (15 RTC)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2282",
+      "created_at": "2026-03-21T15:07:25Z",
+      "labels": [
+        "bounty",
+        "standard",
+        "feature",
+        "bottube",
+        "social",
+        "easy-medium"
+      ],
+      "language": "Python",
+      "stars": 102,
+      "comment_count": 6,
+      "age_days": 5,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.8
       }
     },
     {
@@ -7048,75 +7122,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "grpc/grpc-java",
-      "number": 12692,
-      "title": "Add public constants for \"pick_first\" and \"round_robin\" policy names in LoadBalancerRegistry",
-      "url": "https://github.com/grpc/grpc-java/issues/12692",
-      "created_at": "2026-03-13T00:51:57Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Java",
-      "stars": 11990,
-      "comment_count": 5,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "huggingface/transformers",
-      "number": 43979,
-      "title": "Call to contributions: refactor output tracing in transformers",
-      "url": "https://github.com/huggingface/transformers/issues/43979",
-      "created_at": "2026-02-13T15:02:46Z",
-      "labels": [
-        "Help wanted",
-        "Good First Issue"
-      ],
-      "language": "Python",
-      "stars": 156578,
-      "comment_count": 68,
-      "age_days": 4,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Aki-07"
-        },
-        "number": 43983,
-        "state": "OPEN",
-        "title": "Migrate GPT2 to standardized output capture decorators",
-        "url": "https://github.com/huggingface/transformers/pull/43983"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
       }
     }
   ]
