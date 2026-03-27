@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T19:19:55Z",
+  "updated_at": "2026-03-27T03:18:36Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -756,6 +756,38 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "CherryHQ/cherry-studio",
+      "number": 13364,
+      "title": "[Discussion]: The \"Chain-of-Thought Length\" adjustment option does not work when using models provided by NVIDIA",
+      "url": "https://github.com/CherryHQ/cherry-studio/issues/13364",
+      "created_at": "2026-03-10T11:39:39Z",
+      "labels": [
+        "BUG",
+        "help wanted",
+        "Models"
+      ],
+      "language": "TypeScript",
+      "stars": 42395,
+      "comment_count": 5,
+      "age_days": 16,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
       }
     },
     {
@@ -5851,9 +5883,9 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 101,
-      "comment_count": 29,
-      "age_days": 15,
+      "stars": 102,
+      "comment_count": 30,
+      "age_days": 16,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -5884,9 +5916,9 @@
         "community"
       ],
       "language": "Python",
-      "stars": 101,
-      "comment_count": 109,
-      "age_days": 15,
+      "stars": 102,
+      "comment_count": 114,
+      "age_days": 16,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -5934,6 +5966,38 @@
         "impact": 0.7,
         "confidence": 0.91,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 443,
+      "title": "Write a Review of RustChain — 5 RTC (Good First Issue)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/443",
+      "created_at": "2026-02-26T21:54:17Z",
+      "labels": [
+        "good first issue",
+        "bounty",
+        "easy"
+      ],
+      "language": "Python",
+      "stars": 102,
+      "comment_count": 13,
+      "age_days": 28,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.75
       }
     },
     {
@@ -6512,6 +6576,39 @@
       }
     },
     {
+      "repo": "cockroachdb/cockroach",
+      "number": 45464,
+      "title": "docgen: recognize \"unimplemented\" as marker to ignore rules",
+      "url": "https://github.com/cockroachdb/cockroach/issues/45464",
+      "created_at": "2020-02-26T19:02:45Z",
+      "labels": [
+        "C-enhancement",
+        "E-easy",
+        "good first issue",
+        "A-docs"
+      ],
+      "language": "Go",
+      "stars": 32000,
+      "comment_count": 7,
+      "age_days": 2220,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.65,
+        "confidence": 0.94,
+        "effort": 0.55
+      }
+    },
+    {
       "repo": "collective/icalendar",
       "number": 1158,
       "title": "[Beginner] Correct broken links to classes & functions in documentation",
@@ -7020,120 +7117,6 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "jeffvli/feishin",
-      "number": 1813,
-      "title": "[Bug]: crashes on open with macOS",
-      "url": "https://github.com/jeffvli/feishin/issues/1813",
-      "created_at": "2026-03-09T10:47:17Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 7444,
-      "comment_count": 15,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "jeffvli"
-        },
-        "number": 1815,
-        "state": "OPEN",
-        "title": "use ad-hoc code signing for macOS build",
-        "url": "https://github.com/jeffvli/feishin/pull/1815"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.8,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "jenkinsci/jenkins",
-      "number": 26318,
-      "title": "Encoding issue when creating a log recorder",
-      "url": "https://github.com/jenkinsci/jenkins/issues/26318",
-      "created_at": "2026-02-17T14:06:58Z",
-      "labels": [
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 25022,
-      "comment_count": 7,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Flamki"
-        },
-        "number": 26331,
-        "state": "OPEN",
-        "title": "[JENKINS-26318] Encode log recorder redirect name",
-        "url": "https://github.com/jenkinsci/jenkins/pull/26331"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 46126,
-      "title": "DPoP HTTP URL mismatch",
-      "url": "https://github.com/keycloak/keycloak/issues/46126",
-      "created_at": "2026-02-09T12:39:15Z",
-      "labels": [
-        "kind/bug",
-        "area/core",
-        "help wanted",
-        "team/core-clients",
-        "team/core-shared",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump"
-      ],
-      "language": "Java",
-      "stars": 32972,
-      "comment_count": 4,
-      "age_days": 14,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.89,
-        "effort": 0.6
       }
     }
   ]
