@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T07:08:18Z",
+  "updated_at": "2026-03-28T13:12:05Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4633,6 +4633,45 @@
       }
     },
     {
+      "repo": "external-secrets/external-secrets",
+      "number": 6116,
+      "title": "bug(docs.check):  docs.check test during release is unreliable",
+      "url": "https://github.com/external-secrets/external-secrets/issues/6116",
+      "created_at": "2026-03-20T16:06:12Z",
+      "labels": [
+        "good first issue",
+        "kind/bug"
+      ],
+      "language": "Go",
+      "stars": 6506,
+      "comment_count": 4,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "jaruwat-panturat"
+        },
+        "number": 6146,
+        "state": "OPEN",
+        "title": "fix(release): remove docs.check and all relative calls",
+        "url": "https://github.com/external-secrets/external-secrets/pull/6146"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "frappe/frappe",
       "number": 37798,
       "title": "Doctype name is missing in the breadcrumbs on the tree view.",
@@ -5416,6 +5455,39 @@
       }
     },
     {
+      "repo": "meteor/meteor",
+      "number": 14242,
+      "title": "Meteor Developer OAuth: account-settings page and auth endpoint no longer functional",
+      "url": "https://github.com/meteor/meteor/issues/14242",
+      "created_at": "2026-03-20T21:17:47Z",
+      "labels": [
+        "Project:Docs",
+        "good first issue",
+        "missing-docs",
+        "Project:Accounts:OAuth"
+      ],
+      "language": "JavaScript",
+      "stars": 44788,
+      "comment_count": 5,
+      "age_days": 7,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.65,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "quantumlib/Cirq",
       "number": 7941,
       "title": "`is_native_neutral_atom_gate` crashes with `TypeError` when checking unhashable gates",
@@ -6124,7 +6196,7 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 103,
+      "stars": 104,
       "comment_count": 36,
       "age_days": 17,
       "is_bug": false,
@@ -6157,7 +6229,7 @@
         "community"
       ],
       "language": "Python",
-      "stars": 103,
+      "stars": 104,
       "comment_count": 120,
       "age_days": 17,
       "is_bug": false,
@@ -7051,77 +7123,6 @@
         "reach": 0.6,
         "impact": 0.7,
         "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "external-secrets/external-secrets",
-      "number": 6001,
-      "title": "Documentation implies PushSecret spec.metadata exists when it does not",
-      "url": "https://github.com/external-secrets/external-secrets/issues/6001",
-      "created_at": "2026-02-26T12:11:22Z",
-      "labels": [
-        "good first issue",
-        "area/documentation"
-      ],
-      "language": "Go",
-      "stars": 6455,
-      "comment_count": 6,
-      "age_days": 12,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Br1an67"
-        },
-        "number": 6056,
-        "state": "OPEN",
-        "title": "docs(aws): fix PushSecret metadata indentation in resource policy exa...",
-        "url": "https://github.com/external-secrets/external-secrets/pull/6056"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.65,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "getarcaneapp/arcane",
-      "number": 999,
-      "title": "🐞 Bug: Intel Arc GPU not showing in dashboard",
-      "url": "https://github.com/getarcaneapp/arcane/issues/999",
-      "created_at": "2025-11-28T17:19:26Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "open for pull requests"
-      ],
-      "language": "Go",
-      "stars": 5103,
-      "comment_count": 18,
-      "age_days": 119,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
         "effort": 0.5
       }
     }
