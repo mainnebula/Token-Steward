@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T02:49:23Z",
+  "updated_at": "2026-03-28T07:08:18Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6125,7 +6125,7 @@
       ],
       "language": "Python",
       "stars": 103,
-      "comment_count": 35,
+      "comment_count": 36,
       "age_days": 17,
       "is_bug": false,
       "is_feature": false,
@@ -6158,7 +6158,7 @@
       ],
       "language": "Python",
       "stars": 103,
-      "comment_count": 119,
+      "comment_count": 120,
       "age_days": 17,
       "is_bug": false,
       "is_feature": false,
@@ -6225,6 +6225,39 @@
       "stars": 103,
       "comment_count": 56,
       "age_days": 16,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.75
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 2270,
+      "title": "[BOUNTY: 1 RTC] Submit your first PR to any Elyan Labs repo",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2270",
+      "created_at": "2026-03-20T15:32:00Z",
+      "labels": [
+        "good first issue",
+        "bounty",
+        "easy",
+        "community"
+      ],
+      "language": "Python",
+      "stars": 103,
+      "comment_count": 24,
+      "age_days": 7,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -7073,7 +7106,7 @@
       ],
       "language": "Go",
       "stars": 5103,
-      "comment_count": 17,
+      "comment_count": 18,
       "age_days": 119,
       "is_bug": true,
       "is_feature": false,
@@ -7090,36 +7123,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "gleam-lang/gleam",
-      "number": 5370,
-      "title": "Support textDocument/foldingRange in language server",
-      "url": "https://github.com/gleam-lang/gleam/issues/5370",
-      "created_at": "2026-02-15T07:41:28Z",
-      "labels": [
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 21143,
-      "comment_count": 7,
-      "age_days": 4,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
       }
     }
   ]
