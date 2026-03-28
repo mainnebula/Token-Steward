@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T19:06:13Z",
+  "updated_at": "2026-03-28T02:49:23Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4698,6 +4698,39 @@
       }
     },
     {
+      "repo": "golang/go",
+      "number": 78355,
+      "title": "cmd/compile: internal compiler error: map elem too big 2147483648",
+      "url": "https://github.com/golang/go/issues/78355",
+      "created_at": "2026-03-25T16:33:33Z",
+      "labels": [
+        "help wanted",
+        "compiler/runtime",
+        "FixPending",
+        "BugReport"
+      ],
+      "language": "Go",
+      "stars": 133179,
+      "comment_count": 6,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": false,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.81,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "google-gemini/gemini-cli",
       "number": 14940,
       "title": "Auto-completion keeps requesting gemini-2.5-flash-lite even when using gemini-3.0, causing infinite \"usage limit reached\" warnings",
@@ -6092,8 +6125,8 @@
       ],
       "language": "Python",
       "stars": 103,
-      "comment_count": 33,
-      "age_days": 16,
+      "comment_count": 35,
+      "age_days": 17,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -6125,8 +6158,8 @@
       ],
       "language": "Python",
       "stars": 103,
-      "comment_count": 117,
-      "age_days": 16,
+      "comment_count": 119,
+      "age_days": 17,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -6221,9 +6254,9 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 102,
-      "comment_count": 13,
-      "age_days": 28,
+      "stars": 103,
+      "comment_count": 17,
+      "age_days": 29,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -7028,6 +7061,38 @@
       }
     },
     {
+      "repo": "getarcaneapp/arcane",
+      "number": 999,
+      "title": "🐞 Bug: Intel Arc GPU not showing in dashboard",
+      "url": "https://github.com/getarcaneapp/arcane/issues/999",
+      "created_at": "2025-11-28T17:19:26Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "open for pull requests"
+      ],
+      "language": "Go",
+      "stars": 5103,
+      "comment_count": 17,
+      "age_days": 119,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "gleam-lang/gleam",
       "number": 5370,
       "title": "Support textDocument/foldingRange in language server",
@@ -7049,74 +7114,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "gleam-lang/gleam",
-      "number": 5386,
-      "title": "Language Server - `todo` tries to autocomplete to `string.to_utf_codepoints`",
-      "url": "https://github.com/gleam-lang/gleam/issues/5386",
-      "created_at": "2026-02-22T21:55:17Z",
-      "labels": [
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 21161,
-      "comment_count": 6,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "gleam-lang/gleam",
-      "number": 5388,
-      "title": "Stop suggesting field access completions for internal types",
-      "url": "https://github.com/gleam-lang/gleam/issues/5388",
-      "created_at": "2026-02-23T12:22:59Z",
-      "labels": [
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 21175,
-      "comment_count": 6,
-      "age_days": 3,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "giacomocavalieri"
-        },
-        "number": 5397,
-        "state": "OPEN",
-        "title": "Hide internal types structure",
-        "url": "https://github.com/gleam-lang/gleam/pull/5397"
-      },
       "score": 0.7,
       "score_breakdown": {
         "reach": 0.6,
