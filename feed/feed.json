@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T13:12:05Z",
+  "updated_at": "2026-03-28T18:54:12Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4643,9 +4643,9 @@
         "kind/bug"
       ],
       "language": "Go",
-      "stars": 6506,
+      "stars": 6507,
       "comment_count": 4,
-      "age_days": 7,
+      "age_days": 8,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6163,9 +6163,9 @@
         "i18n"
       ],
       "language": "Python",
-      "stars": 103,
-      "comment_count": 17,
-      "age_days": 16,
+      "stars": 105,
+      "comment_count": 18,
+      "age_days": 17,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -6196,8 +6196,8 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 104,
-      "comment_count": 36,
+      "stars": 105,
+      "comment_count": 37,
       "age_days": 17,
       "is_bug": false,
       "is_feature": false,
@@ -6229,8 +6229,8 @@
         "community"
       ],
       "language": "Python",
-      "stars": 104,
-      "comment_count": 120,
+      "stars": 105,
+      "comment_count": 122,
       "age_days": 17,
       "is_bug": false,
       "is_feature": false,
@@ -6316,6 +6316,39 @@
     },
     {
       "repo": "Scottcjn/rustchain-bounties",
+      "number": 1677,
+      "title": "[EASY BOUNTY: 2 RTC] Star & Share Campaign — Help Us Hit 200 Stars on RustChain!",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1677",
+      "created_at": "2026-03-11T09:10:38Z",
+      "labels": [
+        "good first issue",
+        "bounty",
+        "easy",
+        "hacktoberfest"
+      ],
+      "language": "Python",
+      "stars": 105,
+      "comment_count": 471,
+      "age_days": 17,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.75
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
       "number": 2270,
       "title": "[BOUNTY: 1 RTC] Submit your first PR to any Elyan Labs repo",
       "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2270",
@@ -6327,9 +6360,9 @@
         "community"
       ],
       "language": "Python",
-      "stars": 103,
-      "comment_count": 24,
-      "age_days": 7,
+      "stars": 105,
+      "comment_count": 27,
+      "age_days": 8,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -7090,40 +7123,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "elastic/kibana",
-      "number": 237470,
-      "title": "[Security Solution] Translated Dashboard shown as `Installed` even if the dashboards are deleted from Kibana.",
-      "url": "https://github.com/elastic/kibana/issues/237470",
-      "created_at": "2025-10-03T12:24:48Z",
-      "labels": [
-        "enhancement",
-        "impact:low",
-        "Team:Threat Hunting",
-        "Team: SecuritySolution",
-        "Team:Threat Hunting:Investigations"
-      ],
-      "language": "TypeScript",
-      "stars": 20994,
-      "comment_count": 6,
-      "age_days": 160,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "security",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.7,
-        "confidence": 0.94,
-        "effort": 0.5
       }
     }
   ]
