@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T18:54:12Z",
+  "updated_at": "2026-03-29T03:22:52Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5877,6 +5877,37 @@
       }
     },
     {
+      "repo": "OWASP/Nest",
+      "number": 4419,
+      "title": "ChapterMap: Incorrect cursor display on non-interactive areas",
+      "url": "https://github.com/OWASP/Nest/issues/4419",
+      "created_at": "2026-03-28T23:11:45Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 409,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "OpenHands/OpenHands",
       "number": 13030,
       "title": "[GUI] Bring Sub-agent Delegation support to GUI",
@@ -6197,8 +6228,8 @@
       ],
       "language": "Python",
       "stars": 105,
-      "comment_count": 37,
-      "age_days": 17,
+      "comment_count": 38,
+      "age_days": 18,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -6230,8 +6261,8 @@
       ],
       "language": "Python",
       "stars": 105,
-      "comment_count": 122,
-      "age_days": 17,
+      "comment_count": 124,
+      "age_days": 18,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -6328,7 +6359,7 @@
       ],
       "language": "Python",
       "stars": 105,
-      "comment_count": 471,
+      "comment_count": 474,
       "age_days": 17,
       "is_bug": false,
       "is_feature": false,
@@ -7080,49 +7111,6 @@
         "impact": 0.55,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "directus/directus",
-      "number": 26766,
-      "title": "Export to CSV, Select All Fields includes alias fields",
-      "url": "https://github.com/directus/directus/issues/26766",
-      "created_at": "2026-02-27T14:09:04Z",
-      "labels": [
-        "Bug",
-        "Good First Issue",
-        "Studio",
-        "Content Workflow",
-        "Low Impact",
-        "Med Reach"
-      ],
-      "language": "TypeScript",
-      "stars": 34542,
-      "comment_count": 4,
-      "age_days": 22,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "tysoncung"
-        },
-        "number": 26775,
-        "state": "OPEN",
-        "title": "fix(app): exclude alias fields from export Select All",
-        "url": "https://github.com/directus/directus/pull/26775"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.6
       }
     }
   ]
