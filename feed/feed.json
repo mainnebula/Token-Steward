@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-29T07:15:44Z",
+  "updated_at": "2026-03-29T13:12:52Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2409,6 +2409,37 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "OWASP/Nest",
+      "number": 4419,
+      "title": "ChapterMap: Incorrect cursor display on non-interactive areas",
+      "url": "https://github.com/OWASP/Nest/issues/4419",
+      "created_at": "2026-03-28T23:11:45Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 409,
+      "comment_count": 8,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -5826,37 +5857,6 @@
       "age_days": 0,
       "is_bug": true,
       "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "OWASP/Nest",
-      "number": 4419,
-      "title": "ChapterMap: Incorrect cursor display on non-interactive areas",
-      "url": "https://github.com/OWASP/Nest/issues/4419",
-      "created_at": "2026-03-28T23:11:45Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 409,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
       "category": "general",
       "surface": "bugfix",
       "has_contributing": true,
