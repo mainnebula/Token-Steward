@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-30T07:55:57Z",
+  "updated_at": "2026-03-30T13:52:24Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2273,6 +2273,39 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "layer5io/layer5",
+      "number": 7461,
+      "title": "The slide transitions on the Meshery pages are not working.",
+      "url": "https://github.com/layer5io/layer5/issues/7461",
+      "created_at": "2026-03-09T17:14:09Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "good first issue",
+        "framework/gatsby"
+      ],
+      "language": "JavaScript",
+      "stars": 1027,
+      "comment_count": 6,
+      "age_days": 20,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
       }
     },
     {
@@ -5418,6 +5451,47 @@
       }
     },
     {
+      "repo": "meshery/meshery",
+      "number": 18242,
+      "title": "[Docs] Migration Leftovers/Improvements",
+      "url": "https://github.com/meshery/meshery/issues/18242",
+      "created_at": "2026-03-27T01:24:14Z",
+      "labels": [
+        "help wanted",
+        "area/docs",
+        "language/markdown",
+        "framework/hugo"
+      ],
+      "language": "Go",
+      "stars": 10127,
+      "comment_count": 7,
+      "age_days": 3,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "yashasvi290906"
+        },
+        "number": 18349,
+        "state": "OPEN",
+        "title": "[Docs] Remove all legacy site.baseurl usages across docs",
+        "url": "https://github.com/meshery/meshery/pull/18349"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.65,
+        "confidence": 0.89,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "meteor/meteor",
       "number": 14242,
       "title": "Meteor Developer OAuth: account-settings page and auth endpoint no longer functional",
@@ -7040,78 +7114,6 @@
         "reach": 0.55,
         "impact": 0.65,
         "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "collective/icalendar",
-      "number": 1277,
-      "title": "CI doesn't correctly report vale errors",
-      "url": "https://github.com/collective/icalendar/issues/1277",
-      "created_at": "2026-03-15T10:17:55Z",
-      "labels": [
-        "doc",
-        "help wanted",
-        "good first issue",
-        "hacktoberfest"
-      ],
-      "language": "Python",
-      "stars": 1126,
-      "comment_count": 6,
-      "age_days": 3,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Stradivariuskein"
-        },
-        "number": 1282,
-        "state": "OPEN",
-        "title": "ci: fix vale makefile target to fail github actions workflow",
-        "url": "https://github.com/collective/icalendar/pull/1282"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.65,
-        "confidence": 0.88,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "ReSo7200/InstaEclipse",
-      "number": 135,
-      "title": "[Problem] InstaEclipse settings menu is not opening",
-      "url": "https://github.com/ReSo7200/InstaEclipse/issues/135",
-      "created_at": "2026-03-14T14:24:52Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 923,
-      "comment_count": 6,
-      "age_days": 15,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.6,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.83,
         "effort": 0.6
       }
     }
