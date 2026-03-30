@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-30T03:25:46Z",
+  "updated_at": "2026-03-30T07:55:57Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -7085,44 +7085,34 @@
       }
     },
     {
-      "repo": "bazelbuild/bazel",
-      "number": 28732,
-      "title": "Allowed to fail, asynchronous`repository_ctx.download` still reports as `pending download` after failure, swallowing the error",
-      "url": "https://github.com/bazelbuild/bazel/issues/28732",
-      "created_at": "2026-02-20T19:48:48Z",
+      "repo": "ReSo7200/InstaEclipse",
+      "number": 135,
+      "title": "[Problem] InstaEclipse settings menu is not opening",
+      "url": "https://github.com/ReSo7200/InstaEclipse/issues/135",
+      "created_at": "2026-03-14T14:24:52Z",
       "labels": [
-        "type: bug",
-        "P2",
-        "team-ExternalDeps",
-        "help wanted"
+        "bug",
+        "good first issue"
       ],
       "language": "Java",
-      "stars": 25276,
-      "comment_count": 4,
-      "age_days": 37,
+      "stars": 923,
+      "comment_count": 6,
+      "age_days": 15,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
       "surface": "bugfix",
-      "has_contributing": true,
+      "has_contributing": false,
       "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "willstranton"
-        },
-        "number": 29142,
-        "state": "OPEN",
-        "title": "Improve error messaging and repr for download",
-        "url": "https://github.com/bazelbuild/bazel/pull/29142"
-      },
+      "llm_receptivity": 0.6,
+      "action": "fix",
+      "pr": null,
       "score": 0.69,
       "score_breakdown": {
         "reach": 0.5,
         "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
+        "confidence": 0.83,
+        "effort": 0.6
       }
     }
   ]
