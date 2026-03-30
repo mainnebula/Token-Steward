@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-29T18:55:52Z",
+  "updated_at": "2026-03-30T03:25:46Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1913,39 +1913,6 @@
         "reach": 0.6,
         "impact": 0.75,
         "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 28732,
-      "title": "Allowed to fail, asynchronous`repository_ctx.download` still reports as `pending download` after failure, swallowing the error",
-      "url": "https://github.com/bazelbuild/bazel/issues/28732",
-      "created_at": "2026-02-20T19:48:48Z",
-      "labels": [
-        "type: bug",
-        "P2",
-        "team-ExternalDeps",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 25162,
-      "comment_count": 3,
-      "age_days": 4,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
         "effort": 0.65
       }
     },
@@ -6193,8 +6160,8 @@
       ],
       "language": "Python",
       "stars": 106,
-      "comment_count": 40,
-      "age_days": 18,
+      "comment_count": 42,
+      "age_days": 19,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -6226,8 +6193,8 @@
       ],
       "language": "Python",
       "stars": 106,
-      "comment_count": 128,
-      "age_days": 18,
+      "comment_count": 132,
+      "age_days": 19,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -7115,6 +7082,47 @@
         "impact": 0.65,
         "confidence": 0.88,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "bazelbuild/bazel",
+      "number": 28732,
+      "title": "Allowed to fail, asynchronous`repository_ctx.download` still reports as `pending download` after failure, swallowing the error",
+      "url": "https://github.com/bazelbuild/bazel/issues/28732",
+      "created_at": "2026-02-20T19:48:48Z",
+      "labels": [
+        "type: bug",
+        "P2",
+        "team-ExternalDeps",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 25276,
+      "comment_count": 4,
+      "age_days": 37,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "willstranton"
+        },
+        "number": 29142,
+        "state": "OPEN",
+        "title": "Improve error messaging and repr for download",
+        "url": "https://github.com/bazelbuild/bazel/pull/29142"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
       }
     }
   ]
