@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-01T03:30:11Z",
+  "updated_at": "2026-04-01T07:46:20Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3472,6 +3472,37 @@
       }
     },
     {
+      "repo": "karatelabs/karate",
+      "number": 2759,
+      "title": "Jar 2.0.0 not working",
+      "url": "https://github.com/karatelabs/karate/issues/2759",
+      "created_at": "2026-03-27T16:21:59Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 8823,
+      "comment_count": 7,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.88,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "katanemo/plano",
       "number": 787,
       "title": "WASM filter hardcoded 30s timeout breaks agentic/tool-use workloads",
@@ -6267,7 +6298,7 @@
       ],
       "language": "Python",
       "stars": 110,
-      "comment_count": 129,
+      "comment_count": 131,
       "age_days": 21,
       "is_bug": false,
       "is_feature": false,
@@ -7083,39 +7114,6 @@
         "impact": 0.85,
         "confidence": 0.93,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "cockroachdb/cockroach",
-      "number": 45464,
-      "title": "docgen: recognize \"unimplemented\" as marker to ignore rules",
-      "url": "https://github.com/cockroachdb/cockroach/issues/45464",
-      "created_at": "2020-02-26T19:02:45Z",
-      "labels": [
-        "C-enhancement",
-        "E-easy",
-        "good first issue",
-        "A-docs"
-      ],
-      "language": "Go",
-      "stars": 32000,
-      "comment_count": 7,
-      "age_days": 2220,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.65,
-        "confidence": 0.94,
-        "effort": 0.55
       }
     }
   ]
