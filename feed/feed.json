@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-01T07:46:20Z",
+  "updated_at": "2026-04-01T13:54:52Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -708,6 +708,43 @@
         "title": "Fix NPE in updateFederatedIdentity after IDP deletion and re-creation",
         "url": "https://github.com/keycloak/keycloak/pull/47214"
       },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 47672,
+      "title": "ClassCastException when PEM CA certificate is used",
+      "url": "https://github.com/keycloak/keycloak/issues/47672",
+      "created_at": "2026-04-01T08:37:34Z",
+      "labels": [
+        "kind/bug",
+        "area/core",
+        "help wanted",
+        "team/core-shared",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal",
+        "status/blocked-external"
+      ],
+      "language": "Java",
+      "stars": 33672,
+      "comment_count": 6,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -2257,6 +2294,40 @@
       "stars": 33153,
       "comment_count": 3,
       "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 47659,
+      "title": "SRCFG01008 warning in source Quarkus dev mode when kc.log-console-output=default (not reproducible via packaged kc.sh)",
+      "url": "https://github.com/keycloak/keycloak/issues/47659",
+      "created_at": "2026-03-31T22:44:55Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 33672,
+      "comment_count": 4,
+      "age_days": 0,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5590,6 +5661,37 @@
       }
     },
     {
+      "repo": "777genius/claude-notifications-go",
+      "number": 59,
+      "title": "macOS Tahoe (26.x): Notifications attributed to Script Editor instead of ClaudeNotifier",
+      "url": "https://github.com/777genius/claude-notifications-go/issues/59",
+      "created_at": "2026-03-27T19:55:23Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 438,
+      "comment_count": 3,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "CherryHQ/cherry-studio",
       "number": 13059,
       "title": "[Discussion]: Webdav backup failed, tried both Aliyun and Tera cloud drives, neither works 1.7.20",
@@ -7017,103 +7119,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "apache/seatunnel",
-      "number": 10584,
-      "title": "[Bug] [hudi sink] hudi sink java client not support struct field type where is null",
-      "url": "https://github.com/apache/seatunnel/issues/10584",
-      "created_at": "2026-03-10T01:09:13Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 9201,
-      "comment_count": 6,
-      "age_days": 15,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.85,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "autokey/autokey",
-      "number": 1082,
-      "title": "Possible fix for issues in debian/build.sh",
-      "url": "https://github.com/autokey/autokey/issues/1082",
-      "created_at": "2026-03-07T18:11:55Z",
-      "labels": [
-        "easy fix",
-        "good first issue",
-        "infrastructure",
-        "0.97.0"
-      ],
-      "language": "Python",
-      "stars": 3810,
-      "comment_count": 10,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.85,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "beeware/toga",
-      "number": 3727,
-      "title": "Android DetailedList doesn't respond to left/right swipes",
-      "url": "https://github.com/beeware/toga/issues/3727",
-      "created_at": "2025-08-27T22:55:45Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "android",
-        "documentation"
-      ],
-      "language": "Python",
-      "stars": 5318,
-      "comment_count": 5,
-      "age_days": 184,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.85,
-        "confidence": 0.93,
-        "effort": 0.4
       }
     }
   ]
