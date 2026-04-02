@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T07:25:34Z",
+  "updated_at": "2026-04-02T13:45:43Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2092,6 +2092,40 @@
       }
     },
     {
+      "repo": "diesel-rs/diesel",
+      "number": 5013,
+      "title": "`MYSQL_OPT_LOCAL_INFILE` doesn't exist for libmariadb",
+      "url": "https://github.com/diesel-rs/diesel/issues/5013",
+      "created_at": "2026-04-02T06:56:23Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "mysql",
+        "mentoring available",
+        "Release Blocker"
+      ],
+      "language": "Rust",
+      "stars": 14015,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "google-gemini/gemini-cli",
       "number": 20656,
       "title": "Verbose mode shows minimal info for inline audio/video data",
@@ -2460,6 +2494,37 @@
       "age_days": 5,
       "is_bug": true,
       "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "777genius/claude-notifications-go",
+      "number": 59,
+      "title": "macOS Tahoe (26.x): Notifications attributed to Script Editor instead of ClaudeNotifier",
+      "url": "https://github.com/777genius/claude-notifications-go/issues/59",
+      "created_at": "2026-03-27T19:55:23Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 458,
+      "comment_count": 6,
+      "age_days": 5,
+      "is_bug": true,
+      "is_feature": false,
       "category": "general",
       "surface": "bugfix",
       "has_contributing": true,
@@ -3553,9 +3618,9 @@
         "help wanted"
       ],
       "language": "Java",
-      "stars": 8823,
-      "comment_count": 7,
-      "age_days": 4,
+      "stars": 8826,
+      "comment_count": 8,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4654,6 +4719,39 @@
       }
     },
     {
+      "repo": "bazelbuild/bazel",
+      "number": 28732,
+      "title": "Allowed to fail, asynchronous`repository_ctx.download` still reports as `pending download` after failure, swallowing the error",
+      "url": "https://github.com/bazelbuild/bazel/issues/28732",
+      "created_at": "2026-02-20T19:48:48Z",
+      "labels": [
+        "type: bug",
+        "P2",
+        "team-ExternalDeps",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 25287,
+      "comment_count": 5,
+      "age_days": 40,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "cBioPortal/cbioportal",
       "number": 11985,
       "title": "[Bug] Samples with '+' in ID (e.g., PanCK+) are excluded from Plots tab",
@@ -5724,37 +5822,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "777genius/claude-notifications-go",
-      "number": 59,
-      "title": "macOS Tahoe (26.x): Notifications attributed to Script Editor instead of ClaudeNotifier",
-      "url": "https://github.com/777genius/claude-notifications-go/issues/59",
-      "created_at": "2026-03-27T19:55:23Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 438,
-      "comment_count": 3,
-      "age_days": 4,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
       }
     },
     {
@@ -7038,70 +7105,6 @@
         "impact": 0.7,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "agones-dev/agones",
-      "number": 4356,
-      "title": "Incorrent metric 'agones_fleet_autoscalers_buffer_limits' when use in chain policy with multiple schedules",
-      "url": "https://github.com/agones-dev/agones/issues/4356",
-      "created_at": "2025-11-28T02:11:30Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "stale",
-        "obsolete"
-      ],
-      "language": "Go",
-      "stars": 6770,
-      "comment_count": 6,
-      "age_days": 124,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "apache/dolphinscheduler",
-      "number": 16879,
-      "title": "[Bug] When contains multiple sub-processes, the task instance in the sub-process instance obtains duplicate parameters of the pre-task instance.",
-      "url": "https://github.com/apache/dolphinscheduler/issues/16879",
-      "created_at": "2024-12-05T02:52:07Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 14203,
-      "comment_count": 13,
-      "age_days": 483,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
       }
     }
   ]
