@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T13:45:43Z",
+  "updated_at": "2026-04-02T19:07:33Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2520,8 +2520,8 @@
         "help wanted"
       ],
       "language": "Go",
-      "stars": 458,
-      "comment_count": 6,
+      "stars": 459,
+      "comment_count": 7,
       "age_days": 5,
       "is_bug": true,
       "is_feature": false,
@@ -4232,6 +4232,49 @@
       }
     },
     {
+      "repo": "PostHog/posthog",
+      "number": 41812,
+      "title": "Bug: Conflicting advice on whether to use cohorts for test/internal user filter",
+      "url": "https://github.com/PostHog/posthog/issues/41812",
+      "created_at": "2025-11-20T11:28:19Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "feature/property-filters",
+        "team/product-analytics",
+        "team/cdp",
+        "feature/pipelines"
+      ],
+      "language": "Python",
+      "stars": 32343,
+      "comment_count": 6,
+      "age_days": 133,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "MikeAthie"
+        },
+        "number": 44697,
+        "state": "OPEN",
+        "title": "fix(pipelines): block cohort-based test account filters in real-time …",
+        "url": "https://github.com/PostHog/posthog/pull/44697"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "TibixDev/winboat",
       "number": 462,
       "title": "[Bug] When uninstalled in arch and reinstalled, it appears as an emty app",
@@ -4882,6 +4925,47 @@
         "state": "OPEN",
         "title": "ESQL: overflowing division in ROW gives wrong error message",
         "url": "https://github.com/elastic/elasticsearch/pull/138973"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
+      "repo": "elastic/elasticsearch",
+      "number": 141887,
+      "title": "Make SnapshotHistoryStore retry indexing history data on EsRejectedExecutionException",
+      "url": "https://github.com/elastic/elasticsearch/issues/141887",
+      "created_at": "2026-02-04T22:50:24Z",
+      "labels": [
+        ">bug",
+        "good first issue",
+        "Team:Distributed",
+        ":Distributed/SLM"
+      ],
+      "language": "Java",
+      "stars": 76412,
+      "comment_count": 6,
+      "age_days": 56,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "byteforge38"
+        },
+        "number": 141969,
+        "state": "OPEN",
+        "title": "Use BulkProcessor2 in SnapshotHistoryStore for retry support",
+        "url": "https://github.com/elastic/elasticsearch/pull/141969"
       },
       "score": 0.71,
       "score_breakdown": {
@@ -7040,71 +7124,6 @@
         "impact": 0.6,
         "confidence": 0.93,
         "effort": 0.8
-      }
-    },
-    {
-      "repo": "adenhq/hive",
-      "number": 472,
-      "title": "[Announcement] 📢 New Workflow: Requirement to be assigned to issues before opening PRs",
-      "url": "https://github.com/adenhq/hive/issues/472",
-      "created_at": "2026-01-26T01:22:57Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "help wanted"
-      ],
-      "language": "Python",
-      "stars": 7821,
-      "comment_count": 32,
-      "age_days": 23,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.65,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "affaan-m/everything-claude-code",
-      "number": 248,
-      "title": "Plugin hooks cannot be individually disabled & fire unconditionally",
-      "url": "https://github.com/affaan-m/everything-claude-code/issues/248",
-      "created_at": "2026-02-18T12:08:49Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "question",
-        "docs"
-      ],
-      "language": "JavaScript",
-      "stars": 49115,
-      "comment_count": 1,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.7,
-        "confidence": 0.94,
-        "effort": 0.65
       }
     }
   ]
