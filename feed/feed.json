@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T02:55:52Z",
+  "updated_at": "2026-04-02T07:25:34Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6497,7 +6497,7 @@
       ],
       "language": "Python",
       "stars": 110,
-      "comment_count": 131,
+      "comment_count": 135,
       "age_days": 22,
       "is_bug": false,
       "is_feature": false,
@@ -6703,38 +6703,6 @@
       "is_feature": true,
       "category": "general",
       "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.75
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 443,
-      "title": "Write a Review of RustChain — 5 RTC (Good First Issue)",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/443",
-      "created_at": "2026-02-26T21:54:17Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "easy"
-      ],
-      "language": "Python",
-      "stars": 103,
-      "comment_count": 17,
-      "age_days": 29,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.7,
@@ -7103,6 +7071,37 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.5
+      }
+    },
+    {
+      "repo": "apache/dolphinscheduler",
+      "number": 16879,
+      "title": "[Bug] When contains multiple sub-processes, the task instance in the sub-process instance obtains duplicate parameters of the pre-task instance.",
+      "url": "https://github.com/apache/dolphinscheduler/issues/16879",
+      "created_at": "2024-12-05T02:52:07Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 14203,
+      "comment_count": 13,
+      "age_days": 483,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
       }
     }
   ]
