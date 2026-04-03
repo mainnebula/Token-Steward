@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-03T02:57:43Z",
+  "updated_at": "2026-04-03T07:22:18Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -707,6 +707,48 @@
         "state": "OPEN",
         "title": "Fix NPE in updateFederatedIdentity after IDP deletion and re-creation",
         "url": "https://github.com/keycloak/keycloak/pull/47214"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 47659,
+      "title": "SRCFG01008 warning in source Quarkus dev mode when kc.log-console-output=default (not reproducible via packaged kc.sh)",
+      "url": "https://github.com/keycloak/keycloak/issues/47659",
+      "created_at": "2026-03-31T22:44:55Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 33696,
+      "comment_count": 5,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "kowshik-04"
+        },
+        "number": 1,
+        "state": "OPEN",
+        "title": "Fix: avoid SRCFG01008 warning for log-console-output=default in Quarkus dev mode",
+        "url": "https://github.com/kowshik-04/keycloak/pull/1"
       },
       "score": 0.75,
       "score_breakdown": {
@@ -2386,40 +2428,6 @@
       }
     },
     {
-      "repo": "keycloak/keycloak",
-      "number": 47659,
-      "title": "SRCFG01008 warning in source Quarkus dev mode when kc.log-console-output=default (not reproducible via packaged kc.sh)",
-      "url": "https://github.com/keycloak/keycloak/issues/47659",
-      "created_at": "2026-03-31T22:44:55Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump"
-      ],
-      "language": "Java",
-      "stars": 33674,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "langgenius/dify",
       "number": 33122,
       "title": "Agent with Stability AI integration throws client-side error on image generation, but images are created successfully (visible in logs)",
@@ -2482,6 +2490,41 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "meshery/meshery",
+      "number": 18411,
+      "title": "[UI] MesherySettingsPerformanceComponent catch block swallows error details silently",
+      "url": "https://github.com/meshery/meshery/issues/18411",
+      "created_at": "2026-04-02T14:02:38Z",
+      "labels": [
+        "kind/bug",
+        "good first issue",
+        "language/javascript",
+        "component/ui",
+        "javascript",
+        "issue/valid"
+      ],
+      "language": "Go",
+      "stars": 10139,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -6725,7 +6768,7 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 111,
+      "stars": 113,
       "comment_count": 45,
       "age_days": 23,
       "is_bug": false,
@@ -6758,7 +6801,7 @@
         "community"
       ],
       "language": "Python",
-      "stars": 111,
+      "stars": 113,
       "comment_count": 135,
       "age_days": 23,
       "is_bug": false,
@@ -7083,47 +7126,6 @@
         "state": "OPEN",
         "title": "[micro-fix] fix(security): M-01 — Add rate limiting to webhook endpoints",
         "url": "https://github.com/aden-hive/hive/pull/5595"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5566,
-      "title": "[Security] M-03: HITL user input unsanitized before LLM processing (Medium)",
-      "url": "https://github.com/aden-hive/hive/issues/5566",
-      "created_at": "2026-03-01T05:37:03Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "security",
-        "size: medium"
-      ],
-      "language": "Python",
-      "stars": 8498,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "security",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "shibinsp"
-        },
-        "number": 5597,
-        "state": "OPEN",
-        "title": "[micro-fix] fix(security): M-03 — Sanitize human-in-the-loop input",
-        "url": "https://github.com/aden-hive/hive/pull/5597"
       },
       "score": 0.7,
       "score_breakdown": {
