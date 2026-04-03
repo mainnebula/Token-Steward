@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-02T19:07:33Z",
+  "updated_at": "2026-04-03T02:57:43Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1918,6 +1918,46 @@
       }
     },
     {
+      "repo": "aden-hive/hive",
+      "number": 6176,
+      "title": "Docs/CLI mismatch: README says 'hive open' while local wrapper usage is './hive ...' and requires repo root cwd",
+      "url": "https://github.com/aden-hive/hive/issues/6176",
+      "created_at": "2026-03-11T05:34:40Z",
+      "labels": [
+        "documentation",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 10004,
+      "comment_count": 4,
+      "age_days": 22,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Aayush-engineer"
+        },
+        "number": 6188,
+        "state": "OPEN",
+        "title": "docs: clarify hive open requires repo root and PATH setup",
+        "url": "https://github.com/aden-hive/hive/pull/6188"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.65,
+        "confidence": 0.94,
+        "effort": 0.75
+      }
+    },
+    {
       "repo": "adenhq/hive",
       "number": 4980,
       "title": "[Integration]:Add secret scanning to CI using Gitleaks",
@@ -2520,9 +2560,9 @@
         "help wanted"
       ],
       "language": "Go",
-      "stars": 459,
-      "comment_count": 7,
-      "age_days": 5,
+      "stars": 466,
+      "comment_count": 8,
+      "age_days": 6,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5049,6 +5089,46 @@
       }
     },
     {
+      "repo": "favonia/cloudflare-ddns",
+      "number": 1197,
+      "title": "Account API tokens incorrectly rejected by token verifier",
+      "url": "https://github.com/favonia/cloudflare-ddns/issues/1197",
+      "created_at": "2026-04-02T08:45:04Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "needs info"
+      ],
+      "language": "Go",
+      "stars": 2429,
+      "comment_count": 8,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "chenrui333"
+        },
+        "number": 5719,
+        "state": "OPEN",
+        "title": "cloudflare-ddns 1.16.2",
+        "url": "https://github.com/chenrui333/homebrew-tap/pull/5719"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.85,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "frappe/frappe",
       "number": 37798,
       "title": "Doctype name is missing in the breadcrumbs on the tree view.",
@@ -6230,6 +6310,37 @@
       }
     },
     {
+      "repo": "Necrom4/sbb-tui",
+      "number": 27,
+      "title": "MacOS Kitty Select and Link Hover issues.",
+      "url": "https://github.com/Necrom4/sbb-tui/issues/27",
+      "created_at": "2026-03-29T11:34:45Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 228,
+      "comment_count": 3,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "OWASP/Nest",
       "number": 4107,
       "title": "Improve error handling for missing Algolia configuration",
@@ -6614,9 +6725,9 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 110,
+      "stars": 111,
       "comment_count": 45,
-      "age_days": 22,
+      "age_days": 23,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -6647,9 +6758,9 @@
         "community"
       ],
       "language": "Python",
-      "stars": 110,
+      "stars": 111,
       "comment_count": 135,
-      "age_days": 22,
+      "age_days": 23,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -7020,110 +7131,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 6272,
-      "title": "[Bug]: Missing agent.json in email_reply_agent and meeting_scheduler templates",
-      "url": "https://github.com/aden-hive/hive/issues/6272",
-      "created_at": "2026-03-12T18:55:53Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 9307,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 6336,
-      "title": "[Bug]: No 404 page — invalid routes show blank screen",
-      "url": "https://github.com/aden-hive/hive/issues/6336",
-      "created_at": "2026-03-14T01:39:51Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 9386,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 6484,
-      "title": "[Bug]: Print statements in runner/runner.py should use logger for warning messages",
-      "url": "https://github.com/aden-hive/hive/issues/6484",
-      "created_at": "2026-03-15T14:31:13Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 9459,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Jose37456"
-        },
-        "number": 6489,
-        "state": "OPEN",
-        "title": "micro-fix(runner): replace print() with logger.warning() for credential warnings",
-        "url": "https://github.com/aden-hive/hive/pull/6489"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.8
       }
     }
   ]
