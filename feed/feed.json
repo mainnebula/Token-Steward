@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-03T07:22:18Z",
+  "updated_at": "2026-04-03T13:21:18Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -730,7 +730,7 @@
         "status/auto-bump"
       ],
       "language": "Java",
-      "stars": 33696,
+      "stars": 33703,
       "comment_count": 5,
       "age_days": 2,
       "is_bug": true,
@@ -2624,6 +2624,38 @@
       }
     },
     {
+      "repo": "AnalyseDeCircuit/oxideterm",
+      "number": 20,
+      "title": "1.0.4 创建Session 报错：modals.new_connection.connect_failed",
+      "url": "https://github.com/AnalyseDeCircuit/oxideterm/issues/20",
+      "created_at": "2026-04-03T03:39:47Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "need fix"
+      ],
+      "language": "Rust",
+      "stars": 109,
+      "comment_count": 10,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "AntennaPod/AntennaPod",
       "number": 8284,
       "title": "[media3] completing the last episode in the queue keeps it active",
@@ -4028,6 +4060,47 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "meshery/meshery",
+      "number": 18418,
+      "title": "[Docs] Deprecated word-wrap property used in _table.scss — should be overflow-wrap",
+      "url": "https://github.com/meshery/meshery/issues/18418",
+      "created_at": "2026-04-02T14:20:51Z",
+      "labels": [
+        "kind/bug",
+        "good first issue",
+        "area/docs",
+        "language/javascript"
+      ],
+      "language": "Go",
+      "stars": 10138,
+      "comment_count": 2,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "tysoncung"
+        },
+        "number": 18423,
+        "state": "OPEN",
+        "title": "fix(docs): replace deprecated word-wrap with overflow-wrap",
+        "url": "https://github.com/meshery/meshery/pull/18423"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.7,
+        "confidence": 0.94,
         "effort": 0.65
       }
     },
@@ -7052,87 +7125,6 @@
         "impact": 0.75,
         "confidence": 0.89,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5470,
-      "title": "[Bug]: Fix DeprecationWarnings in tests using legacy run_id format",
-      "url": "https://github.com/aden-hive/hive/issues/5470",
-      "created_at": "2026-02-27T12:09:46Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 8453,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "u-wlkjyy"
-        },
-        "number": 5480,
-        "state": "OPEN",
-        "title": "micro-fix: tests: use unified session_* run IDs in runtime logging tests",
-        "url": "https://github.com/aden-hive/hive/pull/5480"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5564,
-      "title": "[Security] M-01: No rate limiting on webhook server (Medium)",
-      "url": "https://github.com/aden-hive/hive/issues/5564",
-      "created_at": "2026-03-01T05:37:00Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "security",
-        "size: medium"
-      ],
-      "language": "Python",
-      "stars": 8498,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "security",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "shibinsp"
-        },
-        "number": 5595,
-        "state": "OPEN",
-        "title": "[micro-fix] fix(security): M-01 — Add rate limiting to webhook endpoints",
-        "url": "https://github.com/aden-hive/hive/pull/5595"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.35,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     }
   ]
