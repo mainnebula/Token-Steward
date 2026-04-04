@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T13:12:54Z",
+  "updated_at": "2026-04-04T18:55:56Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -951,9 +951,9 @@
         "extension"
       ],
       "language": "Go",
-      "stars": 2809,
-      "comment_count": 13,
-      "age_days": 3,
+      "stars": 2814,
+      "comment_count": 18,
+      "age_days": 4,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6933,8 +6933,8 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 113,
-      "comment_count": 46,
+      "stars": 114,
+      "comment_count": 47,
       "age_days": 24,
       "is_bug": false,
       "is_feature": false,
@@ -6966,8 +6966,8 @@
         "community"
       ],
       "language": "Python",
-      "stars": 113,
-      "comment_count": 135,
+      "stars": 114,
+      "comment_count": 136,
       "age_days": 24,
       "is_bug": false,
       "is_feature": false,
