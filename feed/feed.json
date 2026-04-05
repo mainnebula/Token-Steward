@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T18:55:56Z",
+  "updated_at": "2026-04-05T03:25:04Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -951,7 +951,7 @@
         "extension"
       ],
       "language": "Go",
-      "stars": 2814,
+      "stars": 2818,
       "comment_count": 18,
       "age_days": 4,
       "is_bug": true,
@@ -4471,6 +4471,46 @@
       }
     },
     {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 2819,
+      "title": "[BOUNTY] Red Team UTXO Implementation — Find Bugs, Earn RTC (50-200 RTC)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2819",
+      "created_at": "2026-04-04T03:03:17Z",
+      "labels": [
+        "help wanted",
+        "bounty",
+        "security"
+      ],
+      "language": "Python",
+      "stars": 114,
+      "comment_count": 17,
+      "age_days": 1,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "dinnar1407-code"
+        },
+        "number": 2065,
+        "state": "OPEN",
+        "title": "[UTXO-BUG] Security audit: 4 vulnerabilities found with failing test cases",
+        "url": "https://github.com/Scottcjn/Rustchain/pull/2065"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.7,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "TibixDev/winboat",
       "number": 462,
       "title": "[Bug] When uninstalled in arch and reinstalled, it appears as an emty app",
@@ -6935,7 +6975,7 @@
       "language": "Python",
       "stars": 114,
       "comment_count": 47,
-      "age_days": 24,
+      "age_days": 25,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -6967,8 +7007,8 @@
       ],
       "language": "Python",
       "stars": 114,
-      "comment_count": 136,
-      "age_days": 24,
+      "comment_count": 137,
+      "age_days": 25,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -7101,39 +7141,6 @@
       "stars": 108,
       "comment_count": 36,
       "age_days": 14,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.75
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 2270,
-      "title": "[BOUNTY: 1 RTC] Submit your first PR to any Elyan Labs repo",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2270",
-      "created_at": "2026-03-20T15:32:00Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "easy",
-        "community"
-      ],
-      "language": "Python",
-      "stars": 108,
-      "comment_count": 30,
-      "age_days": 10,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
