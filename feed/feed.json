@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-06T13:26:46Z",
+  "updated_at": "2026-04-06T19:13:03Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2664,37 +2664,6 @@
       }
     },
     {
-      "repo": "777genius/claude-notifications-go",
-      "number": 59,
-      "title": "macOS Tahoe (26.x): Notifications attributed to Script Editor instead of ClaudeNotifier",
-      "url": "https://github.com/777genius/claude-notifications-go/issues/59",
-      "created_at": "2026-03-27T19:55:23Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 466,
-      "comment_count": 8,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "AnalyseDeCircuit/oxideterm",
       "number": 20,
       "title": "1.0.4 创建Session 报错：modals.new_connection.connect_failed",
@@ -4279,6 +4248,37 @@
       }
     },
     {
+      "repo": "777genius/claude-notifications-go",
+      "number": 59,
+      "title": "macOS Tahoe (26.x): Notifications attributed to Script Editor instead of ClaudeNotifier",
+      "url": "https://github.com/777genius/claude-notifications-go/issues/59",
+      "created_at": "2026-03-27T19:55:23Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 485,
+      "comment_count": 9,
+      "age_days": 9,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "Giskard-AI/giskard-oss",
       "number": 2315,
       "title": "Make `Suite.append()` chainable (fluent suite builder)",
@@ -4348,6 +4348,48 @@
         "impact": 0.75,
         "confidence": 0.88,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "NVIDIA/NemoClaw",
+      "number": 1429,
+      "title": "CONTRIBUTING.md Missing npm link Step — Developer Setup Path Broken - IssueFinder - SN 07",
+      "url": "https://github.com/NVIDIA/NemoClaw/issues/1429",
+      "created_at": "2026-04-03T16:38:58Z",
+      "labels": [
+        "documentation",
+        "duplicate",
+        "good first issue",
+        "Getting Started",
+        "priority: high"
+      ],
+      "language": "JavaScript",
+      "stars": 18593,
+      "comment_count": 3,
+      "age_days": 3,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "dknos"
+        },
+        "number": 1483,
+        "state": "OPEN",
+        "title": "docs(contributing): add npm link step to developer setup",
+        "url": "https://github.com/NVIDIA/NemoClaw/pull/1483"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.65,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -7090,40 +7132,6 @@
       "stars": 113,
       "comment_count": 482,
       "age_days": 23,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.75
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 2141,
-      "title": "[BOUNTY: 2 RTC] Upload 3 original videos to BoTTube",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2141",
-      "created_at": "2026-03-16T17:06:12Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "easy",
-        "community",
-        "bottube"
-      ],
-      "language": "Python",
-      "stars": 108,
-      "comment_count": 36,
-      "age_days": 14,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
