@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-09T02:56:13Z",
+  "updated_at": "2026-04-09T07:50:56Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2599,6 +2599,48 @@
       }
     },
     {
+      "repo": "meshery/meshery",
+      "number": 18598,
+      "title": "[mesheryctl] qa.meshery.io formatting conflict",
+      "url": "https://github.com/meshery/meshery/issues/18598",
+      "created_at": "2026-04-09T00:08:24Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "component/mesheryctl",
+        "language/go",
+        "area/tests"
+      ],
+      "language": "Go",
+      "stars": 10140,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "hssuryawanshib23-afk"
+        },
+        "number": 18604,
+        "state": "OPEN",
+        "title": "[mesheryctl] Align component view e2e assertions with current CLI output",
+        "url": "https://github.com/meshery/meshery/pull/18604"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "pingcap/tidb",
       "number": 65543,
       "title": "after restarting, DDL will be blocked for a while",
@@ -3968,6 +4010,43 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 47523,
+      "title": "The name \"master\" seems to be hard-coded in places and thus breaks KC_SPI_ADMIN_REALM",
+      "url": "https://github.com/keycloak/keycloak/issues/47523",
+      "created_at": "2026-03-27T12:33:52Z",
+      "labels": [
+        "kind/bug",
+        "area/admin/ui",
+        "help wanted",
+        "team/core-clients",
+        "team/core-shared",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 33788,
+      "comment_count": 3,
+      "age_days": 12,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "kornia/kornia-rs",
       "number": 732,
       "title": "[Bug]: Test Infrastructure Fragility: data-driven AprilTag tests have silent failures and panic-on-error paths",
@@ -4573,6 +4652,40 @@
         "impact": 0.7,
         "confidence": 0.91,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 2862,
+      "title": "[BOUNTY: 3 RTC] Add RustChain to 5 Awesome Lists on GitHub (DePIN, Blockchain, AI)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2862",
+      "created_at": "2026-04-09T03:24:59Z",
+      "labels": [
+        "good first issue",
+        "bounty",
+        "multi-claim",
+        "propagation",
+        "easy"
+      ],
+      "language": "Python",
+      "stars": 116,
+      "comment_count": 6,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.8
       }
     },
     {
@@ -7064,104 +7177,6 @@
         "impact": 0.55,
         "confidence": 0.91,
         "effort": 0.75
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 1595,
-      "title": "[EASY BOUNTY: 1 RTC] Star all 5 Elyan Labs repos and share on social media",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1595",
-      "created_at": "2026-03-10T23:48:37Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "propagation",
-        "easy"
-      ],
-      "language": "Python",
-      "stars": 116,
-      "comment_count": 47,
-      "age_days": 29,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.75
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 1611,
-      "title": "[EASY BOUNTY: 1 RTC] Add emoji reactions to 3+ issues showing support",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1611",
-      "created_at": "2026-03-10T23:50:09Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "easy",
-        "community"
-      ],
-      "language": "Python",
-      "stars": 116,
-      "comment_count": 142,
-      "age_days": 29,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.75
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 1613,
-      "title": "[BOUNTY: 3 RTC] Set up Dependabot or Renovate for any Elyan Labs repo",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1613",
-      "created_at": "2026-03-10T23:50:13Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "security"
-      ],
-      "language": "Python",
-      "stars": 114,
-      "comment_count": 70,
-      "age_days": 25,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "security",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.7,
-        "confidence": 0.91,
-        "effort": 0.6
       }
     }
   ]
