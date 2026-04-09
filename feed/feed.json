@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-09T14:04:41Z",
+  "updated_at": "2026-04-09T19:20:35Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2279,6 +2279,46 @@
       }
     },
     {
+      "repo": "go-git/go-git",
+      "number": 1917,
+      "title": "Race condition in `v6/plumbing/object.(*Tree).FindEntry()`",
+      "url": "https://github.com/go-git/go-git/issues/1917",
+      "created_at": "2026-03-23T15:02:52Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 7333,
+      "comment_count": 6,
+      "age_days": 17,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "majiayu000"
+        },
+        "number": 1922,
+        "state": "OPEN",
+        "title": "fix: race condition in Tree.FindEntry() and Tree.entry()",
+        "url": "https://github.com/go-git/go-git/pull/1922"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "google-gemini/gemini-cli",
       "number": 20656,
       "title": "Verbose mode shows minimal info for inline audio/video data",
@@ -3687,46 +3727,6 @@
       }
     },
     {
-      "repo": "go-git/go-git",
-      "number": 1917,
-      "title": "Race condition in `v6/plumbing/object.(*Tree).FindEntry()`",
-      "url": "https://github.com/go-git/go-git/issues/1917",
-      "created_at": "2026-03-23T15:02:52Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 7276,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "majiayu000"
-        },
-        "number": 1922,
-        "state": "OPEN",
-        "title": "fix: race condition in Tree.FindEntry() and Tree.entry()",
-        "url": "https://github.com/go-git/go-git/pull/1922"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "inclusionAI/AReaL",
       "number": 1046,
       "title": "[BUG] ResponseValidationError when areal gateway processing openclaw response",
@@ -4060,9 +4060,9 @@
         "priority/normal"
       ],
       "language": "Java",
-      "stars": 33788,
-      "comment_count": 3,
-      "age_days": 12,
+      "stars": 33796,
+      "comment_count": 4,
+      "age_days": 13,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4392,6 +4392,38 @@
       }
     },
     {
+      "repo": "777genius/claude-notifications-go",
+      "number": 61,
+      "title": "Loading cursor persists after clicking notification on GNOME/Wayland",
+      "url": "https://github.com/777genius/claude-notifications-go/issues/61",
+      "created_at": "2026-03-31T07:13:19Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "linux"
+      ],
+      "language": "Go",
+      "stars": 503,
+      "comment_count": 8,
+      "age_days": 9,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "Giskard-AI/giskard-oss",
       "number": 2315,
       "title": "Make `Suite.append()` chainable (fluent suite builder)",
@@ -4668,9 +4700,9 @@
         "security"
       ],
       "language": "Python",
-      "stars": 115,
-      "comment_count": 42,
-      "age_days": 4,
+      "stars": 116,
+      "comment_count": 49,
+      "age_days": 5,
       "is_bug": false,
       "is_feature": false,
       "category": "security",
@@ -7130,46 +7162,6 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Scottcjn/Rustchain",
-      "number": 2150,
-      "title": "Bounty: \"Mine Your Grandma's Computer\" — vintage miner setup guide",
-      "url": "https://github.com/Scottcjn/Rustchain/issues/2150",
-      "created_at": "2026-04-06T17:14:04Z",
-      "labels": [
-        "documentation",
-        "good first issue",
-        "bounty"
-      ],
-      "language": "Python",
-      "stars": 223,
-      "comment_count": 5,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "alexanderxfgl-bit"
-        },
-        "number": 1,
-        "state": "OPEN",
-        "title": "Vintage Miner Setup Guide - Mine Your Grandma's Computer",
-        "url": "https://github.com/alexanderxfgl-bit/Rustchain/pull/1"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.65,
-        "confidence": 0.91,
         "effort": 0.65
       }
     }
