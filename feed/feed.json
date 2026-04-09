@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-09T07:50:56Z",
+  "updated_at": "2026-04-09T14:04:41Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2600,6 +2600,40 @@
     },
     {
       "repo": "meshery/meshery",
+      "number": 18515,
+      "title": "[UI] Browser warns preloaded Qanelas font not used soon after load",
+      "url": "https://github.com/meshery/meshery/issues/18515",
+      "created_at": "2026-04-06T18:46:50Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "good first issue",
+        "language/javascript",
+        "language/html"
+      ],
+      "language": "Go",
+      "stars": 10141,
+      "comment_count": 3,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "meshery/meshery",
       "number": 18598,
       "title": "[mesheryctl] qa.meshery.io formatting conflict",
       "url": "https://github.com/meshery/meshery/issues/18598",
@@ -5048,6 +5082,39 @@
       }
     },
     {
+      "repo": "apache/airflow",
+      "number": 64957,
+      "title": "dag_id missing in get_task_instance of TaskInstance Model",
+      "url": "https://github.com/apache/airflow/issues/64957",
+      "created_at": "2026-04-09T11:38:13Z",
+      "labels": [
+        "kind:bug",
+        "good first issue",
+        "priority:critical",
+        "area:core"
+      ],
+      "language": "Python",
+      "stars": 44968,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "apache/iceberg",
       "number": 14874,
       "title": "[Docs] Schema Doc is Missing V3 Types",
@@ -6737,6 +6804,38 @@
       }
     },
     {
+      "repo": "NVIDIA/NemoClaw",
+      "number": 1686,
+      "title": "Please remove all the \"tls: terminate\" from the blueprints",
+      "url": "https://github.com/NVIDIA/NemoClaw/issues/1686",
+      "created_at": "2026-04-09T11:12:22Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement"
+      ],
+      "language": "JavaScript",
+      "stars": 18819,
+      "comment_count": 0,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.7,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "Necrom4/sbb-tui",
       "number": 27,
       "title": "MacOS Kitty Select and Link Hover issues.",
@@ -7072,111 +7171,6 @@
         "impact": 0.65,
         "confidence": 0.91,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "Scottcjn/Rustchain",
-      "number": 771,
-      "title": "[BOUNTY] Fix a typo in docs or comments (0.5 RTC)",
-      "url": "https://github.com/Scottcjn/Rustchain/issues/771",
-      "created_at": "2026-03-09T19:09:10Z",
-      "labels": [
-        "documentation",
-        "good first issue",
-        "bounty"
-      ],
-      "language": "Python",
-      "stars": 146,
-      "comment_count": 6,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.65,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Scottcjn/Rustchain",
-      "number": 772,
-      "title": "[BOUNTY] Add a code comment explaining a function (0.5 RTC)",
-      "url": "https://github.com/Scottcjn/Rustchain/issues/772",
-      "created_at": "2026-03-09T19:09:16Z",
-      "labels": [
-        "documentation",
-        "good first issue",
-        "bounty"
-      ],
-      "language": "Python",
-      "stars": 146,
-      "comment_count": 9,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "klsdsg"
-        },
-        "number": 798,
-        "state": "OPEN",
-        "title": "docs: Add docstring to _get_connection method",
-        "url": "https://github.com/Scottcjn/Rustchain/pull/798"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.65,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 1593,
-      "title": "[EASY BOUNTY: 2 RTC] Translate any error message to your language",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1593",
-      "created_at": "2026-03-10T23:48:35Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "easy",
-        "i18n"
-      ],
-      "language": "Python",
-      "stars": 105,
-      "comment_count": 18,
-      "age_days": 17,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.75
       }
     }
   ]
