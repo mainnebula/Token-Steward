@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-10T03:28:30Z",
+  "updated_at": "2026-04-10T07:53:35Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1473,45 +1473,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.74,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "gitbutlerapp/gitbutler",
-      "number": 12748,
-      "title": "`but setup` displaces hooks owned by hook managers (prek, pre-commit, husky) without detecting them, and provides no escape hatch",
-      "url": "https://github.com/gitbutlerapp/gitbutler/issues/12748",
-      "created_at": "2026-03-10T08:28:39Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 20034,
-      "comment_count": 13,
-      "age_days": 29,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "ichoosetoaccept"
-        },
-        "number": 12980,
-        "state": "OPEN",
-        "title": "feat: hook ownership model with external manager detection",
-        "url": "https://github.com/gitbutlerapp/gitbutler/pull/12980"
-      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.6,
@@ -4775,8 +4736,8 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 116,
-      "comment_count": 11,
+      "stars": 117,
+      "comment_count": 12,
       "age_days": 1,
       "is_bug": false,
       "is_feature": false,
@@ -5690,6 +5651,45 @@
         "impact": 0.75,
         "confidence": 0.85,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "gitbutlerapp/gitbutler",
+      "number": 12748,
+      "title": "`but setup` displaces hooks owned by hook managers (prek, pre-commit, husky) without detecting them, and provides no escape hatch",
+      "url": "https://github.com/gitbutlerapp/gitbutler/issues/12748",
+      "created_at": "2026-03-10T08:28:39Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 20131,
+      "comment_count": 14,
+      "age_days": 30,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ichoosetoaccept"
+        },
+        "number": 12980,
+        "state": "OPEN",
+        "title": "feat: hook ownership model with external manager detection",
+        "url": "https://github.com/gitbutlerapp/gitbutler/pull/12980"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
       }
     },
     {
