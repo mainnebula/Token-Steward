@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-10T13:28:23Z",
+  "updated_at": "2026-04-10T19:06:02Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4662,7 +4662,7 @@
       ],
       "language": "Python",
       "stars": 117,
-      "comment_count": 50,
+      "comment_count": 52,
       "age_days": 6,
       "is_bug": false,
       "is_feature": false,
@@ -4694,8 +4694,8 @@
         "integration"
       ],
       "language": "Python",
-      "stars": 116,
-      "comment_count": 10,
+      "stars": 117,
+      "comment_count": 8,
       "age_days": 1,
       "is_bug": false,
       "is_feature": false,
@@ -4707,12 +4707,12 @@
       "action": "review",
       "pr": {
         "author": {
-          "login": "z1908990090-blip"
+          "login": "yw13931835525-cyber"
         },
-        "number": 2902,
+        "number": 2956,
         "state": "OPEN",
-        "title": "feat: Claude Code /rtc-balance Slash Command (#2860)",
-        "url": "https://github.com/Scottcjn/rustchain-bounties/pull/2902"
+        "title": "feat: Claude Code /rtc-balance slash command (#2860, 15 RTC)",
+        "url": "https://github.com/Scottcjn/rustchain-bounties/pull/2956"
       },
       "score": 0.71,
       "score_breakdown": {
