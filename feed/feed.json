@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-11T02:52:26Z",
+  "updated_at": "2026-04-11T07:11:48Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4766,6 +4766,82 @@
     },
     {
       "repo": "Scottcjn/rustchain-bounties",
+      "number": 2870,
+      "title": "[BOUNTY: 1 RTC] Run the RustChain Miner for 24 Hours and Share Your Hardware Report",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2870",
+      "created_at": "2026-04-09T03:26:26Z",
+      "labels": [
+        "good first issue",
+        "bounty",
+        "multi-claim",
+        "easy",
+        "community",
+        "onboarding"
+      ],
+      "language": "Python",
+      "stars": 116,
+      "comment_count": 5,
+      "age_days": 2,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 2957,
+      "title": "[BOUNTY: 10 RTC] SEO Audit + Suggestions for elyanlabs.ai (Quiet Launch)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2957",
+      "created_at": "2026-04-10T17:29:37Z",
+      "labels": [
+        "good first issue",
+        "bounty",
+        "propagation",
+        "easy"
+      ],
+      "language": "Python",
+      "stars": 116,
+      "comment_count": 7,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "yw13931835525-cyber"
+        },
+        "number": 2962,
+        "state": "OPEN",
+        "title": "[BOUNTY #2957] SEO Audit + Suggestions for elyanlabs.ai (10 RTC)",
+        "url": "https://github.com/Scottcjn/rustchain-bounties/pull/2962"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.8
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
       "number": 2959,
       "title": "[BOUNTY: 5 RTC] Submit elyanlabs.ai to Google Search Console + Create sitemap.xml",
       "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2959",
@@ -4778,7 +4854,7 @@
       ],
       "language": "Python",
       "stars": 116,
-      "comment_count": 5,
+      "comment_count": 7,
       "age_days": 0,
       "is_bug": false,
       "is_feature": false,
@@ -7113,68 +7189,6 @@
         "title": "DRAFT: feat: add v1 API endpoints for SDK settings (LLM config, secrets)",
         "url": "https://github.com/OpenHands/OpenHands/pull/13383"
       },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "OpenHands/OpenHands",
-      "number": 13275,
-      "title": "[RFC] OpenHands Automations — Scheduled & Event-Driven Conversations",
-      "url": "https://github.com/OpenHands/OpenHands/issues/13275",
-      "created_at": "2026-03-06T16:57:49Z",
-      "labels": [
-        "enhancement",
-        "cloud",
-        "proposal"
-      ],
-      "language": "Python",
-      "stars": 68671,
-      "comment_count": 7,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "OpenHands/OpenHands",
-      "number": 13518,
-      "title": "[Feature]: Add Support for Switching Models via llama.cpp Compatible API",
-      "url": "https://github.com/OpenHands/OpenHands/issues/13518",
-      "created_at": "2026-03-21T17:00:47Z",
-      "labels": [
-        "enhancement"
-      ],
-      "language": "Python",
-      "stars": 69501,
-      "comment_count": 7,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.7,
       "score_breakdown": {
         "reach": 0.6,
