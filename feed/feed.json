@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-12T13:18:04Z",
+  "updated_at": "2026-04-12T19:02:08Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6743,6 +6743,46 @@
       }
     },
     {
+      "repo": "567-labs/instructor",
+      "number": 2205,
+      "title": "RAM Spike when I import instructor",
+      "url": "https://github.com/567-labs/instructor/issues/2205",
+      "created_at": "2026-03-23T09:07:57Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "status:needs-investigation"
+      ],
+      "language": "Python",
+      "stars": 12744,
+      "comment_count": 3,
+      "age_days": 20,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "jxnl"
+        },
+        "number": 2264,
+        "state": "OPEN",
+        "title": "perf: lazy load top-level instructor exports",
+        "url": "https://github.com/567-labs/instructor/pull/2264"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.89,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "CherryHQ/cherry-studio",
       "number": 13059,
       "title": "[Discussion]: Webdav backup failed, tried both Aliyun and Tera cloud drives, neither works 1.7.20",
@@ -7143,38 +7183,6 @@
       "language": "Python",
       "stars": 389,
       "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "OWASP/Nest",
-      "number": 4121,
-      "title": "Extend list_members endpoint with ordering by name and login",
-      "url": "https://github.com/OWASP/Nest/issues/4121",
-      "created_at": "2026-02-28T18:56:03Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "enhancement"
-      ],
-      "language": "Python",
-      "stars": 390,
-      "comment_count": 4,
       "age_days": 0,
       "is_bug": true,
       "is_feature": true,
