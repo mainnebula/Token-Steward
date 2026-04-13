@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-13T08:17:04Z",
+  "updated_at": "2026-04-13T13:59:59Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -482,6 +482,39 @@
       "age_days": 3,
       "is_bug": true,
       "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "aden-hive/hive",
+      "number": 4924,
+      "title": "[Feature]: Improve error handling in hive list for incomplete agent configs",
+      "url": "https://github.com/aden-hive/hive/issues/4924",
+      "created_at": "2026-02-16T02:09:07Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "size: small"
+      ],
+      "language": "Python",
+      "stars": 10199,
+      "comment_count": 5,
+      "age_days": 56,
+      "is_bug": true,
+      "is_feature": true,
       "category": "general",
       "surface": "bugfix",
       "has_contributing": true,
@@ -2099,6 +2132,37 @@
       }
     },
     {
+      "repo": "apache/dolphinscheduler",
+      "number": 18166,
+      "title": "[Bug] [Worker] File parameter transfer feature is broken",
+      "url": "https://github.com/apache/dolphinscheduler/issues/18166",
+      "created_at": "2026-04-13T08:23:03Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 14217,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "bazelbuild/bazel",
       "number": 28953,
       "title": "Dangling symlinks with custom rules with outputs",
@@ -3622,6 +3686,39 @@
       }
     },
     {
+      "repo": "code-charity/youtube",
+      "number": 3780,
+      "title": "Auto-Pause not working🐞",
+      "url": "https://github.com/code-charity/youtube/issues/3780",
+      "created_at": "2026-04-12T17:20:58Z",
+      "labels": [
+        "Bug",
+        "help wanted",
+        "good first issue",
+        "up-for-grabs"
+      ],
+      "language": "JavaScript",
+      "stars": 4311,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.88,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "containers/podman",
       "number": 28146,
       "title": "Documentation: PublishPort does not mention the possibility to define a protocol",
@@ -4014,40 +4111,6 @@
     },
     {
       "repo": "keycloak/keycloak",
-      "number": 47513,
-      "title": "Review JwtProofValidator",
-      "url": "https://github.com/keycloak/keycloak/issues/47513",
-      "created_at": "2026-03-27T09:17:41Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "team/core-clients",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33679,
-      "comment_count": 3,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.89,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
       "number": 47523,
       "title": "The name \"master\" seems to be hard-coded in places and thus breaks KC_SPI_ADMIN_REALM",
       "url": "https://github.com/keycloak/keycloak/issues/47523",
@@ -4075,6 +4138,51 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 47682,
+      "title": "Admin UI drops unknown realm attributes when saving realm settings",
+      "url": "https://github.com/keycloak/keycloak/issues/47682",
+      "created_at": "2026-04-01T12:34:30Z",
+      "labels": [
+        "kind/bug",
+        "area/admin/ui",
+        "help wanted",
+        "team/core-clients",
+        "team/core-shared",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 33850,
+      "comment_count": 4,
+      "age_days": 12,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "dscham"
+        },
+        "number": 47683,
+        "state": "OPEN",
+        "title": "Preserve unknown realm attributes when saving settings",
+        "url": "https://github.com/keycloak/keycloak/pull/47683"
+      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
@@ -6817,6 +6925,37 @@
       }
     },
     {
+      "repo": "AprilSylph/XKit-Rewritten",
+      "number": 2211,
+      "title": "Tweaks: \"Hide all posts from blogs I've blocked\" works inconsistently for reblogs",
+      "url": "https://github.com/AprilSylph/XKit-Rewritten/issues/2211",
+      "created_at": "2026-04-13T04:49:55Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "JavaScript",
+      "stars": 361,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "CherryHQ/cherry-studio",
       "number": 13059,
       "title": "[Discussion]: Webdav backup failed, tried both Aliyun and Tera cloud drives, neither works 1.7.20",
@@ -7054,151 +7193,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.83,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "MalpenZibo/ashell",
-      "number": 524,
-      "title": "[BUG] Desktop not clickable after closing popup",
-      "url": "https://github.com/MalpenZibo/ashell/issues/524",
-      "created_at": "2026-03-10T15:05:12Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "wayland"
-      ],
-      "language": "Rust",
-      "stars": 785,
-      "comment_count": 12,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.6,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "SimoneFelici"
-        },
-        "number": 13747,
-        "state": "OPEN",
-        "title": "Fix mouse pointer not refocussing after layer surface change",
-        "url": "https://github.com/hyprwm/Hyprland/pull/13747"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.83,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "NVIDIA/NemoClaw",
-      "number": 1403,
-      "title": "[NemoClaw][doc] Missing support matrix / compatibility page — no reachable link from root README",
-      "url": "https://github.com/NVIDIA/NemoClaw/issues/1403",
-      "created_at": "2026-04-03T08:00:12Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "good first issue",
-        "enhancement: feature",
-        "NV QA"
-      ],
-      "language": "JavaScript",
-      "stars": 18362,
-      "comment_count": 1,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "WuKongAI-CMU"
-        },
-        "number": 1415,
-        "state": "OPEN",
-        "title": "docs: add support matrix reference page",
-        "url": "https://github.com/NVIDIA/NemoClaw/pull/1415"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.7,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "NVIDIA/NemoClaw",
-      "number": 1686,
-      "title": "Please remove all the \"tls: terminate\" from the blueprints",
-      "url": "https://github.com/NVIDIA/NemoClaw/issues/1686",
-      "created_at": "2026-04-09T11:12:22Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "enhancement"
-      ],
-      "language": "JavaScript",
-      "stars": 18819,
-      "comment_count": 0,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.7,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Necrom4/sbb-tui",
-      "number": 27,
-      "title": "MacOS Kitty Select and Link Hover issues.",
-      "url": "https://github.com/Necrom4/sbb-tui/issues/27",
-      "created_at": "2026-03-29T11:34:45Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 228,
-      "comment_count": 3,
-      "age_days": 4,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
         "effort": 0.65
       }
     }
