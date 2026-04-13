@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-13T13:59:59Z",
+  "updated_at": "2026-04-13T19:24:00Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -7091,6 +7091,51 @@
       }
     },
     {
+      "repo": "HbmMods/Hbm-s-Nuclear-Tech-GIT",
+      "number": 2836,
+      "title": "Plastic bag item dupe & server crash",
+      "url": "https://github.com/HbmMods/Hbm-s-Nuclear-Tech-GIT/issues/2836",
+      "created_at": "2026-04-06T11:01:29Z",
+      "labels": [
+        "bug",
+        "duplicate",
+        "enhancement",
+        "invalid",
+        "question",
+        "wontfix",
+        "invalid: suggestion",
+        "can't reproduce",
+        "invalid: 1.12",
+        "more info needed",
+        "mod conflict",
+        "huh?",
+        "skill issue",
+        "stale",
+        "TODO",
+        "yeah"
+      ],
+      "language": "Java",
+      "stars": 791,
+      "comment_count": 8,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "Kilo-Org/kilo",
       "number": 560,
       "title": "[FEATURE]: add `kilo help --all` to dump full CLI reference as markdown",
@@ -7162,37 +7207,6 @@
         "reach": 0.6,
         "impact": 0.55,
         "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "MadAppGang/claudish",
-      "number": 91,
-      "title": "Terminal color inversion in dark mode — does not occur when running claude directly",
-      "url": "https://github.com/MadAppGang/claudish/issues/91",
-      "created_at": "2026-03-30T04:13:33Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 694,
-      "comment_count": 6,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.6,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.83,
         "effort": 0.65
       }
     }
