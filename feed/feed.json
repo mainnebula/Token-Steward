@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-13T03:39:00Z",
+  "updated_at": "2026-04-13T08:17:04Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2565,6 +2565,48 @@
       }
     },
     {
+      "repo": "mcp-use/mcp-use",
+      "number": 1257,
+      "title": "Feature: Per-tool authorization layer for MCP servers",
+      "url": "https://github.com/mcp-use/mcp-use/issues/1257",
+      "created_at": "2026-03-28T17:36:46Z",
+      "labels": [
+        "bug",
+        "Python",
+        "enhancement",
+        "agent",
+        "server"
+      ],
+      "language": "TypeScript",
+      "stars": 9767,
+      "comment_count": 5,
+      "age_days": 15,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "hetsaraiya"
+        },
+        "number": 1285,
+        "state": "OPEN",
+        "title": "feat(python): add ToolAuthorizationMiddleware for per-tool access control",
+        "url": "https://github.com/mcp-use/mcp-use/pull/1285"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "meshery/meshery",
       "number": 18411,
       "title": "[UI] MesherySettingsPerformanceComponent catch block swallows error details silently",
@@ -4813,7 +4855,7 @@
       ],
       "language": "Python",
       "stars": 117,
-      "comment_count": 5,
+      "comment_count": 10,
       "age_days": 4,
       "is_bug": false,
       "is_feature": false,
@@ -4886,9 +4928,9 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 116,
-      "comment_count": 7,
-      "age_days": 0,
+      "stars": 117,
+      "comment_count": 13,
+      "age_days": 2,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -4896,16 +4938,8 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "yw13931835525-cyber"
-        },
-        "number": 2963,
-        "state": "OPEN",
-        "title": "[BOUNTY #2959] sitemap.xml + Google Search Console for elyanlabs.ai (5 RTC)",
-        "url": "https://github.com/Scottcjn/rustchain-bounties/pull/2963"
-      },
+      "action": "fix",
+      "pr": null,
       "score": 0.71,
       "score_breakdown": {
         "reach": 0.5,
@@ -7153,39 +7187,6 @@
       "age_days": 4,
       "is_bug": true,
       "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "OWASP/Nest",
-      "number": 4107,
-      "title": "Improve error handling for missing Algolia configuration",
-      "url": "https://github.com/OWASP/Nest/issues/4107",
-      "created_at": "2026-02-27T16:05:33Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "enhancement",
-        "question"
-      ],
-      "language": "Python",
-      "stars": 389,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": true,
       "category": "general",
       "surface": "bugfix",
       "has_contributing": true,
