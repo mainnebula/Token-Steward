@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-14T03:28:35Z",
+  "updated_at": "2026-04-14T07:59:59Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -748,48 +748,6 @@
         "state": "OPEN",
         "title": "Fix NPE in updateFederatedIdentity after IDP deletion and re-creation",
         "url": "https://github.com/keycloak/keycloak/pull/47214"
-      },
-      "score": 0.75,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 47659,
-      "title": "SRCFG01008 warning in source Quarkus dev mode when kc.log-console-output=default (not reproducible via packaged kc.sh)",
-      "url": "https://github.com/keycloak/keycloak/issues/47659",
-      "created_at": "2026-03-31T22:44:55Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump"
-      ],
-      "language": "Java",
-      "stars": 33703,
-      "comment_count": 5,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "kowshik-04"
-        },
-        "number": 1,
-        "state": "OPEN",
-        "title": "Fix: avoid SRCFG01008 warning for log-console-output=default in Quarkus dev mode",
-        "url": "https://github.com/kowshik-04/keycloak/pull/1"
       },
       "score": 0.75,
       "score_breakdown": {
@@ -4181,6 +4139,48 @@
     },
     {
       "repo": "keycloak/keycloak",
+      "number": 47659,
+      "title": "SRCFG01008 warning in source Quarkus dev mode when kc.log-console-output=default (not reproducible via packaged kc.sh)",
+      "url": "https://github.com/keycloak/keycloak/issues/47659",
+      "created_at": "2026-03-31T22:44:55Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 33861,
+      "comment_count": 4,
+      "age_days": 13,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "kowshik-04"
+        },
+        "number": 1,
+        "state": "OPEN",
+        "title": "Fix: avoid SRCFG01008 warning for log-console-output=default in Quarkus dev mode",
+        "url": "https://github.com/kowshik-04/keycloak/pull/1"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
       "number": 47682,
       "title": "Admin UI drops unknown realm attributes when saving realm settings",
       "url": "https://github.com/keycloak/keycloak/issues/47682",
@@ -4952,9 +4952,9 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 116,
-      "comment_count": 14,
-      "age_days": 3,
+      "stars": 117,
+      "comment_count": 22,
+      "age_days": 5,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -6777,6 +6777,37 @@
       }
     },
     {
+      "repo": "mampfes/hacs_waste_collection_schedule",
+      "number": 5973,
+      "title": "[Bug]: 'Landkreis Märkisch-Oderland' (Germany) not working any more",
+      "url": "https://github.com/mampfes/hacs_waste_collection_schedule/issues/5973",
+      "created_at": "2026-04-12T11:48:40Z",
+      "labels": [
+        "help wanted",
+        "source defect"
+      ],
+      "language": "Python",
+      "stars": 1953,
+      "comment_count": 7,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.85,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "meilisearch/meilisearch",
       "number": 5953,
       "title": "Meilisearch v1.24 was not published to Gemfury",
@@ -7166,48 +7197,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "Kilo-Org/kilo",
-      "number": 560,
-      "title": "[FEATURE]: add `kilo help --all` to dump full CLI reference as markdown",
-      "url": "https://github.com/Kilo-Org/kilo/issues/560",
-      "created_at": "2026-02-21T06:59:25Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "good first issue",
-        "kilo-auto-fix",
-        "kilo-triaged"
-      ],
-      "language": "TypeScript",
-      "stars": 126,
-      "comment_count": 5,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Githubguy132010"
-        },
-        "number": 570,
-        "state": "OPEN",
-        "title": "feat: add `kilo help --all` to dump full CLI reference as markdown",
-        "url": "https://github.com/Kilo-Org/kilo/pull/570"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.65,
-        "confidence": 0.91,
-        "effort": 0.65
       }
     }
   ]
