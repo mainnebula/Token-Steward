@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-15T03:27:11Z",
+  "updated_at": "2026-04-15T08:00:26Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3821,7 +3821,7 @@
         "up-for-grabs"
       ],
       "language": "JavaScript",
-      "stars": 4312,
+      "stars": 4311,
       "comment_count": 7,
       "age_days": 1,
       "is_bug": true,
@@ -3963,6 +3963,39 @@
       "language": "Python",
       "stars": 4817,
       "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "internetarchive/openlibrary",
+      "number": 12381,
+      "title": "Bug: Duplicate <legend> in Advanced Search form causing accessibility issues",
+      "url": "https://github.com/internetarchive/openlibrary/issues/12381",
+      "created_at": "2026-04-15T07:00:39Z",
+      "labels": [
+        "Type: Bug",
+        "Good First Issue",
+        "Needs: Triage",
+        "Needs: Lead"
+      ],
+      "language": "Python",
+      "stars": 6356,
+      "comment_count": 3,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
@@ -4354,6 +4387,52 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 48040,
+      "title": "User session limit generates fatal error",
+      "url": "https://github.com/keycloak/keycloak/issues/48040",
+      "created_at": "2026-04-14T12:26:15Z",
+      "labels": [
+        "area/authentication",
+        "kind/bug",
+        "help wanted",
+        "team/core-clients",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal",
+        "team/core-authn",
+        "backport/26.6"
+      ],
+      "language": "Java",
+      "stars": 33878,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "mateenali66"
+        },
+        "number": 48062,
+        "state": "OPEN",
+        "title": "fix(session-limits): guard against negative stream limit when realm limit exceeded but client is not",
+        "url": "https://github.com/keycloak/keycloak/pull/48062"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.89,
+        "effort": 0.65
       }
     },
     {
@@ -6780,9 +6859,9 @@
         "status/auto-bump"
       ],
       "language": "Java",
-      "stars": 33031,
-      "comment_count": 7,
-      "age_days": 48,
+      "stars": 33878,
+      "comment_count": 8,
+      "age_days": 96,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7024,7 +7103,7 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 3245,
+      "stars": 3294,
       "comment_count": 5,
       "age_days": 1,
       "is_bug": true,
@@ -7116,73 +7195,6 @@
         "impact": 0.65,
         "confidence": 0.89,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "meteor/meteor",
-      "number": 14242,
-      "title": "Meteor Developer OAuth: account-settings page and auth endpoint no longer functional",
-      "url": "https://github.com/meteor/meteor/issues/14242",
-      "created_at": "2026-03-20T21:17:47Z",
-      "labels": [
-        "Project:Docs",
-        "good first issue",
-        "missing-docs",
-        "Project:Accounts:OAuth"
-      ],
-      "language": "JavaScript",
-      "stars": 44788,
-      "comment_count": 5,
-      "age_days": 7,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.65,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "quantumlib/Cirq",
-      "number": 7941,
-      "title": "`is_native_neutral_atom_gate` crashes with `TypeError` when checking unhashable gates",
-      "url": "https://github.com/quantumlib/Cirq/issues/7941",
-      "created_at": "2026-03-09T03:00:50Z",
-      "labels": [
-        "good first issue",
-        "no QC knowledge needed",
-        "kind/bug-report",
-        "triage/accepted",
-        "area/gates"
-      ],
-      "language": "Python",
-      "stars": 4891,
-      "comment_count": 4,
-      "age_days": 9,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     }
   ]
