@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-14T19:27:42Z",
+  "updated_at": "2026-04-15T03:27:11Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1750,6 +1750,39 @@
       }
     },
     {
+      "repo": "kubernetes/autoscaler",
+      "number": 9485,
+      "title": "vpa: helm chart missing *.*/scale \"target reader\" permissions on webhook",
+      "url": "https://github.com/kubernetes/autoscaler/issues/9485",
+      "created_at": "2026-04-14T17:52:56Z",
+      "labels": [
+        "help wanted",
+        "area/vertical-pod-autoscaler",
+        "kind/bug",
+        "area/helm-charts"
+      ],
+      "language": "Go",
+      "stars": 8820,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6888,
       "title": "2.1.0 talking more CPU resources than 2.0",
@@ -2293,6 +2326,38 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "gitbutlerapp/gitbutler",
+      "number": 13297,
+      "title": "Agent changes not auto-assigned to virtual branches",
+      "url": "https://github.com/gitbutlerapp/gitbutler/issues/13297",
+      "created_at": "2026-04-14T05:04:57Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "codegen"
+      ],
+      "language": "Rust",
+      "stars": 20389,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -2906,6 +2971,39 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "ClanGenOfficial/clangen",
+      "number": 4750,
+      "title": "[UI] Mangled Tail gives One Bad Eye Condition",
+      "url": "https://github.com/ClanGenOfficial/clangen/issues/4750",
+      "created_at": "2026-04-12T04:28:39Z",
+      "labels": [
+        "bug",
+        "issue-in-text",
+        "visual",
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 370,
+      "comment_count": 9,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -3723,9 +3821,9 @@
         "up-for-grabs"
       ],
       "language": "JavaScript",
-      "stars": 4311,
-      "comment_count": 6,
-      "age_days": 0,
+      "stars": 4312,
+      "comment_count": 7,
+      "age_days": 1,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -4359,39 +4457,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kubernetes/autoscaler",
-      "number": 9485,
-      "title": "vpa: helm chart missing *.*/scale \"target reader\" permissions on webhook",
-      "url": "https://github.com/kubernetes/autoscaler/issues/9485",
-      "created_at": "2026-04-14T17:52:56Z",
-      "labels": [
-        "help wanted",
-        "area/vertical-pod-autoscaler",
-        "kind/bug",
-        "area/helm-charts"
-      ],
-      "language": "Go",
-      "stars": 8820,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
         "effort": 0.65
       }
     },
@@ -6948,6 +7013,38 @@
       }
     },
     {
+      "repo": "mayocream/koharu",
+      "number": 431,
+      "title": "Arabic (RTL) text renders with disconnected/isolated letters instead of joined forms",
+      "url": "https://github.com/mayocream/koharu/issues/431",
+      "created_at": "2026-04-13T21:15:21Z",
+      "labels": [
+        "bug",
+        "renderer",
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 3245,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.65,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.85,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "meilisearch/meilisearch",
       "number": 5953,
       "title": "Meilisearch v1.24 was not published to Gemfury",
@@ -7086,109 +7183,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "567-labs/instructor",
-      "number": 2205,
-      "title": "RAM Spike when I import instructor",
-      "url": "https://github.com/567-labs/instructor/issues/2205",
-      "created_at": "2026-03-23T09:07:57Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "status:needs-investigation"
-      ],
-      "language": "Python",
-      "stars": 12744,
-      "comment_count": 3,
-      "age_days": 20,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "jxnl"
-        },
-        "number": 2264,
-        "state": "OPEN",
-        "title": "perf: lazy load top-level instructor exports",
-        "url": "https://github.com/567-labs/instructor/pull/2264"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.89,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "AprilSylph/XKit-Rewritten",
-      "number": 2211,
-      "title": "Tweaks: \"Hide all posts from blogs I've blocked\" works inconsistently for reblogs",
-      "url": "https://github.com/AprilSylph/XKit-Rewritten/issues/2211",
-      "created_at": "2026-04-13T04:49:55Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "JavaScript",
-      "stars": 361,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "CherryHQ/cherry-studio",
-      "number": 13059,
-      "title": "[Discussion]: Webdav backup failed, tried both Aliyun and Tera cloud drives, neither works 1.7.20",
-      "url": "https://github.com/CherryHQ/cherry-studio/issues/13059",
-      "created_at": "2026-02-26T01:13:03Z",
-      "labels": [
-        "help wanted",
-        "discussion",
-        "Data"
-      ],
-      "language": "TypeScript",
-      "stars": 40372,
-      "comment_count": 15,
-      "age_days": 2,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.65
       }
     }
   ]
