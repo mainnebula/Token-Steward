@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-16T08:00:22Z",
+  "updated_at": "2026-04-16T14:05:57Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4641,6 +4641,46 @@
       }
     },
     {
+      "repo": "lycheeverse/lychee",
+      "number": 2143,
+      "title": "`<error:>` leaks into markdown format output for unparseable URLs.",
+      "url": "https://github.com/lycheeverse/lychee/issues/2143",
+      "created_at": "2026-04-16T10:57:01Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 3504,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "tmchow"
+        },
+        "number": 2144,
+        "state": "OPEN",
+        "title": "fix(formatters/markdown): stop leaking <error:> placeholder into output",
+        "url": "https://github.com/lycheeverse/lychee/pull/2144"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "meshery/meshery",
       "number": 18418,
       "title": "[Docs] Deprecated word-wrap property used in _table.scss — should be overflow-wrap",
@@ -6266,9 +6306,9 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 20178,
-      "comment_count": 14,
-      "age_days": 31,
+      "stars": 20428,
+      "comment_count": 15,
+      "age_days": 37,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6276,16 +6316,8 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "ichoosetoaccept"
-        },
-        "number": 12980,
-        "state": "OPEN",
-        "title": "feat: hook ownership model with external manager detection",
-        "url": "https://github.com/gitbutlerapp/gitbutler/pull/12980"
-      },
+      "action": "fix",
+      "pr": null,
       "score": 0.71,
       "score_breakdown": {
         "reach": 0.6,
@@ -7156,39 +7188,6 @@
         "impact": 0.75,
         "confidence": 0.85,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "meilisearch/meilisearch",
-      "number": 5953,
-      "title": "Meilisearch v1.24 was not published to Gemfury",
-      "url": "https://github.com/meilisearch/meilisearch/issues/5953",
-      "created_at": "2025-10-23T07:33:04Z",
-      "labels": [
-        "help wanted",
-        "rust",
-        "bug",
-        "Internal work"
-      ],
-      "language": "Rust",
-      "stars": 55987,
-      "comment_count": 6,
-      "age_days": 119,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
       }
     }
   ]
