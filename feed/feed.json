@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-16T14:05:57Z",
+  "updated_at": "2026-04-16T19:26:43Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6840,6 +6840,42 @@
     },
     {
       "repo": "keycloak/keycloak",
+      "number": 44620,
+      "title": "Possible data loss when scaling Keycloak StatefulSet down (on Kubernetes)",
+      "url": "https://github.com/keycloak/keycloak/issues/44620",
+      "created_at": "2025-12-03T07:20:05Z",
+      "labels": [
+        "kind/bug",
+        "area/infinispan",
+        "help wanted",
+        "team/production-readiness",
+        "status/auto-bump",
+        "priority/normal",
+        "backport/26.6"
+      ],
+      "language": "Java",
+      "stars": 33916,
+      "comment_count": 9,
+      "age_days": 134,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
       "number": 44741,
       "title": "Device activity does not recognize iOS 26 correct",
       "url": "https://github.com/keycloak/keycloak/issues/44741",
@@ -7095,6 +7131,40 @@
       }
     },
     {
+      "repo": "layer5io/layer5",
+      "number": 7593,
+      "title": "Improve styling of categories of models",
+      "url": "https://github.com/layer5io/layer5/issues/7593",
+      "created_at": "2026-04-06T22:29:52Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "good first issue",
+        "framework/gatsby",
+        "component/ui"
+      ],
+      "language": "JavaScript",
+      "stars": 1035,
+      "comment_count": 5,
+      "age_days": 9,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.88,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "logisim-evolution/logisim-evolution",
       "number": 2505,
       "title": "Divider Error in Logism Evolution Version 4.1.0",
@@ -7108,69 +7178,6 @@
       ],
       "language": "Java",
       "stars": 6826,
-      "comment_count": 5,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.85,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "mampfes/hacs_waste_collection_schedule",
-      "number": 5973,
-      "title": "[Bug]: 'Landkreis Märkisch-Oderland' (Germany) not working any more",
-      "url": "https://github.com/mampfes/hacs_waste_collection_schedule/issues/5973",
-      "created_at": "2026-04-12T11:48:40Z",
-      "labels": [
-        "help wanted",
-        "source defect"
-      ],
-      "language": "Python",
-      "stars": 1953,
-      "comment_count": 7,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.85,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "mayocream/koharu",
-      "number": 431,
-      "title": "Arabic (RTL) text renders with disconnected/isolated letters instead of joined forms",
-      "url": "https://github.com/mayocream/koharu/issues/431",
-      "created_at": "2026-04-13T21:15:21Z",
-      "labels": [
-        "bug",
-        "renderer",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 3294,
       "comment_count": 5,
       "age_days": 1,
       "is_bug": true,
