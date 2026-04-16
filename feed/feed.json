@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-16T03:34:55Z",
+  "updated_at": "2026-04-16T08:00:22Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2544,6 +2544,40 @@
       }
     },
     {
+      "repo": "jenkinsci/jenkins",
+      "number": 26639,
+      "title": "Selecting an autocomplete suggestion submits the entire configuration form",
+      "url": "https://github.com/jenkinsci/jenkins/issues/26639",
+      "created_at": "2026-04-14T20:07:00Z",
+      "labels": [
+        "web-ui",
+        "accessibility",
+        "regression",
+        "good first issue",
+        "ux"
+      ],
+      "language": "Java",
+      "stars": 25191,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "kedacore/keda",
       "number": 7443,
       "title": "Keda 2.19.0 Temporal ScaledObject facing error reading server preface: remote error: tls: certificate required",
@@ -4015,6 +4049,41 @@
       }
     },
     {
+      "repo": "internetarchive/openlibrary",
+      "number": 12391,
+      "title": "Bug: Check-in fails with 404 due to .json suffix mismatch in FastAPI route",
+      "url": "https://github.com/internetarchive/openlibrary/issues/12391",
+      "created_at": "2026-04-16T07:40:14Z",
+      "labels": [
+        "Type: Bug",
+        "Module: JavaScript",
+        "Good First Issue",
+        "Priority: 0",
+        "Lead: @RayBB",
+        "Module: FastAPI"
+      ],
+      "language": "Python",
+      "stars": 6361,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "ipfs/kubo",
       "number": 11213,
       "title": "HTTP Routing V1 provider records contain raw `0.0.0.0` listen addresses instead of resolved interface addresses",
@@ -5238,9 +5307,9 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 117,
-      "comment_count": 20,
-      "age_days": 4,
+      "stars": 119,
+      "comment_count": 25,
+      "age_days": 5,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -5248,8 +5317,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "YPC0813"
+        },
+        "number": 3053,
+        "state": "OPEN",
+        "title": "Add sitemap.xml and robots.txt for elyanlabs.ai SEO (Issue #2959)",
+        "url": "https://github.com/Scottcjn/rustchain-bounties/pull/3053"
+      },
       "score": 0.71,
       "score_breakdown": {
         "reach": 0.5,
@@ -7112,89 +7189,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "meshery/meshery",
-      "number": 18242,
-      "title": "[Docs] Migration Leftovers/Improvements",
-      "url": "https://github.com/meshery/meshery/issues/18242",
-      "created_at": "2026-03-27T01:24:14Z",
-      "labels": [
-        "help wanted",
-        "area/docs",
-        "language/markdown",
-        "framework/hugo"
-      ],
-      "language": "Go",
-      "stars": 10127,
-      "comment_count": 7,
-      "age_days": 3,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "yashasvi290906"
-        },
-        "number": 18349,
-        "state": "OPEN",
-        "title": "[Docs] Remove all legacy site.baseurl usages across docs",
-        "url": "https://github.com/meshery/meshery/pull/18349"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.65,
-        "confidence": 0.89,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 2862,
-      "title": "[BOUNTY: 3 RTC] Add RustChain to 5 Awesome Lists on GitHub (DePIN, Blockchain, AI)",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2862",
-      "created_at": "2026-04-09T03:24:59Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "multi-claim",
-        "propagation",
-        "easy"
-      ],
-      "language": "Python",
-      "stars": 118,
-      "comment_count": 33,
-      "age_days": 7,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "daletyler1737"
-        },
-        "number": 85,
-        "state": "OPEN",
-        "title": "Add RustChain - 古老硬件证明区块链",
-        "url": "https://github.com/chaozh/awesome-blockchain-cn/pull/85"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.75
       }
     }
   ]
