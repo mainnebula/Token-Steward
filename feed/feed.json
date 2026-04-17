@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-16T19:26:43Z",
+  "updated_at": "2026-04-17T03:30:44Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -480,6 +480,38 @@
       "stars": 69187,
       "comment_count": 7,
       "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "actualbudget/actual",
+      "number": 7525,
+      "title": "[Bug]: Encrypted File Sync Can Break File Loading",
+      "url": "https://github.com/actualbudget/actual/issues/7525",
+      "created_at": "2026-04-16T00:26:39Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "can’t replicate"
+      ],
+      "language": "TypeScript",
+      "stars": 25956,
+      "comment_count": 5,
+      "age_days": 1,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -3855,9 +3887,9 @@
         "up-for-grabs"
       ],
       "language": "JavaScript",
-      "stars": 4311,
-      "comment_count": 7,
-      "age_days": 1,
+      "stars": 4315,
+      "comment_count": 8,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5260,41 +5292,6 @@
     },
     {
       "repo": "Scottcjn/rustchain-bounties",
-      "number": 2870,
-      "title": "[BOUNTY: 1 RTC] Run the RustChain Miner for 24 Hours and Share Your Hardware Report",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2870",
-      "created_at": "2026-04-09T03:26:26Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "multi-claim",
-        "easy",
-        "community",
-        "onboarding"
-      ],
-      "language": "Python",
-      "stars": 117,
-      "comment_count": 10,
-      "age_days": 4,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
       "number": 2957,
       "title": "[BOUNTY: 10 RTC] SEO Audit + Suggestions for elyanlabs.ai (Quiet Launch)",
       "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2957",
@@ -5347,9 +5344,9 @@
         "easy"
       ],
       "language": "Python",
-      "stars": 119,
-      "comment_count": 25,
-      "age_days": 5,
+      "stars": 121,
+      "comment_count": 37,
+      "age_days": 6,
       "is_bug": false,
       "is_feature": false,
       "category": "general",
@@ -5360,12 +5357,12 @@
       "action": "review",
       "pr": {
         "author": {
-          "login": "YPC0813"
+          "login": "FlintLeng"
         },
-        "number": 3053,
+        "number": 13,
         "state": "OPEN",
-        "title": "Add sitemap.xml and robots.txt for elyanlabs.ai SEO (Issue #2959)",
-        "url": "https://github.com/Scottcjn/rustchain-bounties/pull/3053"
+        "title": "Add sitemap.xml and robots.txt for SEO optimization",
+        "url": "https://github.com/Scottcjn/elyan-labs-site/pull/13"
       },
       "score": 0.71,
       "score_breakdown": {
@@ -6035,40 +6032,6 @@
       }
     },
     {
-      "repo": "code-charity/youtube",
-      "number": 3664,
-      "title": "🐞Theatre mode is offset as if the sidebar is still there, even though sidebar is blank",
-      "url": "https://github.com/code-charity/youtube/issues/3664",
-      "created_at": "2026-03-04T11:58:41Z",
-      "labels": [
-        "Bug",
-        "Feature request",
-        "help wanted",
-        "good first issue",
-        "up-for-grabs"
-      ],
-      "language": "JavaScript",
-      "stars": 4283,
-      "comment_count": 4,
-      "age_days": 22,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
       "repo": "elastic/elasticsearch",
       "number": 138798,
       "title": "ESQL: overflowing division in ROW gives wrong error message",
@@ -6306,8 +6269,8 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 20428,
-      "comment_count": 15,
+      "stars": 20441,
+      "comment_count": 16,
       "age_days": 37,
       "is_bug": true,
       "is_feature": false,
@@ -7195,6 +7158,48 @@
         "impact": 0.75,
         "confidence": 0.85,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 2862,
+      "title": "[BOUNTY: 3 RTC] Add RustChain to 5 Awesome Lists on GitHub (DePIN, Blockchain, AI)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2862",
+      "created_at": "2026-04-09T03:24:59Z",
+      "labels": [
+        "good first issue",
+        "bounty",
+        "multi-claim",
+        "propagation",
+        "easy"
+      ],
+      "language": "Python",
+      "stars": 121,
+      "comment_count": 135,
+      "age_days": 8,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "daletyler1737"
+        },
+        "number": 85,
+        "state": "OPEN",
+        "title": "Add RustChain - 古老硬件证明区块链",
+        "url": "https://github.com/chaozh/awesome-blockchain-cn/pull/85"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.75
       }
     }
   ]
