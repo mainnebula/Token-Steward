@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-18T03:18:10Z",
+  "updated_at": "2026-04-18T07:20:57Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1834,6 +1834,47 @@
       "score_breakdown": {
         "reach": 0.6,
         "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "meshery/meshery",
+      "number": 18418,
+      "title": "[Docs] Deprecated word-wrap property used in _table.scss — should be overflow-wrap",
+      "url": "https://github.com/meshery/meshery/issues/18418",
+      "created_at": "2026-04-02T14:20:51Z",
+      "labels": [
+        "kind/bug",
+        "good first issue",
+        "area/docs",
+        "language/javascript"
+      ],
+      "language": "Go",
+      "stars": 10154,
+      "comment_count": 4,
+      "age_days": 15,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "tysoncung"
+        },
+        "number": 18423,
+        "state": "OPEN",
+        "title": "fix(docs): replace deprecated word-wrap with overflow-wrap",
+        "url": "https://github.com/meshery/meshery/pull/18423"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
         "confidence": 0.94,
         "effort": 0.6
       }
@@ -4741,47 +4782,6 @@
       }
     },
     {
-      "repo": "meshery/meshery",
-      "number": 18418,
-      "title": "[Docs] Deprecated word-wrap property used in _table.scss — should be overflow-wrap",
-      "url": "https://github.com/meshery/meshery/issues/18418",
-      "created_at": "2026-04-02T14:20:51Z",
-      "labels": [
-        "kind/bug",
-        "good first issue",
-        "area/docs",
-        "language/javascript"
-      ],
-      "language": "Go",
-      "stars": 10138,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "tysoncung"
-        },
-        "number": 18423,
-        "state": "OPEN",
-        "title": "fix(docs): replace deprecated word-wrap with overflow-wrap",
-        "url": "https://github.com/meshery/meshery/pull/18423"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.7,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "metal3-io/baremetal-operator",
       "number": 3071,
       "title": "Revisit requeue delays, especially provisionRequeueDelay",
@@ -6123,9 +6123,9 @@
         "stage/tracked"
       ],
       "language": "Go",
-      "stars": 51575,
-      "comment_count": 15,
-      "age_days": 226,
+      "stars": 51639,
+      "comment_count": 16,
+      "age_days": 276,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -6133,8 +6133,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "nicknikolakakis"
+        },
+        "number": 1149,
+        "state": "OPEN",
+        "title": "docs: clarify that duration fields in config files require nanosecond integers",
+        "url": "https://github.com/etcd-io/website/pull/1149"
+      },
       "score": 0.71,
       "score_breakdown": {
         "reach": 0.6,
