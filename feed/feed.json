@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-19T13:18:49Z",
+  "updated_at": "2026-04-19T19:02:49Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1245,6 +1245,39 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "apache/hugegraph",
+      "number": 3002,
+      "title": "[Bug] GET / endpoint always returns memberSize:0 regardless of actual PD member count",
+      "url": "https://github.com/apache/hugegraph/issues/3002",
+      "created_at": "2026-04-19T06:56:41Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "good first issue",
+        "pd"
+      ],
+      "language": "Java",
+      "stars": 3058,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -3803,9 +3836,9 @@
         "backlog"
       ],
       "language": "Go",
-      "stars": 4727,
-      "comment_count": 3,
-      "age_days": 1,
+      "stars": 4726,
+      "comment_count": 4,
+      "age_days": 2,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7169,37 +7202,6 @@
         "impact": 0.75,
         "confidence": 0.88,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "malbiruk/driftwm",
-      "number": 42,
-      "title": "Blur causes 90% GPU usage (NVIDIA)",
-      "url": "https://github.com/malbiruk/driftwm/issues/42",
-      "created_at": "2026-04-18T13:27:27Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 345,
-      "comment_count": 10,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.65
       }
     }
   ]
