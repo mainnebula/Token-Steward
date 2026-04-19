@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-19T07:41:20Z",
+  "updated_at": "2026-04-19T13:18:49Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3792,6 +3792,46 @@
       }
     },
     {
+      "repo": "clidey/whodb",
+      "number": 924,
+      "title": "[BUG] - UpdateSettings is publicly callable and mutates global runtime settings",
+      "url": "https://github.com/clidey/whodb/issues/924",
+      "created_at": "2026-04-17T14:16:24Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "backlog"
+      ],
+      "language": "Go",
+      "stars": 4727,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "tmchow"
+        },
+        "number": 931,
+        "state": "OPEN",
+        "title": "fix(auth): require authentication for UpdateSettings mutation",
+        "url": "https://github.com/clidey/whodb/pull/931"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "code-charity/youtube",
       "number": 3654,
       "title": "🐞Playback Speed Button doesn't exclusively capture scroll in fullscreen",
@@ -6082,7 +6122,7 @@
         "stage/tracked"
       ],
       "language": "Go",
-      "stars": 51649,
+      "stars": 51650,
       "comment_count": 17,
       "age_days": 277,
       "is_bug": true,
@@ -7142,8 +7182,8 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 343,
-      "comment_count": 5,
+      "stars": 345,
+      "comment_count": 10,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
@@ -7160,48 +7200,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 2862,
-      "title": "[BOUNTY: 3 RTC] Add RustChain to 5 Awesome Lists on GitHub (DePIN, Blockchain, AI)",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2862",
-      "created_at": "2026-04-09T03:24:59Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "multi-claim",
-        "propagation",
-        "easy"
-      ],
-      "language": "Python",
-      "stars": 124,
-      "comment_count": 143,
-      "age_days": 10,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "daletyler1737"
-        },
-        "number": 85,
-        "state": "OPEN",
-        "title": "Add RustChain - 古老硬件证明区块链",
-        "url": "https://github.com/chaozh/awesome-blockchain-cn/pull/85"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.75
       }
     }
   ]
