@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-19T03:37:15Z",
+  "updated_at": "2026-04-19T07:41:20Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5328,47 +5328,6 @@
       }
     },
     {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 2959,
-      "title": "[BOUNTY: 5 RTC] Submit elyanlabs.ai to Google Search Console + Create sitemap.xml",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2959",
-      "created_at": "2026-04-10T17:30:19Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "propagation",
-        "easy"
-      ],
-      "language": "Python",
-      "stars": 121,
-      "comment_count": 37,
-      "age_days": 6,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "FlintLeng"
-        },
-        "number": 13,
-        "state": "OPEN",
-        "title": "Add sitemap.xml and robots.txt for SEO optimization",
-        "url": "https://github.com/Scottcjn/elyan-labs-site/pull/13"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.8
-      }
-    },
-    {
       "repo": "TibixDev/winboat",
       "number": 462,
       "title": "[Bug] When uninstalled in arch and reinstalled, it appears as an emty app",
@@ -6123,9 +6082,9 @@
         "stage/tracked"
       ],
       "language": "Go",
-      "stars": 51639,
-      "comment_count": 16,
-      "age_days": 276,
+      "stars": 51649,
+      "comment_count": 17,
+      "age_days": 277,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -7201,6 +7160,48 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "Scottcjn/rustchain-bounties",
+      "number": 2862,
+      "title": "[BOUNTY: 3 RTC] Add RustChain to 5 Awesome Lists on GitHub (DePIN, Blockchain, AI)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2862",
+      "created_at": "2026-04-09T03:24:59Z",
+      "labels": [
+        "good first issue",
+        "bounty",
+        "multi-claim",
+        "propagation",
+        "easy"
+      ],
+      "language": "Python",
+      "stars": 124,
+      "comment_count": 143,
+      "age_days": 10,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "daletyler1737"
+        },
+        "number": 85,
+        "state": "OPEN",
+        "title": "Add RustChain - 古老硬件证明区块链",
+        "url": "https://github.com/chaozh/awesome-blockchain-cn/pull/85"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.91,
+        "effort": 0.75
       }
     }
   ]
