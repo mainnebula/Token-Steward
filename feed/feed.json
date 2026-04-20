@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-20T03:39:10Z",
+  "updated_at": "2026-04-20T08:23:08Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1260,9 +1260,9 @@
         "pd"
       ],
       "language": "Java",
-      "stars": 3058,
+      "stars": 3059,
       "comment_count": 5,
-      "age_days": 0,
+      "age_days": 1,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -1270,8 +1270,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "caglareker"
+        },
+        "number": 3003,
+        "state": "OPEN",
+        "title": "fix(pd): populate memberSize in GET / endpoint response",
+        "url": "https://github.com/apache/hugegraph/pull/3003"
+      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.55,
