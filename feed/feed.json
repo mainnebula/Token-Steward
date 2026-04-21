@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-20T19:19:03Z",
+  "updated_at": "2026-04-21T03:31:35Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6814,6 +6814,46 @@
       }
     },
     {
+      "repo": "kedacore/keda",
+      "number": 7251,
+      "title": "Can not connect success until restart keda-operator-metrics-apiserver",
+      "url": "https://github.com/kedacore/keda/issues/7251",
+      "created_at": "2025-11-18T14:44:55Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "stale"
+      ],
+      "language": "Go",
+      "stars": 10113,
+      "comment_count": 11,
+      "age_days": 153,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "rohansood10"
+        },
+        "number": 7463,
+        "state": "OPEN",
+        "title": "fix(metricsservice): improve gRPC connection resilience with keepalive and proper state waiting",
+        "url": "https://github.com/kedacore/keda/pull/7463"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "keycloak/keycloak",
       "number": 43065,
       "title": "\"Account already exists\" page when logging with OIDC provider",
@@ -7175,40 +7215,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "layer5io/layer5",
-      "number": 7593,
-      "title": "Improve styling of categories of models",
-      "url": "https://github.com/layer5io/layer5/issues/7593",
-      "created_at": "2026-04-06T22:29:52Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "good first issue",
-        "framework/gatsby",
-        "component/ui"
-      ],
-      "language": "JavaScript",
-      "stars": 1035,
-      "comment_count": 5,
-      "age_days": 9,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.88,
         "effort": 0.6
       }
     }
