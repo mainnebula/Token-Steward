@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-22T14:01:35Z",
+  "updated_at": "2026-04-22T19:25:28Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -915,6 +915,46 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "HKUDS/nanobot",
+      "number": 2493,
+      "title": "LANGSMITH is not working (anymore) after latest update",
+      "url": "https://github.com/HKUDS/nanobot/issues/2493",
+      "created_at": "2026-03-25T20:47:03Z",
+      "labels": [
+        "good first issue",
+        "feature request",
+        "regression"
+      ],
+      "language": "Python",
+      "stars": 40528,
+      "comment_count": 6,
+      "age_days": 27,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "pve"
+        },
+        "number": 3140,
+        "state": "OPEN",
+        "title": "feat: restore full-featured LangSmith integration",
+        "url": "https://github.com/HKUDS/nanobot/pull/3140"
+      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.6,
@@ -4130,6 +4170,37 @@
       }
     },
     {
+      "repo": "import-js/eslint-plugin-import",
+      "number": 3245,
+      "title": "no-deprecated rule issue with default exports",
+      "url": "https://github.com/import-js/eslint-plugin-import/issues/3245",
+      "created_at": "2026-04-22T16:00:59Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "JavaScript",
+      "stars": 5901,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "inclusionAI/AReaL",
       "number": 1046,
       "title": "[BUG] ResponseValidationError when areal gateway processing openclaw response",
@@ -6401,6 +6472,38 @@
       }
     },
     {
+      "repo": "golang/go",
+      "number": 78883,
+      "title": "runtime: `SIGSEGV` with a c-shared library and called from C#",
+      "url": "https://github.com/golang/go/issues/78883",
+      "created_at": "2026-04-21T11:10:06Z",
+      "labels": [
+        "help wanted",
+        "compiler/runtime",
+        "BugReport"
+      ],
+      "language": "Go",
+      "stars": 133594,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": false,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.81,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "google-gemini/gemini-cli",
       "number": 14940,
       "title": "Auto-completion keeps requesting gemini-2.5-flash-lite even when using gemini-3.0, causing infinite \"usage limit reached\" warnings",
@@ -7099,123 +7202,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 45959,
-      "title": "prompt=create Parameter Propagates to Identity Provider Causing 400 Error",
-      "url": "https://github.com/keycloak/keycloak/issues/45959",
-      "created_at": "2026-02-03T10:20:34Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "area/identity-brokering",
-        "team/core-iam",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal",
-        "status/bumped-by-bot"
-      ],
-      "language": "Java",
-      "stars": 33272,
-      "comment_count": 8,
-      "age_days": 36,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "SferaDev"
-        },
-        "number": 46446,
-        "state": "OPEN",
-        "title": "Do not forward prompt=create to external identity providers",
-        "url": "https://github.com/keycloak/keycloak/pull/46446"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 682,
-      "title": "[Perf]: Investigate restoring opt-level=3 for aarch64 cross-compilation",
-      "url": "https://github.com/kornia/kornia-rs/issues/682",
-      "created_at": "2026-01-28T13:21:29Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 576,
-      "comment_count": 6,
-      "age_days": 20,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "favonia/cloudflare-ddns",
-      "number": 1197,
-      "title": "Account API tokens incorrectly rejected by token verifier",
-      "url": "https://github.com/favonia/cloudflare-ddns/issues/1197",
-      "created_at": "2026-04-02T08:45:04Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "needs info"
-      ],
-      "language": "Go",
-      "stars": 2461,
-      "comment_count": 11,
-      "age_days": 20,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "renovate"
-        },
-        "number": 2043,
-        "state": "OPEN",
-        "title": "Update docker.io/favonia/cloudflare-ddns Docker tag to v1.16.2",
-        "url": "https://github.com/claytono/infra/pull/2043"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.85,
-        "effort": 0.6
       }
     }
   ]
