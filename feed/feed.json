@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-22T19:25:28Z",
+  "updated_at": "2026-04-23T03:33:03Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1583,6 +1583,37 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "import-js/eslint-plugin-import",
+      "number": 3245,
+      "title": "no-deprecated rule issue with default exports",
+      "url": "https://github.com/import-js/eslint-plugin-import/issues/3245",
+      "created_at": "2026-04-22T16:00:59Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "JavaScript",
+      "stars": 5901,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -4170,37 +4201,6 @@
       }
     },
     {
-      "repo": "import-js/eslint-plugin-import",
-      "number": 3245,
-      "title": "no-deprecated rule issue with default exports",
-      "url": "https://github.com/import-js/eslint-plugin-import/issues/3245",
-      "created_at": "2026-04-22T16:00:59Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "JavaScript",
-      "stars": 5901,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "inclusionAI/AReaL",
       "number": 1046,
       "title": "[BUG] ResponseValidationError when areal gateway processing openclaw response",
@@ -6479,12 +6479,13 @@
       "created_at": "2026-04-21T11:10:06Z",
       "labels": [
         "help wanted",
+        "NeedsInvestigation",
         "compiler/runtime",
         "BugReport"
       ],
       "language": "Go",
-      "stars": 133594,
-      "comment_count": 5,
+      "stars": 133601,
+      "comment_count": 7,
       "age_days": 1,
       "is_bug": true,
       "is_feature": false,
