@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-24T08:16:26Z",
+  "updated_at": "2026-04-24T13:56:28Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3643,6 +3643,38 @@
       }
     },
     {
+      "repo": "asciimoo/hister",
+      "number": 362,
+      "title": "Deleted indexed local files cant be \"fully deleted\" on Windows",
+      "url": "https://github.com/asciimoo/hister/issues/362",
+      "created_at": "2026-04-22T06:37:57Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "question"
+      ],
+      "language": "Go",
+      "stars": 814,
+      "comment_count": 15,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "astral-sh/ty",
       "number": 2861,
       "title": "Improve code folding for decorators",
@@ -7151,41 +7183,6 @@
       "stars": 33878,
       "comment_count": 8,
       "age_days": 96,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 45693,
-      "title": "[OID4VCI] Improper Certificate Validation in OID4VC Attestation Logic",
-      "url": "https://github.com/keycloak/keycloak/issues/45693",
-      "created_at": "2026-01-22T21:06:47Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "area/oid4vc",
-        "team/core-clients",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33869,
-      "comment_count": 13,
-      "age_days": 81,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
