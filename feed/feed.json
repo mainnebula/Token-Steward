@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-25T03:19:31Z",
+  "updated_at": "2026-04-25T07:40:20Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3873,6 +3873,47 @@
       }
     },
     {
+      "repo": "bitwarden/clients",
+      "number": 20030,
+      "title": "Accessibility Feature in Browser Extension missing",
+      "url": "https://github.com/bitwarden/clients/issues/20030",
+      "created_at": "2026-04-07T07:50:20Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "browser",
+        "needs-reply"
+      ],
+      "language": "TypeScript",
+      "stars": 12703,
+      "comment_count": 3,
+      "age_days": 17,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Vikasgits"
+        },
+        "number": 20160,
+        "state": "OPEN",
+        "title": "[PM-35167] Fix: add aria-label to email and password fields for accessibility",
+        "url": "https://github.com/bitwarden/clients/pull/20160"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "booklore-app/booklore",
       "number": 2910,
       "title": "[Bug] Filter counts cut off on some filters",
@@ -6145,6 +6186,45 @@
       }
     },
     {
+      "repo": "apache/superset",
+      "number": 37444,
+      "title": "Hiding \"Metrics\" section also collapses \"Columns\" section unexpectedly",
+      "url": "https://github.com/apache/superset/issues/37444",
+      "created_at": "2026-01-26T09:25:20Z",
+      "labels": [
+        "good first issue",
+        "#bug:cosmetic"
+      ],
+      "language": "TypeScript",
+      "stars": 72578,
+      "comment_count": 9,
+      "age_days": 88,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "pierreeurope"
+        },
+        "number": 38258,
+        "state": "OPEN",
+        "title": "fix(explore): prevent Columns section from hiding when Metrics is collapsed",
+        "url": "https://github.com/apache/superset/pull/38258"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "backstage/backstage",
       "number": 32715,
       "title": "Add more details about the `app-visualizer` plugin",
@@ -7115,78 +7195,6 @@
       "stars": 33916,
       "comment_count": 9,
       "age_days": 134,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 44741,
-      "title": "Device activity does not recognize iOS 26 correct",
-      "url": "https://github.com/keycloak/keycloak/issues/44741",
-      "created_at": "2025-12-08T10:24:05Z",
-      "labels": [
-        "kind/bug",
-        "area/account/ui",
-        "help wanted",
-        "team/core-clients",
-        "priority/low",
-        "status/auto-expire",
-        "status/reopened",
-        "status/expired-by-bot",
-        "team/core-authn"
-      ],
-      "language": "Java",
-      "stars": 33869,
-      "comment_count": 7,
-      "age_days": 127,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 44935,
-      "title": "Performance degradation when paginating group members toward the last page",
-      "url": "https://github.com/keycloak/keycloak/issues/44935",
-      "created_at": "2025-12-16T09:35:57Z",
-      "labels": [
-        "kind/bug",
-        "area/ldap",
-        "help wanted",
-        "team/core-iam",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33499,
-      "comment_count": 5,
-      "age_days": 97,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
