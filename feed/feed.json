@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-25T07:40:20Z",
+  "updated_at": "2026-04-25T13:21:36Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2647,6 +2647,47 @@
         "impact": 0.65,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "google-github-actions/run-gemini-cli",
+      "number": 499,
+      "title": "[Bug] `gemini-scheduled-triage` example uses a contradictory GitHub issue search query",
+      "url": "https://github.com/google-github-actions/run-gemini-cli/issues/499",
+      "created_at": "2026-04-07T08:43:04Z",
+      "labels": [
+        "kind/bug",
+        "good first issue",
+        "area/workflows",
+        "github_actions"
+      ],
+      "language": "TypeScript",
+      "stars": 1953,
+      "comment_count": 5,
+      "age_days": 18,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ShenaoW"
+        },
+        "number": 500,
+        "state": "OPEN",
+        "title": "Fix: fix the contradictory issue search query in `gemini-scheduled-triage`",
+        "url": "https://github.com/google-github-actions/run-gemini-cli/pull/500"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
       }
     },
     {
@@ -6795,47 +6836,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "google-github-actions/run-gemini-cli",
-      "number": 499,
-      "title": "[Bug] `gemini-scheduled-triage` example uses a contradictory GitHub issue search query",
-      "url": "https://github.com/google-github-actions/run-gemini-cli/issues/499",
-      "created_at": "2026-04-07T08:43:04Z",
-      "labels": [
-        "kind/bug",
-        "good first issue",
-        "area/workflows",
-        "github_actions"
-      ],
-      "language": "TypeScript",
-      "stars": 1953,
-      "comment_count": 4,
-      "age_days": 17,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "ShenaoW"
-        },
-        "number": 500,
-        "state": "OPEN",
-        "title": "Fix: fix the contradictory issue search query in `gemini-scheduled-triage`",
-        "url": "https://github.com/google-github-actions/run-gemini-cli/pull/500"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     },
     {
