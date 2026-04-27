@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-27T08:38:14Z",
+  "updated_at": "2026-04-27T14:14:23Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1617,51 +1617,6 @@
     },
     {
       "repo": "keycloak/keycloak",
-      "number": 46080,
-      "title": "Admin Events log the authRealm instead of the event realm",
-      "url": "https://github.com/keycloak/keycloak/issues/46080",
-      "created_at": "2026-02-06T13:19:27Z",
-      "labels": [
-        "kind/bug",
-        "area/core",
-        "help wanted",
-        "team/core-clients",
-        "team/core-shared",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump"
-      ],
-      "language": "Java",
-      "stars": 33105,
-      "comment_count": 5,
-      "age_days": 24,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "pine919"
-        },
-        "number": 46134,
-        "state": "OPEN",
-        "title": "admin events to log event realm instead of auth realm",
-        "url": "https://github.com/keycloak/keycloak/pull/46134"
-      },
-      "score": 0.74,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
       "number": 46132,
       "title": "profile scope causes NumberFormatException",
       "url": "https://github.com/keycloak/keycloak/issues/46132",
@@ -2272,6 +2227,38 @@
       "language": "Java",
       "stars": 14217,
       "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "apache/skywalking",
+      "number": 13849,
+      "title": "Configuring kafka-fetcher to use the SASL_SSL security mode results in a failure when starting OAP.",
+      "url": "https://github.com/apache/skywalking/issues/13849",
+      "created_at": "2026-04-27T12:19:18Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "dependencies"
+      ],
+      "language": "Java",
+      "stars": 24793,
+      "comment_count": 3,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
@@ -7171,34 +7158,49 @@
       }
     },
     {
-      "repo": "m1k1o/neko",
-      "number": 643,
-      "title": "Firefox 150 reconnection loop on Neko",
-      "url": "https://github.com/m1k1o/neko/issues/643",
-      "created_at": "2026-04-23T15:09:45Z",
+      "repo": "keycloak/keycloak",
+      "number": 46080,
+      "title": "Admin Events log the authRealm instead of the event realm",
+      "url": "https://github.com/keycloak/keycloak/issues/46080",
+      "created_at": "2026-02-06T13:19:27Z",
       "labels": [
-        "bug",
-        "help wanted"
+        "kind/bug",
+        "area/core",
+        "help wanted",
+        "team/core-clients",
+        "team/core-shared",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump",
+        "team/core-authn"
       ],
-      "language": "Go",
-      "stars": 20687,
-      "comment_count": 7,
-      "age_days": 2,
+      "language": "Java",
+      "stars": 34100,
+      "comment_count": 5,
+      "age_days": 80,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
       "surface": "bugfix",
-      "has_contributing": false,
+      "has_contributing": true,
       "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "pine919"
+        },
+        "number": 46134,
+        "state": "OPEN",
+        "title": "admin events to log event realm instead of auth realm",
+        "url": "https://github.com/keycloak/keycloak/pull/46134"
+      },
       "score": 0.71,
       "score_breakdown": {
         "reach": 0.6,
         "impact": 0.75,
-        "confidence": 0.81,
-        "effort": 0.65
+        "confidence": 0.94,
+        "effort": 0.5
       }
     }
   ]
