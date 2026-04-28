@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-28T14:34:25Z",
+  "updated_at": "2026-04-28T19:52:15Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6857,6 +6857,47 @@
       }
     },
     {
+      "repo": "google/site-kit-wp",
+      "number": 12411,
+      "title": "Contact name and role overlapping \"Send invite\"",
+      "url": "https://github.com/google/site-kit-wp/issues/12411",
+      "created_at": "2026-03-31T00:02:41Z",
+      "labels": [
+        "Type: Bug",
+        "P1",
+        "Good First Issue",
+        "Team S"
+      ],
+      "language": "JavaScript",
+      "stars": 1364,
+      "comment_count": 3,
+      "age_days": 28,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "shsajalchowdhury"
+        },
+        "number": 12611,
+        "state": "OPEN",
+        "title": "Fix overlapping text in invite user component",
+        "url": "https://github.com/google/site-kit-wp/pull/12611"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "hashicorp/terraform-provider-aws",
       "number": 46675,
       "title": "aws_s3tables_table_replication: Create fails with \"A version token is not specified\"",
@@ -7121,76 +7162,43 @@
       }
     },
     {
-      "repo": "keycloak/keycloak",
-      "number": 43065,
-      "title": "\"Account already exists\" page when logging with OIDC provider",
-      "url": "https://github.com/keycloak/keycloak/issues/43065",
-      "created_at": "2025-09-30T09:26:24Z",
+      "repo": "kedacore/keda",
+      "number": 7685,
+      "title": "GitHub Runner Scaler ETag State Accumulation",
+      "url": "https://github.com/kedacore/keda/issues/7685",
+      "created_at": "2026-04-26T20:28:39Z",
       "labels": [
-        "area/authentication",
-        "kind/bug",
+        "bug",
         "help wanted",
-        "team/core-clients",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal",
-        "status/bumped-by-bot"
+        "security"
       ],
-      "language": "Java",
-      "stars": 33528,
-      "comment_count": 8,
-      "age_days": 175,
+      "language": "Go",
+      "stars": 10147,
+      "comment_count": 1,
+      "age_days": 1,
       "is_bug": true,
       "is_feature": false,
-      "category": "general",
+      "category": "security",
       "surface": "bugfix",
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "mateenali66"
+        },
+        "number": 7698,
+        "state": "OPEN",
+        "title": "fix(github-runner): bound etag and per-repo caches",
+        "url": "https://github.com/kedacore/keda/pull/7698"
+      },
       "score": 0.71,
       "score_breakdown": {
-        "reach": 0.6,
+        "reach": 0.4,
         "impact": 0.75,
         "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 44314,
-      "title": "Missing/Invalid session after token exchange",
-      "url": "https://github.com/keycloak/keycloak/issues/44314",
-      "created_at": "2025-11-19T08:08:27Z",
-      "labels": [
-        "kind/bug",
-        "area/token-exchange",
-        "help wanted",
-        "team/core-clients",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33043,
-      "comment_count": 5,
-      "age_days": 99,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
+        "effort": 0.65
       }
     }
   ]
