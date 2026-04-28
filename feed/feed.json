@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-28T08:36:09Z",
+  "updated_at": "2026-04-28T14:34:25Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1352,6 +1352,39 @@
         "title": "Reparse options with repo mapping for `bazel info`",
         "url": "https://github.com/bazelbuild/bazel/pull/29018"
       },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "bazelbuild/bazel",
+      "number": 29313,
+      "title": "Unnecessary rebuilds when using --remote_download_outputs=all in Bazel 8.5+ (regression)",
+      "url": "https://github.com/bazelbuild/bazel/issues/29313",
+      "created_at": "2026-04-16T13:36:05Z",
+      "labels": [
+        "type: bug",
+        "P3",
+        "team-Remote-Exec",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 25346,
+      "comment_count": 5,
+      "age_days": 12,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.6,
@@ -7143,42 +7176,6 @@
       "stars": 33043,
       "comment_count": 5,
       "age_days": 99,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 44620,
-      "title": "Possible data loss when scaling Keycloak StatefulSet down (on Kubernetes)",
-      "url": "https://github.com/keycloak/keycloak/issues/44620",
-      "created_at": "2025-12-03T07:20:05Z",
-      "labels": [
-        "kind/bug",
-        "area/infinispan",
-        "help wanted",
-        "team/production-readiness",
-        "status/auto-bump",
-        "priority/normal",
-        "backport/26.6"
-      ],
-      "language": "Java",
-      "stars": 33916,
-      "comment_count": 9,
-      "age_days": 134,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
