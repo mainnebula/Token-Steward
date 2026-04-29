@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-28T19:52:15Z",
+  "updated_at": "2026-04-29T03:49:06Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -346,6 +346,38 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.8
+      }
+    },
+    {
+      "repo": "docling-project/docling",
+      "number": 3374,
+      "title": "Document /tmp/tmpqpqmezip/R1-2602795.docx failed to convert",
+      "url": "https://github.com/docling-project/docling/issues/3374",
+      "created_at": "2026-04-28T12:05:11Z",
+      "labels": [
+        "bug",
+        "docx",
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 58743,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.76,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -2335,6 +2367,47 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "bazelbuild/bazel",
+      "number": 29405,
+      "title": "Crash in BazelOutputService, getLastChangeTime gives UnsupportedOperationException",
+      "url": "https://github.com/bazelbuild/bazel/issues/29405",
+      "created_at": "2026-04-27T08:50:39Z",
+      "labels": [
+        "type: bug",
+        "P3",
+        "team-Remote-Exec",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 25348,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "moroten"
+        },
+        "number": 29422,
+        "state": "OPEN",
+        "title": "BazelOutputService: Fix UnsupportedOperationException in batchStatJob",
+        "url": "https://github.com/bazelbuild/bazel/pull/29422"
+      },
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
@@ -7119,85 +7192,6 @@
         "reach": 0.55,
         "impact": 0.75,
         "confidence": 0.85,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kedacore/keda",
-      "number": 7251,
-      "title": "Can not connect success until restart keda-operator-metrics-apiserver",
-      "url": "https://github.com/kedacore/keda/issues/7251",
-      "created_at": "2025-11-18T14:44:55Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 10144,
-      "comment_count": 12,
-      "age_days": 160,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "rohansood10"
-        },
-        "number": 7463,
-        "state": "OPEN",
-        "title": "fix(metricsservice): improve gRPC connection resilience with keepalive and proper state waiting",
-        "url": "https://github.com/kedacore/keda/pull/7463"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "kedacore/keda",
-      "number": 7685,
-      "title": "GitHub Runner Scaler ETag State Accumulation",
-      "url": "https://github.com/kedacore/keda/issues/7685",
-      "created_at": "2026-04-26T20:28:39Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "security"
-      ],
-      "language": "Go",
-      "stars": 10147,
-      "comment_count": 1,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "security",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "mateenali66"
-        },
-        "number": 7698,
-        "state": "OPEN",
-        "title": "fix(github-runner): bound etag and per-repo caches",
-        "url": "https://github.com/kedacore/keda/pull/7698"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.94,
         "effort": 0.65
       }
     }
