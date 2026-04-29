@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-29T08:29:51Z",
+  "updated_at": "2026-04-29T14:22:52Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2505,6 +2505,38 @@
       ],
       "language": "Rust",
       "stars": 14015,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "elastic/elasticsearch",
+      "number": 147723,
+      "title": "ES|QL We need a warning when Lookup Join shadows a field from the main index",
+      "url": "https://github.com/elastic/elasticsearch/issues/147723",
+      "created_at": "2026-04-28T15:13:59Z",
+      "labels": [
+        ">bug",
+        "good first issue",
+        "needs:triage"
+      ],
+      "language": "Java",
+      "stars": 76614,
       "comment_count": 3,
       "age_days": 0,
       "is_bug": true,
@@ -7153,46 +7185,6 @@
         "impact": 0.75,
         "confidence": 0.91,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "jreleaser/jreleaser",
-      "number": 2094,
-      "title": "[assemble] GraalVM Native Image created with JReleaser contains duplicate resources",
-      "url": "https://github.com/jreleaser/jreleaser/issues/2094",
-      "created_at": "2026-03-19T18:46:50Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 1212,
-      "comment_count": 5,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "p-marcin"
-        },
-        "number": 2096,
-        "state": "OPEN",
-        "title": "fix(core): Avoid duplicate resources in Native Image by using -cp during assemble step",
-        "url": "https://github.com/jreleaser/jreleaser/pull/2096"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.85,
-        "effort": 0.65
       }
     }
   ]
