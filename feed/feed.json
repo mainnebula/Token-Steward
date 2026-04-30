@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-30T08:32:38Z",
+  "updated_at": "2026-04-30T14:16:06Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1926,6 +1926,49 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "mayocream/koharu",
+      "number": 580,
+      "title": "pipeline step failed: DriverError(CUDA_ERROR_NOT_FOUND, \"error\")",
+      "url": "https://github.com/mayocream/koharu/issues/580",
+      "created_at": "2026-04-26T02:00:57Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "zluda",
+        "gpu",
+        "amd",
+        "needs investigation"
+      ],
+      "language": "Rust",
+      "stars": 4203,
+      "comment_count": 18,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "lekoOwO"
+        },
+        "number": 585,
+        "state": "OPEN",
+        "title": "Fix ZLUDA cuBLAS 12 runtime extraction",
+        "url": "https://github.com/mayocream/koharu/pull/585"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -7154,37 +7197,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "jatinkrmalik/vocalinux",
-      "number": 164,
-      "title": "[BUG]  ydotool types wrong characters on non us keyboard layouts",
-      "url": "https://github.com/jatinkrmalik/vocalinux/issues/164",
-      "created_at": "2026-02-08T14:35:43Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Python",
-      "stars": 100,
-      "comment_count": 10,
-      "age_days": 12,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
       }
     }
   ]
