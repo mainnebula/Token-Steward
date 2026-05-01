@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-30T19:44:29Z",
+  "updated_at": "2026-05-01T04:01:49Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5288,6 +5288,39 @@
       }
     },
     {
+      "repo": "medusajs/medusa",
+      "number": 14995,
+      "title": "[Bug]: Variant Id not present in prices when fetching an price list",
+      "url": "https://github.com/medusajs/medusa/issues/14995",
+      "created_at": "2026-04-02T08:48:11Z",
+      "labels": [
+        "good first issue",
+        "type: bug",
+        "version: 2.0",
+        "Stale"
+      ],
+      "language": "TypeScript",
+      "stars": 32833,
+      "comment_count": 3,
+      "age_days": 28,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "metal3-io/baremetal-operator",
       "number": 3071,
       "title": "Revisit requeue delays, especially provisionRequeueDelay",
@@ -5349,6 +5382,45 @@
         "impact": 0.75,
         "confidence": 0.89,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "mindersec/minder",
+      "number": 6430,
+      "title": "Unstable JSON output in CLI tests due to protojson formatting",
+      "url": "https://github.com/mindersec/minder/issues/6430",
+      "created_at": "2026-04-30T21:21:32Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 399,
+      "comment_count": 6,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "DharunMR"
+        },
+        "number": 6418,
+        "state": "OPEN",
+        "title": "CLI : added unit test files for project and project role",
+        "url": "https://github.com/mindersec/minder/pull/6418"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
       }
     },
     {
@@ -6737,9 +6809,9 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 20444,
-      "comment_count": 16,
-      "age_days": 37,
+      "stars": 20725,
+      "comment_count": 18,
+      "age_days": 51,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6747,8 +6819,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ichoosetoaccept"
+        },
+        "number": 1,
+        "state": "OPEN",
+        "title": "feat: hook ownership model with external manager detection",
+        "url": "https://github.com/detailobsessed/gitbutler/pull/1"
+      },
       "score": 0.71,
       "score_breakdown": {
         "reach": 0.6,
@@ -7114,86 +7194,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "helm/helm",
-      "number": 31552,
-      "title": "Helm 3.19 crashes with a nil pointer dereference",
-      "url": "https://github.com/helm/helm/issues/31552",
-      "created_at": "2025-11-21T09:49:32Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 29651,
-      "comment_count": 6,
-      "age_days": 109,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "SergioChan"
-        },
-        "number": 31920,
-        "state": "OPEN",
-        "title": "fix(action): guard nil RESTClientGetter in CRD install path (dev-v3)",
-        "url": "https://github.com/helm/helm/pull/31920"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "integrations/terraform-provider-github",
-      "number": 3176,
-      "title": "[BUG]: autolink allows numbers during plan, but fails during apply",
-      "url": "https://github.com/integrations/terraform-provider-github/issues/3176",
-      "created_at": "2026-02-09T18:43:33Z",
-      "labels": [
-        "Type: Bug",
-        "Status: Up for grabs",
-        "Good first issue",
-        "r/repository_autolink_reference"
-      ],
-      "language": "Go",
-      "stars": 1099,
-      "comment_count": 3,
-      "age_days": 20,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Jwels1"
-        },
-        "number": 3245,
-        "state": "OPEN",
-        "title": "Validate autolink prefix",
-        "url": "https://github.com/integrations/terraform-provider-github/pull/3245"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     }
   ]
