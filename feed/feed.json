@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-01T19:22:41Z",
+  "updated_at": "2026-05-02T03:34:59Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5786,41 +5786,6 @@
       }
     },
     {
-      "repo": "PalisadoesFoundation/talawa-admin",
-      "number": 7368,
-      "title": "User Portal - People UI/UX (Shared Component)",
-      "url": "https://github.com/PalisadoesFoundation/talawa-admin/issues/7368",
-      "created_at": "2026-02-18T15:34:19Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "unapproved",
-        "feature request",
-        "no-issue-activity",
-        "ui/ux"
-      ],
-      "language": "TypeScript",
-      "stars": 256,
-      "comment_count": 6,
-      "age_days": 20,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
       "repo": "PostHog/posthog",
       "number": 41812,
       "title": "Bug: Conflicting advice on whether to use cohorts for test/internal user filter",
@@ -7194,6 +7159,41 @@
         "impact": 0.65,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "PalisadoesFoundation/talawa-admin",
+      "number": 7368,
+      "title": "User Portal - People UI/UX (Shared Component)",
+      "url": "https://github.com/PalisadoesFoundation/talawa-admin/issues/7368",
+      "created_at": "2026-02-18T15:34:19Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "unapproved",
+        "feature request",
+        "no-issue-activity",
+        "ui/ux"
+      ],
+      "language": "TypeScript",
+      "stars": 260,
+      "comment_count": 9,
+      "age_days": 72,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.5
       }
     }
   ]
