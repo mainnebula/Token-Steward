@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T07:55:03Z",
+  "updated_at": "2026-05-02T13:28:12Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -191,48 +191,6 @@
         "impact": 0.85,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "aws/aws-cdk",
-      "number": 37221,
-      "title": "aws-dynamodb: TableV2 with DynamoEventSource triggers deprecated TableGrantsProps#policyResource and #encryptedResource warnings during synth",
-      "url": "https://github.com/aws/aws-cdk/issues/37221",
-      "created_at": "2026-03-11T09:18:35Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "p2",
-        "@aws-cdk/aws-dynamodb",
-        "effort/small"
-      ],
-      "language": "TypeScript",
-      "stars": 12690,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "ccxbt"
-        },
-        "number": 37233,
-        "state": "OPEN",
-        "title": "fix(dynamodb): remove deprecated TableGrantsProps wiring in TableV2",
-        "url": "https://github.com/aws/aws-cdk/pull/37233"
-      },
-      "score": 0.77,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.8
       }
     },
     {
@@ -2452,6 +2410,48 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "aws/aws-cdk",
+      "number": 37221,
+      "title": "aws-dynamodb: TableV2 with DynamoEventSource triggers deprecated TableGrantsProps#policyResource and #encryptedResource warnings during synth",
+      "url": "https://github.com/aws/aws-cdk/issues/37221",
+      "created_at": "2026-03-11T09:18:35Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "p2",
+        "@aws-cdk/aws-dynamodb",
+        "effort/small"
+      ],
+      "language": "TypeScript",
+      "stars": 12758,
+      "comment_count": 4,
+      "age_days": 52,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ccxbt"
+        },
+        "number": 37233,
+        "state": "OPEN",
+        "title": "fix(dynamodb): remove deprecated TableGrantsProps wiring in TableV2",
+        "url": "https://github.com/aws/aws-cdk/pull/37233"
+      },
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
@@ -6544,6 +6544,48 @@
       }
     },
     {
+      "repo": "aws/aws-cdk",
+      "number": 37632,
+      "title": "(aws-ec2): RouterType.GATEWAY comment is misleading - it also supports Virtual Private Gateway",
+      "url": "https://github.com/aws/aws-cdk/issues/37632",
+      "created_at": "2026-04-18T07:13:00Z",
+      "labels": [
+        "good first issue",
+        "feature-request",
+        "@aws-cdk/aws-ec2",
+        "effort/small",
+        "p3"
+      ],
+      "language": "TypeScript",
+      "stars": 12758,
+      "comment_count": 3,
+      "age_days": 14,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "NaveenKumar-Marupalli"
+        },
+        "number": 37676,
+        "state": "OPEN",
+        "title": "docs(ec2): modify enum RouterType.GATEWAY JsDoc to include Virtual Private Gateway",
+        "url": "https://github.com/aws/aws-cdk/pull/37676"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.75
+      }
+    },
+    {
       "repo": "backstage/backstage",
       "number": 32715,
       "title": "Add more details about the `app-visualizer` plugin",
@@ -6849,9 +6891,9 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 20733,
+      "stars": 20737,
       "comment_count": 20,
-      "age_days": 52,
+      "age_days": 53,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7163,37 +7205,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "gtsteffaniak/filebrowser",
-      "number": 2342,
-      "title": "Support setting user ID and group ID via environment variables.",
-      "url": "https://github.com/gtsteffaniak/filebrowser/issues/2342",
-      "created_at": "2026-04-23T20:47:24Z",
-      "labels": [
-        "documentation",
-        "enhancement"
-      ],
-      "language": "Go",
-      "stars": 6952,
-      "comment_count": 8,
-      "age_days": 6,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.65,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     }
   ]
