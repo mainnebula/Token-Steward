@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T13:28:12Z",
+  "updated_at": "2026-05-02T19:11:40Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5323,6 +5323,38 @@
       }
     },
     {
+      "repo": "layer5io/layer5",
+      "number": 7694,
+      "title": "Filter text not visible (white text on light background)",
+      "url": "https://github.com/layer5io/layer5/issues/7694",
+      "created_at": "2026-05-02T14:40:31Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "framework/gatsby"
+      ],
+      "language": "JavaScript",
+      "stars": 1039,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "lycheeverse/lychee",
       "number": 2143,
       "title": "`<error:>` leaks into markdown format output for unparseable URLs.",
@@ -6891,7 +6923,7 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 20737,
+      "stars": 20739,
       "comment_count": 20,
       "age_days": 53,
       "is_bug": true,
@@ -7164,47 +7196,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "google/site-kit-wp",
-      "number": 12411,
-      "title": "Contact name and role overlapping \"Send invite\"",
-      "url": "https://github.com/google/site-kit-wp/issues/12411",
-      "created_at": "2026-03-31T00:02:41Z",
-      "labels": [
-        "Type: Bug",
-        "P1",
-        "Good First Issue",
-        "Team S"
-      ],
-      "language": "JavaScript",
-      "stars": 1364,
-      "comment_count": 3,
-      "age_days": 28,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "shsajalchowdhury"
-        },
-        "number": 12611,
-        "state": "OPEN",
-        "title": "Fix overlapping text in invite user component",
-        "url": "https://github.com/google/site-kit-wp/pull/12611"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     }
   ]
