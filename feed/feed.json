@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T03:34:59Z",
+  "updated_at": "2026-05-02T07:55:03Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1675,6 +1675,41 @@
       "score_breakdown": {
         "reach": 0.55,
         "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "internetarchive/openlibrary",
+      "number": 12540,
+      "title": "Images broken on German version of openlibrary.org/tour",
+      "url": "https://github.com/internetarchive/openlibrary/issues/12540",
+      "created_at": "2026-05-01T15:29:01Z",
+      "labels": [
+        "Type: Bug",
+        "Priority: 3",
+        "Good First Issue",
+        "Affects: Documentation",
+        "Needs: Investigation",
+        "Lead: @RayBB"
+      ],
+      "language": "Python",
+      "stars": 6391,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.85,
         "confidence": 0.93,
         "effort": 0.65
       }
@@ -6814,8 +6849,8 @@
         "help wanted"
       ],
       "language": "Rust",
-      "stars": 20729,
-      "comment_count": 19,
+      "stars": 20733,
+      "comment_count": 20,
       "age_days": 52,
       "is_bug": true,
       "is_feature": false,
@@ -7159,41 +7194,6 @@
         "impact": 0.65,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "PalisadoesFoundation/talawa-admin",
-      "number": 7368,
-      "title": "User Portal - People UI/UX (Shared Component)",
-      "url": "https://github.com/PalisadoesFoundation/talawa-admin/issues/7368",
-      "created_at": "2026-02-18T15:34:19Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "unapproved",
-        "feature request",
-        "no-issue-activity",
-        "ui/ux"
-      ],
-      "language": "TypeScript",
-      "stars": 260,
-      "comment_count": 9,
-      "age_days": 72,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.5
       }
     }
   ]
