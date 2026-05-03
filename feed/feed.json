@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-03T13:28:26Z",
+  "updated_at": "2026-05-03T19:10:53Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2683,12 +2683,13 @@
       "labels": [
         ">bug",
         "good first issue",
-        "needs:triage"
+        "Team:Analytics",
+        ":Analytics/ES|QL"
       ],
       "language": "Java",
-      "stars": 76614,
-      "comment_count": 3,
-      "age_days": 0,
+      "stars": 76632,
+      "comment_count": 4,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6584,6 +6585,48 @@
     },
     {
       "repo": "aws/aws-cdk",
+      "number": 35487,
+      "title": "(aws-s3-deployment): CDKBucketDeployment custom resource poor s3 sync performance",
+      "url": "https://github.com/aws/aws-cdk/issues/35487",
+      "created_at": "2025-09-15T01:52:16Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "documentation",
+        "@aws-cdk/aws-s3-deployment",
+        "p3"
+      ],
+      "language": "TypeScript",
+      "stars": 12762,
+      "comment_count": 9,
+      "age_days": 230,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ychjamie"
+        },
+        "number": 35501,
+        "state": "OPEN",
+        "title": "chore(s3-deployment): increase default memory limit from 128MB to 512MB",
+        "url": "https://github.com/aws/aws-cdk/pull/35501"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.85,
+        "confidence": 0.94,
+        "effort": 0.4
+      }
+    },
+    {
+      "repo": "aws/aws-cdk",
       "number": 37632,
       "title": "(aws-ec2): RouterType.GATEWAY comment is misleading - it also supports Virtual Private Gateway",
       "url": "https://github.com/aws/aws-cdk/issues/37632",
@@ -7164,39 +7207,6 @@
         "title": "fix(cli): Fix settings validation to respect additionalProperties: false in JSON schemas",
         "url": "https://github.com/google-gemini/gemini-cli/pull/15565"
       },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "google-gemini/gemini-cli",
-      "number": 15553,
-      "title": "Bug Report: \" error: ✕ agy not found. Please ensure it is in your system's PATH. \"",
-      "url": "https://github.com/google-gemini/gemini-cli/issues/15553",
-      "created_at": "2025-12-25T10:42:20Z",
-      "labels": [
-        "priority/p2",
-        "area/core",
-        "help wanted",
-        "type/bug"
-      ],
-      "language": "TypeScript",
-      "stars": 96794,
-      "comment_count": 13,
-      "age_days": 72,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.71,
       "score_breakdown": {
         "reach": 0.6,
