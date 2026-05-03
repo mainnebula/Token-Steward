@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-03T03:57:09Z",
+  "updated_at": "2026-05-03T08:10:22Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1930,6 +1930,38 @@
       }
     },
     {
+      "repo": "layer5io/layer5",
+      "number": 7694,
+      "title": "Filter text not visible (white text on light background)",
+      "url": "https://github.com/layer5io/layer5/issues/7694",
+      "created_at": "2026-05-02T14:40:31Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "framework/gatsby"
+      ],
+      "language": "JavaScript",
+      "stars": 1039,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "louislam/uptime-kuma",
       "number": 6888,
       "title": "2.1.0 talking more CPU resources than 2.0",
@@ -3497,6 +3529,46 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "Hmbown/DeepSeek-TUI",
+      "number": 513,
+      "title": "v0.8.8 rlm: foreground RLM work is not represented in Agents/Tasks workbench",
+      "url": "https://github.com/Hmbown/DeepSeek-TUI/issues/513",
+      "created_at": "2026-05-03T06:16:16Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "v0.8.8"
+      ],
+      "language": "Rust",
+      "stars": 1748,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Hmbown"
+        },
+        "number": 514,
+        "state": "OPEN",
+        "title": "v0.8.8 stabilization — sub-agent caps, mutex contention, RLM polish, CI cleanup",
+        "url": "https://github.com/Hmbown/DeepSeek-TUI/pull/514"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
         "effort": 0.65
       }
     },
@@ -5272,38 +5344,6 @@
       "stars": 1012,
       "comment_count": 4,
       "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "layer5io/layer5",
-      "number": 7694,
-      "title": "Filter text not visible (white text on light background)",
-      "url": "https://github.com/layer5io/layer5/issues/7694",
-      "created_at": "2026-05-02T14:40:31Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "framework/gatsby"
-      ],
-      "language": "JavaScript",
-      "stars": 1039,
-      "comment_count": 3,
-      "age_days": 0,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7163,49 +7203,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "langchain-ai/langchain",
-      "number": 36952,
-      "title": "Bug bounty",
-      "url": "https://github.com/langchain-ai/langchain/issues/36952",
-      "created_at": "2026-04-22T16:56:57Z",
-      "labels": [
-        "documentation",
-        "help wanted",
-        "bug",
-        "great-writeup",
-        "integration",
-        "core",
-        "langchain",
-        "feature request",
-        "anthropic",
-        "ollama",
-        "openai",
-        "performance",
-        "openrouter",
-        "security"
-      ],
-      "language": "Python",
-      "stars": 135648,
-      "comment_count": 13,
-      "age_days": 10,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.85,
-        "confidence": 0.76,
-        "effort": 0.6
       }
     }
   ]
