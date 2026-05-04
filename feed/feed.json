@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-04T14:21:53Z",
+  "updated_at": "2026-05-04T19:50:58Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3082,9 +3082,45 @@
         "priority/normal"
       ],
       "language": "Java",
-      "stars": 34189,
+      "stars": 34190,
       "comment_count": 3,
       "age_days": 5,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 48680,
+      "title": "Realm display name localization placeholder is not expanded when resolving OTP issuer name",
+      "url": "https://github.com/keycloak/keycloak/issues/48680",
+      "created_at": "2026-05-04T13:21:12Z",
+      "labels": [
+        "area/authentication",
+        "kind/bug",
+        "help wanted",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump",
+        "team/core-authn"
+      ],
+      "language": "Java",
+      "stars": 34190,
+      "comment_count": 3,
+      "age_days": 0,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7175,39 +7211,6 @@
         "impact": 0.75,
         "confidence": 0.81,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "google-gemini/gemini-cli",
-      "number": 14940,
-      "title": "Auto-completion keeps requesting gemini-2.5-flash-lite even when using gemini-3.0, causing infinite \"usage limit reached\" warnings",
-      "url": "https://github.com/google-gemini/gemini-cli/issues/14940",
-      "created_at": "2025-12-11T07:47:51Z",
-      "labels": [
-        "priority/p2",
-        "area/core",
-        "help wanted",
-        "type/bug"
-      ],
-      "language": "TypeScript",
-      "stars": 96620,
-      "comment_count": 9,
-      "age_days": 84,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
       }
     }
   ]
