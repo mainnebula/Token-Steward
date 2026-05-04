@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-04T03:54:29Z",
+  "updated_at": "2026-05-04T08:40:16Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2687,8 +2687,8 @@
         ":Analytics/ES|QL"
       ],
       "language": "Java",
-      "stars": 76632,
-      "comment_count": 4,
+      "stars": 76630,
+      "comment_count": 3,
       "age_days": 5,
       "is_bug": true,
       "is_feature": false,
