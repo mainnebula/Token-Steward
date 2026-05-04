@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-04T08:40:16Z",
+  "updated_at": "2026-05-04T14:21:53Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3049,6 +3049,42 @@
       "stars": 33153,
       "comment_count": 3,
       "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 48584,
+      "title": "Updating Keycloak to 26.6.x fails on SQL Server with case sensitive collation",
+      "url": "https://github.com/keycloak/keycloak/issues/48584",
+      "created_at": "2026-04-29T11:37:53Z",
+      "labels": [
+        "kind/bug",
+        "area/storage",
+        "help wanted",
+        "team/production-readiness",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 34189,
+      "comment_count": 3,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7166,47 +7202,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "google-gemini/gemini-cli",
-      "number": 15551,
-      "title": "gemini cli mcp command generates settings.json that cannot be loaded",
-      "url": "https://github.com/google-gemini/gemini-cli/issues/15551",
-      "created_at": "2025-12-25T09:05:10Z",
-      "labels": [
-        "priority/p2",
-        "area/core",
-        "help wanted",
-        "type/bug"
-      ],
-      "language": "TypeScript",
-      "stars": 95444,
-      "comment_count": 6,
-      "age_days": 60,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "TianqiZhang"
-        },
-        "number": 15565,
-        "state": "OPEN",
-        "title": "fix(cli): Fix settings validation to respect additionalProperties: false in JSON schemas",
-        "url": "https://github.com/google-gemini/gemini-cli/pull/15565"
-      },
       "score": 0.71,
       "score_breakdown": {
         "reach": 0.6,
