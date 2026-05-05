@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-04T19:50:58Z",
+  "updated_at": "2026-05-05T03:36:03Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3119,7 +3119,7 @@
       ],
       "language": "Java",
       "stars": 34190,
-      "comment_count": 3,
+      "comment_count": 4,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
@@ -3128,8 +3128,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "mabagoury"
+        },
+        "number": 48700,
+        "state": "OPEN",
+        "title": "Resolve realm display name localization placeholders in TOTP issuer name",
+        "url": "https://github.com/keycloak/keycloak/pull/48700"
+      },
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
