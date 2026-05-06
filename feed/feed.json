@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-05T19:45:56Z",
+  "updated_at": "2026-05-06T03:51:02Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -872,6 +872,45 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 442,
+      "title": "Shows \"Gemini CLI\" not installed. But it's installed.",
+      "url": "https://github.com/nexu-io/open-design/issues/442",
+      "created_at": "2026-05-04T10:52:33Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "TypeScript",
+      "stars": 28196,
+      "comment_count": 7,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "fancyboi999"
+        },
+        "number": 614,
+        "state": "OPEN",
+        "title": "fix(daemon, packaged): unbreak GUI-launched agent detection on minimal PATHs (#442)",
+        "url": "https://github.com/nexu-io/open-design/pull/614"
+      },
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -2107,6 +2146,37 @@
         "impact": 0.85,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 470,
+      "title": "AI Doesn't Receive Instructions",
+      "url": "https://github.com/nexu-io/open-design/issues/470",
+      "created_at": "2026-05-04T16:47:16Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 28196,
+      "comment_count": 12,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.89,
+        "effort": 0.65
       }
     },
     {
@@ -4845,6 +4915,38 @@
       }
     },
     {
+      "repo": "inclusionAI/AReaL",
+      "number": 1292,
+      "title": "[BUG] FSDP engine: torch.optim.AdamW inherits bf16 dtype from model.parameters(), causing late-stage convergence to plateau ~3× higher than DS-Z3 / Megatron",
+      "url": "https://github.com/inclusionAI/AReaL/issues/1292",
+      "created_at": "2026-04-30T07:14:27Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "call-for-contribution"
+      ],
+      "language": "Python",
+      "stars": 5134,
+      "comment_count": 3,
+      "age_days": 5,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "internetarchive/openlibrary",
       "number": 12381,
       "title": "Bug: Duplicate <legend> in Advanced Search form causing accessibility issues",
@@ -4950,6 +5052,40 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "jrsteensen/OpenHornet",
+      "number": 1204,
+      "title": "[Obsolescence]: Hydrolic Isolation Panel switch not in manufacture.",
+      "url": "https://github.com/jrsteensen/OpenHornet/issues/1204",
+      "created_at": "2026-04-17T16:56:22Z",
+      "labels": [
+        "Type: Bug/Obsolesce",
+        "Type: Documentation",
+        "good first issue",
+        "Category: MCAD",
+        "Priority: Normal"
+      ],
+      "language": "Python",
+      "stars": 398,
+      "comment_count": 3,
+      "age_days": 18,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.85,
+        "confidence": 0.91,
         "effort": 0.6
       }
     },
@@ -7070,151 +7206,6 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "frappe/frappe",
-      "number": 37798,
-      "title": "Doctype name is missing in the breadcrumbs on the tree view.",
-      "url": "https://github.com/frappe/frappe/issues/37798",
-      "created_at": "2026-03-05T10:11:50Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "v16"
-      ],
-      "language": "Python",
-      "stars": 9777,
-      "comment_count": 11,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.85,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "gitbutlerapp/gitbutler",
-      "number": 12748,
-      "title": "`but setup` displaces hooks owned by hook managers (prek, pre-commit, husky) without detecting them, and provides no escape hatch",
-      "url": "https://github.com/gitbutlerapp/gitbutler/issues/12748",
-      "created_at": "2026-03-10T08:28:39Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 20739,
-      "comment_count": 20,
-      "age_days": 53,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "ichoosetoaccept"
-        },
-        "number": 1,
-        "state": "OPEN",
-        "title": "feat: hook ownership model with external manager detection",
-        "url": "https://github.com/detailobsessed/gitbutler/pull/1"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "golang/go",
-      "number": 77768,
-      "title": "cmd/link: internal linking on Linux fails for CGO_LDFLAGS=-static",
-      "url": "https://github.com/golang/go/issues/77768",
-      "created_at": "2026-02-24T12:33:56Z",
-      "labels": [
-        "help wanted",
-        "NeedsFix",
-        "compiler/runtime",
-        "BugReport"
-      ],
-      "language": "Go",
-      "stars": 132834,
-      "comment_count": 5,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": false,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.81,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "golang/go",
-      "number": 78222,
-      "title": "regexp: repeat count limit is lower than documented",
-      "url": "https://github.com/golang/go/issues/78222",
-      "created_at": "2026-03-19T13:46:48Z",
-      "labels": [
-        "Documentation",
-        "help wanted",
-        "NeedsInvestigation",
-        "BugReport"
-      ],
-      "language": "Go",
-      "stars": 133279,
-      "comment_count": 4,
-      "age_days": 15,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": false,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "kunwar-vikrant"
-        },
-        "number": 78232,
-        "state": "OPEN",
-        "title": "regexp/syntax: extract maxRepeat constant and document nested repetition limit",
-        "url": "https://github.com/golang/go/pull/78232"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.81,
         "effort": 0.6
       }
     }
