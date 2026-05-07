@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-07T14:35:45Z",
+  "updated_at": "2026-05-07T19:50:11Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1970,6 +1970,50 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 48566,
+      "title": "Admin console assets 404 in 26.6.x: quay.io/keycloak/keycloak:26.6 ships /opt/keycloak/data/tmp as root:root 0755, blocking gzip cache creation",
+      "url": "https://github.com/keycloak/keycloak/issues/48566",
+      "created_at": "2026-04-29T00:20:48Z",
+      "labels": [
+        "kind/bug",
+        "area/dist/quarkus",
+        "help wanted",
+        "team/cloud-native",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 34247,
+      "comment_count": 9,
+      "age_days": 8,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "shawkins"
+        },
+        "number": 48608,
+        "state": "OPEN",
+        "title": "fix: temp directory refinements",
+        "url": "https://github.com/keycloak/keycloak/pull/48608"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "koordinator-sh/koordinator",
       "number": 2812,
       "title": "[proposal] Use protobuf as the default content type for native Kubernetes API clients to improve performance",
@@ -3459,6 +3503,70 @@
         "title": "[mesheryctl] Align component view e2e assertions with current CLI output",
         "url": "https://github.com/meshery/meshery/pull/18604"
       },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "meshery/meshery",
+      "number": 19158,
+      "title": "[Docs] Fix low text contrast issue on Community category page ",
+      "url": "https://github.com/meshery/meshery/issues/19158",
+      "created_at": "2026-05-07T18:54:27Z",
+      "labels": [
+        "help wanted",
+        "area/docs",
+        "language/markdown",
+        "framework/hugo"
+      ],
+      "language": "Go",
+      "stars": 10211,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.65,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 438,
+      "title": "[Bug] Codex CLI agent exits with code 1 due to deprecated --full-auto flag (v0.128.0)",
+      "url": "https://github.com/nexu-io/open-design/issues/438",
+      "created_at": "2026-05-04T09:16:17Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "TypeScript",
+      "stars": 32020,
+      "comment_count": 4,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
@@ -7077,130 +7185,6 @@
         "impact": 0.75,
         "confidence": 0.85,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "elastic/elasticsearch",
-      "number": 138798,
-      "title": "ESQL: overflowing division in ROW gives wrong error message",
-      "url": "https://github.com/elastic/elasticsearch/issues/138798",
-      "created_at": "2025-12-01T08:48:06Z",
-      "labels": [
-        ">bug",
-        "good first issue",
-        "Team:Analytics",
-        ":Analytics/ES|QL"
-      ],
-      "language": "Java",
-      "stars": 76263,
-      "comment_count": 6,
-      "age_days": 93,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "kvanerum"
-        },
-        "number": 138973,
-        "state": "OPEN",
-        "title": "ESQL: overflowing division in ROW gives wrong error message",
-        "url": "https://github.com/elastic/elasticsearch/pull/138973"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "elastic/elasticsearch",
-      "number": 141887,
-      "title": "Make SnapshotHistoryStore retry indexing history data on EsRejectedExecutionException",
-      "url": "https://github.com/elastic/elasticsearch/issues/141887",
-      "created_at": "2026-02-04T22:50:24Z",
-      "labels": [
-        ">bug",
-        "good first issue",
-        "Team:Distributed",
-        ":Distributed/SLM"
-      ],
-      "language": "Java",
-      "stars": 76412,
-      "comment_count": 6,
-      "age_days": 56,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "byteforge38"
-        },
-        "number": 141969,
-        "state": "OPEN",
-        "title": "Use BulkProcessor2 in SnapshotHistoryStore for retry support",
-        "url": "https://github.com/elastic/elasticsearch/pull/141969"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "etcd-io/etcd",
-      "number": 20342,
-      "title": "--watch-progress-notify-interval doesn't work through JSON config",
-      "url": "https://github.com/etcd-io/etcd/issues/20342",
-      "created_at": "2025-07-15T19:07:23Z",
-      "labels": [
-        "type/bug",
-        "area/documentation",
-        "help wanted",
-        "good first issue",
-        "stage/tracked"
-      ],
-      "language": "Go",
-      "stars": 51650,
-      "comment_count": 17,
-      "age_days": 277,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "nicknikolakakis"
-        },
-        "number": 1149,
-        "state": "OPEN",
-        "title": "docs: clarify that duration fields in config files require nanosecond integers",
-        "url": "https://github.com/etcd-io/website/pull/1149"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.85,
-        "confidence": 0.94,
-        "effort": 0.4
       }
     }
   ]
