@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-08T14:07:21Z",
+  "updated_at": "2026-05-08T19:40:20Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -370,6 +370,52 @@
         "impact": 0.75,
         "confidence": 0.89,
         "effort": 0.75
+      }
+    },
+    {
+      "repo": "google-gemini/gemini-cli",
+      "number": 25458,
+      "title": "Strict auth consent throws opaque error due to startup race",
+      "url": "https://github.com/google-gemini/gemini-cli/issues/25458",
+      "created_at": "2026-04-15T14:14:40Z",
+      "labels": [
+        "priority/p2",
+        "area/core",
+        "area/security",
+        "status/bot-triaged",
+        "kind/bug",
+        "help wanted",
+        "type/bug",
+        "status/need-information",
+        "effort/medium"
+      ],
+      "language": "TypeScript",
+      "stars": 103448,
+      "comment_count": 4,
+      "age_days": 23,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "nbardy"
+        },
+        "number": 25463,
+        "state": "OPEN",
+        "title": "fix(core): resolve strict auth consent and credential clearing issues",
+        "url": "https://github.com/google-gemini/gemini-cli/pull/25463"
+      },
+      "score": 0.76,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.9,
+        "confidence": 0.94,
+        "effort": 0.6
       }
     },
     {
@@ -7150,39 +7196,6 @@
         "impact": 0.65,
         "confidence": 0.94,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 28732,
-      "title": "Allowed to fail, asynchronous`repository_ctx.download` still reports as `pending download` after failure, swallowing the error",
-      "url": "https://github.com/bazelbuild/bazel/issues/28732",
-      "created_at": "2026-02-20T19:48:48Z",
-      "labels": [
-        "type: bug",
-        "P2",
-        "team-ExternalDeps",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 25287,
-      "comment_count": 5,
-      "age_days": 40,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
       }
     }
   ]
