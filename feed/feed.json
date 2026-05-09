@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-09T03:41:44Z",
+  "updated_at": "2026-05-09T08:05:15Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3974,6 +3974,85 @@
       }
     },
     {
+      "repo": "IsmaelMartinez/teams-for-linux",
+      "number": 2518,
+      "title": "[Bug]: Concurrent downloads — first download stalls indefinitely when a second download starts",
+      "url": "https://github.com/IsmaelMartinez/teams-for-linux/issues/2518",
+      "created_at": "2026-05-09T04:24:59Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "JavaScript",
+      "stars": 4671,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "jayenashar"
+        },
+        "number": 2514,
+        "state": "OPEN",
+        "title": "feat(downloads): drive taskbar progress bar during downloads (#2512)",
+        "url": "https://github.com/IsmaelMartinez/teams-for-linux/pull/2514"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "LearningCircuit/local-deep-research",
+      "number": 3875,
+      "title": "Misleading API-key UX for openai_endpoint provider — users think key is required",
+      "url": "https://github.com/LearningCircuit/local-deep-research/issues/3875",
+      "created_at": "2026-05-08T19:37:03Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "ui-ux"
+      ],
+      "language": "Python",
+      "stars": 6856,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "forhim007"
+        },
+        "number": 3892,
+        "state": "OPEN",
+        "title": "fix: make OpenAI endpoint API key field clearly optional in UI",
+        "url": "https://github.com/LearningCircuit/local-deep-research/pull/3892"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "OWASP/Nest",
       "number": 4419,
       "title": "ChapterMap: Incorrect cursor display on non-interactive areas",
@@ -7121,81 +7200,6 @@
         "impact": 0.85,
         "confidence": 0.94,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "aws/aws-cdk",
-      "number": 37632,
-      "title": "(aws-ec2): RouterType.GATEWAY comment is misleading - it also supports Virtual Private Gateway",
-      "url": "https://github.com/aws/aws-cdk/issues/37632",
-      "created_at": "2026-04-18T07:13:00Z",
-      "labels": [
-        "good first issue",
-        "feature-request",
-        "@aws-cdk/aws-ec2",
-        "effort/small",
-        "p3"
-      ],
-      "language": "TypeScript",
-      "stars": 12758,
-      "comment_count": 3,
-      "age_days": 14,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "NaveenKumar-Marupalli"
-        },
-        "number": 37676,
-        "state": "OPEN",
-        "title": "docs(ec2): modify enum RouterType.GATEWAY JsDoc to include Virtual Private Gateway",
-        "url": "https://github.com/aws/aws-cdk/pull/37676"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.94,
-        "effort": 0.75
-      }
-    },
-    {
-      "repo": "backstage/backstage",
-      "number": 32715,
-      "title": "Add more details about the `app-visualizer` plugin",
-      "url": "https://github.com/backstage/backstage/issues/32715",
-      "created_at": "2026-02-06T12:58:22Z",
-      "labels": [
-        "good first issue",
-        "domain:docs",
-        "needs:triage",
-        "area:framework"
-      ],
-      "language": "TypeScript",
-      "stars": 32753,
-      "comment_count": 8,
-      "age_days": 29,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.65,
-        "confidence": 0.94,
-        "effort": 0.6
       }
     }
   ]
