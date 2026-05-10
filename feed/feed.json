@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-09T19:15:09Z",
+  "updated_at": "2026-05-10T03:58:50Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4477,6 +4477,48 @@
       }
     },
     {
+      "repo": "apache/datafusion-ballista",
+      "number": 1671,
+      "title": "How to check the execution time of stages?",
+      "url": "https://github.com/apache/datafusion-ballista/issues/1671",
+      "created_at": "2026-05-09T08:32:03Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "user experience",
+        "web user interface"
+      ],
+      "language": "Rust",
+      "stars": 2028,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "milenkovicm"
+        },
+        "number": 1675,
+        "state": "OPEN",
+        "title": "fix: rest api calculates stage running time correctly",
+        "url": "https://github.com/apache/datafusion-ballista/pull/1675"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "asciimoo/hister",
       "number": 362,
       "title": "Deleted indexed local files cant be \"fully deleted\" on Windows",
@@ -6921,6 +6963,39 @@
       }
     },
     {
+      "repo": "apache/airflow",
+      "number": 66624,
+      "title": "KubernetesPodTrigger runs forever if non-base container in pod fails",
+      "url": "https://github.com/apache/airflow/issues/66624",
+      "created_at": "2026-05-09T15:17:22Z",
+      "labels": [
+        "kind:bug",
+        "area:providers",
+        "good first issue",
+        "provider:cncf-kubernetes"
+      ],
+      "language": "Python",
+      "stars": 45340,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "apache/iceberg",
       "number": 14874,
       "title": "[Docs] Schema Doc is Missing V3 Types",
@@ -7135,71 +7210,6 @@
         "impact": 0.85,
         "confidence": 0.94,
         "effort": 0.4
-      }
-    },
-    {
-      "repo": "code-charity/youtube",
-      "number": 3780,
-      "title": "Auto-Pause not working🐞",
-      "url": "https://github.com/code-charity/youtube/issues/3780",
-      "created_at": "2026-04-12T17:20:58Z",
-      "labels": [
-        "Bug",
-        "help wanted",
-        "good first issue",
-        "up-for-grabs"
-      ],
-      "language": "JavaScript",
-      "stars": 4355,
-      "comment_count": 14,
-      "age_days": 26,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.88,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "inclusionAI/AReaL",
-      "number": 1292,
-      "title": "[BUG] FSDP engine: torch.optim.AdamW inherits bf16 dtype from model.parameters(), causing late-stage convergence to plateau ~3× higher than DS-Z3 / Megatron",
-      "url": "https://github.com/inclusionAI/AReaL/issues/1292",
-      "created_at": "2026-04-30T07:14:27Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "call-for-contribution"
-      ],
-      "language": "Python",
-      "stars": 5152,
-      "comment_count": 4,
-      "age_days": 9,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     }
   ]
