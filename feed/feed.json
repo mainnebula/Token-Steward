@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-13T08:54:53Z",
+  "updated_at": "2026-05-13T14:52:08Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2190,6 +2190,41 @@
       "score_breakdown": {
         "reach": 0.55,
         "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kubernetes-sigs/cluster-api",
+      "number": 13681,
+      "title": "docs: machine_deletions.md describes MachineDrainRule order semantics backwards",
+      "url": "https://github.com/kubernetes-sigs/cluster-api/issues/13681",
+      "created_at": "2026-05-12T10:58:43Z",
+      "labels": [
+        "help wanted",
+        "good first issue",
+        "kind/bug",
+        "priority/backlog",
+        "triage/accepted",
+        "area/documentation"
+      ],
+      "language": "Go",
+      "stars": 4207,
+      "comment_count": 4,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.85,
         "confidence": 0.93,
         "effort": 0.65
       }
@@ -4843,6 +4878,40 @@
       }
     },
     {
+      "repo": "bazelbuild/bazel",
+      "number": 29437,
+      "title": "[9.1.0] Crash on `files` attr in `archive_override`",
+      "url": "https://github.com/bazelbuild/bazel/issues/29437",
+      "created_at": "2026-04-30T16:12:30Z",
+      "labels": [
+        "type: bug",
+        "P2",
+        "team-ExternalDeps",
+        "untriaged",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 25383,
+      "comment_count": 3,
+      "age_days": 12,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "biomejs/biome",
       "number": 9210,
       "title": "💅 `useAnchorContent` false positive with Astro `Image` component",
@@ -7128,70 +7197,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/iceberg",
-      "number": 14874,
-      "title": "[Docs] Schema Doc is Missing V3 Types",
-      "url": "https://github.com/apache/iceberg/issues/14874",
-      "created_at": "2025-12-17T17:11:34Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "docs",
-        "beginner"
-      ],
-      "language": "Java",
-      "stars": 8622,
-      "comment_count": 8,
-      "age_days": 85,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.85,
-        "confidence": 0.88,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "apache/iceberg",
-      "number": 15347,
-      "title": "Disabling statistics across multiple columns",
-      "url": "https://github.com/apache/iceberg/issues/15347",
-      "created_at": "2026-02-17T11:57:16Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 8636,
-      "comment_count": 4,
-      "age_days": 29,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     }
   ]
