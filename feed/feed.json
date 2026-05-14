@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-14T08:47:16Z",
+  "updated_at": "2026-05-14T14:31:44Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3827,6 +3827,48 @@
       }
     },
     {
+      "repo": "meshery/meshery",
+      "number": 19200,
+      "title": "[UI] Configuration --> Designs: Ensure that Sistent Avatars component is used",
+      "url": "https://github.com/meshery/meshery/issues/19200",
+      "created_at": "2026-05-08T21:40:21Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "language/javascript",
+        "component/ui",
+        "framework/react"
+      ],
+      "language": "TypeScript",
+      "stars": 10229,
+      "comment_count": 3,
+      "age_days": 5,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "arjunmehta-git"
+        },
+        "number": 19202,
+        "state": "OPEN",
+        "title": "[UI] Normalize RTK response casing across UI flows",
+        "url": "https://github.com/meshery/meshery/pull/19202"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "nexu-io/open-design",
       "number": 1399,
       "title": "Newly started sessions return to home quickly and auto-terminate if no task is entered within about one minute",
@@ -7163,41 +7205,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/airflow",
-      "number": 64283,
-      "title": "aiobotocore no longer have boto3 extra",
-      "url": "https://github.com/apache/airflow/issues/64283",
-      "created_at": "2026-03-27T08:18:26Z",
-      "labels": [
-        "kind:bug",
-        "provider:amazon",
-        "area:providers",
-        "good first issue",
-        "area:dependencies",
-        "kind:task"
-      ],
-      "language": "Python",
-      "stars": 44805,
-      "comment_count": 5,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.81,
         "effort": 0.65
       }
     }
