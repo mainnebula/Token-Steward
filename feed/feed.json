@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-15T08:58:36Z",
+  "updated_at": "2026-05-15T14:25:36Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2142,9 +2142,9 @@
         "team/core-protocols"
       ],
       "language": "Java",
-      "stars": 34345,
-      "comment_count": 5,
-      "age_days": 0,
+      "stars": 34413,
+      "comment_count": 6,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
