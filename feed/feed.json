@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-16T03:48:32Z",
+  "updated_at": "2026-05-16T08:13:41Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6823,6 +6823,38 @@
       }
     },
     {
+      "repo": "TencentCloud/CubeSandbox",
+      "number": 244,
+      "title": "[good first issue] docs: Help us build integration guides with mainstream AI agent frameworks",
+      "url": "https://github.com/TencentCloud/CubeSandbox/issues/244",
+      "created_at": "2026-05-14T07:49:18Z",
+      "labels": [
+        "area/documentation",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 5662,
+      "comment_count": 5,
+      "age_days": 2,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.65,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "TibixDev/winboat",
       "number": 462,
       "title": "[Bug] When uninstalled in arch and reinstalled, it appears as an emty app",
@@ -7175,37 +7207,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/dolphinscheduler",
-      "number": 18166,
-      "title": "[Bug] [Worker] File parameter transfer feature is broken",
-      "url": "https://github.com/apache/dolphinscheduler/issues/18166",
-      "created_at": "2026-04-13T08:23:03Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 14274,
-      "comment_count": 5,
-      "age_days": 32,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
       }
     }
   ]
