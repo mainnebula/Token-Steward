@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-18T10:20:22Z",
+  "updated_at": "2026-05-18T15:50:33Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6344,6 +6344,46 @@
       }
     },
     {
+      "repo": "nexu-io/open-design",
+      "number": 695,
+      "title": "Kimi CLI is not working",
+      "url": "https://github.com/nexu-io/open-design/issues/695",
+      "created_at": "2026-05-06T14:31:18Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "priority:p1"
+      ],
+      "language": "TypeScript",
+      "stars": 44734,
+      "comment_count": 26,
+      "age_days": 12,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Jeshua09090"
+        },
+        "number": 1927,
+        "state": "OPEN",
+        "title": "[codex] fix daemon live artifacts MCP electron launch",
+        "url": "https://github.com/nexu-io/open-design/pull/1927"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.89,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "oauth2-proxy/oauth2-proxy",
       "number": 3334,
       "title": "[Bug]: alpha config `secretSource.value` not base64 decoding",
@@ -7183,38 +7223,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "code-charity/youtube",
-      "number": 3804,
-      "title": "GitHub:  I'm erroneously auto-banned",
-      "url": "https://github.com/code-charity/youtube/issues/3804",
-      "created_at": "2026-04-23T07:10:59Z",
-      "labels": [
-        "Bug",
-        "help wanted",
-        "important"
-      ],
-      "language": "JavaScript",
-      "stars": 4369,
-      "comment_count": 7,
-      "age_days": 23,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.88,
-        "effort": 0.6
       }
     }
   ]
