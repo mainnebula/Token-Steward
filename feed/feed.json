@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-18T19:55:07Z",
+  "updated_at": "2026-05-19T04:13:44Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2933,39 +2933,6 @@
       }
     },
     {
-      "repo": "bazelbuild/bazel",
-      "number": 29483,
-      "title": "Changing the schema for lockfile facts is hard to do safely",
-      "url": "https://github.com/bazelbuild/bazel/issues/29483",
-      "created_at": "2026-05-06T21:04:45Z",
-      "labels": [
-        "type: bug",
-        "P2",
-        "team-ExternalDeps",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 25373,
-      "comment_count": 3,
-      "age_days": 4,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "cockroachdb/cockroach",
       "number": 110997,
       "title": "docker-entrypoint-initdb.d scripts don't run unless COCKROACH_USER is set",
@@ -4950,6 +4917,47 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "bazelbuild/bazel",
+      "number": 29483,
+      "title": "Changing the schema for lockfile facts is hard to do safely",
+      "url": "https://github.com/bazelbuild/bazel/issues/29483",
+      "created_at": "2026-05-06T21:04:45Z",
+      "labels": [
+        "type: bug",
+        "P2",
+        "team-ExternalDeps",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 25401,
+      "comment_count": 4,
+      "age_days": 12,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "fmeum"
+        },
+        "number": 29556,
+        "state": "OPEN",
+        "title": "Add `facts_version` parameter to `module_extension`",
+        "url": "https://github.com/bazelbuild/bazel/pull/29556"
+      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
