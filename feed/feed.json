@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-19T09:59:47Z",
+  "updated_at": "2026-05-19T15:41:33Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6527,6 +6527,49 @@
       }
     },
     {
+      "repo": "DSpace/DSpace",
+      "number": 12409,
+      "title": "XML entities seem to be double-encoded in OAI-PMH responses",
+      "url": "https://github.com/DSpace/DSpace/issues/12409",
+      "created_at": "2026-05-05T14:59:48Z",
+      "labels": [
+        "bug",
+        "interface: OAI-PMH",
+        "help wanted",
+        "affects: 7.x",
+        "affects: 8.x",
+        "affects: 9.x"
+      ],
+      "language": "Java",
+      "stars": 1065,
+      "comment_count": 3,
+      "age_days": 14,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "bram-maegerman"
+        },
+        "number": 12506,
+        "state": "OPEN",
+        "title": "Fix double escaped characters in oai",
+        "url": "https://github.com/DSpace/DSpace/pull/12506"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "Giskard-AI/giskard-oss",
       "number": 2315,
       "title": "Make `Suite.append()` chainable (fluent suite builder)",
@@ -7182,48 +7225,6 @@
         "state": "OPEN",
         "title": "Optimize TaskInstance list query by eliminating duplicate joins",
         "url": "https://github.com/apache/airflow/pull/62108"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/airflow",
-      "number": 63934,
-      "title": "Control buttons and headers disappear when logs are longer than browser window",
-      "url": "https://github.com/apache/airflow/issues/63934",
-      "created_at": "2026-03-19T14:43:20Z",
-      "labels": [
-        "kind:bug",
-        "good first issue",
-        "area:core",
-        "area:UI",
-        "needs-triage"
-      ],
-      "language": "Python",
-      "stars": 44721,
-      "comment_count": 3,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Revanth14"
-        },
-        "number": 64013,
-        "state": "OPEN",
-        "title": "Fix layout overflow issue in DAG Details Logs tab",
-        "url": "https://github.com/apache/airflow/pull/64013"
       },
       "score": 0.71,
       "score_breakdown": {
