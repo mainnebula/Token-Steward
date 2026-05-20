@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-20T04:14:25Z",
+  "updated_at": "2026-05-20T09:50:12Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -881,43 +881,6 @@
         "title": "Fix NPE in updateFederatedIdentity after IDP deletion and re-creation",
         "url": "https://github.com/keycloak/keycloak/pull/47214"
       },
-      "score": 0.75,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 47672,
-      "title": "ClassCastException when PEM CA certificate is used",
-      "url": "https://github.com/keycloak/keycloak/issues/47672",
-      "created_at": "2026-04-01T08:37:34Z",
-      "labels": [
-        "kind/bug",
-        "area/core",
-        "help wanted",
-        "team/core-shared",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal",
-        "status/blocked-external"
-      ],
-      "language": "Java",
-      "stars": 33674,
-      "comment_count": 6,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -3215,6 +3178,45 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "google/gvisor",
+      "number": 13179,
+      "title": "`docker exec` is flaky in Docker in gVisor",
+      "url": "https://github.com/google/gvisor/issues/13179",
+      "created_at": "2026-05-14T01:39:11Z",
+      "labels": [
+        "type: bug",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 18347,
+      "comment_count": 4,
+      "age_days": 6,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Amaindex"
+        },
+        "number": 13211,
+        "state": "OPEN",
+        "title": "test/syscalls: add recvfrom restart regression test",
+        "url": "https://github.com/google/gvisor/pull/13211"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -6431,6 +6433,38 @@
       }
     },
     {
+      "repo": "openstyles/stylus",
+      "number": 2090,
+      "title": "popup: Unhandled error Cannot read properties of null (reading 'then')",
+      "url": "https://github.com/openstyles/stylus/issues/2090",
+      "created_at": "2026-05-20T03:21:01Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "not reproducible"
+      ],
+      "language": "JavaScript",
+      "stars": 6630,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "777genius/claude-notifications-go",
       "number": 59,
       "title": "macOS Tahoe (26.x): Notifications attributed to Script Editor instead of ClaudeNotifier",
@@ -7191,47 +7225,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "apache/airflow",
-      "number": 62027,
-      "title": "API - Improve public get_task_instances endpoint",
-      "url": "https://github.com/apache/airflow/issues/62027",
-      "created_at": "2026-02-16T15:29:49Z",
-      "labels": [
-        "kind:bug",
-        "area:performance",
-        "area:API",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 44300,
-      "comment_count": 4,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Arunodoy18"
-        },
-        "number": 62108,
-        "state": "OPEN",
-        "title": "Optimize TaskInstance list query by eliminating duplicate joins",
-        "url": "https://github.com/apache/airflow/pull/62108"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.65
       }
     }
   ]
