@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-20T20:27:08Z",
+  "updated_at": "2026-05-21T04:22:55Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1782,40 +1782,6 @@
         "impact": 0.85,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "jrsteensen/OpenHornet",
-      "number": 1204,
-      "title": "[Obsolescence]: Hydrolic Isolation Panel switch not in manufacture.",
-      "url": "https://github.com/jrsteensen/OpenHornet/issues/1204",
-      "created_at": "2026-04-17T16:56:22Z",
-      "labels": [
-        "Type: Bug/Obsolesce",
-        "Type: Documentation",
-        "good first issue",
-        "Category: MCAD",
-        "Priority: Normal"
-      ],
-      "language": "Python",
-      "stars": 398,
-      "comment_count": 5,
-      "age_days": 19,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.74,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.91,
-        "effort": 0.6
       }
     },
     {
@@ -7225,6 +7191,40 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "jrsteensen/OpenHornet",
+      "number": 1204,
+      "title": "[Obsolescence]: Hydrolic Isolation Panel switch not in manufacture.",
+      "url": "https://github.com/jrsteensen/OpenHornet/issues/1204",
+      "created_at": "2026-04-17T16:56:22Z",
+      "labels": [
+        "Type: Bug/Obsolesce",
+        "Type: Documentation",
+        "good first issue",
+        "Category: MCAD",
+        "Priority: Normal"
+      ],
+      "language": "Python",
+      "stars": 403,
+      "comment_count": 6,
+      "age_days": 33,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.91,
+        "effort": 0.5
       }
     }
   ]
