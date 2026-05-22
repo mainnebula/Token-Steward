@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21T20:04:01Z",
+  "updated_at": "2026-05-22T04:18:06Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6431,6 +6431,141 @@
       }
     },
     {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 1849,
+      "title": "[ Bounty $6k ] [ Workflow ] Prevent conflicting timeout units — definition parsing",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1849",
+      "created_at": "2026-05-21T23:40:17Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$6k"
+      ],
+      "language": "Python",
+      "stars": 173,
+      "comment_count": 8,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "er1c-cartman"
+        },
+        "number": 1851,
+        "state": "OPEN",
+        "title": "Reject conflicting workflow timeout units",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1851"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 1854,
+      "title": "[ Bounty $2k ] [ Config ] Return a defensive copy from to_dict — snapshot isolation",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1854",
+      "created_at": "2026-05-21T23:56:01Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$2k"
+      ],
+      "language": "Python",
+      "stars": 173,
+      "comment_count": 9,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "RoyZhao1991"
+        },
+        "number": 1855,
+        "state": "OPEN",
+        "title": "[codex] Return defensive config snapshots",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1855"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 1857,
+      "title": "[ Bounty $5k ] [ API ] Use consistent error codes for validation failures — public API clients",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1857",
+      "created_at": "2026-05-22T00:07:35Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$5k"
+      ],
+      "language": "Python",
+      "stars": 173,
+      "comment_count": 6,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "vultuk"
+        },
+        "number": 1859,
+        "state": "OPEN",
+        "title": "Validate public API requests before registry access",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1859"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "777genius/claude-notifications-go",
       "number": 59,
       "title": "macOS Tahoe (26.x): Notifications attributed to Script Editor instead of ClaudeNotifier",
@@ -7119,112 +7254,6 @@
         "impact": 0.55,
         "confidence": 0.88,
         "effort": 0.8
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5379,
-      "title": "[Feature]: Improve README hierarchy to make first-time evaluation easier",
-      "url": "https://github.com/aden-hive/hive/issues/5379",
-      "created_at": "2026-02-25T13:23:14Z",
-      "labels": [
-        "documentation",
-        "enhancement",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 10089,
-      "comment_count": 4,
-      "age_days": 40,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "kostasuser01gr"
-        },
-        "number": 5394,
-        "state": "OPEN",
-        "title": "docs: improve README hierarchy and merge qualification sections",
-        "url": "https://github.com/aden-hive/hive/pull/5394"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.65,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "agentscope-ai/agentscope-java",
-      "number": 1093,
-      "title": "[Bug]:1.0.11 AgentScopeJvmShutdownHook conflict with spring",
-      "url": "https://github.com/agentscope-ai/agentscope-java/issues/1093",
-      "created_at": "2026-04-01T02:47:16Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 2547,
-      "comment_count": 3,
-      "age_days": 11,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "jrsteensen/OpenHornet",
-      "number": 1204,
-      "title": "[Obsolescence]: Hydrolic Isolation Panel switch not in manufacture.",
-      "url": "https://github.com/jrsteensen/OpenHornet/issues/1204",
-      "created_at": "2026-04-17T16:56:22Z",
-      "labels": [
-        "Type: Bug/Obsolesce",
-        "Type: Documentation",
-        "good first issue",
-        "Category: MCAD",
-        "Priority: Normal"
-      ],
-      "language": "Python",
-      "stars": 403,
-      "comment_count": 6,
-      "age_days": 33,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.91,
-        "effort": 0.5
       }
     }
   ]
