@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-22T04:18:06Z",
+  "updated_at": "2026-05-22T09:42:20Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3774,6 +3774,78 @@
     },
     {
       "repo": "nexu-io/open-design",
+      "number": 2681,
+      "title": "Hide the unavailable Ingest source section from the Automations page for now",
+      "url": "https://github.com/nexu-io/open-design/issues/2681",
+      "created_at": "2026-05-22T07:36:11Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 49356,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 2699,
+      "title": "HTML preview can go blank after switching Source -> Preview in FileViewer",
+      "url": "https://github.com/nexu-io/open-design/issues/2699",
+      "created_at": "2026-05-22T08:58:52Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 49356,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "xxiaoxiong"
+        },
+        "number": 2704,
+        "state": "OPEN",
+        "title": "fix: reset srcDoc activation cache on iframe remount",
+        "url": "https://github.com/nexu-io/open-design/pull/2704"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
       "number": 438,
       "title": "[Bug] Codex CLI agent exits with code 1 due to deprecated --full-auto flag (v0.128.0)",
       "url": "https://github.com/nexu-io/open-design/issues/438",
@@ -4663,6 +4735,45 @@
         "state": "OPEN",
         "title": "fix: rest api calculates stage running time correctly",
         "url": "https://github.com/apache/datafusion-ballista/pull/1675"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "apache/iceberg",
+      "number": 16493,
+      "title": "`remove_orphan_files` scopes `file_list_view` with raw string prefix matching",
+      "url": "https://github.com/apache/iceberg/issues/16493",
+      "created_at": "2026-05-20T21:34:33Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 8882,
+      "comment_count": 4,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "wombatu-kun"
+        },
+        "number": 16498,
+        "state": "OPEN",
+        "title": "Spark: Fix DeleteOrphanFilesSparkAction sibling-prefix scope in compareToFileList",
+        "url": "https://github.com/apache/iceberg/pull/16498"
       },
       "score": 0.72,
       "score_breakdown": {
@@ -6432,6 +6543,96 @@
     },
     {
       "repo": "orchestration-agent/AgentOrchestration",
+      "number": 1228,
+      "title": "[ Bounty $7k ] [ Auth ] Require auth for OpenAPI schema with internal routes — documentation endpoint",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1228",
+      "created_at": "2026-05-21T06:52:54Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$7k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 14,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "MyTH-zyxeon"
+        },
+        "number": 1235,
+        "state": "OPEN",
+        "title": "Protect OpenAPI documentation endpoints",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1235"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 1821,
+      "title": "[ Bounty $5k ] [ CLI ] Validate logs tail is non-negative — logs arguments",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1821",
+      "created_at": "2026-05-21T22:56:11Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$5k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 13,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "vgtmy"
+        },
+        "number": 1823,
+        "state": "OPEN",
+        "title": "fix: reject negative logs tail values",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1823"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
       "number": 1849,
       "title": "[ Bounty $6k ] [ Workflow ] Prevent conflicting timeout units — definition parsing",
       "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1849",
@@ -6566,6 +6767,493 @@
       }
     },
     {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 2001,
+      "title": "[ Bounty $6k ] [ Auth ] Enforce membership on saved view sharing — collaboration auth",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2001",
+      "created_at": "2026-05-22T03:12:54Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$6k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 10,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "minorstep"
+        },
+        "number": 2004,
+        "state": "OPEN",
+        "title": "Enforce saved view sharing membership",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2004"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 2042,
+      "title": "[ Bounty $3k ] [ Workflow ] Respect explicit false defaults — parameter merging",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2042",
+      "created_at": "2026-05-22T04:18:46Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$3k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 14,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "kebanks2"
+        },
+        "number": 2044,
+        "state": "OPEN",
+        "title": "Preserve explicit false workflow parameter defaults",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2044"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 2050,
+      "title": "[ Bounty $3k ] [ Sandbox ] Validate max_concurrent — executor initialization",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2050",
+      "created_at": "2026-05-22T04:35:00Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$3k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 20,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "tim13246879"
+        },
+        "number": 2052,
+        "state": "OPEN",
+        "title": "Codex [ Sandbox ] Validate AgentExecutor max_concurrent",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2052"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 2105,
+      "title": "[ Bounty $4k ] [ Metrics ] Add collection timestamps to snapshots — exporter compatibility",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2105",
+      "created_at": "2026-05-22T05:49:52Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$4k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 9,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "vultuk"
+        },
+        "number": 2060,
+        "state": "OPEN",
+        "title": "Add collection timestamp to metrics snapshots",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2060"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 2108,
+      "title": "[ Bounty $8k ] [ Middleware ] Apply security headers to error responses — exception middleware",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2108",
+      "created_at": "2026-05-22T06:02:14Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$8k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 8,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "RoyZhao1991"
+        },
+        "number": 1732,
+        "state": "OPEN",
+        "title": "[codex] Apply security headers to error responses",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1732"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 2119,
+      "title": "[ Bounty $4k ] [ Sandbox ] Bound stored executor results — memory management",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2119",
+      "created_at": "2026-05-22T06:21:20Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$4k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 11,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "MyTH-zyxeon"
+        },
+        "number": 2121,
+        "state": "OPEN",
+        "title": "Bound stored executor results",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2121"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 2168,
+      "title": "[ Bounty $9k ] [ Runtime ] Bound recursive agent delegation depth — orchestration runtime",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2168",
+      "created_at": "2026-05-22T07:46:00Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$9k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 9,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "lansbe"
+        },
+        "number": 2172,
+        "state": "OPEN",
+        "title": "Fix recursive delegation depth guard (#2168)",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2172"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 2227,
+      "title": "[ Bounty $10k ] [ Auth ] Revalidate revoked API keys on long polling — task monitor",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2227",
+      "created_at": "2026-05-22T09:13:44Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$10k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 9,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Karry2019web"
+        },
+        "number": 2239,
+        "state": "OPEN",
+        "title": "fix: revalidate revoked API keys on long polling — task monitor",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2239"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 2243,
+      "title": "[ Bounty $5k ] [ Auth ] Require MFA challenge on privileged key creation — API key settings",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2243",
+      "created_at": "2026-05-22T09:24:56Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$5k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 11,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "JeremyZeng77"
+        },
+        "number": 2246,
+        "state": "OPEN",
+        "title": "Require MFA for privileged API key creation",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2246"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 2258,
+      "title": "[ Bounty $5k ] [ API ] Use consistent error codes for validation failures — public API clients",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2258",
+      "created_at": "2026-05-22T09:36:35Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$5k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 625,
+      "title": "[ Bounty $10k ] [ Auth ] Revalidate revoked API keys on long polling — task monitor",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/625",
+      "created_at": "2026-05-20T15:06:00Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$10k"
+      ],
+      "language": "Python",
+      "stars": 187,
+      "comment_count": 15,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "mkcash"
+        },
+        "number": 628,
+        "state": "OPEN",
+        "title": "[ baobao ] Implement solution for #625",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/628"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "777genius/claude-notifications-go",
       "number": 59,
       "title": "macOS Tahoe (26.x): Notifications attributed to Script Editor instead of ClaudeNotifier",
@@ -6659,601 +7347,6 @@
         "impact": 0.9,
         "confidence": 0.85,
         "effort": 0.5
-      }
-    },
-    {
-      "repo": "DSpace/DSpace",
-      "number": 12409,
-      "title": "XML entities seem to be double-encoded in OAI-PMH responses",
-      "url": "https://github.com/DSpace/DSpace/issues/12409",
-      "created_at": "2026-05-05T14:59:48Z",
-      "labels": [
-        "bug",
-        "interface: OAI-PMH",
-        "help wanted",
-        "affects: 7.x",
-        "affects: 8.x",
-        "affects: 9.x"
-      ],
-      "language": "Java",
-      "stars": 1065,
-      "comment_count": 3,
-      "age_days": 14,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "bram-maegerman"
-        },
-        "number": 12506,
-        "state": "OPEN",
-        "title": "Fix double escaped characters in oai",
-        "url": "https://github.com/DSpace/DSpace/pull/12506"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "Giskard-AI/giskard-oss",
-      "number": 2315,
-      "title": "Make `Suite.append()` chainable (fluent suite builder)",
-      "url": "https://github.com/Giskard-AI/giskard-oss/issues/2315",
-      "created_at": "2026-03-19T05:15:30Z",
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "Easy"
-      ],
-      "language": "Python",
-      "stars": 5170,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "mvanhorn"
-        },
-        "number": 2316,
-        "state": "OPEN",
-        "title": "fix(checks): make Suite.append() return self for fluent chaining",
-        "url": "https://github.com/Giskard-AI/giskard-oss/pull/2316"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.55,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
-      "number": 296,
-      "title": "Importing old JSON not working correct",
-      "url": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/issues/296",
-      "created_at": "2026-02-08T08:24:53Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "Good First Issue"
-      ],
-      "language": "JavaScript",
-      "stars": 1106,
-      "comment_count": 9,
-      "age_days": 24,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.88,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "NVIDIA/NemoClaw",
-      "number": 1429,
-      "title": "CONTRIBUTING.md Missing npm link Step — Developer Setup Path Broken - IssueFinder - SN 07",
-      "url": "https://github.com/NVIDIA/NemoClaw/issues/1429",
-      "created_at": "2026-04-03T16:38:58Z",
-      "labels": [
-        "documentation",
-        "duplicate",
-        "good first issue",
-        "Getting Started",
-        "priority: high"
-      ],
-      "language": "JavaScript",
-      "stars": 18593,
-      "comment_count": 3,
-      "age_days": 3,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "dknos"
-        },
-        "number": 1483,
-        "state": "OPEN",
-        "title": "docs(contributing): add npm link step to developer setup",
-        "url": "https://github.com/NVIDIA/NemoClaw/pull/1483"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.65,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "OpenHands/OpenHands",
-      "number": 11686,
-      "title": "[Bug]: CERTIFICATE_VERIFY_FAILED for self-hosted gitlab instances",
-      "url": "https://github.com/OpenHands/OpenHands/issues/11686",
-      "created_at": "2025-11-10T07:35:02Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "Stale",
-        "integrations"
-      ],
-      "language": "Python",
-      "stars": 68142,
-      "comment_count": 7,
-      "age_days": 106,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "majiayu000"
-        },
-        "number": 12601,
-        "state": "OPEN",
-        "title": "fix(backend): add SSL certificate verification bypass for self-hosted services",
-        "url": "https://github.com/OpenHands/OpenHands/pull/12601"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "OpenRefine/OpenRefine",
-      "number": 7573,
-      "title": "Apply Operations dialog columns not aligned",
-      "url": "https://github.com/OpenRefine/OpenRefine/issues/7573",
-      "created_at": "2025-12-10T18:30:24Z",
-      "labels": [
-        "Type: Bug",
-        "Good First Issue",
-        "Theme: UI/Visual"
-      ],
-      "language": "Java",
-      "stars": 11754,
-      "comment_count": 8,
-      "age_days": 74,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "PostHog/posthog",
-      "number": 41812,
-      "title": "Bug: Conflicting advice on whether to use cohorts for test/internal user filter",
-      "url": "https://github.com/PostHog/posthog/issues/41812",
-      "created_at": "2025-11-20T11:28:19Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "feature/property-filters",
-        "team/product-analytics",
-        "team/cdp",
-        "feature/pipelines"
-      ],
-      "language": "Python",
-      "stars": 32343,
-      "comment_count": 6,
-      "age_days": 133,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "MikeAthie"
-        },
-        "number": 44697,
-        "state": "OPEN",
-        "title": "fix(pipelines): block cohort-based test account filters in real-time …",
-        "url": "https://github.com/PostHog/posthog/pull/44697"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 2860,
-      "title": "[BOUNTY: 15 RTC] Create a Claude Code Slash Command That Checks RustChain Balance",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2860",
-      "created_at": "2026-04-09T03:24:29Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "easy",
-        "integration"
-      ],
-      "language": "Python",
-      "stars": 117,
-      "comment_count": 8,
-      "age_days": 1,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "yw13931835525-cyber"
-        },
-        "number": 2956,
-        "state": "OPEN",
-        "title": "feat: Claude Code /rtc-balance slash command (#2860, 15 RTC)",
-        "url": "https://github.com/Scottcjn/rustchain-bounties/pull/2956"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "Scottcjn/rustchain-bounties",
-      "number": 2957,
-      "title": "[BOUNTY: 10 RTC] SEO Audit + Suggestions for elyanlabs.ai (Quiet Launch)",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/2957",
-      "created_at": "2026-04-10T17:29:37Z",
-      "labels": [
-        "good first issue",
-        "bounty",
-        "propagation",
-        "easy"
-      ],
-      "language": "Python",
-      "stars": 116,
-      "comment_count": 7,
-      "age_days": 0,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "yw13931835525-cyber"
-        },
-        "number": 2962,
-        "state": "OPEN",
-        "title": "[BOUNTY #2957] SEO Audit + Suggestions for elyanlabs.ai (10 RTC)",
-        "url": "https://github.com/Scottcjn/rustchain-bounties/pull/2962"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.55,
-        "confidence": 0.91,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "TencentCloud/CubeSandbox",
-      "number": 244,
-      "title": "[good first issue] docs: Help us build integration guides with mainstream AI agent frameworks",
-      "url": "https://github.com/TencentCloud/CubeSandbox/issues/244",
-      "created_at": "2026-05-14T07:49:18Z",
-      "labels": [
-        "area/documentation",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 5669,
-      "comment_count": 5,
-      "age_days": 2,
-      "is_bug": false,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Johnny-zbb"
-        },
-        "number": 285,
-        "state": "OPEN",
-        "title": "docs(integrations): add LlamaIndex integration guide",
-        "url": "https://github.com/TencentCloud/CubeSandbox/pull/285"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.65,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "TibixDev/winboat",
-      "number": 462,
-      "title": "[Bug] When uninstalled in arch and reinstalled, it appears as an emty app",
-      "url": "https://github.com/TibixDev/winboat/issues/462",
-      "created_at": "2025-11-07T12:05:46Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 18843,
-      "comment_count": 9,
-      "age_days": 102,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "WFCD/warframe-items",
-      "number": 868,
-      "title": "[Bug] Vault info on Primes is outdated",
-      "url": "https://github.com/WFCD/warframe-items/issues/868",
-      "created_at": "2026-02-28T01:38:06Z",
-      "labels": [
-        "Type: Bug",
-        "help wanted",
-        "Scope: Out of Scope",
-        "Severity4: Inconvenient"
-      ],
-      "language": "JavaScript",
-      "stars": 354,
-      "comment_count": 11,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "actualbudget/actual",
-      "number": 6270,
-      "title": "[Bug]: Can't skip scheduled repeating transaction if set to move before weekend",
-      "url": "https://github.com/actualbudget/actual/issues/6270",
-      "created_at": "2025-11-29T10:18:27Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "schedules"
-      ],
-      "language": "TypeScript",
-      "stars": 25128,
-      "comment_count": 8,
-      "age_days": 87,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Triscal"
-        },
-        "number": 7057,
-        "state": "OPEN",
-        "title": "Fix skipping schedules that move before weekend",
-        "url": "https://github.com/actualbudget/actual/pull/7057"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "actualbudget/actual",
-      "number": 6351,
-      "title": "[Bug]: Actual won't let an 'x' be entered between two numbers - forces reformating to an undesired character",
-      "url": "https://github.com/actualbudget/actual/issues/6351",
-      "created_at": "2025-12-10T04:02:44Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "user interface"
-      ],
-      "language": "TypeScript",
-      "stars": 25750,
-      "comment_count": 7,
-      "age_days": 112,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 4786,
-      "title": "[Bug]: Test file located in production code directory (test_output_cleaner_live.py)",
-      "url": "https://github.com/aden-hive/hive/issues/4786",
-      "created_at": "2026-02-14T12:35:14Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 8409,
-      "comment_count": 2,
-      "age_days": 12,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.75
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5102,
-      "title": "Add document processing recipe",
-      "url": "https://github.com/aden-hive/hive/issues/5102",
-      "created_at": "2026-02-19T06:42:49Z",
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 8187,
-      "comment_count": 6,
-      "age_days": 5,
-      "is_bug": false,
-      "is_feature": true,
-      "category": "general",
-      "surface": "feature",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.55,
-        "confidence": 0.88,
-        "effort": 0.8
       }
     }
   ]
