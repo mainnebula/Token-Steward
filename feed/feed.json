@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23T08:28:58Z",
+  "updated_at": "2026-05-23T13:53:01Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1548,7 +1548,7 @@
       ],
       "language": "Rust",
       "stars": 1716,
-      "comment_count": 11,
+      "comment_count": 14,
       "age_days": 1,
       "is_bug": true,
       "is_feature": false,
@@ -1557,8 +1557,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "paddor"
+        },
+        "number": 6,
+        "state": "OPEN",
+        "title": "macOS (kqueue) support: send-before-connect fix + CI",
+        "url": "https://github.com/paddor/omq.rs/pull/6"
+      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.55,
