@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T08:40:24Z",
+  "updated_at": "2026-05-24T13:50:37Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -881,6 +881,38 @@
         "title": "Fix NPE in updateFederatedIdentity after IDP deletion and re-creation",
         "url": "https://github.com/keycloak/keycloak/pull/47214"
       },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 2835,
+      "title": "[GitHub Copilot] Agent exited with Code 1",
+      "url": "https://github.com/nexu-io/open-design/issues/2835",
+      "created_at": "2026-05-24T13:35:13Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "priority:p1"
+      ],
+      "language": "TypeScript",
+      "stars": 51009,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -3950,6 +3982,37 @@
     },
     {
       "repo": "nexu-io/open-design",
+      "number": 2834,
+      "title": "Codex agent launches read-only in Open Design despite workspace-write intent",
+      "url": "https://github.com/nexu-io/open-design/issues/2834",
+      "created_at": "2026-05-24T13:12:55Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 51009,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
       "number": 438,
       "title": "[Bug] Codex CLI agent exits with code 1 due to deprecated --full-auto flag (v0.128.0)",
       "url": "https://github.com/nexu-io/open-design/issues/438",
@@ -4192,6 +4255,39 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "Checkora/Checkora",
+      "number": 1056,
+      "title": "Remove Pause/Resume Mechanic and Auto-Pause to Prevent \"Time-Stop\" Exploits and Align with Chess Standards",
+      "url": "https://github.com/Checkora/Checkora/issues/1056",
+      "created_at": "2026-05-23T11:36:12Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "GSSoC",
+        "frontend"
+      ],
+      "language": "Python",
+      "stars": 107,
+      "comment_count": 7,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -7221,141 +7317,6 @@
         "state": "OPEN",
         "title": "Codex [ Sandbox ] Validate AgentExecutor max_concurrent",
         "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2052"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 2105,
-      "title": "[ Bounty $4k ] [ Metrics ] Add collection timestamps to snapshots — exporter compatibility",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2105",
-      "created_at": "2026-05-22T05:49:52Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$4k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 9,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "vultuk"
-        },
-        "number": 2060,
-        "state": "OPEN",
-        "title": "Add collection timestamp to metrics snapshots",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2060"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 2108,
-      "title": "[ Bounty $8k ] [ Middleware ] Apply security headers to error responses — exception middleware",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2108",
-      "created_at": "2026-05-22T06:02:14Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$8k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 8,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "RoyZhao1991"
-        },
-        "number": 1732,
-        "state": "OPEN",
-        "title": "[codex] Apply security headers to error responses",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1732"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 2119,
-      "title": "[ Bounty $4k ] [ Sandbox ] Bound stored executor results — memory management",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2119",
-      "created_at": "2026-05-22T06:21:20Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$4k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 11,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "MyTH-zyxeon"
-        },
-        "number": 2121,
-        "state": "OPEN",
-        "title": "Bound stored executor results",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2121"
       },
       "score": 0.72,
       "score_breakdown": {
