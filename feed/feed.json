@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23T19:22:02Z",
+  "updated_at": "2026-05-24T04:16:14Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2472,6 +2472,38 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "Hmbown/CodeWhale",
+      "number": 1876,
+      "title": "v0.8.42 tracker: inbox-zero triage and backlog close-out",
+      "url": "https://github.com/Hmbown/CodeWhale/issues/1876",
+      "created_at": "2026-05-21T08:19:52Z",
+      "labels": [
+        "documentation",
+        "enhancement",
+        "question"
+      ],
+      "language": "Rust",
+      "stars": 33935,
+      "comment_count": 5,
+      "age_days": 2,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.65,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -6615,6 +6647,96 @@
     },
     {
       "repo": "orchestration-agent/AgentOrchestration",
+      "number": 1000,
+      "title": "[ Bounty $6k ] [ Auth ] Prevent auth bypass via trailing slash redirect — protected routes",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1000",
+      "created_at": "2026-05-21T01:50:02Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$6k"
+      ],
+      "language": "Python",
+      "stars": 249,
+      "comment_count": 18,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "nexicturbo"
+        },
+        "number": 1012,
+        "state": "OPEN",
+        "title": "Deny stale protected-route credentials (#1000)",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1012"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 1090,
+      "title": "[ Bounty $7k ] [ Storage ] Enforce row-level workspace scope on task state — database access",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1090",
+      "created_at": "2026-05-21T03:48:51Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$7k"
+      ],
+      "language": "Python",
+      "stars": 249,
+      "comment_count": 20,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Karry2019web"
+        },
+        "number": 1093,
+        "state": "OPEN",
+        "title": "[Bounty $7k] [Storage] Enforce row-level workspace isolation (#1090)",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1093"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
       "number": 1228,
       "title": "[ Bounty $7k ] [ Auth ] Require auth for OpenAPI schema with internal routes — documentation endpoint",
       "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1228",
@@ -6649,6 +6771,141 @@
         "state": "OPEN",
         "title": "Protect OpenAPI documentation endpoints",
         "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1235"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 1471,
+      "title": "[ Bounty $3k ] [ Middleware ] Validate multipart boundary before buffering upload — upload middleware",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1471",
+      "created_at": "2026-05-21T10:36:13Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$3k"
+      ],
+      "language": "Python",
+      "stars": 249,
+      "comment_count": 9,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "nexicturbo"
+        },
+        "number": 1479,
+        "state": "OPEN",
+        "title": "Validate multipart boundaries before upload buffering",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1479"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 1580,
+      "title": "[ Bounty $4k ] [ Registry ] Block incompatible protocol upgrades — agent RPC negotiation",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1580",
+      "created_at": "2026-05-21T15:57:55Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$4k"
+      ],
+      "language": "Python",
+      "stars": 249,
+      "comment_count": 12,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Karry2019web"
+        },
+        "number": 1583,
+        "state": "OPEN",
+        "title": "fix(registry): block incompatible protocol upgrades during agent RPC negotiation (#1580)",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1583"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "orchestration-agent/AgentOrchestration",
+      "number": 1741,
+      "title": "[ Bounty $6k ] [ Webhook ] Avoid leaking internal run metadata in public events — payload shaping",
+      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1741",
+      "created_at": "2026-05-21T20:02:41Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bounty",
+        "crypto-eligible",
+        "high-value",
+        "💎 Bounty",
+        "$6k"
+      ],
+      "language": "Python",
+      "stars": 249,
+      "comment_count": 10,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "vultuk"
+        },
+        "number": 1750,
+        "state": "OPEN",
+        "title": "Add webhook public payload shaping",
+        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1750"
       },
       "score": 0.72,
       "score_breakdown": {
@@ -7106,254 +7363,6 @@
         "impact": 0.75,
         "confidence": 0.91,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 2168,
-      "title": "[ Bounty $9k ] [ Runtime ] Bound recursive agent delegation depth — orchestration runtime",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2168",
-      "created_at": "2026-05-22T07:46:00Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$9k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 9,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "lansbe"
-        },
-        "number": 2172,
-        "state": "OPEN",
-        "title": "Fix recursive delegation depth guard (#2168)",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2172"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 2227,
-      "title": "[ Bounty $10k ] [ Auth ] Revalidate revoked API keys on long polling — task monitor",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2227",
-      "created_at": "2026-05-22T09:13:44Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$10k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 9,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Karry2019web"
-        },
-        "number": 2239,
-        "state": "OPEN",
-        "title": "fix: revalidate revoked API keys on long polling — task monitor",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2239"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 2243,
-      "title": "[ Bounty $5k ] [ Auth ] Require MFA challenge on privileged key creation — API key settings",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2243",
-      "created_at": "2026-05-22T09:24:56Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$5k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 11,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "JeremyZeng77"
-        },
-        "number": 2246,
-        "state": "OPEN",
-        "title": "Require MFA for privileged API key creation",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2246"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 2258,
-      "title": "[ Bounty $5k ] [ API ] Use consistent error codes for validation failures — public API clients",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2258",
-      "created_at": "2026-05-22T09:36:35Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$5k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 5,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 625,
-      "title": "[ Bounty $10k ] [ Auth ] Revalidate revoked API keys on long polling — task monitor",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/625",
-      "created_at": "2026-05-20T15:06:00Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$10k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 15,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "mkcash"
-        },
-        "number": 628,
-        "state": "OPEN",
-        "title": "[ baobao ] Implement solution for #625",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/628"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "777genius/claude-notifications-go",
-      "number": 59,
-      "title": "macOS Tahoe (26.x): Notifications attributed to Script Editor instead of ClaudeNotifier",
-      "url": "https://github.com/777genius/claude-notifications-go/issues/59",
-      "created_at": "2026-03-27T19:55:23Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 485,
-      "comment_count": 9,
-      "age_days": 9,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
       }
     }
   ]
