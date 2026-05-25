@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25T04:27:27Z",
+  "updated_at": "2026-05-25T10:24:18Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3877,6 +3877,50 @@
       }
     },
     {
+      "repo": "moby/moby",
+      "number": 52661,
+      "title": "Overlay ARP stale entries still present on 29.5.0 — fix from #50236 incomplete",
+      "url": "https://github.com/moby/moby/issues/52661",
+      "created_at": "2026-05-20T07:50:06Z",
+      "labels": [
+        "status/0-triage",
+        "kind/bug",
+        "area/networking",
+        "area/swarm",
+        "area/networking/d/overlay",
+        "help wanted",
+        "version/29.5"
+      ],
+      "language": "Go",
+      "stars": 71599,
+      "comment_count": 4,
+      "age_days": 5,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "danyalahmed1995"
+        },
+        "number": 52697,
+        "state": "OPEN",
+        "title": "libnetwork/overlay: continue neighbor cleanup after FDB delete failure",
+        "url": "https://github.com/moby/moby/pull/52697"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "nexu-io/open-design",
       "number": 1399,
       "title": "Newly started sessions return to home quickly and auto-terminate if no task is entered within about one minute",
@@ -3992,6 +4036,78 @@
       ],
       "language": "TypeScript",
       "stars": 51009,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 2904,
+      "title": "Style tab selection in edit mode can overlap and obscure adjacent tabs",
+      "url": "https://github.com/nexu-io/open-design/issues/2904",
+      "created_at": "2026-05-25T09:24:56Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 51683,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "xxiaoxiong"
+        },
+        "number": 2916,
+        "state": "OPEN",
+        "title": "fix: prevent tab overlap in edit mode by removing default focus outline",
+        "url": "https://github.com/nexu-io/open-design/pull/2916"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 2917,
+      "title": "Localize the Automation page when the system language is Chinese",
+      "url": "https://github.com/nexu-io/open-design/issues/2917",
+      "created_at": "2026-05-25T10:01:42Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 51683,
       "comment_count": 3,
       "age_days": 0,
       "is_bug": true,
@@ -7182,141 +7298,6 @@
         "state": "OPEN",
         "title": "Validate public API requests before registry access",
         "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1859"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 2001,
-      "title": "[ Bounty $6k ] [ Auth ] Enforce membership on saved view sharing — collaboration auth",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2001",
-      "created_at": "2026-05-22T03:12:54Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$6k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 10,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "minorstep"
-        },
-        "number": 2004,
-        "state": "OPEN",
-        "title": "Enforce saved view sharing membership",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2004"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 2042,
-      "title": "[ Bounty $3k ] [ Workflow ] Respect explicit false defaults — parameter merging",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2042",
-      "created_at": "2026-05-22T04:18:46Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$3k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 14,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "kebanks2"
-        },
-        "number": 2044,
-        "state": "OPEN",
-        "title": "Preserve explicit false workflow parameter defaults",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2044"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 2050,
-      "title": "[ Bounty $3k ] [ Sandbox ] Validate max_concurrent — executor initialization",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/2050",
-      "created_at": "2026-05-22T04:35:00Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$3k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 20,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "tim13246879"
-        },
-        "number": 2052,
-        "state": "OPEN",
-        "title": "Codex [ Sandbox ] Validate AgentExecutor max_concurrent",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/2052"
       },
       "score": 0.72,
       "score_breakdown": {
