@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T04:13:07Z",
+  "updated_at": "2026-05-26T10:11:51Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4622,6 +4622,37 @@
       }
     },
     {
+      "repo": "Qiskit/qiskit",
+      "number": 16272,
+      "title": "Coupling map construction in SabreSwap panics with an overflow error",
+      "url": "https://github.com/Qiskit/qiskit/issues/16272",
+      "created_at": "2026-05-26T08:27:58Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 7405,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "QuantumNous/new-api",
       "number": 3022,
       "title": "Google Vertex: Gemini频繁报错 400 relay error: `edit` functionDeclaration `parameters.edits.lines` schema didn't specify the schema type field.",
@@ -7253,51 +7284,6 @@
         "state": "OPEN",
         "title": "[codex] Return defensive config snapshots",
         "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1855"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 1857,
-      "title": "[ Bounty $5k ] [ API ] Use consistent error codes for validation failures — public API clients",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1857",
-      "created_at": "2026-05-22T00:07:35Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$5k"
-      ],
-      "language": "Python",
-      "stars": 173,
-      "comment_count": 6,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "vultuk"
-        },
-        "number": 1859,
-        "state": "OPEN",
-        "title": "Validate public API requests before registry access",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1859"
       },
       "score": 0.72,
       "score_breakdown": {
