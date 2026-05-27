@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-27T16:02:21Z",
+  "updated_at": "2026-05-27T20:26:52Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1151,6 +1151,46 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "actualbudget/actual",
+      "number": 7754,
+      "title": "[Bug]: OIDC login fails on iOS Safari — WorkerBridge stays UNASSIGNED on fresh session",
+      "url": "https://github.com/actualbudget/actual/issues/7754",
+      "created_at": "2026-05-08T13:49:54Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "openid"
+      ],
+      "language": "TypeScript",
+      "stars": 26672,
+      "comment_count": 11,
+      "age_days": 19,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "MikesGlitch"
+        },
+        "number": 7971,
+        "state": "OPEN",
+        "title": ":iphone: Fallback to direct worker on ios",
+        "url": "https://github.com/actualbudget/actual/pull/7971"
+      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.6,
@@ -5136,7 +5176,7 @@
       ],
       "language": "Java",
       "stars": 8895,
-      "comment_count": 3,
+      "comment_count": 4,
       "age_days": 6,
       "is_bug": true,
       "is_feature": false,
@@ -6635,6 +6675,38 @@
       }
     },
     {
+      "repo": "layer5io/layer5",
+      "number": 7751,
+      "title": "[UI]: Migrate react-tooltip usages to CustomTooltip from @sistent/sistent",
+      "url": "https://github.com/layer5io/layer5/issues/7751",
+      "created_at": "2026-05-23T20:03:07Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "framework/gatsby"
+      ],
+      "language": "JavaScript",
+      "stars": 1045,
+      "comment_count": 3,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "lycheeverse/lychee",
       "number": 2143,
       "title": "`<error:>` leaks into markdown format output for unparseable URLs.",
@@ -7182,96 +7254,6 @@
         "state": "OPEN",
         "title": "Add webhook public payload shaping",
         "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1750"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 1821,
-      "title": "[ Bounty $5k ] [ CLI ] Validate logs tail is non-negative — logs arguments",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1821",
-      "created_at": "2026-05-21T22:56:11Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$5k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 13,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "vgtmy"
-        },
-        "number": 1823,
-        "state": "OPEN",
-        "title": "fix: reject negative logs tail values",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1823"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 1849,
-      "title": "[ Bounty $6k ] [ Workflow ] Prevent conflicting timeout units — definition parsing",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1849",
-      "created_at": "2026-05-21T23:40:17Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$6k"
-      ],
-      "language": "Python",
-      "stars": 173,
-      "comment_count": 8,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "er1c-cartman"
-        },
-        "number": 1851,
-        "state": "OPEN",
-        "title": "Reject conflicting workflow timeout units",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1851"
       },
       "score": 0.72,
       "score_breakdown": {
