@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-28T10:18:11Z",
+  "updated_at": "2026-05-28T16:17:18Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2575,6 +2575,52 @@
         "reach": 0.6,
         "impact": 0.65,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 743,
+      "title": "Low Handing Fruit Automation",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
+      "created_at": "2026-05-27T06:32:39Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$700"
+      ],
+      "language": "JavaScript",
+      "stars": 102,
+      "comment_count": 104,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "giaphutran12"
+        },
+        "number": 747,
+        "state": "OPEN",
+        "title": "Add low-hanging-fruit issue automation",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/747"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.86,
         "effort": 0.65
       }
     },
@@ -7201,51 +7247,6 @@
         "state": "OPEN",
         "title": "fix(registry): block incompatible protocol upgrades during agent RPC negotiation (#1580)",
         "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1583"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 1741,
-      "title": "[ Bounty $6k ] [ Webhook ] Avoid leaking internal run metadata in public events — payload shaping",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1741",
-      "created_at": "2026-05-21T20:02:41Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$6k"
-      ],
-      "language": "Python",
-      "stars": 249,
-      "comment_count": 10,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "vultuk"
-        },
-        "number": 1750,
-        "state": "OPEN",
-        "title": "Add webhook public payload shaping",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1750"
       },
       "score": 0.72,
       "score_breakdown": {
