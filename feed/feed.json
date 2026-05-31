@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-31T08:56:43Z",
+  "updated_at": "2026-05-31T14:01:50Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2596,8 +2596,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 126,
-      "comment_count": 312,
+      "stars": 129,
+      "comment_count": 342,
       "age_days": 4,
       "is_bug": true,
       "is_feature": false,
@@ -5040,6 +5040,141 @@
       }
     },
     {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 1777,
+      "title": "Search endpoint has no input validation or length limit on query",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1777",
+      "created_at": "2026-05-30T03:15:09Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ],
+      "language": "JavaScript",
+      "stars": 129,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "fennhelloworld"
+        },
+        "number": 1778,
+        "state": "OPEN",
+        "title": "Low Hanging Fruit: Fix 7 security and validation bugs (SB#743)",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1778"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 1781,
+      "title": "fix: prevent DoS on search endpoint via query length limit and input validation",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1781",
+      "created_at": "2026-05-30T03:57:53Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ],
+      "language": "JavaScript",
+      "stars": 129,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "bryantrinh"
+        },
+        "number": 1866,
+        "state": "OPEN",
+        "title": "fix: resolve issue #1781 - automated fix",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1866"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 1823,
+      "title": "Bug: Admin role self-assignment via registration endpoint",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1823",
+      "created_at": "2026-05-30T05:32:04Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ],
+      "language": "JavaScript",
+      "stars": 129,
+      "comment_count": 8,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "lb1192176991-lab"
+        },
+        "number": 1825,
+        "state": "OPEN",
+        "title": "fix: prevent admin role self-assignment via registration endpoint",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1825"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "aden-hive/hive",
       "number": 5682,
       "title": "GitGuardian alert: derive credential IDs from fixtures instead of hardcoding",
@@ -7086,124 +7221,6 @@
         "reach": 0.6,
         "impact": 0.75,
         "confidence": 0.89,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "mindersec/minder",
-      "number": 6430,
-      "title": "Unstable JSON output in CLI tests due to protojson formatting",
-      "url": "https://github.com/mindersec/minder/issues/6430",
-      "created_at": "2026-04-30T21:21:32Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 399,
-      "comment_count": 6,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "DharunMR"
-        },
-        "number": 6418,
-        "state": "OPEN",
-        "title": "CLI : added unit test files for project and project role",
-        "url": "https://github.com/mindersec/minder/pull/6418"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "nexu-io/open-design",
-      "number": 695,
-      "title": "Kimi CLI is not working",
-      "url": "https://github.com/nexu-io/open-design/issues/695",
-      "created_at": "2026-05-06T14:31:18Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "priority:p1"
-      ],
-      "language": "TypeScript",
-      "stars": 44734,
-      "comment_count": 26,
-      "age_days": 12,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Jeshua09090"
-        },
-        "number": 1927,
-        "state": "OPEN",
-        "title": "[codex] fix daemon live artifacts MCP electron launch",
-        "url": "https://github.com/nexu-io/open-design/pull/1927"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.89,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "oauth2-proxy/oauth2-proxy",
-      "number": 3334,
-      "title": "[Bug]: alpha config `secretSource.value` not base64 decoding",
-      "url": "https://github.com/oauth2-proxy/oauth2-proxy/issues/3334",
-      "created_at": "2026-02-11T10:31:38Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 13980,
-      "comment_count": 4,
-      "age_days": 23,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Br1an67"
-        },
-        "number": 3364,
-        "state": "OPEN",
-        "title": "Fix #3334: 该 Issue 报告了一个配置 Bug：Alpha 配置中的 `injectRequestHeaders.secre...",
-        "url": "https://github.com/oauth2-proxy/oauth2-proxy/pull/3364"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
         "effort": 0.6
       }
     }
