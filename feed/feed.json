@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-31T04:39:16Z",
+  "updated_at": "2026-05-31T08:56:43Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2596,9 +2596,9 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 123,
-      "comment_count": 291,
-      "age_days": 3,
+      "stars": 126,
+      "comment_count": 312,
+      "age_days": 4,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -4995,6 +4995,51 @@
       }
     },
     {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 1774,
+      "title": "CORS configured with no origin restrictions — allows any domain",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1774",
+      "created_at": "2026-05-30T03:14:54Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ],
+      "language": "JavaScript",
+      "stars": 126,
+      "comment_count": 6,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "bryantrinh"
+        },
+        "number": 1887,
+        "state": "OPEN",
+        "title": "fix: resolve issue #1774 - automated fix",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1887"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "aden-hive/hive",
       "number": 5682,
       "title": "GitGuardian alert: derive credential IDs from fixtures instead of hardcoding",
@@ -7160,38 +7205,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "openstyles/stylus",
-      "number": 2090,
-      "title": "popup: Unhandled error Cannot read properties of null (reading 'then')",
-      "url": "https://github.com/openstyles/stylus/issues/2090",
-      "created_at": "2026-05-20T03:21:01Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "not reproducible"
-      ],
-      "language": "JavaScript",
-      "stars": 6630,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     }
   ]
