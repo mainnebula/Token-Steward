@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-30T19:28:29Z",
+  "updated_at": "2026-05-31T04:39:16Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2596,8 +2596,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 119,
-      "comment_count": 234,
+      "stars": 123,
+      "comment_count": 291,
       "age_days": 3,
       "is_bug": true,
       "is_feature": false,
@@ -4666,6 +4666,134 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "JhaSourav07/commitpulse",
+      "number": 1868,
+      "title": "Rate Limiter Bypass via Non-Middleware API Routes",
+      "url": "https://github.com/JhaSourav07/commitpulse/issues/1868",
+      "created_at": "2026-05-30T18:22:35Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "GSSoC 2026"
+      ],
+      "language": "TypeScript",
+      "stars": 102,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "JhaSourav07/commitpulse",
+      "number": 1869,
+      "title": "bug: Memory Leak in useShareActions from Unmounted Async State Updates",
+      "url": "https://github.com/JhaSourav07/commitpulse/issues/1869",
+      "created_at": "2026-05-30T18:23:50Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "GSSoC 2026"
+      ],
+      "language": "TypeScript",
+      "stars": 102,
+      "comment_count": 6,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "JhaSourav07/commitpulse",
+      "number": 1875,
+      "title": "bug: TTLCache allows null or undefined keys without validation",
+      "url": "https://github.com/JhaSourav07/commitpulse/issues/1875",
+      "created_at": "2026-05-30T18:50:18Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "GSSoC 2026"
+      ],
+      "language": "TypeScript",
+      "stars": 102,
+      "comment_count": 11,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "JhaSourav07/commitpulse",
+      "number": 1879,
+      "title": "bug: TTLCache.update() does not remove expired entries, causing stale keys to remain in memory",
+      "url": "https://github.com/JhaSourav07/commitpulse/issues/1879",
+      "created_at": "2026-05-30T19:03:47Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "GSSoC 2026"
+      ],
+      "language": "TypeScript",
+      "stars": 102,
+      "comment_count": 7,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -7063,186 +7191,6 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 1000,
-      "title": "[ Bounty $6k ] [ Auth ] Prevent auth bypass via trailing slash redirect — protected routes",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1000",
-      "created_at": "2026-05-21T01:50:02Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$6k"
-      ],
-      "language": "Python",
-      "stars": 249,
-      "comment_count": 18,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "nexicturbo"
-        },
-        "number": 1012,
-        "state": "OPEN",
-        "title": "Deny stale protected-route credentials (#1000)",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1012"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 1090,
-      "title": "[ Bounty $7k ] [ Storage ] Enforce row-level workspace scope on task state — database access",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1090",
-      "created_at": "2026-05-21T03:48:51Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$7k"
-      ],
-      "language": "Python",
-      "stars": 249,
-      "comment_count": 20,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Karry2019web"
-        },
-        "number": 1093,
-        "state": "OPEN",
-        "title": "[Bounty $7k] [Storage] Enforce row-level workspace isolation (#1090)",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1093"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 1228,
-      "title": "[ Bounty $7k ] [ Auth ] Require auth for OpenAPI schema with internal routes — documentation endpoint",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1228",
-      "created_at": "2026-05-21T06:52:54Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$7k"
-      ],
-      "language": "Python",
-      "stars": 187,
-      "comment_count": 14,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "MyTH-zyxeon"
-        },
-        "number": 1235,
-        "state": "OPEN",
-        "title": "Protect OpenAPI documentation endpoints",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1235"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "orchestration-agent/AgentOrchestration",
-      "number": 1471,
-      "title": "[ Bounty $3k ] [ Middleware ] Validate multipart boundary before buffering upload — upload middleware",
-      "url": "https://github.com/orchestration-agent/AgentOrchestration/issues/1471",
-      "created_at": "2026-05-21T10:36:13Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bounty",
-        "crypto-eligible",
-        "high-value",
-        "💎 Bounty",
-        "$3k"
-      ],
-      "language": "Python",
-      "stars": 249,
-      "comment_count": 9,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "nexicturbo"
-        },
-        "number": 1479,
-        "state": "OPEN",
-        "title": "Validate multipart boundaries before upload buffering",
-        "url": "https://github.com/orchestration-agent/AgentOrchestration/pull/1479"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
         "effort": 0.65
       }
     }
