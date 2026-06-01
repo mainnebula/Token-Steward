@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-31T19:27:26Z",
+  "updated_at": "2026-06-01T05:00:53Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2596,8 +2596,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 132,
-      "comment_count": 375,
+      "stars": 136,
+      "comment_count": 416,
       "age_days": 4,
       "is_bug": true,
       "is_feature": false,
@@ -4671,6 +4671,38 @@
     },
     {
       "repo": "JhaSourav07/commitpulse",
+      "number": 1241,
+      "title": "[Bug]: grace param accepts values above 7 silently — should return 400",
+      "url": "https://github.com/JhaSourav07/commitpulse/issues/1241",
+      "created_at": "2026-05-29T08:45:50Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "GSSoC 2026"
+      ],
+      "language": "TypeScript",
+      "stars": 105,
+      "comment_count": 19,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "JhaSourav07/commitpulse",
       "number": 1868,
       "title": "Rate Limiter Bypass via Non-Middleware API Routes",
       "url": "https://github.com/JhaSourav07/commitpulse/issues/1868",
@@ -4780,6 +4812,38 @@
       "stars": 102,
       "comment_count": 7,
       "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "JhaSourav07/commitpulse",
+      "number": 872,
+      "title": "Rapid username changes trigger overlapping GitHub API requests",
+      "url": "https://github.com/JhaSourav07/commitpulse/issues/872",
+      "created_at": "2026-05-28T06:53:36Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "GSSoC 2026"
+      ],
+      "language": "TypeScript",
+      "stars": 105,
+      "comment_count": 8,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7157,70 +7221,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "metal3-io/baremetal-operator",
-      "number": 3071,
-      "title": "Revisit requeue delays, especially provisionRequeueDelay",
-      "url": "https://github.com/metal3-io/baremetal-operator/issues/3071",
-      "created_at": "2026-03-11T13:53:36Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "triage/accepted"
-      ],
-      "language": "Go",
-      "stars": 729,
-      "comment_count": 7,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "microsoft/TypeScript",
-      "number": 63151,
-      "title": "Intellisense keeps crashing",
-      "url": "https://github.com/microsoft/TypeScript/issues/63151",
-      "created_at": "2026-02-17T01:31:43Z",
-      "labels": [
-        "Bug",
-        "Help Wanted",
-        "Domain: LS: TSServer"
-      ],
-      "language": "TypeScript",
-      "stars": 107933,
-      "comment_count": 15,
-      "age_days": 8,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.89,
         "effort": 0.6
       }
     }
