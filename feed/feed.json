@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01T17:56:16Z",
+  "updated_at": "2026-06-01T21:41:26Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -880,6 +880,47 @@
         "state": "OPEN",
         "title": "Fix NPE in updateFederatedIdentity after IDP deletion and re-creation",
         "url": "https://github.com/keycloak/keycloak/pull/47214"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nesquena/hermes-webui",
+      "number": 3239,
+      "title": "Bug: same-session external refresh can collapse long transcript to tail window mid-read",
+      "url": "https://github.com/nesquena/hermes-webui/issues/3239",
+      "created_at": "2026-05-31T04:12:08Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "ux",
+        "sprint-candidate"
+      ],
+      "language": "Python",
+      "stars": 11129,
+      "comment_count": 6,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "libra-exla"
+        },
+        "number": 2,
+        "state": "OPEN",
+        "title": "Fix #1: Bug: same-session external refresh can collapse long transcript to tail window mid-read",
+        "url": "https://github.com/viraatdas/hermes-webui/pull/2"
       },
       "score": 0.75,
       "score_breakdown": {
@@ -2580,6 +2621,52 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2883,
+      "title": "Calculate the exact value of PI #2872",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2883",
+      "created_at": "2026-05-31T13:00:14Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$1.2k"
+      ],
+      "language": "JavaScript",
+      "stars": 141,
+      "comment_count": 7,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "guanglongcf-coder"
+        },
+        "number": 2989,
+        "state": "OPEN",
+        "title": "Extend PI calculation to 300 decimal places",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2989"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
       "number": 2885,
       "title": "Calculate the exact value of PI",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2885",
@@ -2642,8 +2729,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 139,
-      "comment_count": 448,
+      "stars": 141,
+      "comment_count": 475,
       "age_days": 5,
       "is_bug": true,
       "is_feature": false,
@@ -7176,78 +7263,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 813,
-      "title": "[Bug]: V4L-dependent examples fail to compile on non-Linux platforms (macOS/Windows)",
-      "url": "https://github.com/kornia/kornia-rs/issues/813",
-      "created_at": "2026-03-13T21:14:32Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 608,
-      "comment_count": 6,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "namanguptagit"
-        },
-        "number": 814,
-        "state": "OPEN",
-        "title": "Fixed cross platform build issue.",
-        "url": "https://github.com/kornia/kornia-rs/pull/814"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "layer5io/layer5",
-      "number": 7426,
-      "title": "Avatar & AvatarGroup – Code Tab Does Not Switch View Properly (Overview Stuck)",
-      "url": "https://github.com/layer5io/layer5/issues/7426",
-      "created_at": "2026-02-17T17:53:04Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "framework/gatsby"
-      ],
-      "language": "JavaScript",
-      "stars": 1012,
-      "comment_count": 4,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
         "effort": 0.65
       }
     }
