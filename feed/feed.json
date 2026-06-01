@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01T11:50:06Z",
+  "updated_at": "2026-06-01T17:56:16Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2580,6 +2580,52 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2885,
+      "title": "Calculate the exact value of PI",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2885",
+      "created_at": "2026-05-31T13:00:19Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$1.2k"
+      ],
+      "language": "JavaScript",
+      "stars": 139,
+      "comment_count": 9,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "guanglongcf-coder"
+        },
+        "number": 2909,
+        "state": "OPEN",
+        "title": "Extend PI calculation from 100 to 200 decimal places",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2909"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
       "number": 743,
       "title": "Low Handing Fruit Automation",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
@@ -2596,9 +2642,9 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 136,
-      "comment_count": 416,
-      "age_days": 4,
+      "stars": 139,
+      "comment_count": 448,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -5256,9 +5302,9 @@
         "$780"
       ],
       "language": "JavaScript",
-      "stars": 138,
-      "comment_count": 32,
-      "age_days": 0,
+      "stars": 139,
+      "comment_count": 33,
+      "age_days": 1,
       "is_bug": true,
       "is_feature": true,
       "category": "general",
@@ -7188,38 +7234,6 @@
       "stars": 1012,
       "comment_count": 4,
       "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "layer5io/layer5",
-      "number": 7751,
-      "title": "[UI]: Migrate react-tooltip usages to CustomTooltip from @sistent/sistent",
-      "url": "https://github.com/layer5io/layer5/issues/7751",
-      "created_at": "2026-05-23T20:03:07Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "framework/gatsby"
-      ],
-      "language": "JavaScript",
-      "stars": 1045,
-      "comment_count": 4,
-      "age_days": 6,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
