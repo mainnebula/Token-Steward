@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T04:47:18Z",
+  "updated_at": "2026-06-02T10:49:23Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2245,6 +2245,50 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 49293,
+      "title": "NullPointerException in HostnameV2Provider and SecureContextResolver when X-Forwarded-Proto contains a relative URI string. SAST",
+      "url": "https://github.com/keycloak/keycloak/issues/49293",
+      "created_at": "2026-05-25T11:06:23Z",
+      "labels": [
+        "kind/bug",
+        "area/core",
+        "help wanted",
+        "team/cloud-native",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 34698,
+      "comment_count": 8,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "mangod12"
+        },
+        "number": 49567,
+        "state": "OPEN",
+        "title": "fix: handle malformed forwarded request schemes",
+        "url": "https://github.com/keycloak/keycloak/pull/49567"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "koordinator-sh/koordinator",
       "number": 2812,
       "title": "[proposal] Use protobuf as the default content type for native Kubernetes API clients to improve performance",
@@ -2729,9 +2773,9 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 143,
-      "comment_count": 481,
-      "age_days": 5,
+      "stars": 146,
+      "comment_count": 485,
+      "age_days": 6,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -5373,6 +5417,52 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2768,
+      "title": "Registration token subject should match returned user id",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2768",
+      "created_at": "2026-05-31T09:33:32Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ],
+      "language": "JavaScript",
+      "stars": 146,
+      "comment_count": 6,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "daniel7an"
+        },
+        "number": 2769,
+        "state": "OPEN",
+        "title": "fix: keep registration token subject stable",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2769"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
       "number": 2853,
       "title": "Job validation should reject inverted budget ranges",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2853",
@@ -7199,70 +7289,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.89,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 732,
-      "title": "[Bug]: Test Infrastructure Fragility: data-driven AprilTag tests have silent failures and panic-on-error paths",
-      "url": "https://github.com/kornia/kornia-rs/issues/732",
-      "created_at": "2026-02-22T19:41:15Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 583,
-      "comment_count": 6,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kornia/kornia-rs",
-      "number": 788,
-      "title": "[Bug]: interpolate_pixel panics for Lanczos and Bicubic interpolation modes",
-      "url": "https://github.com/kornia/kornia-rs/issues/788",
-      "created_at": "2026-03-07T05:32:31Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "triage"
-      ],
-      "language": "Rust",
-      "stars": 602,
-      "comment_count": 5,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
         "effort": 0.65
       }
     }
