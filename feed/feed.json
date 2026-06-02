@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T16:47:44Z",
+  "updated_at": "2026-06-02T21:19:02Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5237,6 +5237,51 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
+      "number": 1770,
+      "title": "Admin routes lack role-based access control — any authenticated user can access admin endpoints",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1770",
+      "created_at": "2026-05-30T03:14:36Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ],
+      "language": "JavaScript",
+      "stars": 149,
+      "comment_count": 5,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "lb1192176991-lab"
+        },
+        "number": 1897,
+        "state": "OPEN",
+        "title": "fix: add admin role check middleware to admin routes",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1897"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
       "number": 1774,
       "title": "CORS configured with no origin restrictions — allows any domain",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1774",
@@ -5252,9 +5297,9 @@
         "$430"
       ],
       "language": "JavaScript",
-      "stars": 126,
-      "comment_count": 6,
-      "age_days": 1,
+      "stars": 149,
+      "comment_count": 7,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5452,6 +5497,52 @@
         "state": "OPEN",
         "title": "fix: keep registration token subject stable",
         "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2769"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2847,
+      "title": "auth refresh endpoint issues tokens without verifying the requester",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2847",
+      "created_at": "2026-05-31T12:35:50Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ],
+      "language": "JavaScript",
+      "stars": 149,
+      "comment_count": 7,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "pinehill99"
+        },
+        "number": 2848,
+        "state": "OPEN",
+        "title": "fix(api): authenticate auth refresh",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2848"
       },
       "score": 0.72,
       "score_breakdown": {
@@ -7208,88 +7299,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 47891,
-      "title": "User LDAP Filter is applied to Group lookups in `getFilterById()`, causing Group Members tab to return empty results",
-      "url": "https://github.com/keycloak/keycloak/issues/47891",
-      "created_at": "2026-04-09T08:46:14Z",
-      "labels": [
-        "kind/bug",
-        "area/ldap",
-        "help wanted",
-        "team/core-iam",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33943,
-      "comment_count": 3,
-      "age_days": 8,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 48040,
-      "title": "User session limit generates fatal error",
-      "url": "https://github.com/keycloak/keycloak/issues/48040",
-      "created_at": "2026-04-14T12:26:15Z",
-      "labels": [
-        "area/authentication",
-        "kind/bug",
-        "help wanted",
-        "team/core-clients",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal",
-        "team/core-authn",
-        "backport/26.6"
-      ],
-      "language": "Java",
-      "stars": 33878,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "mateenali66"
-        },
-        "number": 48062,
-        "state": "OPEN",
-        "title": "fix(session-limits): guard against negative stream limit when realm limit exceeded but client is not",
-        "url": "https://github.com/keycloak/keycloak/pull/48062"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.89,
-        "effort": 0.65
       }
     }
   ]
