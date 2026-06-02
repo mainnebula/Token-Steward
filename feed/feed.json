@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01T21:41:26Z",
+  "updated_at": "2026-06-02T04:47:18Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2637,8 +2637,8 @@
         "$1.2k"
       ],
       "language": "JavaScript",
-      "stars": 141,
-      "comment_count": 7,
+      "stars": 143,
+      "comment_count": 9,
       "age_days": 1,
       "is_bug": true,
       "is_feature": false,
@@ -2683,8 +2683,8 @@
         "$1.2k"
       ],
       "language": "JavaScript",
-      "stars": 139,
-      "comment_count": 9,
+      "stars": 143,
+      "comment_count": 11,
       "age_days": 1,
       "is_bug": true,
       "is_feature": false,
@@ -2729,8 +2729,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 141,
-      "comment_count": 475,
+      "stars": 143,
+      "comment_count": 481,
       "age_days": 5,
       "is_bug": true,
       "is_feature": false,
