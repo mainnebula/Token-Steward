@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03T04:57:33Z",
+  "updated_at": "2026-06-03T11:15:30Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -10,6 +10,38 @@
     "TypeScript"
   ],
   "issues": [
+    {
+      "repo": "Hmbown/CodeWhale",
+      "number": 2600,
+      "title": "[v0.8.51] Release checklist — carry the branch to a published release",
+      "url": "https://github.com/Hmbown/CodeWhale/issues/2600",
+      "created_at": "2026-06-03T00:38:55Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement"
+      ],
+      "language": "Rust",
+      "stars": 36820,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.78,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.85,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
     {
       "repo": "aden-hive/hive",
       "number": 5122,
@@ -2746,52 +2778,6 @@
         "state": "OPEN",
         "title": "Extend PI calculation from 100 to 200 decimal places",
         "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2909"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 743,
-      "title": "Low Handing Fruit Automation",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
-      "created_at": "2026-05-27T06:32:39Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$700"
-      ],
-      "language": "JavaScript",
-      "stars": 150,
-      "comment_count": 503,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "giaphutran12"
-        },
-        "number": 747,
-        "state": "OPEN",
-        "title": "Add low-hanging-fruit issue automation",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/747"
       },
       "score": 0.73,
       "score_breakdown": {
@@ -5599,6 +5585,52 @@
       }
     },
     {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 743,
+      "title": "Low Handing Fruit Automation",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
+      "created_at": "2026-05-27T06:32:39Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$700"
+      ],
+      "language": "JavaScript",
+      "stars": 151,
+      "comment_count": 503,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "giaphutran12"
+        },
+        "number": 747,
+        "state": "OPEN",
+        "title": "Add low-hanging-fruit issue automation",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/747"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.86,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "aden-hive/hive",
       "number": 5682,
       "title": "GitGuardian alert: derive credential IDs from fixtures instead of hardcoding",
@@ -7247,51 +7279,6 @@
         "state": "OPEN",
         "title": "Fix: avoid SRCFG01008 warning for log-console-output=default in Quarkus dev mode",
         "url": "https://github.com/kowshik-04/keycloak/pull/1"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 47682,
-      "title": "Admin UI drops unknown realm attributes when saving realm settings",
-      "url": "https://github.com/keycloak/keycloak/issues/47682",
-      "created_at": "2026-04-01T12:34:30Z",
-      "labels": [
-        "kind/bug",
-        "area/admin/ui",
-        "help wanted",
-        "team/core-clients",
-        "team/core-shared",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump"
-      ],
-      "language": "Java",
-      "stars": 33850,
-      "comment_count": 4,
-      "age_days": 12,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "dscham"
-        },
-        "number": 47683,
-        "state": "OPEN",
-        "title": "Preserve unknown realm attributes when saving settings",
-        "url": "https://github.com/keycloak/keycloak/pull/47683"
       },
       "score": 0.72,
       "score_breakdown": {
