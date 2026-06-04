@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-04T10:07:37Z",
+  "updated_at": "2026-06-04T15:33:17Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3256,6 +3256,37 @@
       }
     },
     {
+      "repo": "doronz88/pymobiledevice3",
+      "number": 1682,
+      "title": "sysmon exits with code 0 and no data when xcuitest is active (iOS ≤ 16); tunneld fallback fails for some devices (iOS 17+)",
+      "url": "https://github.com/doronz88/pymobiledevice3/issues/1682",
+      "created_at": "2026-05-21T10:53:38Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Python",
+      "stars": 2369,
+      "comment_count": 10,
+      "age_days": 14,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "fjall-rs/fjall",
       "number": 277,
       "title": "persistent corruption of database after calling `clear` on a k-v separated keyspace",
@@ -5463,6 +5494,52 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2835,
+      "title": "Reject inverted job budget ranges in job validation",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2835",
+      "created_at": "2026-05-31T11:26:06Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ],
+      "language": "JavaScript",
+      "stars": 161,
+      "comment_count": 5,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "839194950"
+        },
+        "number": 2837,
+        "state": "OPEN",
+        "title": "fix: reject inverted job budget ranges in validation",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2837"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
       "number": 2847,
       "title": "auth refresh endpoint issues tokens without verifying the requester",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2847",
@@ -5617,8 +5694,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 159,
-      "comment_count": 588,
+      "stars": 161,
+      "comment_count": 593,
       "age_days": 8,
       "is_bug": true,
       "is_feature": false,
@@ -7216,85 +7293,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 47523,
-      "title": "The name \"master\" seems to be hard-coded in places and thus breaks KC_SPI_ADMIN_REALM",
-      "url": "https://github.com/keycloak/keycloak/issues/47523",
-      "created_at": "2026-03-27T12:33:52Z",
-      "labels": [
-        "kind/bug",
-        "area/admin/ui",
-        "help wanted",
-        "team/core-clients",
-        "team/core-shared",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33796,
-      "comment_count": 4,
-      "age_days": 13,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 47659,
-      "title": "SRCFG01008 warning in source Quarkus dev mode when kc.log-console-output=default (not reproducible via packaged kc.sh)",
-      "url": "https://github.com/keycloak/keycloak/issues/47659",
-      "created_at": "2026-03-31T22:44:55Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump"
-      ],
-      "language": "Java",
-      "stars": 33861,
-      "comment_count": 4,
-      "age_days": 13,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "kowshik-04"
-        },
-        "number": 1,
-        "state": "OPEN",
-        "title": "Fix: avoid SRCFG01008 warning for log-console-output=default in Quarkus dev mode",
-        "url": "https://github.com/kowshik-04/keycloak/pull/1"
-      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
