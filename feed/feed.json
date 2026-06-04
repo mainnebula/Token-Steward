@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03T21:24:23Z",
+  "updated_at": "2026-06-04T04:50:37Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3067,38 +3067,6 @@
       }
     },
     {
-      "repo": "apache/skywalking",
-      "number": 13849,
-      "title": "Configuring kafka-fetcher to use the SASL_SSL security mode results in a failure when starting OAP.",
-      "url": "https://github.com/apache/skywalking/issues/13849",
-      "created_at": "2026-04-27T12:19:18Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "dependencies"
-      ],
-      "language": "Java",
-      "stars": 24793,
-      "comment_count": 4,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "aws/aws-cdk",
       "number": 37221,
       "title": "aws-dynamodb: TableV2 with DynamoEventSource triggers deprecated TableGrantsProps#policyResource and #encryptedResource warnings during synth",
@@ -5602,8 +5570,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 157,
-      "comment_count": 527,
+      "stars": 158,
+      "comment_count": 563,
       "age_days": 7,
       "is_bug": true,
       "is_feature": false,
@@ -7286,6 +7254,52 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2822,
+      "title": "Settings page should provide actionable account controls",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2822",
+      "created_at": "2026-05-31T10:23:41Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ],
+      "language": "JavaScript",
+      "stars": 158,
+      "comment_count": 4,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ahmed369younis-hue"
+        },
+        "number": 2825,
+        "state": "OPEN",
+        "title": "feat: add actionable settings overview",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2825"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
       }
     }
   ]
