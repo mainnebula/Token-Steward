@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-04T04:50:37Z",
+  "updated_at": "2026-06-04T10:07:37Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1935,41 +1935,6 @@
       }
     },
     {
-      "repo": "internetarchive/openlibrary",
-      "number": 12540,
-      "title": "Images broken on German version of openlibrary.org/tour",
-      "url": "https://github.com/internetarchive/openlibrary/issues/12540",
-      "created_at": "2026-05-01T15:29:01Z",
-      "labels": [
-        "Type: Bug",
-        "Priority: 3",
-        "Good First Issue",
-        "Affects: Documentation",
-        "Needs: Investigation",
-        "Lead: @RayBB"
-      ],
-      "language": "Python",
-      "stars": 6391,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.74,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.85,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "kedacore/keda",
       "number": 7524,
       "title": "azure-monitor scaler seems to ignore metricAggregationInterval",
@@ -3607,6 +3572,42 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "internetarchive/openlibrary",
+      "number": 12540,
+      "title": "Images broken on German version of openlibrary.org/tour",
+      "url": "https://github.com/internetarchive/openlibrary/issues/12540",
+      "created_at": "2026-05-01T15:29:01Z",
+      "labels": [
+        "Type: Bug",
+        "Priority: 3",
+        "Good First Issue",
+        "Affects: Documentation",
+        "Needs: Investigation",
+        "Lead: @RayBB",
+        "Needs: Response"
+      ],
+      "language": "Python",
+      "stars": 6457,
+      "comment_count": 8,
+      "age_days": 33,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.85,
+        "confidence": 0.93,
+        "effort": 0.5
       }
     },
     {
@@ -5508,6 +5509,52 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2850,
+      "title": "upload endpoint accepts empty file submissions as successful uploads",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2850",
+      "created_at": "2026-05-31T12:42:16Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ],
+      "language": "JavaScript",
+      "stars": 159,
+      "comment_count": 13,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "pinehill99"
+        },
+        "number": 2851,
+        "state": "OPEN",
+        "title": "fix(api): reject empty upload submissions",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2851"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
       "number": 2853,
       "title": "Job validation should reject inverted budget ranges",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2853",
@@ -5524,9 +5571,9 @@
         "$780"
       ],
       "language": "JavaScript",
-      "stars": 139,
-      "comment_count": 33,
-      "age_days": 1,
+      "stars": 159,
+      "comment_count": 34,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": true,
       "category": "general",
@@ -5570,9 +5617,9 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 158,
-      "comment_count": 563,
-      "age_days": 7,
+      "stars": 159,
+      "comment_count": 588,
+      "age_days": 8,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -7254,52 +7301,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2822,
-      "title": "Settings page should provide actionable account controls",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2822",
-      "created_at": "2026-05-31T10:23:41Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "language": "JavaScript",
-      "stars": 158,
-      "comment_count": 4,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "ahmed369younis-hue"
-        },
-        "number": 2825,
-        "state": "OPEN",
-        "title": "feat: add actionable settings overview",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2825"
-      },
-      "score": 0.7,
-      "score_breakdown": {
-        "reach": 0.4,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
       }
     }
   ]
