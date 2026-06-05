@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-05T04:25:31Z",
+  "updated_at": "2026-06-05T10:05:31Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4866,6 +4866,38 @@
     },
     {
       "repo": "JhaSourav07/commitpulse",
+      "number": 1352,
+      "title": "bug: Theme toggle is inaccessible on mobile navigation menu",
+      "url": "https://github.com/JhaSourav07/commitpulse/issues/1352",
+      "created_at": "2026-05-29T17:57:34Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "GSSoC 2026"
+      ],
+      "language": "TypeScript",
+      "stars": 129,
+      "comment_count": 10,
+      "age_days": 6,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "JhaSourav07/commitpulse",
       "number": 1868,
       "title": "Rate Limiter Bypass via Non-Middleware API Routes",
       "url": "https://github.com/JhaSourav07/commitpulse/issues/1868",
@@ -5695,8 +5727,8 @@
       ],
       "language": "JavaScript",
       "stars": 173,
-      "comment_count": 645,
-      "age_days": 8,
+      "comment_count": 670,
+      "age_days": 9,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -7249,41 +7281,6 @@
       "stars": 33144,
       "comment_count": 3,
       "age_days": 26,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 46575,
-      "title": "Clustered LDAP: Component update triggers concurrent KEYCLOAK_GROUP inserts causing duplicate key violations",
-      "url": "https://github.com/keycloak/keycloak/issues/46575",
-      "created_at": "2026-02-24T17:10:16Z",
-      "labels": [
-        "kind/bug",
-        "area/ldap",
-        "help wanted",
-        "team/core-iam",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33226,
-      "comment_count": 4,
-      "age_days": 13,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
