@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-05T10:05:31Z",
+  "updated_at": "2026-06-05T15:20:35Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5526,6 +5526,52 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2833,
+      "title": "Search endpoint has no input validation or length limit on query",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2833",
+      "created_at": "2026-05-31T11:25:28Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ],
+      "language": "JavaScript",
+      "stars": 177,
+      "comment_count": 5,
+      "age_days": 5,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "oathis"
+        },
+        "number": 2836,
+        "state": "OPEN",
+        "title": "fix: validate search query input",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2836"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
       "number": 2835,
       "title": "Reject inverted job budget ranges in job validation",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2835",
@@ -5542,9 +5588,9 @@
         "$780"
       ],
       "language": "JavaScript",
-      "stars": 161,
+      "stars": 177,
       "comment_count": 5,
-      "age_days": 4,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": true,
       "category": "general",
@@ -5572,6 +5618,52 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2845,
+      "title": "registerUser access token can reference a different user id",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2845",
+      "created_at": "2026-05-31T12:31:25Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ],
+      "language": "JavaScript",
+      "stars": 177,
+      "comment_count": 7,
+      "age_days": 5,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "pinehill99"
+        },
+        "number": 2846,
+        "state": "OPEN",
+        "title": "fix(api): keep registration token subject in sync",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2846"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
       "number": 2847,
       "title": "auth refresh endpoint issues tokens without verifying the requester",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2847",
@@ -5588,9 +5680,9 @@
         "$780"
       ],
       "language": "JavaScript",
-      "stars": 149,
-      "comment_count": 7,
-      "age_days": 2,
+      "stars": 177,
+      "comment_count": 8,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": true,
       "category": "general",
@@ -5634,9 +5726,9 @@
         "$780"
       ],
       "language": "JavaScript",
-      "stars": 159,
-      "comment_count": 13,
-      "age_days": 3,
+      "stars": 177,
+      "comment_count": 14,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": true,
       "category": "general",
@@ -5680,9 +5772,9 @@
         "$780"
       ],
       "language": "JavaScript",
-      "stars": 159,
-      "comment_count": 34,
-      "age_days": 3,
+      "stars": 177,
+      "comment_count": 36,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": true,
       "category": "general",
@@ -5726,8 +5818,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 173,
-      "comment_count": 670,
+      "stars": 177,
+      "comment_count": 708,
       "age_days": 9,
       "is_bug": true,
       "is_feature": false,
@@ -7222,80 +7314,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 46039,
-      "title": "Special characters in Realm name breaks the application",
-      "url": "https://github.com/keycloak/keycloak/issues/46039",
-      "created_at": "2026-02-05T05:45:17Z",
-      "labels": [
-        "kind/bug",
-        "area/account/ui",
-        "help wanted",
-        "team/core-clients",
-        "team/core-shared",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33159,
-      "comment_count": 3,
-      "age_days": 28,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 46088,
-      "title": "Newly created resource appears on both current and next page in Authorization Resources tab",
-      "url": "https://github.com/keycloak/keycloak/issues/46088",
-      "created_at": "2026-02-06T15:18:17Z",
-      "labels": [
-        "area/authorization-services",
-        "kind/bug",
-        "area/admin/ui",
-        "help wanted",
-        "team/core-iam",
-        "team/core-shared",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 33144,
-      "comment_count": 3,
-      "age_days": 26,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
       }
     }
   ]
