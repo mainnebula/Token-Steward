@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-06T04:07:39Z",
+  "updated_at": "2026-06-06T08:43:29Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -986,6 +986,46 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 3558,
+      "title": "Improve skill settings layout to prevent text clipping and cramped actions",
+      "url": "https://github.com/nexu-io/open-design/issues/3558",
+      "created_at": "2026-06-03T07:27:18Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 59680,
+      "comment_count": 5,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "mturac"
+        },
+        "number": 3585,
+        "state": "OPEN",
+        "title": "fix(web): space built-in skill edit warning",
+        "url": "https://github.com/nexu-io/open-design/pull/3585"
+      },
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -2678,7 +2718,7 @@
         "$1.2k"
       ],
       "language": "JavaScript",
-      "stars": 182,
+      "stars": 183,
       "comment_count": 13,
       "age_days": 5,
       "is_bug": true,
@@ -5864,9 +5904,9 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 182,
-      "comment_count": 816,
-      "age_days": 9,
+      "stars": 183,
+      "comment_count": 788,
+      "age_days": 10,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -7297,37 +7337,6 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "karatelabs/karate",
-      "number": 2759,
-      "title": "Jar 2.0.0 not working",
-      "url": "https://github.com/karatelabs/karate/issues/2759",
-      "created_at": "2026-03-27T16:21:59Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 8826,
-      "comment_count": 8,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.88,
         "effort": 0.65
       }
     }
