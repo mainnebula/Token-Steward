@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07T09:27:39Z",
+  "updated_at": "2026-06-07T14:10:41Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5475,51 +5475,6 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
-      "number": 1823,
-      "title": "Bug: Admin role self-assignment via registration endpoint",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1823",
-      "created_at": "2026-05-30T05:32:04Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$430"
-      ],
-      "language": "JavaScript",
-      "stars": 129,
-      "comment_count": 8,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "lb1192176991-lab"
-        },
-        "number": 1825,
-        "state": "OPEN",
-        "title": "fix: prevent admin role self-assignment via registration endpoint",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1825"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
       "number": 2768,
       "title": "Registration token subject should match returned user id",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2768",
@@ -5831,52 +5786,6 @@
         "state": "OPEN",
         "title": "fix(api): reject empty upload submissions",
         "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2851"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2853,
-      "title": "Job validation should reject inverted budget ranges",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2853",
-      "created_at": "2026-05-31T12:44:37Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "language": "JavaScript",
-      "stars": 182,
-      "comment_count": 38,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "daniel7an"
-        },
-        "number": 2854,
-        "state": "OPEN",
-        "title": "fix: reject inverted job budgets",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2854"
       },
       "score": 0.72,
       "score_breakdown": {
@@ -7338,6 +7247,97 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 1823,
+      "title": "Bug: Admin role self-assignment via registration endpoint",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1823",
+      "created_at": "2026-05-30T05:32:04Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ],
+      "language": "JavaScript",
+      "stars": 185,
+      "comment_count": 9,
+      "age_days": 8,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "lb1192176991-lab"
+        },
+        "number": 1825,
+        "state": "OPEN",
+        "title": "fix: prevent admin role self-assignment via registration endpoint",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1825"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2849,
+      "title": "Freelancer profile route should resolve mock profiles by username",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2849",
+      "created_at": "2026-05-31T12:40:49Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ],
+      "language": "JavaScript",
+      "stars": 185,
+      "comment_count": 8,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "daniel7an"
+        },
+        "number": 2852,
+        "state": "OPEN",
+        "title": "fix: render freelancer profiles from mock data",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2852"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
       }
     }
   ]
