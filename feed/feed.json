@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-08T11:11:33Z",
+  "updated_at": "2026-06-08T16:09:25Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2701,98 +2701,6 @@
       }
     },
     {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2883,
-      "title": "Calculate the exact value of PI #2872",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2883",
-      "created_at": "2026-05-31T13:00:14Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$1.2k"
-      ],
-      "language": "JavaScript",
-      "stars": 183,
-      "comment_count": 13,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "guanglongcf-coder"
-        },
-        "number": 2989,
-        "state": "OPEN",
-        "title": "Extend PI calculation to 300 decimal places",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2989"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2885,
-      "title": "Calculate the exact value of PI",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2885",
-      "created_at": "2026-05-31T13:00:19Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$1.2k"
-      ],
-      "language": "JavaScript",
-      "stars": 155,
-      "comment_count": 14,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "guanglongcf-coder"
-        },
-        "number": 2909,
-        "state": "OPEN",
-        "title": "Extend PI calculation from 100 to 200 decimal places",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2909"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "actualbudget/actual",
       "number": 7303,
       "title": "[Bug]: Append to notes rule not working if a note already exists",
@@ -3864,6 +3772,122 @@
         "title": "Resolve realm display name localization placeholders in TOTP issuer name",
         "url": "https://github.com/keycloak/keycloak/pull/48700"
       },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 49730,
+      "title": "`--features=cimd` should add `none` to token_endpoint_auth_methods_supported",
+      "url": "https://github.com/keycloak/keycloak/issues/49730",
+      "created_at": "2026-06-05T16:05:39Z",
+      "labels": [
+        "area/oidc",
+        "kind/bug",
+        "help wanted",
+        "status/auto-bump",
+        "priority/normal",
+        "team/core-protocols"
+      ],
+      "language": "Java",
+      "stars": 34789,
+      "comment_count": 4,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "copilot-swe-agent"
+        },
+        "number": 1102,
+        "state": "OPEN",
+        "title": "Add \"none\" to token_endpoint_auth_methods_supported when CIMD feature is enabled",
+        "url": "https://github.com/tnorimat/keycloak/pull/1102"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 49742,
+      "title": "Simplified/ Traditional Chinese is displayed twice in locale selector",
+      "url": "https://github.com/keycloak/keycloak/issues/49742",
+      "created_at": "2026-06-06T03:01:39Z",
+      "labels": [
+        "kind/bug",
+        "area/translations",
+        "help wanted",
+        "team/community",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 34789,
+      "comment_count": 4,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 49752,
+      "title": "Firefox stuck on \"Loading the Administration Console\"",
+      "url": "https://github.com/keycloak/keycloak/issues/49752",
+      "created_at": "2026-06-07T14:15:41Z",
+      "labels": [
+        "kind/bug",
+        "area/admin/ui",
+        "help wanted",
+        "team/core-shared",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump",
+        "team/core-protocols"
+      ],
+      "language": "Java",
+      "stars": 34789,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
@@ -5705,6 +5729,98 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2883,
+      "title": "Calculate the exact value of PI #2872",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2883",
+      "created_at": "2026-05-31T13:00:14Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$1.2k"
+      ],
+      "language": "JavaScript",
+      "stars": 191,
+      "comment_count": 16,
+      "age_days": 8,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "guanglongcf-coder"
+        },
+        "number": 2989,
+        "state": "OPEN",
+        "title": "Extend PI calculation to 300 decimal places",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2989"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.86,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2885,
+      "title": "Calculate the exact value of PI",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2885",
+      "created_at": "2026-05-31T13:00:19Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$1.2k"
+      ],
+      "language": "JavaScript",
+      "stars": 191,
+      "comment_count": 21,
+      "age_days": 8,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "guanglongcf-coder"
+        },
+        "number": 2909,
+        "state": "OPEN",
+        "title": "Extend PI calculation from 100 to 200 decimal places",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2909"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.86,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
       "number": 743,
       "title": "Low Handing Fruit Automation",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
@@ -5721,8 +5837,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 190,
-      "comment_count": 927,
+      "stars": 191,
+      "comment_count": 936,
       "age_days": 12,
       "is_bug": true,
       "is_feature": false,
@@ -7188,143 +7304,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 1823,
-      "title": "Bug: Admin role self-assignment via registration endpoint",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1823",
-      "created_at": "2026-05-30T05:32:04Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$430"
-      ],
-      "language": "JavaScript",
-      "stars": 185,
-      "comment_count": 9,
-      "age_days": 8,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "lb1192176991-lab"
-        },
-        "number": 1825,
-        "state": "OPEN",
-        "title": "fix: prevent admin role self-assignment via registration endpoint",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1825"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2757,
-      "title": "Payment API should require authentication",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2757",
-      "created_at": "2026-05-31T09:22:16Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "language": "JavaScript",
-      "stars": 190,
-      "comment_count": 7,
-      "age_days": 8,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "sureshchouksey8"
-        },
-        "number": 2758,
-        "state": "OPEN",
-        "title": "Require auth for payment route",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2758"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2760,
-      "title": "Job detail route should resolve mock jobs by id",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2760",
-      "created_at": "2026-05-31T09:27:30Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "language": "JavaScript",
-      "stars": 190,
-      "comment_count": 5,
-      "age_days": 8,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "daniel7an"
-        },
-        "number": 2761,
-        "state": "OPEN",
-        "title": "fix: render job details from mock data",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2761"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
       }
     }
   ]
