@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-08T04:49:21Z",
+  "updated_at": "2026-06-08T11:11:33Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5475,52 +5475,6 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2770,
-      "title": "Registration should require fullName to match User model",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2770",
-      "created_at": "2026-05-31T09:37:08Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "language": "JavaScript",
-      "stars": 179,
-      "comment_count": 5,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "tristanwork"
-        },
-        "number": 2771,
-        "state": "OPEN",
-        "title": "Require fullName during registration",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2771"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
       "number": 2833,
       "title": "Search endpoint has no input validation or length limit on query",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2833",
@@ -5767,9 +5721,9 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 189,
-      "comment_count": 895,
-      "age_days": 11,
+      "stars": 190,
+      "comment_count": 927,
+      "age_days": 12,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -7283,10 +7237,10 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2768,
-      "title": "Registration token subject should match returned user id",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2768",
-      "created_at": "2026-05-31T09:33:32Z",
+      "number": 2757,
+      "title": "Payment API should require authentication",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2757",
+      "created_at": "2026-05-31T09:22:16Z",
       "labels": [
         "bug",
         "enhancement",
@@ -7299,9 +7253,55 @@
         "$780"
       ],
       "language": "JavaScript",
-      "stars": 189,
+      "stars": 190,
       "comment_count": 7,
-      "age_days": 7,
+      "age_days": 8,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "sureshchouksey8"
+        },
+        "number": 2758,
+        "state": "OPEN",
+        "title": "Require auth for payment route",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2758"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2760,
+      "title": "Job detail route should resolve mock jobs by id",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2760",
+      "created_at": "2026-05-31T09:27:30Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ],
+      "language": "JavaScript",
+      "stars": 190,
+      "comment_count": 5,
+      "age_days": 8,
       "is_bug": true,
       "is_feature": true,
       "category": "general",
@@ -7314,10 +7314,10 @@
         "author": {
           "login": "daniel7an"
         },
-        "number": 2769,
+        "number": 2761,
         "state": "OPEN",
-        "title": "fix: keep registration token subject stable",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2769"
+        "title": "fix: render job details from mock data",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2761"
       },
       "score": 0.71,
       "score_breakdown": {
