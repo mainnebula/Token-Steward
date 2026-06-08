@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07T19:42:35Z",
+  "updated_at": "2026-06-08T04:49:21Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5768,7 +5768,7 @@
       ],
       "language": "JavaScript",
       "stars": 189,
-      "comment_count": 845,
+      "comment_count": 895,
       "age_days": 11,
       "is_bug": true,
       "is_feature": false,
@@ -6619,6 +6619,39 @@
       }
     },
     {
+      "repo": "clawwork-ai/ClawWork",
+      "number": 405,
+      "title": "[Bug] safeFetch is vulnerable to DNS rebinding TOCTOU (SSRF bypass)",
+      "url": "https://github.com/clawwork-ai/ClawWork/issues/405",
+      "created_at": "2026-04-15T09:36:17Z",
+      "labels": [
+        "help wanted",
+        "kind/bug",
+        "security",
+        "area/dx"
+      ],
+      "language": "TypeScript",
+      "stars": 519,
+      "comment_count": 12,
+      "age_days": 53,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.9,
+        "confidence": 0.91,
+        "effort": 0.5
+      }
+    },
+    {
       "repo": "clidey/whodb",
       "number": 924,
       "title": "[BUG] - UpdateSettings is publicly callable and mutates global runtime settings",
@@ -7285,52 +7318,6 @@
         "state": "OPEN",
         "title": "fix: keep registration token subject stable",
         "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2769"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2849,
-      "title": "Freelancer profile route should resolve mock profiles by username",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2849",
-      "created_at": "2026-05-31T12:40:49Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "language": "JavaScript",
-      "stars": 185,
-      "comment_count": 8,
-      "age_days": 7,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "daniel7an"
-        },
-        "number": 2852,
-        "state": "OPEN",
-        "title": "fix: render freelancer profiles from mock data",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2852"
       },
       "score": 0.71,
       "score_breakdown": {
