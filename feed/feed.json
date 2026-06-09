@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09T09:57:57Z",
+  "updated_at": "2026-06-09T15:21:11Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1877,6 +1877,46 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "doronz88/pymobiledevice3",
+      "number": 1701,
+      "title": "Restore: cloudOS Features (REM, Cryptexes) stay disabled",
+      "url": "https://github.com/doronz88/pymobiledevice3/issues/1701",
+      "created_at": "2026-06-08T16:00:39Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "awaiting user feedback"
+      ],
+      "language": "Python",
+      "stars": 2377,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "mpass99"
+        },
+        "number": 344,
+        "state": "OPEN",
+        "title": "Cryptex Support",
+        "url": "https://github.com/Lakr233/vphone-cli/pull/344"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -5876,7 +5916,7 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 193,
+      "stars": 194,
       "comment_count": 944,
       "age_days": 13,
       "is_bug": true,
@@ -7263,47 +7303,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "ipfs/kubo",
-      "number": 11213,
-      "title": "HTTP Routing V1 provider records contain raw `0.0.0.0` listen addresses instead of resolved interface addresses",
-      "url": "https://github.com/ipfs/kubo/issues/11213",
-      "created_at": "2026-02-26T03:42:13Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "P2",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 16959,
-      "comment_count": 4,
-      "age_days": 18,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "rayspock"
-        },
-        "number": 1115,
-        "state": "OPEN",
-        "title": "feat: support dynamic provider address resolution",
-        "url": "https://github.com/ipfs/boxo/pull/1115"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
       }
     }
   ]
