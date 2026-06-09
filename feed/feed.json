@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09T15:21:11Z",
+  "updated_at": "2026-06-09T20:15:56Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -912,6 +912,49 @@
         "state": "OPEN",
         "title": "Fix NPE in updateFederatedIdentity after IDP deletion and re-creation",
         "url": "https://github.com/keycloak/keycloak/pull/47214"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 49730,
+      "title": "`--features=cimd` should add `none` to token_endpoint_auth_methods_supported",
+      "url": "https://github.com/keycloak/keycloak/issues/49730",
+      "created_at": "2026-06-05T16:05:39Z",
+      "labels": [
+        "area/oidc",
+        "kind/bug",
+        "help wanted",
+        "status/auto-bump",
+        "priority/normal",
+        "team/core-protocols"
+      ],
+      "language": "Java",
+      "stars": 34819,
+      "comment_count": 5,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "copilot-swe-agent"
+        },
+        "number": 1102,
+        "state": "OPEN",
+        "title": "Add \"none\" to token_endpoint_auth_methods_supported when CIMD feature is enabled",
+        "url": "https://github.com/tnorimat/keycloak/pull/1102"
       },
       "score": 0.75,
       "score_breakdown": {
@@ -3861,49 +3904,6 @@
     },
     {
       "repo": "keycloak/keycloak",
-      "number": 49730,
-      "title": "`--features=cimd` should add `none` to token_endpoint_auth_methods_supported",
-      "url": "https://github.com/keycloak/keycloak/issues/49730",
-      "created_at": "2026-06-05T16:05:39Z",
-      "labels": [
-        "area/oidc",
-        "kind/bug",
-        "help wanted",
-        "status/auto-bump",
-        "priority/normal",
-        "team/core-protocols"
-      ],
-      "language": "Java",
-      "stars": 34789,
-      "comment_count": 4,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "copilot-swe-agent"
-        },
-        "number": 1102,
-        "state": "OPEN",
-        "title": "Add \"none\" to token_endpoint_auth_methods_supported when CIMD feature is enabled",
-        "url": "https://github.com/tnorimat/keycloak/pull/1102"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
       "number": 49742,
       "title": "Simplified/ Traditional Chinese is displayed twice in locale selector",
       "url": "https://github.com/keycloak/keycloak/issues/49742",
@@ -5917,7 +5917,7 @@
       ],
       "language": "JavaScript",
       "stars": 194,
-      "comment_count": 944,
+      "comment_count": 958,
       "age_days": 13,
       "is_bug": true,
       "is_feature": false,
