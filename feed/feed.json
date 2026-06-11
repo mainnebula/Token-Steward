@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T16:15:45Z",
+  "updated_at": "2026-06-11T20:30:31Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1803,6 +1803,39 @@
       }
     },
     {
+      "repo": "code-charity/youtube",
+      "number": 3943,
+      "title": "🐞Not full screen after rotate (on a portrait screen)",
+      "url": "https://github.com/code-charity/youtube/issues/3943",
+      "created_at": "2026-06-08T14:49:43Z",
+      "labels": [
+        "Bug",
+        "help wanted",
+        "good first issue",
+        "up-for-grabs"
+      ],
+      "language": "JavaScript",
+      "stars": 4420,
+      "comment_count": 6,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "compio-rs/compio",
       "number": 928,
       "title": "kqueue backend: in-process waker does not interrupt kevent() poll",
@@ -3131,6 +3164,45 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "apache/iceberg",
+      "number": 16493,
+      "title": "`remove_orphan_files` scopes `file_list_view` with raw string prefix matching",
+      "url": "https://github.com/apache/iceberg/issues/16493",
+      "created_at": "2026-05-20T21:34:33Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 8960,
+      "comment_count": 6,
+      "age_days": 21,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "wombatu-kun"
+        },
+        "number": 16498,
+        "state": "OPEN",
+        "title": "Spark: Fix DeleteOrphanFilesSparkAction sibling-prefix scope in compareToFileList",
+        "url": "https://github.com/apache/iceberg/pull/16498"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
       }
     },
     {
@@ -5948,9 +6020,9 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 198,
-      "comment_count": 1046,
-      "age_days": 14,
+      "stars": 199,
+      "comment_count": 1051,
+      "age_days": 15,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -6343,45 +6415,6 @@
         "state": "OPEN",
         "title": "fix: rest api calculates stage running time correctly",
         "url": "https://github.com/apache/datafusion-ballista/pull/1675"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/iceberg",
-      "number": 16493,
-      "title": "`remove_orphan_files` scopes `file_list_view` with raw string prefix matching",
-      "url": "https://github.com/apache/iceberg/issues/16493",
-      "created_at": "2026-05-20T21:34:33Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 8895,
-      "comment_count": 4,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "wombatu-kun"
-        },
-        "number": 16498,
-        "state": "OPEN",
-        "title": "Spark: Fix DeleteOrphanFilesSparkAction sibling-prefix scope in compareToFileList",
-        "url": "https://github.com/apache/iceberg/pull/16498"
       },
       "score": 0.72,
       "score_breakdown": {
@@ -6985,39 +7018,6 @@
         "reach": 0.55,
         "impact": 0.75,
         "confidence": 0.88,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "code-charity/youtube",
-      "number": 3943,
-      "title": "🐞Not full screen after rotate (on a portrait screen)",
-      "url": "https://github.com/code-charity/youtube/issues/3943",
-      "created_at": "2026-06-08T14:49:43Z",
-      "labels": [
-        "Bug",
-        "help wanted",
-        "good first issue",
-        "up-for-grabs"
-      ],
-      "language": "JavaScript",
-      "stars": 4419,
-      "comment_count": 3,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
         "effort": 0.65
       }
     },
