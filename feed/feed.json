@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T04:45:12Z",
+  "updated_at": "2026-06-11T10:50:41Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3084,6 +3084,38 @@
       "stars": 45332,
       "comment_count": 11,
       "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "apache/airflow",
+      "number": 68382,
+      "title": "Connection port field does not validate that the value is a valid port number",
+      "url": "https://github.com/apache/airflow/issues/68382",
+      "created_at": "2026-06-11T10:07:07Z",
+      "labels": [
+        "kind:bug",
+        "good first issue",
+        "area:core"
+      ],
+      "language": "Python",
+      "stars": 45777,
+      "comment_count": 7,
+      "age_days": 0,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7251,39 +7283,6 @@
       "language": "Python",
       "stars": 4817,
       "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "internetarchive/openlibrary",
-      "number": 12381,
-      "title": "Bug: Duplicate <legend> in Advanced Search form causing accessibility issues",
-      "url": "https://github.com/internetarchive/openlibrary/issues/12381",
-      "created_at": "2026-04-15T07:00:39Z",
-      "labels": [
-        "Type: Bug",
-        "Good First Issue",
-        "Needs: Triage",
-        "Needs: Lead"
-      ],
-      "language": "Python",
-      "stars": 6356,
-      "comment_count": 3,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
