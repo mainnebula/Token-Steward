@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T20:30:31Z",
+  "updated_at": "2026-06-12T04:47:27Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1812,11 +1812,12 @@
         "Bug",
         "help wanted",
         "good first issue",
-        "up-for-grabs"
+        "up-for-grabs",
+        "kpop fancams"
       ],
       "language": "JavaScript",
-      "stars": 4420,
-      "comment_count": 6,
+      "stars": 4421,
+      "comment_count": 7,
       "age_days": 3,
       "is_bug": true,
       "is_feature": false,
@@ -1825,8 +1826,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Hypragon"
+        },
+        "number": 3958,
+        "state": "OPEN",
+        "title": "Enabled autoresizing when rotation is activated to always fit window",
+        "url": "https://github.com/code-charity/youtube/pull/3958"
+      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.55,
@@ -5273,6 +5282,38 @@
     },
     {
       "repo": "JhaSourav07/commitpulse",
+      "number": 5256,
+      "title": "bug: Filter duplicate indices during autumn DST fall-back rollback",
+      "url": "https://github.com/JhaSourav07/commitpulse/issues/5256",
+      "created_at": "2026-06-11T17:19:07Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "GSSoC 2026"
+      ],
+      "language": "TypeScript",
+      "stars": 140,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "JhaSourav07/commitpulse",
       "number": 872,
       "title": "Rapid username changes trigger overlapping GitHub API requests",
       "url": "https://github.com/JhaSourav07/commitpulse/issues/872",
@@ -6020,8 +6061,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 199,
-      "comment_count": 1051,
+      "stars": 200,
+      "comment_count": 1063,
       "age_days": 15,
       "is_bug": true,
       "is_feature": false,
@@ -7266,38 +7307,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "inclusionAI/AReaL",
-      "number": 1046,
-      "title": "[BUG] ResponseValidationError when areal gateway processing openclaw response",
-      "url": "https://github.com/inclusionAI/AReaL/issues/1046",
-      "created_at": "2026-03-17T06:42:25Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "Python",
-      "stars": 4817,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
         "effort": 0.65
       }
     }
