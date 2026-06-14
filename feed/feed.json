@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T19:46:28Z",
+  "updated_at": "2026-06-14T04:53:05Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4946,6 +4946,38 @@
       }
     },
     {
+      "repo": "Checkora/Checkora",
+      "number": 1818,
+      "title": "[Enhancement] Multiple buttons overlap each other on Rulebook and Game page",
+      "url": "https://github.com/Checkora/Checkora/issues/1818",
+      "created_at": "2026-06-12T12:45:58Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "GSSoC"
+      ],
+      "language": "Python",
+      "stars": 128,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "ClanGenOfficial/clangen",
       "number": 4750,
       "title": "[UI] Mangled Tail gives One Bad Eye Condition",
@@ -6054,8 +6086,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 204,
-      "comment_count": 1116,
+      "stars": 205,
+      "comment_count": 1125,
       "age_days": 17,
       "is_bug": true,
       "is_feature": false,
@@ -7260,46 +7292,6 @@
         "state": "OPEN",
         "title": "fix-issue-12328: fix commit messages truncation in the CLI",
         "url": "https://github.com/gitbutlerapp/gitbutler/pull/12448"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "google-gemini/gemini-cli",
-      "number": 25590,
-      "title": "Bug: relaunchAppInChildProcess does not forward signals to child, orphaning it when parent is killed",
-      "url": "https://github.com/google-gemini/gemini-cli/issues/25590",
-      "created_at": "2026-04-17T18:13:53Z",
-      "labels": [
-        "area/core",
-        "help wanted",
-        "type/bug"
-      ],
-      "language": "TypeScript",
-      "stars": 102338,
-      "comment_count": 3,
-      "age_days": 7,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Sway-Chan"
-        },
-        "number": 25605,
-        "state": "OPEN",
-        "title": "fix(cli): forward termination signals to relaunched child process",
-        "url": "https://github.com/google-gemini/gemini-cli/pull/25605"
       },
       "score": 0.72,
       "score_breakdown": {
