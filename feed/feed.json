@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14T19:47:47Z",
+  "updated_at": "2026-06-15T05:10:09Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4382,6 +4382,37 @@
       }
     },
     {
+      "repo": "meshery/meshery",
+      "number": 20065,
+      "title": "[UI] Color of the icon is different from text.",
+      "url": "https://github.com/meshery/meshery/issues/20065",
+      "created_at": "2026-06-15T00:17:34Z",
+      "labels": [
+        "kind/bug",
+        "good first issue"
+      ],
+      "language": "TypeScript",
+      "stars": 10452,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "moby/moby",
       "number": 48471,
       "title": "seccomp: architecture is not present for (at least) ppc64le",
@@ -4646,6 +4677,37 @@
       ],
       "language": "TypeScript",
       "stars": 51683,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 4308,
+      "title": "Generalize filesystem artifact echo suppression beyond Claude Code",
+      "url": "https://github.com/nexu-io/open-design/issues/4308",
+      "created_at": "2026-06-15T04:40:41Z",
+      "labels": [
+        "help wanted",
+        "type/bugfix"
+      ],
+      "language": "TypeScript",
+      "stars": 64943,
       "comment_count": 3,
       "age_days": 0,
       "is_bug": true,
@@ -6086,8 +6148,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 205,
-      "comment_count": 1125,
+      "stars": 206,
+      "comment_count": 1127,
       "age_days": 18,
       "is_bug": true,
       "is_feature": false,
@@ -7226,79 +7288,6 @@
         "impact": 0.7,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "elastic/elasticsearch",
-      "number": 147723,
-      "title": "ES|QL We need a warning when Lookup Join shadows a field from the main index",
-      "url": "https://github.com/elastic/elasticsearch/issues/147723",
-      "created_at": "2026-04-28T15:13:59Z",
-      "labels": [
-        ">bug",
-        "good first issue",
-        "Team:Analytics",
-        ":Analytics/ES|QL"
-      ],
-      "language": "Java",
-      "stars": 76639,
-      "comment_count": 4,
-      "age_days": 7,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "gitbutlerapp/gitbutler",
-      "number": 12328,
-      "title": "Longer commit messages are truncated in GitButler CLI",
-      "url": "https://github.com/gitbutlerapp/gitbutler/issues/12328",
-      "created_at": "2026-02-11T17:44:04Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "CLI"
-      ],
-      "language": "Rust",
-      "stars": 19463,
-      "comment_count": 4,
-      "age_days": 8,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "gonchihernandez"
-        },
-        "number": 12448,
-        "state": "OPEN",
-        "title": "fix-issue-12328: fix commit messages truncation in the CLI",
-        "url": "https://github.com/gitbutlerapp/gitbutler/pull/12448"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
       }
     }
   ]
