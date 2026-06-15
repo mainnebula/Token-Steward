@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15T12:33:33Z",
+  "updated_at": "2026-06-15T21:13:38Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -222,6 +222,40 @@
         "reach": 0.6,
         "impact": 0.85,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "DSpace/DSpace",
+      "number": 12662,
+      "title": "FeedbackRestRepository: REST endpoint accepts unbounded input leading to oversized feedback email generation (due to missing input validation)",
+      "url": "https://github.com/DSpace/DSpace/issues/12662",
+      "created_at": "2026-06-14T11:54:30Z",
+      "labels": [
+        "bug",
+        "interface: REST API v7+",
+        "backend: email-system",
+        "help wanted",
+        "security"
+      ],
+      "language": "Java",
+      "stars": 1072,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.76,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.9,
+        "confidence": 0.93,
         "effort": 0.65
       }
     },
@@ -6437,6 +6471,79 @@
       }
     },
     {
+      "repo": "anurag3407/career-pilot",
+      "number": 4082,
+      "title": "[UI] SkeletonProfile uses hardcoded dark colors — broken in light mode",
+      "url": "https://github.com/anurag3407/career-pilot/issues/4082",
+      "created_at": "2026-06-14T16:14:15Z",
+      "labels": [
+        "good first issue",
+        "level:beginner",
+        "type:design",
+        "type:bug"
+      ],
+      "language": "JavaScript",
+      "stars": 117,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "anurag3407/career-pilot",
+      "number": 4088,
+      "title": "[UI] Navbar showDropdown state conflict — search and profile dropdowns share one variable",
+      "url": "https://github.com/anurag3407/career-pilot/issues/4088",
+      "created_at": "2026-06-14T16:16:47Z",
+      "labels": [
+        "good first issue",
+        "level:beginner",
+        "type:bug"
+      ],
+      "language": "JavaScript",
+      "stars": 117,
+      "comment_count": 6,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Mahakbajpai"
+        },
+        "number": 4090,
+        "state": "OPEN",
+        "title": "Fix Navbar dropdowns state conflict (#4088)",
+        "url": "https://github.com/anurag3407/career-pilot/pull/4090"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "apache/airflow",
       "number": 62025,
       "title": "API - Improve public get_dag_runs endpoint",
@@ -7180,113 +7287,6 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "compio-rs/compio",
-      "number": 948,
-      "title": "bug: lost cross-thread wake in Remote::schedule can permanently strand a parked task",
-      "url": "https://github.com/compio-rs/compio/issues/948",
-      "created_at": "2026-06-12T08:09:33Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "Rust",
-      "stars": 1744,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "paddor"
-        },
-        "number": 949,
-        "state": "OPEN",
-        "title": "fix(executor): remove is_scheduling() guard from Remote::schedule",
-        "url": "https://github.com/compio-rs/compio/pull/949"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "containers/podman",
-      "number": 28146,
-      "title": "Documentation: PublishPort does not mention the possibility to define a protocol",
-      "url": "https://github.com/containers/podman/issues/28146",
-      "created_at": "2026-02-24T11:17:26Z",
-      "labels": [
-        "Good First Issue",
-        "kind/bug",
-        "documentation",
-        "volunteers-wanted",
-        "triaged"
-      ],
-      "language": "Go",
-      "stars": 30808,
-      "comment_count": 2,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.7,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "containers/podman",
-      "number": 28178,
-      "title": "Documentation: Examples after the first one are indented inappropriately",
-      "url": "https://github.com/containers/podman/issues/28178",
-      "created_at": "2026-03-02T16:23:15Z",
-      "labels": [
-        "Good First Issue",
-        "kind/bug",
-        "documentation",
-        "volunteers-wanted",
-        "triaged"
-      ],
-      "language": "Go",
-      "stars": 30859,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.7,
-        "confidence": 0.94,
         "effort": 0.65
       }
     }
