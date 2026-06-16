@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16T11:26:22Z",
+  "updated_at": "2026-06-16T17:10:53Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5710,96 +5710,6 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
-      "number": 1777,
-      "title": "Search endpoint has no input validation or length limit on query",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1777",
-      "created_at": "2026-05-30T03:15:09Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$430"
-      ],
-      "language": "JavaScript",
-      "stars": 129,
-      "comment_count": 5,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "fennhelloworld"
-        },
-        "number": 1778,
-        "state": "OPEN",
-        "title": "Low Hanging Fruit: Fix 7 security and validation bugs (SB#743)",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1778"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 1781,
-      "title": "fix: prevent DoS on search endpoint via query length limit and input validation",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1781",
-      "created_at": "2026-05-30T03:57:53Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$430"
-      ],
-      "language": "JavaScript",
-      "stars": 129,
-      "comment_count": 5,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "bryantrinh"
-        },
-        "number": 1866,
-        "state": "OPEN",
-        "title": "fix: resolve issue #1781 - automated fix",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1866"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
       "number": 2845,
       "title": "registerUser access token can reference a different user id",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2845",
@@ -6046,9 +5956,9 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 211,
-      "comment_count": 1131,
-      "age_days": 19,
+      "stars": 213,
+      "comment_count": 1137,
+      "age_days": 20,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -7171,8 +7081,8 @@
         "$430"
       ],
       "language": "JavaScript",
-      "stars": 211,
-      "comment_count": 5,
+      "stars": 213,
+      "comment_count": 6,
       "age_days": 17,
       "is_bug": true,
       "is_feature": false,
@@ -7216,8 +7126,8 @@
         "$430"
       ],
       "language": "JavaScript",
-      "stars": 211,
-      "comment_count": 5,
+      "stars": 213,
+      "comment_count": 6,
       "age_days": 17,
       "is_bug": true,
       "is_feature": false,
@@ -7261,8 +7171,8 @@
         "$430"
       ],
       "language": "JavaScript",
-      "stars": 211,
-      "comment_count": 10,
+      "stars": 213,
+      "comment_count": 11,
       "age_days": 17,
       "is_bug": true,
       "is_feature": false,
@@ -7280,6 +7190,97 @@
         "state": "OPEN",
         "title": "fix: resolve issue #1774 - automated fix",
         "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1887"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 1823,
+      "title": "Bug: Admin role self-assignment via registration endpoint",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1823",
+      "created_at": "2026-05-30T05:32:04Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ],
+      "language": "JavaScript",
+      "stars": 213,
+      "comment_count": 10,
+      "age_days": 17,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "lb1192176991-lab"
+        },
+        "number": 1825,
+        "state": "OPEN",
+        "title": "fix: prevent admin role self-assignment via registration endpoint",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1825"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2755,
+      "title": "Job detail page should render matching mock job and unknown fallback",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2755",
+      "created_at": "2026-05-31T09:21:16Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780"
+      ],
+      "language": "JavaScript",
+      "stars": 213,
+      "comment_count": 6,
+      "age_days": 16,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "tristanwork"
+        },
+        "number": 2759,
+        "state": "OPEN",
+        "title": "Render selected job details",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2759"
       },
       "score": 0.71,
       "score_breakdown": {
