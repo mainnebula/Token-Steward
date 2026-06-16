@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15T21:13:38Z",
+  "updated_at": "2026-06-16T05:12:52Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5710,96 +5710,6 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
-      "number": 1770,
-      "title": "Admin routes lack role-based access control — any authenticated user can access admin endpoints",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1770",
-      "created_at": "2026-05-30T03:14:36Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$430"
-      ],
-      "language": "JavaScript",
-      "stars": 149,
-      "comment_count": 5,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "lb1192176991-lab"
-        },
-        "number": 1897,
-        "state": "OPEN",
-        "title": "fix: add admin role check middleware to admin routes",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1897"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 1774,
-      "title": "CORS configured with no origin restrictions — allows any domain",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1774",
-      "created_at": "2026-05-30T03:14:54Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$430"
-      ],
-      "language": "JavaScript",
-      "stars": 173,
-      "comment_count": 10,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "bryantrinh"
-        },
-        "number": 1887,
-        "state": "OPEN",
-        "title": "fix: resolve issue #1774 - automated fix",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1887"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
       "number": 1777,
       "title": "Search endpoint has no input validation or length limit on query",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1777",
@@ -5879,52 +5789,6 @@
         "state": "OPEN",
         "title": "fix: resolve issue #1781 - automated fix",
         "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1866"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2835,
-      "title": "Reject inverted job budget ranges in job validation",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2835",
-      "created_at": "2026-05-31T11:26:06Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "language": "JavaScript",
-      "stars": 177,
-      "comment_count": 5,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "839194950"
-        },
-        "number": 2837,
-        "state": "OPEN",
-        "title": "fix: reject inverted job budget ranges in validation",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2837"
       },
       "score": 0.72,
       "score_breakdown": {
@@ -6136,9 +6000,9 @@
         "$1.2k"
       ],
       "language": "JavaScript",
-      "stars": 197,
-      "comment_count": 24,
-      "age_days": 10,
+      "stars": 211,
+      "comment_count": 27,
+      "age_days": 15,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -6182,8 +6046,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 206,
-      "comment_count": 1129,
+      "stars": 211,
+      "comment_count": 1131,
       "age_days": 19,
       "is_bug": true,
       "is_feature": false,
@@ -7288,6 +7152,141 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 1750,
+      "title": "Bug: Refresh endpoint mints tokens without validating a refresh token",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1750",
+      "created_at": "2026-05-30T01:59:14Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ],
+      "language": "JavaScript",
+      "stars": 211,
+      "comment_count": 5,
+      "age_days": 17,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "wangedmund77-cmyk"
+        },
+        "number": 1751,
+        "state": "OPEN",
+        "title": "Fix auth refresh token validation",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1751"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 1770,
+      "title": "Admin routes lack role-based access control — any authenticated user can access admin endpoints",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1770",
+      "created_at": "2026-05-30T03:14:36Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ],
+      "language": "JavaScript",
+      "stars": 211,
+      "comment_count": 5,
+      "age_days": 17,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "lb1192176991-lab"
+        },
+        "number": 1897,
+        "state": "OPEN",
+        "title": "fix: add admin role check middleware to admin routes",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1897"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 1774,
+      "title": "CORS configured with no origin restrictions — allows any domain",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1774",
+      "created_at": "2026-05-30T03:14:54Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$430"
+      ],
+      "language": "JavaScript",
+      "stars": 211,
+      "comment_count": 10,
+      "age_days": 17,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "bryantrinh"
+        },
+        "number": 1887,
+        "state": "OPEN",
+        "title": "fix: resolve issue #1774 - automated fix",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1887"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.6
       }
     }
   ]
