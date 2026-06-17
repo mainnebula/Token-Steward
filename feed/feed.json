@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17T04:55:21Z",
+  "updated_at": "2026-06-17T11:10:24Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5864,9 +5864,9 @@
         "$1.2k"
       ],
       "language": "JavaScript",
-      "stars": 191,
-      "comment_count": 16,
-      "age_days": 8,
+      "stars": 213,
+      "comment_count": 23,
+      "age_days": 16,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -5910,9 +5910,9 @@
         "$1.2k"
       ],
       "language": "JavaScript",
-      "stars": 211,
-      "comment_count": 27,
-      "age_days": 15,
+      "stars": 213,
+      "comment_count": 29,
+      "age_days": 16,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -5957,8 +5957,8 @@
       ],
       "language": "JavaScript",
       "stars": 213,
-      "comment_count": 1153,
-      "age_days": 20,
+      "comment_count": 1155,
+      "age_days": 21,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -6260,6 +6260,39 @@
       "stars": 117,
       "comment_count": 5,
       "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "anurag3407/career-pilot",
+      "number": 4085,
+      "title": "[UI] Navbar has broken breakpoint — avatar visible before nav links appear (md vs lg)",
+      "url": "https://github.com/anurag3407/career-pilot/issues/4085",
+      "created_at": "2026-06-14T16:16:29Z",
+      "labels": [
+        "good first issue",
+        "level:beginner",
+        "type:design",
+        "type:bug"
+      ],
+      "language": "JavaScript",
+      "stars": 119,
+      "comment_count": 5,
+      "age_days": 2,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7235,52 +7268,6 @@
         "state": "OPEN",
         "title": "fix: prevent admin role self-assignment via registration endpoint",
         "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1825"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2755,
-      "title": "Job detail page should render matching mock job and unknown fallback",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2755",
-      "created_at": "2026-05-31T09:21:16Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "language": "JavaScript",
-      "stars": 213,
-      "comment_count": 6,
-      "age_days": 16,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "tristanwork"
-        },
-        "number": 2759,
-        "state": "OPEN",
-        "title": "Render selected job details",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2759"
       },
       "score": 0.71,
       "score_breakdown": {
