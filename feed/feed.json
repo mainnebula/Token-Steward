@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18T10:41:56Z",
+  "updated_at": "2026-06-18T15:44:41Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2767,6 +2767,86 @@
       "score_breakdown": {
         "reach": 0.5,
         "impact": 0.85,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 3702,
+      "title": "[Bug]: There is a problem with the export!",
+      "url": "https://github.com/nexu-io/open-design/issues/3702",
+      "created_at": "2026-06-05T03:34:08Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "priority:p1"
+      ],
+      "language": "TypeScript",
+      "stars": 67277,
+      "comment_count": 9,
+      "age_days": 13,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "roian6"
+        },
+        "number": 4366,
+        "state": "OPEN",
+        "title": "fix(daemon): export built Vite HTML for PDF",
+        "url": "https://github.com/nexu-io/open-design/pull/4366"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 3906,
+      "title": "Quick Brief does not inherit the Pages selection made on Home",
+      "url": "https://github.com/nexu-io/open-design/issues/3906",
+      "created_at": "2026-06-08T09:38:16Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "priority:p2"
+      ],
+      "language": "TypeScript",
+      "stars": 67277,
+      "comment_count": 20,
+      "age_days": 10,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "TheAngryPit"
+        },
+        "number": 4017,
+        "state": "OPEN",
+        "title": "Fix deck preset page count handoff",
+        "url": "https://github.com/nexu-io/open-design/pull/4017"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
       }
@@ -5990,8 +6070,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 215,
-      "comment_count": 1176,
+      "stars": 216,
+      "comment_count": 1183,
       "age_days": 22,
       "is_bug": true,
       "is_feature": false,
@@ -7167,96 +7247,6 @@
         "state": "OPEN",
         "title": "Fix auth refresh token validation",
         "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1751"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 1770,
-      "title": "Admin routes lack role-based access control — any authenticated user can access admin endpoints",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1770",
-      "created_at": "2026-05-30T03:14:36Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$430"
-      ],
-      "language": "JavaScript",
-      "stars": 213,
-      "comment_count": 6,
-      "age_days": 17,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "lb1192176991-lab"
-        },
-        "number": 1897,
-        "state": "OPEN",
-        "title": "fix: add admin role check middleware to admin routes",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1897"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 1774,
-      "title": "CORS configured with no origin restrictions — allows any domain",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1774",
-      "created_at": "2026-05-30T03:14:54Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$430"
-      ],
-      "language": "JavaScript",
-      "stars": 213,
-      "comment_count": 11,
-      "age_days": 17,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "bryantrinh"
-        },
-        "number": 1887,
-        "state": "OPEN",
-        "title": "fix: resolve issue #1774 - automated fix",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1887"
       },
       "score": 0.71,
       "score_breakdown": {
