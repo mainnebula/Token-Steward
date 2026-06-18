@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17T20:24:40Z",
+  "updated_at": "2026-06-18T04:46:44Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5107,6 +5107,40 @@
       }
     },
     {
+      "repo": "DSpace/DSpace",
+      "number": 12663,
+      "title": "RequestItemRepository: REST endpoint accepts unbounded requestMessage leading to oversized email generation (due to missing input validation)",
+      "url": "https://github.com/DSpace/DSpace/issues/12663",
+      "created_at": "2026-06-14T13:36:39Z",
+      "labels": [
+        "bug",
+        "interface: REST API v7+",
+        "backend: email-system",
+        "help wanted",
+        "security"
+      ],
+      "language": "Java",
+      "stars": 1073,
+      "comment_count": 2,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "Hmbown/DeepSeek-TUI",
       "number": 513,
       "title": "v0.8.8 rlm: foreground RLM work is not represented in Agents/Tasks workbench",
@@ -5956,8 +5990,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 213,
-      "comment_count": 1159,
+      "stars": 215,
+      "comment_count": 1161,
       "age_days": 21,
       "is_bug": true,
       "is_feature": false,
@@ -7223,51 +7257,6 @@
         "state": "OPEN",
         "title": "fix: resolve issue #1774 - automated fix",
         "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1887"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 1823,
-      "title": "Bug: Admin role self-assignment via registration endpoint",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1823",
-      "created_at": "2026-05-30T05:32:04Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$430"
-      ],
-      "language": "JavaScript",
-      "stars": 213,
-      "comment_count": 10,
-      "age_days": 17,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "lb1192176991-lab"
-        },
-        "number": 1825,
-        "state": "OPEN",
-        "title": "fix: prevent admin role self-assignment via registration endpoint",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1825"
       },
       "score": 0.71,
       "score_breakdown": {
