@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T15:36:10Z",
+  "updated_at": "2026-06-19T19:58:12Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6404,9 +6404,9 @@
         "type:bug"
       ],
       "language": "JavaScript",
-      "stars": 119,
-      "comment_count": 5,
-      "age_days": 2,
+      "stars": 120,
+      "comment_count": 8,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6414,8 +6414,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "advikdivekar"
+        },
+        "number": 4201,
+        "state": "OPEN",
+        "title": "fix(navbar): align avatar and mobile menu to lg breakpoint to remove half-state",
+        "url": "https://github.com/anurag3407/career-pilot/pull/4201"
+      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
