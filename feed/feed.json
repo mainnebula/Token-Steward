@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T19:58:12Z",
+  "updated_at": "2026-06-20T04:19:19Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -256,6 +256,38 @@
         "reach": 0.45,
         "impact": 0.9,
         "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "Hmbown/CodeWhale",
+      "number": 3222,
+      "title": "Add `reasoning_style` override for inline-tag thinking blocks on OpenAI chat-completions (MiniMax M3, Qwen, GLM)",
+      "url": "https://github.com/Hmbown/CodeWhale/issues/3222",
+      "created_at": "2026-06-14T16:32:46Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement"
+      ],
+      "language": "Rust",
+      "stars": 38706,
+      "comment_count": 4,
+      "age_days": 5,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.76,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.94,
         "effort": 0.65
       }
     },
@@ -6070,8 +6102,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 217,
-      "comment_count": 1185,
+      "stars": 218,
+      "comment_count": 1193,
       "age_days": 23,
       "is_bug": true,
       "is_feature": false,
@@ -7217,51 +7249,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 1750,
-      "title": "Bug: Refresh endpoint mints tokens without validating a refresh token",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/1750",
-      "created_at": "2026-05-30T01:59:14Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$430"
-      ],
-      "language": "JavaScript",
-      "stars": 213,
-      "comment_count": 6,
-      "age_days": 17,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "wangedmund77-cmyk"
-        },
-        "number": 1751,
-        "state": "OPEN",
-        "title": "Fix auth refresh token validation",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/1751"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.6
       }
     }
   ]
