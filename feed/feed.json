@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T10:00:26Z",
+  "updated_at": "2026-06-21T14:26:40Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5253,6 +5253,38 @@
       }
     },
     {
+      "repo": "DSpace/DSpace",
+      "number": 12668,
+      "title": "RequestItemRepository: Missing / insufficient input validation in method createAndReturn",
+      "url": "https://github.com/DSpace/DSpace/issues/12668",
+      "created_at": "2026-06-14T22:54:04Z",
+      "labels": [
+        "bug",
+        "interface: REST API v7+",
+        "help wanted"
+      ],
+      "language": "Java",
+      "stars": 1074,
+      "comment_count": 3,
+      "age_days": 6,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "Hmbown/DeepSeek-TUI",
       "number": 513,
       "title": "v0.8.8 rlm: foreground RLM work is not represented in Agents/Tasks workbench",
@@ -6103,7 +6135,7 @@
       ],
       "language": "JavaScript",
       "stars": 218,
-      "comment_count": 1195,
+      "comment_count": 1197,
       "age_days": 25,
       "is_bug": true,
       "is_feature": false,
@@ -7214,40 +7246,6 @@
         "reach": 0.55,
         "impact": 0.75,
         "confidence": 0.88,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "code-charity/youtube",
-      "number": 3950,
-      "title": "🐞\"Disable auto dubbing\" option doesn't work when defaultDubbedLanguage is set",
-      "url": "https://github.com/code-charity/youtube/issues/3950",
-      "created_at": "2026-06-10T12:17:32Z",
-      "labels": [
-        "Bug",
-        "Feature request",
-        "help wanted",
-        "good first issue",
-        "up-for-grabs"
-      ],
-      "language": "JavaScript",
-      "stars": 4419,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
         "effort": 0.65
       }
     }
