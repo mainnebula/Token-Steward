@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T04:11:52Z",
+  "updated_at": "2026-06-24T09:44:11Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5402,6 +5402,47 @@
       }
     },
     {
+      "repo": "GlycemicGPT/GlycemicGPT",
+      "number": 811,
+      "title": "CareLink cloud historical import fails for European (non-US) accounts",
+      "url": "https://github.com/GlycemicGPT/GlycemicGPT/issues/811",
+      "created_at": "2026-06-22T17:49:03Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "component: api",
+        "Needs-Testers"
+      ],
+      "language": "Python",
+      "stars": 120,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "jlengelbrecht"
+        },
+        "number": 820,
+        "state": "OPEN",
+        "title": "fix: send generateReport PeriodB window so EU CareLink import works",
+        "url": "https://github.com/GlycemicGPT/GlycemicGPT/pull/820"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "Hmbown/DeepSeek-TUI",
       "number": 513,
       "title": "v0.8.8 rlm: foreground RLM work is not represented in Agents/Tasks workbench",
@@ -6252,8 +6293,8 @@
       ],
       "language": "JavaScript",
       "stars": 220,
-      "comment_count": 1211,
-      "age_days": 27,
+      "comment_count": 1213,
+      "age_days": 28,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -7216,39 +7257,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "clawwork-ai/ClawWork",
-      "number": 405,
-      "title": "[Bug] safeFetch is vulnerable to DNS rebinding TOCTOU (SSRF bypass)",
-      "url": "https://github.com/clawwork-ai/ClawWork/issues/405",
-      "created_at": "2026-04-15T09:36:17Z",
-      "labels": [
-        "help wanted",
-        "kind/bug",
-        "security",
-        "area/dx"
-      ],
-      "language": "TypeScript",
-      "stars": 519,
-      "comment_count": 12,
-      "age_days": 53,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "security",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.9,
-        "confidence": 0.91,
-        "effort": 0.5
       }
     }
   ]
