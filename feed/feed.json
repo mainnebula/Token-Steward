@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T14:47:30Z",
+  "updated_at": "2026-06-24T19:57:05Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5303,6 +5303,40 @@
       }
     },
     {
+      "repo": "Checkora/Checkora",
+      "number": 2025,
+      "title": "Material Score captured piece icons disappear in Light Mode",
+      "url": "https://github.com/Checkora/Checkora/issues/2025",
+      "created_at": "2026-06-21T13:30:19Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "GSSoC",
+        "frontend",
+        "available"
+      ],
+      "language": "Python",
+      "stars": 132,
+      "comment_count": 5,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "ClanGenOfficial/clangen",
       "number": 4750,
       "title": "[UI] Mangled Tail gives One Bad Eye Condition",
@@ -5415,8 +5449,8 @@
       ],
       "language": "Python",
       "stars": 120,
-      "comment_count": 5,
-      "age_days": 1,
+      "comment_count": 7,
+      "age_days": 2,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6292,8 +6326,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 220,
-      "comment_count": 1213,
+      "stars": 221,
+      "comment_count": 1214,
       "age_days": 28,
       "is_bug": true,
       "is_feature": false,
@@ -7226,37 +7260,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "buildpacks/pack",
-      "number": 2546,
-      "title": "fix: improve uriFromLifecycleVersion to handle all supported OS/arch combinations correctly",
-      "url": "https://github.com/buildpacks/pack/issues/2546",
-      "created_at": "2026-03-10T13:07:30Z",
-      "labels": [
-        "type/bug",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 2893,
-      "comment_count": 4,
-      "age_days": 4,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     }
   ]
