@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T19:57:05Z",
+  "updated_at": "2026-06-25T04:12:30Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3733,6 +3733,41 @@
       }
     },
     {
+      "repo": "elizaOS/eliza",
+      "number": 9300,
+      "title": "ci(cloud): deploy + continuously validate example apps (EDAD, Clone Ur Crush) on Eliza Cloud containers with an infinite-credit showcase account + monetization e2e",
+      "url": "https://github.com/elizaOS/eliza/issues/9300",
+      "created_at": "2026-06-24T08:08:08Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "infrastructure",
+        "testing",
+        "ops",
+        "memory"
+      ],
+      "language": "TypeScript",
+      "stars": 18641,
+      "comment_count": 12,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "fjall-rs/fjall",
       "number": 277,
       "title": "persistent corruption of database after calling `clear` on a k-v separated keyspace",
@@ -5449,7 +5484,7 @@
       ],
       "language": "Python",
       "stars": 120,
-      "comment_count": 7,
+      "comment_count": 10,
       "age_days": 2,
       "is_bug": true,
       "is_feature": false,
@@ -6326,8 +6361,8 @@
         "$700"
       ],
       "language": "JavaScript",
-      "stars": 221,
-      "comment_count": 1214,
+      "stars": 222,
+      "comment_count": 1216,
       "age_days": 28,
       "is_bug": true,
       "is_feature": false,
@@ -7222,38 +7257,6 @@
         "title": "[PM-35167] Fix: add aria-label to email and password fields for accessibility",
         "url": "https://github.com/bitwarden/clients/pull/20160"
       },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "booklore-app/booklore",
-      "number": 2910,
-      "title": "[Bug] Filter counts cut off on some filters",
-      "url": "https://github.com/booklore-app/booklore/issues/2910",
-      "created_at": "2026-02-24T11:24:16Z",
-      "labels": [
-        "bug",
-        "ui tweaks",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 11194,
-      "comment_count": 3,
-      "age_days": 11,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
