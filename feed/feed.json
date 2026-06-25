@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-25T04:12:30Z",
+  "updated_at": "2026-06-25T09:36:41Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6362,8 +6362,8 @@
       ],
       "language": "JavaScript",
       "stars": 222,
-      "comment_count": 1216,
-      "age_days": 28,
+      "comment_count": 1217,
+      "age_days": 29,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
