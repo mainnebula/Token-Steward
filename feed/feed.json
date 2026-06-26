@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T04:18:37Z",
+  "updated_at": "2026-06-26T09:41:14Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5484,8 +5484,8 @@
       ],
       "language": "Python",
       "stars": 120,
-      "comment_count": 13,
-      "age_days": 2,
+      "comment_count": 19,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5500,7 +5500,7 @@
         },
         "number": 820,
         "state": "OPEN",
-        "title": "fix: send generateReport PeriodB window so EU CareLink import works",
+        "title": "fix: EU CareLink import (clientTime precision + drop PeriodB + 4xx body logging)",
         "url": "https://github.com/GlycemicGPT/GlycemicGPT/pull/820"
       },
       "score": 0.72,
@@ -6334,52 +6334,6 @@
         "state": "OPEN",
         "title": "Extend PI calculation from 100 to 200 decimal places",
         "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2909"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.86,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 743,
-      "title": "Low Handing Fruit Automation",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
-      "created_at": "2026-05-27T06:32:39Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$700"
-      ],
-      "language": "JavaScript",
-      "stars": 223,
-      "comment_count": 1220,
-      "age_days": 29,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "giaphutran12"
-        },
-        "number": 747,
-        "state": "OPEN",
-        "title": "Add low-hanging-fruit issue automation",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/747"
       },
       "score": 0.72,
       "score_breakdown": {
@@ -7263,6 +7217,52 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 743,
+      "title": "Low Handing Fruit Automation",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
+      "created_at": "2026-05-27T06:32:39Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$700"
+      ],
+      "language": "JavaScript",
+      "stars": 222,
+      "comment_count": 1225,
+      "age_days": 30,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "giaphutran12"
+        },
+        "number": 747,
+        "state": "OPEN",
+        "title": "Add low-hanging-fruit issue automation",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/747"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.86,
+        "effort": 0.5
       }
     }
   ]
