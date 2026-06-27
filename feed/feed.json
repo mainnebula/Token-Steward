@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27T04:04:48Z",
+  "updated_at": "2026-06-27T08:46:23Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5483,9 +5483,9 @@
         "Needs-Testers"
       ],
       "language": "Python",
-      "stars": 120,
-      "comment_count": 19,
-      "age_days": 3,
+      "stars": 122,
+      "comment_count": 21,
+      "age_days": 4,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
