@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-28T14:05:10Z",
+  "updated_at": "2026-06-28T19:40:56Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2202,8 +2202,8 @@
         "memory"
       ],
       "language": "TypeScript",
-      "stars": 18646,
-      "comment_count": 664,
+      "stars": 18647,
+      "comment_count": 714,
       "age_days": 12,
       "is_bug": true,
       "is_feature": true,
