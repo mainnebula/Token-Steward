@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-28T04:26:50Z",
+  "updated_at": "2026-06-28T09:22:42Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2181,6 +2181,45 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "elizaOS/eliza",
+      "number": 8434,
+      "title": "Cloud 10-user launch — tracker",
+      "url": "https://github.com/elizaOS/eliza/issues/8434",
+      "created_at": "2026-06-15T22:41:56Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "core-system",
+        "infrastructure",
+        "testing",
+        "performance",
+        "Plugin",
+        "security",
+        "connector",
+        "memory"
+      ],
+      "language": "TypeScript",
+      "stars": 18646,
+      "comment_count": 664,
+      "age_days": 12,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.9,
+        "confidence": 0.81,
+        "effort": 0.6
       }
     },
     {
@@ -5551,8 +5590,8 @@
       ],
       "language": "Python",
       "stars": 122,
-      "comment_count": 21,
-      "age_days": 4,
+      "comment_count": 25,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7194,48 +7233,6 @@
         "state": "OPEN",
         "title": "Add `facts_version` parameter to `module_extension`",
         "url": "https://github.com/bazelbuild/bazel/pull/29556"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "biomejs/biome",
-      "number": 9210,
-      "title": "💅 `useAnchorContent` false positive with Astro `Image` component",
-      "url": "https://github.com/biomejs/biome/issues/9210",
-      "created_at": "2026-02-23T12:22:47Z",
-      "labels": [
-        "good first issue",
-        "S-Help-wanted",
-        "A-Linter",
-        "S-Bug-confirmed",
-        "L-HTML"
-      ],
-      "language": "Rust",
-      "stars": 23947,
-      "comment_count": 3,
-      "age_days": 11,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "kbo4sho"
-        },
-        "number": 9270,
-        "state": "OPEN",
-        "title": "fix(lint): treat Astro Image component like img in useAnchorContent",
-        "url": "https://github.com/biomejs/biome/pull/9270"
       },
       "score": 0.72,
       "score_breakdown": {
