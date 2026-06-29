@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-29T16:00:51Z",
+  "updated_at": "2026-06-29T20:09:12Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4531,6 +4531,42 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 50384,
+      "title": "Locatilization for Vietnamese: font face error (unicode characters)",
+      "url": "https://github.com/keycloak/keycloak/issues/50384",
+      "created_at": "2026-06-28T02:24:46Z",
+      "labels": [
+        "kind/bug",
+        "area/account/ui",
+        "help wanted",
+        "team/community",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 35433,
+      "comment_count": 4,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "langgenius/dify",
       "number": 33122,
       "title": "Agent with Stability AI integration throws client-side error on image generation, but images are created successfully (visible in logs)",
@@ -7198,39 +7234,6 @@
         "title": "Update and minimize the JDK for Windows arm64 builds",
         "url": "https://github.com/bazelbuild/bazel/pull/28632"
       },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 28847,
-      "title": "Duplicate timestamp in the output of \"bazel version\"",
-      "url": "https://github.com/bazelbuild/bazel/issues/28847",
-      "created_at": "2026-03-01T20:09:12Z",
-      "labels": [
-        "type: bug",
-        "P3",
-        "team-ExternalDeps",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 25218,
-      "comment_count": 3,
-      "age_days": 9,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
