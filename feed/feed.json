@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-28T19:40:56Z",
+  "updated_at": "2026-06-29T04:46:43Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -902,6 +902,49 @@
         "reach": 0.6,
         "impact": 0.75,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "dwebagents/AgentPipe",
+      "number": 1663,
+      "title": "[bounty: 74 - 3 ETH] start building company town for contributing agents",
+      "url": "https://github.com/dwebagents/AgentPipe/issues/1663",
+      "created_at": "2026-06-28T06:29:19Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "bounty"
+      ],
+      "language": "Python",
+      "stars": 188,
+      "comment_count": 8,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Rachaelisa"
+        },
+        "number": 1749,
+        "state": "OPEN",
+        "title": "feat: Establish foundational frontend for agent company town",
+        "url": "https://github.com/dwebagents/AgentPipe/pull/1749"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -2202,9 +2245,9 @@
         "memory"
       ],
       "language": "TypeScript",
-      "stars": 18647,
-      "comment_count": 714,
-      "age_days": 12,
+      "stars": 18649,
+      "comment_count": 823,
+      "age_days": 13,
       "is_bug": true,
       "is_feature": true,
       "category": "security",
@@ -5590,8 +5633,8 @@
       ],
       "language": "Python",
       "stars": 122,
-      "comment_count": 25,
-      "age_days": 5,
+      "comment_count": 26,
+      "age_days": 6,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7193,47 +7236,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 29483,
-      "title": "Changing the schema for lockfile facts is hard to do safely",
-      "url": "https://github.com/bazelbuild/bazel/issues/29483",
-      "created_at": "2026-05-06T21:04:45Z",
-      "labels": [
-        "type: bug",
-        "P2",
-        "team-ExternalDeps",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 25401,
-      "comment_count": 4,
-      "age_days": 12,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "fmeum"
-        },
-        "number": 29556,
-        "state": "OPEN",
-        "title": "Add `facts_version` parameter to `module_extension`",
-        "url": "https://github.com/bazelbuild/bazel/pull/29556"
-      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
