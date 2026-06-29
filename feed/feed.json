@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-29T04:46:43Z",
+  "updated_at": "2026-06-29T11:16:42Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -902,6 +902,40 @@
         "reach": 0.6,
         "impact": 0.75,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "aryandas2911/DailyForge",
+      "number": 1664,
+      "title": "UI/UX Issue: Password Requirements Always Visible on Signup Form",
+      "url": "https://github.com/aryandas2911/DailyForge/issues/1664",
+      "created_at": "2026-06-27T14:50:34Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement",
+        "frontend",
+        "feature"
+      ],
+      "language": "JavaScript",
+      "stars": 149,
+      "comment_count": 6,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -3514,45 +3548,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/iceberg",
-      "number": 16493,
-      "title": "`remove_orphan_files` scopes `file_list_view` with raw string prefix matching",
-      "url": "https://github.com/apache/iceberg/issues/16493",
-      "created_at": "2026-05-20T21:34:33Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 8960,
-      "comment_count": 6,
-      "age_days": 21,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "wombatu-kun"
-        },
-        "number": 16498,
-        "state": "OPEN",
-        "title": "Spark: Fix DeleteOrphanFilesSparkAction sibling-prefix scope in compareToFileList",
-        "url": "https://github.com/apache/iceberg/pull/16498"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     },
     {
@@ -7024,6 +7019,39 @@
       }
     },
     {
+      "repo": "aryandas2911/DailyForge",
+      "number": 1666,
+      "title": "Accessibility & UX Issue: Low Contrast Heading and Placeholder Text Using Same Color Style",
+      "url": "https://github.com/aryandas2911/DailyForge/issues/1666",
+      "created_at": "2026-06-27T15:00:37Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "frontend",
+        "feature"
+      ],
+      "language": "JavaScript",
+      "stars": 149,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "asciimoo/hister",
       "number": 362,
       "title": "Deleted indexed local files cant be \"fully deleted\" on Windows",
@@ -7194,39 +7222,6 @@
       "stars": 25218,
       "comment_count": 3,
       "age_days": 9,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "bazelbuild/bazel",
-      "number": 29437,
-      "title": "[9.1.0] Crash on `files` attr in `archive_override`",
-      "url": "https://github.com/bazelbuild/bazel/issues/29437",
-      "created_at": "2026-04-30T16:12:30Z",
-      "labels": [
-        "type: bug",
-        "P2",
-        "team-ExternalDeps",
-        "help wanted"
-      ],
-      "language": "Java",
-      "stars": 25383,
-      "comment_count": 3,
-      "age_days": 13,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
