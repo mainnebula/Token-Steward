@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T10:04:00Z",
+  "updated_at": "2026-07-01T14:51:32Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -405,6 +405,40 @@
         "impact": 0.85,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "MervinPraison/PraisonAI",
+      "number": 2512,
+      "title": "Extract praisonai-code: incremental C0–C6 migration (agentic terminal CLI)",
+      "url": "https://github.com/MervinPraison/PraisonAI/issues/2512",
+      "created_at": "2026-07-01T08:34:30Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement",
+        "performance",
+        "claude"
+      ],
+      "language": "Python",
+      "stars": 8334,
+      "comment_count": 6,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.76,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.85,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -7188,47 +7222,6 @@
       "llm_receptivity": 0.7,
       "action": "fix",
       "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "apache/airflow",
-      "number": 62201,
-      "title": "structlog configuration fails with dict input",
-      "url": "https://github.com/apache/airflow/issues/62201",
-      "created_at": "2026-02-20T03:57:39Z",
-      "labels": [
-        "kind:bug",
-        "area:logging",
-        "good first issue",
-        "area:core"
-      ],
-      "language": "Python",
-      "stars": 44625,
-      "comment_count": 8,
-      "age_days": 21,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "SakshamSinghal20"
-        },
-        "number": 62258,
-        "state": "OPEN",
-        "title": "Fix structlog handling of dict arguments in logging calls",
-        "url": "https://github.com/apache/airflow/pull/62258"
-      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.6,
