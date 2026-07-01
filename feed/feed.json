@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T04:41:52Z",
+  "updated_at": "2026-07-01T10:04:00Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -189,6 +189,85 @@
       }
     },
     {
+      "repo": "elizaOS/eliza",
+      "number": 8792,
+      "title": "Agent proactively comments on shortcuts, slash commands, and view switches (scoped, rate-limited, dismissible)",
+      "url": "https://github.com/elizaOS/eliza/issues/8792",
+      "created_at": "2026-06-20T19:37:01Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "core-system",
+        "ux",
+        "feature",
+        "Plugin",
+        "security",
+        "memory"
+      ],
+      "language": "TypeScript",
+      "stars": 18660,
+      "comment_count": 11,
+      "age_days": 10,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.78,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.9,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "elizaOS/eliza",
+      "number": 8876,
+      "title": "Unified attachments & files (v1): preview-complete chat content, download/share everywhere, Files surface, knowledge linkage, and non-bytes rich objects",
+      "url": "https://github.com/elizaOS/eliza/issues/8876",
+      "created_at": "2026-06-22T06:21:04Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "Client: Telegram",
+        "Client: Discord",
+        "core-system",
+        "ui",
+        "ux",
+        "testing",
+        "feature",
+        "Plugin",
+        "security",
+        "connector",
+        "memory"
+      ],
+      "language": "TypeScript",
+      "stars": 18660,
+      "comment_count": 17,
+      "age_days": 9,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.78,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.9,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "keycloak/keycloak",
       "number": 46673,
       "title": "Raise minimum maximum number of `poolMaxSize` as value 3 shown in Keycloak example leads to acquisition timeout after switch to JDBC Ping",
@@ -222,85 +301,6 @@
         "reach": 0.6,
         "impact": 0.85,
         "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "elizaOS/eliza",
-      "number": 8792,
-      "title": "Agent proactively comments on shortcuts, slash commands, and view switches (scoped, rate-limited, dismissible)",
-      "url": "https://github.com/elizaOS/eliza/issues/8792",
-      "created_at": "2026-06-20T19:37:01Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "core-system",
-        "ux",
-        "feature",
-        "Plugin",
-        "security",
-        "memory"
-      ],
-      "language": "TypeScript",
-      "stars": 18623,
-      "comment_count": 8,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "security",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.77,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.9,
-        "confidence": 0.86,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "elizaOS/eliza",
-      "number": 8876,
-      "title": "Unified attachments & files (v1): preview-complete chat content, download/share everywhere, Files surface, knowledge linkage, and non-bytes rich objects",
-      "url": "https://github.com/elizaOS/eliza/issues/8876",
-      "created_at": "2026-06-22T06:21:04Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "Client: Telegram",
-        "Client: Discord",
-        "core-system",
-        "ui",
-        "ux",
-        "testing",
-        "feature",
-        "Plugin",
-        "security",
-        "connector",
-        "memory"
-      ],
-      "language": "TypeScript",
-      "stars": 18615,
-      "comment_count": 11,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "security",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.77,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.9,
-        "confidence": 0.86,
         "effort": 0.65
       }
     },
@@ -957,7 +957,7 @@
       ],
       "language": "JavaScript",
       "stars": 146,
-      "comment_count": 9,
+      "comment_count": 11,
       "age_days": 3,
       "is_bug": true,
       "is_feature": true,
@@ -979,7 +979,7 @@
     {
       "repo": "dwebagents/AgentPipe",
       "number": 1663,
-      "title": "[bounty: 74 - 3 ETH] start building company town for contributing agents",
+      "title": "[bounty: 74000 ETH] start building company town for contributing agents",
       "url": "https://github.com/dwebagents/AgentPipe/issues/1663",
       "created_at": "2026-06-28T06:29:19Z",
       "labels": [
@@ -991,9 +991,9 @@
         "bounty"
       ],
       "language": "Python",
-      "stars": 188,
-      "comment_count": 8,
-      "age_days": 0,
+      "stars": 195,
+      "comment_count": 19,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": true,
       "category": "documentation",
@@ -1215,6 +1215,38 @@
         "title": "Add \"none\" to token_endpoint_auth_methods_supported when CIMD feature is enabled",
         "url": "https://github.com/tnorimat/keycloak/pull/1102"
       },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "meshery/meshery",
+      "number": 20378,
+      "title": "[UI] Fix Telemetry sidebar icon visibility in light mode",
+      "url": "https://github.com/meshery/meshery/issues/20378",
+      "created_at": "2026-07-01T08:36:39Z",
+      "labels": [
+        "kind/bug",
+        "good first issue",
+        "first-timers-only"
+      ],
+      "language": "TypeScript",
+      "stars": 11324,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -2371,6 +2403,45 @@
         "reach": 0.6,
         "impact": 0.9,
         "confidence": 0.81,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "elizaOS/eliza",
+      "number": 8798,
+      "title": "Audit and e2e-test view-dependent actions: every in-view capability must have a registered view-dependent action + slash command, with per-view e2e coverage",
+      "url": "https://github.com/elizaOS/eliza/issues/8798",
+      "created_at": "2026-06-20T19:37:15Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "core-system",
+        "technical-debt",
+        "testing",
+        "Needs Testing",
+        "performance",
+        "Plugin",
+        "connector",
+        "memory"
+      ],
+      "language": "TypeScript",
+      "stars": 18660,
+      "comment_count": 6,
+      "age_days": 10,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
         "effort": 0.6
       }
     },
@@ -5358,6 +5429,45 @@
       }
     },
     {
+      "repo": "nexu-io/open-design",
+      "number": 4994,
+      "title": "[Bug]: Limited OpenRouter image models available (Only gemini-2.5-flash-image can used)",
+      "url": "https://github.com/nexu-io/open-design/issues/4994",
+      "created_at": "2026-07-01T07:23:49Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 73597,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "gp-alex-chen"
+        },
+        "number": 5004,
+        "state": "OPEN",
+        "title": "fix(media): route OpenRouter dedicated image models to /images endpoint",
+        "url": "https://github.com/nexu-io/open-design/pull/5004"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "opensearch-project/OpenSearch",
       "number": 21323,
       "title": "[BUG] warning log entries (stderr) from lucene on startup",
@@ -7125,113 +7235,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "apache/datafusion-ballista",
-      "number": 1671,
-      "title": "How to check the execution time of stages?",
-      "url": "https://github.com/apache/datafusion-ballista/issues/1671",
-      "created_at": "2026-05-09T08:32:03Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "user experience",
-        "web user interface"
-      ],
-      "language": "Rust",
-      "stars": 2028,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "milenkovicm"
-        },
-        "number": 1675,
-        "state": "OPEN",
-        "title": "fix: rest api calculates stage running time correctly",
-        "url": "https://github.com/apache/datafusion-ballista/pull/1675"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "aryandas2911/DailyForge",
-      "number": 1666,
-      "title": "Accessibility & UX Issue: Low Contrast Heading and Placeholder Text Using Same Color Style",
-      "url": "https://github.com/aryandas2911/DailyForge/issues/1666",
-      "created_at": "2026-06-27T15:00:37Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "frontend",
-        "feature"
-      ],
-      "language": "JavaScript",
-      "stars": 149,
-      "comment_count": 5,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "asciimoo/hister",
-      "number": 362,
-      "title": "Deleted indexed local files cant be \"fully deleted\" on Windows",
-      "url": "https://github.com/asciimoo/hister/issues/362",
-      "created_at": "2026-04-22T06:37:57Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "question"
-      ],
-      "language": "Go",
-      "stars": 814,
-      "comment_count": 15,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
       }
     }
   ]
