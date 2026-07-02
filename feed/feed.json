@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T14:20:47Z",
+  "updated_at": "2026-07-02T19:43:17Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2788,42 +2788,6 @@
       "stars": 33453,
       "comment_count": 5,
       "age_days": 18,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.74,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 48188,
-      "title": "[OID4VCI] Issuance with Authorization Code Flow assumes same client_id for offer creation and redemption",
-      "url": "https://github.com/keycloak/keycloak/issues/48188",
-      "created_at": "2026-04-17T10:23:17Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "area/oid4vc",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal",
-        "team/core-protocols"
-      ],
-      "language": "Java",
-      "stars": 34324,
-      "comment_count": 7,
-      "age_days": 24,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -5907,6 +5871,47 @@
       "llm_receptivity": 0.75,
       "action": "fix",
       "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "GeyserMC/Geyser",
+      "number": 6496,
+      "title": "Bedrock client (protocol 1001 / MC 26.x) disconnects on join when a long boss bar title is sent",
+      "url": "https://github.com/GeyserMC/Geyser/issues/6496",
+      "created_at": "2026-06-30T17:18:41Z",
+      "labels": [
+        "Confirmed Bug",
+        "Help Wanted",
+        "Priority: Medium",
+        "Good first issue"
+      ],
+      "language": "Java",
+      "stars": 5652,
+      "comment_count": 3,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "andreiusq"
+        },
+        "number": 6501,
+        "state": "OPEN",
+        "title": "Fix: truncate long boss bar titles before sending to Bedrock",
+        "url": "https://github.com/GeyserMC/Geyser/pull/6501"
+      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.45,
