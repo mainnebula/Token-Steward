@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T19:43:17Z",
+  "updated_at": "2026-07-03T03:55:04Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3741,6 +3741,40 @@
       }
     },
     {
+      "repo": "aryandas2911/DailyForge",
+      "number": 1670,
+      "title": "bug: CORS origin hardcoded to production Render URL in server.js — local frontend development is broken by default and requires manual source code edits, contradicting the Quick Start guide",
+      "url": "https://github.com/aryandas2911/DailyForge/issues/1670",
+      "created_at": "2026-06-29T18:43:48Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "backend",
+        "frontend"
+      ],
+      "language": "JavaScript",
+      "stars": 146,
+      "comment_count": 3,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.85,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "aws/aws-cdk",
       "number": 37221,
       "title": "aws-dynamodb: TableV2 with DynamoEventSource triggers deprecated TableGrantsProps#policyResource and #encryptedResource warnings during synth",
@@ -7200,39 +7234,6 @@
         "impact": 0.75,
         "confidence": 0.91,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/airflow",
-      "number": 62025,
-      "title": "API - Improve public get_dag_runs endpoint",
-      "url": "https://github.com/apache/airflow/issues/62025",
-      "created_at": "2026-02-16T15:22:02Z",
-      "labels": [
-        "kind:bug",
-        "area:performance",
-        "area:API",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 44381,
-      "comment_count": 10,
-      "age_days": 7,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.6
       }
     }
   ]
