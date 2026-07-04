@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T03:48:45Z",
+  "updated_at": "2026-07-04T08:47:23Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -972,9 +972,9 @@
         "size: small"
       ],
       "language": "Python",
-      "stars": 10229,
-      "comment_count": 12,
-      "age_days": 54,
+      "stars": 10629,
+      "comment_count": 14,
+      "age_days": 114,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -1072,8 +1072,8 @@
       ],
       "language": "JavaScript",
       "stars": 146,
-      "comment_count": 11,
-      "age_days": 3,
+      "comment_count": 13,
+      "age_days": 6,
       "is_bug": true,
       "is_feature": true,
       "category": "documentation",
@@ -4940,6 +4940,45 @@
       }
     },
     {
+      "repo": "medusajs/medusa",
+      "number": 15932,
+      "title": "500 TypeError (reading 'calculated_amount') instead of 400 \"do not have a price\" when adding a variant unpriced in the cart's region",
+      "url": "https://github.com/medusajs/medusa/issues/15932",
+      "created_at": "2026-07-03T11:45:15Z",
+      "labels": [
+        "good first issue",
+        "type: bug"
+      ],
+      "language": "TypeScript",
+      "stars": 34912,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Yashraj-Pradip-Haridas"
+        },
+        "number": 15936,
+        "state": "OPEN",
+        "title": "fix: guard calculatedPriceSet to avoid 500 instead of 400 on missing …",
+        "url": "https://github.com/medusajs/medusa/pull/15936"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "meshery/meshery",
       "number": 18411,
       "title": "[UI] MesherySettingsPerformanceComponent catch block swallows error details silently",
@@ -7187,47 +7226,6 @@
       "llm_receptivity": 0.7,
       "action": "fix",
       "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "anurag3407/career-pilot",
-      "number": 4085,
-      "title": "[UI] Navbar has broken breakpoint — avatar visible before nav links appear (md vs lg)",
-      "url": "https://github.com/anurag3407/career-pilot/issues/4085",
-      "created_at": "2026-06-14T16:16:29Z",
-      "labels": [
-        "good first issue",
-        "level:beginner",
-        "type:design",
-        "type:bug"
-      ],
-      "language": "JavaScript",
-      "stars": 120,
-      "comment_count": 8,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "advikdivekar"
-        },
-        "number": 4201,
-        "state": "OPEN",
-        "title": "fix(navbar): align avatar and mobile menu to lg breakpoint to remove half-state",
-        "url": "https://github.com/anurag3407/career-pilot/pull/4201"
-      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
