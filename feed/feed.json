@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T15:49:59Z",
+  "updated_at": "2026-07-06T20:08:01Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3467,6 +3467,45 @@
       "score_breakdown": {
         "reach": 0.6,
         "impact": 0.65,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "Hmbown/CodeWhale",
+      "number": 4042,
+      "title": "feat: Environment-level tool sandboxing for sub-agents (enforce tool_restrictions)",
+      "url": "https://github.com/Hmbown/CodeWhale/issues/4042",
+      "created_at": "2026-07-06T01:58:18Z",
+      "labels": [
+        "bug",
+        "enhancement"
+      ],
+      "language": "Rust",
+      "stars": 39506,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "heyparth1"
+        },
+        "number": 3969,
+        "state": "OPEN",
+        "title": "Add per-sub-agent provider routing",
+        "url": "https://github.com/Hmbown/CodeWhale/pull/3969"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
       }
@@ -7199,39 +7238,6 @@
         "impact": 0.7,
         "confidence": 0.93,
         "effort": 0.8
-      }
-    },
-    {
-      "repo": "anurag3407/career-pilot",
-      "number": 4082,
-      "title": "[UI] SkeletonProfile uses hardcoded dark colors — broken in light mode",
-      "url": "https://github.com/anurag3407/career-pilot/issues/4082",
-      "created_at": "2026-06-14T16:14:15Z",
-      "labels": [
-        "good first issue",
-        "level:beginner",
-        "type:design",
-        "type:bug"
-      ],
-      "language": "JavaScript",
-      "stars": 117,
-      "comment_count": 5,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
       }
     }
   ]
