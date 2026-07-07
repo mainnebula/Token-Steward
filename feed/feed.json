@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-07T04:03:59Z",
+  "updated_at": "2026-07-07T09:55:02Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2971,6 +2971,42 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 50384,
+      "title": "Locatilization for Vietnamese: font face error (unicode characters)",
+      "url": "https://github.com/keycloak/keycloak/issues/50384",
+      "created_at": "2026-06-28T02:24:46Z",
+      "labels": [
+        "kind/bug",
+        "area/account/ui",
+        "help wanted",
+        "team/community",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 35532,
+      "comment_count": 5,
+      "age_days": 9,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "koordinator-sh/koordinator",
       "number": 2812,
       "title": "[proposal] Use protobuf as the default content type for native Kubernetes API clients to improve performance",
@@ -4817,42 +4853,6 @@
       "language": "Java",
       "stars": 34789,
       "comment_count": 3,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 50384,
-      "title": "Locatilization for Vietnamese: font face error (unicode characters)",
-      "url": "https://github.com/keycloak/keycloak/issues/50384",
-      "created_at": "2026-06-28T02:24:46Z",
-      "labels": [
-        "kind/bug",
-        "area/account/ui",
-        "help wanted",
-        "team/community",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump"
-      ],
-      "language": "Java",
-      "stars": 35433,
-      "comment_count": 4,
       "age_days": 1,
       "is_bug": true,
       "is_feature": false,
