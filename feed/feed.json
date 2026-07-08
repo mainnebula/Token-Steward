@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-08T14:31:34Z",
+  "updated_at": "2026-07-08T19:45:12Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5345,6 +5345,39 @@
       }
     },
     {
+      "repo": "nesquena/hermes-webui",
+      "number": 5701,
+      "title": "iOS Safari: Send button overlapped by iPad keyboard",
+      "url": "https://github.com/nesquena/hermes-webui/issues/5701",
+      "created_at": "2026-07-06T19:36:22Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "ux",
+        "mobile"
+      ],
+      "language": "Python",
+      "stars": 15664,
+      "comment_count": 3,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "nexu-io/open-design",
       "number": 1399,
       "title": "Newly started sessions return to home quickly and auto-terminate if no task is entered within about one minute",
@@ -7200,39 +7233,6 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "affaan-m/everything-claude-code",
-      "number": 297,
-      "title": "Bug: README 'Step 3: Start Using' shows /plan but plugin system requires /everything-claude-code:plan",
-      "url": "https://github.com/affaan-m/everything-claude-code/issues/297",
-      "created_at": "2026-02-26T11:03:58Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "question",
-        "docs"
-      ],
-      "language": "JavaScript",
-      "stars": 53395,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.7,
-        "confidence": 0.94,
         "effort": 0.65
       }
     }
