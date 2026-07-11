@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T03:24:42Z",
+  "updated_at": "2026-07-11T08:06:17Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1054,40 +1054,6 @@
         "reach": 0.6,
         "impact": 0.75,
         "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "aryandas2911/DailyForge",
-      "number": 1664,
-      "title": "UI/UX Issue: Password Requirements Always Visible on Signup Form",
-      "url": "https://github.com/aryandas2911/DailyForge/issues/1664",
-      "created_at": "2026-06-27T14:50:34Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "enhancement",
-        "frontend",
-        "feature"
-      ],
-      "language": "JavaScript",
-      "stars": 146,
-      "comment_count": 13,
-      "age_days": 6,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.75,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -2171,6 +2137,48 @@
         "reach": 0.6,
         "impact": 0.75,
         "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "aryandas2911/DailyForge",
+      "number": 1664,
+      "title": "UI/UX Issue: Password Requirements Always Visible on Signup Form",
+      "url": "https://github.com/aryandas2911/DailyForge/issues/1664",
+      "created_at": "2026-06-27T14:50:34Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement",
+        "frontend",
+        "feature"
+      ],
+      "language": "JavaScript",
+      "stars": 146,
+      "comment_count": 15,
+      "age_days": 13,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "saurabhhhcodes"
+        },
+        "number": 1827,
+        "state": "OPEN",
+        "title": "fix: hide password requirements until password field is focused (#1664)",
+        "url": "https://github.com/aryandas2911/DailyForge/pull/1827"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.91,
         "effort": 0.6
       }
     },
