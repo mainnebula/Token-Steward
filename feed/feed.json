@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-10T19:44:01Z",
+  "updated_at": "2026-07-11T03:24:42Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5725,6 +5725,47 @@
       }
     },
     {
+      "repo": "nexu-io/open-design",
+      "number": 5414,
+      "title": "Fix layering for saved page snapshot popover",
+      "url": "https://github.com/nexu-io/open-design/issues/5414",
+      "created_at": "2026-07-10T06:40:49Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "ux"
+      ],
+      "language": "TypeScript",
+      "stars": 77154,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "xxiaoxiong"
+        },
+        "number": 5460,
+        "state": "OPEN",
+        "title": "fix(web): scope saved page snapshot popover to Browser pane (#5414)",
+        "url": "https://github.com/nexu-io/open-design/pull/5460"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "opensearch-project/OpenSearch",
       "number": 21323,
       "title": "[BUG] warning log entries (stderr) from lucene on startup",
@@ -7205,38 +7246,6 @@
         "impact": 0.6,
         "confidence": 0.93,
         "effort": 0.8
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 6391,
-      "title": "[Bug]: useMultiSSE does not reconnect when session ID changes",
-      "url": "https://github.com/aden-hive/hive/issues/6391",
-      "created_at": "2026-03-14T18:50:32Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "size: medium"
-      ],
-      "language": "Python",
-      "stars": 9437,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     }
   ]
