@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T03:36:22Z",
+  "updated_at": "2026-07-12T08:27:41Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3006,6 +3006,50 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 50410,
+      "title": "Organization Membership mapper omits the claim for users with zero organizations instead of emitting an empty value",
+      "url": "https://github.com/keycloak/keycloak/issues/50410",
+      "created_at": "2026-06-29T08:22:43Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "team/core-iam",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump",
+        "area/organizations"
+      ],
+      "language": "Java",
+      "stars": 35610,
+      "comment_count": 7,
+      "age_days": 13,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Develop-KIM"
+        },
+        "number": 50745,
+        "state": "OPEN",
+        "title": "Add option to include empty organization claim",
+        "url": "https://github.com/keycloak/keycloak/pull/50745"
+      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.6,
@@ -7205,38 +7249,6 @@
       ],
       "language": "Python",
       "stars": 9000,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.8
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 6174,
-      "title": "quickstart: uv install succeeds in-script but may still be unavailable in user shell session",
-      "url": "https://github.com/aden-hive/hive/issues/6174",
-      "created_at": "2026-03-11T05:27:16Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 9121,
       "comment_count": 2,
       "age_days": 0,
       "is_bug": true,
