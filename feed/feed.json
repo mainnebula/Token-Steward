@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13T14:51:17Z",
+  "updated_at": "2026-07-13T19:39:41Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1296,6 +1296,42 @@
         "title": "Add \"none\" to token_endpoint_auth_methods_supported when CIMD feature is enabled",
         "url": "https://github.com/tnorimat/keycloak/pull/1102"
       },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 50700,
+      "title": "Exporting a realm with users says it needs file parameter, which is provided",
+      "url": "https://github.com/keycloak/keycloak/issues/50700",
+      "created_at": "2026-07-08T14:57:42Z",
+      "labels": [
+        "kind/bug",
+        "area/admin/cli",
+        "help wanted",
+        "team/cloud-native",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 35638,
+      "comment_count": 7,
+      "age_days": 5,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -3030,9 +3066,9 @@
         "area/organizations"
       ],
       "language": "Java",
-      "stars": 35610,
-      "comment_count": 7,
-      "age_days": 13,
+      "stars": 35638,
+      "comment_count": 8,
+      "age_days": 14,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7222,50 +7258,6 @@
         "impact": 0.6,
         "confidence": 0.93,
         "effort": 0.8
-      }
-    },
-    {
-      "repo": "moby/moby",
-      "number": 52661,
-      "title": "Overlay ARP stale entries still present on 29.5.0 — fix from #50236 incomplete",
-      "url": "https://github.com/moby/moby/issues/52661",
-      "created_at": "2026-05-20T07:50:06Z",
-      "labels": [
-        "status/0-triage",
-        "kind/bug",
-        "area/networking",
-        "area/swarm",
-        "area/networking/d/overlay",
-        "help wanted",
-        "version/29.5"
-      ],
-      "language": "Go",
-      "stars": 71904,
-      "comment_count": 8,
-      "age_days": 54,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "danyalahmed1995"
-        },
-        "number": 52697,
-        "state": "OPEN",
-        "title": "libnetwork/overlay: continue neighbor cleanup after FDB delete failure",
-        "url": "https://github.com/moby/moby/pull/52697"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
       }
     }
   ]
