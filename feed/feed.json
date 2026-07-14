@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T08:20:51Z",
+  "updated_at": "2026-07-14T14:01:14Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1320,8 +1320,8 @@
         "status/auto-bump"
       ],
       "language": "Java",
-      "stars": 35643,
-      "comment_count": 8,
+      "stars": 35649,
+      "comment_count": 9,
       "age_days": 5,
       "is_bug": true,
       "is_feature": false,
