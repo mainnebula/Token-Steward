@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15T02:58:24Z",
+  "updated_at": "2026-07-15T08:26:35Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4438,6 +4438,39 @@
       }
     },
     {
+      "repo": "gitbutlerapp/gitbutler",
+      "number": 14722,
+      "title": "Windows installer always creates a desktop shortcut",
+      "url": "https://github.com/gitbutlerapp/gitbutler/issues/14722",
+      "created_at": "2026-07-13T15:05:48Z",
+      "labels": [
+        "bug",
+        "os:windows",
+        "distribution",
+        "help wanted"
+      ],
+      "language": "Rust",
+      "stars": 21296,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "google-gemini/gemini-cli",
       "number": 20656,
       "title": "Verbose mode shows minimal info for inline audio/video data",
@@ -7226,38 +7259,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 6015,
-      "title": "[Bug]: Quickstart setup output lists \"Step 3\" twice",
-      "url": "https://github.com/aden-hive/hive/issues/6015",
-      "created_at": "2026-03-08T04:14:01Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 9000,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.8
       }
     }
   ]
