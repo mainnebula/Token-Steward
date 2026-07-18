@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-18T03:12:37Z",
+  "updated_at": "2026-07-18T08:03:34Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1054,49 +1054,6 @@
         "reach": 0.6,
         "impact": 0.75,
         "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "dwebagents/AgentPipe",
-      "number": 1663,
-      "title": "[bounty: 74000 ETH] start building company town for contributing agents",
-      "url": "https://github.com/dwebagents/AgentPipe/issues/1663",
-      "created_at": "2026-06-28T06:29:19Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "bounty"
-      ],
-      "language": "Python",
-      "stars": 198,
-      "comment_count": 21,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Rachaelisa"
-        },
-        "number": 1749,
-        "state": "OPEN",
-        "title": "feat: Establish foundational frontend for agent company town",
-        "url": "https://github.com/dwebagents/AgentPipe/pull/1749"
-      },
-      "score": 0.75,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.91,
         "effort": 0.65
       }
     },
@@ -2524,6 +2481,49 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "dwebagents/AgentPipe",
+      "number": 1663,
+      "title": "[bounty: 74000 ETH] start building company town for contributing agents",
+      "url": "https://github.com/dwebagents/AgentPipe/issues/1663",
+      "created_at": "2026-06-28T06:29:19Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "bounty"
+      ],
+      "language": "Python",
+      "stars": 204,
+      "comment_count": 16,
+      "age_days": 20,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Rachaelisa"
+        },
+        "number": 1749,
+        "state": "OPEN",
+        "title": "feat: Establish foundational frontend for agent company town",
+        "url": "https://github.com/dwebagents/AgentPipe/pull/1749"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.91,
+        "effort": 0.6
       }
     },
     {
