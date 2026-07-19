@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19T03:32:31Z",
+  "updated_at": "2026-07-19T08:28:54Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1253,42 +1253,6 @@
         "title": "Add \"none\" to token_endpoint_auth_methods_supported when CIMD feature is enabled",
         "url": "https://github.com/tnorimat/keycloak/pull/1102"
       },
-      "score": 0.75,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 50700,
-      "title": "Exporting a realm with users says it needs file parameter, which is provided",
-      "url": "https://github.com/keycloak/keycloak/issues/50700",
-      "created_at": "2026-07-08T14:57:42Z",
-      "labels": [
-        "kind/bug",
-        "area/admin/cli",
-        "help wanted",
-        "team/cloud-native",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump"
-      ],
-      "language": "Java",
-      "stars": 35649,
-      "comment_count": 9,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -3085,6 +3049,50 @@
         "state": "OPEN",
         "title": "Add option to include empty organization claim",
         "url": "https://github.com/keycloak/keycloak/pull/50745"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 50700,
+      "title": "Exporting a realm with users says it needs file parameter, which is provided",
+      "url": "https://github.com/keycloak/keycloak/issues/50700",
+      "created_at": "2026-07-08T14:57:42Z",
+      "labels": [
+        "kind/bug",
+        "area/admin/cli",
+        "help wanted",
+        "team/cloud-native",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 35726,
+      "comment_count": 10,
+      "age_days": 10,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "AkashKumar7902"
+        },
+        "number": 51011,
+        "state": "OPEN",
+        "title": "Clarify error when multiple export targets are configured",
+        "url": "https://github.com/keycloak/keycloak/pull/51011"
       },
       "score": 0.74,
       "score_breakdown": {
