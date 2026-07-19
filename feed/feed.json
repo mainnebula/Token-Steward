@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19T13:39:34Z",
+  "updated_at": "2026-07-19T19:15:58Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -7126,52 +7126,6 @@
       }
     },
     {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2885,
-      "title": "Calculate the exact value of PI",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2885",
-      "created_at": "2026-05-31T13:00:19Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$1.2k"
-      ],
-      "language": "JavaScript",
-      "stars": 213,
-      "comment_count": 29,
-      "age_days": 16,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "guanglongcf-coder"
-        },
-        "number": 2909,
-        "state": "OPEN",
-        "title": "Extend PI calculation from 100 to 200 decimal places",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2909"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.86,
-        "effort": 0.6
-      }
-    },
-    {
       "repo": "aden-hive/hive",
       "number": 5682,
       "title": "GitGuardian alert: derive credential IDs from fixtures instead of hardcoding",
@@ -7232,6 +7186,51 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 2885,
+      "title": "Calculate the exact value of PI",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2885",
+      "created_at": "2026-05-31T13:00:19Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "$1.2k"
+      ],
+      "language": "JavaScript",
+      "stars": 243,
+      "comment_count": 30,
+      "age_days": 49,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "guanglongcf-coder"
+        },
+        "number": 2909,
+        "state": "OPEN",
+        "title": "Extend PI calculation from 100 to 200 decimal places",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2909"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.86,
+        "effort": 0.5
       }
     },
     {
