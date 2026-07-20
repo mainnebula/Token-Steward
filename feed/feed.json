@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20T14:23:33Z",
+  "updated_at": "2026-07-20T19:51:22Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6745,6 +6745,37 @@
       }
     },
     {
+      "repo": "KaotoIO/kaoto",
+      "number": 3509,
+      "title": "Kaoto combines all required fields coming from oneOf array",
+      "url": "https://github.com/KaotoIO/kaoto/issues/3509",
+      "created_at": "2026-07-20T13:07:13Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "TypeScript",
+      "stars": 110,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "LearningCircuit/local-deep-research",
       "number": 3875,
       "title": "Misleading API-key UX for openai_endpoint provider — users think key is required",
@@ -7189,20 +7220,20 @@
       }
     },
     {
-      "repo": "helm/helm",
-      "number": 31866,
-      "title": "Provenance file chart.yaml doesn't match the source",
-      "url": "https://github.com/helm/helm/issues/31866",
-      "created_at": "2026-02-26T12:37:00Z",
+      "repo": "apache/dolphinscheduler",
+      "number": 18389,
+      "title": "[Bug] [workflow define] Datax wants to use resource file error",
+      "url": "https://github.com/apache/dolphinscheduler/issues/18389",
+      "created_at": "2026-07-02T08:43:09Z",
       "labels": [
-        "help wanted",
         "bug",
-        "v4.x"
+        "help wanted",
+        "backend"
       ],
-      "language": "Go",
-      "stars": 30019,
-      "comment_count": 8,
-      "age_days": 143,
+      "language": "Java",
+      "stars": 14386,
+      "comment_count": 3,
+      "age_days": 18,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7210,67 +7241,14 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "karimzakzouk"
-        },
-        "number": 31997,
-        "state": "OPEN",
-        "title": "fix(provenance): use flow style for arrays to avoid PGP dash-escaping",
-        "url": "https://github.com/helm/helm/pull/31997"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.5
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2885,
-      "title": "Calculate the exact value of PI",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2885",
-      "created_at": "2026-05-31T13:00:19Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "$1.2k"
-      ],
-      "language": "JavaScript",
-      "stars": 243,
-      "comment_count": 30,
-      "age_days": 49,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "guanglongcf-coder"
-        },
-        "number": 2909,
-        "state": "OPEN",
-        "title": "Extend PI calculation from 100 to 200 decimal places",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2909"
-      },
-      "score": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.86,
-        "effort": 0.5
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
       }
     }
   ]
