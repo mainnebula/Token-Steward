@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T19:37:12Z",
+  "updated_at": "2026-07-23T03:31:18Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -7066,52 +7066,6 @@
     },
     {
       "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2850,
-      "title": "upload endpoint accepts empty file submissions as successful uploads",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2850",
-      "created_at": "2026-05-31T12:42:16Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "language": "JavaScript",
-      "stars": 177,
-      "comment_count": 14,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "pinehill99"
-        },
-        "number": 2851,
-        "state": "OPEN",
-        "title": "fix(api): reject empty upload submissions",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2851"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
       "number": 2883,
       "title": "Calculate the exact value of PI #2872",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2883",
@@ -7211,6 +7165,45 @@
       "llm_receptivity": 0.75,
       "action": "fix",
       "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "agentscope-ai/agentscope-java",
+      "number": 2345,
+      "title": "[Bug]: agent name contains space resulting gpt model bad request error",
+      "url": "https://github.com/agentscope-ai/agentscope-java/issues/2345",
+      "created_at": "2026-07-21T12:59:55Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 4657,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "hhbin2026"
+        },
+        "number": 2346,
+        "state": "OPEN",
+        "title": "fix(models): sanitize name field in OpenAIMessageConverter to satisfy…",
+        "url": "https://github.com/agentscope-ai/agentscope-java/pull/2346"
+      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.45,
