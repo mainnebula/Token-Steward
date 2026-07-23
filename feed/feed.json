@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23T08:40:57Z",
+  "updated_at": "2026-07-23T14:21:44Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4286,7 +4286,7 @@
       "language": "Java",
       "stars": 14675,
       "comment_count": 3,
-      "age_days": 1,
+      "age_days": 2,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
