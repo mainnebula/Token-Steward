@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-25T03:23:58Z",
+  "updated_at": "2026-07-25T08:17:16Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6034,6 +6034,46 @@
       }
     },
     {
+      "repo": "AgentWrapper/agent-orchestrator",
+      "number": 3089,
+      "title": "[Tooling]: fix or remove the repo Prettier setup",
+      "url": "https://github.com/AgentWrapper/agent-orchestrator/issues/3089",
+      "created_at": "2026-07-25T06:19:37Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "needs-triage"
+      ],
+      "language": "Go",
+      "stars": 8560,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "AshutoshIIT1234"
+        },
+        "number": 3090,
+        "state": "OPEN",
+        "title": "chore: remove partial prettier setup",
+        "url": "https://github.com/AgentWrapper/agent-orchestrator/pull/3090"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "AnalyseDeCircuit/oxideterm",
       "number": 20,
       "title": "1.0.4 创建Session 报错：modals.new_connection.connect_failed",
@@ -7213,37 +7253,6 @@
         "impact": 0.6,
         "confidence": 0.93,
         "effort": 0.8
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5845,
-      "title": "[Bug]: _refresh_credential returns stale credential when refresh fails",
-      "url": "https://github.com/aden-hive/hive/issues/5845",
-      "created_at": "2026-03-05T09:19:49Z",
-      "labels": [
-        "bug",
-        "enhancement"
-      ],
-      "language": "Python",
-      "stars": 8779,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
       }
     }
   ]
