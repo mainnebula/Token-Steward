@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24T19:40:14Z",
+  "updated_at": "2026-07-25T03:23:58Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1139,6 +1139,48 @@
         "reach": 0.6,
         "impact": 0.75,
         "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "hashicorp/terraform-provider-aws",
+      "number": 49066,
+      "title": "[Bug]: aws_elasticache_cluster , redis oss does not support transit_encryption_enabled",
+      "url": "https://github.com/hashicorp/terraform-provider-aws/issues/49066",
+      "created_at": "2026-07-22T13:57:05Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "good first issue",
+        "service/elasticache",
+        "service/vpc"
+      ],
+      "language": "Go",
+      "stars": 11000,
+      "comment_count": 5,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Rohitpr05"
+        },
+        "number": 49103,
+        "state": "OPEN",
+        "title": "docs: clarify transit_encryption_enabled support for aws_elasticache_cluster",
+        "url": "https://github.com/hashicorp/terraform-provider-aws/pull/49103"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.85,
+        "confidence": 0.86,
         "effort": 0.65
       }
     },
@@ -4656,48 +4698,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "hashicorp/terraform-provider-aws",
-      "number": 49066,
-      "title": "[Bug]: aws_elasticache_cluster , redis oss does not support transit_encryption_enabled",
-      "url": "https://github.com/hashicorp/terraform-provider-aws/issues/49066",
-      "created_at": "2026-07-22T13:57:05Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "good first issue",
-        "service/elasticache",
-        "service/vpc"
-      ],
-      "language": "Go",
-      "stars": 11000,
-      "comment_count": 4,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Rohitpr05"
-        },
-        "number": 49103,
-        "state": "OPEN",
-        "title": "docs: clarify transit_encryption_enabled support for aws_elasticache_cluster",
-        "url": "https://github.com/hashicorp/terraform-provider-aws/pull/49103"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.86,
-        "effort": 0.65
       }
     },
     {
