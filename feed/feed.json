@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-25T13:50:09Z",
+  "updated_at": "2026-07-25T19:18:36Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3683,6 +3683,55 @@
       }
     },
     {
+      "repo": "SecureBananaLabs/bug-bounty",
+      "number": 11398,
+      "title": "Automate Bug Detection and Reviews",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/11398",
+      "created_at": "2026-07-25T09:51:18Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "bug bounty",
+        "AI agent friendly",
+        "bounty",
+        "💎 Bounty",
+        "$780",
+        "$1k",
+        "$1.2k"
+      ],
+      "language": "JavaScript",
+      "stars": 249,
+      "comment_count": 40,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "0xhermes-28"
+        },
+        "number": 11407,
+        "state": "OPEN",
+        "title": "Fix errorHandler to return Zod validation error details",
+        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/11407"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "actualbudget/actual",
       "number": 7303,
       "title": "[Bug]: Append to notes rule not working if a note already exists",
@@ -7221,38 +7270,6 @@
         "impact": 0.85,
         "confidence": 0.86,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "aden-hive/hive",
-      "number": 5682,
-      "title": "GitGuardian alert: derive credential IDs from fixtures instead of hardcoding",
-      "url": "https://github.com/aden-hive/hive/issues/5682",
-      "created_at": "2026-03-03T09:17:37Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "size: small"
-      ],
-      "language": "Python",
-      "stars": 8643,
-      "comment_count": 2,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.6,
-        "confidence": 0.93,
-        "effort": 0.8
       }
     }
   ]
