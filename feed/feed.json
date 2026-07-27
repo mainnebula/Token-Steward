@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T03:46:17Z",
+  "updated_at": "2026-07-27T10:03:49Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4501,6 +4501,43 @@
       }
     },
     {
+      "repo": "fullsend-ai/fullsend",
+      "number": 5629,
+      "title": "Fix ci-workflows.md: add reusable workflow carve-out for github.workflow",
+      "url": "https://github.com/fullsend-ai/fullsend/issues/5629",
+      "created_at": "2026-07-27T08:01:25Z",
+      "labels": [
+        "good first issue",
+        "ready-to-code",
+        "type/bug",
+        "priority/medium",
+        "component/ci",
+        "component/docs",
+        "documentation",
+        "ready-for-triage"
+      ],
+      "language": "Go",
+      "stars": 100,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.4,
+        "impact": 0.85,
+        "confidence": 0.91,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "gitbutlerapp/gitbutler",
       "number": 13297,
       "title": "Agent changes not auto-assigned to virtual branches",
@@ -7224,52 +7261,6 @@
         "impact": 0.75,
         "confidence": 0.91,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2883,
-      "title": "Calculate the exact value of PI #2872",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2883",
-      "created_at": "2026-05-31T13:00:14Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$1.2k"
-      ],
-      "language": "JavaScript",
-      "stars": 213,
-      "comment_count": 23,
-      "age_days": 16,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "guanglongcf-coder"
-        },
-        "number": 2989,
-        "state": "OPEN",
-        "title": "Extend PI calculation to 300 decimal places",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2989"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.86,
-        "effort": 0.6
       }
     }
   ]
