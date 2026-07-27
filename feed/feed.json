@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T10:03:49Z",
+  "updated_at": "2026-07-27T14:51:51Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3732,6 +3732,40 @@
       }
     },
     {
+      "repo": "TeamNewPipe/NewPipe",
+      "number": 13710,
+      "title": "[YouTube] Live Stream fails after 30 seconds",
+      "url": "https://github.com/TeamNewPipe/NewPipe/issues/13710",
+      "created_at": "2026-07-21T17:03:27Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "ASAP",
+        "YouTube",
+        "requires extractor change"
+      ],
+      "language": "Java",
+      "stars": 39129,
+      "comment_count": 8,
+      "age_days": 5,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": false,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.86,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "actualbudget/actual",
       "number": 7303,
       "title": "[Bug]: Append to notes rule not working if a note already exists",
@@ -7208,52 +7242,6 @@
         "state": "OPEN",
         "title": "fix(api): keep registration token subject in sync",
         "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2846"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2847,
-      "title": "auth refresh endpoint issues tokens without verifying the requester",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2847",
-      "created_at": "2026-05-31T12:35:50Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "language": "JavaScript",
-      "stars": 177,
-      "comment_count": 8,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "pinehill99"
-        },
-        "number": 2848,
-        "state": "OPEN",
-        "title": "fix(api): authenticate auth refresh",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2848"
       },
       "score": 0.72,
       "score_breakdown": {
