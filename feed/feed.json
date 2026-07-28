@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27T19:45:33Z",
+  "updated_at": "2026-07-28T03:17:32Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1295,6 +1295,42 @@
         "title": "Add \"none\" to token_endpoint_auth_methods_supported when CIMD feature is enabled",
         "url": "https://github.com/tnorimat/keycloak/pull/1102"
       },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 51131,
+      "title": "Warning \"Proactive closing of the session was missed - refinements are needed to TransactionSessionHandler related logic\" appears",
+      "url": "https://github.com/keycloak/keycloak/issues/51131",
+      "created_at": "2026-07-24T10:45:58Z",
+      "labels": [
+        "kind/bug",
+        "area/core",
+        "help wanted",
+        "team/core-shared",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 35860,
+      "comment_count": 14,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -3745,9 +3781,9 @@
         "requires extractor change"
       ],
       "language": "Java",
-      "stars": 39129,
-      "comment_count": 8,
-      "age_days": 5,
+      "stars": 39132,
+      "comment_count": 9,
+      "age_days": 6,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -7197,52 +7233,6 @@
       "llm_receptivity": 0.7,
       "action": "fix",
       "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "SecureBananaLabs/bug-bounty",
-      "number": 2845,
-      "title": "registerUser access token can reference a different user id",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/2845",
-      "created_at": "2026-05-31T12:31:25Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "bug bounty",
-        "AI agent friendly",
-        "bounty",
-        "💎 Bounty",
-        "$780"
-      ],
-      "language": "JavaScript",
-      "stars": 177,
-      "comment_count": 7,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "pinehill99"
-        },
-        "number": 2846,
-        "state": "OPEN",
-        "title": "fix(api): keep registration token subject in sync",
-        "url": "https://github.com/SecureBananaLabs/bug-bounty/pull/2846"
-      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.5,
