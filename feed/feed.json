@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28T08:46:22Z",
+  "updated_at": "2026-07-28T14:26:36Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3781,7 +3781,7 @@
         "requires extractor change"
       ],
       "language": "Java",
-      "stars": 39132,
+      "stars": 39135,
       "comment_count": 9,
       "age_days": 6,
       "is_bug": true,
@@ -5219,6 +5219,48 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 51182,
+      "title": "Large HTTP/2 request headers are rejected with a bare 500 and no log; same request works over HTTP/1.1",
+      "url": "https://github.com/keycloak/keycloak/issues/51182",
+      "created_at": "2026-07-27T09:11:19Z",
+      "labels": [
+        "kind/bug",
+        "priority/important",
+        "area/dist/quarkus",
+        "help wanted",
+        "team/cloud-native"
+      ],
+      "language": "Java",
+      "stars": 35871,
+      "comment_count": 4,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "thejamesgore"
+        },
+        "number": 51246,
+        "state": "OPEN",
+        "title": "Align the HTTP/2 max header list size with the HTTP/1.1 max header size",
+        "url": "https://github.com/keycloak/keycloak/pull/51246"
+      },
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
@@ -7207,38 +7249,6 @@
         "impact": 0.75,
         "confidence": 0.86,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "Scottcjn/Rustchain",
-      "number": 775,
-      "title": "[BOUNTY] Report a bug with reproduction steps (0.5 RTC)",
-      "url": "https://github.com/Scottcjn/Rustchain/issues/775",
-      "created_at": "2026-03-09T19:09:30Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "bounty"
-      ],
-      "language": "Python",
-      "stars": 156,
-      "comment_count": 13,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
       }
     }
   ]
