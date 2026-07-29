@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T03:20:06Z",
+  "updated_at": "2026-07-29T08:51:08Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1514,6 +1514,46 @@
         "state": "OPEN",
         "title": "fix(daemon, packaged): unbreak GUI-launched agent detection on minimal PATHs (#442)",
         "url": "https://github.com/nexu-io/open-design/pull/614"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 6192,
+      "title": "Windows: pnpm guard packaged-leaf check fails on a CRLF working tree (same root cause as #5175, different check)",
+      "url": "https://github.com/nexu-io/open-design/issues/6192",
+      "created_at": "2026-07-29T01:35:49Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 82388,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "jfpaezl"
+        },
+        "number": 6195,
+        "state": "OPEN",
+        "title": "fix(guard): make ci.yml comparisons EOL-agnostic on Windows",
+        "url": "https://github.com/nexu-io/open-design/pull/6195"
       },
       "score": 0.75,
       "score_breakdown": {
@@ -7218,37 +7258,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "QuantumNous/new-api",
-      "number": 3022,
-      "title": "Google Vertex: Gemini频繁报错 400 relay error: `edit` functionDeclaration `parameters.edits.lines` schema didn't specify the schema type field.",
-      "url": "https://github.com/QuantumNous/new-api/issues/3022",
-      "created_at": "2026-02-26T00:58:39Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 20972,
-      "comment_count": 5,
-      "age_days": 18,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.6
       }
     }
   ]
