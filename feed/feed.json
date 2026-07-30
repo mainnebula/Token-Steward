@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30T14:21:53Z",
+  "updated_at": "2026-07-30T19:43:39Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -7240,9 +7240,9 @@
         "requires extractor change"
       ],
       "language": "Java",
-      "stars": 39146,
-      "comment_count": 10,
-      "age_days": 8,
+      "stars": 39154,
+      "comment_count": 11,
+      "age_days": 9,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
