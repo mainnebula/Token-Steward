@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T03:36:27Z",
+  "updated_at": "2026-07-31T09:12:04Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6547,6 +6547,48 @@
       }
     },
     {
+      "repo": "Gentleman-Programming/gentle-ai",
+      "number": 1983,
+      "title": "fix(windows): 19 tests fail on the newly unblocked Windows lane",
+      "url": "https://github.com/Gentleman-Programming/gentle-ai/issues/1983",
+      "created_at": "2026-07-29T19:56:03Z",
+      "labels": [
+        "help wanted",
+        "status:approved",
+        "type:bug",
+        "priority:high",
+        "up-for-grabs"
+      ],
+      "language": "Go",
+      "stars": 5193,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "wunianze666-netizen"
+        },
+        "number": 1985,
+        "state": "OPEN",
+        "title": "fix(cli): normalize consent fixture paths on Windows",
+        "url": "https://github.com/Gentleman-Programming/gentle-ai/pull/1985"
+      },
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "GeyserMC/Geyser",
       "number": 6496,
       "title": "Bedrock client (protocol 1001 / MC 26.x) disconnects on join when a long boss bar title is sent",
@@ -7224,40 +7266,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "TeamNewPipe/NewPipe",
-      "number": 13710,
-      "title": "[YouTube] Live Stream fails after 30 seconds",
-      "url": "https://github.com/TeamNewPipe/NewPipe/issues/13710",
-      "created_at": "2026-07-21T17:03:27Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "ASAP",
-        "YouTube",
-        "requires extractor change"
-      ],
-      "language": "Java",
-      "stars": 39154,
-      "comment_count": 11,
-      "age_days": 9,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.86,
-        "effort": 0.6
       }
     }
   ]
