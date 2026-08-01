@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T03:35:59Z",
+  "updated_at": "2026-08-01T08:30:47Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2764,6 +2764,42 @@
       }
     },
     {
+      "repo": "fullsend-ai/fullsend",
+      "number": 4808,
+      "title": "docs: running-agents-locally.md OpenShell version not updated by Renovate",
+      "url": "https://github.com/fullsend-ai/fullsend/issues/4808",
+      "created_at": "2026-07-14T14:43:32Z",
+      "labels": [
+        "good first issue",
+        "ready-to-code",
+        "type/bug",
+        "dependencies",
+        "priority/medium",
+        "component/docs",
+        "bug"
+      ],
+      "language": "Go",
+      "stars": 104,
+      "comment_count": 5,
+      "age_days": 17,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "gitbutlerapp/gitbutler",
       "number": 12105,
       "title": "Error when starting app on windows with `pnpm tauri dev`",
@@ -4677,9 +4713,9 @@
         "ready-for-triage"
       ],
       "language": "Go",
-      "stars": 100,
-      "comment_count": 3,
-      "age_days": 0,
+      "stars": 104,
+      "comment_count": 4,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "documentation",
@@ -7234,37 +7270,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Qiskit/qiskit",
-      "number": 16272,
-      "title": "Coupling map construction in SabreSwap panics with an overflow error",
-      "url": "https://github.com/Qiskit/qiskit/issues/16272",
-      "created_at": "2026-05-26T08:27:58Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "Python",
-      "stars": 7405,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
         "effort": 0.65
       }
     }
