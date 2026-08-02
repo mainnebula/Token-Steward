@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T19:19:50Z",
+  "updated_at": "2026-08-02T03:35:34Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1350,12 +1350,14 @@
         "priority/important",
         "area/dist/quarkus",
         "help wanted",
-        "team/cloud-native"
+        "team/cloud-native",
+        "backport/26.6",
+        "backport/26.7"
       ],
       "language": "Java",
-      "stars": 35927,
+      "stars": 35942,
       "comment_count": 6,
-      "age_days": 4,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -1678,13 +1680,12 @@
         "help wanted",
         "status:approved",
         "type:bug",
-        "priority:high",
-        "up-for-grabs"
+        "priority:high"
       ],
       "language": "Go",
-      "stars": 5239,
+      "stars": 5282,
       "comment_count": 6,
-      "age_days": 2,
+      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
