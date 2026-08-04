@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T14:32:24Z",
+  "updated_at": "2026-08-04T19:46:32Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1058,6 +1058,46 @@
       }
     },
     {
+      "repo": "alibaba/open-code-review",
+      "number": 702,
+      "title": "[plugin/opencode] 7 issues in plugins/open-code-review/opencode/open-code-review.ts (incl. timeoutMinutes never wired to process timeout)",
+      "url": "https://github.com/alibaba/open-code-review/issues/702",
+      "created_at": "2026-08-03T12:59:54Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 18748,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Linxiushen"
+        },
+        "number": 717,
+        "state": "OPEN",
+        "title": "fix(opencode): honor configured review timeout",
+        "url": "https://github.com/alibaba/open-code-review/pull/717"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "google-gemini/gemini-cli",
       "number": 20839,
       "title": "AbortError stack trace displayed when pressing ESC during google_web_search",
@@ -1683,9 +1723,9 @@
         "priority:high"
       ],
       "language": "Go",
-      "stars": 5289,
-      "comment_count": 6,
-      "age_days": 3,
+      "stars": 5380,
+      "comment_count": 7,
+      "age_days": 5,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -1696,12 +1736,12 @@
       "action": "review",
       "pr": {
         "author": {
-          "login": "dnlrsls"
+          "login": "wunianze666-netizen"
         },
-        "number": 1994,
+        "number": 2101,
         "state": "OPEN",
-        "title": "fix(review): use Windows-safe literal path fixtures",
-        "url": "https://github.com/Gentleman-Programming/gentle-ai/pull/1994"
+        "title": "fix(review): converge concurrent RAR result publication",
+        "url": "https://github.com/Gentleman-Programming/gentle-ai/pull/2101"
       },
       "score": 0.74,
       "score_breakdown": {
@@ -4092,6 +4132,39 @@
       }
     },
     {
+      "repo": "alibaba/open-code-review",
+      "number": 709,
+      "title": "Near-duplicate comments in json output for agent",
+      "url": "https://github.com/alibaba/open-code-review/issues/709",
+      "created_at": "2026-08-03T17:57:14Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 18748,
+      "comment_count": 4,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "apache/airflow",
       "number": 63374,
       "title": "DAG-level `on_failure_callback` never fires",
@@ -6188,6 +6261,37 @@
       }
     },
     {
+      "repo": "nexu-io/open-design",
+      "number": 6426,
+      "title": "perf(daemon): serve hashed web-export assets with compression and immutable cache headers",
+      "url": "https://github.com/nexu-io/open-design/issues/6426",
+      "created_at": "2026-08-04T19:25:20Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 83627,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "opensearch-project/OpenSearch",
       "number": 21323,
       "title": "[BUG] warning log entries (stderr) from lucene on startup",
@@ -7153,109 +7257,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "KaotoIO/kaoto",
-      "number": 3509,
-      "title": "Kaoto combines all required fields coming from oneOf array",
-      "url": "https://github.com/KaotoIO/kaoto/issues/3509",
-      "created_at": "2026-07-20T13:07:13Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "TypeScript",
-      "stars": 110,
-      "comment_count": 5,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "LearningCircuit/local-deep-research",
-      "number": 3875,
-      "title": "Misleading API-key UX for openai_endpoint provider — users think key is required",
-      "url": "https://github.com/LearningCircuit/local-deep-research/issues/3875",
-      "created_at": "2026-05-08T19:37:03Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "ui-ux"
-      ],
-      "language": "Python",
-      "stars": 6856,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "forhim007"
-        },
-        "number": 3892,
-        "state": "OPEN",
-        "title": "fix: make OpenAI endpoint API key field clearly optional in UI",
-        "url": "https://github.com/LearningCircuit/local-deep-research/pull/3892"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "NVIDIA/k8s-device-plugin",
-      "number": 1805,
-      "title": "[Bug]:  Nvml init failed: ERROR_LIBRARY_NOT_FOUND  and how  to install on k8s 1.36.1",
-      "url": "https://github.com/NVIDIA/k8s-device-plugin/issues/1805",
-      "created_at": "2026-05-24T08:29:18Z",
-      "labels": [
-        "bug",
-        "needs-triage",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 3768,
-      "comment_count": 4,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
         "effort": 0.65
       }
     }
