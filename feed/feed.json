@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T14:25:23Z",
+  "updated_at": "2026-08-05T19:45:50Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4961,6 +4961,41 @@
       }
     },
     {
+      "repo": "google-gemini/gemini-cli",
+      "number": 28445,
+      "title": "can i add image generation model configs for nano banana ?",
+      "url": "https://github.com/google-gemini/gemini-cli/issues/28445",
+      "created_at": "2026-07-19T12:44:26Z",
+      "labels": [
+        "priority/p2",
+        "area/extensions",
+        "status/bot-triaged",
+        "kind/enhancement",
+        "good first issue",
+        "effort/small"
+      ],
+      "language": "TypeScript",
+      "stars": 106378,
+      "comment_count": 6,
+      "age_days": 17,
+      "is_bug": false,
+      "is_feature": true,
+      "category": "general",
+      "surface": "feature",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.75
+      }
+    },
+    {
       "repo": "google-github-actions/run-gemini-cli",
       "number": 499,
       "title": "[Bug] `gemini-scheduled-triage` example uses a contradictory GitHub issue search query",
@@ -7225,46 +7260,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "apache/seatunnel",
-      "number": 11620,
-      "title": "[Bug] [Connector-V2] Pulsar Source declares text format support but runtime rejects it",
-      "url": "https://github.com/apache/seatunnel/issues/11620",
-      "created_at": "2026-08-01T14:48:39Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "connectors-v2"
-      ],
-      "language": "Java",
-      "stars": 9528,
-      "comment_count": 8,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": false,
-      "has_ci": true,
-      "llm_receptivity": 0.65,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "waterWang"
-        },
-        "number": 11631,
-        "state": "OPEN",
-        "title": "[Fix][Connector-V2] Pulsar Source: implement text format support (#11620)",
-        "url": "https://github.com/apache/seatunnel/pull/11631"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.85,
         "effort": 0.65
       }
     }
