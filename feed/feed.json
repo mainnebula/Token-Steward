@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T19:46:32Z",
+  "updated_at": "2026-08-05T03:16:35Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1069,8 +1069,8 @@
         "help wanted"
       ],
       "language": "Go",
-      "stars": 18748,
-      "comment_count": 5,
+      "stars": 18829,
+      "comment_count": 8,
       "age_days": 1,
       "is_bug": true,
       "is_feature": false,
@@ -1089,6 +1089,39 @@
         "title": "fix(opencode): honor configured review timeout",
         "url": "https://github.com/alibaba/open-code-review/pull/717"
       },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "alibaba/open-code-review",
+      "number": 709,
+      "title": "Near-duplicate comments in json output for agent",
+      "url": "https://github.com/alibaba/open-code-review/issues/709",
+      "created_at": "2026-08-03T17:57:14Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 18829,
+      "comment_count": 9,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -2190,6 +2223,47 @@
         "impact": 0.7,
         "confidence": 0.93,
         "effort": 0.8
+      }
+    },
+    {
+      "repo": "alibaba/open-code-review",
+      "number": 700,
+      "title": "unrecognizedProperty cache_control",
+      "url": "https://github.com/alibaba/open-code-review/issues/700",
+      "created_at": "2026-08-03T11:56:00Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 18829,
+      "comment_count": 14,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Linxiushen"
+        },
+        "number": 724,
+        "state": "OPEN",
+        "title": "feat(llm): add prompt caching configuration",
+        "url": "https://github.com/alibaba/open-code-review/pull/724"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.89,
+        "effort": 0.65
       }
     },
     {
@@ -4114,39 +4188,6 @@
       "stars": 18004,
       "comment_count": 3,
       "age_days": 0,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "alibaba/open-code-review",
-      "number": 709,
-      "title": "Near-duplicate comments in json output for agent",
-      "url": "https://github.com/alibaba/open-code-review/issues/709",
-      "created_at": "2026-08-03T17:57:14Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 18748,
-      "comment_count": 4,
-      "age_days": 1,
       "is_bug": true,
       "is_feature": true,
       "category": "general",
@@ -7211,38 +7252,6 @@
       "stars": 140,
       "comment_count": 5,
       "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "JhaSourav07/commitpulse",
-      "number": 872,
-      "title": "Rapid username changes trigger overlapping GitHub API requests",
-      "url": "https://github.com/JhaSourav07/commitpulse/issues/872",
-      "created_at": "2026-05-28T06:53:36Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "GSSoC 2026"
-      ],
-      "language": "TypeScript",
-      "stars": 105,
-      "comment_count": 8,
-      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
