@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T02:20:46Z",
+  "updated_at": "2026-08-10T07:54:23Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3503,6 +3503,47 @@
       "llm_receptivity": 0.75,
       "action": "fix",
       "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "layer5io/layer5",
+      "number": 7940,
+      "title": "[Bug] Next and previous button stays in clicked state",
+      "url": "https://github.com/layer5io/layer5/issues/7940",
+      "created_at": "2026-08-08T07:00:38Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "good first issue",
+        "framework/gatsby"
+      ],
+      "language": "JavaScript",
+      "stars": 1076,
+      "comment_count": 7,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "vermarjun"
+        },
+        "number": 7941,
+        "state": "OPEN",
+        "title": "[Button] Fix Next/Previous buttons staying in clicked state",
+        "url": "https://github.com/layer5io/layer5/pull/7941"
+      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.55,
@@ -7220,45 +7261,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Project-HAMi/HAMi",
-      "number": 2485,
-      "title": "WebHookRoute() Panics on Nil Handler If Webhook Creation Fails",
-      "url": "https://github.com/Project-HAMi/HAMi/issues/2485",
-      "created_at": "2026-08-08T14:26:38Z",
-      "labels": [
-        "kind/bug",
-        "good first issue"
-      ],
-      "language": "Go",
-      "stars": 4270,
-      "comment_count": 3,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "aniket866"
-        },
-        "number": 2486,
-        "state": "OPEN",
-        "title": "fix/WebHookRoute() Panics on Nil Handler If Webhook Creation Fails",
-        "url": "https://github.com/Project-HAMi/HAMi/pull/2486"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
         "effort": 0.65
       }
     }
