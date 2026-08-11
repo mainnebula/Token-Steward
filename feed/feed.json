@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T02:11:20Z",
+  "updated_at": "2026-08-11T07:19:05Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1671,6 +1671,45 @@
         "state": "OPEN",
         "title": "fix(guard): make ci.yml comparisons EOL-agnostic on Windows",
         "url": "https://github.com/nexu-io/open-design/pull/6195"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 6426,
+      "title": "perf(daemon): serve hashed web-export assets with compression and immutable cache headers",
+      "url": "https://github.com/nexu-io/open-design/issues/6426",
+      "created_at": "2026-08-04T19:25:20Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 84991,
+      "comment_count": 9,
+      "age_days": 6,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Maqbool61"
+        },
+        "number": 6451,
+        "state": "OPEN",
+        "title": "perf(daemon): serve hashed web-export assets with compression and immutable cache headers",
+        "url": "https://github.com/nexu-io/open-design/pull/6451"
       },
       "score": 0.75,
       "score_breakdown": {
@@ -3777,6 +3816,84 @@
         "impact": 0.75,
         "confidence": 0.89,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "nexu-io/open-design",
+      "number": 5903,
+      "title": "Fix Open Design Landing assets written as SVG content with .png filenames",
+      "url": "https://github.com/nexu-io/open-design/issues/5903",
+      "created_at": "2026-07-21T06:44:05Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 84991,
+      "comment_count": 7,
+      "age_days": 21,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "vinkiYu"
+        },
+        "number": 5936,
+        "state": "OPEN",
+        "title": "fix(templates): align placeholder asset formats",
+        "url": "https://github.com/nexu-io/open-design/pull/5936"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "oauth2-proxy/oauth2-proxy",
+      "number": 3487,
+      "title": "[Bug]: Startup fails, when oidc_issuer_url not reachable",
+      "url": "https://github.com/oauth2-proxy/oauth2-proxy/issues/3487",
+      "created_at": "2026-08-03T12:15:04Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 14819,
+      "comment_count": 10,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "orkhan-huseyn"
+        },
+        "number": 3489,
+        "state": "OPEN",
+        "title": "feat(oidc): lazy OIDC discovery so startup survives an unreachable issuer",
+        "url": "https://github.com/oauth2-proxy/oauth2-proxy/pull/3489"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
       }
     },
     {
@@ -6337,37 +6454,6 @@
       }
     },
     {
-      "repo": "nexu-io/open-design",
-      "number": 6426,
-      "title": "perf(daemon): serve hashed web-export assets with compression and immutable cache headers",
-      "url": "https://github.com/nexu-io/open-design/issues/6426",
-      "created_at": "2026-08-04T19:25:20Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 83627,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "pingcap/tidb",
       "number": 65543,
       "title": "after restarting, DDL will be blocked for a while",
@@ -7182,70 +7268,6 @@
       "language": "TypeScript",
       "stars": 102,
       "comment_count": 11,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "JhaSourav07/commitpulse",
-      "number": 1879,
-      "title": "bug: TTLCache.update() does not remove expired entries, causing stale keys to remain in memory",
-      "url": "https://github.com/JhaSourav07/commitpulse/issues/1879",
-      "created_at": "2026-05-30T19:03:47Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "GSSoC 2026"
-      ],
-      "language": "TypeScript",
-      "stars": 102,
-      "comment_count": 7,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "JhaSourav07/commitpulse",
-      "number": 5256,
-      "title": "bug: Filter duplicate indices during autumn DST fall-back rollback",
-      "url": "https://github.com/JhaSourav07/commitpulse/issues/5256",
-      "created_at": "2026-06-11T17:19:07Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "GSSoC 2026"
-      ],
-      "language": "TypeScript",
-      "stars": 140,
-      "comment_count": 5,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
