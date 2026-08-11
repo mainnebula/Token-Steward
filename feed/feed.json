@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T13:21:40Z",
+  "updated_at": "2026-08-11T19:11:54Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2802,6 +2802,46 @@
         "reach": 0.5,
         "impact": 0.85,
         "confidence": 0.91,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "elastic/kibana",
+      "number": 278722,
+      "title": "[Share] \"Copy link\" stuck loading when /short_url fails",
+      "url": "https://github.com/elastic/kibana/issues/278722",
+      "created_at": "2026-07-16T09:48:08Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "Team:SharedUX"
+      ],
+      "language": "TypeScript",
+      "stars": 21233,
+      "comment_count": 5,
+      "age_days": 26,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "anujraja"
+        },
+        "number": 279713,
+        "state": "OPEN",
+        "title": "Fix stuck Copy link state after short URL failures",
+        "url": "https://github.com/elastic/kibana/pull/279713"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
         "effort": 0.6
       }
     },
@@ -7236,38 +7276,6 @@
       "language": "TypeScript",
       "stars": 102,
       "comment_count": 6,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "JhaSourav07/commitpulse",
-      "number": 1875,
-      "title": "bug: TTLCache allows null or undefined keys without validation",
-      "url": "https://github.com/JhaSourav07/commitpulse/issues/1875",
-      "created_at": "2026-05-30T18:50:18Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "GSSoC 2026"
-      ],
-      "language": "TypeScript",
-      "stars": 102,
-      "comment_count": 11,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
