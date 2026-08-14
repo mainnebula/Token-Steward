@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T02:28:58Z",
+  "updated_at": "2026-08-14T07:42:12Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6533,6 +6533,46 @@
       }
     },
     {
+      "repo": "nexu-io/open-design",
+      "number": 6795,
+      "title": "[Bug]: Desktop PDF/image export corrupts titles containing $$, $&, $` or $' (injectTitle expands replace() patterns)",
+      "url": "https://github.com/nexu-io/open-design/issues/6795",
+      "created_at": "2026-08-12T16:59:11Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 85751,
+      "comment_count": 4,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "codeAnqiang-ma"
+        },
+        "number": 6796,
+        "state": "OPEN",
+        "title": "fix(desktop): stop expanding $ replacement patterns in export titles",
+        "url": "https://github.com/nexu-io/open-design/pull/6796"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "pingcap/tidb",
       "number": 65543,
       "title": "after restarting, DDL will be blocked for a while",
@@ -7252,38 +7292,6 @@
       "stars": 129,
       "comment_count": 10,
       "age_days": 6,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "JhaSourav07/commitpulse",
-      "number": 1868,
-      "title": "Rate Limiter Bypass via Non-Middleware API Routes",
-      "url": "https://github.com/JhaSourav07/commitpulse/issues/1868",
-      "created_at": "2026-05-30T18:22:35Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "GSSoC 2026"
-      ],
-      "language": "TypeScript",
-      "stars": 102,
-      "comment_count": 5,
-      "age_days": 0,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
