@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T06:51:20Z",
+  "updated_at": "2026-08-16T12:52:33Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1089,39 +1089,6 @@
         "title": "fix(opencode): honor configured review timeout",
         "url": "https://github.com/alibaba/open-code-review/pull/717"
       },
-      "score": 0.75,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "alibaba/open-code-review",
-      "number": 709,
-      "title": "Near-duplicate comments in json output for agent",
-      "url": "https://github.com/alibaba/open-code-review/issues/709",
-      "created_at": "2026-08-03T17:57:14Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 19442,
-      "comment_count": 6,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -2262,6 +2229,47 @@
         "impact": 0.7,
         "confidence": 0.93,
         "effort": 0.8
+      }
+    },
+    {
+      "repo": "alibaba/open-code-review",
+      "number": 709,
+      "title": "Near-duplicate comments in json output for agent",
+      "url": "https://github.com/alibaba/open-code-review/issues/709",
+      "created_at": "2026-08-03T17:57:14Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 20572,
+      "comment_count": 7,
+      "age_days": 12,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "amh1k"
+        },
+        "number": 776,
+        "state": "OPEN",
+        "title": "fix(review): filter near-duplicate comments in review output",
+        "url": "https://github.com/alibaba/open-code-review/pull/776"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
       }
     },
     {
@@ -6718,6 +6726,40 @@
       }
     },
     {
+      "repo": "Agenta-AI/agenta",
+      "number": 5999,
+      "title": "(bug) OSS dev web container cannot start: copy-pdf-worker.mjs missing from image",
+      "url": "https://github.com/Agenta-AI/agenta/issues/5999",
+      "created_at": "2026-08-12T19:59:02Z",
+      "labels": [
+        "good first issue",
+        "backend",
+        "devops",
+        "bug report",
+        "build"
+      ],
+      "language": "TypeScript",
+      "stars": 4482,
+      "comment_count": 3,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.72,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "AnalyseDeCircuit/oxideterm",
       "number": 20,
       "title": "1.0.4 创建Session 报错：modals.new_connection.connect_failed",
@@ -7260,38 +7302,6 @@
       "stars": 105,
       "comment_count": 19,
       "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "JhaSourav07/commitpulse",
-      "number": 1352,
-      "title": "bug: Theme toggle is inaccessible on mobile navigation menu",
-      "url": "https://github.com/JhaSourav07/commitpulse/issues/1352",
-      "created_at": "2026-05-29T17:57:34Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "GSSoC 2026"
-      ],
-      "language": "TypeScript",
-      "stars": 129,
-      "comment_count": 10,
-      "age_days": 6,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
