@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T12:57:02Z",
+  "updated_at": "2026-08-17T18:49:54Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2432,7 +2432,7 @@
         "good first issue"
       ],
       "language": "Go",
-      "stars": 37445,
+      "stars": 37451,
       "comment_count": 8,
       "age_days": 28,
       "is_bug": true,
@@ -6779,9 +6779,9 @@
         "build"
       ],
       "language": "TypeScript",
-      "stars": 4482,
+      "stars": 4486,
       "comment_count": 3,
-      "age_days": 3,
+      "age_days": 4,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
@@ -6789,8 +6789,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "shafeeq27edu-ai"
+        },
+        "number": 6063,
+        "state": "OPEN",
+        "title": "chore(docker): include oss/scripts in OSS dev build",
+        "url": "https://github.com/Agenta-AI/agenta/pull/6063"
+      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.45,
