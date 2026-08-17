@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T07:08:03Z",
+  "updated_at": "2026-08-17T12:57:02Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2412,6 +2412,46 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "aquasecurity/trivy",
+      "number": 10976,
+      "title": "Bug: `index out of range [0]` panic in dependency parsers and the OS detector from unchecked `strings.Fields(...)[0]`",
+      "url": "https://github.com/aquasecurity/trivy/issues/10976",
+      "created_at": "2026-07-20T12:55:33Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 37445,
+      "comment_count": 8,
+      "age_days": 28,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "123kaze"
+        },
+        "number": 10978,
+        "state": "OPEN",
+        "title": "fix: prevent panics on malformed parser inputs",
+        "url": "https://github.com/aquasecurity/trivy/pull/10978"
+      },
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.6,
@@ -7284,38 +7324,6 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "JhaSourav07/commitpulse",
-      "number": 1241,
-      "title": "[Bug]: grace param accepts values above 7 silently — should return 400",
-      "url": "https://github.com/JhaSourav07/commitpulse/issues/1241",
-      "created_at": "2026-05-29T08:45:50Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "GSSoC 2026"
-      ],
-      "language": "TypeScript",
-      "stars": 105,
-      "comment_count": 19,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
         "effort": 0.65
       }
     }
