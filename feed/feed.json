@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T01:39:44Z",
+  "updated_at": "2026-08-18T06:54:48Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1494,6 +1494,41 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "nesquena/hermes-webui",
+      "number": 6876,
+      "title": "Hermes agent is not responding",
+      "url": "https://github.com/nesquena/hermes-webui/issues/6876",
+      "created_at": "2026-08-09T06:19:00Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "help wanted",
+        "sprint-candidate",
+        "docker",
+        "gateway"
+      ],
+      "language": "Python",
+      "stars": 17429,
+      "comment_count": 10,
+      "age_days": 9,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.85,
+        "confidence": 0.89,
+        "effort": 0.6
       }
     },
     {
@@ -6621,6 +6656,46 @@
       }
     },
     {
+      "repo": "nexu-io/open-design",
+      "number": 7018,
+      "title": "[Bug]: Docker images ship without data/plugin-previews/manifest.json, silently disabling every baked plugin preview",
+      "url": "https://github.com/nexu-io/open-design/issues/7018",
+      "created_at": "2026-08-18T03:33:46Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "TypeScript",
+      "stars": 88543,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "jiulongche"
+        },
+        "number": 7026,
+        "state": "OPEN",
+        "title": "fix(web): keep the deck preview tile inside its card",
+        "url": "https://github.com/nexu-io/open-design/pull/7026"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "pingcap/tidb",
       "number": 65543,
       "title": "after restarting, DDL will be blocked for a while",
@@ -7254,79 +7329,6 @@
         "title": "docs: fix code block formatting in Native API Guide (#12457)",
         "url": "https://github.com/IQSS/dataverse/pull/12462"
       },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "IsmaelMartinez/teams-for-linux",
-      "number": 2518,
-      "title": "[Bug]: Concurrent downloads — first download stalls indefinitely when a second download starts",
-      "url": "https://github.com/IsmaelMartinez/teams-for-linux/issues/2518",
-      "created_at": "2026-05-09T04:24:59Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "JavaScript",
-      "stars": 4671,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "jayenashar"
-        },
-        "number": 2514,
-        "state": "OPEN",
-        "title": "feat(downloads): drive taskbar progress bar during downloads (#2512)",
-        "url": "https://github.com/IsmaelMartinez/teams-for-linux/pull/2514"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "JakeStanger/ironbar",
-      "number": 1555,
-      "title": "Workspace: unable to connect to the right IPC socket when switching between multiple compositors",
-      "url": "https://github.com/JakeStanger/ironbar/issues/1555",
-      "created_at": "2026-07-09T11:41:35Z",
-      "labels": [
-        "good first issue",
-        "M:Workspaces",
-        "P:Low",
-        "T:Bug",
-        "A:Client"
-      ],
-      "language": "Rust",
-      "stars": 1388,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.45,
