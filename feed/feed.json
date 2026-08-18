@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T06:54:48Z",
+  "updated_at": "2026-08-18T12:58:29Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4654,6 +4654,38 @@
       }
     },
     {
+      "repo": "backstage/backstage",
+      "number": 35232,
+      "title": "The ImportStepper import owner group using display title value instead of the entity ref value",
+      "url": "https://github.com/backstage/backstage/issues/35232",
+      "created_at": "2026-08-18T06:59:38Z",
+      "labels": [
+        "type:bug",
+        "good first issue",
+        "area:catalog"
+      ],
+      "language": "TypeScript",
+      "stars": 34167,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "bazelbuild/bazel",
       "number": 28953,
       "title": "Dangling symlinks with custom rules with outputs",
@@ -7290,45 +7322,6 @@
       "llm_receptivity": 0.75,
       "action": "fix",
       "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "IQSS/dataverse",
-      "number": 12457,
-      "title": "Formatting issue in section in Native API Guide",
-      "url": "https://github.com/IQSS/dataverse/issues/12457",
-      "created_at": "2026-06-12T14:16:04Z",
-      "labels": [
-        "Type: Bug",
-        "good first issue"
-      ],
-      "language": "Java",
-      "stars": 1054,
-      "comment_count": 3,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Sipxi"
-        },
-        "number": 12462,
-        "state": "OPEN",
-        "title": "docs: fix code block formatting in Native API Guide (#12457)",
-        "url": "https://github.com/IQSS/dataverse/pull/12462"
-      },
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.45,
