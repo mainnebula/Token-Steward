@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T12:58:29Z",
+  "updated_at": "2026-08-18T18:48:41Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5896,6 +5896,47 @@
       }
     },
     {
+      "repo": "layer5io/layer5",
+      "number": 7946,
+      "title": "[UI] Layer5 logo appears cropped/cut off on <page/component>",
+      "url": "https://github.com/layer5io/layer5/issues/7946",
+      "created_at": "2026-08-10T13:12:02Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "issue/invalid",
+        "framework/gatsby"
+      ],
+      "language": "JavaScript",
+      "stars": 1095,
+      "comment_count": 6,
+      "age_days": 8,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Joiejoie1"
+        },
+        "number": 7950,
+        "state": "OPEN",
+        "title": "fix(ui): resolve Layer5 logo cropping in navbar (#7946)",
+        "url": "https://github.com/layer5io/layer5/pull/7950"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "mcp-use/mcp-use",
       "number": 1257,
       "title": "Feature: Per-tool authorization layer for MCP servers",
@@ -7291,37 +7332,6 @@
         "title": "v0.8.8 stabilization — sub-agent caps, mutex contention, RLM polish, CI cleanup",
         "url": "https://github.com/Hmbown/DeepSeek-TUI/pull/514"
       },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Hmbown/DeepSeek-TUI",
-      "number": 730,
-      "title": "feat: Support custom OpenAI-compatible providers (e.g. GLM/ZhiPu)",
-      "url": "https://github.com/Hmbown/DeepSeek-TUI/issues/730",
-      "created_at": "2026-05-05T09:34:59Z",
-      "labels": [
-        "bug",
-        "enhancement"
-      ],
-      "language": "Rust",
-      "stars": 5956,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
       "score": 0.72,
       "score_breakdown": {
         "reach": 0.45,
