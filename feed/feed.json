@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T01:42:03Z",
+  "updated_at": "2026-08-19T06:55:52Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -10,6 +10,50 @@
     "TypeScript"
   ],
   "issues": [
+    {
+      "repo": "argoproj/argo-cd",
+      "number": 29252,
+      "title": "`Select a pod to highlight its logs` makes no sense when viewing a pod",
+      "url": "https://github.com/argoproj/argo-cd/issues/29252",
+      "created_at": "2026-08-19T00:48:37Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "bug/severity:minor",
+        "triage/pending",
+        "type:usability",
+        "component:ui",
+        "bug/priority:low"
+      ],
+      "language": "Go",
+      "stars": 23952,
+      "comment_count": 7,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "sandaruwijewardhana"
+        },
+        "number": 29255,
+        "state": "OPEN",
+        "title": "fix(ui): hide the pod highlight button when there is only one pod (#29252)",
+        "url": "https://github.com/argoproj/argo-cd/pull/29255"
+      },
+      "score": 0.79,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.8
+      }
+    },
     {
       "repo": "elizaOS/eliza",
       "number": 10721,
@@ -344,42 +388,6 @@
         "impact": 0.85,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "argoproj/argo-cd",
-      "number": 29252,
-      "title": "`Select a pod to highlight its logs` makes no sense when viewing a pod",
-      "url": "https://github.com/argoproj/argo-cd/issues/29252",
-      "created_at": "2026-08-19T00:48:37Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "bug/severity:minor",
-        "triage/pending",
-        "type:usability",
-        "component:ui",
-        "bug/priority:low"
-      ],
-      "language": "Go",
-      "stars": 23950,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.77,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.8
       }
     },
     {
@@ -4701,8 +4709,8 @@
         "area:catalog"
       ],
       "language": "TypeScript",
-      "stars": 34167,
-      "comment_count": 3,
+      "stars": 34178,
+      "comment_count": 4,
       "age_days": 0,
       "is_bug": true,
       "is_feature": false,
@@ -4711,8 +4719,16 @@
       "has_contributing": true,
       "has_ci": true,
       "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "MFA-G"
+        },
+        "number": 35235,
+        "state": "OPEN",
+        "title": "fix(catalog-import): use entity refs for owner suggestions",
+        "url": "https://github.com/backstage/backstage/pull/35235"
+      },
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
