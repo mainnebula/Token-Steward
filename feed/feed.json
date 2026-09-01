@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T11:30:17Z",
+  "updated_at": "2026-09-01T16:27:38Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6120,6 +6120,42 @@
     },
     {
       "repo": "keycloak/keycloak",
+      "number": 52056,
+      "title": "Login page: Shift+Enter in username/email field opens a new login window with disabled \"Sign In\" button and stale auth flow",
+      "url": "https://github.com/keycloak/keycloak/issues/52056",
+      "created_at": "2026-08-26T07:39:43Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "area/login/ui",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump",
+        "team/core-authn"
+      ],
+      "language": "Java",
+      "stars": 36543,
+      "comment_count": 3,
+      "age_days": 6,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
       "number": 52190,
       "title": "[OID4VCI] Cannot unset values when configuring OID4VCI credential scope",
       "url": "https://github.com/keycloak/keycloak/issues/52190",
@@ -7351,45 +7387,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "AntennaPod/AntennaPod",
-      "number": 8284,
-      "title": "[media3] completing the last episode in the queue keeps it active",
-      "url": "https://github.com/AntennaPod/AntennaPod/issues/8284",
-      "created_at": "2026-02-17T17:13:19Z",
-      "labels": [
-        "Type: Confirmed bug",
-        "Good first issue"
-      ],
-      "language": "Java",
-      "stars": 7660,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "tamilore-bello"
-        },
-        "number": 8289,
-        "state": "OPEN",
-        "title": "Fix to close the following: completing the last episode in the queue keeps it active",
-        "url": "https://github.com/AntennaPod/AntennaPod/pull/8289"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
         "effort": 0.65
       }
     }
