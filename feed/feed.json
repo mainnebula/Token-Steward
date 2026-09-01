@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T16:27:38Z",
+  "updated_at": "2026-09-01T20:55:51Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4783,6 +4783,46 @@
       }
     },
     {
+      "repo": "apache/dolphinscheduler",
+      "number": 18604,
+      "title": "[Bug] [Master] Recovering a failed workflow changes a forced-success task to SUCCESS",
+      "url": "https://github.com/apache/dolphinscheduler/issues/18604",
+      "created_at": "2026-09-01T02:46:41Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "backend"
+      ],
+      "language": "Java",
+      "stars": 14455,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "wcmolin"
+        },
+        "number": 18608,
+        "state": "OPEN",
+        "title": "[Fix-18604][Master] Preserve forced-success state when recovering failed workflows",
+        "url": "https://github.com/apache/dolphinscheduler/pull/18608"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "apache/maka",
       "number": 2624,
       "title": "ci(windows): eliminate hidden failures in the non-blocking baseline",
@@ -7355,38 +7395,6 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "AnalyseDeCircuit/oxideterm",
-      "number": 20,
-      "title": "1.0.4 创建Session 报错：modals.new_connection.connect_failed",
-      "url": "https://github.com/AnalyseDeCircuit/oxideterm/issues/20",
-      "created_at": "2026-04-03T03:39:47Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "need fix"
-      ],
-      "language": "Rust",
-      "stars": 109,
-      "comment_count": 10,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
         "effort": 0.65
       }
     }
