@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T04:43:17Z",
+  "updated_at": "2026-09-01T11:30:17Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1172,6 +1172,48 @@
         "state": "OPEN",
         "title": "fix(opencode): honor configured review timeout",
         "url": "https://github.com/alibaba/open-code-review/pull/717"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "aws/aws-cdk",
+      "number": 37797,
+      "title": "(aws-logs): convertArnPrincipalToAccountId in aws-logs causes false positive CloudFormation stack drift",
+      "url": "https://github.com/aws/aws-cdk/issues/37797",
+      "created_at": "2026-05-07T21:37:34Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "p2",
+        "effort/small",
+        "@aws-cdk/aws-logs"
+      ],
+      "language": "TypeScript",
+      "stars": 12881,
+      "comment_count": 5,
+      "age_days": 116,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Zelys-DFKH"
+        },
+        "number": 37837,
+        "state": "OPEN",
+        "title": "fix(logs): emit account root ARN in resource policy to prevent CloudFormation drift",
+        "url": "https://github.com/aws/aws-cdk/pull/37837"
       },
       "score": 0.75,
       "score_breakdown": {
@@ -7348,39 +7390,6 @@
         "reach": 0.45,
         "impact": 0.75,
         "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Checkora/Checkora",
-      "number": 1056,
-      "title": "Remove Pause/Resume Mechanic and Auto-Pause to Prevent \"Time-Stop\" Exploits and Align with Chess Standards",
-      "url": "https://github.com/Checkora/Checkora/issues/1056",
-      "created_at": "2026-05-23T11:36:12Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "GSSoC",
-        "frontend"
-      ],
-      "language": "Python",
-      "stars": 107,
-      "comment_count": 9,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
         "effort": 0.65
       }
     }
