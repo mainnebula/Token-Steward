@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T11:04:55Z",
+  "updated_at": "2026-09-02T16:25:36Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3673,6 +3673,50 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 52056,
+      "title": "Login page: Shift+Enter in username/email field opens a new login window with disabled \"Sign In\" button and stale auth flow",
+      "url": "https://github.com/keycloak/keycloak/issues/52056",
+      "created_at": "2026-08-26T07:39:43Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "area/login/ui",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump",
+        "team/core-authn"
+      ],
+      "language": "Java",
+      "stars": 36561,
+      "comment_count": 5,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "edewit"
+        },
+        "number": 52315,
+        "state": "OPEN",
+        "title": "Only disable login submit button on same-tab form submission",
+        "url": "https://github.com/keycloak/keycloak/pull/52315"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "koordinator-sh/koordinator",
       "number": 2812,
       "title": "[proposal] Use protobuf as the default content type for native Kubernetes API clients to improve performance",
@@ -6107,42 +6151,6 @@
       "stars": 34789,
       "comment_count": 3,
       "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 52056,
-      "title": "Login page: Shift+Enter in username/email field opens a new login window with disabled \"Sign In\" button and stale auth flow",
-      "url": "https://github.com/keycloak/keycloak/issues/52056",
-      "created_at": "2026-08-26T07:39:43Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "area/login/ui",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump",
-        "team/core-authn"
-      ],
-      "language": "Java",
-      "stars": 36543,
-      "comment_count": 3,
-      "age_days": 6,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
