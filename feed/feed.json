@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T11:02:48Z",
+  "updated_at": "2026-09-04T16:11:02Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3309,6 +3309,45 @@
       }
     },
     {
+      "repo": "jub0t/Concat",
+      "number": 29,
+      "title": "Captions wrap correctly in the preview but export as one line off the edge of the frame",
+      "url": "https://github.com/jub0t/Concat/issues/29",
+      "created_at": "2026-08-31T07:54:07Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Rust",
+      "stars": 1268,
+      "comment_count": 5,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Dahhrk"
+        },
+        "number": 1,
+        "state": "OPEN",
+        "title": "fix: text alignment origin follows align in preview and export",
+        "url": "https://github.com/Dahhrk/Concat/pull/1"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "kedacore/keda",
       "number": 7524,
       "title": "azure-monitor scaler seems to ignore metricAggregationInterval",
@@ -6288,6 +6327,42 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 52310,
+      "title": "User Profile validation is not applied when users are created through partialImport or realm import",
+      "url": "https://github.com/keycloak/keycloak/issues/52310",
+      "created_at": "2026-09-02T07:43:43Z",
+      "labels": [
+        "kind/bug",
+        "area/import-export",
+        "help wanted",
+        "team/core-shared",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal"
+      ],
+      "language": "Java",
+      "stars": 36602,
+      "comment_count": 3,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "langgenius/dify",
       "number": 33122,
       "title": "Agent with Stability AI integration throws client-side error on image generation, but images are created successfully (visible in logs)",
@@ -7327,88 +7402,6 @@
         "reach": 0.5,
         "impact": 0.75,
         "confidence": 0.91,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "AgentWrapper/agent-orchestrator",
-      "number": 3089,
-      "title": "[Tooling]: fix or remove the repo Prettier setup",
-      "url": "https://github.com/AgentWrapper/agent-orchestrator/issues/3089",
-      "created_at": "2026-07-25T06:19:37Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "needs-triage"
-      ],
-      "language": "Go",
-      "stars": 8560,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "AshutoshIIT1234"
-        },
-        "number": 3090,
-        "state": "OPEN",
-        "title": "chore: remove partial prettier setup",
-        "url": "https://github.com/AgentWrapper/agent-orchestrator/pull/3090"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "Agenta-AI/agenta",
-      "number": 5999,
-      "title": "(bug) OSS dev web container cannot start: copy-pdf-worker.mjs missing from image",
-      "url": "https://github.com/Agenta-AI/agenta/issues/5999",
-      "created_at": "2026-08-12T19:59:02Z",
-      "labels": [
-        "good first issue",
-        "backend",
-        "devops",
-        "bug report",
-        "build"
-      ],
-      "language": "TypeScript",
-      "stars": 4486,
-      "comment_count": 3,
-      "age_days": 4,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "shafeeq27edu-ai"
-        },
-        "number": 6063,
-        "state": "OPEN",
-        "title": "chore(docker): include oss/scripts in OSS dev build",
-        "url": "https://github.com/Agenta-AI/agenta/pull/6063"
-      },
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.45,
-        "impact": 0.75,
-        "confidence": 0.93,
         "effort": 0.65
       }
     }
