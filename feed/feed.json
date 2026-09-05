@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T14:59:37Z",
+  "updated_at": "2026-09-05T20:14:03Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5182,6 +5182,38 @@
       }
     },
     {
+      "repo": "career-ops-hq/career-ops",
+      "number": 3704,
+      "title": "tracker-parse: localized tracker headers shipped by modes/{de,pl,pt,da,id} resolve to null and fall back to the legacy fixed layout",
+      "url": "https://github.com/career-ops-hq/career-ops/issues/3704",
+      "created_at": "2026-09-02T19:39:46Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "i18n"
+      ],
+      "language": "JavaScript",
+      "stars": 70226,
+      "comment_count": 3,
+      "age_days": 3,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "cockroachdb/cockroach",
       "number": 110997,
       "title": "docker-entrypoint-initdb.d scripts don't run unless COCKROACH_USER is set",
@@ -7371,46 +7403,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "rtk-ai/rtk",
-      "number": 1465,
-      "title": "bug: \"rtk init -g --agent cursor\" errors due to expecting $HOME/.claude",
-      "url": "https://github.com/rtk-ai/rtk/issues/1465",
-      "created_at": "2026-04-22T21:54:48Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "effort-small"
-      ],
-      "language": "Rust",
-      "stars": 36902,
-      "comment_count": 2,
-      "age_days": 4,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "nhamtrieu"
-        },
-        "number": 1488,
-        "state": "OPEN",
-        "title": "Fix/issue 1465",
-        "url": "https://github.com/rtk-ai/rtk/pull/1488"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.6,
-        "confidence": 0.94,
-        "effort": 0.8
       }
     }
   ]
