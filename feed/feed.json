@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T10:24:50Z",
+  "updated_at": "2026-09-05T14:59:37Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2138,6 +2138,46 @@
         "state": "OPEN",
         "title": "fix(mlx): recognize and load saved adapter checkpoints on --resume (#634)",
         "url": "https://github.com/MakazhanAlpamys/Soup/pull/639"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "MakazhanAlpamys/Soup",
+      "number": 676,
+      "title": "chatml / audio / video converters silently keep a non-dict message instead of dropping the row",
+      "url": "https://github.com/MakazhanAlpamys/Soup/issues/676",
+      "created_at": "2026-09-04T19:17:04Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 5361,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "BetterAndBetterII"
+        },
+        "number": 678,
+        "state": "OPEN",
+        "title": "fix: drop non-dict chatml/audio/video messages",
+        "url": "https://github.com/MakazhanAlpamys/Soup/pull/678"
       },
       "score": 0.74,
       "score_breakdown": {
@@ -7371,38 +7411,6 @@
         "impact": 0.6,
         "confidence": 0.94,
         "effort": 0.8
-      }
-    },
-    {
-      "repo": "777genius/claude-notifications-go",
-      "number": 44,
-      "title": "Click to focus does not work Ubuntu 22 and Terminator",
-      "url": "https://github.com/777genius/claude-notifications-go/issues/44",
-      "created_at": "2026-03-02T13:01:19Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 318,
-      "comment_count": 15,
-      "age_days": 5,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "fix",
-      "pr": null,
-      "score": 0.72,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.91,
-        "effort": 0.65
       }
     }
   ]
