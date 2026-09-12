@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T20:51:05Z",
+  "updated_at": "2026-09-12T04:12:30Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -6549,6 +6549,50 @@
       }
     },
     {
+      "repo": "kirodotdev/KiroCrew",
+      "number": 7268,
+      "title": "No browse path on a remote gateway that preserves Chromium's sandbox",
+      "url": "https://github.com/kirodotdev/KiroCrew/issues/7268",
+      "created_at": "2026-08-31T13:36:21Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "area: agents",
+        "platform: linux",
+        "area: gateway",
+        "needs-investigation",
+        "crew: needs human"
+      ],
+      "language": "Python",
+      "stars": 3862,
+      "comment_count": 8,
+      "age_days": 11,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "SpikeShen"
+        },
+        "number": 9208,
+        "state": "OPEN",
+        "title": "fix(browser-cli): install the CLI into a pinned, fenced prefix",
+        "url": "https://github.com/kirodotdev/KiroCrew/pull/9208"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "langgenius/dify",
       "number": 33122,
       "title": "Agent with Stability AI integration throws client-side error on image generation, but images are created successfully (visible in logs)",
@@ -7356,47 +7400,6 @@
         "state": "OPEN",
         "title": "fix(daemon): support Kiro MCP install",
         "url": "https://github.com/nexu-io/open-design/pull/5118"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "nexu-io/open-design",
-      "number": 5414,
-      "title": "Fix layering for saved page snapshot popover",
-      "url": "https://github.com/nexu-io/open-design/issues/5414",
-      "created_at": "2026-07-10T06:40:49Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted",
-        "ux"
-      ],
-      "language": "TypeScript",
-      "stars": 77154,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "xxiaoxiong"
-        },
-        "number": 5460,
-        "state": "OPEN",
-        "title": "fix(web): scope saved page snapshot popover to Browser pane (#5414)",
-        "url": "https://github.com/nexu-io/open-design/pull/5460"
       },
       "score": 0.73,
       "score_breakdown": {
