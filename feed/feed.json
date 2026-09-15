@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T21:43:48Z",
+  "updated_at": "2026-09-15T04:31:47Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -829,6 +829,50 @@
         "impact": 0.9,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "kirodotdev/KiroCrew",
+      "number": 10944,
+      "title": "Surface the live-target pointer's spawn refusal (multi-linked/symlinked) at the user surface",
+      "url": "https://github.com/kirodotdev/KiroCrew/issues/10944",
+      "created_at": "2026-09-15T01:54:09Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "platform: linux",
+        "area: gateway",
+        "needs-investigation",
+        "deferred-finding",
+        "area: security"
+      ],
+      "language": "Python",
+      "stars": 3915,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "cixuuz"
+        },
+        "number": 10330,
+        "state": "OPEN",
+        "title": "fix(dev-fleet): move the live-target cutover into the gateway process",
+        "url": "https://github.com/kirodotdev/KiroCrew/pull/10330"
+      },
+      "score": 0.76,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.9,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -7361,45 +7405,6 @@
         "state": "OPEN",
         "title": "fix(media): route OpenRouter dedicated image models to /images endpoint",
         "url": "https://github.com/nexu-io/open-design/pull/5004"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "nexu-io/open-design",
-      "number": 5082,
-      "title": "Support `od mcp install kiro` (add kiro to AGENT_SLUGS + ACP install planner)",
-      "url": "https://github.com/nexu-io/open-design/issues/5082",
-      "created_at": "2026-07-02T16:01:50Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 74520,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "YOMXXX"
-        },
-        "number": 5118,
-        "state": "OPEN",
-        "title": "fix(daemon): support Kiro MCP install",
-        "url": "https://github.com/nexu-io/open-design/pull/5118"
       },
       "score": 0.73,
       "score_breakdown": {
