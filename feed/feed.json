@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T04:27:21Z",
+  "updated_at": "2026-09-16T11:18:53Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2597,6 +2597,45 @@
       }
     },
     {
+      "repo": "alacritty/alacritty",
+      "number": 9047,
+      "title": "window.resize_increments miscalculates the window size for some values of window.padding",
+      "url": "https://github.com/alacritty/alacritty/issues/9047",
+      "created_at": "2026-09-12T05:55:49Z",
+      "labels": [
+        "help wanted",
+        "D - easy"
+      ],
+      "language": "Rust",
+      "stars": 65736,
+      "comment_count": 5,
+      "age_days": 4,
+      "is_bug": false,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "bunnysayzz"
+        },
+        "number": 9051,
+        "state": "OPEN",
+        "title": "fix(window): set padding-aware minimum size with resize increments",
+        "url": "https://github.com/alacritty/alacritty/pull/9051"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.55,
+        "confidence": 0.94,
+        "effort": 0.8
+      }
+    },
+    {
       "repo": "alibaba/open-code-review",
       "number": 709,
       "title": "Near-duplicate comments in json output for agent",
@@ -4829,6 +4868,46 @@
         "impact": 0.55,
         "confidence": 0.93,
         "effort": 0.8
+      }
+    },
+    {
+      "repo": "alibaba/open-code-review",
+      "number": 1308,
+      "title": "Crash with \"unexpected end of JSON input\" when try to resume a scan",
+      "url": "https://github.com/alibaba/open-code-review/issues/1308",
+      "created_at": "2026-09-16T08:55:54Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted"
+      ],
+      "language": "Go",
+      "stars": 30196,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "hyy321"
+        },
+        "number": 1312,
+        "state": "OPEN",
+        "title": "fix(session): tolerate truncated resume tail",
+        "url": "https://github.com/alibaba/open-code-review/pull/1312"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
       }
     },
     {
@@ -7336,76 +7415,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "nexu-io/open-design",
-      "number": 438,
-      "title": "[Bug] Codex CLI agent exits with code 1 due to deprecated --full-auto flag (v0.128.0)",
-      "url": "https://github.com/nexu-io/open-design/issues/438",
-      "created_at": "2026-05-04T09:16:17Z",
-      "labels": [
-        "bug",
-        "good first issue"
-      ],
-      "language": "TypeScript",
-      "stars": 32020,
-      "comment_count": 4,
-      "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "nexu-io/open-design",
-      "number": 4994,
-      "title": "[Bug]: Limited OpenRouter image models available (Only gemini-2.5-flash-image can used)",
-      "url": "https://github.com/nexu-io/open-design/issues/4994",
-      "created_at": "2026-07-01T07:23:49Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 73597,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "gp-alex-chen"
-        },
-        "number": 5004,
-        "state": "OPEN",
-        "title": "fix(media): route OpenRouter dedicated image models to /images endpoint",
-        "url": "https://github.com/nexu-io/open-design/pull/5004"
-      },
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
