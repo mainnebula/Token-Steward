@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T11:18:53Z",
+  "updated_at": "2026-09-16T16:38:56Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1665,6 +1665,41 @@
         "title": "Align the HTTP/2 max header list size with the HTTP/1.1 max header size",
         "url": "https://github.com/keycloak/keycloak/pull/51246"
       },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 52764,
+      "title": "Organization group roles are not automapped to realm/resource_access",
+      "url": "https://github.com/keycloak/keycloak/issues/52764",
+      "created_at": "2026-09-15T08:44:17Z",
+      "labels": [
+        "kind/bug",
+        "help wanted",
+        "team/core-iam",
+        "status/auto-bump",
+        "priority/normal",
+        "area/organizations"
+      ],
+      "language": "Java",
+      "stars": 36806,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -7373,37 +7408,6 @@
       ],
       "language": "TypeScript",
       "stars": 51683,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "nexu-io/open-design",
-      "number": 4308,
-      "title": "Generalize filesystem artifact echo suppression beyond Claude Code",
-      "url": "https://github.com/nexu-io/open-design/issues/4308",
-      "created_at": "2026-06-15T04:40:41Z",
-      "labels": [
-        "help wanted",
-        "type/bugfix"
-      ],
-      "language": "TypeScript",
-      "stars": 64943,
       "comment_count": 3,
       "age_days": 0,
       "is_bug": true,
