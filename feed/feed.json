@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T04:33:11Z",
+  "updated_at": "2026-09-17T11:27:07Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2671,47 +2671,6 @@
       }
     },
     {
-      "repo": "alibaba/open-code-review",
-      "number": 709,
-      "title": "Near-duplicate comments in json output for agent",
-      "url": "https://github.com/alibaba/open-code-review/issues/709",
-      "created_at": "2026-08-03T17:57:14Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 20572,
-      "comment_count": 7,
-      "age_days": 12,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "amh1k"
-        },
-        "number": 776,
-        "state": "OPEN",
-        "title": "fix(review): filter near-duplicate comments in review output",
-        "url": "https://github.com/alibaba/open-code-review/pull/776"
-      },
-      "score": 0.74,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.6
-      }
-    },
-    {
       "repo": "apache/dolphinscheduler",
       "number": 18015,
       "title": "[Bug] Regarding the system parameter $[yyyyMMdd-1], when the system timezone is set to US West (America/Los_Angeles), there is a Daylight Saving Time (DST) transition issue where a day only has 23 hours.",
@@ -2857,6 +2816,37 @@
         "title": "fix: prevent panics on malformed parser inputs",
         "url": "https://github.com/aquasecurity/trivy/pull/10978"
       },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "argoproj/argo-workflows",
+      "number": 16842,
+      "title": "Controller and server not starting after upgrade from 4.0.3 to 4.1.2",
+      "url": "https://github.com/argoproj/argo-workflows/issues/16842",
+      "created_at": "2026-08-31T09:36:14Z",
+      "labels": [
+        "type/regression",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 16983,
+      "comment_count": 8,
+      "age_days": 17,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.6,
