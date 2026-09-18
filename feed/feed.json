@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T11:00:50Z",
+  "updated_at": "2026-09-18T16:14:50Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1499,49 +1499,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.75,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 47153,
-      "title": "NullPointerException in IdentityBrokerService.updateFederatedIdentity()  when re-authenticating after SAML IDP deletion and re-addition",
-      "url": "https://github.com/keycloak/keycloak/issues/47153",
-      "created_at": "2026-03-13T14:39:43Z",
-      "labels": [
-        "area/saml",
-        "kind/bug",
-        "help wanted",
-        "team/core-clients",
-        "priority/low",
-        "status/auto-bump"
-      ],
-      "language": "Java",
-      "stars": 33402,
-      "comment_count": 6,
-      "age_days": 4,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "prakashgrootan"
-        },
-        "number": 47214,
-        "state": "OPEN",
-        "title": "Fix NPE in updateFederatedIdentity after IDP deletion and re-creation",
-        "url": "https://github.com/keycloak/keycloak/pull/47214"
-      },
       "score": 0.75,
       "score_breakdown": {
         "reach": 0.6,
@@ -7418,6 +7375,49 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 47153,
+      "title": "NullPointerException in IdentityBrokerService.updateFederatedIdentity()  when re-authenticating after SAML IDP deletion and re-addition",
+      "url": "https://github.com/keycloak/keycloak/issues/47153",
+      "created_at": "2026-03-13T14:39:43Z",
+      "labels": [
+        "area/saml",
+        "kind/bug",
+        "help wanted",
+        "team/core-clients",
+        "priority/low",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 36849,
+      "comment_count": 7,
+      "age_days": 189,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "prakashgrootan"
+        },
+        "number": 47214,
+        "state": "OPEN",
+        "title": "Fix NPE in updateFederatedIdentity after IDP deletion and re-creation",
+        "url": "https://github.com/keycloak/keycloak/pull/47214"
+      },
+      "score": 0.69,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.4
       }
     }
   ]
