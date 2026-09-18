@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T16:14:50Z",
+  "updated_at": "2026-09-18T20:46:39Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -867,6 +867,39 @@
         "title": "fix(dev-fleet): move the live-target cutover into the gateway process",
         "url": "https://github.com/kirodotdev/KiroCrew/pull/10330"
       },
+      "score": 0.76,
+      "score_breakdown": {
+        "reach": 0.45,
+        "impact": 0.9,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "kirodotdev/KiroCrew",
+      "number": 11834,
+      "title": "sandbox-escape-ssh-self: allow operator hostname exemption when a remote host is intentionally pinned to loopback in /etc/hosts; per-rule toggle / disable_all does not release the rule",
+      "url": "https://github.com/kirodotdev/KiroCrew/issues/11834",
+      "created_at": "2026-09-18T16:47:08Z",
+      "labels": [
+        "bug",
+        "enhancement",
+        "needs-human",
+        "area: security"
+      ],
+      "language": "Python",
+      "stars": 4001,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "security",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
       "score": 0.76,
       "score_breakdown": {
         "reach": 0.45,
@@ -7375,49 +7408,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 47153,
-      "title": "NullPointerException in IdentityBrokerService.updateFederatedIdentity()  when re-authenticating after SAML IDP deletion and re-addition",
-      "url": "https://github.com/keycloak/keycloak/issues/47153",
-      "created_at": "2026-03-13T14:39:43Z",
-      "labels": [
-        "area/saml",
-        "kind/bug",
-        "help wanted",
-        "team/core-clients",
-        "priority/low",
-        "status/auto-bump"
-      ],
-      "language": "Java",
-      "stars": 36849,
-      "comment_count": 7,
-      "age_days": 189,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "prakashgrootan"
-        },
-        "number": 47214,
-        "state": "OPEN",
-        "title": "Fix NPE in updateFederatedIdentity after IDP deletion and re-creation",
-        "url": "https://github.com/keycloak/keycloak/pull/47214"
-      },
-      "score": 0.69,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.4
       }
     }
   ]
