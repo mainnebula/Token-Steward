@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T15:45:47Z",
+  "updated_at": "2026-09-19T20:26:10Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4707,6 +4707,45 @@
       }
     },
     {
+      "repo": "MakazhanAlpamys/Soup",
+      "number": 835,
+      "title": "FP8 gating is inconsistent: fp8_attention refuses Ada (sm_89), which torch._scaled_mm supports, while quantization_aware: fp8 checks no hardware at all",
+      "url": "https://github.com/MakazhanAlpamys/Soup/issues/835",
+      "created_at": "2026-09-11T11:11:44Z",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "language": "Python",
+      "stars": 6872,
+      "comment_count": 5,
+      "age_days": 8,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Samearth17"
+        },
+        "number": 947,
+        "state": "OPEN",
+        "title": "feat(doctor): add GPU architecture and precision diagnostics",
+        "url": "https://github.com/MakazhanAlpamys/Soup/pull/947"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "actualbudget/actual",
       "number": 7303,
       "title": "[Bug]: Append to notes rule not working if a note already exists",
@@ -7362,46 +7401,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "nexu-io/open-design",
-      "number": 2904,
-      "title": "Style tab selection in edit mode can overlap and obscure adjacent tabs",
-      "url": "https://github.com/nexu-io/open-design/issues/2904",
-      "created_at": "2026-05-25T09:24:56Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 51683,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "xxiaoxiong"
-        },
-        "number": 2916,
-        "state": "OPEN",
-        "title": "fix: prevent tab overlap in edit mode by removing default focus outline",
-        "url": "https://github.com/nexu-io/open-design/pull/2916"
-      },
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
