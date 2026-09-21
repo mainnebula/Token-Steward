@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T12:34:35Z",
+  "updated_at": "2026-09-21T21:54:49Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2289,6 +2289,38 @@
         "title": "fix: drop non-dict chatml/audio/video messages",
         "url": "https://github.com/MakazhanAlpamys/Soup/pull/678"
       },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "Mantitup-Org/vista",
+      "number": 62,
+      "title": "Bug: vista deploy still breaks static hosts and platform adapters",
+      "url": "https://github.com/Mantitup-Org/vista/issues/62",
+      "created_at": "2026-09-20T18:51:07Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "bounty"
+      ],
+      "language": "TypeScript",
+      "stars": 2378,
+      "comment_count": 11,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
       "score": 0.74,
       "score_breakdown": {
         "reach": 0.55,
@@ -7370,37 +7402,6 @@
         "title": "fix: reset srcDoc activation cache on iframe remount",
         "url": "https://github.com/nexu-io/open-design/pull/2704"
       },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "nexu-io/open-design",
-      "number": 2834,
-      "title": "Codex agent launches read-only in Open Design despite workspace-write intent",
-      "url": "https://github.com/nexu-io/open-design/issues/2834",
-      "created_at": "2026-05-24T13:12:55Z",
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 51009,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
