@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T16:44:37Z",
+  "updated_at": "2026-09-22T21:10:07Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4778,6 +4778,37 @@
       }
     },
     {
+      "repo": "REAndroid/APKEditor",
+      "number": 238,
+      "title": "[Bug] Internal smali assembler silently emits invalid DEX when `.catch` regions are nested/overlapping",
+      "url": "https://github.com/REAndroid/APKEditor/issues/238",
+      "created_at": "2026-09-15T10:21:24Z",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "language": "Java",
+      "stars": 2328,
+      "comment_count": 6,
+      "age_days": 7,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "actualbudget/actual",
       "number": 7303,
       "title": "[Bug]: Append to notes rule not working if a note already exists",
@@ -7362,46 +7393,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "nexu-io/open-design",
-      "number": 2699,
-      "title": "HTML preview can go blank after switching Source -> Preview in FileViewer",
-      "url": "https://github.com/nexu-io/open-design/issues/2699",
-      "created_at": "2026-05-22T08:58:52Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 49356,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "xxiaoxiong"
-        },
-        "number": 2704,
-        "state": "OPEN",
-        "title": "fix: reset srcDoc activation cache on iframe remount",
-        "url": "https://github.com/nexu-io/open-design/pull/2704"
-      },
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
