@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T04:24:49Z",
+  "updated_at": "2026-09-23T11:17:51Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2994,6 +2994,46 @@
       }
     },
     {
+      "repo": "career-ops-hq/career-ops",
+      "number": 3882,
+      "title": "workdayDedupKey: a hyphenated requisition base skips the trailing -N strip (residual of the tenant-site dedup fix)",
+      "url": "https://github.com/career-ops-hq/career-ops/issues/3882",
+      "created_at": "2026-09-05T15:40:46Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "🔧 scripts"
+      ],
+      "language": "JavaScript",
+      "stars": 72480,
+      "comment_count": 5,
+      "age_days": 17,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "ronanime-arch"
+        },
+        "number": 4409,
+        "state": "OPEN",
+        "title": "fix(workday): collapse the -N disambiguator on a hyphenated requisition base (#3882)",
+        "url": "https://github.com/career-ops-hq/career-ops/pull/4409"
+      },
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "cert-manager/cert-manager",
       "number": 8493,
       "title": "cloudflare DNS01 - Client.Timeout exceeded while awaiting headers",
@@ -5518,38 +5558,6 @@
       "stars": 70454,
       "comment_count": 4,
       "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "career-ops-hq/career-ops",
-      "number": 3882,
-      "title": "workdayDedupKey: a hyphenated requisition base skips the trailing -N strip (residual of the tenant-site dedup fix)",
-      "url": "https://github.com/career-ops-hq/career-ops/issues/3882",
-      "created_at": "2026-09-05T15:40:46Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "🔧 scripts"
-      ],
-      "language": "JavaScript",
-      "stars": 70622,
-      "comment_count": 3,
-      "age_days": 3,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
