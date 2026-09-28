@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T13:34:11Z",
+  "updated_at": "2026-09-28T23:09:11Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4849,6 +4849,47 @@
       }
     },
     {
+      "repo": "Untrivial-ai/agent-orchestrator",
+      "number": 5984,
+      "title": "Markdown rich preview resets after switching sessions",
+      "url": "https://github.com/Untrivial-ai/agent-orchestrator/issues/5984",
+      "created_at": "2026-09-28T10:21:39Z",
+      "labels": [
+        "bug",
+        "P2",
+        "comp/desktop",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 12495,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Meraj-08"
+        },
+        "number": 5997,
+        "state": "OPEN",
+        "title": "fix(files): remember the file display mode across session switches",
+        "url": "https://github.com/Untrivial-ai/agent-orchestrator/pull/5997"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "actualbudget/actual",
       "number": 7303,
       "title": "[Bug]: Append to notes rule not working if a note already exists",
@@ -7360,38 +7401,6 @@
       "stars": 39504,
       "comment_count": 3,
       "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "nexu-io/open-design",
-      "number": 2681,
-      "title": "Hide the unavailable Ingest source section from the Automations page for now",
-      "url": "https://github.com/nexu-io/open-design/issues/2681",
-      "created_at": "2026-05-22T07:36:11Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "help wanted"
-      ],
-      "language": "TypeScript",
-      "stars": 49356,
-      "comment_count": 3,
-      "age_days": 0,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
