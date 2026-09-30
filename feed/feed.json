@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T22:08:11Z",
+  "updated_at": "2026-09-30T05:11:02Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -1679,6 +1679,42 @@
       ],
       "language": "Java",
       "stars": 36809,
+      "comment_count": 5,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 53249,
+      "title": "Brute force failure counter is not reset on successful SAML (IdP) login, causing users to be permanently locked out",
+      "url": "https://github.com/keycloak/keycloak/issues/53249",
+      "created_at": "2026-09-28T11:19:57Z",
+      "labels": [
+        "area/saml",
+        "kind/bug",
+        "help wanted",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal",
+        "team/core-protocols"
+      ],
+      "language": "Java",
+      "stars": 37062,
       "comment_count": 5,
       "age_days": 1,
       "is_bug": true,
@@ -7369,38 +7405,6 @@
       "stars": 15664,
       "comment_count": 3,
       "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "nexu-io/open-design",
-      "number": 1399,
-      "title": "Newly started sessions return to home quickly and auto-terminate if no task is entered within about one minute",
-      "url": "https://github.com/nexu-io/open-design/issues/1399",
-      "created_at": "2026-05-12T08:54:22Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "priority:p1"
-      ],
-      "language": "TypeScript",
-      "stars": 39504,
-      "comment_count": 3,
-      "age_days": 1,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
