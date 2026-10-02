@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T05:13:38Z",
+  "updated_at": "2026-10-02T12:19:11Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4897,9 +4897,9 @@
         "good first issue"
       ],
       "language": "Go",
-      "stars": 12495,
-      "comment_count": 3,
-      "age_days": 0,
+      "stars": 12605,
+      "comment_count": 4,
+      "age_days": 4,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
