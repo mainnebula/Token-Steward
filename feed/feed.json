@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T18:14:14Z",
+  "updated_at": "2026-10-07T05:31:25Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -693,6 +693,38 @@
       ],
       "language": "Python",
       "stars": 58743,
+      "comment_count": 4,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.76,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "docling-project/docling",
+      "number": 4609,
+      "title": "PY-09-docling-core: `validate_misplaced_list_items` drops the children of multi-run list items, so `export_to_markdown()` / `export_to_html()` lose their text and mutate the document",
+      "url": "https://github.com/docling-project/docling/issues/4609",
+      "created_at": "2026-10-06T15:41:49Z",
+      "labels": [
+        "bug",
+        "docling-document",
+        "good first issue"
+      ],
+      "language": "Python",
+      "stars": 68472,
       "comment_count": 4,
       "age_days": 0,
       "is_bug": true,
@@ -7387,39 +7419,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "moby/moby",
-      "number": 48471,
-      "title": "seccomp: architecture is not present for (at least) ppc64le",
-      "url": "https://github.com/moby/moby/issues/48471",
-      "created_at": "2024-09-10T16:17:15Z",
-      "labels": [
-        "status/0-triage",
-        "kind/bug",
-        "area/security/seccomp",
-        "help wanted"
-      ],
-      "language": "Go",
-      "stars": 71601,
-      "comment_count": 5,
-      "age_days": 623,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "security",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.6,
-        "impact": 0.9,
-        "confidence": 0.94,
-        "effort": 0.4
       }
     }
   ]
