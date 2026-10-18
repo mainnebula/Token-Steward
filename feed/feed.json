@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T20:26:03Z",
+  "updated_at": "2026-10-18T04:06:49Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2434,38 +2434,6 @@
       }
     },
     {
-      "repo": "Mantitup-Org/vista",
-      "number": 62,
-      "title": "Bug: vista deploy still breaks static hosts and platform adapters",
-      "url": "https://github.com/Mantitup-Org/vista/issues/62",
-      "created_at": "2026-09-20T18:51:07Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "bounty"
-      ],
-      "language": "TypeScript",
-      "stars": 2378,
-      "comment_count": 10,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.74,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.65
-      }
-    },
-    {
       "repo": "NeptuneHub/AudioMuse-AI",
       "number": 343,
       "title": "[BUG] Errors since v0.8.11, can't launch audiomuse-ai anymore : Illegal instruction",
@@ -3401,49 +3369,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "dwebagents/AgentPipe",
-      "number": 1663,
-      "title": "[bounty: 74000 ETH] start building company town for contributing agents",
-      "url": "https://github.com/dwebagents/AgentPipe/issues/1663",
-      "created_at": "2026-06-28T06:29:19Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "bounty"
-      ],
-      "language": "Python",
-      "stars": 204,
-      "comment_count": 16,
-      "age_days": 20,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Rachaelisa"
-        },
-        "number": 1749,
-        "state": "OPEN",
-        "title": "feat: Establish foundational frontend for agent company town",
-        "url": "https://github.com/dwebagents/AgentPipe/pull/1749"
-      },
-      "score": 0.74,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.91,
-        "effort": 0.6
       }
     },
     {
@@ -4989,6 +4914,38 @@
         "title": "feat(doctor): add GPU architecture and precision diagnostics",
         "url": "https://github.com/MakazhanAlpamys/Soup/pull/947"
       },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "Mantitup-Org/vista",
+      "number": 62,
+      "title": "Bug: vista deploy still breaks static hosts and platform adapters",
+      "url": "https://github.com/Mantitup-Org/vista/issues/62",
+      "created_at": "2026-09-20T18:51:07Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "bounty"
+      ],
+      "language": "TypeScript",
+      "stars": 2343,
+      "comment_count": 18,
+      "age_days": 27,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.55,
@@ -7425,6 +7382,49 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "dwebagents/AgentPipe",
+      "number": 1663,
+      "title": "[bounty: 74000 ETH] start building company town for contributing agents",
+      "url": "https://github.com/dwebagents/AgentPipe/issues/1663",
+      "created_at": "2026-06-28T06:29:19Z",
+      "labels": [
+        "bug",
+        "documentation",
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "bounty"
+      ],
+      "language": "Python",
+      "stars": 206,
+      "comment_count": 18,
+      "age_days": 111,
+      "is_bug": true,
+      "is_feature": true,
+      "category": "documentation",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.7,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Zubi-fix"
+        },
+        "number": 1718,
+        "state": "OPEN",
+        "title": "fix: start company town landing page",
+        "url": "https://github.com/dwebagents/AgentPipe/pull/1718"
+      },
+      "score": 0.71,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.85,
+        "confidence": 0.91,
+        "effort": 0.5
       }
     }
   ]
