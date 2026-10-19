@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T04:15:46Z",
+  "updated_at": "2026-10-19T12:49:11Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -7043,6 +7043,50 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 54004,
+      "title": "Upgrade to 26.7 fails if a realm display name exceeds 255 characters",
+      "url": "https://github.com/keycloak/keycloak/issues/54004",
+      "created_at": "2026-10-15T09:17:03Z",
+      "labels": [
+        "kind/bug",
+        "area/storage",
+        "help wanted",
+        "team/core-iam",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 37433,
+      "comment_count": 3,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "choksi2212"
+        },
+        "number": 54021,
+        "state": "OPEN",
+        "title": "Clip realm display names to the column length during the 26.7.0 migration",
+        "url": "https://github.com/keycloak/keycloak/pull/54021"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "kirodotdev/KiroCrew",
       "number": 7268,
       "title": "No browse path on a remote gateway that preserves Chromium's sandbox",
@@ -7382,49 +7426,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "dwebagents/AgentPipe",
-      "number": 1663,
-      "title": "[bounty: 74000 ETH] start building company town for contributing agents",
-      "url": "https://github.com/dwebagents/AgentPipe/issues/1663",
-      "created_at": "2026-06-28T06:29:19Z",
-      "labels": [
-        "bug",
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue",
-        "bounty"
-      ],
-      "language": "Python",
-      "stars": 206,
-      "comment_count": 18,
-      "age_days": 111,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "documentation",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.7,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Zubi-fix"
-        },
-        "number": 1718,
-        "state": "OPEN",
-        "title": "fix: start company town landing page",
-        "url": "https://github.com/dwebagents/AgentPipe/pull/1718"
-      },
-      "score": 0.71,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.85,
-        "confidence": 0.91,
-        "effort": 0.5
       }
     }
   ]
