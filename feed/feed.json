@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T17:53:50Z",
+  "updated_at": "2026-10-27T22:02:55Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4853,6 +4853,48 @@
     },
     {
       "repo": "MakazhanAlpamys/Soup",
+      "number": 1818,
+      "title": "`soup data clean` and `soup ab` say too little about rows of an unknown shape; `soup rewind --json` writes `NaN` / `Infinity`",
+      "url": "https://github.com/MakazhanAlpamys/Soup/issues/1818",
+      "created_at": "2026-10-12T15:39:28Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "good first issue",
+        "difficulty:4",
+        "area:data"
+      ],
+      "language": "Python",
+      "stars": 9728,
+      "comment_count": 5,
+      "age_days": 15,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Guts1005"
+        },
+        "number": 2265,
+        "state": "OPEN",
+        "title": "fix(docker): gate latest tag on highest semver release (#2195)",
+        "url": "https://github.com/MakazhanAlpamys/Soup/pull/2265"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "MakazhanAlpamys/Soup",
       "number": 427,
       "title": "Nine Qwen3.5 recipes declare modality: text, but every checkpoint in the family reports a multimodal architecture",
       "url": "https://github.com/MakazhanAlpamys/Soup/issues/427",
@@ -7386,48 +7428,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "meshery/meshery",
-      "number": 18598,
-      "title": "[mesheryctl] qa.meshery.io formatting conflict",
-      "url": "https://github.com/meshery/meshery/issues/18598",
-      "created_at": "2026-04-09T00:08:24Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "component/mesheryctl",
-        "language/go",
-        "area/tests"
-      ],
-      "language": "Go",
-      "stars": 10140,
-      "comment_count": 4,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "hssuryawanshib23-afk"
-        },
-        "number": 18604,
-        "state": "OPEN",
-        "title": "[mesheryctl] Align component view e2e assertions with current CLI output",
-        "url": "https://github.com/meshery/meshery/pull/18604"
-      },
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
