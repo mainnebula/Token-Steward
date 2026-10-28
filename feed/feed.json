@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T05:12:42Z",
+  "updated_at": "2026-10-28T12:35:02Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -7137,6 +7137,42 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 54361,
+      "title": "Account Console Groups page: the per-row \"Direct membership\" checkbox has no accessible name (axe label, WCAG 1.3.1 / 4.1.2)",
+      "url": "https://github.com/keycloak/keycloak/issues/54361",
+      "created_at": "2026-10-26T21:16:39Z",
+      "labels": [
+        "kind/bug",
+        "area/account/ui",
+        "help wanted",
+        "team/core-iam",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump"
+      ],
+      "language": "Java",
+      "stars": 37568,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "kirodotdev/KiroCrew",
       "number": 7268,
       "title": "No browse path on a remote gateway that preserves Chromium's sandbox",
@@ -7172,6 +7208,40 @@
         "title": "fix(browser-cli): install the CLI into a pinned, fenced prefix",
         "url": "https://github.com/kirodotdev/KiroCrew/pull/9208"
       },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
+      "repo": "kubernetes-sigs/cluster-api",
+      "number": 14321,
+      "title": "MachinePool Machines don't get deletion timeouts from the MachinePool template",
+      "url": "https://github.com/kubernetes-sigs/cluster-api/issues/14321",
+      "created_at": "2026-10-06T17:06:37Z",
+      "labels": [
+        "help wanted",
+        "kind/bug",
+        "priority/important-longterm",
+        "triage/accepted",
+        "area/machinepool"
+      ],
+      "language": "Go",
+      "stars": 4343,
+      "comment_count": 6,
+      "age_days": 21,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.55,
@@ -7359,75 +7429,6 @@
         "title": "fix: guard calculatedPriceSet to avoid 500 instead of 400 on missing …",
         "url": "https://github.com/medusajs/medusa/pull/15936"
       },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "meshery/meshery",
-      "number": 18411,
-      "title": "[UI] MesherySettingsPerformanceComponent catch block swallows error details silently",
-      "url": "https://github.com/meshery/meshery/issues/18411",
-      "created_at": "2026-04-02T14:02:38Z",
-      "labels": [
-        "kind/bug",
-        "good first issue",
-        "language/javascript",
-        "component/ui",
-        "javascript",
-        "issue/valid"
-      ],
-      "language": "Go",
-      "stars": 10139,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "meshery/meshery",
-      "number": 18515,
-      "title": "[UI] Browser warns preloaded Qanelas font not used soon after load",
-      "url": "https://github.com/meshery/meshery/issues/18515",
-      "created_at": "2026-04-06T18:46:50Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "good first issue",
-        "language/javascript",
-        "language/html"
-      ],
-      "language": "Go",
-      "stars": 10141,
-      "comment_count": 3,
-      "age_days": 2,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
