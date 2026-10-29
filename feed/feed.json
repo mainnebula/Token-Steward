@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T05:23:30Z",
+  "updated_at": "2026-10-29T12:45:18Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5879,6 +5879,39 @@
       }
     },
     {
+      "repo": "codewhale-hq/Codewhale",
+      "number": 7071,
+      "title": "zh-Hans (and every non-English locale): common TUI strings are hardcoded English — /undo note, /diff title, approval and plan-handoff chrome, /color note",
+      "url": "https://github.com/codewhale-hq/Codewhale/issues/7071",
+      "created_at": "2026-10-25T01:49:20Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "localization",
+        "v0.10.3"
+      ],
+      "language": "Rust",
+      "stars": 41141,
+      "comment_count": 3,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "containers/podman",
       "number": 28193,
       "title": "podman --remote exec ignores empty detach keys",
@@ -7396,45 +7429,6 @@
         "impact": 0.75,
         "confidence": 0.93,
         "effort": 0.6
-      }
-    },
-    {
-      "repo": "medusajs/medusa",
-      "number": 15932,
-      "title": "500 TypeError (reading 'calculated_amount') instead of 400 \"do not have a price\" when adding a variant unpriced in the cart's region",
-      "url": "https://github.com/medusajs/medusa/issues/15932",
-      "created_at": "2026-07-03T11:45:15Z",
-      "labels": [
-        "good first issue",
-        "type: bug"
-      ],
-      "language": "TypeScript",
-      "stars": 34912,
-      "comment_count": 3,
-      "age_days": 0,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Yashraj-Pradip-Haridas"
-        },
-        "number": 15936,
-        "state": "OPEN",
-        "title": "fix: guard calculatedPriceSet to avoid 500 instead of 400 on missing …",
-        "url": "https://github.com/medusajs/medusa/pull/15936"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
       }
     }
   ]
