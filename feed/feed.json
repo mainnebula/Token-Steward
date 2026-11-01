@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T21:19:29Z",
+  "updated_at": "2026-11-01T05:38:33Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -2989,6 +2989,39 @@
         "impact": 0.85,
         "confidence": 0.91,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "aws-powertools/powertools-lambda-python",
+      "number": 8722,
+      "title": "Bug: output_serializer=PydanticSerializer crashes at import under from __future__ import annotations",
+      "url": "https://github.com/aws-powertools/powertools-lambda-python/issues/8722",
+      "created_at": "2026-10-31T22:36:34Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "help wanted",
+        "idempotency"
+      ],
+      "language": "Python",
+      "stars": 3303,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -7380,48 +7413,6 @@
         "state": "OPEN",
         "title": "fix(ui): resolve Layer5 logo cropping in navbar (#7946)",
         "url": "https://github.com/layer5io/layer5/pull/7950"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "mcp-use/mcp-use",
-      "number": 1257,
-      "title": "Feature: Per-tool authorization layer for MCP servers",
-      "url": "https://github.com/mcp-use/mcp-use/issues/1257",
-      "created_at": "2026-03-28T17:36:46Z",
-      "labels": [
-        "bug",
-        "Python",
-        "enhancement",
-        "agent",
-        "server"
-      ],
-      "language": "TypeScript",
-      "stars": 9767,
-      "comment_count": 5,
-      "age_days": 15,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "hetsaraiya"
-        },
-        "number": 1285,
-        "state": "OPEN",
-        "title": "feat(python): add ToolAuthorizationMiddleware for per-tool access control",
-        "url": "https://github.com/mcp-use/mcp-use/pull/1285"
       },
       "score": 0.73,
       "score_breakdown": {
