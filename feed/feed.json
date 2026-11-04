@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T23:08:17Z",
+  "updated_at": "2026-11-04T05:52:11Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5006,38 +5006,6 @@
       }
     },
     {
-      "repo": "Mantitup-Org/vista",
-      "number": 62,
-      "title": "Bug: vista deploy still breaks static hosts and platform adapters",
-      "url": "https://github.com/Mantitup-Org/vista/issues/62",
-      "created_at": "2026-09-20T18:51:07Z",
-      "labels": [
-        "bug",
-        "help wanted",
-        "bounty"
-      ],
-      "language": "TypeScript",
-      "stars": 2343,
-      "comment_count": 18,
-      "age_days": 27,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
       "repo": "REAndroid/APKEditor",
       "number": 238,
       "title": "[Bug] Internal smali assembler silently emits invalid DEX when `.catch` regions are nested/overlapping",
@@ -6597,6 +6565,39 @@
         "title": "test/syscalls: add recvfrom restart regression test",
         "url": "https://github.com/google/gvisor/pull/13211"
       },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "grafana/grafana",
+      "number": 136910,
+      "title": "Table: Table footer > Calculation steals focus during panel option search",
+      "url": "https://github.com/grafana/grafana/issues/136910",
+      "created_at": "2026-11-03T22:44:47Z",
+      "labels": [
+        "type/bug",
+        "help wanted",
+        "area/panel/table",
+        "internal"
+      ],
+      "language": "TypeScript",
+      "stars": 77673,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "fix",
+      "pr": null,
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
