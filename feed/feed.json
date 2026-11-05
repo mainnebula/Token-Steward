@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T23:30:22Z",
+  "updated_at": "2026-11-05T06:13:03Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -7240,6 +7240,94 @@
       }
     },
     {
+      "repo": "keycloak/keycloak",
+      "number": 54606,
+      "title": "Device authorization grant returns HTTP 500 when the client session has expired but the user session is still alive",
+      "url": "https://github.com/keycloak/keycloak/issues/54606",
+      "created_at": "2026-11-03T19:10:12Z",
+      "labels": [
+        "area/oidc",
+        "kind/bug",
+        "help wanted",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump",
+        "team/core-protocols"
+      ],
+      "language": "Java",
+      "stars": 37708,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Inf1mum"
+        },
+        "number": 54662,
+        "state": "OPEN",
+        "title": "Device authorization grant: return invalid_grant instead of HTTP 500 when the client session has expired",
+        "url": "https://github.com/keycloak/keycloak/pull/54662"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "keycloak/keycloak",
+      "number": 54608,
+      "title": "Token exchange returns HTTP 500 when the subject token payload is the JSON literal `null` and the jwt-claim-enforcer executor is active",
+      "url": "https://github.com/keycloak/keycloak/issues/54608",
+      "created_at": "2026-11-03T19:17:56Z",
+      "labels": [
+        "area/oidc",
+        "kind/bug",
+        "help wanted",
+        "priority/low",
+        "status/auto-expire",
+        "status/auto-bump",
+        "team/core-protocols"
+      ],
+      "language": "Java",
+      "stars": 37708,
+      "comment_count": 3,
+      "age_days": 1,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Inf1mum"
+        },
+        "number": 54663,
+        "state": "OPEN",
+        "title": "Token exchange: return invalid_request instead of HTTP 500 when the subject token payload is null",
+        "url": "https://github.com/keycloak/keycloak/pull/54663"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "kirodotdev/KiroCrew",
       "number": 7268,
       "title": "No browse path on a remote gateway that preserves Chromium's sandbox",
@@ -7347,80 +7435,6 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
-      }
-    },
-    {
-      "repo": "layer5io/layer5",
-      "number": 7461,
-      "title": "The slide transitions on the Meshery pages are not working.",
-      "url": "https://github.com/layer5io/layer5/issues/7461",
-      "created_at": "2026-03-09T17:14:09Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "good first issue",
-        "framework/gatsby"
-      ],
-      "language": "JavaScript",
-      "stars": 1027,
-      "comment_count": 6,
-      "age_days": 20,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "layer5io/layer5",
-      "number": 7946,
-      "title": "[UI] Layer5 logo appears cropped/cut off on <page/component>",
-      "url": "https://github.com/layer5io/layer5/issues/7946",
-      "created_at": "2026-08-10T13:12:02Z",
-      "labels": [
-        "kind/bug",
-        "help wanted",
-        "issue/invalid",
-        "framework/gatsby"
-      ],
-      "language": "JavaScript",
-      "stars": 1095,
-      "comment_count": 6,
-      "age_days": 8,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Joiejoie1"
-        },
-        "number": 7950,
-        "state": "OPEN",
-        "title": "fix(ui): resolve Layer5 logo cropping in navbar (#7946)",
-        "url": "https://github.com/layer5io/layer5/pull/7950"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
       }
     }
   ]
