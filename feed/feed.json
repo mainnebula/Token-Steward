@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T05:49:34Z",
+  "updated_at": "2026-11-09T15:53:41Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -3588,6 +3588,103 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.6
+      }
+    },
+    {
+      "repo": "horizon-rust/horizon",
+      "number": 11522,
+      "title": "Death message persists on the title screen confirmation screen on the death screen",
+      "url": "https://github.com/horizon-rust/horizon/issues/11522",
+      "created_at": "2026-11-07T01:06:07Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "from-discord",
+        "in progress"
+      ],
+      "language": "Rust",
+      "stars": 8283,
+      "comment_count": 6,
+      "age_days": 2,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "horizon-rust/horizon",
+      "number": 9369,
+      "title": "Sun renders corrupted UI textures and oversized quad on OpenGL (Intel Iris Xe)",
+      "url": "https://github.com/horizon-rust/horizon/issues/9369",
+      "created_at": "2026-11-04T17:41:49Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "from-discord"
+      ],
+      "language": "Rust",
+      "stars": 8283,
+      "comment_count": 5,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "horizon-rust/horizon",
+      "number": 9380,
+      "title": "Severe FPS regression on Vulkan backend compared to OpenGL on Intel Iris Xe (10-16 FPS vs 60 FPS)",
+      "url": "https://github.com/horizon-rust/horizon/issues/9380",
+      "created_at": "2026-11-04T18:03:11Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "from-discord"
+      ],
+      "language": "Rust",
+      "stars": 8283,
+      "comment_count": 5,
+      "age_days": 4,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.74,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.65
       }
     },
     {
@@ -7319,116 +7416,6 @@
         "title": "Token exchange: return invalid_request instead of HTTP 500 when the subject token payload is null",
         "url": "https://github.com/keycloak/keycloak/pull/54663"
       },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "kirodotdev/KiroCrew",
-      "number": 7268,
-      "title": "No browse path on a remote gateway that preserves Chromium's sandbox",
-      "url": "https://github.com/kirodotdev/KiroCrew/issues/7268",
-      "created_at": "2026-08-31T13:36:21Z",
-      "labels": [
-        "bug",
-        "enhancement",
-        "area: agents",
-        "platform: linux",
-        "area: gateway",
-        "needs-investigation",
-        "crew: needs human"
-      ],
-      "language": "Python",
-      "stars": 3862,
-      "comment_count": 8,
-      "age_days": 11,
-      "is_bug": true,
-      "is_feature": true,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "SpikeShen"
-        },
-        "number": 9208,
-        "state": "OPEN",
-        "title": "fix(browser-cli): install the CLI into a pinned, fenced prefix",
-        "url": "https://github.com/kirodotdev/KiroCrew/pull/9208"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "kubernetes-sigs/cluster-api",
-      "number": 14321,
-      "title": "MachinePool Machines don't get deletion timeouts from the MachinePool template",
-      "url": "https://github.com/kubernetes-sigs/cluster-api/issues/14321",
-      "created_at": "2026-10-06T17:06:37Z",
-      "labels": [
-        "help wanted",
-        "kind/bug",
-        "priority/important-longterm",
-        "triage/accepted",
-        "area/machinepool"
-      ],
-      "language": "Go",
-      "stars": 4343,
-      "comment_count": 6,
-      "age_days": 21,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
-      "repo": "langgenius/dify",
-      "number": 33122,
-      "title": "Agent with Stability AI integration throws client-side error on image generation, but images are created successfully (visible in logs)",
-      "url": "https://github.com/langgenius/dify/issues/33122",
-      "created_at": "2026-03-07T14:55:58Z",
-      "labels": [
-        "🐞 bug",
-        "good first issue",
-        "status: accepting prs"
-      ],
-      "language": "TypeScript",
-      "stars": 131648,
-      "comment_count": 4,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
