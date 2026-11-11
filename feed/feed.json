@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T05:45:55Z",
+  "updated_at": "2026-11-11T13:58:01Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -4792,6 +4792,41 @@
       }
     },
     {
+      "repo": "CrossGL/crosstl",
+      "number": 2407,
+      "title": "WGSL output: no definition in scope for identifier: `<feature>`",
+      "url": "https://github.com/CrossGL/crosstl/issues/2407",
+      "created_at": "2026-10-20T18:55:31Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "area:codegen",
+        "backend:wgsl",
+        "direction:output",
+        "coverage"
+      ],
+      "language": "Python",
+      "stars": 2031,
+      "comment_count": 5,
+      "age_days": 21,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "fix",
+      "pr": null,
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.6
+      }
+    },
+    {
       "repo": "GTNewHorizons/GT-New-Horizons-Modpack",
       "number": 25672,
       "title": "Malisis' Doors \"Create door\" button is not showing anywhere, regardless of gamemode or operator status",
@@ -7371,50 +7406,6 @@
         "state": "OPEN",
         "title": "Device authorization grant: return invalid_grant instead of HTTP 500 when the client session has expired",
         "url": "https://github.com/keycloak/keycloak/pull/54662"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 54608,
-      "title": "Token exchange returns HTTP 500 when the subject token payload is the JSON literal `null` and the jwt-claim-enforcer executor is active",
-      "url": "https://github.com/keycloak/keycloak/issues/54608",
-      "created_at": "2026-11-03T19:17:56Z",
-      "labels": [
-        "area/oidc",
-        "kind/bug",
-        "help wanted",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump",
-        "team/core-protocols"
-      ],
-      "language": "Java",
-      "stars": 37708,
-      "comment_count": 3,
-      "age_days": 1,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "Inf1mum"
-        },
-        "number": 54663,
-        "state": "OPEN",
-        "title": "Token exchange: return invalid_request instead of HTTP 500 when the subject token payload is null",
-        "url": "https://github.com/keycloak/keycloak/pull/54663"
       },
       "score": 0.73,
       "score_breakdown": {
