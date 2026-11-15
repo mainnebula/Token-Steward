@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T05:58:08Z",
+  "updated_at": "2026-11-15T13:50:58Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -974,6 +974,47 @@
         "state": "OPEN",
         "title": "fix: add !event.isComposing guard to all Enter key handlers",
         "url": "https://github.com/Kilo-Org/kilocode/pull/7242"
+      },
+      "score": 0.75,
+      "score_breakdown": {
+        "reach": 0.6,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
+      "repo": "MakazhanAlpamys/Soup",
+      "number": 2848,
+      "title": "Oversized `lora_alpha` raises `OverflowError` in low-memory LoRA validation",
+      "url": "https://github.com/MakazhanAlpamys/Soup/issues/2848",
+      "created_at": "2026-11-14T16:45:02Z",
+      "labels": [
+        "bug",
+        "help wanted",
+        "claimed",
+        "difficulty:2"
+      ],
+      "language": "Python",
+      "stars": 10553,
+      "comment_count": 5,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "tridev-tej"
+        },
+        "number": 2853,
+        "state": "OPEN",
+        "title": "fix(merge): refuse oversized lora_alpha and r in --low-memory",
+        "url": "https://github.com/MakazhanAlpamys/Soup/pull/2853"
       },
       "score": 0.75,
       "score_breakdown": {
@@ -7363,50 +7404,6 @@
       "llm_receptivity": 0.8,
       "action": "fix",
       "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 54004,
-      "title": "Upgrade to 26.7 fails if a realm display name exceeds 255 characters",
-      "url": "https://github.com/keycloak/keycloak/issues/54004",
-      "created_at": "2026-10-15T09:17:03Z",
-      "labels": [
-        "kind/bug",
-        "area/storage",
-        "help wanted",
-        "team/core-iam",
-        "priority/low",
-        "status/auto-expire",
-        "status/auto-bump"
-      ],
-      "language": "Java",
-      "stars": 37433,
-      "comment_count": 3,
-      "age_days": 4,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "choksi2212"
-        },
-        "number": 54021,
-        "state": "OPEN",
-        "title": "Clip realm display names to the column length during the 26.7.0 migration",
-        "url": "https://github.com/keycloak/keycloak/pull/54021"
-      },
       "score": 0.73,
       "score_breakdown": {
         "reach": 0.5,
