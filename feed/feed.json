@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T00:51:22Z",
+  "updated_at": "2026-11-18T15:29:12Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5755,6 +5755,45 @@
       }
     },
     {
+      "repo": "aquasecurity/trivy",
+      "number": 11666,
+      "title": "bug(flag): `--compliance` ignores `--cache-dir`",
+      "url": "https://github.com/aquasecurity/trivy/issues/11666",
+      "created_at": "2026-11-17T16:13:00Z",
+      "labels": [
+        "kind/bug",
+        "good first issue"
+      ],
+      "language": "Go",
+      "stars": 39501,
+      "comment_count": 3,
+      "age_days": 0,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.8,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "Aakarsh133"
+        },
+        "number": 11675,
+        "state": "OPEN",
+        "title": "fix(flag): load built-in compliance spec from --cache-dir",
+        "url": "https://github.com/aquasecurity/trivy/pull/11675"
+      },
+      "score": 0.73,
+      "score_breakdown": {
+        "reach": 0.5,
+        "impact": 0.75,
+        "confidence": 0.94,
+        "effort": 0.65
+      }
+    },
+    {
       "repo": "aryandas2911/DailyForge",
       "number": 1670,
       "title": "bug: CORS origin hardcoded to production Render URL in server.js — local frontend development is broken by default and requires manual source code edits, contradicting the Quick Start guide",
@@ -7359,42 +7398,6 @@
       "stars": 36522,
       "comment_count": 3,
       "age_days": 3,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.8,
-      "action": "fix",
-      "pr": null,
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.5,
-        "impact": 0.75,
-        "confidence": 0.94,
-        "effort": 0.65
-      }
-    },
-    {
-      "repo": "keycloak/keycloak",
-      "number": 52310,
-      "title": "User Profile validation is not applied when users are created through partialImport or realm import",
-      "url": "https://github.com/keycloak/keycloak/issues/52310",
-      "created_at": "2026-09-02T07:43:43Z",
-      "labels": [
-        "kind/bug",
-        "area/import-export",
-        "help wanted",
-        "team/core-shared",
-        "status/auto-expire",
-        "status/auto-bump",
-        "priority/normal"
-      ],
-      "language": "Java",
-      "stars": 36605,
-      "comment_count": 3,
-      "age_days": 2,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
