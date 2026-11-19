@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T00:09:21Z",
+  "updated_at": "2026-11-19T15:35:53Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -5210,46 +5210,6 @@
       }
     },
     {
-      "repo": "UKGovernmentBEIS/inspect_ai",
-      "number": 5951,
-      "title": "Bedrock: failed tool calls reach the model with an empty result, so it can't see why the call failed",
-      "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/5951",
-      "created_at": "2026-10-19T07:11:44Z",
-      "labels": [
-        "bug",
-        "good first issue",
-        "accepted"
-      ],
-      "language": "Python",
-      "stars": 3244,
-      "comment_count": 5,
-      "age_days": 25,
-      "is_bug": true,
-      "is_feature": false,
-      "category": "general",
-      "surface": "bugfix",
-      "has_contributing": true,
-      "has_ci": true,
-      "llm_receptivity": 0.75,
-      "action": "review",
-      "pr": {
-        "author": {
-          "login": "HarshRajSinghania"
-        },
-        "number": 6557,
-        "state": "OPEN",
-        "title": "fix(bedrock): include error message in failed tool results",
-        "url": "https://github.com/UKGovernmentBEIS/inspect_ai/pull/6557"
-      },
-      "score": 0.73,
-      "score_breakdown": {
-        "reach": 0.55,
-        "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.6
-      }
-    },
-    {
       "repo": "Untrivial-ai/agent-orchestrator",
       "number": 5984,
       "title": "Markdown rich preview resets after switching sessions",
@@ -7413,6 +7373,46 @@
         "impact": 0.75,
         "confidence": 0.94,
         "effort": 0.65
+      }
+    },
+    {
+      "repo": "UKGovernmentBEIS/inspect_ai",
+      "number": 5951,
+      "title": "Bedrock: failed tool calls reach the model with an empty result, so it can't see why the call failed",
+      "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/5951",
+      "created_at": "2026-10-19T07:11:44Z",
+      "labels": [
+        "bug",
+        "good first issue",
+        "accepted"
+      ],
+      "language": "Python",
+      "stars": 3288,
+      "comment_count": 8,
+      "age_days": 31,
+      "is_bug": true,
+      "is_feature": false,
+      "category": "general",
+      "surface": "bugfix",
+      "has_contributing": true,
+      "has_ci": true,
+      "llm_receptivity": 0.75,
+      "action": "review",
+      "pr": {
+        "author": {
+          "login": "DawitLemmaBalcha"
+        },
+        "number": 6659,
+        "state": "OPEN",
+        "title": "fix(bedrock): send the error message with failed tool results",
+        "url": "https://github.com/UKGovernmentBEIS/inspect_ai/pull/6659"
+      },
+      "score": 0.7,
+      "score_breakdown": {
+        "reach": 0.55,
+        "impact": 0.75,
+        "confidence": 0.93,
+        "effort": 0.5
       }
     }
   ]
