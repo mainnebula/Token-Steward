@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T00:31:30Z",
+  "updated_at": "2026-11-20T15:15:08Z",
   "issue_count": 200,
   "languages": [
     "Go",
@@ -7376,43 +7376,47 @@
       }
     },
     {
-      "repo": "UKGovernmentBEIS/inspect_ai",
-      "number": 5951,
-      "title": "Bedrock: failed tool calls reach the model with an empty result, so it can't see why the call failed",
-      "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/5951",
-      "created_at": "2026-10-19T07:11:44Z",
+      "repo": "keycloak/keycloak",
+      "number": 55287,
+      "title": "Since 26.7.0, the original tab can't continue after the verification email is confirmed in another browser (400 \"Restart login cookie not found\")",
+      "url": "https://github.com/keycloak/keycloak/issues/55287",
+      "created_at": "2026-11-17T17:18:57Z",
       "labels": [
-        "bug",
-        "good first issue",
-        "accepted"
+        "area/authentication",
+        "kind/bug",
+        "help wanted",
+        "status/auto-expire",
+        "status/auto-bump",
+        "priority/normal",
+        "team/core-authn"
       ],
-      "language": "Python",
-      "stars": 3288,
-      "comment_count": 8,
-      "age_days": 31,
+      "language": "Java",
+      "stars": 37982,
+      "comment_count": 4,
+      "age_days": 2,
       "is_bug": true,
       "is_feature": false,
       "category": "general",
       "surface": "bugfix",
       "has_contributing": true,
       "has_ci": true,
-      "llm_receptivity": 0.75,
+      "llm_receptivity": 0.8,
       "action": "review",
       "pr": {
         "author": {
-          "login": "DawitLemmaBalcha"
+          "login": "gdsmith"
         },
-        "number": 6659,
+        "number": 55292,
         "state": "OPEN",
-        "title": "fix(bedrock): send the error message with failed tool results",
-        "url": "https://github.com/UKGovernmentBEIS/inspect_ai/pull/6659"
+        "title": "Restart client-initiated registration after the email is verified in another browser",
+        "url": "https://github.com/keycloak/keycloak/pull/55292"
       },
-      "score": 0.7,
+      "score": 0.73,
       "score_breakdown": {
-        "reach": 0.55,
+        "reach": 0.5,
         "impact": 0.75,
-        "confidence": 0.93,
-        "effort": 0.5
+        "confidence": 0.94,
+        "effort": 0.65
       }
     }
   ]
